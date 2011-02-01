@@ -1,0 +1,21 @@
+diff -Nur -x '*.orig' -x '*~' postgresql-8.4-8.4~rc1/src/backend/libpq/be-secure.c postgresql-8.4-8.4~rc1.new/src/backend/libpq/be-secure.c
+--- postgresql-8.4-8.4~rc1/src/backend/libpq/be-secure.c	2009-06-11 16:48:58.000000000 +0200
++++ postgresql-8.4-8.4~rc1.new/src/backend/libpq/be-secure.c	2009-06-22 07:49:45.873269466 +0200
+@@ -751,12 +751,15 @@
+ 		 * directory permission check in postmaster.c)
+ 		 */
+ #if !defined(WIN32) && !defined(__CYGWIN__)
+-		if (!S_ISREG(buf.st_mode) || buf.st_mode & (S_IRWXG | S_IRWXO))
++		if (!S_ISREG(buf.st_mode) || (buf.st_mode & (S_IWGRP | S_IRWXO)) ||
++			(buf.st_uid != geteuid()) && buf.st_uid != 0)
+ 			ereport(FATAL,
+ 					(errcode(ERRCODE_CONFIG_FILE_ERROR),
+ 				  errmsg("private key file \"%s\" has group or world access",
+ 						 SERVER_PRIVATE_KEY_FILE),
+-				   errdetail("Permissions should be u=rw (0600) or less.")));
++					 errdetail("File must be owned by the \
++database user or root, must have no write permission for \"group\", and must \
++have no permissions for \"other\".")));
+ #endif
+ 
+ 		if (SSL_CTX_use_PrivateKey_file(SSL_context,
