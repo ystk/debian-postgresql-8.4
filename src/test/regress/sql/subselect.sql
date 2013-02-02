@@ -325,6 +325,15 @@ select (select (select view_a)) from view_a;
 select (select (a.*)::text) from view_a a;
 
 --
+-- Check that whole-row Vars reading the result of a subselect don't include
+-- any junk columns therein
+--
+
+select q from (select max(f1) from int4_tbl group by f1 order by f1) q;
+with q as (select max(f1) from int4_tbl group by f1 order by f1)
+  select q from q;
+
+--
 -- Test case for sublinks pushed down into subselects via join alias expansion
 --
 
@@ -341,3 +350,12 @@ from
 --
 
 select '1'::text in (select '1'::name union all select '1'::name);
+
+--
+-- Test case for planner bug with nested EXISTS handling
+--
+select a.thousand from tenk1 a, tenk1 b
+where a.thousand = b.thousand
+  and exists ( select 1 from tenk1 c where b.hundred = c.hundred
+                   and not exists ( select 1 from tenk1 d
+                                    where a.thousand = d.thousand ) );

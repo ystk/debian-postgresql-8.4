@@ -33,7 +33,13 @@
 /* interval for calling AbsorbFsyncRequests in mdsync */
 #define FSYNCS_PER_ABSORB		10
 
-/* special values for the segno arg to RememberFsyncRequest */
+/*
+ * Special values for the segno arg to RememberFsyncRequest.
+ *
+ * Note that CompactBgwriterRequestQueue assumes that it's OK to remove an
+ * fsync request from the queue if an identical, subsequent request is found.
+ * See comments there before making changes here.
+ */
 #define FORGET_RELATION_FSYNC	(InvalidBlockNumber)
 #define FORGET_DATABASE_FSYNC	(InvalidBlockNumber-1)
 #define UNLINK_RELATION_REQUEST (InvalidBlockNumber-2)
@@ -120,7 +126,7 @@ static MemoryContext MdCxt;		/* context for all md.c allocations */
 typedef struct
 {
 	RelFileNode rnode;			/* the targeted relation */
-	ForkNumber	forknum;
+	ForkNumber	forknum;		/* which fork */
 	BlockNumber segno;			/* which segment */
 } PendingOperationTag;
 
@@ -310,7 +316,13 @@ mdcreate(SMgrRelation reln, ForkNumber forkNum, bool isRedo)
  * number until it's safe, because relfilenode assignment skips over any
  * existing file.
  *
- * If isRedo is true, it's okay for the relation to be already gone.
+ * All the above applies only to the relation's main fork; other forks can
+ * just be removed immediately, since they are not needed to prevent the
+ * relfilenode number from being recycled.  Also, we do not carefully
+ * track whether other forks have been created or not, but just attempt to
+ * unlink them unconditionally; so we should never complain about ENOENT.
+ *
+ * If isRedo is true, it's unsurprising for the relation to be already gone.
  * Also, we should remove the file immediately instead of queuing a request
  * for later, since during redo there's no possibility of creating a
  * conflicting relation.
@@ -355,18 +367,15 @@ mdunlink(RelFileNode rnode, ForkNumber forkNum, bool isRedo)
 		else
 			ret = -1;
 	}
-	if (ret < 0)
-	{
-		if (!isRedo || errno != ENOENT)
-			ereport(WARNING,
-					(errcode_for_file_access(),
-					 errmsg("could not remove relation %s: %m", path)));
-	}
+	if (ret < 0 && errno != ENOENT)
+		ereport(WARNING,
+				(errcode_for_file_access(),
+				 errmsg("could not remove relation %s: %m", path)));
 
 	/*
 	 * Delete any additional segments.
 	 */
-	else
+	if (ret >= 0)
 	{
 		char	   *segpath = (char *) palloc(strlen(path) + 12);
 		BlockNumber segno;
@@ -1200,7 +1209,7 @@ mdpostckpt(void)
  * If there is a local pending-ops table, just make an entry in it for
  * mdsync to process later.  Otherwise, try to pass off the fsync request
  * to the background writer process.  If that fails, just do the fsync
- * locally before returning (we expect this will not happen often enough
+ * locally before returning (we hope this will not happen often enough
  * to be a performance problem).
  */
 static void
@@ -1227,6 +1236,9 @@ register_dirty_segment(SMgrRelation reln, ForkNumber forknum, MdfdVec *seg)
 
 /*
  * register_unlink() -- Schedule a file to be deleted after next checkpoint
+ *
+ * We don't bother passing in the fork number, because this is only used
+ * with main forks.
  *
  * As with register_dirty_segment, this could involve either a local or
  * a remote pending-ops table.
@@ -1338,6 +1350,9 @@ RememberFsyncRequest(RelFileNode rnode, ForkNumber forknum, BlockNumber segno)
 		MemoryContext oldcxt = MemoryContextSwitchTo(MdCxt);
 		PendingUnlinkEntry *entry;
 
+		/* PendingUnlinkEntry doesn't store forknum, since it's always MAIN */
+		Assert(forknum == MAIN_FORKNUM);
+
 		entry = palloc(sizeof(PendingUnlinkEntry));
 		entry->rnode = rnode;
 		entry->cycle_ctr = mdckpt_cycle_ctr;
@@ -1387,7 +1402,7 @@ RememberFsyncRequest(RelFileNode rnode, ForkNumber forknum, BlockNumber segno)
 }
 
 /*
- * ForgetRelationFsyncRequests -- forget any fsyncs for a rel
+ * ForgetRelationFsyncRequests -- forget any fsyncs for a relation fork
  */
 void
 ForgetRelationFsyncRequests(RelFileNode rnode, ForkNumber forknum)

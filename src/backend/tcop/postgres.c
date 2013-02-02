@@ -106,8 +106,10 @@ int			PostAuthDelay = 0;
 static long max_stack_depth_bytes = 100 * 1024L;
 
 /*
- * Stack base pointer -- initialized by PostgresMain. This is not static
- * so that PL/Java can modify it.
+ * Stack base pointer -- initialized by PostmasterMain and inherited by
+ * subprocesses. This is not static because old versions of PL/Java modify
+ * it directly. Newer versions use set_stack_base(), but we want to stay
+ * binary-compatible for the time being.
  */
 char	   *stack_base_ptr = NULL;
 
@@ -2686,9 +2688,14 @@ ProcessInterrupts(void)
 /*
  * IA64-specific code to fetch the AR.BSP register for stack depth checks.
  *
- * We currently support gcc and icc here.
+ * We currently support gcc, icc, and HP-UX inline assembly here.
  */
 #if defined(__ia64__) || defined(__ia64)
+
+#if defined(__hpux) && !defined(__GNUC__) && !defined __INTEL_COMPILER
+#include <ia64/sys/inline.h>
+#define ia64_get_bsp() ((char *) (_Asm_mov_from_ar(_AREG_BSP, _NO_FENCE)))
+#else
 
 #ifdef __INTEL_COMPILER
 #include <asm/ia64regs.h>
@@ -2710,9 +2717,56 @@ ia64_get_bsp(void)
 #endif
   return ret;
 }
-
+#endif
 #endif /* IA64 */
 
+
+/*
+ * set_stack_base: set up reference point for stack depth checking
+ *
+ * Returns the old reference point, if any.
+ */
+pg_stack_base_t
+set_stack_base(void)
+{
+	char		stack_base;
+	pg_stack_base_t old;
+
+#if defined(__ia64__) || defined(__ia64)
+	old.stack_base_ptr = stack_base_ptr;
+	old.register_stack_base_ptr = register_stack_base_ptr;
+#else
+	old = stack_base_ptr;
+#endif
+
+	/* Set up reference point for stack depth checking */
+	stack_base_ptr = &stack_base;
+#if defined(__ia64__) || defined(__ia64)
+	register_stack_base_ptr = ia64_get_bsp();
+#endif
+
+	return old;
+}
+
+/*
+ * restore_stack_base: restore reference point for stack depth checking
+ *
+ * This can be used after set_stack_base() to restore the old value. This
+ * is currently only used in PL/Java. When PL/Java calls a backend function
+ * from different thread, the thread's stack is at a different location than
+ * the main thread's stack, so it sets the base pointer before the call, and
+ * restores it afterwards.
+ */
+void
+restore_stack_base(pg_stack_base_t base)
+{
+#if defined(__ia64__) || defined(__ia64)
+	stack_base_ptr = base.stack_base_ptr;
+	register_stack_base_ptr = base.register_stack_base_ptr;
+#else
+	stack_base_ptr = base;
+#endif
+}
 
 /*
  * check_stack_depth: check for excessively deep recursion
@@ -2729,7 +2783,7 @@ check_stack_depth(void)
 	long		stack_depth;
 
 	/*
-	 * Compute distance from PostgresMain's local variables to my own
+	 * Compute distance from reference point to to my local variables
 	 */
 	stack_depth = (long) (stack_base_ptr - &stack_top_loc);
 
@@ -2922,7 +2976,6 @@ PostgresMain(int argc, char *argv[], const char *username)
 	GucSource	gucsource;
 	bool		am_superuser;
 	int			firstchar;
-	char		stack_base;
 	StringInfoData input_message;
 	sigjmp_buf	local_sigjmp_buf;
 	volatile bool send_ready_for_query = true;
@@ -2950,12 +3003,6 @@ PostgresMain(int argc, char *argv[], const char *username)
 	set_ps_display("startup", false);
 
 	SetProcessingMode(InitProcessing);
-
-	/* Set up reference point for stack depth checking */
-	stack_base_ptr = &stack_base;
-#if defined(__ia64__) || defined(__ia64)
-	register_stack_base_ptr = ia64_get_bsp();
-#endif
 
 	/* Compute paths, if we didn't inherit them from postmaster */
 	if (my_exec_path[0] == '\0')

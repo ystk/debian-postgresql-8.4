@@ -1,27 +1,37 @@
-/* A Bison parser, made by GNU Bison 1.875.  */
 
-/* Skeleton parser for Yacc-like parsing with Bison,
-   Copyright (C) 1984, 1989, 1990, 2000, 2001, 2002 Free Software Foundation, Inc.
+/* A Bison parser, made by GNU Bison 2.4.1.  */
 
-   This program is free software; you can redistribute it and/or modify
+/* Skeleton interface for Bison's Yacc-like parsers in C
+   
+      Copyright (C) 1984, 1989, 1990, 2000, 2001, 2002, 2003, 2004, 2005, 2006
+   Free Software Foundation, Inc.
+   
+   This program is free software: you can redistribute it and/or modify
    it under the terms of the GNU General Public License as published by
-   the Free Software Foundation; either version 2, or (at your option)
-   any later version.
-
+   the Free Software Foundation, either version 3 of the License, or
+   (at your option) any later version.
+   
    This program is distributed in the hope that it will be useful,
    but WITHOUT ANY WARRANTY; without even the implied warranty of
    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
    GNU General Public License for more details.
-
+   
    You should have received a copy of the GNU General Public License
-   along with this program; if not, write to the Free Software
-   Foundation, Inc., 59 Temple Place - Suite 330,
-   Boston, MA 02111-1307, USA.  */
+   along with this program.  If not, see <http://www.gnu.org/licenses/>.  */
 
-/* As a special exception, when this file is copied by Bison into a
-   Bison output file, you may use that output file without restriction.
-   This special exception was added by the Free Software Foundation
-   in version 1.24 of Bison.  */
+/* As a special exception, you may create a larger work that contains
+   part or all of the Bison parser skeleton and distribute that work
+   under terms of your choice, so long as that work isn't itself a
+   parser generator using the skeleton or a modified version thereof
+   as a parser skeleton.  Alternatively, if you modify or redistribute
+   the parser skeleton itself, you may (at your option) remove this
+   special exception, which will cause the skeleton and the resulting
+   Bison output files to be licensed under the GNU General Public
+   License without this special exception.
+   
+   This special exception was added by the Free Software Foundation in
+   version 2.2 of Bison.  */
+
 
 /* Tokens.  */
 #ifndef YYTOKENTYPE
@@ -91,73 +101,16 @@
      O_DUMP = 317
    };
 #endif
-#define K_ALIAS 258
-#define K_ASSIGN 259
-#define K_BEGIN 260
-#define K_BY 261
-#define K_CASE 262
-#define K_CLOSE 263
-#define K_CONSTANT 264
-#define K_CONTINUE 265
-#define K_CURSOR 266
-#define K_DECLARE 267
-#define K_DEFAULT 268
-#define K_DIAGNOSTICS 269
-#define K_DOTDOT 270
-#define K_ELSE 271
-#define K_ELSIF 272
-#define K_END 273
-#define K_EXCEPTION 274
-#define K_EXECUTE 275
-#define K_EXIT 276
-#define K_FOR 277
-#define K_FETCH 278
-#define K_FROM 279
-#define K_GET 280
-#define K_IF 281
-#define K_IN 282
-#define K_INSERT 283
-#define K_INTO 284
-#define K_IS 285
-#define K_LOOP 286
-#define K_MOVE 287
-#define K_NOSCROLL 288
-#define K_NOT 289
-#define K_NULL 290
-#define K_OPEN 291
-#define K_OR 292
-#define K_PERFORM 293
-#define K_ROW_COUNT 294
-#define K_RAISE 295
-#define K_RENAME 296
-#define K_RESULT_OID 297
-#define K_RETURN 298
-#define K_REVERSE 299
-#define K_SCROLL 300
-#define K_STRICT 301
-#define K_THEN 302
-#define K_TO 303
-#define K_TYPE 304
-#define K_USING 305
-#define K_WHEN 306
-#define K_WHILE 307
-#define T_STRING 308
-#define T_NUMBER 309
-#define T_SCALAR 310
-#define T_ROW 311
-#define T_RECORD 312
-#define T_DTYPE 313
-#define T_WORD 314
-#define T_ERROR 315
-#define O_OPTION 316
-#define O_DUMP 317
 
 
 
+#if ! defined YYSTYPE && ! defined YYSTYPE_IS_DECLARED
+typedef union YYSTYPE
+{
 
-#if ! defined (YYSTYPE) && ! defined (YYSTYPE_IS_DECLARED)
+/* Line 1676 of yacc.c  */
 #line 79 "gram.y"
-typedef union YYSTYPE {
+
 		int32					ival;
 		bool					boolean;
 		char					*str;
@@ -202,15 +155,17 @@ typedef union YYSTYPE {
 		PLpgSQL_diag_item		*diagitem;
 		PLpgSQL_stmt_fetch		*fetch;
 		PLpgSQL_case_when		*casewhen;
+
+
+
+/* Line 1676 of yacc.c  */
+#line 163 "pl_gram.h"
 } YYSTYPE;
-/* Line 1204 of yacc.c.  */
-#line 207 "pl_gram.h"
+# define YYSTYPE_IS_TRIVIAL 1
 # define yystype YYSTYPE /* obsolescent; will be withdrawn */
 # define YYSTYPE_IS_DECLARED 1
-# define YYSTYPE_IS_TRIVIAL 1
 #endif
 
 extern YYSTYPE plpgsql_yylval;
-
 
 

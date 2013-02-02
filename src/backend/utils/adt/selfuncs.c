@@ -135,7 +135,8 @@ static double ineq_histogram_selectivity(VariableStatData *vardata,
 static double eqjoinsel_inner(Oid operator,
 				VariableStatData *vardata1, VariableStatData *vardata2);
 static double eqjoinsel_semi(Oid operator,
-			   VariableStatData *vardata1, VariableStatData *vardata2);
+			   VariableStatData *vardata1, VariableStatData *vardata2,
+			   RelOptInfo *inner_rel);
 static bool convert_to_scalar(Datum value, Oid valuetypid, double *scaledvalue,
 				  Datum lobound, Datum hibound, Oid boundstypid,
 				  double *scaledlobound, double *scaledhibound);
@@ -160,9 +161,14 @@ static char *convert_string_datum(Datum value, Oid typid);
 static double convert_timevalue_to_scalar(Datum value, Oid typid);
 static bool get_variable_range(PlannerInfo *root, VariableStatData *vardata,
 				   Oid sortop, Datum *min, Datum *max);
+static RelOptInfo *find_join_input_rel(PlannerInfo *root, Relids relids);
 static Selectivity prefix_selectivity(VariableStatData *vardata,
 				   Oid vartype, Oid opfamily, Const *prefixcon);
-static Selectivity pattern_selectivity(Const *patt, Pattern_Type ptype);
+static Selectivity like_selectivity(const char *patt, int pattlen,
+									bool case_insensitive);
+static Selectivity regex_selectivity(const char *patt, int pattlen,
+									 bool case_insensitive,
+									 int fixed_prefix_len);
 static Datum string_to_datum(const char *str, Oid datatype);
 static Const *string_to_const(const char *str, Oid datatype);
 static Const *string_to_bytea_const(const char *str, size_t str_len);
@@ -1022,9 +1028,9 @@ patternsel(PG_FUNCTION_ARGS, Pattern_Type ptype, bool negate)
 	Oid			vartype;
 	Oid			opfamily;
 	Pattern_Prefix_Status pstatus;
-	Const	   *patt = NULL;
+	Const	   *patt;
 	Const	   *prefix = NULL;
-	Const	   *rest = NULL;
+	Selectivity	rest_selec = 0;
 	double		result;
 
 	/*
@@ -1114,13 +1120,15 @@ patternsel(PG_FUNCTION_ARGS, Pattern_Type ptype, bool negate)
 			return result;
 	}
 
-	/* divide pattern into fixed prefix and remainder */
+	/*
+	 * Pull out any fixed prefix implied by the pattern, and estimate the
+	 * fractional selectivity of the remainder of the pattern.
+	 */
 	patt = (Const *) other;
-	pstatus = pattern_fixed_prefix(patt, ptype, &prefix, &rest);
+	pstatus = pattern_fixed_prefix(patt, ptype, &prefix, &rest_selec);
 
 	/*
-	 * If necessary, coerce the prefix constant to the right type. (The "rest"
-	 * constant need not be changed.)
+	 * If necessary, coerce the prefix constant to the right type.
 	 */
 	if (prefix && prefix->consttype != vartype)
 	{
@@ -1194,15 +1202,13 @@ patternsel(PG_FUNCTION_ARGS, Pattern_Type ptype, bool negate)
 		{
 			Selectivity heursel;
 			Selectivity prefixsel;
-			Selectivity restsel;
 
 			if (pstatus == Pattern_Prefix_Partial)
 				prefixsel = prefix_selectivity(&vardata, vartype,
 											   opfamily, prefix);
 			else
 				prefixsel = 1.0;
-			restsel = pattern_selectivity(rest, ptype);
-			heursel = prefixsel * restsel;
+			heursel = prefixsel * rest_selec;
 
 			if (selec < 0)		/* fewer than 10 histogram entries? */
 				selec = heursel;
@@ -1926,6 +1932,7 @@ eqjoinsel(PG_FUNCTION_ARGS)
 	VariableStatData vardata1;
 	VariableStatData vardata2;
 	bool		join_is_reversed;
+	RelOptInfo *inner_rel;
 
 	get_join_variables(root, args, sjinfo,
 					   &vardata1, &vardata2, &join_is_reversed);
@@ -1939,11 +1946,21 @@ eqjoinsel(PG_FUNCTION_ARGS)
 			break;
 		case JOIN_SEMI:
 		case JOIN_ANTI:
+			/*
+			 * Look up the join's inner relation.  min_righthand is sufficient
+			 * information because neither SEMI nor ANTI joins permit any
+			 * reassociation into or out of their RHS, so the righthand will
+			 * always be exactly that set of rels.
+			 */
+			inner_rel = find_join_input_rel(root, sjinfo->min_righthand);
+
 			if (!join_is_reversed)
-				selec = eqjoinsel_semi(operator, &vardata1, &vardata2);
+				selec = eqjoinsel_semi(operator, &vardata1, &vardata2,
+									   inner_rel);
 			else
 				selec = eqjoinsel_semi(get_commutator(operator),
-									   &vardata2, &vardata1);
+									   &vardata2, &vardata1,
+									   inner_rel);
 			break;
 		default:
 			/* other values not expected here */
@@ -2161,21 +2178,9 @@ eqjoinsel_inner(Oid operator,
 		 * XXX Can we be smarter if we have an MCV list for just one side? It
 		 * seems that if we assume equal distribution for the other side, we
 		 * end up with the same answer anyway.
-		 *
-		 * An additional hack we use here is to clamp the nd1 and nd2 values
-		 * to not more than what we are estimating the input relation sizes to
-		 * be, providing a crude correction for the selectivity of restriction
-		 * clauses on those relations.	(We don't do that in the other path
-		 * since there we are comparing the nd values to stats for the whole
-		 * relations.)
 		 */
 		double		nullfrac1 = stats1 ? stats1->stanullfrac : 0.0;
 		double		nullfrac2 = stats2 ? stats2->stanullfrac : 0.0;
-
-		if (vardata1->rel)
-			nd1 = Min(nd1, vardata1->rel->rows);
-		if (vardata2->rel)
-			nd2 = Min(nd2, vardata2->rel->rows);
 
 		selec = (1.0 - nullfrac1) * (1.0 - nullfrac2);
 		if (nd1 > nd2)
@@ -2202,7 +2207,8 @@ eqjoinsel_inner(Oid operator,
  */
 static double
 eqjoinsel_semi(Oid operator,
-			   VariableStatData *vardata1, VariableStatData *vardata2)
+			   VariableStatData *vardata1, VariableStatData *vardata2,
+			   RelOptInfo *inner_rel)
 {
 	double		selec;
 	double		nd1;
@@ -2222,6 +2228,25 @@ eqjoinsel_semi(Oid operator,
 
 	nd1 = get_variable_numdistinct(vardata1);
 	nd2 = get_variable_numdistinct(vardata2);
+
+	/*
+	 * We clamp nd2 to be not more than what we estimate the inner relation's
+	 * size to be.  This is intuitively somewhat reasonable since obviously
+	 * there can't be more than that many distinct values coming from the
+	 * inner rel.  The reason for the asymmetry (ie, that we don't clamp nd1
+	 * likewise) is that this is the only pathway by which restriction clauses
+	 * applied to the inner rel will affect the join result size estimate,
+	 * since set_joinrel_size_estimates will multiply SEMI/ANTI selectivity by
+	 * only the outer rel's size.  If we clamped nd1 we'd be double-counting
+	 * the selectivity of outer-rel restrictions.
+	 *
+	 * We can apply this clamping both with respect to the base relation from
+	 * which the join variable comes (if there is just one), and to the
+	 * immediate inner input relation of the current join.
+	 */
+	if (vardata2->rel)
+		nd2 = Min(nd2, vardata2->rel->rows);
+	nd2 = Min(nd2, inner_rel->rows);
 
 	if (HeapTupleIsValid(vardata1->statsTuple))
 	{
@@ -2261,13 +2286,25 @@ eqjoinsel_semi(Oid operator,
 		bool	   *hasmatch1;
 		bool	   *hasmatch2;
 		double		nullfrac1 = stats1->stanullfrac;
-		double		matchfreq1;
+		double		matchfreq1,
+					uncertainfrac,
+					uncertain;
 		int			i,
-					nmatches;
+					nmatches,
+					clamped_nvalues2;
+
+		/*
+		 * The clamping above could have resulted in nd2 being less than
+		 * nvalues2; in which case, we assume that precisely the nd2 most
+		 * common values in the relation will appear in the join input, and so
+		 * compare to only the first nd2 members of the MCV list.  Of course
+		 * this is frequently wrong, but it's the best bet we can make.
+		 */
+		clamped_nvalues2 = Min(nvalues2, nd2);
 
 		fmgr_info(get_opcode(operator), &eqproc);
 		hasmatch1 = (bool *) palloc0(nvalues1 * sizeof(bool));
-		hasmatch2 = (bool *) palloc0(nvalues2 * sizeof(bool));
+		hasmatch2 = (bool *) palloc0(clamped_nvalues2 * sizeof(bool));
 
 		/*
 		 * Note we assume that each MCV will match at most one member of the
@@ -2280,7 +2317,7 @@ eqjoinsel_semi(Oid operator,
 		{
 			int			j;
 
-			for (j = 0; j < nvalues2; j++)
+			for (j = 0; j < clamped_nvalues2; j++)
 			{
 				if (hasmatch2[j])
 					continue;
@@ -2314,18 +2351,26 @@ eqjoinsel_semi(Oid operator,
 		 * the uncertain rows that a fraction nd2/nd1 have join partners. We
 		 * can discount the known-matched MCVs from the distinct-values counts
 		 * before doing the division.
+		 *
+		 * Crude as the above is, it's completely useless if we don't have
+		 * reliable ndistinct values for both sides.  Hence, if either nd1
+		 * or nd2 is default, punt and assume half of the uncertain rows
+		 * have join partners.
 		 */
-		nd1 -= nmatches;
-		nd2 -= nmatches;
-		if (nd1 <= nd2 || nd2 <= 0)
-			selec = Max(matchfreq1, 1.0 - nullfrac1);
-		else
+		if (nd1 != DEFAULT_NUM_DISTINCT && nd2 != DEFAULT_NUM_DISTINCT)
 		{
-			double		uncertain = 1.0 - matchfreq1 - nullfrac1;
-
-			CLAMP_PROBABILITY(uncertain);
-			selec = matchfreq1 + (nd2 / nd1) * uncertain;
+			nd1 -= nmatches;
+			nd2 -= nmatches;
+			if (nd1 <= nd2 || nd2 < 0)
+				uncertainfrac = 1.0;
+			else
+				uncertainfrac = nd2 / nd1;
 		}
+		else
+			uncertainfrac = 0.5;
+		uncertain = 1.0 - matchfreq1 - nullfrac1;
+		CLAMP_PROBABILITY(uncertain);
+		selec = matchfreq1 + uncertainfrac * uncertain;
 	}
 	else
 	{
@@ -2335,15 +2380,15 @@ eqjoinsel_semi(Oid operator,
 		 */
 		double		nullfrac1 = stats1 ? stats1->stanullfrac : 0.0;
 
-		if (vardata1->rel)
-			nd1 = Min(nd1, vardata1->rel->rows);
-		if (vardata2->rel)
-			nd2 = Min(nd2, vardata2->rel->rows);
-
-		if (nd1 <= nd2 || nd2 <= 0)
-			selec = 1.0 - nullfrac1;
+		if (nd1 != DEFAULT_NUM_DISTINCT && nd2 != DEFAULT_NUM_DISTINCT)
+		{
+			if (nd1 <= nd2 || nd2 < 0)
+				selec = 1.0 - nullfrac1;
+			else
+				selec = (nd2 / nd1) * (1.0 - nullfrac1);
+		}
 		else
-			selec = (nd2 / nd1) * (1.0 - nullfrac1);
+			selec = 0.5 * (1.0 - nullfrac1);
 	}
 
 	if (have_mcvs1)
@@ -2942,8 +2987,13 @@ estimate_num_groups(PlannerInfo *root, List *groupExprs, double input_rows)
 	double		numdistinct;
 	ListCell   *l;
 
-	/* We should not be called unless query has GROUP BY (or DISTINCT) */
-	Assert(groupExprs != NIL);
+	/*
+	 * If no grouping columns, there's exactly one group.  (This can't happen
+	 * for normal cases with GROUP BY or DISTINCT, but it is possible for
+	 * corner cases with set operations.)
+	 */
+	if (groupExprs == NIL)
+		return 1.0;
 
 	/*
 	 * Count groups derived from boolean grouping expressions.	For other
@@ -4432,6 +4482,37 @@ get_variable_range(PlannerInfo *root, VariableStatData *vardata, Oid sortop,
 	return have_data;
 }
 
+/*
+ * find_join_input_rel
+ *		Look up the input relation for a join.
+ *
+ * We assume that the input relation's RelOptInfo must have been constructed
+ * already.
+ */
+static RelOptInfo *
+find_join_input_rel(PlannerInfo *root, Relids relids)
+{
+	RelOptInfo *rel = NULL;
+
+	switch (bms_membership(relids))
+	{
+		case BMS_EMPTY_SET:
+			/* should not happen */
+			break;
+		case BMS_SINGLETON:
+			rel = find_base_rel(root, bms_singleton_member(relids));
+			break;
+		case BMS_MULTIPLE:
+			rel = find_join_rel(root, relids);
+			break;
+	}
+
+	if (rel == NULL)
+		elog(ERROR, "could not find RelOptInfo for given relids");
+
+	return rel;
+}
+
 
 /*-------------------------------------------------------------------------
  *
@@ -4456,9 +4537,9 @@ get_variable_range(PlannerInfo *root, VariableStatData *vardata, Oid sortop,
  *
  * *prefix is set to a palloc'd prefix string (in the form of a Const node),
  *	or to NULL if no fixed prefix exists for the pattern.
- * *rest is set to a palloc'd Const representing the remainder of the pattern
- *	after the portion describing the fixed prefix.
- * Each of these has the same type (TEXT or BYTEA) as the given pattern Const.
+ * If rest_selec is not NULL, *rest_selec is set to an estimate of the
+ *	selectivity of the remainder of the pattern (without any fixed prefix).
+ * The prefix Const has the same type (TEXT or BYTEA) as the input pattern.
  *
  * The return value distinguishes no fixed prefix, a partial prefix,
  * or an exact-match-only pattern.
@@ -4466,12 +4547,11 @@ get_variable_range(PlannerInfo *root, VariableStatData *vardata, Oid sortop,
 
 static Pattern_Prefix_Status
 like_fixed_prefix(Const *patt_const, bool case_insensitive,
-				  Const **prefix_const, Const **rest_const)
+				  Const **prefix_const, Selectivity *rest_selec)
 {
 	char	   *match;
 	char	   *patt;
 	int			pattlen;
-	char	   *rest;
 	Oid			typeid = patt_const->consttype;
 	int			pos,
 				match_pos;
@@ -4539,18 +4619,15 @@ like_fixed_prefix(Const *patt_const, bool case_insensitive,
 	}
 
 	match[match_pos] = '\0';
-	rest = &patt[pos];
 
 	if (typeid != BYTEAOID)
-	{
 		*prefix_const = string_to_const(match, typeid);
-		*rest_const = string_to_const(rest, typeid);
-	}
 	else
-	{
 		*prefix_const = string_to_bytea_const(match, match_pos);
-		*rest_const = string_to_bytea_const(rest, pattlen - pos);
-	}
+
+	if (rest_selec != NULL)
+		*rest_selec = like_selectivity(&patt[pos], pattlen - pos,
+									   case_insensitive);
 
 	pfree(patt);
 	pfree(match);
@@ -4567,19 +4644,11 @@ like_fixed_prefix(Const *patt_const, bool case_insensitive,
 
 static Pattern_Prefix_Status
 regex_fixed_prefix(Const *patt_const, bool case_insensitive,
-				   Const **prefix_const, Const **rest_const)
+				   Const **prefix_const, Selectivity *rest_selec)
 {
-	char	   *match;
-	int			pos,
-				match_pos,
-				prev_pos,
-				prev_match_pos;
-	bool		have_leading_paren;
-	char	   *patt;
-	char	   *rest;
 	Oid			typeid = patt_const->consttype;
-	bool		is_basic = regex_flavor_is_basic();
-	bool		is_multibyte = (pg_database_encoding_max_length() > 1);
+	char	   *prefix;
+	bool		exact;
 
 	/*
 	 * Should be unnecessary, there are no bytea regex operators defined. As
@@ -4591,197 +4660,75 @@ regex_fixed_prefix(Const *patt_const, bool case_insensitive,
 				(errcode(ERRCODE_FEATURE_NOT_SUPPORTED),
 		 errmsg("regular-expression matching not supported on type bytea")));
 
-	/* the right-hand const is type text for all of these */
-	patt = TextDatumGetCString(patt_const->constvalue);
+	/* Use the regexp machinery to extract the prefix, if any */
+	prefix = regexp_fixed_prefix(DatumGetTextPP(patt_const->constvalue),
+								 case_insensitive,
+								 &exact);
 
-	/*
-	 * Check for ARE director prefix.  It's worth our trouble to recognize
-	 * this because similar_escape() uses it.
-	 */
-	pos = 0;
-	if (strncmp(patt, "***:", 4) == 0)
+	if (prefix == NULL)
 	{
-		pos = 4;
-		is_basic = false;
-	}
-
-	/* Pattern must be anchored left */
-	if (patt[pos] != '^')
-	{
-		rest = patt;
-
 		*prefix_const = NULL;
-		*rest_const = string_to_const(rest, typeid);
 
-		return Pattern_Prefix_None;
-	}
-	pos++;
+		if (rest_selec != NULL)
+		{
+			char   *patt = TextDatumGetCString(patt_const->constvalue);
 
-	/*
-	 * If '|' is present in pattern, then there may be multiple alternatives
-	 * for the start of the string.  (There are cases where this isn't so, for
-	 * instance if the '|' is inside parens, but detecting that reliably is
-	 * too hard.)
-	 */
-	if (strchr(patt + pos, '|') != NULL)
-	{
-		rest = patt;
-
-		*prefix_const = NULL;
-		*rest_const = string_to_const(rest, typeid);
+			*rest_selec = regex_selectivity(patt, strlen(patt),
+											case_insensitive,
+											0);
+			pfree(patt);
+		}
 
 		return Pattern_Prefix_None;
 	}
 
-	/* OK, allocate space for pattern */
-	match = palloc(strlen(patt) + 1);
-	prev_match_pos = match_pos = 0;
+	*prefix_const = string_to_const(prefix, typeid);
 
-	/*
-	 * We special-case the syntax '^(...)$' because psql uses it.  But beware:
-	 * in BRE mode these parentheses are just ordinary characters.	Also,
-	 * sequences beginning "(?" are not what they seem, unless they're "(?:".
-	 * (We should recognize that, too, because of similar_escape().)
-	 *
-	 * Note: it's a bit bogus to be depending on the current regex_flavor
-	 * setting here, because the setting could change before the pattern is
-	 * used.  We minimize the risk by trusting the flavor as little as we can,
-	 * but perhaps it would be a good idea to get rid of the "basic" setting.
-	 */
-	have_leading_paren = false;
-	if (patt[pos] == '(' && !is_basic &&
-		(patt[pos + 1] != '?' || patt[pos + 2] == ':'))
+	if (rest_selec != NULL)
 	{
-		have_leading_paren = true;
-		pos += (patt[pos + 1] != '?' ? 1 : 3);
+		if (exact)
+		{
+			/* Exact match, so there's no additional selectivity */
+			*rest_selec = 1.0;
+		}
+		else
+		{
+			char   *patt = TextDatumGetCString(patt_const->constvalue);
+
+			*rest_selec = regex_selectivity(patt, strlen(patt),
+											case_insensitive,
+											strlen(prefix));
+			pfree(patt);
+		}
 	}
 
-	/* Scan remainder of pattern */
-	prev_pos = pos;
-	while (patt[pos])
-	{
-		int			len;
+	pfree(prefix);
 
-		/*
-		 * Check for characters that indicate multiple possible matches here.
-		 * Also, drop out at ')' or '$' so the termination test works right.
-		 */
-		if (patt[pos] == '.' ||
-			patt[pos] == '(' ||
-			patt[pos] == ')' ||
-			patt[pos] == '[' ||
-			patt[pos] == '^' ||
-			patt[pos] == '$')
-			break;
-
-		/*
-		 * XXX In multibyte character sets, we can't trust isalpha, so assume
-		 * any multibyte char is potentially case-varying.
-		 */
-		if (case_insensitive)
-		{
-			if (is_multibyte && (unsigned char) patt[pos] >= 0x80)
-				break;
-			if (isalpha((unsigned char) patt[pos]))
-				break;
-		}
-
-		/*
-		 * Check for quantifiers.  Except for +, this means the preceding
-		 * character is optional, so we must remove it from the prefix too!
-		 * Note: in BREs, \{ is a quantifier.
-		 */
-		if (patt[pos] == '*' ||
-			patt[pos] == '?' ||
-			patt[pos] == '{' ||
-			(patt[pos] == '\\' && patt[pos + 1] == '{'))
-		{
-			match_pos = prev_match_pos;
-			pos = prev_pos;
-			break;
-		}
-		if (patt[pos] == '+')
-		{
-			pos = prev_pos;
-			break;
-		}
-
-		/*
-		 * Normally, backslash quotes the next character.  But in AREs,
-		 * backslash followed by alphanumeric is an escape, not a quoted
-		 * character.  Must treat it as having multiple possible matches. In
-		 * BREs, \( is a parenthesis, so don't trust that either. Note: since
-		 * only ASCII alphanumerics are escapes, we don't have to be paranoid
-		 * about multibyte here.
-		 */
-		if (patt[pos] == '\\')
-		{
-			if (isalnum((unsigned char) patt[pos + 1]) || patt[pos + 1] == '(')
-				break;
-			pos++;
-			if (patt[pos] == '\0')
-				break;
-		}
-		/* save position in case we need to back up on next loop cycle */
-		prev_match_pos = match_pos;
-		prev_pos = pos;
-		/* must use encoding-aware processing here */
-		len = pg_mblen(&patt[pos]);
-		memcpy(&match[match_pos], &patt[pos], len);
-		match_pos += len;
-		pos += len;
-	}
-
-	match[match_pos] = '\0';
-	rest = &patt[pos];
-
-	if (have_leading_paren && patt[pos] == ')')
-		pos++;
-
-	if (patt[pos] == '$' && patt[pos + 1] == '\0')
-	{
-		rest = &patt[pos + 1];
-
-		*prefix_const = string_to_const(match, typeid);
-		*rest_const = string_to_const(rest, typeid);
-
-		pfree(patt);
-		pfree(match);
-
+	if (exact)
 		return Pattern_Prefix_Exact;	/* pattern specifies exact match */
-	}
-
-	*prefix_const = string_to_const(match, typeid);
-	*rest_const = string_to_const(rest, typeid);
-
-	pfree(patt);
-	pfree(match);
-
-	if (match_pos > 0)
+	else
 		return Pattern_Prefix_Partial;
-
-	return Pattern_Prefix_None;
 }
 
 Pattern_Prefix_Status
 pattern_fixed_prefix(Const *patt, Pattern_Type ptype,
-					 Const **prefix, Const **rest)
+					 Const **prefix, Selectivity *rest_selec)
 {
 	Pattern_Prefix_Status result;
 
 	switch (ptype)
 	{
 		case Pattern_Type_Like:
-			result = like_fixed_prefix(patt, false, prefix, rest);
+			result = like_fixed_prefix(patt, false, prefix, rest_selec);
 			break;
 		case Pattern_Type_Like_IC:
-			result = like_fixed_prefix(patt, true, prefix, rest);
+			result = like_fixed_prefix(patt, true, prefix, rest_selec);
 			break;
 		case Pattern_Type_Regex:
-			result = regex_fixed_prefix(patt, false, prefix, rest);
+			result = regex_fixed_prefix(patt, false, prefix, rest_selec);
 			break;
 		case Pattern_Type_Regex_IC:
-			result = regex_fixed_prefix(patt, true, prefix, rest);
+			result = regex_fixed_prefix(patt, true, prefix, rest_selec);
 			break;
 		default:
 			elog(ERROR, "unrecognized ptype: %d", (int) ptype);
@@ -4896,7 +4843,8 @@ prefix_selectivity(VariableStatData *vardata,
 
 /*
  * Estimate the selectivity of a pattern of the specified type.
- * Note that any fixed prefix of the pattern will have been removed already.
+ * Note that any fixed prefix of the pattern will have been removed already,
+ * so actually we may be looking at just a fragment of the pattern.
  *
  * For now, we use a very simplistic approach: fixed characters reduce the
  * selectivity a good deal, character ranges reduce it a little,
@@ -4910,37 +4858,10 @@ prefix_selectivity(VariableStatData *vardata,
 #define PARTIAL_WILDCARD_SEL 2.0
 
 static Selectivity
-like_selectivity(Const *patt_const, bool case_insensitive)
+like_selectivity(const char *patt, int pattlen, bool case_insensitive)
 {
 	Selectivity sel = 1.0;
 	int			pos;
-	Oid			typeid = patt_const->consttype;
-	char	   *patt;
-	int			pattlen;
-
-	/* the right-hand const is type text or bytea */
-	Assert(typeid == BYTEAOID || typeid == TEXTOID);
-
-	if (typeid == BYTEAOID && case_insensitive)
-		ereport(ERROR,
-				(errcode(ERRCODE_FEATURE_NOT_SUPPORTED),
-		   errmsg("case insensitive matching not supported on type bytea")));
-
-	if (typeid != BYTEAOID)
-	{
-		patt = TextDatumGetCString(patt_const->constvalue);
-		pattlen = strlen(patt);
-	}
-	else
-	{
-		bytea	   *bstr = DatumGetByteaP(patt_const->constvalue);
-
-		pattlen = VARSIZE(bstr) - VARHDRSZ;
-		patt = (char *) palloc(pattlen);
-		memcpy(patt, VARDATA(bstr), pattlen);
-		if ((Pointer) bstr != DatumGetPointer(patt_const->constvalue))
-			pfree(bstr);
-	}
 
 	/* Skip any leading wildcard; it's already factored into initial sel */
 	for (pos = 0; pos < pattlen; pos++)
@@ -4970,13 +4891,11 @@ like_selectivity(Const *patt_const, bool case_insensitive)
 	/* Could get sel > 1 if multiple wildcards */
 	if (sel > 1.0)
 		sel = 1.0;
-
-	pfree(patt);
 	return sel;
 }
 
 static Selectivity
-regex_selectivity_sub(char *patt, int pattlen, bool case_insensitive)
+regex_selectivity_sub(const char *patt, int pattlen, bool case_insensitive)
 {
 	Selectivity sel = 1.0;
 	int			paren_depth = 0;
@@ -5069,26 +4988,10 @@ regex_selectivity_sub(char *patt, int pattlen, bool case_insensitive)
 }
 
 static Selectivity
-regex_selectivity(Const *patt_const, bool case_insensitive)
+regex_selectivity(const char *patt, int pattlen, bool case_insensitive,
+				  int fixed_prefix_len)
 {
 	Selectivity sel;
-	char	   *patt;
-	int			pattlen;
-	Oid			typeid = patt_const->consttype;
-
-	/*
-	 * Should be unnecessary, there are no bytea regex operators defined. As
-	 * such, it should be noted that the rest of this function has *not* been
-	 * made safe for binary (possibly NULL containing) strings.
-	 */
-	if (typeid == BYTEAOID)
-		ereport(ERROR,
-				(errcode(ERRCODE_FEATURE_NOT_SUPPORTED),
-		 errmsg("regular-expression matching not supported on type bytea")));
-
-	/* the right-hand const is type text for all of these */
-	patt = TextDatumGetCString(patt_const->constvalue);
-	pattlen = strlen(patt);
 
 	/* If patt doesn't end with $, consider it to have a trailing wildcard */
 	if (pattlen > 0 && patt[pattlen - 1] == '$' &&
@@ -5102,37 +5005,15 @@ regex_selectivity(Const *patt_const, bool case_insensitive)
 		/* no trailing $ */
 		sel = regex_selectivity_sub(patt, pattlen, case_insensitive);
 		sel *= FULL_WILDCARD_SEL;
-		if (sel > 1.0)
-			sel = 1.0;
 	}
+
+	/* If there's a fixed prefix, discount its selectivity */
+	if (fixed_prefix_len > 0)
+		sel /= pow(FIXED_CHAR_SEL, fixed_prefix_len);
+
+	/* Make sure result stays in range */
+	CLAMP_PROBABILITY(sel);
 	return sel;
-}
-
-static Selectivity
-pattern_selectivity(Const *patt, Pattern_Type ptype)
-{
-	Selectivity result;
-
-	switch (ptype)
-	{
-		case Pattern_Type_Like:
-			result = like_selectivity(patt, false);
-			break;
-		case Pattern_Type_Like_IC:
-			result = like_selectivity(patt, true);
-			break;
-		case Pattern_Type_Regex:
-			result = regex_selectivity(patt, false);
-			break;
-		case Pattern_Type_Regex_IC:
-			result = regex_selectivity(patt, true);
-			break;
-		default:
-			elog(ERROR, "unrecognized ptype: %d", (int) ptype);
-			result = 1.0;		/* keep compiler quiet */
-			break;
-	}
-	return result;
 }
 
 

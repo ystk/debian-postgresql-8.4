@@ -17,9 +17,786 @@
    review, so each item is truly a community effort.
      __________________________________________________________________
 
+                               Release 8.4.13
+
+     Release Date: 2012-08-17
+
+   This release contains a variety of fixes from 8.4.12. For information
+   about new features in the 8.4 major release, see the Section called
+   Release 8.4.
+     __________________________________________________________________
+
+Migration to Version 8.4.13
+
+   A dump/restore is not required for those running 8.4.X.
+
+   However, if you are upgrading from a version earlier than 8.4.10, see
+   the release notes for 8.4.10.
+     __________________________________________________________________
+
+Changes
+
+     * Prevent access to external files/URLs via XML entity references
+       (Noah Misch, Tom Lane)
+       xml_parse() would attempt to fetch external files or URLs as needed
+       to resolve DTD and entity references in an XML value, thus allowing
+       unprivileged database users to attempt to fetch data with the
+       privileges of the database server. While the external data wouldn't
+       get returned directly to the user, portions of it could be exposed
+       in error messages if the data didn't parse as valid XML; and in any
+       case the mere ability to check existence of a file might be useful
+       to an attacker. (CVE-2012-3489)
+     * Prevent access to external files/URLs via "contrib/xml2"'s
+       xslt_process() (Peter Eisentraut)
+       libxslt offers the ability to read and write both files and URLs
+       through stylesheet commands, thus allowing unprivileged database
+       users to both read and write data with the privileges of the
+       database server. Disable that through proper use of libxslt's
+       security options. (CVE-2012-3488)
+       Also, remove xslt_process()'s ability to fetch documents and
+       stylesheets from external files/URLs. While this was a documented
+       "feature", it was long regarded as a bad idea. The fix for
+       CVE-2012-3489 broke that capability, and rather than expend effort
+       on trying to fix it, we're just going to summarily remove it.
+     * Prevent too-early recycling of btree index pages (Noah Misch)
+       When we allowed read-only transactions to skip assigning XIDs, we
+       introduced the possibility that a deleted btree page could be
+       recycled while a read-only transaction was still in flight to it.
+       This would result in incorrect index search results. The
+       probability of such an error occurring in the field seems very low
+       because of the timing requirements, but nonetheless it should be
+       fixed.
+     * Fix crash-safety bug with newly-created-or-reset sequences (Tom
+       Lane)
+       If "ALTER SEQUENCE" was executed on a freshly created or reset
+       sequence, and then precisely one nextval() call was made on it, and
+       then the server crashed, WAL replay would restore the sequence to a
+       state in which it appeared that no nextval() had been done, thus
+       allowing the first sequence value to be returned again by the next
+       nextval() call. In particular this could manifest for serial
+       columns, since creation of a serial column's sequence includes an
+       "ALTER SEQUENCE OWNED BY" step.
+     * Ensure the "backup_label" file is fsync'd after pg_start_backup()
+       (Dave Kerr)
+     * Back-patch 9.1 improvement to compress the fsync request queue
+       (Robert Haas)
+       This improves performance during checkpoints. The 9.1 change has
+       now seen enough field testing to seem safe to back-patch.
+     * Only allow autovacuum to be auto-canceled by a directly blocked
+       process (Tom Lane)
+       The original coding could allow inconsistent behavior in some
+       cases; in particular, an autovacuum could get canceled after less
+       than deadlock_timeout grace period.
+     * Improve logging of autovacuum cancels (Robert Haas)
+     * Fix log collector so that log_truncate_on_rotation works during the
+       very first log rotation after server start (Tom Lane)
+     * Fix WITH attached to a nested set operation
+       (UNION/INTERSECT/EXCEPT) (Tom Lane)
+     * Ensure that a whole-row reference to a subquery doesn't include any
+       extra GROUP BY or ORDER BY columns (Tom Lane)
+     * Disallow copying whole-row references in CHECK constraints and
+       index definitions during "CREATE TABLE" (Tom Lane)
+       This situation can arise in "CREATE TABLE" with LIKE or INHERITS.
+       The copied whole-row variable was incorrectly labeled with the row
+       type of the original table not the new one. Rejecting the case
+       seems reasonable for LIKE, since the row types might well diverge
+       later. For INHERITS we should ideally allow it, with an implicit
+       coercion to the parent table's row type; but that will require more
+       work than seems safe to back-patch.
+     * Fix memory leak in ARRAY(SELECT ...) subqueries (Heikki
+       Linnakangas, Tom Lane)
+     * Fix extraction of common prefixes from regular expressions (Tom
+       Lane)
+       The code could get confused by quantified parenthesized
+       subexpressions, such as ^(foo)?bar. This would lead to incorrect
+       index optimization of searches for such patterns.
+     * Fix bugs with parsing signed "hh":"mm" and "hh":"mm":"ss" fields in
+       interval constants (Amit Kapila, Tom Lane)
+     * Report errors properly in "contrib/xml2"'s xslt_process() (Tom
+       Lane)
+     * Update time zone data files to tzdata release 2012e for DST law
+       changes in Morocco and Tokelau
+     __________________________________________________________________
+
+                               Release 8.4.12
+
+     Release Date: 2012-06-04
+
+   This release contains a variety of fixes from 8.4.11. For information
+   about new features in the 8.4 major release, see the Section called
+   Release 8.4.
+     __________________________________________________________________
+
+Migration to Version 8.4.12
+
+   A dump/restore is not required for those running 8.4.X.
+
+   However, if you are upgrading from a version earlier than 8.4.10, see
+   the release notes for 8.4.10.
+     __________________________________________________________________
+
+Changes
+
+     * Fix incorrect password transformation in "contrib/pgcrypto"'s DES
+       crypt() function (Solar Designer)
+       If a password string contained the byte value 0x80, the remainder
+       of the password was ignored, causing the password to be much weaker
+       than it appeared. With this fix, the rest of the string is properly
+       included in the DES hash. Any stored password values that are
+       affected by this bug will thus no longer match, so the stored
+       values may need to be updated. (CVE-2012-2143)
+     * Ignore SECURITY DEFINER and SET attributes for a procedural
+       language's call handler (Tom Lane)
+       Applying such attributes to a call handler could crash the server.
+       (CVE-2012-2655)
+     * Allow numeric timezone offsets in timestamp input to be up to 16
+       hours away from UTC (Tom Lane)
+       Some historical time zones have offsets larger than 15 hours, the
+       previous limit. This could result in dumped data values being
+       rejected during reload.
+     * Fix timestamp conversion to cope when the given time is exactly the
+       last DST transition time for the current timezone (Tom Lane)
+       This oversight has been there a long time, but was not noticed
+       previously because most DST-using zones are presumed to have an
+       indefinite sequence of future DST transitions.
+     * Fix text to name and char to name casts to perform string
+       truncation correctly in multibyte encodings (Karl Schnaitter)
+     * Fix memory copying bug in to_tsquery() (Heikki Linnakangas)
+     * Fix planner's handling of outer PlaceHolderVars within subqueries
+       (Tom Lane)
+       This bug concerns sub-SELECTs that reference variables coming from
+       the nullable side of an outer join of the surrounding query. In
+       9.1, queries affected by this bug would fail with "ERROR:
+       Upper-level PlaceHolderVar found where not expected". But in 9.0
+       and 8.4, you'd silently get possibly-wrong answers, since the value
+       transmitted into the subquery wouldn't go to null when it should.
+     * Fix slow session startup when pg_attribute is very large (Tom Lane)
+       If pg_attribute exceeds one-fourth of shared_buffers, cache
+       rebuilding code that is sometimes needed during session start would
+       trigger the synchronized-scan logic, causing it to take many times
+       longer than normal. The problem was particularly acute if many new
+       sessions were starting at once.
+     * Ensure sequential scans check for query cancel reasonably often
+       (Merlin Moncure)
+       A scan encountering many consecutive pages that contain no live
+       tuples would not respond to interrupts meanwhile.
+     * Ensure the Windows implementation of PGSemaphoreLock() clears
+       ImmediateInterruptOK before returning (Tom Lane)
+       This oversight meant that a query-cancel interrupt received later
+       in the same query could be accepted at an unsafe time, with
+       unpredictable but not good consequences.
+     * Show whole-row variables safely when printing views or rules (Abbas
+       Butt, Tom Lane)
+       Corner cases involving ambiguous names (that is, the name could be
+       either a table or column name of the query) were printed in an
+       ambiguous way, risking that the view or rule would be interpreted
+       differently after dump and reload. Avoid the ambiguous case by
+       attaching a no-op cast.
+     * Fix "COPY FROM" to properly handle null marker strings that
+       correspond to invalid encoding (Tom Lane)
+       A null marker string such as E'\\0' should work, and did work in
+       the past, but the case got broken in 8.4.
+     * Ensure autovacuum worker processes perform stack depth checking
+       properly (Heikki Linnakangas)
+       Previously, infinite recursion in a function invoked by
+       auto-"ANALYZE" could crash worker processes.
+     * Fix logging collector to not lose log coherency under high load
+       (Andrew Dunstan)
+       The collector previously could fail to reassemble large messages if
+       it got too busy.
+     * Fix logging collector to ensure it will restart file rotation after
+       receiving SIGHUP (Tom Lane)
+     * Fix WAL replay logic for GIN indexes to not fail if the index was
+       subsequently dropped (Tom Lane)
+     * Fix memory leak in PL/pgSQL's "RETURN NEXT" command (Joe Conway)
+     * Fix PL/pgSQL's "GET DIAGNOSTICS" command when the target is the
+       function's first variable (Tom Lane)
+     * Fix potential access off the end of memory in psql's expanded
+       display ("\x") mode (Peter Eisentraut)
+     * Fix several performance problems in pg_dump when the database
+       contains many objects (Jeff Janes, Tom Lane)
+       pg_dump could get very slow if the database contained many schemas,
+       or if many objects are in dependency loops, or if there are many
+       owned sequences.
+     * Fix "contrib/dblink"'s dblink_exec() to not leak temporary database
+       connections upon error (Tom Lane)
+     * Fix "contrib/dblink" to report the correct connection name in error
+       messages (Kyotaro Horiguchi)
+     * Update time zone data files to tzdata release 2012c for DST law
+       changes in Antarctica, Armenia, Chile, Cuba, Falkland Islands,
+       Gaza, Haiti, Hebron, Morocco, Syria, and Tokelau Islands; also
+       historical corrections for Canada.
+     __________________________________________________________________
+
+                               Release 8.4.11
+
+     Release Date: 2012-02-27
+
+   This release contains a variety of fixes from 8.4.10. For information
+   about new features in the 8.4 major release, see the Section called
+   Release 8.4.
+     __________________________________________________________________
+
+Migration to Version 8.4.11
+
+   A dump/restore is not required for those running 8.4.X.
+
+   However, if you are upgrading from a version earlier than 8.4.10, see
+   the release notes for 8.4.10.
+     __________________________________________________________________
+
+Changes
+
+     * Require execute permission on the trigger function for "CREATE
+       TRIGGER" (Robert Haas)
+       This missing check could allow another user to execute a trigger
+       function with forged input data, by installing it on a table he
+       owns. This is only of significance for trigger functions marked
+       SECURITY DEFINER, since otherwise trigger functions run as the
+       table owner anyway. (CVE-2012-0866)
+     * Remove arbitrary limitation on length of common name in SSL
+       certificates (Heikki Linnakangas)
+       Both libpq and the server truncated the common name extracted from
+       an SSL certificate at 32 bytes. Normally this would cause nothing
+       worse than an unexpected verification failure, but there are some
+       rather-implausible scenarios in which it might allow one
+       certificate holder to impersonate another. The victim would have to
+       have a common name exactly 32 bytes long, and the attacker would
+       have to persuade a trusted CA to issue a certificate in which the
+       common name has that string as a prefix. Impersonating a server
+       would also require some additional exploit to redirect client
+       connections. (CVE-2012-0867)
+     * Convert newlines to spaces in names written in pg_dump comments
+       (Robert Haas)
+       pg_dump was incautious about sanitizing object names that are
+       emitted within SQL comments in its output script. A name containing
+       a newline would at least render the script syntactically incorrect.
+       Maliciously crafted object names could present a SQL injection risk
+       when the script is reloaded. (CVE-2012-0868)
+     * Fix btree index corruption from insertions concurrent with
+       vacuuming (Tom Lane)
+       An index page split caused by an insertion could sometimes cause a
+       concurrently-running "VACUUM" to miss removing index entries that
+       it should remove. After the corresponding table rows are removed,
+       the dangling index entries would cause errors (such as "could not
+       read block N in file ...") or worse, silently wrong query results
+       after unrelated rows are re-inserted at the now-free table
+       locations. This bug has been present since release 8.2, but occurs
+       so infrequently that it was not diagnosed until now. If you have
+       reason to suspect that it has happened in your database, reindexing
+       the affected index will fix things.
+     * Update per-column permissions, not only per-table permissions, when
+       changing table owner (Tom Lane)
+       Failure to do this meant that any previously granted column
+       permissions were still shown as having been granted by the old
+       owner. This meant that neither the new owner nor a superuser could
+       revoke the now-untraceable-to-table-owner permissions.
+     * Allow non-existent values for some settings in "ALTER USER/DATABASE
+       SET" (Heikki Linnakangas)
+       Allow default_text_search_config, default_tablespace, and
+       temp_tablespaces to be set to names that are not known. This is
+       because they might be known in another database where the setting
+       is intended to be used, or for the tablespace cases because the
+       tablespace might not be created yet. The same issue was previously
+       recognized for search_path, and these settings now act like that
+       one.
+     * Avoid crashing when we have problems deleting table files
+       post-commit (Tom Lane)
+       Dropping a table should lead to deleting the underlying disk files
+       only after the transaction commits. In event of failure then (for
+       instance, because of wrong file permissions) the code is supposed
+       to just emit a warning message and go on, since it's too late to
+       abort the transaction. This logic got broken as of release 8.4,
+       causing such situations to result in a PANIC and an unrestartable
+       database.
+     * Track the OID counter correctly during WAL replay, even when it
+       wraps around (Tom Lane)
+       Previously the OID counter would remain stuck at a high value until
+       the system exited replay mode. The practical consequences of that
+       are usually nil, but there are scenarios wherein a standby server
+       that's been promoted to master might take a long time to advance
+       the OID counter to a reasonable value once values are needed.
+     * Fix regular expression back-references with * attached (Tom Lane)
+       Rather than enforcing an exact string match, the code would
+       effectively accept any string that satisfies the pattern
+       sub-expression referenced by the back-reference symbol.
+       A similar problem still afflicts back-references that are embedded
+       in a larger quantified expression, rather than being the immediate
+       subject of the quantifier. This will be addressed in a future
+       PostgreSQL release.
+     * Fix recently-introduced memory leak in processing of inet/cidr
+       values (Heikki Linnakangas)
+       A patch in the December 2011 releases of PostgreSQL caused memory
+       leakage in these operations, which could be significant in
+       scenarios such as building a btree index on such a column.
+     * Fix dangling pointer after "CREATE TABLE AS"/"SELECT INTO" in a
+       SQL-language function (Tom Lane)
+       In most cases this only led to an assertion failure in
+       assert-enabled builds, but worse consequences seem possible.
+     * Avoid double close of file handle in syslogger on Windows (MauMau)
+       Ordinarily this error was invisible, but it would cause an
+       exception when running on a debug version of Windows.
+     * Fix I/O-conversion-related memory leaks in plpgsql (Andres Freund,
+       Jan Urbanski, Tom Lane)
+       Certain operations would leak memory until the end of the current
+       function.
+     * Improve pg_dump's handling of inherited table columns (Tom Lane)
+       pg_dump mishandled situations where a child column has a different
+       default expression than its parent column. If the default is
+       textually identical to the parent's default, but not actually the
+       same (for instance, because of schema search path differences) it
+       would not be recognized as different, so that after dump and
+       restore the child would be allowed to inherit the parent's default.
+       Child columns that are NOT NULL where their parent is not could
+       also be restored subtly incorrectly.
+     * Fix pg_restore's direct-to-database mode for INSERT-style table
+       data (Tom Lane)
+       Direct-to-database restores from archive files made with
+       "--inserts" or "--column-inserts" options fail when using
+       pg_restore from a release dated September or December 2011, as a
+       result of an oversight in a fix for another problem. The archive
+       file itself is not at fault, and text-mode output is okay.
+     * Allow AT option in ecpg DEALLOCATE statements (Michael Meskes)
+       The infrastructure to support this has been there for awhile, but
+       through an oversight there was still an error check rejecting the
+       case.
+     * Fix error in "contrib/intarray"'s int[] & int[] operator (Guillaume
+       Lelarge)
+       If the smallest integer the two input arrays have in common is 1,
+       and there are smaller values in either array, then 1 would be
+       incorrectly omitted from the result.
+     * Fix error detection in "contrib/pgcrypto"'s encrypt_iv() and
+       decrypt_iv() (Marko Kreen)
+       These functions failed to report certain types of invalid-input
+       errors, and would instead return random garbage values for
+       incorrect input.
+     * Fix one-byte buffer overrun in "contrib/test_parser" (Paul Guyot)
+       The code would try to read one more byte than it should, which
+       would crash in corner cases. Since "contrib/test_parser" is only
+       example code, this is not a security issue in itself, but bad
+       example code is still bad.
+     * Use __sync_lock_test_and_set() for spinlocks on ARM, if available
+       (Martin Pitt)
+       This function replaces our previous use of the SWPB instruction,
+       which is deprecated and not available on ARMv6 and later. Reports
+       suggest that the old code doesn't fail in an obvious way on recent
+       ARM boards, but simply doesn't interlock concurrent accesses,
+       leading to bizarre failures in multiprocess operation.
+     * Use "-fexcess-precision=standard" option when building with gcc
+       versions that accept it (Andrew Dunstan)
+       This prevents assorted scenarios wherein recent versions of gcc
+       will produce creative results.
+     * Allow use of threaded Python on FreeBSD (Chris Rees)
+       Our configure script previously believed that this combination
+       wouldn't work; but FreeBSD fixed the problem, so remove that error
+       check.
+     __________________________________________________________________
+
+                               Release 8.4.10
+
+     Release Date: 2011-12-05
+
+   This release contains a variety of fixes from 8.4.9. For information
+   about new features in the 8.4 major release, see the Section called
+   Release 8.4.
+     __________________________________________________________________
+
+Migration to Version 8.4.10
+
+   A dump/restore is not required for those running 8.4.X.
+
+   However, a longstanding error was discovered in the definition of the
+   information_schema.referential_constraints view. If you rely on correct
+   results from that view, you should replace its definition as explained
+   in the first changelog item below.
+
+   Also, if you are upgrading from a version earlier than 8.4.8, see the
+   release notes for 8.4.8.
+     __________________________________________________________________
+
+Changes
+
+     * Fix bugs in information_schema.referential_constraints view (Tom
+       Lane)
+       This view was being insufficiently careful about matching the
+       foreign-key constraint to the depended-on primary or unique key
+       constraint. That could result in failure to show a foreign key
+       constraint at all, or showing it multiple times, or claiming that
+       it depends on a different constraint than the one it really does.
+       Since the view definition is installed by initdb, merely upgrading
+       will not fix the problem. If you need to fix this in an existing
+       installation, you can (as a superuser) drop the information_schema
+       schema then re-create it by sourcing
+       "SHAREDIR/information_schema.sql". (Run pg_config --sharedir if
+       you're uncertain where "SHAREDIR" is.) This must be repeated in
+       each database to be fixed.
+     * Fix incorrect replay of WAL records for GIN index updates (Tom
+       Lane)
+       This could result in transiently failing to find index entries
+       after a crash, or on a hot-standby server. The problem would be
+       repaired by the next "VACUUM" of the index, however.
+     * Fix TOAST-related data corruption during CREATE TABLE dest AS
+       SELECT * FROM src or INSERT INTO dest SELECT * FROM src (Tom Lane)
+       If a table has been modified by "ALTER TABLE ADD COLUMN", attempts
+       to copy its data verbatim to another table could produce corrupt
+       results in certain corner cases. The problem can only manifest in
+       this precise form in 8.4 and later, but we patched earlier versions
+       as well in case there are other code paths that could trigger the
+       same bug.
+     * Fix race condition during toast table access from stale syscache
+       entries (Tom Lane)
+       The typical symptom was transient errors like "missing chunk number
+       0 for toast value NNNNN in pg_toast_2619", where the cited toast
+       table would always belong to a system catalog.
+     * Track dependencies of functions on items used in parameter default
+       expressions (Tom Lane)
+       Previously, a referenced object could be dropped without having
+       dropped or modified the function, leading to misbehavior when the
+       function was used. Note that merely installing this update will not
+       fix the missing dependency entries; to do that, you'd need to
+       "CREATE OR REPLACE" each such function afterwards. If you have
+       functions whose defaults depend on non-built-in objects, doing so
+       is recommended.
+     * Allow inlining of set-returning SQL functions with multiple OUT
+       parameters (Tom Lane)
+     * Make DatumGetInetP() unpack inet datums that have a 1-byte header,
+       and add a new macro, DatumGetInetPP(), that does not (Heikki
+       Linnakangas)
+       This change affects no core code, but might prevent crashes in
+       add-on code that expects DatumGetInetP() to produce an unpacked
+       datum as per usual convention.
+     * Improve locale support in money type's input and output (Tom Lane)
+       Aside from not supporting all standard lc_monetary formatting
+       options, the input and output functions were inconsistent, meaning
+       there were locales in which dumped money values could not be
+       re-read.
+     * Don't let transform_null_equals affect CASE foo WHEN NULL ...
+       constructs (Heikki Linnakangas)
+       transform_null_equals is only supposed to affect foo = NULL
+       expressions written directly by the user, not equality checks
+       generated internally by this form of CASE.
+     * Change foreign-key trigger creation order to better support
+       self-referential foreign keys (Tom Lane)
+       For a cascading foreign key that references its own table, a row
+       update will fire both the ON UPDATE trigger and the CHECK trigger
+       as one event. The ON UPDATE trigger must execute first, else the
+       CHECK will check a non-final state of the row and possibly throw an
+       inappropriate error. However, the firing order of these triggers is
+       determined by their names, which generally sort in creation order
+       since the triggers have auto-generated names following the
+       convention "RI_ConstraintTrigger_NNNN". A proper fix would require
+       modifying that convention, which we will do in 9.2, but it seems
+       risky to change it in existing releases. So this patch just changes
+       the creation order of the triggers. Users encountering this type of
+       error should drop and re-create the foreign key constraint to get
+       its triggers into the right order.
+     * Avoid floating-point underflow while tracking buffer allocation
+       rate (Greg Matthews)
+       While harmless in itself, on certain platforms this would result in
+       annoying kernel log messages.
+     * Preserve configuration file name and line number values when
+       starting child processes under Windows (Tom Lane)
+       Formerly, these would not be displayed correctly in the pg_settings
+       view.
+     * Preserve blank lines within commands in psql's command history
+       (Robert Haas)
+       The former behavior could cause problems if an empty line was
+       removed from within a string literal, for example.
+     * Fix pg_dump to dump user-defined casts between auto-generated
+       types, such as table rowtypes (Tom Lane)
+     * Use the preferred version of xsubpp to build PL/Perl, not
+       necessarily the operating system's main copy (David Wheeler and
+       Alex Hunsaker)
+     * Fix incorrect coding in "contrib/dict_int" and "contrib/dict_xsyn"
+       (Tom Lane)
+       Some functions incorrectly assumed that memory returned by palloc()
+       is guaranteed zeroed.
+     * Honor query cancel interrupts promptly in pgstatindex() (Robert
+       Haas)
+     * Ensure VPATH builds properly install all server header files (Peter
+       Eisentraut)
+     * Shorten file names reported in verbose error messages (Peter
+       Eisentraut)
+       Regular builds have always reported just the name of the C file
+       containing the error message call, but VPATH builds formerly
+       reported an absolute path name.
+     * Fix interpretation of Windows timezone names for Central America
+       (Tom Lane)
+       Map "Central America Standard Time" to CST6, not CST6CDT, because
+       DST is generally not observed anywhere in Central America.
+     * Update time zone data files to tzdata release 2011n for DST law
+       changes in Brazil, Cuba, Fiji, Palestine, Russia, and Samoa; also
+       historical corrections for Alaska and British East Africa.
+     __________________________________________________________________
+
+                                Release 8.4.9
+
+     Release Date: 2011-09-26
+
+   This release contains a variety of fixes from 8.4.8. For information
+   about new features in the 8.4 major release, see the Section called
+   Release 8.4.
+     __________________________________________________________________
+
+Migration to Version 8.4.9
+
+   A dump/restore is not required for those running 8.4.X.
+
+   However, if you are upgrading from a version earlier than 8.4.8, see
+   the release notes for 8.4.8.
+     __________________________________________________________________
+
+Changes
+
+     * Fix bugs in indexing of in-doubt HOT-updated tuples (Tom Lane)
+       These bugs could result in index corruption after reindexing a
+       system catalog. They are not believed to affect user indexes.
+     * Fix multiple bugs in GiST index page split processing (Heikki
+       Linnakangas)
+       The probability of occurrence was low, but these could lead to
+       index corruption.
+     * Fix possible buffer overrun in tsvector_concat() (Tom Lane)
+       The function could underestimate the amount of memory needed for
+       its result, leading to server crashes.
+     * Fix crash in xml_recv when processing a "standalone" parameter (Tom
+       Lane)
+     * Make pg_options_to_table return NULL for an option with no value
+       (Tom Lane)
+       Previously such cases would result in a server crash.
+     * Avoid possibly accessing off the end of memory in "ANALYZE" and in
+       SJIS-2004 encoding conversion (Noah Misch)
+       This fixes some very-low-probability server crash scenarios.
+     * Prevent intermittent hang in interactions of startup process with
+       bgwriter process (Simon Riggs)
+       This affected recovery in non-hot-standby cases.
+     * Fix race condition in relcache init file invalidation (Tom Lane)
+       There was a window wherein a new backend process could read a stale
+       init file but miss the inval messages that would tell it the data
+       is stale. The result would be bizarre failures in catalog accesses,
+       typically "could not read block 0 in file ..." later during
+       startup.
+     * Fix memory leak at end of a GiST index scan (Tom Lane)
+       Commands that perform many separate GiST index scans, such as
+       verification of a new GiST-based exclusion constraint on a table
+       already containing many rows, could transiently require large
+       amounts of memory due to this leak.
+     * Fix incorrect memory accounting (leading to possible memory bloat)
+       in tuplestores supporting holdable cursors and plpgsql's RETURN
+       NEXT command (Tom Lane)
+     * Fix performance problem when constructing a large, lossy bitmap
+       (Tom Lane)
+     * Fix join selectivity estimation for unique columns (Tom Lane)
+       This fixes an erroneous planner heuristic that could lead to poor
+       estimates of the result size of a join.
+     * Fix nested PlaceHolderVar expressions that appear only in
+       sub-select target lists (Tom Lane)
+       This mistake could result in outputs of an outer join incorrectly
+       appearing as NULL.
+     * Allow nested EXISTS queries to be optimized properly (Tom Lane)
+     * Fix array- and path-creating functions to ensure padding bytes are
+       zeroes (Tom Lane)
+       This avoids some situations where the planner will think that
+       semantically-equal constants are not equal, resulting in poor
+       optimization.
+     * Fix "EXPLAIN" to handle gating Result nodes within inner-indexscan
+       subplans (Tom Lane)
+       The usual symptom of this oversight was "bogus varno" errors.
+     * Work around gcc 4.6.0 bug that breaks WAL replay (Tom Lane)
+       This could lead to loss of committed transactions after a server
+       crash.
+     * Fix dump bug for VALUES in a view (Tom Lane)
+     * Disallow SELECT FOR UPDATE/SHARE on sequences (Tom Lane)
+       This operation doesn't work as expected and can lead to failures.
+     * Fix "VACUUM" so that it always updates pg_class.reltuples/relpages
+       (Tom Lane)
+       This fixes some scenarios where autovacuum could make increasingly
+       poor decisions about when to vacuum tables.
+     * Defend against integer overflow when computing size of a hash table
+       (Tom Lane)
+     * Fix cases where "CLUSTER" might attempt to access already-removed
+       TOAST data (Tom Lane)
+     * Fix portability bugs in use of credentials control messages for
+       "peer" authentication (Tom Lane)
+     * Fix SSPI login when multiple roundtrips are required (Ahmed
+       Shinwari, Magnus Hagander)
+       The typical symptom of this problem was "The function requested is
+       not supported" errors during SSPI login.
+     * Throw an error if "pg_hba.conf" contains hostssl but SSL is
+       disabled (Tom Lane)
+       This was concluded to be more user-friendly than the previous
+       behavior of silently ignoring such lines.
+     * Fix typo in pg_srand48 seed initialization (Andres Freund)
+       This led to failure to use all bits of the provided seed. This
+       function is not used on most platforms (only those without
+       srandom), and the potential security exposure from a
+       less-random-than-expected seed seems minimal in any case.
+     * Avoid integer overflow when the sum of LIMIT and OFFSET values
+       exceeds 2^63 (Heikki Linnakangas)
+     * Add overflow checks to int4 and int8 versions of generate_series()
+       (Robert Haas)
+     * Fix trailing-zero removal in to_char() (Marti Raudsepp)
+       In a format with FM and no digit positions after the decimal point,
+       zeroes to the left of the decimal point could be removed
+       incorrectly.
+     * Fix pg_size_pretty() to avoid overflow for inputs close to 2^63
+       (Tom Lane)
+     * Weaken plpgsql's check for typmod matching in record values (Tom
+       Lane)
+       An overly enthusiastic check could lead to discarding length
+       modifiers that should have been kept.
+     * Correctly handle quotes in locale names during initdb (Heikki
+       Linnakangas)
+       The case can arise with some Windows locales, such as "People's
+       Republic of China".
+     * Fix pg_upgrade to preserve toast tables' relfrozenxids during an
+       upgrade from 8.3 (Bruce Momjian)
+       Failure to do this could lead to "pg_clog" files being removed too
+       soon after the upgrade.
+     * In pg_ctl, support silent mode for service registrations on Windows
+       (MauMau)
+     * Fix psql's counting of script file line numbers during COPY from a
+       different file (Tom Lane)
+     * Fix pg_restore's direct-to-database mode for
+       standard_conforming_strings (Tom Lane)
+       pg_restore could emit incorrect commands when restoring directly to
+       a database server from an archive file that had been made with
+       standard_conforming_strings set to on.
+     * Be more user-friendly about unsupported cases for parallel
+       pg_restore (Tom Lane)
+       This change ensures that such cases are detected and reported
+       before any restore actions have been taken.
+     * Fix write-past-buffer-end and memory leak in libpq's LDAP service
+       lookup code (Albe Laurenz)
+     * In libpq, avoid failures when using nonblocking I/O and an SSL
+       connection (Martin Pihlak, Tom Lane)
+     * Improve libpq's handling of failures during connection startup (Tom
+       Lane)
+       In particular, the response to a server report of fork() failure
+       during SSL connection startup is now saner.
+     * Improve libpq's error reporting for SSL failures (Tom Lane)
+     * Fix PQsetvalue() to avoid possible crash when adding a new tuple to
+       a PGresult originally obtained from a server query (Andrew Chernow)
+     * Make ecpglib write double values with 15 digits precision (Akira
+       Kurosawa)
+     * In ecpglib, be sure LC_NUMERIC setting is restored after an error
+       (Michael Meskes)
+     * Apply upstream fix for blowfish signed-character bug
+       (CVE-2011-2483) (Tom Lane)
+       "contrib/pg_crypto"'s blowfish encryption code could give wrong
+       results on platforms where char is signed (which is most), leading
+       to encrypted passwords being weaker than they should be.
+     * Fix memory leak in "contrib/seg" (Heikki Linnakangas)
+     * Fix pgstatindex() to give consistent results for empty indexes (Tom
+       Lane)
+     * Allow building with perl 5.14 (Alex Hunsaker)
+     * Update configure script's method for probing existence of system
+       functions (Tom Lane)
+       The version of autoconf we used in 8.3 and 8.2 could be fooled by
+       compilers that perform link-time optimization.
+     * Fix assorted issues with build and install file paths containing
+       spaces (Tom Lane)
+     * Update time zone data files to tzdata release 2011i for DST law
+       changes in Canada, Egypt, Russia, Samoa, and South Sudan.
+     __________________________________________________________________
+
+                                Release 8.4.8
+
+     Release Date: 2011-04-18
+
+   This release contains a variety of fixes from 8.4.7. For information
+   about new features in the 8.4 major release, see the Section called
+   Release 8.4.
+     __________________________________________________________________
+
+Migration to Version 8.4.8
+
+   A dump/restore is not required for those running 8.4.X.
+
+   However, if your installation was upgraded from a previous major
+   release by running pg_upgrade, you should take action to prevent
+   possible data loss due to a now-fixed bug in pg_upgrade. The
+   recommended solution is to run "VACUUM FREEZE" on all TOAST tables.
+   More information is available at
+   http://wiki.postgresql.org/wiki/20110408pg_upgrade_fix.
+
+   Also, if you are upgrading from a version earlier than 8.4.2, see the
+   release notes for 8.4.2.
+     __________________________________________________________________
+
+Changes
+
+     * Fix pg_upgrade's handling of TOAST tables (Bruce Momjian)
+       The pg_class.relfrozenxid value for TOAST tables was not correctly
+       copied into the new installation during pg_upgrade. This could
+       later result in pg_clog files being discarded while they were still
+       needed to validate tuples in the TOAST tables, leading to "could
+       not access status of transaction" failures.
+       This error poses a significant risk of data loss for installations
+       that have been upgraded with pg_upgrade. This patch corrects the
+       problem for future uses of pg_upgrade, but does not in itself cure
+       the issue in installations that have been processed with a buggy
+       version of pg_upgrade.
+     * Suppress incorrect "PD_ALL_VISIBLE flag was incorrectly set"
+       warning (Heikki Linnakangas)
+       "VACUUM" would sometimes issue this warning in cases that are
+       actually valid.
+     * Disallow including a composite type in itself (Tom Lane)
+       This prevents scenarios wherein the server could recurse infinitely
+       while processing the composite type. While there are some possible
+       uses for such a structure, they don't seem compelling enough to
+       justify the effort required to make sure it always works safely.
+     * Avoid potential deadlock during catalog cache initialization
+       (Nikhil Sontakke)
+       In some cases the cache loading code would acquire share lock on a
+       system index before locking the index's catalog. This could
+       deadlock against processes trying to acquire exclusive locks in the
+       other, more standard order.
+     * Fix dangling-pointer problem in BEFORE ROW UPDATE trigger handling
+       when there was a concurrent update to the target tuple (Tom Lane)
+       This bug has been observed to result in intermittent "cannot
+       extract system attribute from virtual tuple" failures while trying
+       to do UPDATE RETURNING ctid. There is a very small probability of
+       more serious errors, such as generating incorrect index entries for
+       the updated tuple.
+     * Disallow "DROP TABLE" when there are pending deferred trigger
+       events for the table (Tom Lane)
+       Formerly the "DROP" would go through, leading to "could not open
+       relation with OID nnn" errors when the triggers were eventually
+       fired.
+     * Prevent crash triggered by constant-false WHERE conditions during
+       GEQO optimization (Tom Lane)
+     * Improve planner's handling of semi-join and anti-join cases (Tom
+       Lane)
+     * Fix selectivity estimation for text search to account for NULLs
+       (Jesper Krogh)
+     * Improve PL/pgSQL's ability to handle row types with dropped columns
+       (Pavel Stehule)
+       This is a back-patch of fixes previously made in 9.0.
+     * Fix PL/Python memory leak involving array slices (Daniel Popowich)
+     * Fix pg_restore to cope with long lines (over 1KB) in TOC files (Tom
+       Lane)
+     * Put in more safeguards against crashing due to division-by-zero
+       with overly enthusiastic compiler optimization (Aurelien Jarno)
+     * Support use of dlopen() in FreeBSD and OpenBSD on MIPS (Tom Lane)
+       There was a hard-wired assumption that this system function was not
+       available on MIPS hardware on these systems. Use a compile-time
+       test instead, since more recent versions have it.
+     * Fix compilation failures on HP-UX (Heikki Linnakangas)
+     * Fix version-incompatibility problem with libintl on Windows
+       (Hiroshi Inoue)
+     * Fix usage of xcopy in Windows build scripts to work correctly under
+       Windows 7 (Andrew Dunstan)
+       This affects the build scripts only, not installation or usage.
+     * Fix path separator used by pg_regress on Cygwin (Andrew Dunstan)
+     * Update time zone data files to tzdata release 2011f for DST law
+       changes in Chile, Cuba, Falkland Islands, Morocco, Samoa, and
+       Turkey; also historical corrections for South Australia, Alaska,
+       and Hawaii.
+     __________________________________________________________________
+
                                 Release 8.4.7
 
-     Release date: 2011-01-31
+     Release Date: 2011-01-31
 
    This release contains a variety of fixes from 8.4.6. For information
    about new features in the 8.4 major release, see the Section called
@@ -78,7 +855,7 @@ Changes
 
                                 Release 8.4.6
 
-     Release date: 2010-12-16
+     Release Date: 2010-12-16
 
    This release contains a variety of fixes from 8.4.5. For information
    about new features in the 8.4 major release, see the Section called
@@ -191,7 +968,7 @@ Changes
 
                                 Release 8.4.5
 
-     Release date: 2010-10-04
+     Release Date: 2010-10-04
 
    This release contains a variety of fixes from 8.4.4. For information
    about new features in the 8.4 major release, see the Section called
@@ -382,7 +1159,7 @@ Changes
 
                                 Release 8.4.4
 
-     Release date: 2010-05-17
+     Release Date: 2010-05-17
 
    This release contains a variety of fixes from 8.4.3. For information
    about new features in the 8.4 major release, see the Section called
@@ -495,7 +1272,7 @@ Changes
 
                                 Release 8.4.3
 
-     Release date: 2010-03-15
+     Release Date: 2010-03-15
 
    This release contains a variety of fixes from 8.4.2. For information
    about new features in the 8.4 major release, see the Section called
@@ -651,7 +1428,7 @@ Changes
 
                                 Release 8.4.2
 
-     Release date: 2009-12-14
+     Release Date: 2009-12-14
 
    This release contains a variety of fixes from 8.4.1. For information
    about new features in the 8.4 major release, see the Section called
@@ -687,7 +1464,7 @@ Changes
        (Tom)
      * Avoid crash on empty thesaurus dictionary (Tom)
      * Prevent signals from interrupting VACUUM at unsafe times (Alvaro)
-       This fix prevents a PANIC if a VACUUM FULL is cancelled after it's
+       This fix prevents a PANIC if a VACUUM FULL is canceled after it's
        already committed its tuple movements, as well as transient errors
        if a plain VACUUM is interrupted after having truncated the table.
      * Fix possible crash due to integer overflow in hash table size
@@ -831,7 +1608,7 @@ WITH w AS (SELECT * FROM foo) SELECT * FROM w, bar ... FOR UPDATE
 
                                 Release 8.4.1
 
-     Release date: 2009-09-09
+     Release Date: 2009-09-09
 
    This release contains a variety of fixes from 8.4. For information
    about new features in the 8.4 major release, see the Section called
@@ -926,7 +1703,7 @@ Changes
 
                                  Release 8.4
 
-     Release date: 2009-07-01
+     Release Date: 2009-07-01
      __________________________________________________________________
 
 Overview
@@ -1986,9 +2763,633 @@ Contrib
        unsafe to use a symlink (Simon)
      __________________________________________________________________
 
+                               Release 8.3.20
+
+     Release Date: 2012-08-17
+
+   This release contains a variety of fixes from 8.3.19. For information
+   about new features in the 8.3 major release, see the Section called
+   Release 8.3.
+
+   The PostgreSQL community will stop releasing updates for the 8.3.X
+   release series in February 2013. Users are encouraged to update to a
+   newer release branch soon.
+     __________________________________________________________________
+
+Migration to Version 8.3.20
+
+   A dump/restore is not required for those running 8.3.X.
+
+   However, if you are upgrading from a version earlier than 8.3.17, see
+   the release notes for 8.3.17.
+     __________________________________________________________________
+
+Changes
+
+     * Prevent access to external files/URLs via XML entity references
+       (Noah Misch, Tom Lane)
+       xml_parse() would attempt to fetch external files or URLs as needed
+       to resolve DTD and entity references in an XML value, thus allowing
+       unprivileged database users to attempt to fetch data with the
+       privileges of the database server. While the external data wouldn't
+       get returned directly to the user, portions of it could be exposed
+       in error messages if the data didn't parse as valid XML; and in any
+       case the mere ability to check existence of a file might be useful
+       to an attacker. (CVE-2012-3489)
+     * Prevent access to external files/URLs via "contrib/xml2"'s
+       xslt_process() (Peter Eisentraut)
+       libxslt offers the ability to read and write both files and URLs
+       through stylesheet commands, thus allowing unprivileged database
+       users to both read and write data with the privileges of the
+       database server. Disable that through proper use of libxslt's
+       security options. (CVE-2012-3488)
+       Also, remove xslt_process()'s ability to fetch documents and
+       stylesheets from external files/URLs. While this was a documented
+       "feature", it was long regarded as a bad idea. The fix for
+       CVE-2012-3489 broke that capability, and rather than expend effort
+       on trying to fix it, we're just going to summarily remove it.
+     * Prevent too-early recycling of btree index pages (Noah Misch)
+       When we allowed read-only transactions to skip assigning XIDs, we
+       introduced the possibility that a deleted btree page could be
+       recycled while a read-only transaction was still in flight to it.
+       This would result in incorrect index search results. The
+       probability of such an error occurring in the field seems very low
+       because of the timing requirements, but nonetheless it should be
+       fixed.
+     * Fix crash-safety bug with newly-created-or-reset sequences (Tom
+       Lane)
+       If "ALTER SEQUENCE" was executed on a freshly created or reset
+       sequence, and then precisely one nextval() call was made on it, and
+       then the server crashed, WAL replay would restore the sequence to a
+       state in which it appeared that no nextval() had been done, thus
+       allowing the first sequence value to be returned again by the next
+       nextval() call. In particular this could manifest for serial
+       columns, since creation of a serial column's sequence includes an
+       "ALTER SEQUENCE OWNED BY" step.
+     * Ensure the "backup_label" file is fsync'd after pg_start_backup()
+       (Dave Kerr)
+     * Back-patch 9.1 improvement to compress the fsync request queue
+       (Robert Haas)
+       This improves performance during checkpoints. The 9.1 change has
+       now seen enough field testing to seem safe to back-patch.
+     * Only allow autovacuum to be auto-canceled by a directly blocked
+       process (Tom Lane)
+       The original coding could allow inconsistent behavior in some
+       cases; in particular, an autovacuum could get canceled after less
+       than deadlock_timeout grace period.
+     * Improve logging of autovacuum cancels (Robert Haas)
+     * Fix log collector so that log_truncate_on_rotation works during the
+       very first log rotation after server start (Tom Lane)
+     * Ensure that a whole-row reference to a subquery doesn't include any
+       extra GROUP BY or ORDER BY columns (Tom Lane)
+     * Disallow copying whole-row references in CHECK constraints and
+       index definitions during "CREATE TABLE" (Tom Lane)
+       This situation can arise in "CREATE TABLE" with LIKE or INHERITS.
+       The copied whole-row variable was incorrectly labeled with the row
+       type of the original table not the new one. Rejecting the case
+       seems reasonable for LIKE, since the row types might well diverge
+       later. For INHERITS we should ideally allow it, with an implicit
+       coercion to the parent table's row type; but that will require more
+       work than seems safe to back-patch.
+     * Fix memory leak in ARRAY(SELECT ...) subqueries (Heikki
+       Linnakangas, Tom Lane)
+     * Fix extraction of common prefixes from regular expressions (Tom
+       Lane)
+       The code could get confused by quantified parenthesized
+       subexpressions, such as ^(foo)?bar. This would lead to incorrect
+       index optimization of searches for such patterns.
+     * Report errors properly in "contrib/xml2"'s xslt_process() (Tom
+       Lane)
+     * Update time zone data files to tzdata release 2012e for DST law
+       changes in Morocco and Tokelau
+     __________________________________________________________________
+
+                               Release 8.3.19
+
+     Release Date: 2012-06-04
+
+   This release contains a variety of fixes from 8.3.18. For information
+   about new features in the 8.3 major release, see the Section called
+   Release 8.3.
+     __________________________________________________________________
+
+Migration to Version 8.3.19
+
+   A dump/restore is not required for those running 8.3.X.
+
+   However, if you are upgrading from a version earlier than 8.3.17, see
+   the release notes for 8.3.17.
+     __________________________________________________________________
+
+Changes
+
+     * Fix incorrect password transformation in "contrib/pgcrypto"'s DES
+       crypt() function (Solar Designer)
+       If a password string contained the byte value 0x80, the remainder
+       of the password was ignored, causing the password to be much weaker
+       than it appeared. With this fix, the rest of the string is properly
+       included in the DES hash. Any stored password values that are
+       affected by this bug will thus no longer match, so the stored
+       values may need to be updated. (CVE-2012-2143)
+     * Ignore SECURITY DEFINER and SET attributes for a procedural
+       language's call handler (Tom Lane)
+       Applying such attributes to a call handler could crash the server.
+       (CVE-2012-2655)
+     * Allow numeric timezone offsets in timestamp input to be up to 16
+       hours away from UTC (Tom Lane)
+       Some historical time zones have offsets larger than 15 hours, the
+       previous limit. This could result in dumped data values being
+       rejected during reload.
+     * Fix timestamp conversion to cope when the given time is exactly the
+       last DST transition time for the current timezone (Tom Lane)
+       This oversight has been there a long time, but was not noticed
+       previously because most DST-using zones are presumed to have an
+       indefinite sequence of future DST transitions.
+     * Fix text to name and char to name casts to perform string
+       truncation correctly in multibyte encodings (Karl Schnaitter)
+     * Fix memory copying bug in to_tsquery() (Heikki Linnakangas)
+     * Fix slow session startup when pg_attribute is very large (Tom Lane)
+       If pg_attribute exceeds one-fourth of shared_buffers, cache
+       rebuilding code that is sometimes needed during session start would
+       trigger the synchronized-scan logic, causing it to take many times
+       longer than normal. The problem was particularly acute if many new
+       sessions were starting at once.
+     * Ensure sequential scans check for query cancel reasonably often
+       (Merlin Moncure)
+       A scan encountering many consecutive pages that contain no live
+       tuples would not respond to interrupts meanwhile.
+     * Ensure the Windows implementation of PGSemaphoreLock() clears
+       ImmediateInterruptOK before returning (Tom Lane)
+       This oversight meant that a query-cancel interrupt received later
+       in the same query could be accepted at an unsafe time, with
+       unpredictable but not good consequences.
+     * Show whole-row variables safely when printing views or rules (Abbas
+       Butt, Tom Lane)
+       Corner cases involving ambiguous names (that is, the name could be
+       either a table or column name of the query) were printed in an
+       ambiguous way, risking that the view or rule would be interpreted
+       differently after dump and reload. Avoid the ambiguous case by
+       attaching a no-op cast.
+     * Ensure autovacuum worker processes perform stack depth checking
+       properly (Heikki Linnakangas)
+       Previously, infinite recursion in a function invoked by
+       auto-"ANALYZE" could crash worker processes.
+     * Fix logging collector to not lose log coherency under high load
+       (Andrew Dunstan)
+       The collector previously could fail to reassemble large messages if
+       it got too busy.
+     * Fix logging collector to ensure it will restart file rotation after
+       receiving SIGHUP (Tom Lane)
+     * Fix PL/pgSQL's "GET DIAGNOSTICS" command when the target is the
+       function's first variable (Tom Lane)
+     * Fix several performance problems in pg_dump when the database
+       contains many objects (Jeff Janes, Tom Lane)
+       pg_dump could get very slow if the database contained many schemas,
+       or if many objects are in dependency loops, or if there are many
+       owned sequences.
+     * Fix "contrib/dblink"'s dblink_exec() to not leak temporary database
+       connections upon error (Tom Lane)
+     * Update time zone data files to tzdata release 2012c for DST law
+       changes in Antarctica, Armenia, Chile, Cuba, Falkland Islands,
+       Gaza, Haiti, Hebron, Morocco, Syria, and Tokelau Islands; also
+       historical corrections for Canada.
+     __________________________________________________________________
+
+                               Release 8.3.18
+
+     Release Date: 2012-02-27
+
+   This release contains a variety of fixes from 8.3.17. For information
+   about new features in the 8.3 major release, see the Section called
+   Release 8.3.
+     __________________________________________________________________
+
+Migration to Version 8.3.18
+
+   A dump/restore is not required for those running 8.3.X.
+
+   However, if you are upgrading from a version earlier than 8.3.17, see
+   the release notes for 8.3.17.
+     __________________________________________________________________
+
+Changes
+
+     * Require execute permission on the trigger function for "CREATE
+       TRIGGER" (Robert Haas)
+       This missing check could allow another user to execute a trigger
+       function with forged input data, by installing it on a table he
+       owns. This is only of significance for trigger functions marked
+       SECURITY DEFINER, since otherwise trigger functions run as the
+       table owner anyway. (CVE-2012-0866)
+     * Convert newlines to spaces in names written in pg_dump comments
+       (Robert Haas)
+       pg_dump was incautious about sanitizing object names that are
+       emitted within SQL comments in its output script. A name containing
+       a newline would at least render the script syntactically incorrect.
+       Maliciously crafted object names could present a SQL injection risk
+       when the script is reloaded. (CVE-2012-0868)
+     * Fix btree index corruption from insertions concurrent with
+       vacuuming (Tom Lane)
+       An index page split caused by an insertion could sometimes cause a
+       concurrently-running "VACUUM" to miss removing index entries that
+       it should remove. After the corresponding table rows are removed,
+       the dangling index entries would cause errors (such as "could not
+       read block N in file ...") or worse, silently wrong query results
+       after unrelated rows are re-inserted at the now-free table
+       locations. This bug has been present since release 8.2, but occurs
+       so infrequently that it was not diagnosed until now. If you have
+       reason to suspect that it has happened in your database, reindexing
+       the affected index will fix things.
+     * Allow non-existent values for some settings in "ALTER USER/DATABASE
+       SET" (Heikki Linnakangas)
+       Allow default_text_search_config, default_tablespace, and
+       temp_tablespaces to be set to names that are not known. This is
+       because they might be known in another database where the setting
+       is intended to be used, or for the tablespace cases because the
+       tablespace might not be created yet. The same issue was previously
+       recognized for search_path, and these settings now act like that
+       one.
+     * Track the OID counter correctly during WAL replay, even when it
+       wraps around (Tom Lane)
+       Previously the OID counter would remain stuck at a high value until
+       the system exited replay mode. The practical consequences of that
+       are usually nil, but there are scenarios wherein a standby server
+       that's been promoted to master might take a long time to advance
+       the OID counter to a reasonable value once values are needed.
+     * Fix regular expression back-references with * attached (Tom Lane)
+       Rather than enforcing an exact string match, the code would
+       effectively accept any string that satisfies the pattern
+       sub-expression referenced by the back-reference symbol.
+       A similar problem still afflicts back-references that are embedded
+       in a larger quantified expression, rather than being the immediate
+       subject of the quantifier. This will be addressed in a future
+       PostgreSQL release.
+     * Fix recently-introduced memory leak in processing of inet/cidr
+       values (Heikki Linnakangas)
+       A patch in the December 2011 releases of PostgreSQL caused memory
+       leakage in these operations, which could be significant in
+       scenarios such as building a btree index on such a column.
+     * Avoid double close of file handle in syslogger on Windows (MauMau)
+       Ordinarily this error was invisible, but it would cause an
+       exception when running on a debug version of Windows.
+     * Fix I/O-conversion-related memory leaks in plpgsql (Andres Freund,
+       Jan Urbanski, Tom Lane)
+       Certain operations would leak memory until the end of the current
+       function.
+     * Improve pg_dump's handling of inherited table columns (Tom Lane)
+       pg_dump mishandled situations where a child column has a different
+       default expression than its parent column. If the default is
+       textually identical to the parent's default, but not actually the
+       same (for instance, because of schema search path differences) it
+       would not be recognized as different, so that after dump and
+       restore the child would be allowed to inherit the parent's default.
+       Child columns that are NOT NULL where their parent is not could
+       also be restored subtly incorrectly.
+     * Fix pg_restore's direct-to-database mode for INSERT-style table
+       data (Tom Lane)
+       Direct-to-database restores from archive files made with
+       "--inserts" or "--column-inserts" options fail when using
+       pg_restore from a release dated September or December 2011, as a
+       result of an oversight in a fix for another problem. The archive
+       file itself is not at fault, and text-mode output is okay.
+     * Fix error in "contrib/intarray"'s int[] & int[] operator (Guillaume
+       Lelarge)
+       If the smallest integer the two input arrays have in common is 1,
+       and there are smaller values in either array, then 1 would be
+       incorrectly omitted from the result.
+     * Fix error detection in "contrib/pgcrypto"'s encrypt_iv() and
+       decrypt_iv() (Marko Kreen)
+       These functions failed to report certain types of invalid-input
+       errors, and would instead return random garbage values for
+       incorrect input.
+     * Fix one-byte buffer overrun in "contrib/test_parser" (Paul Guyot)
+       The code would try to read one more byte than it should, which
+       would crash in corner cases. Since "contrib/test_parser" is only
+       example code, this is not a security issue in itself, but bad
+       example code is still bad.
+     * Use __sync_lock_test_and_set() for spinlocks on ARM, if available
+       (Martin Pitt)
+       This function replaces our previous use of the SWPB instruction,
+       which is deprecated and not available on ARMv6 and later. Reports
+       suggest that the old code doesn't fail in an obvious way on recent
+       ARM boards, but simply doesn't interlock concurrent accesses,
+       leading to bizarre failures in multiprocess operation.
+     * Use "-fexcess-precision=standard" option when building with gcc
+       versions that accept it (Andrew Dunstan)
+       This prevents assorted scenarios wherein recent versions of gcc
+       will produce creative results.
+     * Allow use of threaded Python on FreeBSD (Chris Rees)
+       Our configure script previously believed that this combination
+       wouldn't work; but FreeBSD fixed the problem, so remove that error
+       check.
+     __________________________________________________________________
+
+                               Release 8.3.17
+
+     Release Date: 2011-12-05
+
+   This release contains a variety of fixes from 8.3.16. For information
+   about new features in the 8.3 major release, see the Section called
+   Release 8.3.
+     __________________________________________________________________
+
+Migration to Version 8.3.17
+
+   A dump/restore is not required for those running 8.3.X.
+
+   However, a longstanding error was discovered in the definition of the
+   information_schema.referential_constraints view. If you rely on correct
+   results from that view, you should replace its definition as explained
+   in the first changelog item below.
+
+   Also, if you are upgrading from a version earlier than 8.3.8, see the
+   release notes for 8.3.8.
+     __________________________________________________________________
+
+Changes
+
+     * Fix bugs in information_schema.referential_constraints view (Tom
+       Lane)
+       This view was being insufficiently careful about matching the
+       foreign-key constraint to the depended-on primary or unique key
+       constraint. That could result in failure to show a foreign key
+       constraint at all, or showing it multiple times, or claiming that
+       it depends on a different constraint than the one it really does.
+       Since the view definition is installed by initdb, merely upgrading
+       will not fix the problem. If you need to fix this in an existing
+       installation, you can (as a superuser) drop the information_schema
+       schema then re-create it by sourcing
+       "SHAREDIR/information_schema.sql". (Run pg_config --sharedir if
+       you're uncertain where "SHAREDIR" is.) This must be repeated in
+       each database to be fixed.
+     * Fix TOAST-related data corruption during CREATE TABLE dest AS
+       SELECT * FROM src or INSERT INTO dest SELECT * FROM src (Tom Lane)
+       If a table has been modified by "ALTER TABLE ADD COLUMN", attempts
+       to copy its data verbatim to another table could produce corrupt
+       results in certain corner cases. The problem can only manifest in
+       this precise form in 8.4 and later, but we patched earlier versions
+       as well in case there are other code paths that could trigger the
+       same bug.
+     * Fix race condition during toast table access from stale syscache
+       entries (Tom Lane)
+       The typical symptom was transient errors like "missing chunk number
+       0 for toast value NNNNN in pg_toast_2619", where the cited toast
+       table would always belong to a system catalog.
+     * Make DatumGetInetP() unpack inet datums that have a 1-byte header,
+       and add a new macro, DatumGetInetPP(), that does not (Heikki
+       Linnakangas)
+       This change affects no core code, but might prevent crashes in
+       add-on code that expects DatumGetInetP() to produce an unpacked
+       datum as per usual convention.
+     * Improve locale support in money type's input and output (Tom Lane)
+       Aside from not supporting all standard lc_monetary formatting
+       options, the input and output functions were inconsistent, meaning
+       there were locales in which dumped money values could not be
+       re-read.
+     * Don't let transform_null_equals affect CASE foo WHEN NULL ...
+       constructs (Heikki Linnakangas)
+       transform_null_equals is only supposed to affect foo = NULL
+       expressions written directly by the user, not equality checks
+       generated internally by this form of CASE.
+     * Change foreign-key trigger creation order to better support
+       self-referential foreign keys (Tom Lane)
+       For a cascading foreign key that references its own table, a row
+       update will fire both the ON UPDATE trigger and the CHECK trigger
+       as one event. The ON UPDATE trigger must execute first, else the
+       CHECK will check a non-final state of the row and possibly throw an
+       inappropriate error. However, the firing order of these triggers is
+       determined by their names, which generally sort in creation order
+       since the triggers have auto-generated names following the
+       convention "RI_ConstraintTrigger_NNNN". A proper fix would require
+       modifying that convention, which we will do in 9.2, but it seems
+       risky to change it in existing releases. So this patch just changes
+       the creation order of the triggers. Users encountering this type of
+       error should drop and re-create the foreign key constraint to get
+       its triggers into the right order.
+     * Avoid floating-point underflow while tracking buffer allocation
+       rate (Greg Matthews)
+       While harmless in itself, on certain platforms this would result in
+       annoying kernel log messages.
+     * Preserve blank lines within commands in psql's command history
+       (Robert Haas)
+       The former behavior could cause problems if an empty line was
+       removed from within a string literal, for example.
+     * Fix pg_dump to dump user-defined casts between auto-generated
+       types, such as table rowtypes (Tom Lane)
+     * Use the preferred version of xsubpp to build PL/Perl, not
+       necessarily the operating system's main copy (David Wheeler and
+       Alex Hunsaker)
+     * Fix incorrect coding in "contrib/dict_int" and "contrib/dict_xsyn"
+       (Tom Lane)
+       Some functions incorrectly assumed that memory returned by palloc()
+       is guaranteed zeroed.
+     * Honor query cancel interrupts promptly in pgstatindex() (Robert
+       Haas)
+     * Ensure VPATH builds properly install all server header files (Peter
+       Eisentraut)
+     * Shorten file names reported in verbose error messages (Peter
+       Eisentraut)
+       Regular builds have always reported just the name of the C file
+       containing the error message call, but VPATH builds formerly
+       reported an absolute path name.
+     * Fix interpretation of Windows timezone names for Central America
+       (Tom Lane)
+       Map "Central America Standard Time" to CST6, not CST6CDT, because
+       DST is generally not observed anywhere in Central America.
+     * Update time zone data files to tzdata release 2011n for DST law
+       changes in Brazil, Cuba, Fiji, Palestine, Russia, and Samoa; also
+       historical corrections for Alaska and British East Africa.
+     __________________________________________________________________
+
+                               Release 8.3.16
+
+     Release Date: 2011-09-26
+
+   This release contains a variety of fixes from 8.3.15. For information
+   about new features in the 8.3 major release, see the Section called
+   Release 8.3.
+     __________________________________________________________________
+
+Migration to Version 8.3.16
+
+   A dump/restore is not required for those running 8.3.X. However, if you
+   are upgrading from a version earlier than 8.3.8, see the release notes
+   for 8.3.8.
+     __________________________________________________________________
+
+Changes
+
+     * Fix bugs in indexing of in-doubt HOT-updated tuples (Tom Lane)
+       These bugs could result in index corruption after reindexing a
+       system catalog. They are not believed to affect user indexes.
+     * Fix multiple bugs in GiST index page split processing (Heikki
+       Linnakangas)
+       The probability of occurrence was low, but these could lead to
+       index corruption.
+     * Fix possible buffer overrun in tsvector_concat() (Tom Lane)
+       The function could underestimate the amount of memory needed for
+       its result, leading to server crashes.
+     * Fix crash in xml_recv when processing a "standalone" parameter (Tom
+       Lane)
+     * Avoid possibly accessing off the end of memory in "ANALYZE" and in
+       SJIS-2004 encoding conversion (Noah Misch)
+       This fixes some very-low-probability server crash scenarios.
+     * Fix race condition in relcache init file invalidation (Tom Lane)
+       There was a window wherein a new backend process could read a stale
+       init file but miss the inval messages that would tell it the data
+       is stale. The result would be bizarre failures in catalog accesses,
+       typically "could not read block 0 in file ..." later during
+       startup.
+     * Fix memory leak at end of a GiST index scan (Tom Lane)
+       Commands that perform many separate GiST index scans, such as
+       verification of a new GiST-based exclusion constraint on a table
+       already containing many rows, could transiently require large
+       amounts of memory due to this leak.
+     * Fix performance problem when constructing a large, lossy bitmap
+       (Tom Lane)
+     * Fix array- and path-creating functions to ensure padding bytes are
+       zeroes (Tom Lane)
+       This avoids some situations where the planner will think that
+       semantically-equal constants are not equal, resulting in poor
+       optimization.
+     * Work around gcc 4.6.0 bug that breaks WAL replay (Tom Lane)
+       This could lead to loss of committed transactions after a server
+       crash.
+     * Fix dump bug for VALUES in a view (Tom Lane)
+     * Disallow SELECT FOR UPDATE/SHARE on sequences (Tom Lane)
+       This operation doesn't work as expected and can lead to failures.
+     * Defend against integer overflow when computing size of a hash table
+       (Tom Lane)
+     * Fix cases where "CLUSTER" might attempt to access already-removed
+       TOAST data (Tom Lane)
+     * Fix portability bugs in use of credentials control messages for
+       "peer" authentication (Tom Lane)
+     * Fix SSPI login when multiple roundtrips are required (Ahmed
+       Shinwari, Magnus Hagander)
+       The typical symptom of this problem was "The function requested is
+       not supported" errors during SSPI login.
+     * Fix typo in pg_srand48 seed initialization (Andres Freund)
+       This led to failure to use all bits of the provided seed. This
+       function is not used on most platforms (only those without
+       srandom), and the potential security exposure from a
+       less-random-than-expected seed seems minimal in any case.
+     * Avoid integer overflow when the sum of LIMIT and OFFSET values
+       exceeds 2^63 (Heikki Linnakangas)
+     * Add overflow checks to int4 and int8 versions of generate_series()
+       (Robert Haas)
+     * Fix trailing-zero removal in to_char() (Marti Raudsepp)
+       In a format with FM and no digit positions after the decimal point,
+       zeroes to the left of the decimal point could be removed
+       incorrectly.
+     * Fix pg_size_pretty() to avoid overflow for inputs close to 2^63
+       (Tom Lane)
+     * In pg_ctl, support silent mode for service registrations on Windows
+       (MauMau)
+     * Fix psql's counting of script file line numbers during COPY from a
+       different file (Tom Lane)
+     * Fix pg_restore's direct-to-database mode for
+       standard_conforming_strings (Tom Lane)
+       pg_restore could emit incorrect commands when restoring directly to
+       a database server from an archive file that had been made with
+       standard_conforming_strings set to on.
+     * Fix write-past-buffer-end and memory leak in libpq's LDAP service
+       lookup code (Albe Laurenz)
+     * In libpq, avoid failures when using nonblocking I/O and an SSL
+       connection (Martin Pihlak, Tom Lane)
+     * Improve libpq's handling of failures during connection startup (Tom
+       Lane)
+       In particular, the response to a server report of fork() failure
+       during SSL connection startup is now saner.
+     * Improve libpq's error reporting for SSL failures (Tom Lane)
+     * Make ecpglib write double values with 15 digits precision (Akira
+       Kurosawa)
+     * In ecpglib, be sure LC_NUMERIC setting is restored after an error
+       (Michael Meskes)
+     * Apply upstream fix for blowfish signed-character bug
+       (CVE-2011-2483) (Tom Lane)
+       "contrib/pg_crypto"'s blowfish encryption code could give wrong
+       results on platforms where char is signed (which is most), leading
+       to encrypted passwords being weaker than they should be.
+     * Fix memory leak in "contrib/seg" (Heikki Linnakangas)
+     * Fix pgstatindex() to give consistent results for empty indexes (Tom
+       Lane)
+     * Allow building with perl 5.14 (Alex Hunsaker)
+     * Update configure script's method for probing existence of system
+       functions (Tom Lane)
+       The version of autoconf we used in 8.3 and 8.2 could be fooled by
+       compilers that perform link-time optimization.
+     * Fix assorted issues with build and install file paths containing
+       spaces (Tom Lane)
+     * Update time zone data files to tzdata release 2011i for DST law
+       changes in Canada, Egypt, Russia, Samoa, and South Sudan.
+     __________________________________________________________________
+
+                               Release 8.3.15
+
+     Release Date: 2011-04-18
+
+   This release contains a variety of fixes from 8.3.14. For information
+   about new features in the 8.3 major release, see the Section called
+   Release 8.3.
+     __________________________________________________________________
+
+Migration to Version 8.3.15
+
+   A dump/restore is not required for those running 8.3.X. However, if you
+   are upgrading from a version earlier than 8.3.8, see the release notes
+   for 8.3.8.
+     __________________________________________________________________
+
+Changes
+
+     * Disallow including a composite type in itself (Tom Lane)
+       This prevents scenarios wherein the server could recurse infinitely
+       while processing the composite type. While there are some possible
+       uses for such a structure, they don't seem compelling enough to
+       justify the effort required to make sure it always works safely.
+     * Avoid potential deadlock during catalog cache initialization
+       (Nikhil Sontakke)
+       In some cases the cache loading code would acquire share lock on a
+       system index before locking the index's catalog. This could
+       deadlock against processes trying to acquire exclusive locks in the
+       other, more standard order.
+     * Fix dangling-pointer problem in BEFORE ROW UPDATE trigger handling
+       when there was a concurrent update to the target tuple (Tom Lane)
+       This bug has been observed to result in intermittent "cannot
+       extract system attribute from virtual tuple" failures while trying
+       to do UPDATE RETURNING ctid. There is a very small probability of
+       more serious errors, such as generating incorrect index entries for
+       the updated tuple.
+     * Disallow "DROP TABLE" when there are pending deferred trigger
+       events for the table (Tom Lane)
+       Formerly the "DROP" would go through, leading to "could not open
+       relation with OID nnn" errors when the triggers were eventually
+       fired.
+     * Fix PL/Python memory leak involving array slices (Daniel Popowich)
+     * Fix pg_restore to cope with long lines (over 1KB) in TOC files (Tom
+       Lane)
+     * Put in more safeguards against crashing due to division-by-zero
+       with overly enthusiastic compiler optimization (Aurelien Jarno)
+     * Support use of dlopen() in FreeBSD and OpenBSD on MIPS (Tom Lane)
+       There was a hard-wired assumption that this system function was not
+       available on MIPS hardware on these systems. Use a compile-time
+       test instead, since more recent versions have it.
+     * Fix compilation failures on HP-UX (Heikki Linnakangas)
+     * Fix version-incompatibility problem with libintl on Windows
+       (Hiroshi Inoue)
+     * Fix usage of xcopy in Windows build scripts to work correctly under
+       Windows 7 (Andrew Dunstan)
+       This affects the build scripts only, not installation or usage.
+     * Fix path separator used by pg_regress on Cygwin (Andrew Dunstan)
+     * Update time zone data files to tzdata release 2011f for DST law
+       changes in Chile, Cuba, Falkland Islands, Morocco, Samoa, and
+       Turkey; also historical corrections for South Australia, Alaska,
+       and Hawaii.
+     __________________________________________________________________
+
                                Release 8.3.14
 
-     Release date: 2011-01-31
+     Release Date: 2011-01-31
 
    This release contains a variety of fixes from 8.3.13. For information
    about new features in the 8.3 major release, see the Section called
@@ -2047,7 +3448,7 @@ Changes
 
                                Release 8.3.13
 
-     Release date: 2010-12-16
+     Release Date: 2010-12-16
 
    This release contains a variety of fixes from 8.3.12. For information
    about new features in the 8.3 major release, see the Section called
@@ -2149,7 +3550,7 @@ Changes
 
                                Release 8.3.12
 
-     Release date: 2010-10-04
+     Release Date: 2010-10-04
 
    This release contains a variety of fixes from 8.3.11. For information
    about new features in the 8.3 major release, see the Section called
@@ -2294,7 +3695,7 @@ Changes
 
                                Release 8.3.11
 
-     Release date: 2010-05-17
+     Release Date: 2010-05-17
 
    This release contains a variety of fixes from 8.3.10. For information
    about new features in the 8.3 major release, see the Section called
@@ -2387,7 +3788,7 @@ Changes
 
                                Release 8.3.10
 
-     Release date: 2010-03-15
+     Release Date: 2010-03-15
 
    This release contains a variety of fixes from 8.3.9. For information
    about new features in the 8.3 major release, see the Section called
@@ -2505,7 +3906,7 @@ Changes
 
                                 Release 8.3.9
 
-     Release date: 2009-12-14
+     Release Date: 2009-12-14
 
    This release contains a variety of fixes from 8.3.8. For information
    about new features in the 8.3 major release, see the Section called
@@ -2533,7 +3934,7 @@ Changes
        (Tom)
      * Avoid crash on empty thesaurus dictionary (Tom)
      * Prevent signals from interrupting VACUUM at unsafe times (Alvaro)
-       This fix prevents a PANIC if a VACUUM FULL is cancelled after it's
+       This fix prevents a PANIC if a VACUUM FULL is canceled after it's
        already committed its tuple movements, as well as transient errors
        if a plain VACUUM is interrupted after having truncated the table.
      * Fix possible crash due to integer overflow in hash table size
@@ -2621,7 +4022,7 @@ Changes
 
                                 Release 8.3.8
 
-     Release date: 2009-09-09
+     Release Date: 2009-09-09
 
    This release contains a variety of fixes from 8.3.7. For information
    about new features in the 8.3 major release, see the Section called
@@ -2714,7 +4115,7 @@ Changes
 
                                 Release 8.3.7
 
-     Release date: 2009-03-16
+     Release Date: 2009-03-16
 
    This release contains a variety of fixes from 8.3.6. For information
    about new features in the 8.3 major release, see the Section called
@@ -2818,7 +4219,7 @@ Changes
 
                                 Release 8.3.6
 
-     Release date: 2009-02-02
+     Release Date: 2009-02-02
 
    This release contains a variety of fixes from 8.3.5. For information
    about new features in the 8.3 major release, see the Section called
@@ -2914,7 +4315,7 @@ Changes
 
                                 Release 8.3.5
 
-     Release date: 2008-11-03
+     Release Date: 2008-11-03
 
    This release contains a variety of fixes from 8.3.4. For information
    about new features in the 8.3 major release, see the Section called
@@ -3000,7 +4401,7 @@ Changes
 
                                 Release 8.3.4
 
-     Release date: 2008-09-22
+     Release Date: 2008-09-22
 
    This release contains a variety of fixes from 8.3.3. For information
    about new features in the 8.3 major release, see the Section called
@@ -3123,7 +4524,7 @@ Changes
 
                                 Release 8.3.3
 
-     Release date: 2008-06-12
+     Release Date: 2008-06-12
 
    This release contains one serious and one minor bug fix over 8.3.2. For
    information about new features in the 8.3 major release, see the
@@ -3156,7 +4557,7 @@ Changes
 
                                 Release 8.3.2
 
-     Release date: never released
+     Release Date: never released
 
    This release contains a variety of fixes from 8.3.1. For information
    about new features in the 8.3 major release, see the Section called
@@ -3283,7 +4684,7 @@ Changes
 
                                 Release 8.3.1
 
-     Release date: 2008-03-17
+     Release Date: 2008-03-17
 
    This release contains a variety of fixes from 8.3.0. For information
    about new features in the 8.3 major release, see the Section called
@@ -3398,7 +4799,7 @@ Changes
 
                                  Release 8.3
 
-     Release date: 2008-02-04
+     Release Date: 2008-02-04
      __________________________________________________________________
 
 Overview
@@ -4248,9 +5649,274 @@ Contrib
        The new XML support in core PostgreSQL supersedes this module.
      __________________________________________________________________
 
+                               Release 8.2.23
+
+     Release Date: 2011-12-05
+
+   This release contains a variety of fixes from 8.2.22. For information
+   about new features in the 8.2 major release, see the Section called
+   Release 8.2.
+
+   This is expected to be the last PostgreSQL release in the 8.2.X series.
+   Users are encouraged to update to a newer release branch soon.
+     __________________________________________________________________
+
+Migration to Version 8.2.23
+
+   A dump/restore is not required for those running 8.2.X.
+
+   However, a longstanding error was discovered in the definition of the
+   information_schema.referential_constraints view. If you rely on correct
+   results from that view, you should replace its definition as explained
+   in the first changelog item below.
+
+   Also, if you are upgrading from a version earlier than 8.2.14, see the
+   release notes for 8.2.14.
+     __________________________________________________________________
+
+Changes
+
+     * Fix bugs in information_schema.referential_constraints view (Tom
+       Lane)
+       This view was being insufficiently careful about matching the
+       foreign-key constraint to the depended-on primary or unique key
+       constraint. That could result in failure to show a foreign key
+       constraint at all, or showing it multiple times, or claiming that
+       it depends on a different constraint than the one it really does.
+       Since the view definition is installed by initdb, merely upgrading
+       will not fix the problem. If you need to fix this in an existing
+       installation, you can (as a superuser) drop the information_schema
+       schema then re-create it by sourcing
+       "SHAREDIR/information_schema.sql". (Run pg_config --sharedir if
+       you're uncertain where "SHAREDIR" is.) This must be repeated in
+       each database to be fixed.
+     * Fix TOAST-related data corruption during CREATE TABLE dest AS
+       SELECT * FROM src or INSERT INTO dest SELECT * FROM src (Tom Lane)
+       If a table has been modified by "ALTER TABLE ADD COLUMN", attempts
+       to copy its data verbatim to another table could produce corrupt
+       results in certain corner cases. The problem can only manifest in
+       this precise form in 8.4 and later, but we patched earlier versions
+       as well in case there are other code paths that could trigger the
+       same bug.
+     * Fix race condition during toast table access from stale syscache
+       entries (Tom Lane)
+       The typical symptom was transient errors like "missing chunk number
+       0 for toast value NNNNN in pg_toast_2619", where the cited toast
+       table would always belong to a system catalog.
+     * Improve locale support in money type's input and output (Tom Lane)
+       Aside from not supporting all standard lc_monetary formatting
+       options, the input and output functions were inconsistent, meaning
+       there were locales in which dumped money values could not be
+       re-read.
+     * Don't let transform_null_equals affect CASE foo WHEN NULL ...
+       constructs (Heikki Linnakangas)
+       transform_null_equals is only supposed to affect foo = NULL
+       expressions written directly by the user, not equality checks
+       generated internally by this form of CASE.
+     * Change foreign-key trigger creation order to better support
+       self-referential foreign keys (Tom Lane)
+       For a cascading foreign key that references its own table, a row
+       update will fire both the ON UPDATE trigger and the CHECK trigger
+       as one event. The ON UPDATE trigger must execute first, else the
+       CHECK will check a non-final state of the row and possibly throw an
+       inappropriate error. However, the firing order of these triggers is
+       determined by their names, which generally sort in creation order
+       since the triggers have auto-generated names following the
+       convention "RI_ConstraintTrigger_NNNN". A proper fix would require
+       modifying that convention, which we will do in 9.2, but it seems
+       risky to change it in existing releases. So this patch just changes
+       the creation order of the triggers. Users encountering this type of
+       error should drop and re-create the foreign key constraint to get
+       its triggers into the right order.
+     * Preserve blank lines within commands in psql's command history
+       (Robert Haas)
+       The former behavior could cause problems if an empty line was
+       removed from within a string literal, for example.
+     * Use the preferred version of xsubpp to build PL/Perl, not
+       necessarily the operating system's main copy (David Wheeler and
+       Alex Hunsaker)
+     * Honor query cancel interrupts promptly in pgstatindex() (Robert
+       Haas)
+     * Ensure VPATH builds properly install all server header files (Peter
+       Eisentraut)
+     * Shorten file names reported in verbose error messages (Peter
+       Eisentraut)
+       Regular builds have always reported just the name of the C file
+       containing the error message call, but VPATH builds formerly
+       reported an absolute path name.
+     * Fix interpretation of Windows timezone names for Central America
+       (Tom Lane)
+       Map "Central America Standard Time" to CST6, not CST6CDT, because
+       DST is generally not observed anywhere in Central America.
+     * Update time zone data files to tzdata release 2011n for DST law
+       changes in Brazil, Cuba, Fiji, Palestine, Russia, and Samoa; also
+       historical corrections for Alaska and British East Africa.
+     __________________________________________________________________
+
+                               Release 8.2.22
+
+     Release Date: 2011-09-26
+
+   This release contains a variety of fixes from 8.2.21. For information
+   about new features in the 8.2 major release, see the Section called
+   Release 8.2.
+
+   The PostgreSQL community will stop releasing updates for the 8.2.X
+   release series in December 2011. Users are encouraged to update to a
+   newer release branch soon.
+     __________________________________________________________________
+
+Migration to Version 8.2.22
+
+   A dump/restore is not required for those running 8.2.X. However, if you
+   are upgrading from a version earlier than 8.2.14, see the release notes
+   for 8.2.14.
+     __________________________________________________________________
+
+Changes
+
+     * Fix multiple bugs in GiST index page split processing (Heikki
+       Linnakangas)
+       The probability of occurrence was low, but these could lead to
+       index corruption.
+     * Avoid possibly accessing off the end of memory in "ANALYZE" (Noah
+       Misch)
+       This fixes a very-low-probability server crash scenario.
+     * Fix race condition in relcache init file invalidation (Tom Lane)
+       There was a window wherein a new backend process could read a stale
+       init file but miss the inval messages that would tell it the data
+       is stale. The result would be bizarre failures in catalog accesses,
+       typically "could not read block 0 in file ..." later during
+       startup.
+     * Fix memory leak at end of a GiST index scan (Tom Lane)
+       Commands that perform many separate GiST index scans, such as
+       verification of a new GiST-based exclusion constraint on a table
+       already containing many rows, could transiently require large
+       amounts of memory due to this leak.
+     * Fix performance problem when constructing a large, lossy bitmap
+       (Tom Lane)
+     * Fix array- and path-creating functions to ensure padding bytes are
+       zeroes (Tom Lane)
+       This avoids some situations where the planner will think that
+       semantically-equal constants are not equal, resulting in poor
+       optimization.
+     * Work around gcc 4.6.0 bug that breaks WAL replay (Tom Lane)
+       This could lead to loss of committed transactions after a server
+       crash.
+     * Fix dump bug for VALUES in a view (Tom Lane)
+     * Disallow SELECT FOR UPDATE/SHARE on sequences (Tom Lane)
+       This operation doesn't work as expected and can lead to failures.
+     * Defend against integer overflow when computing size of a hash table
+       (Tom Lane)
+     * Fix portability bugs in use of credentials control messages for
+       "peer" authentication (Tom Lane)
+     * Fix typo in pg_srand48 seed initialization (Andres Freund)
+       This led to failure to use all bits of the provided seed. This
+       function is not used on most platforms (only those without
+       srandom), and the potential security exposure from a
+       less-random-than-expected seed seems minimal in any case.
+     * Avoid integer overflow when the sum of LIMIT and OFFSET values
+       exceeds 2^63 (Heikki Linnakangas)
+     * Add overflow checks to int4 and int8 versions of generate_series()
+       (Robert Haas)
+     * Fix trailing-zero removal in to_char() (Marti Raudsepp)
+       In a format with FM and no digit positions after the decimal point,
+       zeroes to the left of the decimal point could be removed
+       incorrectly.
+     * Fix pg_size_pretty() to avoid overflow for inputs close to 2^63
+       (Tom Lane)
+     * Fix psql's counting of script file line numbers during COPY from a
+       different file (Tom Lane)
+     * Fix pg_restore's direct-to-database mode for
+       standard_conforming_strings (Tom Lane)
+       pg_restore could emit incorrect commands when restoring directly to
+       a database server from an archive file that had been made with
+       standard_conforming_strings set to on.
+     * Fix write-past-buffer-end and memory leak in libpq's LDAP service
+       lookup code (Albe Laurenz)
+     * In libpq, avoid failures when using nonblocking I/O and an SSL
+       connection (Martin Pihlak, Tom Lane)
+     * Improve libpq's handling of failures during connection startup (Tom
+       Lane)
+       In particular, the response to a server report of fork() failure
+       during SSL connection startup is now saner.
+     * Make ecpglib write double values with 15 digits precision (Akira
+       Kurosawa)
+     * Apply upstream fix for blowfish signed-character bug
+       (CVE-2011-2483) (Tom Lane)
+       "contrib/pg_crypto"'s blowfish encryption code could give wrong
+       results on platforms where char is signed (which is most), leading
+       to encrypted passwords being weaker than they should be.
+     * Fix memory leak in "contrib/seg" (Heikki Linnakangas)
+     * Fix pgstatindex() to give consistent results for empty indexes (Tom
+       Lane)
+     * Allow building with perl 5.14 (Alex Hunsaker)
+     * Update configure script's method for probing existence of system
+       functions (Tom Lane)
+       The version of autoconf we used in 8.3 and 8.2 could be fooled by
+       compilers that perform link-time optimization.
+     * Fix assorted issues with build and install file paths containing
+       spaces (Tom Lane)
+     * Update time zone data files to tzdata release 2011i for DST law
+       changes in Canada, Egypt, Russia, Samoa, and South Sudan.
+     __________________________________________________________________
+
+                               Release 8.2.21
+
+     Release Date: 2011-04-18
+
+   This release contains a variety of fixes from 8.2.20. For information
+   about new features in the 8.2 major release, see the Section called
+   Release 8.2.
+     __________________________________________________________________
+
+Migration to Version 8.2.21
+
+   A dump/restore is not required for those running 8.2.X. However, if you
+   are upgrading from a version earlier than 8.2.14, see the release notes
+   for 8.2.14.
+     __________________________________________________________________
+
+Changes
+
+     * Avoid potential deadlock during catalog cache initialization
+       (Nikhil Sontakke)
+       In some cases the cache loading code would acquire share lock on a
+       system index before locking the index's catalog. This could
+       deadlock against processes trying to acquire exclusive locks in the
+       other, more standard order.
+     * Fix dangling-pointer problem in BEFORE ROW UPDATE trigger handling
+       when there was a concurrent update to the target tuple (Tom Lane)
+       This bug has been observed to result in intermittent "cannot
+       extract system attribute from virtual tuple" failures while trying
+       to do UPDATE RETURNING ctid. There is a very small probability of
+       more serious errors, such as generating incorrect index entries for
+       the updated tuple.
+     * Disallow "DROP TABLE" when there are pending deferred trigger
+       events for the table (Tom Lane)
+       Formerly the "DROP" would go through, leading to "could not open
+       relation with OID nnn" errors when the triggers were eventually
+       fired.
+     * Fix PL/Python memory leak involving array slices (Daniel Popowich)
+     * Fix pg_restore to cope with long lines (over 1KB) in TOC files (Tom
+       Lane)
+     * Put in more safeguards against crashing due to division-by-zero
+       with overly enthusiastic compiler optimization (Aurelien Jarno)
+     * Support use of dlopen() in FreeBSD and OpenBSD on MIPS (Tom Lane)
+       There was a hard-wired assumption that this system function was not
+       available on MIPS hardware on these systems. Use a compile-time
+       test instead, since more recent versions have it.
+     * Fix compilation failures on HP-UX (Heikki Linnakangas)
+     * Fix path separator used by pg_regress on Cygwin (Andrew Dunstan)
+     * Update time zone data files to tzdata release 2011f for DST law
+       changes in Chile, Cuba, Falkland Islands, Morocco, Samoa, and
+       Turkey; also historical corrections for South Australia, Alaska,
+       and Hawaii.
+     __________________________________________________________________
+
                                Release 8.2.20
 
-     Release date: 2011-01-31
+     Release Date: 2011-01-31
 
    This release contains a variety of fixes from 8.2.19. For information
    about new features in the 8.2 major release, see the Section called
@@ -4309,7 +5975,7 @@ Changes
 
                                Release 8.2.19
 
-     Release date: 2010-12-16
+     Release Date: 2010-12-16
 
    This release contains a variety of fixes from 8.2.18. For information
    about new features in the 8.2 major release, see the Section called
@@ -4399,7 +6065,7 @@ Changes
 
                                Release 8.2.18
 
-     Release date: 2010-10-04
+     Release Date: 2010-10-04
 
    This release contains a variety of fixes from 8.2.17. For information
    about new features in the 8.2 major release, see the Section called
@@ -4517,7 +6183,7 @@ Changes
 
                                Release 8.2.17
 
-     Release date: 2010-05-17
+     Release Date: 2010-05-17
 
    This release contains a variety of fixes from 8.2.16. For information
    about new features in the 8.2 major release, see the Section called
@@ -4600,7 +6266,7 @@ Changes
 
                                Release 8.2.16
 
-     Release date: 2010-03-15
+     Release Date: 2010-03-15
 
    This release contains a variety of fixes from 8.2.15. For information
    about new features in the 8.2 major release, see the Section called
@@ -4699,7 +6365,7 @@ Changes
 
                                Release 8.2.15
 
-     Release date: 2009-12-14
+     Release Date: 2009-12-14
 
    This release contains a variety of fixes from 8.2.14. For information
    about new features in the 8.2 major release, see the Section called
@@ -4726,7 +6392,7 @@ Changes
      * Fix possible crash during backend-startup-time cache initialization
        (Tom)
      * Prevent signals from interrupting VACUUM at unsafe times (Alvaro)
-       This fix prevents a PANIC if a VACUUM FULL is cancelled after it's
+       This fix prevents a PANIC if a VACUUM FULL is canceled after it's
        already committed its tuple movements, as well as transient errors
        if a plain VACUUM is interrupted after having truncated the table.
      * Fix possible crash due to integer overflow in hash table size
@@ -4788,7 +6454,7 @@ Changes
 
                                Release 8.2.14
 
-     Release date: 2009-09-09
+     Release Date: 2009-09-09
 
    This release contains a variety of fixes from 8.2.13. For information
    about new features in the 8.2 major release, see the Section called
@@ -4865,7 +6531,7 @@ Changes
 
                                Release 8.2.13
 
-     Release date: 2009-03-16
+     Release Date: 2009-03-16
 
    This release contains a variety of fixes from 8.2.12. For information
    about new features in the 8.2 major release, see the Section called
@@ -4939,7 +6605,7 @@ Changes
 
                                Release 8.2.12
 
-     Release date: 2009-02-02
+     Release Date: 2009-02-02
 
    This release contains a variety of fixes from 8.2.11. For information
    about new features in the 8.2 major release, see the Section called
@@ -5004,7 +6670,7 @@ Changes
 
                                Release 8.2.11
 
-     Release date: 2008-11-03
+     Release Date: 2008-11-03
 
    This release contains a variety of fixes from 8.2.10. For information
    about new features in the 8.2 major release, see the Section called
@@ -5072,7 +6738,7 @@ Changes
 
                                Release 8.2.10
 
-     Release date: 2008-09-22
+     Release Date: 2008-09-22
 
    This release contains a variety of fixes from 8.2.9. For information
    about new features in the 8.2 major release, see the Section called
@@ -5157,7 +6823,7 @@ Changes
 
                                 Release 8.2.9
 
-     Release date: 2008-06-12
+     Release Date: 2008-06-12
 
    This release contains one serious and one minor bug fix over 8.2.8. For
    information about new features in the 8.2 major release, see the
@@ -5190,7 +6856,7 @@ Changes
 
                                 Release 8.2.8
 
-     Release date: never released
+     Release Date: never released
 
    This release contains a variety of fixes from 8.2.7. For information
    about new features in the 8.2 major release, see the Section called
@@ -5262,7 +6928,7 @@ Changes
 
                                 Release 8.2.7
 
-     Release date: 2008-03-17
+     Release Date: 2008-03-17
 
    This release contains a variety of fixes from 8.2.6. For information
    about new features in the 8.2 major release, see the Section called
@@ -5361,7 +7027,7 @@ Changes
 
                                 Release 8.2.6
 
-     Release date: 2008-01-07
+     Release Date: 2008-01-07
 
    This release contains a variety of fixes from 8.2.5, including fixes
    for significant security issues. For information about new features in
@@ -5470,7 +7136,7 @@ Changes
 
                                 Release 8.2.5
 
-     Release date: 2007-09-17
+     Release Date: 2007-09-17
 
    This release contains a variety of fixes from 8.2.4. For information
    about new features in the 8.2 major release, see the Section called
@@ -5525,7 +7191,7 @@ Changes
 
                                 Release 8.2.4
 
-     Release date: 2007-04-23
+     Release Date: 2007-04-23
 
    This release contains a variety of fixes from 8.2.3, including a
    security fix. For information about new features in the 8.2 major
@@ -5574,7 +7240,7 @@ Changes
 
                                 Release 8.2.3
 
-     Release date: 2007-02-07
+     Release Date: 2007-02-07
 
    This release contains two fixes from 8.2.2. For information about new
    features in the 8.2 major release, see the Section called Release 8.2.
@@ -5595,7 +7261,7 @@ Changes
 
                                 Release 8.2.2
 
-     Release date: 2007-02-05
+     Release Date: 2007-02-05
 
    This release contains a variety of fixes from 8.2.1, including a
    security fix. For information about new features in the 8.2 major
@@ -5650,7 +7316,7 @@ Changes
 
                                 Release 8.2.1
 
-     Release date: 2007-01-08
+     Release Date: 2007-01-08
 
    This release contains a variety of fixes from 8.2. For information
    about new features in the 8.2 major release, see the Section called
@@ -5691,7 +7357,7 @@ Changes
 
                                  Release 8.2
 
-     Release date: 2006-12-05
+     Release Date: 2006-12-05
      __________________________________________________________________
 
 Overview

@@ -1300,9 +1300,6 @@ prog: statements;
  { output_statement($1, 0, ECPGst_normal); }
 |  DeallocateStmt
 	{
-		if (connection)
-			mmerror(PARSE_ERROR, ET_ERROR, "AT option not allowed in DEALLOCATE statement");
-
 		output_deallocate_prepare_statement($1);
 	}
 |  DeclareCursorStmt
@@ -1440,8 +1437,6 @@ prog: statements;
 	}
 	| ECPGDeallocateDescr
 	{
-		if (connection)
-			mmerror(PARSE_ERROR, ET_ERROR, "AT option not allowed in DEALLOCATE statement");
 		fprintf(yyout,"ECPGdeallocate_desc(__LINE__, %s);",$1);
 		whenever_action(0);
 		free($1);

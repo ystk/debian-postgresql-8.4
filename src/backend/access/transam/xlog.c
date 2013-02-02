@@ -44,6 +44,7 @@
 #include "storage/fd.h"
 #include "storage/ipc.h"
 #include "storage/pmsignal.h"
+#include "storage/proc.h"
 #include "storage/procarray.h"
 #include "storage/smgr.h"
 #include "storage/spin.h"
@@ -3433,12 +3434,12 @@ ReadRecord(XLogRecPtr *RecPtr, int emode)
 			goto got_record;
 		}
 		/* align old recptr to next page */
-		if (tmpRecPtr.xrecoff % XLOG_BLCKSZ != 0)
-			tmpRecPtr.xrecoff += (XLOG_BLCKSZ - tmpRecPtr.xrecoff % XLOG_BLCKSZ);
-		if (tmpRecPtr.xrecoff >= XLogFileSize)
+		if (RecPtr->xrecoff % XLOG_BLCKSZ != 0)
+			RecPtr->xrecoff += (XLOG_BLCKSZ - RecPtr->xrecoff % XLOG_BLCKSZ);
+		if (RecPtr->xrecoff >= XLogFileSize)
 		{
-			(tmpRecPtr.xlogid)++;
-			tmpRecPtr.xrecoff = 0;
+			(RecPtr->xlogid)++;
+			RecPtr->xrecoff = 0;
 		}
 		/* We will account for page header size below */
 	}
@@ -3524,11 +3525,13 @@ ReadRecord(XLogRecPtr *RecPtr, int emode)
 	if (targetRecOff == 0)
 	{
 		/*
-		 * Can only get here in the continuing-from-prev-page case, because
-		 * XRecOffIsValid eliminated the zero-page-offset case otherwise. Need
-		 * to skip over the new page's header.
+		 * At page start, so skip over page header.  The Assert checks that
+		 * we're not scribbling on caller's record pointer; it's OK because we
+		 * can only get here in the continuing-from-prev-record case, since
+		 * XRecOffIsValid rejected the zero-page-offset case otherwise.
 		 */
-		tmpRecPtr.xrecoff += pageHeaderSize;
+		Assert(RecPtr == &tmpRecPtr);
+		RecPtr->xrecoff += pageHeaderSize;
 		targetRecOff = pageHeaderSize;
 	}
 	else if (targetRecOff < pageHeaderSize)
@@ -5567,6 +5570,7 @@ StartupXLOG(void)
 			 */
 			if (InArchiveRecovery && IsUnderPostmaster)
 			{
+				PublishStartupProcessInformation();
 				SetForwardFsyncRequests();
 				SendPostmasterSignal(PMSIGNAL_RECOVERY_STARTED);
 				bgwriterLaunched = true;
@@ -7013,12 +7017,15 @@ xlog_redo(XLogRecPtr lsn, XLogRecord *record)
 	{
 		Oid			nextOid;
 
+		/*
+		 * We used to try to take the maximum of ShmemVariableCache->nextOid
+		 * and the recorded nextOid, but that fails if the OID counter wraps
+		 * around.  Since no OID allocation should be happening during replay
+		 * anyway, better to just believe the record exactly.
+		 */
 		memcpy(&nextOid, XLogRecGetData(record), sizeof(Oid));
-		if (ShmemVariableCache->nextOid < nextOid)
-		{
-			ShmemVariableCache->nextOid = nextOid;
-			ShmemVariableCache->oidCount = 0;
-		}
+		ShmemVariableCache->nextOid = nextOid;
+		ShmemVariableCache->oidCount = 0;
 	}
 	else if (info == XLOG_CHECKPOINT_SHUTDOWN)
 	{
@@ -7058,15 +7065,13 @@ xlog_redo(XLogRecPtr lsn, XLogRecord *record)
 		CheckPoint	checkPoint;
 
 		memcpy(&checkPoint, XLogRecGetData(record), sizeof(CheckPoint));
-		/* In an ONLINE checkpoint, treat the counters like NEXTOID */
+		/* In an ONLINE checkpoint, treat the XID counter as a minimum */
 		if (TransactionIdPrecedes(ShmemVariableCache->nextXid,
 								  checkPoint.nextXid))
 			ShmemVariableCache->nextXid = checkPoint.nextXid;
-		if (ShmemVariableCache->nextOid < checkPoint.nextOid)
-		{
-			ShmemVariableCache->nextOid = checkPoint.nextOid;
-			ShmemVariableCache->oidCount = 0;
-		}
+		/* ... but still treat OID counter as exact */
+		ShmemVariableCache->nextOid = checkPoint.nextOid;
+		ShmemVariableCache->oidCount = 0;
 		MultiXactAdvanceNextMXact(checkPoint.nextMulti,
 								  checkPoint.nextMultiOffset);
 
@@ -7424,7 +7429,7 @@ pg_start_backup(PG_FUNCTION_ARGS)
 				checkpointloc.xlogid, checkpointloc.xrecoff);
 		fprintf(fp, "START TIME: %s\n", strfbuf);
 		fprintf(fp, "LABEL: %s\n", backupidstr);
-		if (fflush(fp) || ferror(fp) || FreeFile(fp))
+		if (fflush(fp) || ferror(fp) || pg_fsync(fileno(fp)) != 0 || FreeFile(fp))
 			ereport(ERROR,
 					(errcode_for_file_access(),
 					 errmsg("could not write file \"%s\": %m",

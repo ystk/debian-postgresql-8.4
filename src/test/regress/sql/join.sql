@@ -585,6 +585,54 @@ order by c.name;
 rollback;
 
 --
+-- test incorrect handling of placeholders that only appear in targetlists,
+-- per bug #6154
+--
+SELECT * FROM
+( SELECT 1 as key1 ) sub1
+LEFT JOIN
+( SELECT sub3.key3, sub4.value2, COALESCE(sub4.value2, 66) as value3 FROM
+    ( SELECT 1 as key3 ) sub3
+    LEFT JOIN
+    ( SELECT sub5.key5, COALESCE(sub6.value1, 1) as value2 FROM
+        ( SELECT 1 as key5 ) sub5
+        LEFT JOIN
+        ( SELECT 2 as key6, 42 as value1 ) sub6
+        ON sub5.key5 = sub6.key6
+    ) sub4
+    ON sub4.key5 = sub3.key3
+) sub2
+ON sub1.key1 = sub2.key3;
+
+-- test the path using join aliases, too
+SELECT * FROM
+( SELECT 1 as key1 ) sub1
+LEFT JOIN
+( SELECT sub3.key3, value2, COALESCE(value2, 66) as value3 FROM
+    ( SELECT 1 as key3 ) sub3
+    LEFT JOIN
+    ( SELECT sub5.key5, COALESCE(sub6.value1, 1) as value2 FROM
+        ( SELECT 1 as key5 ) sub5
+        LEFT JOIN
+        ( SELECT 2 as key6, 42 as value1 ) sub6
+        ON sub5.key5 = sub6.key6
+    ) sub4
+    ON sub4.key5 = sub3.key3
+) sub2
+ON sub1.key1 = sub2.key3;
+
+--
+-- test case where a PlaceHolderVar is propagated into a subquery
+--
+select * from
+  int8_tbl t1 left join
+  (select q1 as x, 42 as y from int8_tbl t2) ss
+  on t1.q2 = ss.x
+where
+  1 = (select 1 from int8_tbl t3 where ss.y is not null limit 1)
+order by 1,2;
+
+--
 -- test the corner cases FULL JOIN ON TRUE and FULL JOIN ON FALSE
 --
 select * from int4_tbl a full join int4_tbl b on true;

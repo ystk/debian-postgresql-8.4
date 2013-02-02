@@ -1,4 +1,558 @@
-postgresql-8.4 (8.4.7-0squeeze2) stable-security; urgency=high
+postgresql-8.4 (8.4.13-0squeeze1) stable-security; urgency=low
+
+  * New upstream security/bug fix release:
+    - Prevent access to external files/URLs via XML entity references.
+      xml_parse() would attempt to fetch external files or URLs as needed
+      to resolve DTD and entity references in an XML value, thus allowing
+      unprivileged database users to attempt to fetch data with the
+      privileges of the database server. While the external data wouldn't
+      get returned directly to the user, portions of it could be exposed
+      in error messages if the data didn't parse as valid XML; and in any
+      case the mere ability to check existence of a file might be useful
+      to an attacker. (CVE-2012-3489)
+    - Prevent access to external files/URLs via "contrib/xml2"'s
+      xslt_process().
+      libxslt offers the ability to read and write both files and URLs
+      through stylesheet commands, thus allowing unprivileged database
+      users to both read and write data with the privileges of the
+      database server. Disable that through proper use of libxslt's
+      security options. (CVE-2012-3488)
+      Also, remove xslt_process()'s ability to fetch documents and
+      stylesheets from external files/URLs. While this was a documented
+      "feature", it was long regarded as a bad idea. The fix for
+      CVE-2012-3489 broke that capability, and rather than expend effort
+      on trying to fix it, we're just going to summarily remove it.
+    - Prevent too-early recycling of btree index pages.
+      When we allowed read-only transactions to skip assigning XIDs, we
+      introduced the possibility that a deleted btree page could be
+      recycled while a read-only transaction was still in flight to it.
+      This would result in incorrect index search results. The
+      probability of such an error occurring in the field seems very low
+      because of the timing requirements, but nonetheless it should be
+      fixed.
+    - Fix crash-safety bug with newly-created-or-reset sequences.
+      If "ALTER SEQUENCE" was executed on a freshly created or reset
+      sequence, and then precisely one nextval() call was made on it, and
+      then the server crashed, WAL replay would restore the sequence to a
+      state in which it appeared that no nextval() had been done, thus
+      allowing the first sequence value to be returned again by the next
+      nextval() call. In particular this could manifest for serial
+      columns, since creation of a serial column's sequence includes an
+      "ALTER SEQUENCE OWNED BY" step.
+    - Ensure the "backup_label" file is fsync'd after pg_start_backup().
+    - Back-patch 9.1 improvement to compress the fsync request queue.
+      This improves performance during checkpoints. The 9.1 change has
+      now seen enough field testing to seem safe to back-patch.
+    - Only allow autovacuum to be auto-canceled by a directly blocked
+      process.
+      The original coding could allow inconsistent behavior in some
+      cases; in particular, an autovacuum could get canceled after less
+      than deadlock_timeout grace period.
+    - Improve logging of autovacuum cancels.
+    - Fix log collector so that log_truncate_on_rotation works during the
+      very first log rotation after server start.
+    - Fix WITH attached to a nested set operation
+      (UNION/INTERSECT/EXCEPT).
+    - Ensure that a whole-row reference to a subquery doesn't include any
+      extra GROUP BY or ORDER BY columns.
+    - Disallow copying whole-row references in CHECK constraints and
+      index definitions during "CREATE TABLE".
+      This situation can arise in "CREATE TABLE" with LIKE or INHERITS.
+      The copied whole-row variable was incorrectly labeled with the row
+      type of the original table not the new one. Rejecting the case
+      seems reasonable for LIKE, since the row types might well diverge
+      later. For INHERITS we should ideally allow it, with an implicit
+      coercion to the parent table's row type; but that will require more
+      work than seems safe to back-patch.
+    - Fix memory leak in ARRAY(SELECT ...) subqueries.
+    - Fix extraction of common prefixes from regular expressions.
+      The code could get confused by quantified parenthesized
+      subexpressions, such as ^(foo)?bar. This would lead to incorrect
+      index optimization of searches for such patterns.
+    - Fix bugs with parsing signed "hh":"mm" and "hh":"mm":"ss" fields in
+      interval constants.
+    - Report errors properly in "contrib/xml2"'s xslt_process().
+
+ -- Martin Pitt <mpitt@debian.org>  Fri, 24 Aug 2012 08:25:46 +0200
+
+postgresql-8.4 (8.4.12-0squeeze1) stable-security; urgency=low
+
+  * New upstream security/bug fix release:
+    - Fix incorrect password transformation in "contrib/pgcrypto"'s DES
+      crypt() function.
+      If a password string contained the byte value 0x80, the remainder
+      of the password was ignored, causing the password to be much weaker
+      than it appeared. With this fix, the rest of the string is properly
+      included in the DES hash. Any stored password values that are
+      affected by this bug will thus no longer match, so the stored
+      values may need to be updated. (CVE-2012-2143)
+    - Ignore SECURITY DEFINER and SET attributes for a procedural
+      language's call handler.
+      Applying such attributes to a call handler could crash the server.
+      (CVE-2012-2655)
+    - Allow numeric timezone offsets in timestamp input to be up to 16
+      hours away from UTC.
+      Some historical time zones have offsets larger than 15 hours, the
+      previous limit. This could result in dumped data values being
+      rejected during reload.
+    - Fix timestamp conversion to cope when the given time is exactly the
+      last DST transition time for the current timezone.
+      This oversight has been there a long time, but was not noticed
+      previously because most DST-using zones are presumed to have an
+      indefinite sequence of future DST transitions.
+    - Fix text to name and char to name casts to perform string
+      truncation correctly in multibyte encodings.
+    - Fix memory copying bug in to_tsquery().
+    - Fix planner's handling of outer PlaceHolderVars within subqueries.
+      This bug concerns sub-SELECTs that reference variables coming from
+      the nullable side of an outer join of the surrounding query. In
+      9.1, queries affected by this bug would fail with "ERROR:
+      Upper-level PlaceHolderVar found where not expected". But in 9.0
+      and 8.4, you'd silently get possibly-wrong answers, since the value
+      transmitted into the subquery wouldn't go to null when it should.
+    - Fix slow session startup when pg_attribute is very large.
+      If pg_attribute exceeds one-fourth of shared_buffers, cache
+      rebuilding code that is sometimes needed during session start would
+      trigger the synchronized-scan logic, causing it to take many times
+      longer than normal. The problem was particularly acute if many new
+      sessions were starting at once.
+    - Ensure sequential scans check for query cancel reasonably often.
+      A scan encountering many consecutive pages that contain no live
+      tuples would not respond to interrupts meanwhile.
+    - Ensure the Windows implementation of PGSemaphoreLock() clears
+      ImmediateInterruptOK before returning.
+      This oversight meant that a query-cancel interrupt received later
+      in the same query could be accepted at an unsafe time, with
+      unpredictable but not good consequences.
+    - Show whole-row variables safely when printing views or rules.
+      Corner cases involving ambiguous names (that is, the name could be
+      either a table or column name of the query) were printed in an
+      ambiguous way, risking that the view or rule would be interpreted
+      differently after dump and reload. Avoid the ambiguous case by
+      attaching a no-op cast.
+    - Fix "COPY FROM" to properly handle null marker strings that
+      correspond to invalid encoding.
+      A null marker string such as E'\\0' should work, and did work in
+      the past, but the case got broken in 8.4.
+    - Ensure autovacuum worker processes perform stack depth checking
+      properly.
+      Previously, infinite recursion in a function invoked by
+      auto-"ANALYZE" could crash worker processes.
+    - Fix logging collector to not lose log coherency under high load.
+      The collector previously could fail to reassemble large messages if
+      it got too busy.
+    - Fix logging collector to ensure it will restart file rotation after
+      receiving SIGHUP.
+    - Fix WAL replay logic for GIN indexes to not fail if the index was
+      subsequently dropped>
+    - Fix memory leak in PL/pgSQL's "RETURN NEXT" command.
+    - Fix PL/pgSQL's "GET DIAGNOSTICS" command when the target is the
+      function's first variable.
+    - Fix potential access off the end of memory in psql's expanded
+      display ("\x") mode.
+    - Fix several performance problems in pg_dump when the database
+      contains many objects.
+      pg_dump could get very slow if the database contained many schemas,
+      or if many objects are in dependency loops, or if there are many
+      owned sequences.
+    - Fix "contrib/dblink"'s dblink_exec() to not leak temporary database
+      connections upon error.
+    - Fix "contrib/dblink" to report the correct connection name in error
+      messages.
+  * debian/patches/15-revert-typmod-check.patch: Unfuzz to apply to new
+    version.
+  * debian/control: Move bzr branches to alioth, so that other members of
+    pkg-postgresql can commit. Update Vcs-* tags.
+
+ -- Martin Pitt <mpitt@debian.org>  Mon, 04 Jun 2012 09:53:26 +0200
+
+postgresql-8.4 (8.4.11-0squeeze1) stable-security; urgency=high
+
+  * New upstream bug fix/security release:
+    - Require execute permission on the trigger function for "CREATE
+      TRIGGER".
+      This missing check could allow another user to execute a trigger
+      function with forged input data, by installing it on a table he
+      owns. This is only of significance for trigger functions marked
+      SECURITY DEFINER, since otherwise trigger functions run as the
+      table owner anyway. (CVE-2012-0866)
+    - Remove arbitrary limitation on length of common name in SSL
+      certificates.
+      Both libpq and the server truncated the common name extracted from
+      an SSL certificate at 32 bytes. Normally this would cause nothing
+      worse than an unexpected verification failure, but there are some
+      rather-implausible scenarios in which it might allow one
+      certificate holder to impersonate another. The victim would have to
+      have a common name exactly 32 bytes long, and the attacker would
+      have to persuade a trusted CA to issue a certificate in which the
+      common name has that string as a prefix. Impersonating a server
+      would also require some additional exploit to redirect client
+      connections. (CVE-2012-0867)
+    - Convert newlines to spaces in names written in pg_dump comments.
+      pg_dump was incautious about sanitizing object names that are
+      emitted within SQL comments in its output script. A name containing
+      a newline would at least render the script syntactically incorrect.
+      Maliciously crafted object names could present a SQL injection risk
+      when the script is reloaded. (CVE-2012-0868)
+    - Fix btree index corruption from insertions concurrent with
+      vacuuming.
+      An index page split caused by an insertion could sometimes cause a
+      concurrently-running "VACUUM" to miss removing index entries that
+      it should remove. After the corresponding table rows are removed,
+      the dangling index entries would cause errors (such as "could not
+      read block N in file ...") or worse, silently wrong query results
+      after unrelated rows are re-inserted at the now-free table
+      locations. This bug has been present since release 8.2, but occurs
+      so infrequently that it was not diagnosed until now. If you have
+      reason to suspect that it has happened in your database, reindexing
+      the affected index will fix things.
+    - Update per-column permissions, not only per-table permissions, when
+      changing table owner.
+      Failure to do this meant that any previously granted column
+      permissions were still shown as having been granted by the old
+      owner. This meant that neither the new owner nor a superuser could
+      revoke the now-untraceable-to-table-owner permissions.
+    - Allow non-existent values for some settings in "ALTER USER/DATABASE
+      SET".
+      Allow default_text_search_config, default_tablespace, and
+      temp_tablespaces to be set to names that are not known. This is
+      because they might be known in another database where the setting
+      is intended to be used, or for the tablespace cases because the
+      tablespace might not be created yet. The same issue was previously
+      recognized for search_path, and these settings now act like that
+      one.
+    - Avoid crashing when we have problems deleting table files
+      post-commit.
+      Dropping a table should lead to deleting the underlying disk files
+      only after the transaction commits. In event of failure then (for
+      instance, because of wrong file permissions) the code is supposed
+      to just emit a warning message and go on, since it's too late to
+      abort the transaction. This logic got broken as of release 8.4,
+      causing such situations to result in a PANIC and an unrestartable
+      database.
+    - Track the OID counter correctly during WAL replay, even when it
+      wraps around.
+      Previously the OID counter would remain stuck at a high value until
+      the system exited replay mode. The practical consequences of that
+      are usually nil, but there are scenarios wherein a standby server
+      that's been promoted to master might take a long time to advance
+      the OID counter to a reasonable value once values are needed.
+    - Fix regular expression back-references with - attached.
+      Rather than enforcing an exact string match, the code would
+      effectively accept any string that satisfies the pattern
+      sub-expression referenced by the back-reference symbol.
+      A similar problem still afflicts back-references that are embedded
+      in a larger quantified expression, rather than being the immediate
+      subject of the quantifier. This will be addressed in a future
+      PostgreSQL release.
+    - Fix recently-introduced memory leak in processing of inet/cidr
+      values.
+    - Fix dangling pointer after "CREATE TABLE AS"/"SELECT INTO" in a
+      SQL-language function.
+      In most cases this only led to an assertion failure in
+      assert-enabled builds, but worse consequences seem possible.
+    - Fix I/O-conversion-related memory leaks in plpgsql.
+    - Improve pg_dump's handling of inherited table columns.
+      pg_dump mishandled situations where a child column has a different
+      default expression than its parent column. If the default is
+      textually identical to the parent's default, but not actually the
+      same (for instance, because of schema search path differences) it
+      would not be recognized as different, so that after dump and
+      restore the child would be allowed to inherit the parent's default.
+      Child columns that are NOT NULL where their parent is not could
+      also be restored subtly incorrectly.
+    - Fix pg_restore's direct-to-database mode for INSERT-style table
+      data.
+      Direct-to-database restores from archive files made with
+      "--inserts" or "--column-inserts" options fail when using
+      pg_restore from a release dated September or December 2011, as a
+      result of an oversight in a fix for another problem. The archive
+      file itself is not at fault, and text-mode output is okay.
+    - Allow AT option in ecpg DEALLOCATE statements.
+      The infrastructure to support this has been there for awhile, but
+      through an oversight there was still an error check rejecting the
+      case.
+    - Fix error in "contrib/intarray"'s int[] & int[] operator.
+      If the smallest integer the two input arrays have in common is 1,
+      and there are smaller values in either array, then 1 would be
+      incorrectly omitted from the result.
+    - Fix error detection in "contrib/pgcrypto"'s encrypt_iv() and
+      decrypt_iv().
+      These functions failed to report certain types of invalid-input
+      errors, and would instead return random garbage values for
+      incorrect input.
+    - Fix one-byte buffer overrun in "contrib/test_parser".
+      The code would try to read one more byte than it should, which
+      would crash in corner cases. Since "contrib/test_parser" is only
+      example code, this is not a security issue in itself, but bad
+      example code is still bad.
+    - Use __sync_lock_test_and_set() for spinlocks on ARM, if available.
+      This function replaces our previous use of the SWPB instruction,
+      which is deprecated and not available on ARMv6 and later. Reports
+      suggest that the old code doesn't fail in an obvious way on recent
+      ARM boards, but simply doesn't interlock concurrent accesses,
+      leading to bizarre failures in multiprocess operation.
+    - Use "-fexcess-precision=standard" option when building with gcc
+      versions that accept it.
+      This prevents assorted scenarios wherein recent versions of gcc
+      will produce creative results.
+    - Allow use of threaded Python on FreeBSD.
+      Our configure script previously believed that this combination
+      wouldn't work; but FreeBSD fixed the problem, so remove that error
+      check.
+  * Drop 04-armel-tas.patch, applied upstream.
+
+ -- Martin Pitt <mpitt@debian.org>  Sat, 25 Feb 2012 11:52:09 +0100
+
+postgresql-8.4 (8.4.10-0squeeze1) stable; urgency=low
+
+  * New upstream bug fix release:
+    - Fix bugs in information_schema.referential_constraints view.
+      This view was being insufficiently careful about matching the
+      foreign-key constraint to the depended-on primary or unique key
+      constraint. That could result in failure to show a foreign key
+      constraint at all, or showing it multiple times, or claiming that
+      it depends on a different constraint than the one it really does.
+      Since the view definition is installed by initdb, merely upgrading
+      will not fix the problem. If you need to fix this in an existing
+      installation, you can (as a superuser) drop the information_schema
+      schema then re-create it by sourcing
+      "SHAREDIR/information_schema.sql". (Run pg_config --sharedir if
+      you're uncertain where "SHAREDIR" is.) This must be repeated in
+      each database to be fixed.
+    - Fix incorrect replay of WAL records for GIN index updates.
+      This could result in transiently failing to find index entries
+      after a crash, or on a hot-standby server. The problem would be
+      repaired by the next "VACUUM" of the index, however.
+    - Fix TOAST-related data corruption during CREATE TABLE dest AS
+      SELECT - FROM src or INSERT INTO dest SELECT * FROM src.
+      If a table has been modified by "ALTER TABLE ADD COLUMN", attempts
+      to copy its data verbatim to another table could produce corrupt
+      results in certain corner cases. The problem can only manifest in
+      this precise form in 8.4 and later, but we patched earlier versions
+      as well in case there are other code paths that could trigger the
+      same bug.
+    - Fix race condition during toast table access from stale syscache
+      entries.
+    - Track dependencies of functions on items used in parameter default
+      expressions. Previously, a referenced object could be dropped without
+      having dropped or modified the function, leading to misbehavior when the
+      function was used. Note that merely installing this update will not fix
+      the missing dependency entries; to do that, you'd need to "CREATE OR
+      REPLACE" each such function afterwards. If you have functions whose
+      defaults depend on non-built-in objects, doing so is recommended.
+    - Allow inlining of set-returning SQL functions with multiple OUT
+      parameters.
+    - Make DatumGetInetP() unpack inet datums that have a 1-byte header,
+      and add a new macro, DatumGetInetPP(), that does not.
+    - Improve locale support in money type's input and output.
+      Aside from not supporting all standard lc_monetary formatting
+      options, the input and output functions were inconsistent, meaning
+      there were locales in which dumped money values could not be
+      re-read.
+    - Don't let transform_null_equals affect CASE foo WHEN NULL ...
+      constructs. transform_null_equals is only supposed to affect foo = NULL
+      expressions written directly by the user, not equality checks
+      generated internally by this form of CASE.
+    - Change foreign-key trigger creation order to better support
+      self-referential foreign keys. For a cascading foreign key that
+      references its own table, a row update will fire both the ON UPDATE
+      trigger and the CHECK trigger as one event. The ON UPDATE trigger must
+      execute first, else the CHECK will check a non-final state of the row
+      and possibly throw an inappropriate error. However, the firing order of
+      these triggers is determined by their names, which generally sort in
+      creation order since the triggers have auto-generated names following
+      the convention "RI_ConstraintTrigger_NNNN". A proper fix would require
+      modifying that convention, which we will do in 9.2, but it seems risky
+      to change it in existing releases. So this patch just changes the
+      creation order of the triggers. Users encountering this type of error
+      should drop and re-create the foreign key constraint to get its triggers
+      into the right order.
+    - Avoid floating-point underflow while tracking buffer allocation
+      rate.
+    - Preserve blank lines within commands in psql's command history.
+      The former behavior could cause problems if an empty line was
+      removed from within a string literal, for example.
+    - Fix pg_dump to dump user-defined casts between auto-generated
+      types, such as table rowtypes.
+    - Use the preferred version of xsubpp to build PL/Perl, not
+      necessarily the operating system's main copy.
+    - Fix incorrect coding in "contrib/dict_int" and "contrib/dict_xsyn".
+    - Honor query cancel interrupts promptly in pgstatindex().
+    - Ensure VPATH builds properly install all server header files.
+    - Shorten file names reported in verbose error messages.
+      Regular builds have always reported just the name of the C file
+      containing the error message call, but VPATH builds formerly
+      reported an absolute path name.
+
+ -- Martin Pitt <mpitt@debian.org>  Sat, 03 Dec 2011 16:56:34 +0100
+
+postgresql-8.4 (8.4.9-0squeeze1) stable-security; urgency=low
+
+  * New upstream bug fix/security release:
+     - Fix bugs in indexing of in-doubt HOT-updated tuples.
+       These bugs could result in index corruption after reindexing a
+       system catalog. They are not believed to affect user indexes.
+     - Fix multiple bugs in GiST index page split processing.
+       The probability of occurrence was low, but these could lead to
+       index corruption.
+     - Fix possible buffer overrun in tsvector_concat().
+       The function could underestimate the amount of memory needed for
+       its result, leading to server crashes.
+     - Fix crash in xml_recv when processing a "standalone" parameter.
+     - Make pg_options_to_table return NULL for an option with no value.
+       Previously such cases would result in a server crash.
+     - Avoid possibly accessing off the end of memory in "ANALYZE" and in
+       SJIS-2004 encoding conversion.
+       This fixes some very-low-probability server crash scenarios.
+     - Prevent intermittent hang in interactions of startup process with
+       bgwriter process.
+       This affected recovery in non-hot-standby cases.
+     - Fix race condition in relcache init file invalidation.
+       There was a window wherein a new backend process could read a stale
+       init file but miss the inval messages that would tell it the data
+       is stale. The result would be bizarre failures in catalog accesses,
+       typically "could not read block 0 in file ..." later during
+       startup.
+     - Fix memory leak at end of a GiST index scan.
+       Commands that perform many separate GiST index scans, such as
+       verification of a new GiST-based exclusion constraint on a table
+       already containing many rows, could transiently require large
+       amounts of memory due to this leak.
+     - Fix incorrect memory accounting (leading to possible memory bloat)
+       in tuplestores supporting holdable cursors and plpgsql's RETURN
+       NEXT command.
+     - Fix performance problem when constructing a large, lossy bitmap.
+     - Fix join selectivity estimation for unique columns.
+       This fixes an erroneous planner heuristic that could lead to poor
+       estimates of the result size of a join.
+     - Fix nested PlaceHolderVar expressions that appear only in
+       sub-select target lists. This mistake could result in outputs of an
+       outer join incorrectly appearing as NULL.
+     - Allow nested EXISTS queries to be optimized properly.
+     - Fix array- and path-creating functions to ensure padding bytes are
+       zeroes.  This avoids some situations where the planner will think that
+       semantically-equal constants are not equal, resulting in poor
+       optimization.
+     - Fix "EXPLAIN" to handle gating Result nodes within inner-indexscan
+       subplans.  The usual symptom of this oversight was "bogus varno" errors.
+     - Work around gcc 4.6.0 bug that breaks WAL replay.  This could lead to
+       loss of committed transactions after a server crash.
+     - Fix dump bug for VALUES in a view.
+     - Disallow SELECT FOR UPDATE/SHARE on sequences.
+       This operation doesn't work as expected and can lead to failures.
+     - Fix "VACUUM" so that it always updates pg_class.reltuples/relpages.
+       This fixes some scenarios where autovacuum could make increasingly
+       poor decisions about when to vacuum tables.
+     - Defend against integer overflow when computing size of a hash table.
+     - Fix cases where "CLUSTER" might attempt to access already-removed
+       TOAST data.
+     - Fix portability bugs in use of credentials control messages for
+       "peer" authentication.
+     - Fix SSPI login when multiple roundtrips are required.
+       The typical symptom of this problem was "The function requested is
+       not supported" errors during SSPI login.
+     - Throw an error if "pg_hba.conf" contains hostssl but SSL is
+       disabled.  This was concluded to be more user-friendly than the
+       previous behavior of silently ignoring such lines.
+     - Fix typo in pg_srand48 seed initialization.
+       This led to failure to use all bits of the provided seed. This
+       function is not used on most platforms (only those without
+       srandom), and the potential security exposure from a
+       less-random-than-expected seed seems minimal in any case.
+     - Avoid integer overflow when the sum of LIMIT and OFFSET values
+       exceeds 2^63.
+     - Add overflow checks to int4 and int8 versions of generate_series().
+     - Fix trailing-zero removal in to_char().  In a format with FM and no
+       digit positions after the decimal point, zeroes to the left of the
+       decimal point could be removed incorrectly.
+     - Fix pg_size_pretty() to avoid overflow for inputs close to 2^63.
+     - Weaken plpgsql's check for typmod matching in record values.
+       An overly enthusiastic check could lead to discarding length
+       modifiers that should have been kept.
+     - Fix pg_upgrade to preserve toast tables' relfrozenxids during an
+       upgrade from 8.3. Failure to do this could lead to "pg_clog" files
+       being removed too soon after the upgrade.
+     - Fix psql's counting of script file line numbers during COPY from a
+       different file.
+     - Fix pg_restore's direct-to-database mode for
+       standard_conforming_strings.  pg_restore could emit incorrect commands
+       when restoring directly to a database server from an archive file that
+       had been made with standard_conforming_strings set to on.
+     - Be more user-friendly about unsupported cases for parallel
+       pg_restore.  This change ensures that such cases are detected and
+       reported before any restore actions have been taken.
+     - Fix write-past-buffer-end and memory leak in libpq's LDAP service
+       lookup code.
+     - In libpq, avoid failures when using nonblocking I/O and an SSL
+       connection.
+     - Improve libpq's handling of failures during connection startup.
+       In particular, the response to a server report of fork() failure
+       during SSL connection startup is now saner.
+     - Improve libpq's error reporting for SSL failures.
+     - Fix PQsetvalue() to avoid possible crash when adding a new tuple to
+       a PGresult originally obtained from a server query.
+     - Make ecpglib write double values with 15 digits precision.
+     - In ecpglib, be sure LC_NUMERIC setting is restored after an error.
+     - Apply upstream fix for blowfish signed-character bug
+       (CVE-2011-2483) (Closes: #631285)
+       "contrib/pg_crypto"'s blowfish encryption code could give wrong
+       results on platforms where char is signed (which is most), leading
+       to encrypted passwords being weaker than they should be.
+     - Fix memory leak in "contrib/seg".
+     - Fix pgstatindex() to give consistent results for empty indexes.
+     - Allow building with perl 5.14. (Closes: #628503)
+  * 15-revert-typmod-check.patch: Update for new upstream release.
+
+ -- Martin Pitt <mpitt@debian.org>  Tue, 04 Oct 2011 11:32:12 +0200
+
+postgresql-8.4 (8.4.8-0squeeze2) stable; urgency=low
+
+  * Add 15-revert-typmod-check.patch: Back out "Fix plpgsql's issues with
+    dropped columns in rowtypes in 8.4 branch.", which introduces a
+    regression. Thanks a lot to Philipp Kern for preparing the fix, and to
+    Josip Rodin for testing this! (Closes: #632028)
+
+ -- Martin Pitt <mpitt@debian.org>  Wed, 29 Jun 2011 20:43:50 +0100
+
+postgresql-8.4 (8.4.8-0squeeze1) stable; urgency=low
+
+  * New upstream bug fix release: (Closes: #626559)
+    - If your installation was upgraded from a previous major release by
+      running pg_upgrade, you should take action to prevent possible data loss
+      due to a now-fixed bug in pg_upgrade. The recommended solution is to run
+      "VACUUM FREEZE" on all TOAST tables.  More information is available at
+      http://wiki.postgresql.org/wiki/20110408pg_upgrade_fix.
+    - Fix pg_upgrade's handling of TOAST tables.
+      This error poses a significant risk of data loss for installations
+      that have been upgraded with pg_upgrade. This patch corrects the
+      problem for future uses of pg_upgrade, but does not in itself cure
+      the issue in installations that have been processed with a buggy
+      version of pg_upgrade.
+    - Suppress incorrect "PD_ALL_VISIBLE flag was incorrectly set"
+      warning.
+    - Disallow including a composite type in itself.
+    - Avoid potential deadlock during catalog cache initialization.
+    - Fix dangling-pointer problem in BEFORE ROW UPDATE trigger handling
+      when there was a concurrent update to the target tuple.
+    - Disallow "DROP TABLE" when there are pending deferred trigger
+      events for the table.
+      Formerly the "DROP" would go through, leading to "could not open
+      relation with OID nnn" errors when the triggers were eventually
+      fired.
+    - Prevent crash triggered by constant-false WHERE conditions during
+      GEQO optimization.
+    - Improve planner's handling of semi-join and anti-join cases.
+    - Fix selectivity estimation for text search to account for NULLs.
+    - Improve PL/pgSQL's ability to handle row types with dropped columns.
+    - Fix PL/Python memory leak involving array slices.
+    - Fix pg_restore to cope with long lines (over 1KB) in TOC files.
+    - Put in more safeguards against crashing due to division-by-zero
+      with overly enthusiastic compiler optimization. (Closes: #616180)
+
+ -- Martin Pitt <mpitt@debian.org>  Sun, 22 May 2011 15:12:47 +0200
+
+postgresql-8.4 (8.4.7-0squeeze2) stable-security; urgency=low
 
   * New upstream security/bug fix release:
     - Fix buffer overrun in "contrib/intarray"'s input function for the

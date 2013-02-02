@@ -3574,7 +3574,24 @@ AbortOutOfAnyTransaction(void)
 		switch (s->blockState)
 		{
 			case TBLOCK_DEFAULT:
-				/* Not in a transaction, do nothing */
+				if (s->state == TRANS_DEFAULT)
+				{
+					/* Not in a transaction, do nothing */
+				}
+				else
+				{
+					/*
+					 * We can get here after an error during transaction start
+					 * (state will be TRANS_START).  Need to clean up the
+					 * incompletely started transaction.  First, adjust the
+					 * low-level state to suppress warning message from
+					 * AbortTransaction.
+					 */
+					if (s->state == TRANS_START)
+						s->state = TRANS_INPROGRESS;
+					AbortTransaction();
+					CleanupTransaction();
+				}
 				break;
 			case TBLOCK_STARTED:
 			case TBLOCK_BEGIN:
@@ -4270,11 +4287,8 @@ xact_redo_commit(xl_xact_commit *xlrec, TransactionId xid)
 
 		for (fork = 0; fork <= MAX_FORKNUM; fork++)
 		{
-			if (smgrexists(srel, fork))
-			{
-				XLogDropRelation(xlrec->xnodes[i], fork);
-				smgrdounlink(srel, fork, false, true);
-			}
+			XLogDropRelation(xlrec->xnodes[i], fork);
+			smgrdounlink(srel, fork, false, true);
 		}
 		smgrclose(srel);
 	}
@@ -4313,11 +4327,8 @@ xact_redo_abort(xl_xact_abort *xlrec, TransactionId xid)
 
 		for (fork = 0; fork <= MAX_FORKNUM; fork++)
 		{
-			if (smgrexists(srel, fork))
-			{
-				XLogDropRelation(xlrec->xnodes[i], fork);
-				smgrdounlink(srel, fork, false, true);
-			}
+			XLogDropRelation(xlrec->xnodes[i], fork);
+			smgrdounlink(srel, fork, false, true);
 		}
 		smgrclose(srel);
 	}

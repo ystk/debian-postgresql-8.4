@@ -2699,9 +2699,6 @@ DecodeNumberField(int len, char *str, int fmask,
  * Return 0 if okay (and set *tzp), a DTERR code if not okay.
  *
  * NB: this must *not* ereport on failure; see commands/variable.c.
- *
- * Note: we allow timezone offsets up to 13:59.  There are places that
- * use +1300 summer time.
  */
 static int
 DecodeTimezone(char *str, int *tzp)
@@ -2746,7 +2743,8 @@ DecodeTimezone(char *str, int *tzp)
 	else
 		min = 0;
 
-	if (hr < 0 || hr > 14)
+	/* Range-check the values; see notes in utils/timestamp.h */
+	if (hr < 0 || hr > MAX_TZDISP_HOUR)
 		return DTERR_TZDISP_OVERFLOW;
 	if (min < 0 || min >= 60)
 		return DTERR_TZDISP_OVERFLOW;
@@ -2876,19 +2874,18 @@ DecodeInterval(char **field, int *ftype, int nf, int range,
 			case DTK_TZ:
 
 				/*
-				 * Timezone is a token with a leading sign character and at
+				 * Timezone means a token with a leading sign character and at
 				 * least one digit; there could be ':', '.', '-' embedded in
 				 * it as well.
 				 */
 				Assert(*field[i] == '-' || *field[i] == '+');
 
 				/*
-				 * Try for hh:mm or hh:mm:ss.  If not, fall through to
-				 * DTK_NUMBER case, which can handle signed float numbers and
-				 * signed year-month values.
+				 * Check for signed hh:mm or hh:mm:ss.  If so, process exactly
+				 * like DTK_TIME case above, plus handling the sign.
 				 */
 				if (strchr(field[i] + 1, ':') != NULL &&
-					DecodeTime(field[i] + 1, fmask, INTERVAL_FULL_RANGE,
+					DecodeTime(field[i] + 1, fmask, range,
 							   &tmask, tm, fsec) == 0)
 				{
 					if (*field[i] == '-')
@@ -2906,9 +2903,14 @@ DecodeInterval(char **field, int *ftype, int nf, int range,
 					 * are reading right to left.
 					 */
 					type = DTK_DAY;
-					tmask = DTK_M(TZ);
 					break;
 				}
+
+				/*
+				 * Otherwise, fall through to DTK_NUMBER case, which can
+				 * handle signed float numbers and signed year-month values.
+				 */
+
 				/* FALL THROUGH */
 
 			case DTK_DATE:

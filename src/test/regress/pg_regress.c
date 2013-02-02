@@ -403,7 +403,7 @@ replace_string(char *string, char *replace, char *replacement)
  * the given suffix.
  */
 static void
-convert_sourcefiles_in(char *source_subdir, char *dest_subdir, char *suffix)
+convert_sourcefiles_in(char *source_subdir, char *dest_dir, char *dest_subdir, char *suffix)
 {
 	char		testtablespace[MAXPGPATH];
 	char		indir[MAXPGPATH];
@@ -471,7 +471,8 @@ convert_sourcefiles_in(char *source_subdir, char *dest_subdir, char *suffix)
 		/* build the full actual paths to open */
 		snprintf(prefix, strlen(*name) - 6, "%s", *name);
 		snprintf(srcfile, MAXPGPATH, "%s/%s", indir, *name);
-		snprintf(destfile, MAXPGPATH, "%s/%s.%s", dest_subdir, prefix, suffix);
+		snprintf(destfile, MAXPGPATH, "%s/%s/%s.%s", dest_dir, dest_subdir, 
+				 prefix, suffix);
 
 		infile = fopen(srcfile, "r");
 		if (!infile)
@@ -518,8 +519,8 @@ convert_sourcefiles_in(char *source_subdir, char *dest_subdir, char *suffix)
 static void
 convert_sourcefiles(void)
 {
-	convert_sourcefiles_in("input", "sql", "sql");
-	convert_sourcefiles_in("output", "expected", "out");
+	convert_sourcefiles_in("input", inputdir, "sql", "sql");
+	convert_sourcefiles_in("output", outputdir, "expected", "out");
 }
 
 /*
@@ -805,8 +806,10 @@ initialize_environment(void)
 		add_to_path("LD_LIBRARY_PATH", ':', libdir);
 		add_to_path("DYLD_LIBRARY_PATH", ':', libdir);
 		add_to_path("LIBPATH", ':', libdir);
-#if defined(WIN32) || defined(__CYGWIN__)
+#if defined(WIN32)
 		add_to_path("PATH", ';', libdir);
+#elif defined(__CYGWIN__)
+		add_to_path("PATH", ':', libdir);
 #endif
 	}
 	else
