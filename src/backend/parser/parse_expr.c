@@ -89,6 +89,8 @@ static Expr *make_distinct_op(ParseState *pstate, List *opname,
  *	function argument to the required type (via coerce_type())
  *	can apply transformExpr to an already-transformed subexpression.
  *	An example here is "SELECT count(*) + 1.0 FROM table".
+ *	3. CREATE TABLE t1 (LIKE t2 INCLUDING INDEXES) can pass in
+ *	already-transformed index expressions.
  * While it might be possible to eliminate these cases, the path of
  * least resistance so far has been to ensure that transformExpr() does
  * no damage if applied to an already-transformed tree.  This is pretty
@@ -719,12 +721,15 @@ transformAExprOp(ParseState *pstate, A_Expr *a)
 	/*
 	 * Special-case "foo = NULL" and "NULL = foo" for compatibility with
 	 * standards-broken products (like Microsoft's).  Turn these into IS NULL
-	 * exprs.
+	 * exprs. (If either side is a CaseTestExpr, then the expression was
+	 * generated internally from a CASE-WHEN expression, and
+	 * transform_null_equals does not apply.)
 	 */
 	if (Transform_null_equals &&
 		list_length(a->name) == 1 &&
 		strcmp(strVal(linitial(a->name)), "=") == 0 &&
-		(exprIsNullConstant(lexpr) || exprIsNullConstant(rexpr)))
+		(exprIsNullConstant(lexpr) || exprIsNullConstant(rexpr)) &&
+		(!IsA(lexpr, CaseTestExpr) && !IsA(rexpr, CaseTestExpr)))
 	{
 		NullTest   *n = makeNode(NullTest);
 
@@ -1548,7 +1553,13 @@ transformArrayExpr(ParseState *pstate, A_ArrayExpr *a,
 static Node *
 transformRowExpr(ParseState *pstate, RowExpr *r)
 {
-	RowExpr    *newr = makeNode(RowExpr);
+	RowExpr    *newr;
+
+	/* If we already transformed this node, do nothing */
+	if (OidIsValid(r->row_typeid))
+		return (Node *) r;
+
+	newr = makeNode(RowExpr);
 
 	/* Transform the field expressions */
 	newr->args = transformExpressionList(pstate, r->args);
@@ -1639,16 +1650,23 @@ transformMinMaxExpr(ParseState *pstate, MinMaxExpr *m)
 static Node *
 transformXmlExpr(ParseState *pstate, XmlExpr *x)
 {
-	XmlExpr    *newx = makeNode(XmlExpr);
+	XmlExpr    *newx;
 	ListCell   *lc;
 	int			i;
 
+	/* If we already transformed this node, do nothing */
+	if (OidIsValid(x->type))
+		return (Node *) x;
+
+	newx = makeNode(XmlExpr);
 	newx->op = x->op;
 	if (x->name)
 		newx->name = map_sql_identifier_to_xml_name(x->name, false, false);
 	else
 		newx->name = NULL;
 	newx->xmloption = x->xmloption;
+	newx->type = XMLOID;		/* this just marks the node as transformed */
+	newx->typmod = -1;
 	newx->location = x->location;
 
 	/*

@@ -1,27 +1,37 @@
-/* A Bison parser, made by GNU Bison 1.875.  */
 
-/* Skeleton parser for Yacc-like parsing with Bison,
-   Copyright (C) 1984, 1989, 1990, 2000, 2001, 2002 Free Software Foundation, Inc.
+/* A Bison parser, made by GNU Bison 2.4.1.  */
 
-   This program is free software; you can redistribute it and/or modify
+/* Skeleton interface for Bison's Yacc-like parsers in C
+   
+      Copyright (C) 1984, 1989, 1990, 2000, 2001, 2002, 2003, 2004, 2005, 2006
+   Free Software Foundation, Inc.
+   
+   This program is free software: you can redistribute it and/or modify
    it under the terms of the GNU General Public License as published by
-   the Free Software Foundation; either version 2, or (at your option)
-   any later version.
-
+   the Free Software Foundation, either version 3 of the License, or
+   (at your option) any later version.
+   
    This program is distributed in the hope that it will be useful,
    but WITHOUT ANY WARRANTY; without even the implied warranty of
    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
    GNU General Public License for more details.
-
+   
    You should have received a copy of the GNU General Public License
-   along with this program; if not, write to the Free Software
-   Foundation, Inc., 59 Temple Place - Suite 330,
-   Boston, MA 02111-1307, USA.  */
+   along with this program.  If not, see <http://www.gnu.org/licenses/>.  */
 
-/* As a special exception, when this file is copied by Bison into a
-   Bison output file, you may use that output file without restriction.
-   This special exception was added by the Free Software Foundation
-   in version 1.24 of Bison.  */
+/* As a special exception, you may create a larger work that contains
+   part or all of the Bison parser skeleton and distribute that work
+   under terms of your choice, so long as that work isn't itself a
+   parser generator using the skeleton or a modified version thereof
+   as a parser skeleton.  Alternatively, if you modify or redistribute
+   the parser skeleton itself, you may (at your option) remove this
+   special exception, which will cause the skeleton and the resulting
+   Bison output files to be licensed under the GNU General Public
+   License without this special exception.
+   
+   This special exception was added by the Free Software Foundation in
+   version 2.2 of Bison.  */
+
 
 /* Tokens.  */
 #ifndef YYTOKENTYPE
@@ -514,496 +524,16 @@
      UMINUS = 740
    };
 #endif
-#define SQL_ALLOCATE 258
-#define SQL_AUTOCOMMIT 259
-#define SQL_BOOL 260
-#define SQL_BREAK 261
-#define SQL_CALL 262
-#define SQL_CARDINALITY 263
-#define SQL_CONNECT 264
-#define SQL_COUNT 265
-#define SQL_DATETIME_INTERVAL_CODE 266
-#define SQL_DATETIME_INTERVAL_PRECISION 267
-#define SQL_DESCRIBE 268
-#define SQL_DESCRIPTOR 269
-#define SQL_DISCONNECT 270
-#define SQL_FOUND 271
-#define SQL_FREE 272
-#define SQL_GET 273
-#define SQL_GO 274
-#define SQL_GOTO 275
-#define SQL_IDENTIFIED 276
-#define SQL_INDICATOR 277
-#define SQL_KEY_MEMBER 278
-#define SQL_LENGTH 279
-#define SQL_LONG 280
-#define SQL_NULLABLE 281
-#define SQL_OCTET_LENGTH 282
-#define SQL_OPEN 283
-#define SQL_OUTPUT 284
-#define SQL_REFERENCE 285
-#define SQL_RETURNED_LENGTH 286
-#define SQL_RETURNED_OCTET_LENGTH 287
-#define SQL_SCALE 288
-#define SQL_SECTION 289
-#define SQL_SHORT 290
-#define SQL_SIGNED 291
-#define SQL_SQL 292
-#define SQL_SQLERROR 293
-#define SQL_SQLPRINT 294
-#define SQL_SQLWARNING 295
-#define SQL_START 296
-#define SQL_STOP 297
-#define SQL_STRUCT 298
-#define SQL_UNSIGNED 299
-#define SQL_VAR 300
-#define SQL_WHENEVER 301
-#define S_ADD 302
-#define S_AND 303
-#define S_ANYTHING 304
-#define S_AUTO 305
-#define S_CONST 306
-#define S_DEC 307
-#define S_DIV 308
-#define S_DOTPOINT 309
-#define S_EQUAL 310
-#define S_EXTERN 311
-#define S_INC 312
-#define S_LSHIFT 313
-#define S_MEMPOINT 314
-#define S_MEMBER 315
-#define S_MOD 316
-#define S_MUL 317
-#define S_NEQUAL 318
-#define S_OR 319
-#define S_REGISTER 320
-#define S_RSHIFT 321
-#define S_STATIC 322
-#define S_SUB 323
-#define S_VOLATILE 324
-#define S_TYPEDEF 325
-#define TYPECAST 326
-#define CSTRING 327
-#define CVARIABLE 328
-#define CPP_LINE 329
-#define IP 330
-#define DOLCONST 331
-#define ECONST 332
-#define NCONST 333
-#define UCONST 334
-#define UIDENT 335
-#define ABORT_P 336
-#define ABSOLUTE_P 337
-#define ACCESS 338
-#define ACTION 339
-#define ADD_P 340
-#define ADMIN 341
-#define AFTER 342
-#define AGGREGATE 343
-#define ALL 344
-#define ALSO 345
-#define ALTER 346
-#define ALWAYS 347
-#define ANALYSE 348
-#define ANALYZE 349
-#define AND 350
-#define ANY 351
-#define ARRAY 352
-#define AS 353
-#define ASC 354
-#define ASSERTION 355
-#define ASSIGNMENT 356
-#define ASYMMETRIC 357
-#define AT 358
-#define AUTHORIZATION 359
-#define BACKWARD 360
-#define BEFORE 361
-#define BEGIN_P 362
-#define BETWEEN 363
-#define BIGINT 364
-#define BINARY 365
-#define BIT 366
-#define BOOLEAN_P 367
-#define BOTH 368
-#define BY 369
-#define CACHE 370
-#define CALLED 371
-#define CASCADE 372
-#define CASCADED 373
-#define CASE 374
-#define CAST 375
-#define CATALOG_P 376
-#define CHAIN 377
-#define CHAR_P 378
-#define CHARACTER 379
-#define CHARACTERISTICS 380
-#define CHECK 381
-#define CHECKPOINT 382
-#define CLASS 383
-#define CLOSE 384
-#define CLUSTER 385
-#define COALESCE 386
-#define COLLATE 387
-#define COLUMN 388
-#define COMMENT 389
-#define COMMIT 390
-#define COMMITTED 391
-#define CONCURRENTLY 392
-#define CONFIGURATION 393
-#define CONNECTION 394
-#define CONSTRAINT 395
-#define CONSTRAINTS 396
-#define CONTENT_P 397
-#define CONTINUE_P 398
-#define CONVERSION_P 399
-#define COPY 400
-#define COST 401
-#define CREATE 402
-#define CREATEDB 403
-#define CREATEROLE 404
-#define CREATEUSER 405
-#define CROSS 406
-#define CSV 407
-#define CURRENT_P 408
-#define CURRENT_CATALOG 409
-#define CURRENT_DATE 410
-#define CURRENT_ROLE 411
-#define CURRENT_SCHEMA 412
-#define CURRENT_TIME 413
-#define CURRENT_TIMESTAMP 414
-#define CURRENT_USER 415
-#define CURSOR 416
-#define CYCLE 417
-#define DATA_P 418
-#define DATABASE 419
-#define DAY_P 420
-#define DEALLOCATE 421
-#define DEC 422
-#define DECIMAL_P 423
-#define DECLARE 424
-#define DEFAULT 425
-#define DEFAULTS 426
-#define DEFERRABLE 427
-#define DEFERRED 428
-#define DEFINER 429
-#define DELETE_P 430
-#define DELIMITER 431
-#define DELIMITERS 432
-#define DESC 433
-#define DICTIONARY 434
-#define DISABLE_P 435
-#define DISCARD 436
-#define DISTINCT 437
-#define DO 438
-#define DOCUMENT_P 439
-#define DOMAIN_P 440
-#define DOUBLE_P 441
-#define DROP 442
-#define EACH 443
-#define ELSE 444
-#define ENABLE_P 445
-#define ENCODING 446
-#define ENCRYPTED 447
-#define END_P 448
-#define ENUM_P 449
-#define ESCAPE 450
-#define EXCEPT 451
-#define EXCLUDING 452
-#define EXCLUSIVE 453
-#define EXECUTE 454
-#define EXISTS 455
-#define EXPLAIN 456
-#define EXTERNAL 457
-#define EXTRACT 458
-#define FALSE_P 459
-#define FAMILY 460
-#define FETCH 461
-#define FIRST_P 462
-#define FLOAT_P 463
-#define FOLLOWING 464
-#define FOR 465
-#define FORCE 466
-#define FOREIGN 467
-#define FORWARD 468
-#define FREEZE 469
-#define FROM 470
-#define FULL 471
-#define FUNCTION 472
-#define GLOBAL 473
-#define GRANT 474
-#define GRANTED 475
-#define GREATEST 476
-#define GROUP_P 477
-#define HANDLER 478
-#define HAVING 479
-#define HEADER_P 480
-#define HOLD 481
-#define HOUR_P 482
-#define IDENTITY_P 483
-#define IF_P 484
-#define ILIKE 485
-#define IMMEDIATE 486
-#define IMMUTABLE 487
-#define IMPLICIT_P 488
-#define IN_P 489
-#define INCLUDING 490
-#define INCREMENT 491
-#define INDEX 492
-#define INDEXES 493
-#define INHERIT 494
-#define INHERITS 495
-#define INITIALLY 496
-#define INNER_P 497
-#define INOUT 498
-#define INPUT_P 499
-#define INSENSITIVE 500
-#define INSERT 501
-#define INSTEAD 502
-#define INT_P 503
-#define INTEGER 504
-#define INTERSECT 505
-#define INTERVAL 506
-#define INTO 507
-#define INVOKER 508
-#define IS 509
-#define ISNULL 510
-#define ISOLATION 511
-#define JOIN 512
-#define KEY 513
-#define LANCOMPILER 514
-#define LANGUAGE 515
-#define LARGE_P 516
-#define LAST_P 517
-#define LC_COLLATE_P 518
-#define LC_CTYPE_P 519
-#define LEADING 520
-#define LEAST 521
-#define LEFT 522
-#define LEVEL 523
-#define LIKE 524
-#define LIMIT 525
-#define LISTEN 526
-#define LOAD 527
-#define LOCAL 528
-#define LOCALTIME 529
-#define LOCALTIMESTAMP 530
-#define LOCATION 531
-#define LOCK_P 532
-#define LOGIN_P 533
-#define MAPPING 534
-#define MATCH 535
-#define MAXVALUE 536
-#define MINUTE_P 537
-#define MINVALUE 538
-#define MODE 539
-#define MONTH_P 540
-#define MOVE 541
-#define NAME_P 542
-#define NAMES 543
-#define NATIONAL 544
-#define NATURAL 545
-#define NCHAR 546
-#define NEW 547
-#define NEXT 548
-#define NO 549
-#define NOCREATEDB 550
-#define NOCREATEROLE 551
-#define NOCREATEUSER 552
-#define NOINHERIT 553
-#define NOLOGIN_P 554
-#define NONE 555
-#define NOSUPERUSER 556
-#define NOT 557
-#define NOTHING 558
-#define NOTIFY 559
-#define NOTNULL 560
-#define NOWAIT 561
-#define NULL_P 562
-#define NULLIF 563
-#define NULLS_P 564
-#define NUMERIC 565
-#define OBJECT_P 566
-#define OF 567
-#define OFF 568
-#define OFFSET 569
-#define OIDS 570
-#define OLD 571
-#define ON 572
-#define ONLY 573
-#define OPERATOR 574
-#define OPTION 575
-#define OPTIONS 576
-#define OR 577
-#define ORDER 578
-#define OUT_P 579
-#define OUTER_P 580
-#define OVER 581
-#define OVERLAPS 582
-#define OVERLAY 583
-#define OWNED 584
-#define OWNER 585
-#define PARSER 586
-#define PARTIAL 587
-#define PARTITION 588
-#define PASSWORD 589
-#define PLACING 590
-#define PLANS 591
-#define POSITION 592
-#define PRECEDING 593
-#define PRECISION 594
-#define PRESERVE 595
-#define PREPARE 596
-#define PREPARED 597
-#define PRIMARY 598
-#define PRIOR 599
-#define PRIVILEGES 600
-#define PROCEDURAL 601
-#define PROCEDURE 602
-#define QUOTE 603
-#define RANGE 604
-#define READ 605
-#define REAL 606
-#define REASSIGN 607
-#define RECHECK 608
-#define RECURSIVE 609
-#define REFERENCES 610
-#define REINDEX 611
-#define RELATIVE_P 612
-#define RELEASE 613
-#define RENAME 614
-#define REPEATABLE 615
-#define REPLACE 616
-#define REPLICA 617
-#define RESET 618
-#define RESTART 619
-#define RESTRICT 620
-#define RETURNING 621
-#define RETURNS 622
-#define REVOKE 623
-#define RIGHT 624
-#define ROLE 625
-#define ROLLBACK 626
-#define ROW 627
-#define ROWS 628
-#define RULE 629
-#define SAVEPOINT 630
-#define SCHEMA 631
-#define SCROLL 632
-#define SEARCH 633
-#define SECOND_P 634
-#define SECURITY 635
-#define SELECT 636
-#define SEQUENCE 637
-#define SERIALIZABLE 638
-#define SERVER 639
-#define SESSION 640
-#define SESSION_USER 641
-#define SET 642
-#define SETOF 643
-#define SHARE 644
-#define SHOW 645
-#define SIMILAR 646
-#define SIMPLE 647
-#define SMALLINT 648
-#define SOME 649
-#define STABLE 650
-#define STANDALONE_P 651
-#define START 652
-#define STATEMENT 653
-#define STATISTICS 654
-#define STDIN 655
-#define STDOUT 656
-#define STORAGE 657
-#define STRICT_P 658
-#define STRIP_P 659
-#define SUBSTRING 660
-#define SUPERUSER_P 661
-#define SYMMETRIC 662
-#define SYSID 663
-#define SYSTEM_P 664
-#define TABLE 665
-#define TABLESPACE 666
-#define TEMP 667
-#define TEMPLATE 668
-#define TEMPORARY 669
-#define TEXT_P 670
-#define THEN 671
-#define TIME 672
-#define TIMESTAMP 673
-#define TO 674
-#define TRAILING 675
-#define TRANSACTION 676
-#define TREAT 677
-#define TRIGGER 678
-#define TRIM 679
-#define TRUE_P 680
-#define TRUNCATE 681
-#define TRUSTED 682
-#define TYPE_P 683
-#define UNBOUNDED 684
-#define UNCOMMITTED 685
-#define UNENCRYPTED 686
-#define UNION 687
-#define UNIQUE 688
-#define UNKNOWN 689
-#define UNLISTEN 690
-#define UNTIL 691
-#define UPDATE 692
-#define USER 693
-#define USING 694
-#define VACUUM 695
-#define VALID 696
-#define VALIDATOR 697
-#define VALUE_P 698
-#define VALUES 699
-#define VARCHAR 700
-#define VARIADIC 701
-#define VARYING 702
-#define VERBOSE 703
-#define VERSION_P 704
-#define VIEW 705
-#define VOLATILE 706
-#define WHEN 707
-#define WHERE 708
-#define WHITESPACE_P 709
-#define WINDOW 710
-#define WITH 711
-#define WITHOUT 712
-#define WORK 713
-#define WRAPPER 714
-#define WRITE 715
-#define XML_P 716
-#define XMLATTRIBUTES 717
-#define XMLCONCAT 718
-#define XMLELEMENT 719
-#define XMLFOREST 720
-#define XMLPARSE 721
-#define XMLPI 722
-#define XMLROOT 723
-#define XMLSERIALIZE 724
-#define YEAR_P 725
-#define YES_P 726
-#define ZONE 727
-#define NULLS_FIRST 728
-#define NULLS_LAST 729
-#define WITH_TIME 730
-#define IDENT 731
-#define FCONST 732
-#define SCONST 733
-#define BCONST 734
-#define XCONST 735
-#define Op 736
-#define ICONST 737
-#define PARAM 738
-#define POSTFIXOP 739
-#define UMINUS 740
 
 
 
+#if ! defined YYSTYPE && ! defined YYSTYPE_IS_DECLARED
+typedef union YYSTYPE
+{
 
-#if ! defined (YYSTYPE) && ! defined (YYSTYPE_IS_DECLARED)
+/* Line 1676 of yacc.c  */
 #line 383 "preproc.y"
-typedef union YYSTYPE {
+
 	double	dval;
 	char	*str;
 	int     ival;
@@ -1016,17 +546,20 @@ typedef union YYSTYPE {
 	struct	fetch_desc	descriptor;
 	struct  su_symbol	struct_union;
 	struct	prep		prep;
+
+
+
+/* Line 1676 of yacc.c  */
+#line 554 "preproc.h"
 } YYSTYPE;
-/* Line 1204 of yacc.c.  */
-#line 1021 "preproc.h"
+# define YYSTYPE_IS_TRIVIAL 1
 # define yystype YYSTYPE /* obsolescent; will be withdrawn */
 # define YYSTYPE_IS_DECLARED 1
-# define YYSTYPE_IS_TRIVIAL 1
 #endif
 
 extern YYSTYPE base_yylval;
 
-#if ! defined (YYLTYPE) && ! defined (YYLTYPE_IS_DECLARED)
+#if ! defined YYLTYPE && ! defined YYLTYPE_IS_DECLARED
 typedef struct YYLTYPE
 {
   int first_line;
@@ -1040,5 +573,4 @@ typedef struct YYLTYPE
 #endif
 
 extern YYLTYPE base_yylloc;
-
 

@@ -304,7 +304,9 @@
         
              <row>
               <entry><literal>require</></entry>
-              <entry>only try an <acronym>SSL</> connection</entry>
+              <entry>only try an <acronym>SSL</> connection. If a root CA
+               file is present, verify the certificate in the same way as
+               if <literal>verify-ca</literal> was specified</entry>
              </row>
 
              <row>
@@ -2061,11 +2063,11 @@ PGresult *PQdescribePortal(PGconn *conn, const char *portalName);
          </varlistentry>
 
          <varlistentry id="libpq-pg-diag-sqlstate">
+          <term><symbol>PG_DIAG_SQLSTATE</></term>
           <indexterm>
            <primary>error codes</primary>
            <secondary>libpq</secondary>
           </indexterm>
-          <term><symbol>PG_DIAG_SQLSTATE</></term>
           <listitem>
            <para>
             The SQLSTATE code for the error. The SQLSTATE code identifies
@@ -6197,6 +6199,18 @@ myEventProc(PGEventId evtId, void *evtInfo, void *passThrough)
    by the connection parameters <literal>sslrootcert</> and <literal>sslcrl</>
    or the environment variables <envar>PGSSLROOTCERT</> and <envar>PGSSLCRL</>.
   </para>
+
+  <note>
+   <para>
+    For backwards compatibility with earlier versions of PostgreSQL, if a
+    root CA file exists, the behavior of
+    <literal>sslmode</literal>=<literal>require</literal> will be the same
+    as that of <literal>verify-ca</literal>, meaning the sever certificate
+    is validated against the CA. Relying on this behavior is discouraged,
+    and applications that need certificate validation should always use
+    <literal>verify-ca</literal> or <literal>verify-full</literal>.
+   </para>
+  </note>
  </sect2>
 
  <sect2 id="libpq-ssl-clientcert">
@@ -6319,7 +6333,7 @@ myEventProc(PGEventId evtId, void *evtInfo, void *passThrough)
 
     <tbody>
      <row>
-      <entry><literal>disabled</></entry>
+      <entry><literal>disable</></entry>
       <entry>No</entry>
       <entry>No</entry>
       <entry>I don't care about security, and I don't want to pay the overhead
@@ -6593,8 +6607,12 @@ myEventProc(PGEventId evtId, void *evtInfo, void *passThrough)
   </para>
 
   <para>
-   <structname>PGresult</> objects are read-only after creation, and so
-   can be passed around freely between threads.
+   <structname>PGresult</> objects are normally read-only after creation,
+   and so can be passed around freely between threads.  However, if you use
+   any of the <structname>PGresult</>-modifying functions described in
+   <xref linkend="libpq-misc"> or <xref linkend="libpq-events">, it's up
+   to you to avoid concurrent operations on the same <structname>PGresult</>,
+   too.
   </para>
 
   <para>

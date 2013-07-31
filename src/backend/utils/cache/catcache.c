@@ -19,6 +19,7 @@
 #include "access/heapam.h"
 #include "access/relscan.h"
 #include "access/sysattr.h"
+#include "access/tuptoaster.h"
 #include "access/valid.h"
 #include "catalog/pg_operator.h"
 #include "catalog/pg_type.h"
@@ -26,6 +27,7 @@
 #ifdef CATCACHE_STATS
 #include "storage/ipc.h"		/* for on_proc_exit */
 #endif
+#include "storage/lmgr.h"
 #include "utils/builtins.h"
 #include "utils/fmgroids.h"
 #include "utils/memutils.h"
@@ -1032,8 +1034,16 @@ InitCatCachePhase2(CatCache *cache, bool touch_index)
 	{
 		Relation	idesc;
 
+		/*
+		 * We must lock the underlying catalog before opening the index to
+		 * avoid deadlock, since index_open could possibly result in reading
+		 * this same catalog, and if anyone else is exclusive-locking this
+		 * catalog and index they'll be doing it in that order.
+		 */
+		LockRelationOid(cache->cc_reloid, AccessShareLock);
 		idesc = index_open(cache->cc_indexoid, AccessShareLock);
 		index_close(idesc, AccessShareLock);
+		UnlockRelationOid(cache->cc_reloid, AccessShareLock);
 	}
 }
 
@@ -1638,15 +1648,31 @@ CatalogCacheCreateEntry(CatCache *cache, HeapTuple ntp,
 						uint32 hashValue, Index hashIndex, bool negative)
 {
 	CatCTup    *ct;
+	HeapTuple	dtp;
 	MemoryContext oldcxt;
+
+	/*
+	 * If there are any out-of-line toasted fields in the tuple, expand them
+	 * in-line.  This saves cycles during later use of the catcache entry,
+	 * and also protects us against the possibility of the toast tuples being
+	 * freed before we attempt to fetch them, in case of something using a
+	 * slightly stale catcache entry.
+	 */
+	if (HeapTupleHasExternal(ntp))
+		dtp = toast_flatten_tuple(ntp, cache->cc_tupdesc);
+	else
+		dtp = ntp;
 
 	/*
 	 * Allocate CatCTup header in cache memory, and copy the tuple there too.
 	 */
 	oldcxt = MemoryContextSwitchTo(CacheMemoryContext);
 	ct = (CatCTup *) palloc(sizeof(CatCTup));
-	heap_copytuple_with_tuple(ntp, &ct->tuple);
+	heap_copytuple_with_tuple(dtp, &ct->tuple);
 	MemoryContextSwitchTo(oldcxt);
+
+	if (dtp != ntp)
+		heap_freetuple(dtp);
 
 	/*
 	 * Finish initializing the CatCTup header, and add it to the cache's

@@ -37,6 +37,7 @@
 #include "commands/vacuum.h"
 #include "miscadmin.h"
 #include "storage/bufmgr.h"
+#include "storage/lmgr.h"
 #include "storage/procarray.h"
 #include "utils/acl.h"
 #include "utils/fmgroids.h"
@@ -442,7 +443,7 @@ check_index_is_clusterable(Relation OldHeap, Oid indexOid, bool recheck)
 	 * might put recently-dead tuples out-of-order in the new table, and there
 	 * is little harm in that.)
 	 */
-	if (!OldIndex->rd_index->indisvalid)
+	if (!IndexIsValid(OldIndex->rd_index))
 		ereport(ERROR,
 				(errcode(ERRCODE_FEATURE_NOT_SUPPORTED),
 				 errmsg("cannot cluster on invalid index \"%s\"",
@@ -484,6 +485,11 @@ check_index_is_clusterable(Relation OldHeap, Oid indexOid, bool recheck)
  * mark_index_clustered: mark the specified index as the one clustered on
  *
  * With indexOid == InvalidOid, will mark all indexes of rel not-clustered.
+ *
+ * Note: we do transactional updates of the pg_index rows, which are unsafe
+ * against concurrent SnapshotNow scans of pg_index.  Therefore this is unsafe
+ * to execute with less than full exclusive lock on the parent table;
+ * otherwise concurrent executions of RelationGetIndexList could miss indexes.
  */
 void
 mark_index_clustered(Relation rel, Oid indexOid)
@@ -544,6 +550,9 @@ mark_index_clustered(Relation rel, Oid indexOid)
 		}
 		else if (thisIndexOid == indexOid)
 		{
+			/* this was checked earlier, but let's be real sure */
+			if (!IndexIsValid(indexForm))
+				elog(ERROR, "cannot cluster on invalid index %u", indexOid);
 			indexForm->indisclustered = true;
 			simple_heap_update(pg_index, &indexTuple->t_self, indexTuple);
 			CatalogUpdateIndexes(pg_index, indexTuple);
@@ -626,6 +635,12 @@ rebuild_relation(Relation OldHeap, Oid indexOid)
 	 * Rebuild each index on the relation (but not the toast table, which is
 	 * all-new at this point).	We do not need CommandCounterIncrement()
 	 * because reindex_relation does it.
+	 *
+	 * Note: because index_build is called via reindex_relation, it will never
+	 * set indcheckxmin true for the indexes.  This is OK even though in some
+	 * sense we are building new indexes rather than rebuilding existing ones,
+	 * because the new heap won't contain any HOT chains at all, let alone
+	 * broken ones, so it can't be necessary to set indcheckxmin.
 	 */
 	reindex_relation(tableOid, false);
 
@@ -797,6 +812,22 @@ copy_heap_data(Oid OIDNewHeap, Oid OIDOldHeap, Oid OIDOldIndex)
 	natts = newTupDesc->natts;
 	values = (Datum *) palloc(natts * sizeof(Datum));
 	isnull = (bool *) palloc(natts * sizeof(bool));
+
+	/*
+	 * If the OldHeap has a toast table, get lock on the toast table to keep
+	 * it from being vacuumed.  This is needed because autovacuum processes
+	 * toast tables independently of their main tables, with no lock on the
+	 * latter.  If an autovacuum were to start on the toast table after we
+	 * compute our OldestXmin below, it would use a later OldestXmin, and then
+	 * possibly remove as DEAD toast tuples belonging to main tuples we think
+	 * are only RECENTLY_DEAD.  Then we'd fail while trying to copy those
+	 * tuples.
+	 *
+	 * We don't need to open the toast relation here, just lock it.  The lock
+	 * will be held till end of transaction.
+	 */
+	if (OldHeap->rd_rel->reltoastrelid)
+		LockRelationOid(OldHeap->rd_rel->reltoastrelid, AccessExclusiveLock);
 
 	/*
 	 * We need to log the copied data in WAL iff WAL archiving is enabled AND
