@@ -8162,6 +8162,10 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
  { 
  $$ = $1;
 }
+|  select_with_parens indirection
+ { 
+ $$ = cat_str(2,$1,$2);
+}
 |  EXISTS select_with_parens
  { 
  $$ = cat_str(2,make_str("exists"),$2);

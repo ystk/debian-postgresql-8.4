@@ -23,12 +23,6 @@
 #include "storage/bufmgr.h"
 #include "utils/rel.h"
 
-/*
- * static *S used for temrorary storage (saves stack and palloc() call)
- */
-
-static Datum attrS[INDEX_MAX_KEYS];
-static bool isnullS[INDEX_MAX_KEYS];
 
 /*
  * Write itup vector to page, has no control of free space.
@@ -150,12 +144,13 @@ gistfillitupvec(IndexTuple *vec, int veclen, int *memlen)
 }
 
 /*
- * Make unions of keys in IndexTuple vector, return FALSE if itvec contains
- * invalid tuple. Resulting Datums aren't compressed.
+ * Make unions of keys in IndexTuple vector (one union datum per index column).
+ * Union Datums are returned into the attr/isnull arrays.
+ * Resulting Datums aren't compressed.
+ * Fails and returns FALSE if itvec contains any invalid tuples.
  */
-
 bool
-gistMakeUnionItVec(GISTSTATE *giststate, IndexTuple *itvec, int len, int startkey,
+gistMakeUnionItVec(GISTSTATE *giststate, IndexTuple *itvec, int len,
 				   Datum *attr, bool *isnull)
 {
 	int			i;
@@ -164,19 +159,12 @@ gistMakeUnionItVec(GISTSTATE *giststate, IndexTuple *itvec, int len, int startke
 
 	evec = (GistEntryVector *) palloc((len + 2) * sizeof(GISTENTRY) + GEVHDRSZ);
 
-	for (i = startkey; i < giststate->tupdesc->natts; i++)
+	for (i = 0; i < giststate->tupdesc->natts; i++)
 	{
 		int			j;
 
+		/* Collect non-null datums for this column */
 		evec->n = 0;
-		if (!isnull[i])
-		{
-			gistentryinit(evec->vector[evec->n], attr[i],
-						  NULL, NULL, (OffsetNumber) 0,
-						  FALSE);
-			evec->n++;
-		}
-
 		for (j = 0; j < len; j++)
 		{
 			Datum		datum;
@@ -198,7 +186,7 @@ gistMakeUnionItVec(GISTSTATE *giststate, IndexTuple *itvec, int len, int startke
 			evec->n++;
 		}
 
-		/* If this tuple vector was all NULLs, the union is NULL */
+		/* If this column was all NULLs, the union is NULL */
 		if (evec->n == 0)
 		{
 			attr[i] = (Datum) 0;
@@ -208,6 +196,7 @@ gistMakeUnionItVec(GISTSTATE *giststate, IndexTuple *itvec, int len, int startke
 		{
 			if (evec->n == 1)
 			{
+				/* unionFn may expect at least two inputs */
 				evec->n = 2;
 				evec->vector[1] = evec->vector[0];
 			}
@@ -231,12 +220,13 @@ gistMakeUnionItVec(GISTSTATE *giststate, IndexTuple *itvec, int len, int startke
 IndexTuple
 gistunion(Relation r, IndexTuple *itvec, int len, GISTSTATE *giststate)
 {
-	memset(isnullS, TRUE, sizeof(bool) * giststate->tupdesc->natts);
+	Datum		attr[INDEX_MAX_KEYS];
+	bool		isnull[INDEX_MAX_KEYS];
 
-	if (!gistMakeUnionItVec(giststate, itvec, len, 0, attrS, isnullS))
+	if (!gistMakeUnionItVec(giststate, itvec, len, attr, isnull))
 		return gist_form_invalid_tuple(InvalidBlockNumber);
 
-	return gistFormTuple(giststate, r, attrS, isnullS, false);
+	return gistFormTuple(giststate, r, attr, isnull, false);
 }
 
 /*
@@ -248,11 +238,14 @@ gistMakeUnionKey(GISTSTATE *giststate, int attno,
 				 GISTENTRY *entry2, bool isnull2,
 				 Datum *dst, bool *dstisnull)
 {
-
+	/* we need a GistEntryVector with room for exactly 2 elements */
+	union
+	{
+		GistEntryVector gev;
+		char		padding[2 * sizeof(GISTENTRY) + GEVHDRSZ];
+	}			storage;
+	GistEntryVector *evec = &storage.gev;
 	int			dstsize;
-
-	static char storage[2 * sizeof(GISTENTRY) + GEVHDRSZ];
-	GistEntryVector *evec = (GistEntryVector *) storage;
 
 	evec->n = 2;
 
@@ -327,6 +320,8 @@ gistgetadjusted(Relation r, IndexTuple oldtup, IndexTuple addtup, GISTSTATE *gis
 				addentries[INDEX_MAX_KEYS];
 	bool		oldisnull[INDEX_MAX_KEYS],
 				addisnull[INDEX_MAX_KEYS];
+	Datum		attr[INDEX_MAX_KEYS];
+	bool		isnull[INDEX_MAX_KEYS];
 	IndexTuple	newtup = NULL;
 	int			i;
 
@@ -344,19 +339,20 @@ gistgetadjusted(Relation r, IndexTuple oldtup, IndexTuple addtup, GISTSTATE *gis
 		gistMakeUnionKey(giststate, i,
 						 oldentries + i, oldisnull[i],
 						 addentries + i, addisnull[i],
-						 attrS + i, isnullS + i);
+						 attr + i, isnull + i);
 
 		if (neednew)
 			/* we already need new key, so we can skip check */
 			continue;
 
-		if (isnullS[i])
+		if (isnull[i])
 			/* union of key may be NULL if and only if both keys are NULL */
 			continue;
 
 		if (!addisnull[i])
 		{
-			if (oldisnull[i] || gistKeyIsEQ(giststate, i, oldentries[i].key, attrS[i]) == false)
+			if (oldisnull[i] ||
+				!gistKeyIsEQ(giststate, i, oldentries[i].key, attr[i]))
 				neednew = true;
 		}
 	}
@@ -364,7 +360,7 @@ gistgetadjusted(Relation r, IndexTuple oldtup, IndexTuple addtup, GISTSTATE *gis
 	if (neednew)
 	{
 		/* need to update key */
-		newtup = gistFormTuple(giststate, r, attrS, isnullS, false);
+		newtup = gistFormTuple(giststate, r, attr, isnull, false);
 		newtup->t_tid = oldtup->t_tid;
 	}
 
@@ -372,36 +368,55 @@ gistgetadjusted(Relation r, IndexTuple oldtup, IndexTuple addtup, GISTSTATE *gis
 }
 
 /*
- * find entry with lowest penalty
+ * Search an upper index page for the entry with lowest penalty for insertion
+ * of the new index key contained in "it".
+ *
+ * Returns the index of the page entry to insert into.
  */
 OffsetNumber
 gistchoose(Relation r, Page p, IndexTuple it,	/* it has compressed entry */
 		   GISTSTATE *giststate)
 {
+	OffsetNumber result;
 	OffsetNumber maxoff;
 	OffsetNumber i;
-	OffsetNumber which;
-	float		sum_grow,
-				which_grow[INDEX_MAX_KEYS];
+	float		best_penalty[INDEX_MAX_KEYS];
 	GISTENTRY	entry,
 				identry[INDEX_MAX_KEYS];
 	bool		isnull[INDEX_MAX_KEYS];
 
-	maxoff = PageGetMaxOffsetNumber(p);
-	*which_grow = -1.0;
-	which = InvalidOffsetNumber;
-	sum_grow = 1;
+	Assert(!GistPageIsLeaf(p));
+
 	gistDeCompressAtt(giststate, r,
 					  it, NULL, (OffsetNumber) 0,
 					  identry, isnull);
 
-	Assert(maxoff >= FirstOffsetNumber);
-	Assert(!GistPageIsLeaf(p));
+	/* we'll return FirstOffsetNumber if page is empty (shouldn't happen) */
+	result = FirstOffsetNumber;
 
-	for (i = FirstOffsetNumber; i <= maxoff && sum_grow; i = OffsetNumberNext(i))
+	/*
+	 * The index may have multiple columns, and there's a penalty value for
+	 * each column.  The penalty associated with a column that appears earlier
+	 * in the index definition is strictly more important than the penalty of
+	 * a column that appears later in the index definition.
+	 *
+	 * best_penalty[j] is the best penalty we have seen so far for column j,
+	 * or -1 when we haven't yet examined column j.  Array entries to the
+	 * right of the first -1 are undefined.
+	 */
+	best_penalty[0] = -1;
+
+	/*
+	 * Loop over tuples on page.
+	 */
+	maxoff = PageGetMaxOffsetNumber(p);
+	Assert(maxoff >= FirstOffsetNumber);
+
+	for (i = FirstOffsetNumber; i <= maxoff; i = OffsetNumberNext(i))
 	{
-		int			j;
 		IndexTuple	itup = (IndexTuple) PageGetItem(p, PageGetItemId(p, i));
+		bool		zero_penalty;
+		int			j;
 
 		if (!GistPageIsLeaf(p) && GistTupleIsInvalid(itup))
 		{
@@ -411,41 +426,70 @@ gistchoose(Relation r, Page p, IndexTuple it,	/* it has compressed entry */
 			continue;
 		}
 
-		sum_grow = 0;
+		zero_penalty = true;
+
+		/* Loop over index attributes. */
 		for (j = 0; j < r->rd_att->natts; j++)
 		{
 			Datum		datum;
 			float		usize;
 			bool		IsNull;
 
+			/* Compute penalty for this column. */
 			datum = index_getattr(itup, j + 1, giststate->tupdesc, &IsNull);
 			gistdentryinit(giststate, j, &entry, datum, r, p, i,
 						   FALSE, IsNull);
 			usize = gistpenalty(giststate, j, &entry, IsNull,
 								&identry[j], isnull[j]);
+			if (usize > 0)
+				zero_penalty = false;
 
-			if (which_grow[j] < 0 || usize < which_grow[j])
+			if (best_penalty[j] < 0 || usize < best_penalty[j])
 			{
-				which = i;
-				which_grow[j] = usize;
-				if (j < r->rd_att->natts - 1 && i == FirstOffsetNumber)
-					which_grow[j + 1] = -1;
-				sum_grow += which_grow[j];
+				/*
+				 * New best penalty for column.  Tentatively select this tuple
+				 * as the target, and record the best penalty.	Then reset the
+				 * next column's penalty to "unknown" (and indirectly, the
+				 * same for all the ones to its right).  This will force us to
+				 * adopt this tuple's penalty values as the best for all the
+				 * remaining columns during subsequent loop iterations.
+				 */
+				result = i;
+				best_penalty[j] = usize;
+
+				if (j < r->rd_att->natts - 1)
+					best_penalty[j + 1] = -1;
 			}
-			else if (which_grow[j] == usize)
-				sum_grow += usize;
+			else if (best_penalty[j] == usize)
+			{
+				/*
+				 * The current tuple is exactly as good for this column as the
+				 * best tuple seen so far.	The next iteration of this loop
+				 * will compare the next column.
+				 */
+			}
 			else
 			{
-				sum_grow = 1;
+				/*
+				 * The current tuple is worse for this column than the best
+				 * tuple seen so far.  Skip the remaining columns and move on
+				 * to the next tuple, if any.
+				 */
+				zero_penalty = false;	/* so outer loop won't exit */
 				break;
 			}
 		}
+
+		/*
+		 * If we find a tuple with zero penalty for all columns, there's no
+		 * need to examine remaining tuples; just break out of the loop and
+		 * return it.
+		 */
+		if (zero_penalty)
+			break;
 	}
 
-	if (which == InvalidOffsetNumber)
-		which = FirstOffsetNumber;
-
-	return which;
+	return result;
 }
 
 /*
