@@ -15117,14 +15117,16 @@ case 43:
 YY_RULE_SETUP
 #line 622 "scan.l"
 {
-					char		   *ident;
+					char	   *ident;
+					int			identlen;
 
 					BEGIN(INITIAL);
 					if (literallen == 0)
 						yyerror("zero-length delimited identifier");
 					ident = litbuf_udeescape('\\');
-					if (literallen >= NAMEDATALEN)
-						truncate_identifier(ident, literallen, true);
+					identlen = strlen(ident);
+					if (identlen >= NAMEDATALEN)
+						truncate_identifier(ident, identlen, true);
 					yylval.str = ident;
 					/* throw back all but the quote */
 					yyless(1);
@@ -15134,23 +15136,25 @@ YY_RULE_SETUP
 case 44:
 /* rule 44 can match eol */
 YY_RULE_SETUP
-#line 636 "scan.l"
+#line 638 "scan.l"
 {
-					char		   *ident;
+					char	   *ident;
+					int			identlen;
 
 					BEGIN(INITIAL);
 					if (literallen == 0)
 						yyerror("zero-length delimited identifier");
 					ident = litbuf_udeescape(base_yytext[base_yyleng - 2]);
-					if (literallen >= NAMEDATALEN)
-						truncate_identifier(ident, literallen, true);
+					identlen = strlen(ident);
+					if (identlen >= NAMEDATALEN)
+						truncate_identifier(ident, identlen, true);
 					yylval.str = ident;
 					return IDENT;
 				}
 	YY_BREAK
 case 45:
 YY_RULE_SETUP
-#line 648 "scan.l"
+#line 652 "scan.l"
 {
 					addlitchar('"');
 				}
@@ -15158,19 +15162,19 @@ YY_RULE_SETUP
 case 46:
 /* rule 46 can match eol */
 YY_RULE_SETUP
-#line 651 "scan.l"
+#line 655 "scan.l"
 {
 					addlit(base_yytext, base_yyleng);
 				}
 	YY_BREAK
 case YY_STATE_EOF(xd):
 case YY_STATE_EOF(xui):
-#line 654 "scan.l"
+#line 658 "scan.l"
 { yyerror("unterminated quoted identifier"); }
 	YY_BREAK
 case 47:
 YY_RULE_SETUP
-#line 656 "scan.l"
+#line 660 "scan.l"
 {
 					char		   *ident;
 
@@ -15185,7 +15189,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 48:
 YY_RULE_SETUP
-#line 668 "scan.l"
+#line 672 "scan.l"
 {
 					SET_YYLLOC();
 					return TYPECAST;
@@ -15193,7 +15197,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 49:
 YY_RULE_SETUP
-#line 673 "scan.l"
+#line 677 "scan.l"
 {
 					SET_YYLLOC();
 					return base_yytext[0];
@@ -15201,7 +15205,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 50:
 YY_RULE_SETUP
-#line 678 "scan.l"
+#line 682 "scan.l"
 {
 					/*
 					 * Check for embedded slash-star or dash-dash; those
@@ -15284,7 +15288,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 51:
 YY_RULE_SETUP
-#line 758 "scan.l"
+#line 762 "scan.l"
 {
 					SET_YYLLOC();
 					yylval.ival = atol(base_yytext + 1);
@@ -15293,7 +15297,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 52:
 YY_RULE_SETUP
-#line 764 "scan.l"
+#line 768 "scan.l"
 {
 					long val;
 					char* endptr;
@@ -15318,7 +15322,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 53:
 YY_RULE_SETUP
-#line 785 "scan.l"
+#line 789 "scan.l"
 {
 					SET_YYLLOC();
 					yylval.str = pstrdup(base_yytext);
@@ -15327,7 +15331,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 54:
 YY_RULE_SETUP
-#line 790 "scan.l"
+#line 794 "scan.l"
 {
 					SET_YYLLOC();
 					yylval.str = pstrdup(base_yytext);
@@ -15336,7 +15340,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 55:
 YY_RULE_SETUP
-#line 795 "scan.l"
+#line 799 "scan.l"
 {
 					/*
 					 * throw back the [Ee], and treat as {decimal}.  Note
@@ -15352,7 +15356,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 56:
 YY_RULE_SETUP
-#line 807 "scan.l"
+#line 811 "scan.l"
 {
 					/* throw back the [Ee][+-], and proceed as above */
 					yyless(base_yyleng-2);
@@ -15363,7 +15367,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 57:
 YY_RULE_SETUP
-#line 816 "scan.l"
+#line 820 "scan.l"
 {
 					const ScanKeyword *keyword;
 					char		   *ident;
@@ -15389,14 +15393,14 @@ YY_RULE_SETUP
 	YY_BREAK
 case 58:
 YY_RULE_SETUP
-#line 839 "scan.l"
+#line 843 "scan.l"
 {
 					SET_YYLLOC();
 					return base_yytext[0];
 				}
 	YY_BREAK
 case YY_STATE_EOF(INITIAL):
-#line 844 "scan.l"
+#line 848 "scan.l"
 {
 					SET_YYLLOC();
 					yyterminate();
@@ -15404,10 +15408,10 @@ case YY_STATE_EOF(INITIAL):
 	YY_BREAK
 case 59:
 YY_RULE_SETUP
-#line 849 "scan.l"
+#line 853 "scan.l"
 YY_FATAL_ERROR( "flex scanner jammed" );
 	YY_BREAK
-#line 15411 "scan.c"
+#line 15415 "scan.c"
 
 	case YY_END_OF_BUFFER:
 		{
@@ -16341,7 +16345,7 @@ void base_yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 849 "scan.l"
+#line 853 "scan.l"
 
 
 

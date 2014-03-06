@@ -1795,7 +1795,7 @@ void cube_yyfree (void * ptr )
 
 
 void
-yyerror(const char *message)
+yyerror(NDBOX **result, const char *message)
 {
 	if (*cube_yytext == YY_END_OF_BUFFER_CHAR)
 	{

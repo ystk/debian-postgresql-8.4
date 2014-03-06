@@ -2489,6 +2489,13 @@ quickdie(SIGNAL_ARGS)
 	PG_SETMASK(&BlockSig);
 
 	/*
+	 * Prevent interrupts while exiting; though we just blocked signals that
+	 * would queue new interrupts, one may have been pending.  We don't want a
+	 * quickdie() downgraded to a mere query cancel.
+	 */
+	HOLD_INTERRUPTS();
+
+	/*
 	 * Ideally this should be ereport(FATAL), but then we'd not get control
 	 * back...
 	 */
@@ -2991,14 +2998,6 @@ PostgresMain(int argc, char *argv[], const char *username)
 	MyProcPid = getpid();
 
 	MyStartTime = time(NULL);
-
-	/*
-	 * Fire up essential subsystems: error and memory management
-	 *
-	 * If we are running under the postmaster, this is done already.
-	 */
-	if (!IsUnderPostmaster)
-		MemoryContextInit();
 
 	set_ps_display("startup", false);
 

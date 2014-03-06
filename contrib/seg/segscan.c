@@ -1795,7 +1795,7 @@ void seg_yyfree (void * ptr )
 
 
 void
-yyerror(const char *message)
+yyerror(SEG *result, const char *message)
 {
 	if (*seg_yytext == YY_END_OF_BUFFER_CHAR)
 	{
