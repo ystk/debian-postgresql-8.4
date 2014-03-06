@@ -1,0 +1,9 @@
+--- a/HISTORY
++++ b/HISTORY
+@@ -4,3 +4,6 @@
+ Distribution file sets include release notes for their version and preceding
+ versions.  Unpack the file doc/postgres.tar.gz, then visit the contained
+ file release.html in an HTML browser.
++
++On Debian systems, the release notes are contained in the postgresql-doc-*
++packages, located in /usr/share/doc/postgresql-doc-*/html/release.html.
