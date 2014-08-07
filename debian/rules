@@ -56,7 +56,8 @@ DEB_CONFIGURE_EXTRA_FLAGS := --mandir=\$${prefix}/share/postgresql/$(MAJOR_VER)/
 DEB_DH_MAKESHLIBS_ARGS := -Xusr/lib/postgresql/$(MAJOR_VER)
 # disabled for CVS builds
 #DEB_DH_INSTALLCHANGELOGS_ARGS := HISTORY
-DEB_COMPRESS_EXCLUDE := .source .c
+DEB_COMPRESS_EXCLUDE := .source .c .sh
+DEB_FIXPERMS_EXCLUDE := .sh
 
 # build documentation tarball if not present
 common-configure-indep:: doc/postgres.tar.gz doc/man.tar.gz

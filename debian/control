@@ -1,7 +1,8 @@
 Source: postgresql-8.4
 Section: database
 Priority: optional
-Maintainer: Martin Pitt <mpitt@debian.org>
+Maintainer: Debian PostgreSQL Maintainers <pkg-postgresql-public@lists.alioth.debian.org>
+Uploaders: Martin Pitt <mpitt@debian.org>, Christoph Berg <myon@debian.org>
 Standards-Version: 3.9.1
 XS-Python-Version: current
 Build-Depends: debhelper (>= 5.0.37.2), cdbs (>= 0.4.43), perl (>= 5.8),

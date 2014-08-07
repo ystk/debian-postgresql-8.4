@@ -1,3 +1,31 @@
+postgresql-8.4 (8.4.22-0+deb6u1) squeeze-lts; urgency=low
+
+  8.4.22 is the last release in the PostgreSQL 8.4 branch. See
+  /usr/share/doc/postgresql-8.4/NEWS.Debian.gz for upgrade options.
+
+  * New upstream release.
+    + Secure Unix-domain sockets of temporary postmasters started during make
+      check (Noah Misch)
+
+      Any local user able to access the socket file could connect as the
+      server's bootstrap superuser, then proceed to execute arbitrary code as
+      the operating-system user running the test, as we previously noted in
+      CVE-2014-0067. This change defends against that risk by placing the
+      server's socket in a temporary, mode 0700 subdirectory of /tmp.
+
+  * Remove 11-pg_regress-socketpath.patch.
+  * Remove 15-revert-typmod-check.patch. It conflicts with updates in 8.4.22,
+    and the test case from #632028 does not fail without it.
+
+ -- Christoph Berg <myon@debian.org>  Tue, 29 Jul 2014 10:35:47 +0200
+
+postgresql-8.4 (8.4.21-0squeeze1) oldstable; urgency=medium
+
+  * New upstream bug fix release. No security issues or major data loss fixes
+    this time, see release.html for details.
+
+ -- Martin Pitt <mpitt@debian.org>  Mon, 31 Mar 2014 13:23:36 +0200
+
 postgresql-8.4 (8.4.20-0squeeze1) squeeze-security; urgency=high
 
   * New upstream security/bugfix release.

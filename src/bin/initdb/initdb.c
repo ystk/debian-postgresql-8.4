@@ -18,7 +18,7 @@
  * to produce a new database.
  *
  * For largely-historical reasons, the template1 database is the one built
- * by the basic bootstrap process.	After it is complete, template0 and
+ * by the basic bootstrap process.  After it is complete, template0 and
  * the default database, postgres, are made just by copying template1.
  *
  * To create template1, we run the postgres (backend) program in bootstrap
@@ -779,7 +779,7 @@ find_matching_ts_config(const char *lc_type)
 
 	/*
 	 * Convert lc_ctype to a language name by stripping everything after an
-	 * underscore.	Just for paranoia, we also stop at '.' or '@'.
+	 * underscore.  Just for paranoia, we also stop at '.' or '@'.
 	 */
 	if (lc_type == NULL)
 		langname = xstrdup("");
@@ -861,7 +861,7 @@ check_data_dir(char *dir)
 	if (!chkdir)
 		return (errno == ENOENT) ? 0 : -1;
 
-	while ((file = readdir(chkdir)) != NULL)
+	while (errno = 0, (file = readdir(chkdir)) != NULL)
 	{
 		if (strcmp(".", file->d_name) == 0 ||
 			strcmp("..", file->d_name) == 0)
@@ -877,18 +877,12 @@ check_data_dir(char *dir)
 	}
 
 #ifdef WIN32
-
-	/*
-	 * This fix is in mingw cvs (runtime/mingwex/dirent.c rev 1.4), but not in
-	 * released version
-	 */
+	/* Bug in old Mingw dirent.c;  fixed in mingw-runtime-3.2, 2003-10-10 */
 	if (GetLastError() == ERROR_NO_MORE_FILES)
 		errno = 0;
 #endif
 
-	closedir(chkdir);
-
-	if (errno != 0)
+	if (errno || closedir(chkdir))
 		result = -1;			/* some kind of I/O error? */
 
 	return result;
@@ -1244,7 +1238,7 @@ setup_config(void)
 
 		/* for best results, this code should match parse_hba() */
 		hints.ai_flags = AI_NUMERICHOST;
-		hints.ai_family = PF_UNSPEC;
+		hints.ai_family = AF_UNSPEC;
 		hints.ai_socktype = 0;
 		hints.ai_protocol = 0;
 		hints.ai_addrlen = 0;
@@ -1375,7 +1369,7 @@ bootstrap_template1(char *short_version)
 	unsetenv("PGCLIENTENCODING");
 
 	snprintf(cmd, sizeof(cmd),
-			 "\"%s\" --boot -x1 %s %s",
+			 SYSTEMQUOTE "\"%s\" --boot -x1 %s %s" SYSTEMQUOTE,
 			 backend_exec, boot_options, talkargs);
 
 	PG_CMD_OPEN;
@@ -1428,7 +1422,7 @@ setup_auth(void)
 	fflush(stdout);
 
 	snprintf(cmd, sizeof(cmd),
-			 "\"%s\" %s template1 >%s",
+			 SYSTEMQUOTE "\"%s\" %s template1 >%s" SYSTEMQUOTE,
 			 backend_exec, backend_options,
 			 DEVNULL);
 
@@ -1508,7 +1502,7 @@ get_set_pwd(void)
 	fflush(stdout);
 
 	snprintf(cmd, sizeof(cmd),
-			 "\"%s\" %s template1 >%s",
+			 SYSTEMQUOTE "\"%s\" %s template1 >%s" SYSTEMQUOTE,
 			 backend_exec, backend_options,
 			 DEVNULL);
 
@@ -1616,7 +1610,7 @@ setup_depend(void)
 	fflush(stdout);
 
 	snprintf(cmd, sizeof(cmd),
-			 "\"%s\" %s template1 >%s",
+			 SYSTEMQUOTE "\"%s\" %s template1 >%s" SYSTEMQUOTE,
 			 backend_exec, backend_options,
 			 DEVNULL);
 
@@ -1649,7 +1643,7 @@ setup_sysviews(void)
 	 * We use -j here to avoid backslashing stuff in system_views.sql
 	 */
 	snprintf(cmd, sizeof(cmd),
-			 "\"%s\" %s -j template1 >%s",
+			 SYSTEMQUOTE "\"%s\" %s -j template1 >%s" SYSTEMQUOTE,
 			 backend_exec, backend_options,
 			 DEVNULL);
 
@@ -1680,7 +1674,7 @@ setup_description(void)
 	fflush(stdout);
 
 	snprintf(cmd, sizeof(cmd),
-			 "\"%s\" %s template1 >%s",
+			 SYSTEMQUOTE "\"%s\" %s template1 >%s" SYSTEMQUOTE,
 			 backend_exec, backend_options,
 			 DEVNULL);
 
@@ -1732,7 +1726,7 @@ setup_conversion(void)
 	fflush(stdout);
 
 	snprintf(cmd, sizeof(cmd),
-			 "\"%s\" %s template1 >%s",
+			 SYSTEMQUOTE "\"%s\" %s template1 >%s" SYSTEMQUOTE,
 			 backend_exec, backend_options,
 			 DEVNULL);
 
@@ -1770,7 +1764,7 @@ setup_dictionary(void)
 	 * We use -j here to avoid backslashing stuff
 	 */
 	snprintf(cmd, sizeof(cmd),
-			 "\"%s\" %s -j template1 >%s",
+			 SYSTEMQUOTE "\"%s\" %s -j template1 >%s" SYSTEMQUOTE,
 			 backend_exec, backend_options,
 			 DEVNULL);
 
@@ -1793,7 +1787,7 @@ setup_dictionary(void)
 /*
  * Set up privileges
  *
- * We mark most system catalogs as world-readable.	We don't currently have
+ * We mark most system catalogs as world-readable.  We don't currently have
  * to touch functions, languages, or databases, because their default
  * permissions are OK.
  *
@@ -1820,7 +1814,7 @@ setup_privileges(void)
 	fflush(stdout);
 
 	snprintf(cmd, sizeof(cmd),
-			 "\"%s\" %s template1 >%s",
+			 SYSTEMQUOTE "\"%s\" %s template1 >%s" SYSTEMQUOTE,
 			 backend_exec, backend_options,
 			 DEVNULL);
 
@@ -1883,7 +1877,7 @@ setup_schema(void)
 	 * We use -j here to avoid backslashing stuff in information_schema.sql
 	 */
 	snprintf(cmd, sizeof(cmd),
-			 "\"%s\" %s -j template1 >%s",
+			 SYSTEMQUOTE "\"%s\" %s -j template1 >%s" SYSTEMQUOTE,
 			 backend_exec, backend_options,
 			 DEVNULL);
 
@@ -1900,7 +1894,7 @@ setup_schema(void)
 	PG_CMD_CLOSE;
 
 	snprintf(cmd, sizeof(cmd),
-			 "\"%s\" %s template1 >%s",
+			 SYSTEMQUOTE "\"%s\" %s template1 >%s" SYSTEMQUOTE,
 			 backend_exec, backend_options,
 			 DEVNULL);
 
@@ -1934,7 +1928,7 @@ vacuum_db(void)
 	fflush(stdout);
 
 	snprintf(cmd, sizeof(cmd),
-			 "\"%s\" %s template1 >%s",
+			 SYSTEMQUOTE "\"%s\" %s template1 >%s" SYSTEMQUOTE,
 			 backend_exec, backend_options,
 			 DEVNULL);
 
@@ -1988,7 +1982,7 @@ make_template0(void)
 	fflush(stdout);
 
 	snprintf(cmd, sizeof(cmd),
-			 "\"%s\" %s template1 >%s",
+			 SYSTEMQUOTE "\"%s\" %s template1 >%s" SYSTEMQUOTE,
 			 backend_exec, backend_options,
 			 DEVNULL);
 
@@ -2019,7 +2013,7 @@ make_postgres(void)
 	fflush(stdout);
 
 	snprintf(cmd, sizeof(cmd),
-			 "\"%s\" %s template1 >%s",
+			 SYSTEMQUOTE "\"%s\" %s template1 >%s" SYSTEMQUOTE,
 			 backend_exec, backend_options,
 			 DEVNULL);
 
@@ -2096,7 +2090,7 @@ check_ok(void)
  *
  * Note: this is used to process both postgresql.conf entries and SQL
  * string literals.  Since postgresql.conf strings are defined to treat
- * backslashes as escapes, we have to double backslashes here.	Hence,
+ * backslashes as escapes, we have to double backslashes here.  Hence,
  * when using this for a SQL string literal, use E'' syntax.
  *
  * We do not need to worry about encoding considerations because all
@@ -2515,6 +2509,15 @@ main(int argc, char *argv[])
 		"pg_tblspc",
 		"pg_stat_tmp"
 	};
+
+	/*
+	 * Ensure that buffering behavior of stdout and stderr matches what it is
+	 * in interactive usage (at least on most platforms).  This prevents
+	 * unexpected output ordering when, eg, output is redirected to a file.
+	 * POSIX says we must do this before any other usage of these files.
+	 */
+	setvbuf(stdout, NULL, PG_IOLBF, 0);
+	setvbuf(stderr, NULL, _IONBF, 0);
 
 	progname = get_progname(argv[0]);
 	set_pglocale_pgservice(argv[0], PG_TEXTDOMAIN("initdb"));

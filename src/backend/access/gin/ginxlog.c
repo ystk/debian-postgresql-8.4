@@ -487,18 +487,20 @@ ginRedoUpdateMetapage(XLogRecPtr lsn, XLogRecord *record)
 	Page		metapage;
 	Buffer		buffer;
 
+	/*
+	 * Restore the metapage. This is essentially the same as a full-page image,
+	 * so restore the metapage unconditionally without looking at the LSN, to
+	 * avoid torn page hazards.
+	 */
 	metabuffer = XLogReadBuffer(data->node, GIN_METAPAGE_BLKNO, false);
 	if (!BufferIsValid(metabuffer))
 		return;					/* assume index was deleted, nothing to do */
 	metapage = BufferGetPage(metabuffer);
 
-	if (!XLByteLE(lsn, PageGetLSN(metapage)))
-	{
-		memcpy(GinPageGetMeta(metapage), &data->metadata, sizeof(GinMetaPageData));
-		PageSetLSN(metapage, lsn);
-		PageSetTLI(metapage, ThisTimeLineID);
-		MarkBufferDirty(metabuffer);
-	}
+	memcpy(GinPageGetMeta(metapage), &data->metadata, sizeof(GinMetaPageData));
+	PageSetLSN(metapage, lsn);
+	PageSetTLI(metapage, ThisTimeLineID);
+	MarkBufferDirty(metabuffer);
 
 	if (data->ntuples > 0)
 	{
@@ -585,6 +587,11 @@ ginRedoInsertListPage(XLogRecPtr lsn, XLogRecord *record)
 				tupsize;
 	IndexTuple	tuples = (IndexTuple) (XLogRecGetData(record) + sizeof(ginxlogInsertListPage));
 
+	/*
+	 * If we have a full-page image, we're done.  (As the code stands, we
+	 * never create full-page images, but we used to.  Cope if we're
+	 * reading WAL generated with an older minor version.)
+	 */
 	if (record->xl_info & XLR_BKP_BLOCK_1)
 		return;
 
@@ -615,6 +622,7 @@ ginRedoInsertListPage(XLogRecPtr lsn, XLogRecord *record)
 			elog(ERROR, "failed to add item to index page");
 
 		tuples = (IndexTuple) (((char *) tuples) + tupsize);
+		off++;
 	}
 
 	PageSetLSN(page, lsn);
@@ -637,33 +645,29 @@ ginRedoDeleteListPages(XLogRecPtr lsn, XLogRecord *record)
 		return;					/* assume index was deleted, nothing to do */
 	metapage = BufferGetPage(metabuffer);
 
-	if (!XLByteLE(lsn, PageGetLSN(metapage)))
-	{
-		memcpy(GinPageGetMeta(metapage), &data->metadata, sizeof(GinMetaPageData));
-		PageSetLSN(metapage, lsn);
-		PageSetTLI(metapage, ThisTimeLineID);
-		MarkBufferDirty(metabuffer);
-	}
+	memcpy(GinPageGetMeta(metapage), &data->metadata, sizeof(GinMetaPageData));
+	PageSetLSN(metapage, lsn);
+	PageSetTLI(metapage, ThisTimeLineID);
+	MarkBufferDirty(metabuffer);
 
+	/*
+	 * No full-page images are taken of the deleted pages. Instead, they are
+	 * re-initialized as empty, deleted pages.
+	 */
 	for (i = 0; i < data->ndeleted; i++)
 	{
-		Buffer		buffer = XLogReadBuffer(data->node, data->toDelete[i], false);
+		Buffer		buffer;
+		Page		page;
 
-		if (BufferIsValid(buffer))
-		{
-			Page		page = BufferGetPage(buffer);
+		buffer = XLogReadBuffer(data->node, data->toDelete[i], true);
+		page = BufferGetPage(buffer);
+		GinInitBuffer(buffer, GIN_DELETED);
 
-			if (!XLByteLE(lsn, PageGetLSN(page)))
-			{
-				GinPageGetOpaque(page)->flags = GIN_DELETED;
+		PageSetLSN(page, lsn);
+		PageSetTLI(page, ThisTimeLineID);
+		MarkBufferDirty(buffer);
 
-				PageSetLSN(page, lsn);
-				PageSetTLI(page, ThisTimeLineID);
-				MarkBufferDirty(buffer);
-			}
-
-			UnlockReleaseBuffer(buffer);
-		}
+		UnlockReleaseBuffer(buffer);
 	}
 	UnlockReleaseBuffer(metabuffer);
 }
