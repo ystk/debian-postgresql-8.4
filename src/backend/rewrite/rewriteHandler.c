@@ -36,7 +36,13 @@ typedef struct rewrite_event
 	CmdType		event;			/* type of rule being fired */
 } rewrite_event;
 
-static bool acquireLocksOnSubLinks(Node *node, void *context);
+typedef struct acquireLocksOnSubLinks_context
+{
+	bool		for_execute;	/* AcquireRewriteLocks' forExecute param */
+} acquireLocksOnSubLinks_context;
+
+static bool acquireLocksOnSubLinks(Node *node,
+					   acquireLocksOnSubLinks_context *context);
 static Query *rewriteRuleAction(Query *parsetree,
 				  Query *rule_action,
 				  Node *rule_qual,
@@ -65,6 +71,15 @@ static Query *fireRIRrules(Query *parsetree, List *activeRIRs);
  *	  These locks will ensure that the relation schemas don't change under us
  *	  while we are rewriting and planning the query.
  *
+ * forExecute indicates that the query is about to be executed.
+ * If so, we'll acquire RowExclusiveLock on the query's resultRelation,
+ * RowShareLock on any relation accessed FOR UPDATE/SHARE, and
+ * AccessShareLock on all other relations mentioned.
+ *
+ * If forExecute is false, AccessShareLock is acquired on all relations.
+ * This case is suitable for ruleutils.c, for example, where we only need
+ * schema stability and we don't intend to actually modify any relations.
+ *
  * A secondary purpose of this routine is to fix up JOIN RTE references to
  * dropped columns (see details below).  Because the RTEs are modified in
  * place, it is generally appropriate for the caller of this routine to have
@@ -91,10 +106,13 @@ static Query *fireRIRrules(Query *parsetree, List *activeRIRs);
  * construction of a nested join was O(N^2) in the nesting depth.)
  */
 void
-AcquireRewriteLocks(Query *parsetree)
+AcquireRewriteLocks(Query *parsetree, bool forExecute)
 {
 	ListCell   *l;
 	int			rt_index;
+	acquireLocksOnSubLinks_context context;
+
+	context.for_execute = forExecute;
 
 	/*
 	 * First, process RTEs of the current query level.
@@ -120,14 +138,12 @@ AcquireRewriteLocks(Query *parsetree)
 				 * release it until end of transaction. This protects the
 				 * rewriter and planner against schema changes mid-query.
 				 *
-				 * If the relation is the query's result relation, then we
-				 * need RowExclusiveLock.  Otherwise, check to see if the
-				 * relation is accessed FOR UPDATE/SHARE or not.  We can't
-				 * just grab AccessShareLock because then the executor would
-				 * be trying to upgrade the lock, leading to possible
-				 * deadlocks.
+				 * Assuming forExecute is true, this logic must match what the
+				 * executor will do, else we risk lock-upgrade deadlocks.
 				 */
-				if (rt_index == parsetree->resultRelation)
+				if (!forExecute)
+					lockmode = AccessShareLock;
+				else if (rt_index == parsetree->resultRelation)
 					lockmode = RowExclusiveLock;
 				else if (get_rowmark(parsetree, rt_index))
 					lockmode = RowShareLock;
@@ -172,7 +188,7 @@ AcquireRewriteLocks(Query *parsetree)
 						/*
 						 * The elements of an alias list have to refer to
 						 * earlier RTEs of the same rtable, because that's the
-						 * order the planner builds things in.	So we already
+						 * order the planner builds things in.  So we already
 						 * processed the referenced RTE, and so it's safe to
 						 * use get_rte_attribute_is_dropped on it. (This might
 						 * not hold after rewriting or planning, but it's OK
@@ -206,7 +222,7 @@ AcquireRewriteLocks(Query *parsetree)
 				 * The subquery RTE itself is all right, but we have to
 				 * recurse to process the represented subquery.
 				 */
-				AcquireRewriteLocks(rte->subquery);
+				AcquireRewriteLocks(rte->subquery, forExecute);
 				break;
 
 			default:
@@ -220,7 +236,7 @@ AcquireRewriteLocks(Query *parsetree)
 	{
 		CommonTableExpr *cte = (CommonTableExpr *) lfirst(l);
 
-		AcquireRewriteLocks((Query *) cte->ctequery);
+		AcquireRewriteLocks((Query *) cte->ctequery, forExecute);
 	}
 
 	/*
@@ -228,7 +244,7 @@ AcquireRewriteLocks(Query *parsetree)
 	 * the rtable and cteList.
 	 */
 	if (parsetree->hasSubLinks)
-		query_tree_walker(parsetree, acquireLocksOnSubLinks, NULL,
+		query_tree_walker(parsetree, acquireLocksOnSubLinks, &context,
 						  QTW_IGNORE_RC_SUBQUERIES);
 }
 
@@ -236,7 +252,7 @@ AcquireRewriteLocks(Query *parsetree)
  * Walker to find sublink subqueries for AcquireRewriteLocks
  */
 static bool
-acquireLocksOnSubLinks(Node *node, void *context)
+acquireLocksOnSubLinks(Node *node, acquireLocksOnSubLinks_context *context)
 {
 	if (node == NULL)
 		return false;
@@ -245,7 +261,7 @@ acquireLocksOnSubLinks(Node *node, void *context)
 		SubLink    *sub = (SubLink *) node;
 
 		/* Do what we came for */
-		AcquireRewriteLocks((Query *) sub->subselect);
+		AcquireRewriteLocks((Query *) sub->subselect, context->for_execute);
 		/* Fall through to process lefthand args of SubLink */
 	}
 
@@ -287,6 +303,9 @@ rewriteRuleAction(Query *parsetree,
 	int			rt_length;
 	Query	   *sub_action;
 	Query	  **sub_action_ptr;
+	acquireLocksOnSubLinks_context context;
+
+	context.for_execute = true;
 
 	/*
 	 * Make modifiable copies of rule action and qual (what we're passed are
@@ -298,8 +317,8 @@ rewriteRuleAction(Query *parsetree,
 	/*
 	 * Acquire necessary locks and fix any deleted JOIN RTE entries.
 	 */
-	AcquireRewriteLocks(rule_action);
-	(void) acquireLocksOnSubLinks(rule_qual, NULL);
+	AcquireRewriteLocks(rule_action, true);
+	(void) acquireLocksOnSubLinks(rule_qual, &context);
 
 	current_varno = rt_index;
 	rt_length = list_length(parsetree->rtable);
@@ -326,7 +345,7 @@ rewriteRuleAction(Query *parsetree,
 	/*
 	 * Generate expanded rtable consisting of main parsetree's rtable plus
 	 * rule action's rtable; this becomes the complete rtable for the rule
-	 * action.	Some of the entries may be unused after we finish rewriting,
+	 * action.  Some of the entries may be unused after we finish rewriting,
 	 * but we leave them all in place for two reasons:
 	 *
 	 * We'd have a much harder job to adjust the query's varnos if we
@@ -392,7 +411,7 @@ rewriteRuleAction(Query *parsetree,
 	 * that if the rule action refers to OLD, its jointree will add a
 	 * reference to rt_index.  If the rule action doesn't refer to OLD, but
 	 * either the rule_qual or the user query quals do, then we need to keep
-	 * the original rtindex in the jointree to provide data for the quals.	We
+	 * the original rtindex in the jointree to provide data for the quals.  We
 	 * don't want the original rtindex to be joined twice, however, so avoid
 	 * keeping it if the rule action mentions it.
 	 *
@@ -414,7 +433,7 @@ rewriteRuleAction(Query *parsetree,
 		{
 			/*
 			 * If sub_action is a setop, manipulating its jointree will do no
-			 * good at all, because the jointree is dummy.	(Perhaps someday
+			 * good at all, because the jointree is dummy.  (Perhaps someday
 			 * we could push the joining and quals down to the member
 			 * statements of the setop?)
 			 */
@@ -570,7 +589,7 @@ adjustJoinTreeList(Query *parsetree, bool removert, int rt_index)
  * then junk fields (these in no particular order).
  *
  * We must do items 1 and 2 before firing rewrite rules, else rewritten
- * references to NEW.foo will produce wrong or incomplete results.	Item 3
+ * references to NEW.foo will produce wrong or incomplete results.  Item 3
  * is not needed for rewriting, but will be needed by the planner, and we
  * can do it essentially for free while handling items 1 and 2.
  *
@@ -754,7 +773,7 @@ process_matched_tle(TargetEntry *src_tle,
 	}
 
 	/*----------
-	 * Multiple assignments to same attribute.	Allow only if all are
+	 * Multiple assignments to same attribute.  Allow only if all are
 	 * FieldStore or ArrayRef assignment operations.  This is a bit
 	 * tricky because what we may actually be looking at is a nest of
 	 * such nodes; consider
@@ -772,7 +791,7 @@ process_matched_tle(TargetEntry *src_tle,
 	 * assignments appear to occur left-to-right.
 	 *
 	 * For FieldStore, instead of nesting we can generate a single
-	 * FieldStore with multiple target fields.	We must nest when
+	 * FieldStore with multiple target fields.  We must nest when
 	 * ArrayRefs are involved though.
 	 *----------
 	 */
@@ -1154,7 +1173,7 @@ ApplyRetrieveRule(Query *parsetree,
 	 */
 	rule_action = copyObject(linitial(rule->actions));
 
-	AcquireRewriteLocks(rule_action);
+	AcquireRewriteLocks(rule_action, true);
 
 	/*
 	 * Recursively expand any view references inside the view.
@@ -1271,7 +1290,7 @@ markQueryForLocking(Query *qry, Node *jtnode, bool forUpdate, bool noWait)
  *	in the given tree.
  *
  * NOTE: although this has the form of a walker, we cheat and modify the
- * SubLink nodes in-place.	It is caller's responsibility to ensure that
+ * SubLink nodes in-place.  It is caller's responsibility to ensure that
  * no unwanted side-effects occur!
  *
  * This is unlike most of the other routines that recurse into subselects,
@@ -1451,7 +1470,7 @@ fireRIRrules(Query *parsetree, List *activeRIRs)
  * not just "NOT x" which the planner is much smarter about, else we will
  * do the wrong thing when the qual evaluates to NULL.)
  *
- * The rule_qual may contain references to OLD or NEW.	OLD references are
+ * The rule_qual may contain references to OLD or NEW.  OLD references are
  * replaced by references to the specified rt_index (the relation that the
  * rule applies to).  NEW references are only possible for INSERT and UPDATE
  * queries on the relation itself, and so they should be replaced by copies
@@ -1465,6 +1484,9 @@ CopyAndAddInvertedQual(Query *parsetree,
 {
 	/* Don't scribble on the passed qual (it's in the relcache!) */
 	Node	   *new_qual = (Node *) copyObject(rule_qual);
+	acquireLocksOnSubLinks_context context;
+
+	context.for_execute = true;
 
 	/*
 	 * In case there are subqueries in the qual, acquire necessary locks and
@@ -1472,7 +1494,7 @@ CopyAndAddInvertedQual(Query *parsetree,
 	 * rewriteRuleAction, but not entirely ... consider restructuring so that
 	 * we only need to process the qual this way once.)
 	 */
-	(void) acquireLocksOnSubLinks(new_qual, NULL);
+	(void) acquireLocksOnSubLinks(new_qual, &context);
 
 	/* Fix references to OLD */
 	ChangeVarNodes(new_qual, PRS2_OLD_VARNO, rt_index, 0);
@@ -1518,7 +1540,7 @@ CopyAndAddInvertedQual(Query *parsetree,
  * rows that the qualified action doesn't act on.  (If there are multiple
  * qualified INSTEAD rules, we AND all the negated quals onto a single
  * modified original query.)  We won't execute the original, unmodified
- * query if we find either qualified or unqualified INSTEAD rules.	If
+ * query if we find either qualified or unqualified INSTEAD rules.  If
  * we find both, the modified original query is discarded too.
  */
 static List *
@@ -1909,7 +1931,7 @@ QueryRewrite(Query *parsetree)
 	 *
 	 * If the original query is still in the list, it sets the command tag.
 	 * Otherwise, the last INSTEAD query of the same kind as the original is
-	 * allowed to set the tag.	(Note these rules can leave us with no query
+	 * allowed to set the tag.  (Note these rules can leave us with no query
 	 * setting the tag.  The tcop code has to cope with this by setting up a
 	 * default tag based on the original un-rewritten query.)
 	 *

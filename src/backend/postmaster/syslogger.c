@@ -46,17 +46,6 @@
 #include "utils/timestamp.h"
 
 /*
- * We really want line-buffered mode for logfile output, but Windows does
- * not have it, and interprets _IOLBF as _IOFBF (bozos).  So use _IONBF
- * instead on Windows.
- */
-#ifdef WIN32
-#define LBF_MODE	_IONBF
-#else
-#define LBF_MODE	_IOLBF
-#endif
-
-/*
  * We read() into a temp buffer twice as big as a chunk, so that any fragment
  * left after processing can be moved down to the front and we'll still have
  * room to read a full chunk.
@@ -65,7 +54,7 @@
 
 
 /*
- * GUC parameters.	Logging_collector cannot be changed after postmaster
+ * GUC parameters.  Logging_collector cannot be changed after postmaster
  * start, but the rest can change at SIGHUP.
  */
 bool		Logging_collector = false;
@@ -184,7 +173,7 @@ SysLoggerMain(int argc, char *argv[])
 	/*
 	 * If we restarted, our stderr is already redirected into our own input
 	 * pipe.  This is of course pretty useless, not to mention that it
-	 * interferes with detecting pipe EOF.	Point stderr to /dev/null. This
+	 * interferes with detecting pipe EOF.  Point stderr to /dev/null. This
 	 * assumes that all interesting messages generated in the syslogger will
 	 * come through elog.c and will be sent to write_syslogger_file.
 	 */
@@ -194,7 +183,7 @@ SysLoggerMain(int argc, char *argv[])
 
 		/*
 		 * The closes might look redundant, but they are not: we want to be
-		 * darn sure the pipe gets closed even if the open failed.	We can
+		 * darn sure the pipe gets closed even if the open failed.  We can
 		 * survive running with stderr pointing nowhere, but we can't afford
 		 * to have extra pipe input descriptors hanging around.
 		 */
@@ -235,7 +224,7 @@ SysLoggerMain(int argc, char *argv[])
 
 	/*
 	 * If possible, make this process a group leader, so that the postmaster
-	 * can signal any child processes too.	(syslogger probably never has any
+	 * can signal any child processes too.  (syslogger probably never has any
 	 * child processes, but for consistency we make all postmaster child
 	 * processes do this.)
 	 */
@@ -474,7 +463,7 @@ SysLoggerMain(int argc, char *argv[])
 					(errmsg("logger shutting down")));
 
 			/*
-			 * Normal exit from the syslogger is here.	Note that we
+			 * Normal exit from the syslogger is here.  Note that we
 			 * deliberately do not close syslogFile before exiting; this is to
 			 * allow for the possibility of elog messages being generated
 			 * inside proc_exit.  Regular exit() will take care of flushing
@@ -561,7 +550,7 @@ SysLogger_Start(void)
 				 (errmsg("could not create log file \"%s\": %m",
 						 filename))));
 
-	setvbuf(syslogFile, NULL, LBF_MODE, 0);
+	setvbuf(syslogFile, NULL, PG_IOLBF, 0);
 
 	pfree(filename);
 
@@ -709,7 +698,7 @@ syslogger_parseArgs(int argc, char *argv[])
 	if (fd != -1)
 	{
 		syslogFile = fdopen(fd, "a");
-		setvbuf(syslogFile, NULL, LBF_MODE, 0);
+		setvbuf(syslogFile, NULL, PG_IOLBF, 0);
 	}
 #else							/* WIN32 */
 	fd = atoi(*argv++);
@@ -719,7 +708,7 @@ syslogger_parseArgs(int argc, char *argv[])
 		if (fd > 0)
 		{
 			syslogFile = fdopen(fd, "a");
-			setvbuf(syslogFile, NULL, LBF_MODE, 0);
+			setvbuf(syslogFile, NULL, PG_IOLBF, 0);
 		}
 	}
 #endif   /* WIN32 */
@@ -1062,7 +1051,7 @@ open_csvlogfile(void)
 				 (errmsg("could not create log file \"%s\": %m",
 						 filename))));
 
-	setvbuf(fh, NULL, LBF_MODE, 0);
+	setvbuf(fh, NULL, PG_IOLBF, 0);
 
 #ifdef WIN32
 	_setmode(_fileno(fh), _O_TEXT);		/* use CRLF line endings on Windows */
@@ -1148,7 +1137,7 @@ logfile_rotate(bool time_based_rotation, int size_rotation_for)
 			return;
 		}
 
-		setvbuf(fh, NULL, LBF_MODE, 0);
+		setvbuf(fh, NULL, PG_IOLBF, 0);
 
 #ifdef WIN32
 		_setmode(_fileno(fh), _O_TEXT); /* use CRLF line endings on Windows */
@@ -1205,7 +1194,7 @@ logfile_rotate(bool time_based_rotation, int size_rotation_for)
 			return;
 		}
 
-		setvbuf(fh, NULL, LBF_MODE, 0);
+		setvbuf(fh, NULL, PG_IOLBF, 0);
 
 #ifdef WIN32
 		_setmode(_fileno(fh), _O_TEXT); /* use CRLF line endings on Windows */
@@ -1282,7 +1271,7 @@ set_next_rotation_time(void)
 	/*
 	 * The requirements here are to choose the next time > now that is a
 	 * "multiple" of the log rotation interval.  "Multiple" can be interpreted
-	 * fairly loosely.	In this version we align to log_timezone rather than
+	 * fairly loosely.  In this version we align to log_timezone rather than
 	 * GMT.
 	 */
 	rotinterval = Log_RotationAge * SECS_PER_MINUTE;	/* convert to seconds */

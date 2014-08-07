@@ -237,7 +237,7 @@ DefineQueryRewrite(char *rulename,
 	/*
 	 * If we are installing an ON SELECT rule, we had better grab
 	 * AccessExclusiveLock to ensure no SELECTs are currently running on the
-	 * event relation.	For other types of rules, it might be sufficient to
+	 * event relation.  For other types of rules, it might be sufficient to
 	 * grab ShareLock to lock out insert/update/delete actions.  But for now,
 	 * let's just grab AccessExclusiveLock all the time.
 	 */
@@ -388,7 +388,7 @@ DefineQueryRewrite(char *rulename,
 		 *
 		 * If so, check that the relation is empty because the storage for the
 		 * relation is going to be deleted.  Also insist that the rel not have
-		 * any triggers, indexes, or child tables.	(Note: these tests are too
+		 * any triggers, indexes, or child tables.  (Note: these tests are too
 		 * strict, because they will reject relations that once had such but
 		 * don't anymore.  But we don't really care, because this whole
 		 * business of converting relations to views is just a kluge to allow
@@ -525,6 +525,7 @@ checkRuleResultList(List *targetList, TupleDesc resultDesc, bool isSelect)
 	foreach(tllist, targetList)
 	{
 		TargetEntry *tle = (TargetEntry *) lfirst(tllist);
+		Oid			tletypid;
 		int32		tletypmod;
 		Form_pg_attribute attr;
 		char	   *attname;
@@ -556,19 +557,32 @@ checkRuleResultList(List *targetList, TupleDesc resultDesc, bool isSelect)
 					(errcode(ERRCODE_FEATURE_NOT_SUPPORTED),
 					 errmsg("cannot convert relation containing dropped columns to view")));
 
+		/* Check name match if required; no need for two error texts here */
 		if (isSelect && strcmp(tle->resname, attname) != 0)
 			ereport(ERROR,
 					(errcode(ERRCODE_INVALID_OBJECT_DEFINITION),
-					 errmsg("SELECT rule's target entry %d has different column name from \"%s\"", i, attname)));
+					 errmsg("SELECT rule's target entry %d has different column name from \"%s\"",
+							i, attname),
+					 errdetail("SELECT target entry is named \"%s\".",
+							   tle->resname)));
 
-		if (attr->atttypid != exprType((Node *) tle->expr))
+		/* Check type match. */
+		tletypid = exprType((Node *) tle->expr);
+		if (attr->atttypid != tletypid)
 			ereport(ERROR,
 					(errcode(ERRCODE_INVALID_OBJECT_DEFINITION),
 					 isSelect ?
 					 errmsg("SELECT rule's target entry %d has different type from column \"%s\"",
 							i, attname) :
 					 errmsg("RETURNING list's entry %d has different type from column \"%s\"",
-							i, attname)));
+							i, attname),
+					 isSelect ?
+					 errdetail("SELECT target entry has type %s, but column has type %s.",
+							   format_type_be(tletypid),
+							   format_type_be(attr->atttypid)) :
+					 errdetail("RETURNING list entry has type %s, but column has type %s.",
+							   format_type_be(tletypid),
+							   format_type_be(attr->atttypid))));
 
 		/*
 		 * Allow typmods to be different only if one of them is -1, ie,
@@ -585,7 +599,16 @@ checkRuleResultList(List *targetList, TupleDesc resultDesc, bool isSelect)
 					 errmsg("SELECT rule's target entry %d has different size from column \"%s\"",
 							i, attname) :
 					 errmsg("RETURNING list's entry %d has different size from column \"%s\"",
-							i, attname)));
+							i, attname),
+					 isSelect ?
+					 errdetail("SELECT target entry has type %s, but column has type %s.",
+							   format_type_with_typemod(tletypid, tletypmod),
+							   format_type_with_typemod(attr->atttypid,
+														attr->atttypmod)) :
+					 errdetail("RETURNING list entry has type %s, but column has type %s.",
+							   format_type_with_typemod(tletypid, tletypmod),
+							   format_type_with_typemod(attr->atttypid,
+														attr->atttypmod))));
 	}
 
 	if (i != resultDesc->natts)
@@ -604,7 +627,7 @@ checkRuleResultList(List *targetList, TupleDesc resultDesc, bool isSelect)
  * Note: for a view (ON SELECT rule), the checkAsUser field of the *OLD*
  * RTE entry will be overridden when the view rule is expanded, and the
  * checkAsUser field of the *NEW* entry is irrelevant because that entry's
- * requiredPerms bits will always be zero.	However, for other types of rules
+ * requiredPerms bits will always be zero.  However, for other types of rules
  * it's important to set these fields to match the rule owner.  So we just set
  * them always.
  */

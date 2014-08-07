@@ -26,7 +26,7 @@
  *		ExecProject() is used to make tuple projections.  Rather then
  *		trying to speed it up, the execution plan should be pre-processed
  *		to facilitate attribute sharing between nodes wherever possible,
- *		instead of doing needless copying.	-cim 5/31/91
+ *		instead of doing needless copying.  -cim 5/31/91
  *
  *		During expression evaluation, we check_stack_depth only in
  *		ExecMakeFunctionResult (and substitute routines) rather than at every
@@ -196,7 +196,7 @@ static Datum ExecEvalCurrentOfExpr(ExprState *exprstate, ExprContext *econtext,
  *
  * Note: for notational simplicity we declare these functions as taking the
  * specific type of ExprState that they work on.  This requires casting when
- * assigning the function pointer in ExecInitExpr.	Be careful that the
+ * assigning the function pointer in ExecInitExpr.  Be careful that the
  * function signature is declared correctly, because the cast suppresses
  * automatic checking!
  *
@@ -231,7 +231,7 @@ static Datum ExecEvalCurrentOfExpr(ExprState *exprstate, ExprContext *econtext,
  * The caller should already have switched into the temporary memory
  * context econtext->ecxt_per_tuple_memory.  The convenience entry point
  * ExecEvalExprSwitchContext() is provided for callers who don't prefer to
- * do the switch in an outer loop.	We do not do the switch in these routines
+ * do the switch in an outer loop.  We do not do the switch in these routines
  * because it'd be a waste of cycles during nested expression evaluation.
  * ----------------------------------------------------------------
  */
@@ -434,7 +434,7 @@ ExecEvalArrayRef(ArrayRefExprState *astate,
 		/*
 		 * For assignment to varlena arrays, we handle a NULL original array
 		 * by substituting an empty (zero-dimensional) array; insertion of the
-		 * new element will result in a singleton array value.	It does not
+		 * new element will result in a singleton array value.  It does not
 		 * matter whether the new element is NULL.
 		 */
 		if (*isNull)
@@ -712,7 +712,6 @@ ExecEvalWholeRowVar(WholeRowVarExprState *wrvstate, ExprContext *econtext,
 {
 	Var		   *variable = (Var *) wrvstate->xprstate.expr;
 	TupleTableSlot *slot;
-	TupleDesc	slot_tupdesc;
 	bool		needslow = false;
 
 	if (isDone)
@@ -790,40 +789,31 @@ ExecEvalWholeRowVar(WholeRowVarExprState *wrvstate, ExprContext *econtext,
 	if (wrvstate->wrv_junkFilter != NULL)
 		slot = ExecFilterJunk(wrvstate->wrv_junkFilter, slot);
 
-	slot_tupdesc = slot->tts_tupleDescriptor;
-
 	/*
-	 * If it's a RECORD Var, we'll use the slot's type ID info.  It's likely
-	 * that the slot's type is also RECORD; if so, make sure it's been
-	 * "blessed", so that the Datum can be interpreted later.
-	 *
 	 * If the Var identifies a named composite type, we must check that the
 	 * actual tuple type is compatible with it.
 	 */
-	if (variable->vartype == RECORDOID)
-	{
-		if (slot_tupdesc->tdtypeid == RECORDOID &&
-			slot_tupdesc->tdtypmod < 0)
-			assign_record_type_typmod(slot_tupdesc);
-	}
-	else
+	if (variable->vartype != RECORDOID)
 	{
 		TupleDesc	var_tupdesc;
+		TupleDesc	slot_tupdesc;
 		int			i;
 
 		/*
 		 * We really only care about numbers of attributes and data types.
 		 * Also, we can ignore type mismatch on columns that are dropped in
 		 * the destination type, so long as (1) the physical storage matches
-		 * or (2) the actual column value is NULL.	Case (1) is helpful in
+		 * or (2) the actual column value is NULL.  Case (1) is helpful in
 		 * some cases involving out-of-date cached plans, while case (2) is
 		 * expected behavior in situations such as an INSERT into a table with
 		 * dropped columns (the planner typically generates an INT4 NULL
-		 * regardless of the dropped column type).	If we find a dropped
+		 * regardless of the dropped column type).  If we find a dropped
 		 * column and cannot verify that case (1) holds, we have to use
 		 * ExecEvalWholeRowSlow to check (2) for each row.
 		 */
 		var_tupdesc = lookup_rowtype_tupdesc(variable->vartype, -1);
+
+		slot_tupdesc = slot->tts_tupleDescriptor;
 
 		if (var_tupdesc->natts != slot_tupdesc->natts)
 			ereport(ERROR,
@@ -882,8 +872,7 @@ ExecEvalWholeRowFast(WholeRowVarExprState *wrvstate, ExprContext *econtext,
 {
 	Var		   *variable = (Var *) wrvstate->xprstate.expr;
 	TupleTableSlot *slot = econtext->ecxt_scantuple;
-	HeapTuple	tuple;
-	TupleDesc	tupleDesc;
+	TupleDesc	slot_tupdesc;
 	HeapTupleHeader dtuple;
 
 	if (isDone)
@@ -894,31 +883,33 @@ ExecEvalWholeRowFast(WholeRowVarExprState *wrvstate, ExprContext *econtext,
 	if (wrvstate->wrv_junkFilter != NULL)
 		slot = ExecFilterJunk(wrvstate->wrv_junkFilter, slot);
 
-	tuple = ExecFetchSlotTuple(slot);
-	tupleDesc = slot->tts_tupleDescriptor;
-
 	/*
-	 * We have to make a copy of the tuple so we can safely insert the Datum
-	 * overhead fields, which are not set in on-disk tuples.
+	 * If it's a RECORD Var, we'll use the slot's type ID info.  It's likely
+	 * that the slot's type is also RECORD; if so, make sure it's been
+	 * "blessed", so that the Datum can be interpreted later.  (Note: we must
+	 * do this here, not in ExecEvalWholeRowVar, because some plan trees may
+	 * return different slots at different times.  We have to be ready to
+	 * bless additional slots during the run.)
 	 */
-	dtuple = (HeapTupleHeader) palloc(tuple->t_len);
-	memcpy((char *) dtuple, (char *) tuple->t_data, tuple->t_len);
-
-	HeapTupleHeaderSetDatumLength(dtuple, tuple->t_len);
+	slot_tupdesc = slot->tts_tupleDescriptor;
+	if (variable->vartype == RECORDOID &&
+		slot_tupdesc->tdtypeid == RECORDOID &&
+		slot_tupdesc->tdtypmod < 0)
+		assign_record_type_typmod(slot_tupdesc);
 
 	/*
-	 * If the Var identifies a named composite type, label the tuple with that
-	 * type; otherwise use what is in the tupleDesc.
+	 * Copy the slot tuple and make sure any toasted fields get detoasted.
+	 */
+	dtuple = DatumGetHeapTupleHeader(ExecFetchSlotTupleDatum(slot));
+
+	/*
+	 * If the Var identifies a named composite type, label the datum with that
+	 * type; otherwise we'll use the slot's info.
 	 */
 	if (variable->vartype != RECORDOID)
 	{
 		HeapTupleHeaderSetTypeId(dtuple, variable->vartype);
 		HeapTupleHeaderSetTypMod(dtuple, variable->vartypmod);
-	}
-	else
-	{
-		HeapTupleHeaderSetTypeId(dtuple, tupleDesc->tdtypeid);
-		HeapTupleHeaderSetTypMod(dtuple, tupleDesc->tdtypmod);
 	}
 
 	return PointerGetDatum(dtuple);
@@ -977,13 +968,13 @@ ExecEvalWholeRowSlow(WholeRowVarExprState *wrvstate, ExprContext *econtext,
 	}
 
 	/*
-	 * We have to make a copy of the tuple so we can safely insert the Datum
-	 * overhead fields, which are not set in on-disk tuples.
+	 * Copy the slot tuple and make sure any toasted fields get detoasted.
 	 */
-	dtuple = (HeapTupleHeader) palloc(tuple->t_len);
-	memcpy((char *) dtuple, (char *) tuple->t_data, tuple->t_len);
+	dtuple = DatumGetHeapTupleHeader(ExecFetchSlotTupleDatum(slot));
 
-	HeapTupleHeaderSetDatumLength(dtuple, tuple->t_len);
+	/*
+	 * Reset datum's type ID fields to match the Var.
+	 */
 	HeapTupleHeaderSetTypeId(dtuple, variable->vartype);
 	HeapTupleHeaderSetTypMod(dtuple, variable->vartypmod);
 
@@ -1428,7 +1419,7 @@ ExecEvalFuncArgs(FunctionCallInfo fcinfo,
  *		ExecPrepareTuplestoreResult
  *
  * Subroutine for ExecMakeFunctionResult: prepare to extract rows from a
- * tuplestore function result.	We must set up a funcResultSlot (unless
+ * tuplestore function result.  We must set up a funcResultSlot (unless
  * already done in a previous call cycle) and verify that the function
  * returned the expected tuple descriptor.
  */
@@ -1473,7 +1464,7 @@ ExecPrepareTuplestoreResult(FuncExprState *fcache,
 	}
 
 	/*
-	 * If function provided a tupdesc, cross-check it.	We only really need to
+	 * If function provided a tupdesc, cross-check it.  We only really need to
 	 * do this for functions returning RECORD, but might as well do it always.
 	 */
 	if (resultDesc)
@@ -1622,7 +1613,7 @@ restart:
 	 * For non-set-returning functions, we just use a local-variable
 	 * FunctionCallInfoData.  For set-returning functions we keep the callinfo
 	 * record in fcache->setArgs so that it can survive across multiple
-	 * value-per-call invocations.	(The reason we don't just do the latter
+	 * value-per-call invocations.  (The reason we don't just do the latter
 	 * all the time is that plpgsql expects to be able to use simple
 	 * expression trees re-entrantly.  Which might not be a good idea, but the
 	 * penalty for not doing so is high.)
@@ -1672,7 +1663,7 @@ restart:
 	if (fcache->func.fn_retset || hasSetArg)
 	{
 		/*
-		 * We need to return a set result.	Complain if caller not ready to
+		 * We need to return a set result.  Complain if caller not ready to
 		 * accept one.
 		 */
 		if (isDone == NULL)
@@ -1949,6 +1940,7 @@ ExecMakeFunctionResultNoSets(FuncExprState *fcache,
 Tuplestorestate *
 ExecMakeTableFunctionResult(ExprState *funcexpr,
 							ExprContext *econtext,
+							MemoryContext argContext,
 							TupleDesc expectedDesc,
 							bool randomAccess)
 {
@@ -1994,7 +1986,7 @@ ExecMakeTableFunctionResult(ExprState *funcexpr,
 	/*
 	 * Normally the passed expression tree will be a FuncExprState, since the
 	 * grammar only allows a function call at the top level of a table
-	 * function reference.	However, if the function doesn't return set then
+	 * function reference.  However, if the function doesn't return set then
 	 * the planner might have replaced the function call via constant-folding
 	 * or inlining.  So if we see any other kind of expression node, execute
 	 * it via the general ExecEvalExpr() code; the only difference is that we
@@ -2027,13 +2019,19 @@ ExecMakeTableFunctionResult(ExprState *funcexpr,
 		/*
 		 * Evaluate the function's argument list.
 		 *
-		 * Note: ideally, we'd do this in the per-tuple context, but then the
-		 * argument values would disappear when we reset the context in the
-		 * inner loop.	So do it in caller context.  Perhaps we should make a
-		 * separate context just to hold the evaluated arguments?
+		 * We can't do this in the per-tuple context: the argument values
+		 * would disappear when we reset that context in the inner loop.  And
+		 * the caller's CurrentMemoryContext is typically a query-lifespan
+		 * context, so we don't want to leak memory there.  We require the
+		 * caller to pass a separate memory context that can be used for this,
+		 * and can be reset each time through to avoid bloat.
 		 */
+		MemoryContextReset(argContext);
+		oldcontext = MemoryContextSwitchTo(argContext);
 		fcinfo.flinfo = &(fcache->func);
 		argDone = ExecEvalFuncArgs(&fcinfo, fcache->args, econtext);
+		MemoryContextSwitchTo(oldcontext);
+
 		/* We don't allow sets in the arguments of the table function */
 		if (argDone != ExprSingleResult)
 			ereport(ERROR,
@@ -2115,7 +2113,7 @@ ExecMakeTableFunctionResult(ExprState *funcexpr,
 			 * Can't do anything very useful with NULL rowtype values. For a
 			 * function returning set, we consider this a protocol violation
 			 * (but another alternative would be to just ignore the result and
-			 * "continue" to get another row).	For a function not returning
+			 * "continue" to get another row).  For a function not returning
 			 * set, we fall out of the loop; we'll cons up an all-nulls result
 			 * row below.
 			 */
@@ -2249,7 +2247,7 @@ no_function_result:
 	}
 
 	/*
-	 * If function provided a tupdesc, cross-check it.	We only really need to
+	 * If function provided a tupdesc, cross-check it.  We only really need to
 	 * do this for functions returning RECORD, but might as well do it always.
 	 */
 	if (rsinfo.setDesc)
@@ -2429,7 +2427,7 @@ ExecEvalDistinct(FuncExprState *fcache,
  *
  * Evaluate "scalar op ANY/ALL (array)".  The operator always yields boolean,
  * and we combine the results across all array elements using OR and AND
- * (for ANY and ALL respectively).	Of course we short-circuit as soon as
+ * (for ANY and ALL respectively).  Of course we short-circuit as soon as
  * the result is known.
  */
 static Datum
@@ -2614,7 +2612,7 @@ ExecEvalScalarArrayOp(ScalarArrayOpExprState *sstate,
  *		qualification to conjunctive normal form.  If we ever get
  *		an AND to evaluate, we can be sure that it's not a top-level
  *		clause in the qualification, but appears lower (as a function
- *		argument, for example), or in the target list.	Not that you
+ *		argument, for example), or in the target list.  Not that you
  *		need to know this, mind you...
  * ----------------------------------------------------------------
  */
@@ -2745,7 +2743,7 @@ ExecEvalAnd(BoolExprState *andExpr, ExprContext *econtext,
 /* ----------------------------------------------------------------
  *		ExecEvalConvertRowtype
  *
- *		Evaluate a rowtype coercion operation.	This may require
+ *		Evaluate a rowtype coercion operation.  This may require
  *		rearranging field positions.
  * ----------------------------------------------------------------
  */
@@ -2940,7 +2938,7 @@ ExecEvalCase(CaseExprState *caseExpr, ExprContext *econtext,
 
 		/*
 		 * if we have a true test, then we return the result, since the case
-		 * statement is satisfied.	A NULL result from the test is not
+		 * statement is satisfied.  A NULL result from the test is not
 		 * considered true.
 		 */
 		if (DatumGetBool(clause_value) && !*isNull)
@@ -3154,7 +3152,7 @@ ExecEvalArray(ArrayExprState *astate, ExprContext *econtext,
 		 * If all items were null or empty arrays, return an empty array;
 		 * otherwise, if some were and some weren't, raise error.  (Note: we
 		 * must special-case this somehow to avoid trying to generate a 1-D
-		 * array formed from empty arrays.	It's not ideal...)
+		 * array formed from empty arrays.  It's not ideal...)
 		 */
 		if (haveempty)
 		{
@@ -4315,7 +4313,7 @@ ExecEvalExprSwitchContext(ExprState *expression,
  * ExecInitExpr: prepare an expression tree for execution
  *
  * This function builds and returns an ExprState tree paralleling the given
- * Expr node tree.	The ExprState tree can then be handed to ExecEvalExpr
+ * Expr node tree.  The ExprState tree can then be handed to ExecEvalExpr
  * for execution.  Because the Expr tree itself is read-only as far as
  * ExecInitExpr and ExecEvalExpr are concerned, several different executions
  * of the same plan tree can occur concurrently.
@@ -4326,9 +4324,9 @@ ExecEvalExprSwitchContext(ExprState *expression,
  *
  * Any Aggref, WindowFunc, or SubPlan nodes found in the tree are added to the
  * lists of such nodes held by the parent PlanState. Otherwise, we do very
- * little initialization here other than building the state-node tree.	Any
+ * little initialization here other than building the state-node tree.  Any
  * nontrivial work associated with initializing runtime info for a node should
- * happen during the first actual evaluation of that node.	(This policy lets
+ * happen during the first actual evaluation of that node.  (This policy lets
  * us avoid work if the node is never actually evaluated.)
  *
  * Note: there is no ExecEndExpr function; we assume that any resource
@@ -5113,7 +5111,7 @@ ExecQual(List *qual, ExprContext *econtext, bool resultForNull)
 	oldContext = MemoryContextSwitchTo(econtext->ecxt_per_tuple_memory);
 
 	/*
-	 * Evaluate the qual conditions one at a time.	If we find a FALSE result,
+	 * Evaluate the qual conditions one at a time.  If we find a FALSE result,
 	 * we can stop evaluating and return FALSE --- the AND result must be
 	 * FALSE.  Also, if we find a NULL result when resultForNull is FALSE, we
 	 * can stop and return FALSE --- the AND result must be FALSE or NULL in
@@ -5272,7 +5270,7 @@ ExecTargetList(List *targetlist,
 		else
 		{
 			/*
-			 * We have some done and some undone sets.	Restart the done ones
+			 * We have some done and some undone sets.  Restart the done ones
 			 * so that we can deliver a tuple (if possible).
 			 */
 			foreach(tl, targetlist)

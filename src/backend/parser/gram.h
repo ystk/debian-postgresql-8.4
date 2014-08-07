@@ -453,7 +453,7 @@ typedef union YYSTYPE
 {
 
 /* Line 2068 of yacc.c  */
-#line 148 "gram.y"
+#line 147 "gram.y"
 
 	int					ival;
 	char				chr;
