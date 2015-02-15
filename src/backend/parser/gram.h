@@ -453,7 +453,7 @@ typedef union YYSTYPE
 {
 
 /* Line 2068 of yacc.c  */
-#line 147 "gram.y"
+#line 147 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/parser/gram.y"
 
 	int					ival;
 	char				chr;
@@ -492,7 +492,7 @@ typedef union YYSTYPE
 
 
 /* Line 2068 of yacc.c  */
-#line 496 "gram.h"
+#line 496 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/parser/gram.h"
 } YYSTYPE;
 # define YYSTYPE_IS_TRIVIAL 1
 # define yystype YYSTYPE /* obsolescent; will be withdrawn */

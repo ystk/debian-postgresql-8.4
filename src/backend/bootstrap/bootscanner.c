@@ -1,6 +1,6 @@
-#line 2 "bootscanner.c"
+#line 2 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/bootstrap/bootscanner.c"
 
-#line 4 "bootscanner.c"
+#line 4 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/bootstrap/bootscanner.c"
 
 #define  YY_INT_ALIGNED short int
 
@@ -630,8 +630,8 @@ int boot_yy_flex_debug = 0;
 #define YY_MORE_ADJ 0
 #define YY_RESTORE_YY_MORE_OFFSET
 char *boot_yytext;
-#line 1 "bootscanner.l"
-#line 2 "bootscanner.l"
+#line 1 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/bootstrap/bootscanner.l"
+#line 2 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/bootstrap/bootscanner.l"
 /*-------------------------------------------------------------------------
  *
  * bootscanner.l
@@ -681,7 +681,7 @@ char *boot_yytext;
 static int	yyline = 1;			/* line number for error reporting */
 
 #define YY_NO_INPUT 1
-#line 685 "bootscanner.c"
+#line 685 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/bootstrap/bootscanner.c"
 
 #define INITIAL 0
 
@@ -869,10 +869,10 @@ YY_DECL
 	register char *yy_cp, *yy_bp;
 	register int yy_act;
     
-#line 68 "bootscanner.l"
+#line 68 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/bootstrap/bootscanner.l"
 
 
-#line 876 "bootscanner.c"
+#line 876 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/bootstrap/bootscanner.c"
 
 	if ( !(yy_init) )
 		{
@@ -954,133 +954,133 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 70 "bootscanner.l"
+#line 70 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/bootstrap/bootscanner.l"
 { return(OPEN); }
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 72 "bootscanner.l"
+#line 72 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/bootstrap/bootscanner.l"
 { return(XCLOSE); }
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 74 "bootscanner.l"
+#line 74 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/bootstrap/bootscanner.l"
 { return(XCREATE); }
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 76 "bootscanner.l"
+#line 76 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/bootstrap/bootscanner.l"
 { return(OBJ_ID); }
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
-#line 77 "bootscanner.l"
+#line 77 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/bootstrap/bootscanner.l"
 { return(XBOOTSTRAP); }
 	YY_BREAK
 case 6:
 YY_RULE_SETUP
-#line 78 "bootscanner.l"
+#line 78 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/bootstrap/bootscanner.l"
 { return(XSHARED_RELATION); }
 	YY_BREAK
 case 7:
 YY_RULE_SETUP
-#line 79 "bootscanner.l"
+#line 79 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/bootstrap/bootscanner.l"
 { return(XWITHOUT_OIDS); }
 	YY_BREAK
 case 8:
 YY_RULE_SETUP
-#line 80 "bootscanner.l"
+#line 80 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/bootstrap/bootscanner.l"
 { return(NULLVAL); }
 	YY_BREAK
 case 9:
 YY_RULE_SETUP
-#line 82 "bootscanner.l"
+#line 82 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/bootstrap/bootscanner.l"
 { return(INSERT_TUPLE); }
 	YY_BREAK
 case 10:
 YY_RULE_SETUP
-#line 84 "bootscanner.l"
+#line 84 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/bootstrap/bootscanner.l"
 { return(COMMA); }
 	YY_BREAK
 case 11:
 YY_RULE_SETUP
-#line 85 "bootscanner.l"
+#line 85 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/bootstrap/bootscanner.l"
 { return(EQUALS); }
 	YY_BREAK
 case 12:
 YY_RULE_SETUP
-#line 86 "bootscanner.l"
+#line 86 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/bootstrap/bootscanner.l"
 { return(LPAREN); }
 	YY_BREAK
 case 13:
 YY_RULE_SETUP
-#line 87 "bootscanner.l"
+#line 87 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/bootstrap/bootscanner.l"
 { return(RPAREN); }
 	YY_BREAK
 case 14:
 /* rule 14 can match eol */
 YY_RULE_SETUP
-#line 89 "bootscanner.l"
+#line 89 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/bootstrap/bootscanner.l"
 { yyline++; }
 	YY_BREAK
 case 15:
 YY_RULE_SETUP
-#line 90 "bootscanner.l"
+#line 90 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/bootstrap/bootscanner.l"
 ;
 	YY_BREAK
 case 16:
 YY_RULE_SETUP
-#line 91 "bootscanner.l"
+#line 91 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/bootstrap/bootscanner.l"
 ;
 	YY_BREAK
 case 17:
 YY_RULE_SETUP
-#line 93 "bootscanner.l"
+#line 93 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/bootstrap/bootscanner.l"
 ; /* drop everything after "#" for comments */
 	YY_BREAK
 case 18:
 YY_RULE_SETUP
-#line 96 "bootscanner.l"
+#line 96 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/bootstrap/bootscanner.l"
 { return(XDECLARE); }
 	YY_BREAK
 case 19:
 YY_RULE_SETUP
-#line 97 "bootscanner.l"
+#line 97 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/bootstrap/bootscanner.l"
 { return(XBUILD); }
 	YY_BREAK
 case 20:
 YY_RULE_SETUP
-#line 98 "bootscanner.l"
+#line 98 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/bootstrap/bootscanner.l"
 { return(INDICES); }
 	YY_BREAK
 case 21:
 YY_RULE_SETUP
-#line 99 "bootscanner.l"
+#line 99 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/bootstrap/bootscanner.l"
 { return(UNIQUE); }
 	YY_BREAK
 case 22:
 YY_RULE_SETUP
-#line 100 "bootscanner.l"
+#line 100 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/bootstrap/bootscanner.l"
 { return(INDEX); }
 	YY_BREAK
 case 23:
 YY_RULE_SETUP
-#line 101 "bootscanner.l"
+#line 101 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/bootstrap/bootscanner.l"
 { return(ON); }
 	YY_BREAK
 case 24:
 YY_RULE_SETUP
-#line 102 "bootscanner.l"
+#line 102 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/bootstrap/bootscanner.l"
 { return(USING); }
 	YY_BREAK
 case 25:
 YY_RULE_SETUP
-#line 103 "bootscanner.l"
+#line 103 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/bootstrap/bootscanner.l"
 { return(XTOAST); }
 	YY_BREAK
 case 26:
 YY_RULE_SETUP
-#line 105 "bootscanner.l"
+#line 105 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/bootstrap/bootscanner.l"
 {
 					yylval.ival = EnterString(MapArrayTypeName((char*)boot_yytext));
 					return(ID);
@@ -1088,7 +1088,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 27:
 YY_RULE_SETUP
-#line 109 "bootscanner.l"
+#line 109 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/bootstrap/bootscanner.l"
 {
 					char   *newid = scanstr((char*)boot_yytext);
 					yylval.ival = EnterString(newid);
@@ -1099,7 +1099,7 @@ YY_RULE_SETUP
 case 28:
 /* rule 28 can match eol */
 YY_RULE_SETUP
-#line 115 "bootscanner.l"
+#line 115 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/bootstrap/bootscanner.l"
 {
 					char   *newid;
 					boot_yytext[strlen(boot_yytext)-1] = '\0'; /* strip off quotes */
@@ -1111,12 +1111,12 @@ YY_RULE_SETUP
 				}
 	YY_BREAK
 case 29:
-#line 126 "bootscanner.l"
+#line 126 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/bootstrap/bootscanner.l"
 case 30:
-#line 127 "bootscanner.l"
+#line 127 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/bootstrap/bootscanner.l"
 case 31:
 YY_RULE_SETUP
-#line 127 "bootscanner.l"
+#line 127 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/bootstrap/bootscanner.l"
 {
 							yylval.ival = EnterString((char*)boot_yytext);
 							return(CONST_P);
@@ -1124,17 +1124,17 @@ YY_RULE_SETUP
 	YY_BREAK
 case 32:
 YY_RULE_SETUP
-#line 132 "bootscanner.l"
+#line 132 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/bootstrap/bootscanner.l"
 {
 					elog(ERROR, "syntax error at line %d: unexpected character \"%s\"", yyline, boot_yytext);
 				}
 	YY_BREAK
 case 33:
 YY_RULE_SETUP
-#line 138 "bootscanner.l"
+#line 138 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/bootstrap/bootscanner.l"
 YY_FATAL_ERROR( "flex scanner jammed" );
 	YY_BREAK
-#line 1138 "bootscanner.c"
+#line 1138 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/bootstrap/bootscanner.c"
 case YY_STATE_EOF(INITIAL):
 	yyterminate();
 
@@ -2095,7 +2095,7 @@ void boot_yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 138 "bootscanner.l"
+#line 138 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/bootstrap/bootscanner.l"
 
 
 

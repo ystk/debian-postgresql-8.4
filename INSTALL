@@ -173,13 +173,13 @@ pg_dumpall > outputfile
        keys), then use the "-o" option when running pg_dumpall.
        To make the backup, you can use the pg_dumpall command from the
        version you are currently running. For best results, however, try
-       to use the pg_dumpall command from PostgreSQL 8.4.22, since this
-       version contains bug fixes and improvements over older versions.
-       While this advice might seem idiosyncratic since you haven't
-       installed the new version yet, it is advisable to follow it if you
-       plan to install the new version in parallel with the old version.
-       In that case you can complete the installation normally and
-       transfer the data later. This will also decrease the downtime.
+       to use the pg_dumpall command from PostgreSQL 8.4.22lts1, since
+       this version contains bug fixes and improvements over older
+       versions. While this advice might seem idiosyncratic since you
+       haven't installed the new version yet, it is advisable to follow it
+       if you plan to install the new version in parallel with the old
+       version. In that case you can complete the installation normally
+       and transfer the data later. This will also decrease the downtime.
     2. Shut down the old server:
 pg_ctl stop
        On systems that have PostgreSQL started at boot time, there is
@@ -569,8 +569,8 @@ mv /usr/local/pgsql /usr/local/pgsql.old
         --with-system-tzdata=DIRECTORY
                 PostgreSQL includes its own time zone database, which it
                 requires for date and time operations. This time zone
-                database is in fact compatible with the "zoneinfo" time
-                zone database provided by many operating systems such as
+                database is in fact compatible with the IANA time zone
+                database provided by many operating systems such as
                 FreeBSD, Linux, and Solaris, so it would be redundant to
                 install it again. When this option is used, the
                 system-supplied time zone database in "DIRECTORY" is used

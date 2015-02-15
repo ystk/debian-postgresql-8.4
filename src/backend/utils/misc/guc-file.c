@@ -1,6 +1,6 @@
-#line 2 "guc-file.c"
+#line 2 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/utils/misc/guc-file.c"
 
-#line 4 "guc-file.c"
+#line 4 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/utils/misc/guc-file.c"
 
 #define  YY_INT_ALIGNED short int
 
@@ -522,7 +522,7 @@ int GUC_yy_flex_debug = 0;
 #define YY_MORE_ADJ 0
 #define YY_RESTORE_YY_MORE_OFFSET
 char *GUC_yytext;
-#line 1 "guc-file.l"
+#line 1 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/utils/misc/guc-file.l"
 /* -*-pgsql-c-*- */
 /*
  * Scanner for the configuration file
@@ -531,7 +531,7 @@ char *GUC_yytext;
  *
  * $PostgreSQL: pgsql/src/backend/utils/misc/guc-file.l,v 1.59 2009/04/09 14:21:02 tgl Exp $
  */
-#line 11 "guc-file.l"
+#line 11 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/utils/misc/guc-file.l"
 
 #include "postgres.h"
 
@@ -581,7 +581,7 @@ static void free_name_value_list(struct name_value_pair * list);
 static char *GUC_scanstr(const char *s);
 
 #define YY_NO_INPUT 1
-#line 585 "guc-file.c"
+#line 585 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/utils/misc/guc-file.c"
 
 #define INITIAL 0
 
@@ -766,10 +766,10 @@ YY_DECL
 	register char *yy_cp, *yy_bp;
 	register int yy_act;
     
-#line 90 "guc-file.l"
+#line 90 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/utils/misc/guc-file.l"
 
 
-#line 773 "guc-file.c"
+#line 773 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/utils/misc/guc-file.c"
 
 	if ( !(yy_init) )
 		{
@@ -851,65 +851,65 @@ do_action:	/* This label is used only to access EOF actions. */
 case 1:
 /* rule 1 can match eol */
 YY_RULE_SETUP
-#line 92 "guc-file.l"
+#line 92 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/utils/misc/guc-file.l"
 ConfigFileLineno++; return GUC_EOL;
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 93 "guc-file.l"
+#line 93 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/utils/misc/guc-file.l"
 /* eat whitespace */
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 94 "guc-file.l"
+#line 94 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/utils/misc/guc-file.l"
 /* eat comment (.* matches anything until newline) */
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 96 "guc-file.l"
+#line 96 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/utils/misc/guc-file.l"
 return GUC_ID;
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
-#line 97 "guc-file.l"
+#line 97 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/utils/misc/guc-file.l"
 return GUC_QUALIFIED_ID;
 	YY_BREAK
 case 6:
 YY_RULE_SETUP
-#line 98 "guc-file.l"
+#line 98 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/utils/misc/guc-file.l"
 return GUC_STRING;
 	YY_BREAK
 case 7:
 YY_RULE_SETUP
-#line 99 "guc-file.l"
+#line 99 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/utils/misc/guc-file.l"
 return GUC_UNQUOTED_STRING;
 	YY_BREAK
 case 8:
 YY_RULE_SETUP
-#line 100 "guc-file.l"
+#line 100 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/utils/misc/guc-file.l"
 return GUC_INTEGER;
 	YY_BREAK
 case 9:
 YY_RULE_SETUP
-#line 101 "guc-file.l"
+#line 101 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/utils/misc/guc-file.l"
 return GUC_REAL;
 	YY_BREAK
 case 10:
 YY_RULE_SETUP
-#line 102 "guc-file.l"
+#line 102 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/utils/misc/guc-file.l"
 return GUC_EQUALS;
 	YY_BREAK
 case 11:
 YY_RULE_SETUP
-#line 104 "guc-file.l"
+#line 104 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/utils/misc/guc-file.l"
 return GUC_ERROR;
 	YY_BREAK
 case 12:
 YY_RULE_SETUP
-#line 106 "guc-file.l"
+#line 106 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/utils/misc/guc-file.l"
 YY_FATAL_ERROR( "flex scanner jammed" );
 	YY_BREAK
-#line 913 "guc-file.c"
+#line 913 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/utils/misc/guc-file.c"
 case YY_STATE_EOF(INITIAL):
 	yyterminate();
 
@@ -1867,7 +1867,7 @@ void GUC_yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 106 "guc-file.l"
+#line 106 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/utils/misc/guc-file.l"
 
 
 

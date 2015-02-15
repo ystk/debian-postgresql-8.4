@@ -74,7 +74,7 @@
 /* Copy the first part of user declarations.  */
 
 /* Line 268 of yacc.c  */
-#line 1 "bootparse.y"
+#line 1 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/bootstrap/bootparse.y"
 
 /*-------------------------------------------------------------------------
  *
@@ -170,7 +170,7 @@ int num_columns_read = 0;
 
 
 /* Line 268 of yacc.c  */
-#line 174 "bootparse.c"
+#line 174 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/bootstrap/bootparse.c"
 
 /* Enabling traces.  */
 #ifndef YYDEBUG
@@ -232,7 +232,7 @@ typedef union YYSTYPE
 {
 
 /* Line 293 of yacc.c  */
-#line 99 "bootparse.y"
+#line 99 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/bootstrap/bootparse.y"
 
 	List		*list;
 	IndexElem	*ielem;
@@ -243,7 +243,7 @@ typedef union YYSTYPE
 
 
 /* Line 293 of yacc.c  */
-#line 247 "bootparse.c"
+#line 247 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/bootstrap/bootparse.c"
 } YYSTYPE;
 # define YYSTYPE_IS_TRIVIAL 1
 # define yystype YYSTYPE /* obsolescent; will be withdrawn */
@@ -255,7 +255,7 @@ typedef union YYSTYPE
 
 
 /* Line 343 of yacc.c  */
-#line 259 "bootparse.c"
+#line 259 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/bootstrap/bootparse.c"
 
 #ifdef short
 # undef short
@@ -1556,7 +1556,7 @@ yyreduce:
         case 14:
 
 /* Line 1806 of yacc.c  */
-#line 149 "bootparse.y"
+#line 149 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/bootstrap/bootparse.y"
     {
 					do_start();
 					boot_openrel(LexIDStr((yyvsp[(2) - (2)].ival)));
@@ -1567,7 +1567,7 @@ yyreduce:
   case 15:
 
 /* Line 1806 of yacc.c  */
-#line 158 "bootparse.y"
+#line 158 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/bootstrap/bootparse.y"
     {
 					do_start();
 					closerel(LexIDStr((yyvsp[(2) - (2)].ival)));
@@ -1578,7 +1578,7 @@ yyreduce:
   case 16:
 
 /* Line 1806 of yacc.c  */
-#line 164 "bootparse.y"
+#line 164 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/bootstrap/bootparse.y"
     {
 					do_start();
 					closerel(NULL);
@@ -1589,7 +1589,7 @@ yyreduce:
   case 17:
 
 /* Line 1806 of yacc.c  */
-#line 173 "bootparse.y"
+#line 173 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/bootstrap/bootparse.y"
     {
 					do_start();
 					numattr = 0;
@@ -1604,7 +1604,7 @@ yyreduce:
   case 18:
 
 /* Line 1806 of yacc.c  */
-#line 183 "bootparse.y"
+#line 183 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/bootstrap/bootparse.y"
     {
 					do_end();
 				}
@@ -1613,7 +1613,7 @@ yyreduce:
   case 19:
 
 /* Line 1806 of yacc.c  */
-#line 187 "bootparse.y"
+#line 187 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/bootstrap/bootparse.y"
     {
 					TupleDesc tupdesc;
 
@@ -1666,7 +1666,7 @@ yyreduce:
   case 20:
 
 /* Line 1806 of yacc.c  */
-#line 238 "bootparse.y"
+#line 238 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/bootstrap/bootparse.y"
     {
 					do_start();
 					if ((yyvsp[(2) - (2)].oidval))
@@ -1680,7 +1680,7 @@ yyreduce:
   case 21:
 
 /* Line 1806 of yacc.c  */
-#line 247 "bootparse.y"
+#line 247 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/bootstrap/bootparse.y"
     {
 					if (num_columns_read != numattr)
 						elog(ERROR, "incorrect number of columns in row (expected %d, got %d)",
@@ -1695,7 +1695,7 @@ yyreduce:
   case 22:
 
 /* Line 1806 of yacc.c  */
-#line 260 "bootparse.y"
+#line 260 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/bootstrap/bootparse.y"
     {
 					Oid		relationId;
 
@@ -1720,7 +1720,7 @@ yyreduce:
   case 23:
 
 /* Line 1806 of yacc.c  */
-#line 283 "bootparse.y"
+#line 283 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/bootstrap/bootparse.y"
     {
 					Oid		relationId;
 
@@ -1745,7 +1745,7 @@ yyreduce:
   case 24:
 
 /* Line 1806 of yacc.c  */
-#line 306 "bootparse.y"
+#line 306 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/bootstrap/bootparse.y"
     {
 					do_start();
 
@@ -1757,7 +1757,7 @@ yyreduce:
   case 25:
 
 /* Line 1806 of yacc.c  */
-#line 316 "bootparse.y"
+#line 316 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/bootstrap/bootparse.y"
     {
 					do_start();
 					build_indices();
@@ -1768,21 +1768,21 @@ yyreduce:
   case 26:
 
 /* Line 1806 of yacc.c  */
-#line 325 "bootparse.y"
+#line 325 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/bootstrap/bootparse.y"
     { (yyval.list) = lappend((yyvsp[(1) - (3)].list), (yyvsp[(3) - (3)].ielem)); }
     break;
 
   case 27:
 
 /* Line 1806 of yacc.c  */
-#line 326 "bootparse.y"
+#line 326 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/bootstrap/bootparse.y"
     { (yyval.list) = list_make1((yyvsp[(1) - (1)].ielem)); }
     break;
 
   case 28:
 
 /* Line 1806 of yacc.c  */
-#line 331 "bootparse.y"
+#line 331 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/bootstrap/bootparse.y"
     {
 					IndexElem *n = makeNode(IndexElem);
 					n->name = LexIDStr((yyvsp[(1) - (2)].ival));
@@ -1797,49 +1797,49 @@ yyreduce:
   case 29:
 
 /* Line 1806 of yacc.c  */
-#line 343 "bootparse.y"
+#line 343 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/bootstrap/bootparse.y"
     { (yyval.ival) = 1; }
     break;
 
   case 30:
 
 /* Line 1806 of yacc.c  */
-#line 344 "bootparse.y"
+#line 344 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/bootstrap/bootparse.y"
     { (yyval.ival) = 0; }
     break;
 
   case 31:
 
 /* Line 1806 of yacc.c  */
-#line 348 "bootparse.y"
+#line 348 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/bootstrap/bootparse.y"
     { (yyval.ival) = 1; }
     break;
 
   case 32:
 
 /* Line 1806 of yacc.c  */
-#line 349 "bootparse.y"
+#line 349 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/bootstrap/bootparse.y"
     { (yyval.ival) = 0; }
     break;
 
   case 33:
 
 /* Line 1806 of yacc.c  */
-#line 353 "bootparse.y"
+#line 353 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/bootstrap/bootparse.y"
     { (yyval.ival) = 1; }
     break;
 
   case 34:
 
 /* Line 1806 of yacc.c  */
-#line 354 "bootparse.y"
+#line 354 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/bootstrap/bootparse.y"
     { (yyval.ival) = 0; }
     break;
 
   case 37:
 
 /* Line 1806 of yacc.c  */
-#line 364 "bootparse.y"
+#line 364 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/bootstrap/bootparse.y"
     {
 				   if (++numattr > MAXATTR)
 						elog(FATAL, "too many columns");
@@ -1850,63 +1850,63 @@ yyreduce:
   case 38:
 
 /* Line 1806 of yacc.c  */
-#line 372 "bootparse.y"
+#line 372 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/bootstrap/bootparse.y"
     { (yyval.oidval) = atooid(LexIDStr((yyvsp[(1) - (1)].ival))); }
     break;
 
   case 39:
 
 /* Line 1806 of yacc.c  */
-#line 376 "bootparse.y"
+#line 376 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/bootstrap/bootparse.y"
     { (yyval.oidval) = (yyvsp[(3) - (3)].oidval); }
     break;
 
   case 40:
 
 /* Line 1806 of yacc.c  */
-#line 377 "bootparse.y"
+#line 377 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/bootstrap/bootparse.y"
     { (yyval.oidval) = (Oid) 0; }
     break;
 
   case 44:
 
 /* Line 1806 of yacc.c  */
-#line 388 "bootparse.y"
+#line 388 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/bootstrap/bootparse.y"
     { InsertOneValue(LexIDStr((yyvsp[(1) - (1)].ival)), num_columns_read++); }
     break;
 
   case 45:
 
 /* Line 1806 of yacc.c  */
-#line 390 "bootparse.y"
+#line 390 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/bootstrap/bootparse.y"
     { InsertOneValue(LexIDStr((yyvsp[(1) - (1)].ival)), num_columns_read++); }
     break;
 
   case 46:
 
 /* Line 1806 of yacc.c  */
-#line 392 "bootparse.y"
+#line 392 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/bootstrap/bootparse.y"
     { InsertOneNull(num_columns_read++); }
     break;
 
   case 47:
 
 /* Line 1806 of yacc.c  */
-#line 396 "bootparse.y"
+#line 396 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/bootstrap/bootparse.y"
     { (yyval.ival)=yylval.ival; }
     break;
 
   case 48:
 
 /* Line 1806 of yacc.c  */
-#line 400 "bootparse.y"
+#line 400 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/bootstrap/bootparse.y"
     { (yyval.ival)=yylval.ival; }
     break;
 
 
 
 /* Line 1806 of yacc.c  */
-#line 1910 "bootparse.c"
+#line 1910 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/bootstrap/bootparse.c"
       default: break;
     }
   /* User semantic actions sometimes alter yychar, and that requires
@@ -2137,7 +2137,7 @@ yyreturn:
 
 
 /* Line 2067 of yacc.c  */
-#line 402 "bootparse.y"
+#line 402 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/backend/bootstrap/bootparse.y"
 
 
 #include "bootscanner.c"
