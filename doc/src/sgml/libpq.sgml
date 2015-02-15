@@ -6036,7 +6036,7 @@ myEventProc(PGEventId evtId, void *evtInfo, void *passThrough)
   <para>
    To use this feature, copy
    <filename>share/pg_service.conf.sample</filename> to
-   <filename>etc/pg_service.conf</filename> and edit the file to add
+   <filename>/etc/pg_service.conf</filename> and edit the file to add
    service names and parameters. This file can be used for client-only
    installs too. The file's location can also be specified by the
    <envar>PGSYSCONFDIR</envar> environment variable.
@@ -6205,7 +6205,7 @@ myEventProc(PGEventId evtId, void *evtInfo, void *passThrough)
     For backwards compatibility with earlier versions of PostgreSQL, if a
     root CA file exists, the behavior of
     <literal>sslmode</literal>=<literal>require</literal> will be the same
-    as that of <literal>verify-ca</literal>, meaning the sever certificate
+    as that of <literal>verify-ca</literal>, meaning the server certificate
     is validated against the CA. Relying on this behavior is discouraged,
     and applications that need certificate validation should always use
     <literal>verify-ca</literal> or <literal>verify-full</literal>.

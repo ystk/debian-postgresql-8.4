@@ -1,3 +1,19 @@
+postgresql-8.4 (8.4.22lts1-0+deb6u1) squeeze-lts; urgency=medium
+
+  * New LTS version created by backporting changes to the upstream 9.0 branch
+    to 8.4.  This is a community effort sponsored by credativ GmbH for
+    squeeze-lts.
+    https://github.com/credativ/postgresql-lts/wiki
+  * Security fixes included:
+    + Fix buffer overruns in to_char() (CVE-2015-0241)
+    + Fix buffer overruns in contrib/pgcrypto (CVE-2015-0243)
+    + Fix possible loss of frontend/backend protocol synchronization after an
+      error (CVE-2015-0244)
+    + Fix information leak via constraint-violation error messages
+      (CVE-2014-8161)
+
+ -- Christoph Berg <christoph.berg@credativ.de>  Wed, 11 Feb 2015 17:24:13 +0100
+
 postgresql-8.4 (8.4.22-0+deb6u1) squeeze-lts; urgency=low
 
   8.4.22 is the last release in the PostgreSQL 8.4 branch. See

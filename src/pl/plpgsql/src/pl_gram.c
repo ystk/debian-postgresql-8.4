@@ -74,7 +74,7 @@
 /* Copy the first part of user declarations.  */
 
 /* Line 268 of yacc.c  */
-#line 1 "gram.y"
+#line 1 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
 
 /*-------------------------------------------------------------------------
  *
@@ -151,7 +151,7 @@ static List				*read_raise_options(void);
 
 
 /* Line 268 of yacc.c  */
-#line 155 "pl_gram.c"
+#line 155 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/pl_gram.c"
 
 /* Enabling traces.  */
 #ifndef YYDEBUG
@@ -248,7 +248,7 @@ typedef union YYSTYPE
 {
 
 /* Line 293 of yacc.c  */
-#line 79 "gram.y"
+#line 79 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
 
 		int32					ival;
 		bool					boolean;
@@ -298,7 +298,7 @@ typedef union YYSTYPE
 
 
 /* Line 293 of yacc.c  */
-#line 302 "pl_gram.c"
+#line 302 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/pl_gram.c"
 } YYSTYPE;
 # define YYSTYPE_IS_TRIVIAL 1
 # define yystype YYSTYPE /* obsolescent; will be withdrawn */
@@ -310,7 +310,7 @@ typedef union YYSTYPE
 
 
 /* Line 343 of yacc.c  */
-#line 314 "pl_gram.c"
+#line 314 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/pl_gram.c"
 
 #ifdef short
 # undef short
@@ -1842,7 +1842,7 @@ yyreduce:
         case 2:
 
 /* Line 1806 of yacc.c  */
-#line 248 "gram.y"
+#line 248 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 						yylval.program = (PLpgSQL_stmt_block *) (yyvsp[(2) - (3)].stmt);
 					}
@@ -1851,7 +1851,7 @@ yyreduce:
   case 7:
 
 /* Line 1806 of yacc.c  */
-#line 262 "gram.y"
+#line 262 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 						plpgsql_DumpExecTree = true;
 					}
@@ -1860,7 +1860,7 @@ yyreduce:
   case 10:
 
 /* Line 1806 of yacc.c  */
-#line 272 "gram.y"
+#line 272 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 						PLpgSQL_stmt_block *new;
 
@@ -1884,7 +1884,7 @@ yyreduce:
   case 11:
 
 /* Line 1806 of yacc.c  */
-#line 294 "gram.y"
+#line 294 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 						plpgsql_ns_setlocal(false);
 						(yyval.declhdr).label	  = (yyvsp[(1) - (1)].str);
@@ -1896,7 +1896,7 @@ yyreduce:
   case 12:
 
 /* Line 1806 of yacc.c  */
-#line 301 "gram.y"
+#line 301 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 						plpgsql_ns_setlocal(false);
 						(yyval.declhdr).label	  = (yyvsp[(1) - (2)].str);
@@ -1908,7 +1908,7 @@ yyreduce:
   case 13:
 
 /* Line 1806 of yacc.c  */
-#line 308 "gram.y"
+#line 308 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 						plpgsql_ns_setlocal(false);
 						if ((yyvsp[(3) - (3)].str) != NULL)
@@ -1923,7 +1923,7 @@ yyreduce:
   case 14:
 
 /* Line 1806 of yacc.c  */
-#line 320 "gram.y"
+#line 320 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 						/* Forget any variables created before block */
 						plpgsql_add_initdatums(NULL);
@@ -1935,42 +1935,42 @@ yyreduce:
   case 15:
 
 /* Line 1806 of yacc.c  */
-#line 329 "gram.y"
+#line 329 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {	(yyval.str) = (yyvsp[(2) - (2)].str);	}
     break;
 
   case 16:
 
 /* Line 1806 of yacc.c  */
-#line 331 "gram.y"
+#line 331 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {	(yyval.str) = (yyvsp[(1) - (1)].str);	}
     break;
 
   case 17:
 
 /* Line 1806 of yacc.c  */
-#line 335 "gram.y"
+#line 335 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {	(yyval.str) = (yyvsp[(3) - (5)].str);	}
     break;
 
   case 18:
 
 /* Line 1806 of yacc.c  */
-#line 337 "gram.y"
+#line 337 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {	(yyval.str) = NULL;	}
     break;
 
   case 19:
 
 /* Line 1806 of yacc.c  */
-#line 339 "gram.y"
+#line 339 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {	(yyval.str) = NULL;	}
     break;
 
   case 20:
 
 /* Line 1806 of yacc.c  */
-#line 343 "gram.y"
+#line 343 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 						PLpgSQL_variable	*var;
 
@@ -2009,7 +2009,7 @@ yyreduce:
   case 21:
 
 /* Line 1806 of yacc.c  */
-#line 377 "gram.y"
+#line 377 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 						plpgsql_ns_additem((yyvsp[(4) - (5)].nsitem)->itemtype,
 										   (yyvsp[(4) - (5)].nsitem)->itemno, (yyvsp[(1) - (5)].varname).name);
@@ -2019,7 +2019,7 @@ yyreduce:
   case 22:
 
 /* Line 1806 of yacc.c  */
-#line 382 "gram.y"
+#line 382 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 						plpgsql_ns_rename((yyvsp[(2) - (5)].str), (yyvsp[(4) - (5)].str));
 					}
@@ -2028,14 +2028,14 @@ yyreduce:
   case 23:
 
 /* Line 1806 of yacc.c  */
-#line 386 "gram.y"
+#line 386 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     { plpgsql_ns_push((yyvsp[(1) - (3)].varname).name); }
     break;
 
   case 24:
 
 /* Line 1806 of yacc.c  */
-#line 388 "gram.y"
+#line 388 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 						PLpgSQL_var *new;
 						PLpgSQL_expr *curname_def;
@@ -2087,7 +2087,7 @@ yyreduce:
   case 25:
 
 /* Line 1806 of yacc.c  */
-#line 437 "gram.y"
+#line 437 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 						(yyval.ival) = 0;
 					}
@@ -2096,7 +2096,7 @@ yyreduce:
   case 26:
 
 /* Line 1806 of yacc.c  */
-#line 441 "gram.y"
+#line 441 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 						(yyval.ival) = CURSOR_OPT_NO_SCROLL;
 					}
@@ -2105,7 +2105,7 @@ yyreduce:
   case 27:
 
 /* Line 1806 of yacc.c  */
-#line 445 "gram.y"
+#line 445 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 						(yyval.ival) = CURSOR_OPT_SCROLL;
 					}
@@ -2114,7 +2114,7 @@ yyreduce:
   case 28:
 
 /* Line 1806 of yacc.c  */
-#line 451 "gram.y"
+#line 451 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 						PLpgSQL_expr *query;
 
@@ -2129,7 +2129,7 @@ yyreduce:
   case 29:
 
 /* Line 1806 of yacc.c  */
-#line 463 "gram.y"
+#line 463 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 						(yyval.row) = NULL;
 					}
@@ -2138,7 +2138,7 @@ yyreduce:
   case 30:
 
 /* Line 1806 of yacc.c  */
-#line 467 "gram.y"
+#line 467 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 						PLpgSQL_row *new;
 						int i;
@@ -2170,7 +2170,7 @@ yyreduce:
   case 31:
 
 /* Line 1806 of yacc.c  */
-#line 496 "gram.y"
+#line 496 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 						(yyval.list) = list_make1((yyvsp[(1) - (1)].variable));
 					}
@@ -2179,7 +2179,7 @@ yyreduce:
   case 32:
 
 /* Line 1806 of yacc.c  */
-#line 500 "gram.y"
+#line 500 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 						(yyval.list) = lappend((yyvsp[(1) - (3)].list), (yyvsp[(3) - (3)].variable));
 					}
@@ -2188,7 +2188,7 @@ yyreduce:
   case 33:
 
 /* Line 1806 of yacc.c  */
-#line 506 "gram.y"
+#line 506 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 						(yyval.variable) = plpgsql_build_variable((yyvsp[(1) - (2)].varname).name, (yyvsp[(1) - (2)].varname).lineno,
 													(yyvsp[(2) - (2)].dtype), true);
@@ -2198,7 +2198,7 @@ yyreduce:
   case 36:
 
 /* Line 1806 of yacc.c  */
-#line 516 "gram.y"
+#line 516 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 						char	*name;
 						PLpgSQL_nsitem *nsi;
@@ -2230,7 +2230,7 @@ yyreduce:
   case 37:
 
 /* Line 1806 of yacc.c  */
-#line 545 "gram.y"
+#line 545 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 						char	*name;
 
@@ -2243,7 +2243,7 @@ yyreduce:
   case 38:
 
 /* Line 1806 of yacc.c  */
-#line 553 "gram.y"
+#line 553 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 						/*
 						 * Since the scanner is only searching the topmost
@@ -2258,7 +2258,7 @@ yyreduce:
   case 39:
 
 /* Line 1806 of yacc.c  */
-#line 563 "gram.y"
+#line 563 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 						yyerror("duplicate declaration");
 					}
@@ -2267,7 +2267,7 @@ yyreduce:
   case 40:
 
 /* Line 1806 of yacc.c  */
-#line 567 "gram.y"
+#line 567 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 						yyerror("duplicate declaration");
 					}
@@ -2276,7 +2276,7 @@ yyreduce:
   case 41:
 
 /* Line 1806 of yacc.c  */
-#line 574 "gram.y"
+#line 574 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 						char	*name;
 
@@ -2289,21 +2289,21 @@ yyreduce:
   case 42:
 
 /* Line 1806 of yacc.c  */
-#line 584 "gram.y"
+#line 584 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     { (yyval.boolean) = false; }
     break;
 
   case 43:
 
 /* Line 1806 of yacc.c  */
-#line 586 "gram.y"
+#line 586 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     { (yyval.boolean) = true; }
     break;
 
   case 44:
 
 /* Line 1806 of yacc.c  */
-#line 590 "gram.y"
+#line 590 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 						/*
 						 * If there's a lookahead token, read_datatype
@@ -2317,28 +2317,28 @@ yyreduce:
   case 45:
 
 /* Line 1806 of yacc.c  */
-#line 601 "gram.y"
+#line 601 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     { (yyval.boolean) = false; }
     break;
 
   case 46:
 
 /* Line 1806 of yacc.c  */
-#line 603 "gram.y"
+#line 603 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     { (yyval.boolean) = true; }
     break;
 
   case 47:
 
 /* Line 1806 of yacc.c  */
-#line 607 "gram.y"
+#line 607 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     { (yyval.expr) = NULL; }
     break;
 
   case 48:
 
 /* Line 1806 of yacc.c  */
-#line 609 "gram.y"
+#line 609 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 						plpgsql_ns_setlocal(false);
 						(yyval.expr) = plpgsql_read_expression(';', ";");
@@ -2349,21 +2349,21 @@ yyreduce:
   case 51:
 
 /* Line 1806 of yacc.c  */
-#line 621 "gram.y"
+#line 621 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     { (yyval.list) = NIL; }
     break;
 
   case 52:
 
 /* Line 1806 of yacc.c  */
-#line 623 "gram.y"
+#line 623 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     { (yyval.list) = (yyvsp[(1) - (1)].list); }
     break;
 
   case 53:
 
 /* Line 1806 of yacc.c  */
-#line 627 "gram.y"
+#line 627 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 							if ((yyvsp[(2) - (2)].stmt) == NULL)
 								(yyval.list) = (yyvsp[(1) - (2)].list);
@@ -2375,7 +2375,7 @@ yyreduce:
   case 54:
 
 /* Line 1806 of yacc.c  */
-#line 634 "gram.y"
+#line 634 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 							if ((yyvsp[(1) - (1)].stmt) == NULL)
 								(yyval.list) = NIL;
@@ -2387,140 +2387,140 @@ yyreduce:
   case 55:
 
 /* Line 1806 of yacc.c  */
-#line 643 "gram.y"
+#line 643 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     { (yyval.stmt) = (yyvsp[(1) - (2)].stmt); }
     break;
 
   case 56:
 
 /* Line 1806 of yacc.c  */
-#line 645 "gram.y"
+#line 645 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     { (yyval.stmt) = (yyvsp[(1) - (1)].stmt); }
     break;
 
   case 57:
 
 /* Line 1806 of yacc.c  */
-#line 647 "gram.y"
+#line 647 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     { (yyval.stmt) = (yyvsp[(1) - (1)].stmt); }
     break;
 
   case 58:
 
 /* Line 1806 of yacc.c  */
-#line 649 "gram.y"
+#line 649 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     { (yyval.stmt) = (yyvsp[(1) - (1)].stmt); }
     break;
 
   case 59:
 
 /* Line 1806 of yacc.c  */
-#line 651 "gram.y"
+#line 651 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     { (yyval.stmt) = (yyvsp[(1) - (1)].stmt); }
     break;
 
   case 60:
 
 /* Line 1806 of yacc.c  */
-#line 653 "gram.y"
+#line 653 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     { (yyval.stmt) = (yyvsp[(1) - (1)].stmt); }
     break;
 
   case 61:
 
 /* Line 1806 of yacc.c  */
-#line 655 "gram.y"
+#line 655 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     { (yyval.stmt) = (yyvsp[(1) - (1)].stmt); }
     break;
 
   case 62:
 
 /* Line 1806 of yacc.c  */
-#line 657 "gram.y"
+#line 657 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     { (yyval.stmt) = (yyvsp[(1) - (1)].stmt); }
     break;
 
   case 63:
 
 /* Line 1806 of yacc.c  */
-#line 659 "gram.y"
+#line 659 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     { (yyval.stmt) = (yyvsp[(1) - (1)].stmt); }
     break;
 
   case 64:
 
 /* Line 1806 of yacc.c  */
-#line 661 "gram.y"
+#line 661 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     { (yyval.stmt) = (yyvsp[(1) - (1)].stmt); }
     break;
 
   case 65:
 
 /* Line 1806 of yacc.c  */
-#line 663 "gram.y"
+#line 663 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     { (yyval.stmt) = (yyvsp[(1) - (1)].stmt); }
     break;
 
   case 66:
 
 /* Line 1806 of yacc.c  */
-#line 665 "gram.y"
+#line 665 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     { (yyval.stmt) = (yyvsp[(1) - (1)].stmt); }
     break;
 
   case 67:
 
 /* Line 1806 of yacc.c  */
-#line 667 "gram.y"
+#line 667 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     { (yyval.stmt) = (yyvsp[(1) - (1)].stmt); }
     break;
 
   case 68:
 
 /* Line 1806 of yacc.c  */
-#line 669 "gram.y"
+#line 669 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     { (yyval.stmt) = (yyvsp[(1) - (1)].stmt); }
     break;
 
   case 69:
 
 /* Line 1806 of yacc.c  */
-#line 671 "gram.y"
+#line 671 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     { (yyval.stmt) = (yyvsp[(1) - (1)].stmt); }
     break;
 
   case 70:
 
 /* Line 1806 of yacc.c  */
-#line 673 "gram.y"
+#line 673 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     { (yyval.stmt) = (yyvsp[(1) - (1)].stmt); }
     break;
 
   case 71:
 
 /* Line 1806 of yacc.c  */
-#line 675 "gram.y"
+#line 675 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     { (yyval.stmt) = (yyvsp[(1) - (1)].stmt); }
     break;
 
   case 72:
 
 /* Line 1806 of yacc.c  */
-#line 677 "gram.y"
+#line 677 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     { (yyval.stmt) = (yyvsp[(1) - (1)].stmt); }
     break;
 
   case 73:
 
 /* Line 1806 of yacc.c  */
-#line 679 "gram.y"
+#line 679 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     { (yyval.stmt) = (yyvsp[(1) - (1)].stmt); }
     break;
 
   case 74:
 
 /* Line 1806 of yacc.c  */
-#line 683 "gram.y"
+#line 683 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 						PLpgSQL_stmt_perform *new;
 
@@ -2536,7 +2536,7 @@ yyreduce:
   case 75:
 
 /* Line 1806 of yacc.c  */
-#line 696 "gram.y"
+#line 696 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 						PLpgSQL_stmt_assign *new;
 
@@ -2553,7 +2553,7 @@ yyreduce:
   case 76:
 
 /* Line 1806 of yacc.c  */
-#line 710 "gram.y"
+#line 710 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 						PLpgSQL_stmt_getdiag	 *new;
 
@@ -2569,7 +2569,7 @@ yyreduce:
   case 77:
 
 /* Line 1806 of yacc.c  */
-#line 723 "gram.y"
+#line 723 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 						(yyval.list) = lappend((yyvsp[(1) - (3)].list), (yyvsp[(3) - (3)].diagitem));
 					}
@@ -2578,7 +2578,7 @@ yyreduce:
   case 78:
 
 /* Line 1806 of yacc.c  */
-#line 727 "gram.y"
+#line 727 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 						(yyval.list) = list_make1((yyvsp[(1) - (1)].diagitem));
 					}
@@ -2587,7 +2587,7 @@ yyreduce:
   case 79:
 
 /* Line 1806 of yacc.c  */
-#line 733 "gram.y"
+#line 733 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 						PLpgSQL_diag_item *new;
 
@@ -2602,7 +2602,7 @@ yyreduce:
   case 80:
 
 /* Line 1806 of yacc.c  */
-#line 745 "gram.y"
+#line 745 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 						(yyval.ival) = PLPGSQL_GETDIAG_ROW_COUNT;
 					}
@@ -2611,7 +2611,7 @@ yyreduce:
   case 81:
 
 /* Line 1806 of yacc.c  */
-#line 749 "gram.y"
+#line 749 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 						(yyval.ival) = PLPGSQL_GETDIAG_RESULT_OID;
 					}
@@ -2620,7 +2620,7 @@ yyreduce:
   case 82:
 
 /* Line 1806 of yacc.c  */
-#line 755 "gram.y"
+#line 755 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 						check_assignable(yylval.scalar);
 						(yyval.ival) = yylval.scalar->dno;
@@ -2630,7 +2630,7 @@ yyreduce:
   case 83:
 
 /* Line 1806 of yacc.c  */
-#line 760 "gram.y"
+#line 760 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 						yyerror("expected an integer variable");
 					}
@@ -2639,7 +2639,7 @@ yyreduce:
   case 84:
 
 /* Line 1806 of yacc.c  */
-#line 764 "gram.y"
+#line 764 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 						yyerror("expected an integer variable");
 					}
@@ -2648,7 +2648,7 @@ yyreduce:
   case 85:
 
 /* Line 1806 of yacc.c  */
-#line 768 "gram.y"
+#line 768 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 						yyerror("expected an integer variable");
 					}
@@ -2657,7 +2657,7 @@ yyreduce:
   case 86:
 
 /* Line 1806 of yacc.c  */
-#line 775 "gram.y"
+#line 775 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 						check_assignable(yylval.scalar);
 						(yyval.ival) = yylval.scalar->dno;
@@ -2667,7 +2667,7 @@ yyreduce:
   case 87:
 
 /* Line 1806 of yacc.c  */
-#line 780 "gram.y"
+#line 780 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 						check_assignable((PLpgSQL_datum *) yylval.row);
 						(yyval.ival) = yylval.row->dno;
@@ -2677,7 +2677,7 @@ yyreduce:
   case 88:
 
 /* Line 1806 of yacc.c  */
-#line 785 "gram.y"
+#line 785 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 						check_assignable((PLpgSQL_datum *) yylval.rec);
 						(yyval.ival) = yylval.rec->dno;
@@ -2687,7 +2687,7 @@ yyreduce:
   case 89:
 
 /* Line 1806 of yacc.c  */
-#line 790 "gram.y"
+#line 790 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 						PLpgSQL_arrayelem	*new;
 
@@ -2705,7 +2705,7 @@ yyreduce:
   case 90:
 
 /* Line 1806 of yacc.c  */
-#line 805 "gram.y"
+#line 805 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 						PLpgSQL_stmt_if *new;
 
@@ -2723,7 +2723,7 @@ yyreduce:
   case 91:
 
 /* Line 1806 of yacc.c  */
-#line 820 "gram.y"
+#line 820 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 						(yyval.list) = NIL;
 					}
@@ -2732,7 +2732,7 @@ yyreduce:
   case 92:
 
 /* Line 1806 of yacc.c  */
-#line 824 "gram.y"
+#line 824 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 						/*
 						 * Translate the structure:	   into:
@@ -2765,7 +2765,7 @@ yyreduce:
   case 93:
 
 /* Line 1806 of yacc.c  */
-#line 853 "gram.y"
+#line 853 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 						(yyval.list) = (yyvsp[(2) - (2)].list);
 					}
@@ -2774,7 +2774,7 @@ yyreduce:
   case 94:
 
 /* Line 1806 of yacc.c  */
-#line 859 "gram.y"
+#line 859 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 						(yyval.stmt) = make_case((yyvsp[(2) - (8)].ival), (yyvsp[(3) - (8)].expr), (yyvsp[(4) - (8)].list), (yyvsp[(5) - (8)].list));
 					}
@@ -2783,7 +2783,7 @@ yyreduce:
   case 95:
 
 /* Line 1806 of yacc.c  */
-#line 865 "gram.y"
+#line 865 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 						PLpgSQL_expr *expr = NULL;
 						int	tok = yylex();
@@ -2801,7 +2801,7 @@ yyreduce:
   case 96:
 
 /* Line 1806 of yacc.c  */
-#line 880 "gram.y"
+#line 880 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 						(yyval.list) = lappend((yyvsp[(1) - (2)].list), (yyvsp[(2) - (2)].casewhen));
 					}
@@ -2810,7 +2810,7 @@ yyreduce:
   case 97:
 
 /* Line 1806 of yacc.c  */
-#line 884 "gram.y"
+#line 884 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 						(yyval.list) = list_make1((yyvsp[(1) - (1)].casewhen));
 					}
@@ -2819,7 +2819,7 @@ yyreduce:
   case 98:
 
 /* Line 1806 of yacc.c  */
-#line 890 "gram.y"
+#line 890 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 						PLpgSQL_case_when *new = palloc(sizeof(PLpgSQL_case_when));
 
@@ -2833,7 +2833,7 @@ yyreduce:
   case 99:
 
 /* Line 1806 of yacc.c  */
-#line 901 "gram.y"
+#line 901 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 						(yyval.list) = NIL;
 					}
@@ -2842,7 +2842,7 @@ yyreduce:
   case 100:
 
 /* Line 1806 of yacc.c  */
-#line 905 "gram.y"
+#line 905 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 						/*
 						 * proc_sect could return an empty list, but we
@@ -2860,7 +2860,7 @@ yyreduce:
   case 101:
 
 /* Line 1806 of yacc.c  */
-#line 920 "gram.y"
+#line 920 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 						PLpgSQL_stmt_loop *new;
 
@@ -2880,7 +2880,7 @@ yyreduce:
   case 102:
 
 /* Line 1806 of yacc.c  */
-#line 937 "gram.y"
+#line 937 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 						PLpgSQL_stmt_while *new;
 
@@ -2901,7 +2901,7 @@ yyreduce:
   case 103:
 
 /* Line 1806 of yacc.c  */
-#line 955 "gram.y"
+#line 955 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 						/* This runs after we've scanned the loop body */
 						if ((yyvsp[(3) - (4)].stmt)->cmd_type == PLPGSQL_STMT_FORI)
@@ -2936,7 +2936,7 @@ yyreduce:
   case 104:
 
 /* Line 1806 of yacc.c  */
-#line 988 "gram.y"
+#line 988 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 						int			tok = yylex();
 
@@ -3175,7 +3175,7 @@ yyreduce:
   case 105:
 
 /* Line 1806 of yacc.c  */
-#line 1242 "gram.y"
+#line 1242 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 						int			tok;
 
@@ -3195,7 +3195,7 @@ yyreduce:
   case 106:
 
 /* Line 1806 of yacc.c  */
-#line 1257 "gram.y"
+#line 1257 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 						int			tok;
 
@@ -3221,7 +3221,7 @@ yyreduce:
   case 107:
 
 /* Line 1806 of yacc.c  */
-#line 1278 "gram.y"
+#line 1278 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 						(yyval.forvariable).name = pstrdup(yytext);
 						(yyval.forvariable).lineno  = plpgsql_scanner_lineno();
@@ -3234,7 +3234,7 @@ yyreduce:
   case 108:
 
 /* Line 1806 of yacc.c  */
-#line 1286 "gram.y"
+#line 1286 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 						(yyval.forvariable).name = pstrdup(yytext);
 						(yyval.forvariable).lineno  = plpgsql_scanner_lineno();
@@ -3247,7 +3247,7 @@ yyreduce:
   case 109:
 
 /* Line 1806 of yacc.c  */
-#line 1296 "gram.y"
+#line 1296 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 						PLpgSQL_stmt_exit *new;
 
@@ -3265,7 +3265,7 @@ yyreduce:
   case 110:
 
 /* Line 1806 of yacc.c  */
-#line 1311 "gram.y"
+#line 1311 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 						(yyval.boolean) = true;
 					}
@@ -3274,7 +3274,7 @@ yyreduce:
   case 111:
 
 /* Line 1806 of yacc.c  */
-#line 1315 "gram.y"
+#line 1315 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 						(yyval.boolean) = false;
 					}
@@ -3283,7 +3283,7 @@ yyreduce:
   case 112:
 
 /* Line 1806 of yacc.c  */
-#line 1321 "gram.y"
+#line 1321 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 						int	tok;
 
@@ -3315,7 +3315,7 @@ yyreduce:
   case 113:
 
 /* Line 1806 of yacc.c  */
-#line 1350 "gram.y"
+#line 1350 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 						PLpgSQL_stmt_raise		*new;
 						int	tok;
@@ -3454,7 +3454,7 @@ yyreduce:
   case 114:
 
 /* Line 1806 of yacc.c  */
-#line 1486 "gram.y"
+#line 1486 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 						(yyval.loop_body).stmts = (yyvsp[(1) - (5)].list);
 						(yyval.loop_body).end_label = (yyvsp[(4) - (5)].str);
@@ -3464,7 +3464,7 @@ yyreduce:
   case 115:
 
 /* Line 1806 of yacc.c  */
-#line 1493 "gram.y"
+#line 1493 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 						(yyval.stmt) = make_execsql_stmt((yyvsp[(1) - (2)].str), (yyvsp[(2) - (2)].ival));
 					}
@@ -3473,28 +3473,28 @@ yyreduce:
   case 116:
 
 /* Line 1806 of yacc.c  */
-#line 1500 "gram.y"
+#line 1500 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     { (yyval.str) = pstrdup(yytext); }
     break;
 
   case 117:
 
 /* Line 1806 of yacc.c  */
-#line 1502 "gram.y"
+#line 1502 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     { (yyval.str) = pstrdup(yytext); }
     break;
 
   case 118:
 
 /* Line 1806 of yacc.c  */
-#line 1504 "gram.y"
+#line 1504 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     { (yyval.str) = pstrdup(yytext); }
     break;
 
   case 119:
 
 /* Line 1806 of yacc.c  */
-#line 1508 "gram.y"
+#line 1508 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 						PLpgSQL_stmt_dynexecute *new;
 						PLpgSQL_expr *expr;
@@ -3559,7 +3559,7 @@ yyreduce:
   case 120:
 
 /* Line 1806 of yacc.c  */
-#line 1571 "gram.y"
+#line 1571 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 						PLpgSQL_stmt_open *new;
 						int				  tok;
@@ -3619,7 +3619,7 @@ yyreduce:
   case 121:
 
 /* Line 1806 of yacc.c  */
-#line 1628 "gram.y"
+#line 1628 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 						PLpgSQL_stmt_fetch *fetch = (yyvsp[(3) - (5)].fetch);
 						PLpgSQL_rec	   *rec;
@@ -3644,7 +3644,7 @@ yyreduce:
   case 122:
 
 /* Line 1806 of yacc.c  */
-#line 1650 "gram.y"
+#line 1650 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 						PLpgSQL_stmt_fetch *fetch = (yyvsp[(3) - (5)].fetch);
 
@@ -3659,7 +3659,7 @@ yyreduce:
   case 123:
 
 /* Line 1806 of yacc.c  */
-#line 1662 "gram.y"
+#line 1662 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 						(yyval.fetch) = read_fetch_direction();
 					}
@@ -3668,7 +3668,7 @@ yyreduce:
   case 124:
 
 /* Line 1806 of yacc.c  */
-#line 1668 "gram.y"
+#line 1668 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 						PLpgSQL_stmt_close *new;
 
@@ -3684,7 +3684,7 @@ yyreduce:
   case 125:
 
 /* Line 1806 of yacc.c  */
-#line 1681 "gram.y"
+#line 1681 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 						/* We do not bother building a node for NULL */
 						(yyval.stmt) = NULL;
@@ -3694,7 +3694,7 @@ yyreduce:
   case 126:
 
 /* Line 1806 of yacc.c  */
-#line 1688 "gram.y"
+#line 1688 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 						if (yylval.scalar->dtype != PLPGSQL_DTYPE_VAR)
 							yyerror("cursor variable must be a simple variable");
@@ -3714,7 +3714,7 @@ yyreduce:
   case 127:
 
 /* Line 1806 of yacc.c  */
-#line 1703 "gram.y"
+#line 1703 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 						yyerror("expected a cursor or refcursor variable");
 					}
@@ -3723,7 +3723,7 @@ yyreduce:
   case 128:
 
 /* Line 1806 of yacc.c  */
-#line 1707 "gram.y"
+#line 1707 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 						yyerror("expected a cursor or refcursor variable");
 					}
@@ -3732,7 +3732,7 @@ yyreduce:
   case 129:
 
 /* Line 1806 of yacc.c  */
-#line 1711 "gram.y"
+#line 1711 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 						yyerror("expected a cursor or refcursor variable");
 					}
@@ -3741,14 +3741,14 @@ yyreduce:
   case 130:
 
 /* Line 1806 of yacc.c  */
-#line 1717 "gram.y"
+#line 1717 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     { (yyval.exception_block) = NULL; }
     break;
 
   case 131:
 
 /* Line 1806 of yacc.c  */
-#line 1719 "gram.y"
+#line 1719 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 						/*
 						 * We use a mid-rule action to add these
@@ -3777,7 +3777,7 @@ yyreduce:
   case 132:
 
 /* Line 1806 of yacc.c  */
-#line 1743 "gram.y"
+#line 1743 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 						PLpgSQL_exception_block *new = (yyvsp[(3) - (4)].exception_block);
 						new->exc_list = (yyvsp[(4) - (4)].list);
@@ -3789,7 +3789,7 @@ yyreduce:
   case 133:
 
 /* Line 1806 of yacc.c  */
-#line 1752 "gram.y"
+#line 1752 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 							(yyval.list) = lappend((yyvsp[(1) - (2)].list), (yyvsp[(2) - (2)].exception));
 						}
@@ -3798,7 +3798,7 @@ yyreduce:
   case 134:
 
 /* Line 1806 of yacc.c  */
-#line 1756 "gram.y"
+#line 1756 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 							(yyval.list) = list_make1((yyvsp[(1) - (1)].exception));
 						}
@@ -3807,7 +3807,7 @@ yyreduce:
   case 135:
 
 /* Line 1806 of yacc.c  */
-#line 1762 "gram.y"
+#line 1762 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 						PLpgSQL_exception *new;
 
@@ -3823,7 +3823,7 @@ yyreduce:
   case 136:
 
 /* Line 1806 of yacc.c  */
-#line 1775 "gram.y"
+#line 1775 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 							PLpgSQL_condition	*old;
 
@@ -3837,7 +3837,7 @@ yyreduce:
   case 137:
 
 /* Line 1806 of yacc.c  */
-#line 1784 "gram.y"
+#line 1784 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 							(yyval.condition) = (yyvsp[(1) - (1)].condition);
 						}
@@ -3846,7 +3846,7 @@ yyreduce:
   case 138:
 
 /* Line 1806 of yacc.c  */
-#line 1790 "gram.y"
+#line 1790 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 							if (strcmp((yyvsp[(1) - (1)].str), "sqlstate") != 0)
 							{
@@ -3885,35 +3885,35 @@ yyreduce:
   case 139:
 
 /* Line 1806 of yacc.c  */
-#line 1826 "gram.y"
+#line 1826 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     { (yyval.expr) = plpgsql_read_expression(';', ";"); }
     break;
 
   case 140:
 
 /* Line 1806 of yacc.c  */
-#line 1830 "gram.y"
+#line 1830 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     { (yyval.expr) = plpgsql_read_expression(']', "]"); }
     break;
 
   case 141:
 
 /* Line 1806 of yacc.c  */
-#line 1834 "gram.y"
+#line 1834 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     { (yyval.expr) = plpgsql_read_expression(K_THEN, "THEN"); }
     break;
 
   case 142:
 
 /* Line 1806 of yacc.c  */
-#line 1838 "gram.y"
+#line 1838 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     { (yyval.expr) = plpgsql_read_expression(K_LOOP, "LOOP"); }
     break;
 
   case 143:
 
 /* Line 1806 of yacc.c  */
-#line 1842 "gram.y"
+#line 1842 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 						plpgsql_ns_push(NULL);
 						(yyval.str) = NULL;
@@ -3923,7 +3923,7 @@ yyreduce:
   case 144:
 
 /* Line 1806 of yacc.c  */
-#line 1847 "gram.y"
+#line 1847 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 						plpgsql_ns_push((yyvsp[(3) - (5)].str));
 						(yyval.str) = (yyvsp[(3) - (5)].str);
@@ -3933,7 +3933,7 @@ yyreduce:
   case 145:
 
 /* Line 1806 of yacc.c  */
-#line 1854 "gram.y"
+#line 1854 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 						(yyval.str) = NULL;
 					}
@@ -3942,7 +3942,7 @@ yyreduce:
   case 146:
 
 /* Line 1806 of yacc.c  */
-#line 1858 "gram.y"
+#line 1858 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 						(yyval.str) = check_label((yyvsp[(1) - (1)].str));
 					}
@@ -3951,21 +3951,21 @@ yyreduce:
   case 147:
 
 /* Line 1806 of yacc.c  */
-#line 1864 "gram.y"
+#line 1864 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     { (yyval.expr) = NULL; }
     break;
 
   case 148:
 
 /* Line 1806 of yacc.c  */
-#line 1866 "gram.y"
+#line 1866 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     { (yyval.expr) = (yyvsp[(2) - (2)].expr); }
     break;
 
   case 149:
 
 /* Line 1806 of yacc.c  */
-#line 1873 "gram.y"
+#line 1873 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 						(yyval.str) = yytext;
 					}
@@ -3974,7 +3974,7 @@ yyreduce:
   case 150:
 
 /* Line 1806 of yacc.c  */
-#line 1877 "gram.y"
+#line 1877 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 						(yyval.str) = yytext;
 					}
@@ -3983,7 +3983,7 @@ yyreduce:
   case 151:
 
 /* Line 1806 of yacc.c  */
-#line 1881 "gram.y"
+#line 1881 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 						(yyval.str) = yytext;
 					}
@@ -3992,7 +3992,7 @@ yyreduce:
   case 152:
 
 /* Line 1806 of yacc.c  */
-#line 1885 "gram.y"
+#line 1885 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 						(yyval.str) = yytext;
 					}
@@ -4001,7 +4001,7 @@ yyreduce:
   case 153:
 
 /* Line 1806 of yacc.c  */
-#line 1891 "gram.y"
+#line 1891 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 						char	*name;
 
@@ -4013,7 +4013,7 @@ yyreduce:
   case 154:
 
 /* Line 1806 of yacc.c  */
-#line 1900 "gram.y"
+#line 1900 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
     {
 						(yyval.ival) = plpgsql_error_lineno = plpgsql_scanner_lineno();
 					}
@@ -4022,7 +4022,7 @@ yyreduce:
 
 
 /* Line 1806 of yacc.c  */
-#line 4026 "pl_gram.c"
+#line 4026 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/pl_gram.c"
       default: break;
     }
   /* User semantic actions sometimes alter yychar, and that requires
@@ -4253,7 +4253,7 @@ yyreturn:
 
 
 /* Line 2067 of yacc.c  */
-#line 1905 "gram.y"
+#line 1905 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
 
 
 

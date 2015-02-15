@@ -473,7 +473,7 @@ SET ENABLE_SEQSCAN TO OFF;
        <para>
         This parameter is irrelevant on systems, notably Solaris as of Solaris
         10, that ignore socket permissions entirely.  There, one can achieve a
-        similar effect by pointing <varname>unix_socket_directories</> to a
+        similar effect by pointing <varname>unix_socket_directory</> to a
         directory having search permission limited to the desired audience.
         This parameter is also irrelevant on Windows, which does not have
         Unix-domain sockets.
@@ -4267,9 +4267,9 @@ SET XML OPTION { DOCUMENT | CONTENT };
         Sets the collection of time zone abbreviations that will be accepted
         by the server for datetime input.  The default is <literal>'Default'</>,
         which is a collection that works in most of the world; there are
-        also 'Australia' and 'India', and other collections can be defined
-        for a particular installation.  See <xref
-        linkend="datetime-appendix"> for more information.
+        also <literal>'Australia'</literal> and <literal>'India'</literal>,
+        and other collections can be defined for a particular installation.
+        See <xref linkend="datetime-config-files"> for more information.
        </para>
       </listitem>
      </varlistentry>
@@ -4528,8 +4528,8 @@ dynamic_library_path = 'C:\tools\postgresql;H:\my_project\lib;$libdir'
         this feature is to allow debugging or performance-measurement
         libraries to be loaded into specific sessions without an explicit
         <command>LOAD</> command being given.  For example, debugging could
-        be enabled for all sessions under a given user name by setting
-        this parameter with <command>ALTER USER SET</>.
+        be enabled for a session by setting this parameter via the
+        <envar>PGOPTIONS</envar> environment variable.
        </para>
 
        <para>

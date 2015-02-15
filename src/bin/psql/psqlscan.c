@@ -1,6 +1,6 @@
-#line 2 "psqlscan.c"
+#line 2 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.c"
 
-#line 4 "psqlscan.c"
+#line 4 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.c"
 
 #define  YY_INT_ALIGNED short int
 
@@ -4065,8 +4065,8 @@ int yy_flex_debug = 0;
 #define YY_MORE_ADJ 0
 #define YY_RESTORE_YY_MORE_OFFSET
 char *yytext;
-#line 1 "psqlscan.l"
-#line 2 "psqlscan.l"
+#line 1 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
+#line 2 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 /*-------------------------------------------------------------------------
  *
  * psqlscan.l
@@ -4347,7 +4347,7 @@ static void emit(const char *txt, int len);
  * Note that xcstart must appear before operator, as explained above!
  *  Also whitespace (comment) must appear before operator.
  */
-#line 4351 "psqlscan.c"
+#line 4351 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.c"
 
 #define INITIAL 0
 #define xb 1
@@ -4549,10 +4549,10 @@ YY_DECL
 	register char *yy_cp, *yy_bp;
 	register int yy_act;
     
-#line 385 "psqlscan.l"
+#line 385 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 
 
-#line 4556 "psqlscan.c"
+#line 4556 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.c"
 
 	if ( !(yy_init) )
 		{
@@ -4611,7 +4611,7 @@ do_action:	/* This label is used only to access EOF actions. */
 case 1:
 /* rule 1 can match eol */
 YY_RULE_SETUP
-#line 387 "psqlscan.l"
+#line 387 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 {
 					/*
 					 * Note that the whitespace rule includes both true
@@ -4627,7 +4627,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 400 "psqlscan.l"
+#line 400 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 {
 					cur_state->xcdepth = 0;
 					BEGIN(xc);
@@ -4638,7 +4638,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 408 "psqlscan.l"
+#line 408 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 {
 					cur_state->xcdepth++;
 					/* Put back any characters past slash-star; see above */
@@ -4648,7 +4648,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 415 "psqlscan.l"
+#line 415 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 {
 					if (cur_state->xcdepth <= 0)
 					{
@@ -4662,28 +4662,28 @@ YY_RULE_SETUP
 case 5:
 /* rule 5 can match eol */
 YY_RULE_SETUP
-#line 425 "psqlscan.l"
+#line 425 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 {
 					ECHO;
 				}
 	YY_BREAK
 case 6:
 YY_RULE_SETUP
-#line 429 "psqlscan.l"
+#line 429 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 {
 					ECHO;
 				}
 	YY_BREAK
 case 7:
 YY_RULE_SETUP
-#line 433 "psqlscan.l"
+#line 433 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 {
 					ECHO;
 				}
 	YY_BREAK
 case 8:
 YY_RULE_SETUP
-#line 437 "psqlscan.l"
+#line 437 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 {
 					BEGIN(xb);
 					ECHO;
@@ -4691,11 +4691,11 @@ YY_RULE_SETUP
 	YY_BREAK
 case 9:
 /* rule 9 can match eol */
-#line 442 "psqlscan.l"
+#line 442 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 case 10:
 /* rule 10 can match eol */
 YY_RULE_SETUP
-#line 442 "psqlscan.l"
+#line 442 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 {
 					yyless(1);
 					BEGIN(INITIAL);
@@ -4704,29 +4704,29 @@ YY_RULE_SETUP
 	YY_BREAK
 case 11:
 /* rule 11 can match eol */
-#line 448 "psqlscan.l"
+#line 448 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 case 12:
 /* rule 12 can match eol */
 YY_RULE_SETUP
-#line 448 "psqlscan.l"
+#line 448 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 {
 					ECHO;
 				}
 	YY_BREAK
 case 13:
 /* rule 13 can match eol */
-#line 452 "psqlscan.l"
+#line 452 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 case 14:
 /* rule 14 can match eol */
 YY_RULE_SETUP
-#line 452 "psqlscan.l"
+#line 452 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 {
 					ECHO;
 				}
 	YY_BREAK
 case 15:
 YY_RULE_SETUP
-#line 456 "psqlscan.l"
+#line 456 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 {
 					/* Hexadecimal bit type.
 					 * At some point we should simply pass the string
@@ -4740,11 +4740,11 @@ YY_RULE_SETUP
 	YY_BREAK
 case 16:
 /* rule 16 can match eol */
-#line 467 "psqlscan.l"
+#line 467 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 case 17:
 /* rule 17 can match eol */
 YY_RULE_SETUP
-#line 467 "psqlscan.l"
+#line 467 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 {
 					yyless(1);
 					BEGIN(INITIAL);
@@ -4753,7 +4753,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 18:
 YY_RULE_SETUP
-#line 473 "psqlscan.l"
+#line 473 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 {
 					yyless(1);				/* eat only 'n' this time */
 					ECHO;
@@ -4761,7 +4761,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 19:
 YY_RULE_SETUP
-#line 478 "psqlscan.l"
+#line 478 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 {
 					if (standard_strings())
 						BEGIN(xq);
@@ -4772,7 +4772,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 20:
 YY_RULE_SETUP
-#line 485 "psqlscan.l"
+#line 485 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 {
 					BEGIN(xe);
 					ECHO;
@@ -4780,7 +4780,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 21:
 YY_RULE_SETUP
-#line 489 "psqlscan.l"
+#line 489 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 {
 					BEGIN(xus);
 					ECHO;
@@ -4788,11 +4788,11 @@ YY_RULE_SETUP
 	YY_BREAK
 case 22:
 /* rule 22 can match eol */
-#line 494 "psqlscan.l"
+#line 494 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 case 23:
 /* rule 23 can match eol */
 YY_RULE_SETUP
-#line 494 "psqlscan.l"
+#line 494 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 {
 					yyless(1);
 					BEGIN(INITIAL);
@@ -4802,7 +4802,7 @@ YY_RULE_SETUP
 case 24:
 /* rule 24 can match eol */
 YY_RULE_SETUP
-#line 499 "psqlscan.l"
+#line 499 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 {
 					yyless(1);
 					BEGIN(INITIAL);
@@ -4812,7 +4812,7 @@ YY_RULE_SETUP
 case 25:
 /* rule 25 can match eol */
 YY_RULE_SETUP
-#line 504 "psqlscan.l"
+#line 504 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 {
 					BEGIN(INITIAL);
 					ECHO;
@@ -4820,7 +4820,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 26:
 YY_RULE_SETUP
-#line 508 "psqlscan.l"
+#line 508 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 {
 					ECHO;
 				}
@@ -4828,7 +4828,7 @@ YY_RULE_SETUP
 case 27:
 /* rule 27 can match eol */
 YY_RULE_SETUP
-#line 511 "psqlscan.l"
+#line 511 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 {
 					ECHO;
 				}
@@ -4836,7 +4836,7 @@ YY_RULE_SETUP
 case 28:
 /* rule 28 can match eol */
 YY_RULE_SETUP
-#line 514 "psqlscan.l"
+#line 514 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 {
 					ECHO;
 				}
@@ -4844,21 +4844,21 @@ YY_RULE_SETUP
 case 29:
 /* rule 29 can match eol */
 YY_RULE_SETUP
-#line 517 "psqlscan.l"
+#line 517 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 {
 					ECHO;
 				}
 	YY_BREAK
 case 30:
 YY_RULE_SETUP
-#line 520 "psqlscan.l"
+#line 520 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 {
 					ECHO;
 				}
 	YY_BREAK
 case 31:
 YY_RULE_SETUP
-#line 523 "psqlscan.l"
+#line 523 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 {
 					ECHO;
 				}
@@ -4866,14 +4866,14 @@ YY_RULE_SETUP
 case 32:
 /* rule 32 can match eol */
 YY_RULE_SETUP
-#line 526 "psqlscan.l"
+#line 526 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 {
 					ECHO;
 				}
 	YY_BREAK
 case 33:
 YY_RULE_SETUP
-#line 529 "psqlscan.l"
+#line 529 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 {
 					/* This is only needed for \ just before EOF */
 					ECHO;
@@ -4881,7 +4881,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 34:
 YY_RULE_SETUP
-#line 534 "psqlscan.l"
+#line 534 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 {
 					cur_state->dolqstart = pg_strdup(yytext);
 					BEGIN(xdolq);
@@ -4890,7 +4890,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 35:
 YY_RULE_SETUP
-#line 539 "psqlscan.l"
+#line 539 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 {
 					/* throw back all but the initial "$" */
 					yyless(1);
@@ -4899,7 +4899,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 36:
 YY_RULE_SETUP
-#line 544 "psqlscan.l"
+#line 544 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 {
 					if (strcmp(yytext, cur_state->dolqstart) == 0)
 					{
@@ -4922,21 +4922,21 @@ YY_RULE_SETUP
 case 37:
 /* rule 37 can match eol */
 YY_RULE_SETUP
-#line 562 "psqlscan.l"
+#line 562 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 {
 					ECHO;
 				}
 	YY_BREAK
 case 38:
 YY_RULE_SETUP
-#line 565 "psqlscan.l"
+#line 565 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 {
 					ECHO;
 				}
 	YY_BREAK
 case 39:
 YY_RULE_SETUP
-#line 568 "psqlscan.l"
+#line 568 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 {
 					/* This is only needed for $ inside the quoted text */
 					ECHO;
@@ -4944,7 +4944,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 40:
 YY_RULE_SETUP
-#line 573 "psqlscan.l"
+#line 573 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 {
 					BEGIN(xd);
 					ECHO;
@@ -4952,7 +4952,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 41:
 YY_RULE_SETUP
-#line 577 "psqlscan.l"
+#line 577 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 {
 					BEGIN(xui);
 					ECHO;
@@ -4960,7 +4960,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 42:
 YY_RULE_SETUP
-#line 581 "psqlscan.l"
+#line 581 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 {
 					BEGIN(INITIAL);
 					ECHO;
@@ -4969,7 +4969,7 @@ YY_RULE_SETUP
 case 43:
 /* rule 43 can match eol */
 YY_RULE_SETUP
-#line 585 "psqlscan.l"
+#line 585 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 {
 					yyless(1);
 					BEGIN(INITIAL);
@@ -4979,7 +4979,7 @@ YY_RULE_SETUP
 case 44:
 /* rule 44 can match eol */
 YY_RULE_SETUP
-#line 590 "psqlscan.l"
+#line 590 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 {
 					BEGIN(INITIAL);
 					ECHO;
@@ -4987,7 +4987,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 45:
 YY_RULE_SETUP
-#line 594 "psqlscan.l"
+#line 594 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 {
 					ECHO;
 				}
@@ -4995,14 +4995,14 @@ YY_RULE_SETUP
 case 46:
 /* rule 46 can match eol */
 YY_RULE_SETUP
-#line 597 "psqlscan.l"
+#line 597 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 {
 					ECHO;
 				}
 	YY_BREAK
 case 47:
 YY_RULE_SETUP
-#line 601 "psqlscan.l"
+#line 601 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 {
 					/* throw back all but the initial u/U */
 					yyless(1);
@@ -5011,7 +5011,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 48:
 YY_RULE_SETUP
-#line 607 "psqlscan.l"
+#line 607 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 {
 					ECHO;
 				}
@@ -5023,7 +5023,7 @@ YY_RULE_SETUP
 	 */
 case 49:
 YY_RULE_SETUP
-#line 617 "psqlscan.l"
+#line 617 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 {
 					cur_state->paren_depth++;
 					ECHO;
@@ -5031,7 +5031,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 50:
 YY_RULE_SETUP
-#line 622 "psqlscan.l"
+#line 622 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 {
 					if (cur_state->paren_depth > 0)
 						cur_state->paren_depth--;
@@ -5040,7 +5040,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 51:
 YY_RULE_SETUP
-#line 628 "psqlscan.l"
+#line 628 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 {
 					ECHO;
 					if (cur_state->paren_depth == 0)
@@ -5056,7 +5056,7 @@ YY_RULE_SETUP
 	 */
 case 52:
 YY_RULE_SETUP
-#line 642 "psqlscan.l"
+#line 642 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 {
 					/* Force a semicolon or colon into the query buffer */
 					emit(yytext + 1, 1);
@@ -5064,7 +5064,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 53:
 YY_RULE_SETUP
-#line 647 "psqlscan.l"
+#line 647 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 {
 					/* Terminate lexing temporarily */
 					return LEXRES_BACKSLASH;
@@ -5072,7 +5072,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 54:
 YY_RULE_SETUP
-#line 652 "psqlscan.l"
+#line 652 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 {
 					/* Possible psql variable substitution */
 					const char *varname = yytext + 1;
@@ -5113,14 +5113,14 @@ YY_RULE_SETUP
 	 */
 case 55:
 YY_RULE_SETUP
-#line 691 "psqlscan.l"
+#line 691 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 {
 					ECHO;
 				}
 	YY_BREAK
 case 56:
 YY_RULE_SETUP
-#line 695 "psqlscan.l"
+#line 695 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 {
 					/*
 					 * Check for embedded slash-star or dash-dash; those
@@ -5177,35 +5177,35 @@ YY_RULE_SETUP
 	YY_BREAK
 case 57:
 YY_RULE_SETUP
-#line 749 "psqlscan.l"
+#line 749 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 {
 					ECHO;
 				}
 	YY_BREAK
 case 58:
 YY_RULE_SETUP
-#line 753 "psqlscan.l"
+#line 753 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 {
 					ECHO;
 				}
 	YY_BREAK
 case 59:
 YY_RULE_SETUP
-#line 756 "psqlscan.l"
+#line 756 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 {
 					ECHO;
 				}
 	YY_BREAK
 case 60:
 YY_RULE_SETUP
-#line 759 "psqlscan.l"
+#line 759 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 {
 					ECHO;
 				}
 	YY_BREAK
 case 61:
 YY_RULE_SETUP
-#line 762 "psqlscan.l"
+#line 762 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 {
 					/*
 					 * throw back the [Ee], and treat as {decimal}.  Note
@@ -5219,7 +5219,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 62:
 YY_RULE_SETUP
-#line 772 "psqlscan.l"
+#line 772 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 {
 					/* throw back the [Ee][+-], and proceed as above */
 					yyless(yyleng-2);
@@ -5228,14 +5228,14 @@ YY_RULE_SETUP
 	YY_BREAK
 case 63:
 YY_RULE_SETUP
-#line 779 "psqlscan.l"
+#line 779 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 {
 					ECHO;
 				}
 	YY_BREAK
 case 64:
 YY_RULE_SETUP
-#line 783 "psqlscan.l"
+#line 783 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 {
 					ECHO;
 				}
@@ -5261,7 +5261,7 @@ case YY_STATE_EOF(xslashdefaultarg):
 case YY_STATE_EOF(xslashquotedarg):
 case YY_STATE_EOF(xslashwholeline):
 case YY_STATE_EOF(xslashend):
-#line 792 "psqlscan.l"
+#line 792 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 {
 					StackElem  *stackelem = cur_state->buffer_stack;
 
@@ -5297,7 +5297,7 @@ case YY_STATE_EOF(xslashend):
 case 65:
 /* rule 65 can match eol */
 YY_RULE_SETUP
-#line 826 "psqlscan.l"
+#line 826 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 {
 					yyless(0);
 					return LEXRES_OK;
@@ -5305,7 +5305,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 66:
 YY_RULE_SETUP
-#line 831 "psqlscan.l"
+#line 831 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 { ECHO; }
 	YY_BREAK
 
@@ -5314,12 +5314,12 @@ YY_RULE_SETUP
 case 67:
 /* rule 67 can match eol */
 YY_RULE_SETUP
-#line 838 "psqlscan.l"
+#line 838 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 { }
 	YY_BREAK
 case 68:
 YY_RULE_SETUP
-#line 840 "psqlscan.l"
+#line 840 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 {
 					/*
 					 * backslash is end of command or next command, do not eat
@@ -5335,7 +5335,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 69:
 YY_RULE_SETUP
-#line 853 "psqlscan.l"
+#line 853 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 {
 					*option_quote = '\'';
 					BEGIN(xslashquote);
@@ -5343,7 +5343,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 70:
 YY_RULE_SETUP
-#line 858 "psqlscan.l"
+#line 858 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 {
 					if (option_type == OT_VERBATIM)
 					{
@@ -5360,7 +5360,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 71:
 YY_RULE_SETUP
-#line 872 "psqlscan.l"
+#line 872 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 {
 					/* Possible psql variable substitution */
 					if (option_type == OT_VERBATIM)
@@ -5389,7 +5389,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 72:
 YY_RULE_SETUP
-#line 898 "psqlscan.l"
+#line 898 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 {
 					ECHO;
 					if (option_type == OT_FILEPIPE)
@@ -5406,7 +5406,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 73:
 YY_RULE_SETUP
-#line 912 "psqlscan.l"
+#line 912 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 {
 					*option_quote = '"';
 					ECHO;
@@ -5415,7 +5415,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 74:
 YY_RULE_SETUP
-#line 918 "psqlscan.l"
+#line 918 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 {
 					ECHO;
 					BEGIN(xslashdefaultarg);
@@ -5429,42 +5429,42 @@ YY_RULE_SETUP
 	 */
 case 75:
 YY_RULE_SETUP
-#line 931 "psqlscan.l"
+#line 931 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 { return LEXRES_OK; }
 	YY_BREAK
 case 76:
 YY_RULE_SETUP
-#line 933 "psqlscan.l"
+#line 933 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 { appendPQExpBufferChar(output_buf, '\''); }
 	YY_BREAK
 case 77:
 YY_RULE_SETUP
-#line 935 "psqlscan.l"
+#line 935 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 { appendPQExpBufferChar(output_buf, '\n'); }
 	YY_BREAK
 case 78:
 YY_RULE_SETUP
-#line 936 "psqlscan.l"
+#line 936 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 { appendPQExpBufferChar(output_buf, '\t'); }
 	YY_BREAK
 case 79:
 YY_RULE_SETUP
-#line 937 "psqlscan.l"
+#line 937 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 { appendPQExpBufferChar(output_buf, '\b'); }
 	YY_BREAK
 case 80:
 YY_RULE_SETUP
-#line 938 "psqlscan.l"
+#line 938 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 { appendPQExpBufferChar(output_buf, '\r'); }
 	YY_BREAK
 case 81:
 YY_RULE_SETUP
-#line 939 "psqlscan.l"
+#line 939 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 { appendPQExpBufferChar(output_buf, '\f'); }
 	YY_BREAK
 case 82:
 YY_RULE_SETUP
-#line 941 "psqlscan.l"
+#line 941 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 {
 					/* octal case */
 					appendPQExpBufferChar(output_buf,
@@ -5473,7 +5473,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 83:
 YY_RULE_SETUP
-#line 947 "psqlscan.l"
+#line 947 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 {
 					/* hex case */
 					appendPQExpBufferChar(output_buf,
@@ -5482,13 +5482,13 @@ YY_RULE_SETUP
 	YY_BREAK
 case 84:
 YY_RULE_SETUP
-#line 953 "psqlscan.l"
+#line 953 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 { emit(yytext + 1, 1); }
 	YY_BREAK
 case 85:
 /* rule 85 can match eol */
 YY_RULE_SETUP
-#line 955 "psqlscan.l"
+#line 955 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 { ECHO; }
 	YY_BREAK
 
@@ -5499,13 +5499,13 @@ YY_RULE_SETUP
 	 */
 case 86:
 YY_RULE_SETUP
-#line 965 "psqlscan.l"
+#line 965 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 { return LEXRES_OK; }
 	YY_BREAK
 case 87:
 /* rule 87 can match eol */
 YY_RULE_SETUP
-#line 967 "psqlscan.l"
+#line 967 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 { ECHO; }
 	YY_BREAK
 
@@ -5517,7 +5517,7 @@ YY_RULE_SETUP
 case 88:
 /* rule 88 can match eol */
 YY_RULE_SETUP
-#line 977 "psqlscan.l"
+#line 977 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 {
 					yyless(0);
 					return LEXRES_OK;
@@ -5525,7 +5525,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 89:
 YY_RULE_SETUP
-#line 982 "psqlscan.l"
+#line 982 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 {
 					/*
 					 * unquoted backslash is end of command or next command,
@@ -5540,7 +5540,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 90:
 YY_RULE_SETUP
-#line 994 "psqlscan.l"
+#line 994 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 {
 					*option_quote = '"';
 					ECHO;
@@ -5549,7 +5549,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 91:
 YY_RULE_SETUP
-#line 1000 "psqlscan.l"
+#line 1000 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 { ECHO; }
 	YY_BREAK
 
@@ -5557,7 +5557,7 @@ YY_RULE_SETUP
 /* double-quoted text within a default-type argument: copy */
 case 92:
 YY_RULE_SETUP
-#line 1007 "psqlscan.l"
+#line 1007 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 {
 					ECHO;
 					BEGIN(xslashdefaultarg);
@@ -5566,7 +5566,7 @@ YY_RULE_SETUP
 case 93:
 /* rule 93 can match eol */
 YY_RULE_SETUP
-#line 1012 "psqlscan.l"
+#line 1012 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 { ECHO; }
 	YY_BREAK
 
@@ -5576,7 +5576,7 @@ YY_RULE_SETUP
 case 94:
 /* rule 94 can match eol */
 YY_RULE_SETUP
-#line 1020 "psqlscan.l"
+#line 1020 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 {
 					if (output_buf->len > 0)
 						ECHO;
@@ -5584,7 +5584,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 95:
 YY_RULE_SETUP
-#line 1025 "psqlscan.l"
+#line 1025 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 { ECHO; }
 	YY_BREAK
 
@@ -5592,13 +5592,13 @@ YY_RULE_SETUP
 /* at end of command, eat a double backslash, but not anything else */
 case 96:
 YY_RULE_SETUP
-#line 1032 "psqlscan.l"
+#line 1032 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 { return LEXRES_OK; }
 	YY_BREAK
 case 97:
 /* rule 97 can match eol */
 YY_RULE_SETUP
-#line 1034 "psqlscan.l"
+#line 1034 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 {
 					yyless(0);
 					return LEXRES_OK;
@@ -5607,10 +5607,10 @@ YY_RULE_SETUP
 
 case 98:
 YY_RULE_SETUP
-#line 1041 "psqlscan.l"
+#line 1041 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 YY_FATAL_ERROR( "flex scanner jammed" );
 	YY_BREAK
-#line 5614 "psqlscan.c"
+#line 5614 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.c"
 
 	case YY_END_OF_BUFFER:
 		{
@@ -6540,7 +6540,7 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 1041 "psqlscan.l"
+#line 1041 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/bin/psql/psqlscan.l"
 
 
 

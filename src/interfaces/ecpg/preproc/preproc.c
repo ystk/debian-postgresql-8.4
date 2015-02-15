@@ -74,7 +74,7 @@
 /* Copy the first part of user declarations.  */
 
 /* Line 268 of yacc.c  */
-#line 5 "preproc.y"
+#line 5 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
 
 #include "postgres_fe.h"
 
@@ -450,7 +450,7 @@ add_typedef(char *name, char * dimension, char * length, enum ECPGttype type_enu
 
 
 /* Line 268 of yacc.c  */
-#line 454 "preproc.c"
+#line 454 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.c"
 
 /* Enabling traces.  */
 #ifndef YYDEBUG
@@ -970,7 +970,7 @@ typedef union YYSTYPE
 {
 
 /* Line 293 of yacc.c  */
-#line 383 "preproc.y"
+#line 383 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
 
 	double	dval;
 	char	*str;
@@ -988,7 +988,7 @@ typedef union YYSTYPE
 
 
 /* Line 293 of yacc.c  */
-#line 992 "preproc.c"
+#line 992 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.c"
 } YYSTYPE;
 # define YYSTYPE_IS_TRIVIAL 1
 # define yystype YYSTYPE /* obsolescent; will be withdrawn */
@@ -1013,7 +1013,7 @@ typedef struct YYLTYPE
 
 
 /* Line 343 of yacc.c  */
-#line 1017 "preproc.c"
+#line 1017 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.c"
 
 #ifdef short
 # undef short
@@ -22860,147 +22860,147 @@ yyreduce:
         case 3:
 
 /* Line 1806 of yacc.c  */
-#line 1192 "preproc.y"
+#line 1192 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 0, ECPGst_normal); }
     break;
 
   case 4:
 
 /* Line 1806 of yacc.c  */
-#line 1194 "preproc.y"
+#line 1194 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 0, ECPGst_normal); }
     break;
 
   case 5:
 
 /* Line 1806 of yacc.c  */
-#line 1196 "preproc.y"
+#line 1196 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 0, ECPGst_normal); }
     break;
 
   case 6:
 
 /* Line 1806 of yacc.c  */
-#line 1198 "preproc.y"
+#line 1198 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 0, ECPGst_normal); }
     break;
 
   case 7:
 
 /* Line 1806 of yacc.c  */
-#line 1200 "preproc.y"
+#line 1200 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 0, ECPGst_normal); }
     break;
 
   case 8:
 
 /* Line 1806 of yacc.c  */
-#line 1202 "preproc.y"
+#line 1202 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 0, ECPGst_normal); }
     break;
 
   case 9:
 
 /* Line 1806 of yacc.c  */
-#line 1204 "preproc.y"
+#line 1204 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 0, ECPGst_normal); }
     break;
 
   case 10:
 
 /* Line 1806 of yacc.c  */
-#line 1206 "preproc.y"
+#line 1206 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 0, ECPGst_normal); }
     break;
 
   case 11:
 
 /* Line 1806 of yacc.c  */
-#line 1208 "preproc.y"
+#line 1208 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 0, ECPGst_normal); }
     break;
 
   case 12:
 
 /* Line 1806 of yacc.c  */
-#line 1210 "preproc.y"
+#line 1210 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 0, ECPGst_normal); }
     break;
 
   case 13:
 
 /* Line 1806 of yacc.c  */
-#line 1212 "preproc.y"
+#line 1212 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 0, ECPGst_normal); }
     break;
 
   case 14:
 
 /* Line 1806 of yacc.c  */
-#line 1214 "preproc.y"
+#line 1214 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 0, ECPGst_normal); }
     break;
 
   case 15:
 
 /* Line 1806 of yacc.c  */
-#line 1216 "preproc.y"
+#line 1216 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 0, ECPGst_normal); }
     break;
 
   case 16:
 
 /* Line 1806 of yacc.c  */
-#line 1218 "preproc.y"
+#line 1218 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 0, ECPGst_normal); }
     break;
 
   case 17:
 
 /* Line 1806 of yacc.c  */
-#line 1220 "preproc.y"
+#line 1220 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 0, ECPGst_normal); }
     break;
 
   case 18:
 
 /* Line 1806 of yacc.c  */
-#line 1222 "preproc.y"
+#line 1222 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 0, ECPGst_normal); }
     break;
 
   case 19:
 
 /* Line 1806 of yacc.c  */
-#line 1224 "preproc.y"
+#line 1224 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 0, ECPGst_normal); }
     break;
 
   case 20:
 
 /* Line 1806 of yacc.c  */
-#line 1226 "preproc.y"
+#line 1226 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 0, ECPGst_normal); }
     break;
 
   case 21:
 
 /* Line 1806 of yacc.c  */
-#line 1228 "preproc.y"
+#line 1228 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 0, ECPGst_normal); }
     break;
 
   case 22:
 
 /* Line 1806 of yacc.c  */
-#line 1230 "preproc.y"
+#line 1230 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 0, ECPGst_normal); }
     break;
 
   case 23:
 
 /* Line 1806 of yacc.c  */
-#line 1232 "preproc.y"
+#line 1232 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 		if (INFORMIX_MODE)
 		{
@@ -23023,189 +23023,189 @@ yyreduce:
   case 24:
 
 /* Line 1806 of yacc.c  */
-#line 1250 "preproc.y"
+#line 1250 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 0, ECPGst_normal); }
     break;
 
   case 25:
 
 /* Line 1806 of yacc.c  */
-#line 1252 "preproc.y"
+#line 1252 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 0, ECPGst_normal); }
     break;
 
   case 26:
 
 /* Line 1806 of yacc.c  */
-#line 1254 "preproc.y"
+#line 1254 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 0, ECPGst_normal); }
     break;
 
   case 27:
 
 /* Line 1806 of yacc.c  */
-#line 1256 "preproc.y"
+#line 1256 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 0, ECPGst_normal); }
     break;
 
   case 28:
 
 /* Line 1806 of yacc.c  */
-#line 1258 "preproc.y"
+#line 1258 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 0, ECPGst_normal); }
     break;
 
   case 29:
 
 /* Line 1806 of yacc.c  */
-#line 1260 "preproc.y"
+#line 1260 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 0, ECPGst_normal); }
     break;
 
   case 30:
 
 /* Line 1806 of yacc.c  */
-#line 1262 "preproc.y"
+#line 1262 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 0, ECPGst_normal); }
     break;
 
   case 31:
 
 /* Line 1806 of yacc.c  */
-#line 1264 "preproc.y"
+#line 1264 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 0, ECPGst_normal); }
     break;
 
   case 32:
 
 /* Line 1806 of yacc.c  */
-#line 1266 "preproc.y"
+#line 1266 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 0, ECPGst_normal); }
     break;
 
   case 33:
 
 /* Line 1806 of yacc.c  */
-#line 1268 "preproc.y"
+#line 1268 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 0, ECPGst_normal); }
     break;
 
   case 34:
 
 /* Line 1806 of yacc.c  */
-#line 1270 "preproc.y"
+#line 1270 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 0, ECPGst_normal); }
     break;
 
   case 35:
 
 /* Line 1806 of yacc.c  */
-#line 1272 "preproc.y"
+#line 1272 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 0, ECPGst_normal); }
     break;
 
   case 36:
 
 /* Line 1806 of yacc.c  */
-#line 1274 "preproc.y"
+#line 1274 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 0, ECPGst_normal); }
     break;
 
   case 37:
 
 /* Line 1806 of yacc.c  */
-#line 1276 "preproc.y"
+#line 1276 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 0, ECPGst_normal); }
     break;
 
   case 38:
 
 /* Line 1806 of yacc.c  */
-#line 1278 "preproc.y"
+#line 1278 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 0, ECPGst_normal); }
     break;
 
   case 39:
 
 /* Line 1806 of yacc.c  */
-#line 1280 "preproc.y"
+#line 1280 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 0, ECPGst_normal); }
     break;
 
   case 40:
 
 /* Line 1806 of yacc.c  */
-#line 1282 "preproc.y"
+#line 1282 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 0, ECPGst_normal); }
     break;
 
   case 41:
 
 /* Line 1806 of yacc.c  */
-#line 1284 "preproc.y"
+#line 1284 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 0, ECPGst_normal); }
     break;
 
   case 42:
 
 /* Line 1806 of yacc.c  */
-#line 1286 "preproc.y"
+#line 1286 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 0, ECPGst_normal); }
     break;
 
   case 43:
 
 /* Line 1806 of yacc.c  */
-#line 1288 "preproc.y"
+#line 1288 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 0, ECPGst_normal); }
     break;
 
   case 44:
 
 /* Line 1806 of yacc.c  */
-#line 1290 "preproc.y"
+#line 1290 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 0, ECPGst_normal); }
     break;
 
   case 45:
 
 /* Line 1806 of yacc.c  */
-#line 1292 "preproc.y"
+#line 1292 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 0, ECPGst_normal); }
     break;
 
   case 46:
 
 /* Line 1806 of yacc.c  */
-#line 1294 "preproc.y"
+#line 1294 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 0, ECPGst_normal); }
     break;
 
   case 47:
 
 /* Line 1806 of yacc.c  */
-#line 1296 "preproc.y"
+#line 1296 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 0, ECPGst_normal); }
     break;
 
   case 48:
 
 /* Line 1806 of yacc.c  */
-#line 1298 "preproc.y"
+#line 1298 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 0, ECPGst_normal); }
     break;
 
   case 49:
 
 /* Line 1806 of yacc.c  */
-#line 1300 "preproc.y"
+#line 1300 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 0, ECPGst_normal); }
     break;
 
   case 50:
 
 /* Line 1806 of yacc.c  */
-#line 1302 "preproc.y"
+#line 1302 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 		output_deallocate_prepare_statement((yyvsp[(1) - (1)].str));
 	}
@@ -23214,231 +23214,231 @@ yyreduce:
   case 51:
 
 /* Line 1806 of yacc.c  */
-#line 1306 "preproc.y"
+#line 1306 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_simple_statement((yyvsp[(1) - (1)].str)); }
     break;
 
   case 52:
 
 /* Line 1806 of yacc.c  */
-#line 1308 "preproc.y"
+#line 1308 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 0, ECPGst_normal); }
     break;
 
   case 53:
 
 /* Line 1806 of yacc.c  */
-#line 1310 "preproc.y"
+#line 1310 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 1, ECPGst_normal); }
     break;
 
   case 54:
 
 /* Line 1806 of yacc.c  */
-#line 1312 "preproc.y"
+#line 1312 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 1, ECPGst_normal); }
     break;
 
   case 55:
 
 /* Line 1806 of yacc.c  */
-#line 1314 "preproc.y"
+#line 1314 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 0, ECPGst_normal); }
     break;
 
   case 56:
 
 /* Line 1806 of yacc.c  */
-#line 1316 "preproc.y"
+#line 1316 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 0, ECPGst_normal); }
     break;
 
   case 57:
 
 /* Line 1806 of yacc.c  */
-#line 1318 "preproc.y"
+#line 1318 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 0, ECPGst_normal); }
     break;
 
   case 58:
 
 /* Line 1806 of yacc.c  */
-#line 1320 "preproc.y"
+#line 1320 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 0, ECPGst_normal); }
     break;
 
   case 59:
 
 /* Line 1806 of yacc.c  */
-#line 1322 "preproc.y"
+#line 1322 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 0, ECPGst_normal); }
     break;
 
   case 60:
 
 /* Line 1806 of yacc.c  */
-#line 1324 "preproc.y"
+#line 1324 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 0, ECPGst_normal); }
     break;
 
   case 61:
 
 /* Line 1806 of yacc.c  */
-#line 1326 "preproc.y"
+#line 1326 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 0, ECPGst_normal); }
     break;
 
   case 62:
 
 /* Line 1806 of yacc.c  */
-#line 1328 "preproc.y"
+#line 1328 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 0, ECPGst_normal); }
     break;
 
   case 63:
 
 /* Line 1806 of yacc.c  */
-#line 1330 "preproc.y"
+#line 1330 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 0, ECPGst_normal); }
     break;
 
   case 64:
 
 /* Line 1806 of yacc.c  */
-#line 1332 "preproc.y"
+#line 1332 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 0, ECPGst_normal); }
     break;
 
   case 65:
 
 /* Line 1806 of yacc.c  */
-#line 1334 "preproc.y"
+#line 1334 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 0, ECPGst_normal); }
     break;
 
   case 66:
 
 /* Line 1806 of yacc.c  */
-#line 1336 "preproc.y"
+#line 1336 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 0, ECPGst_normal); }
     break;
 
   case 67:
 
 /* Line 1806 of yacc.c  */
-#line 1338 "preproc.y"
+#line 1338 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 0, ECPGst_normal); }
     break;
 
   case 68:
 
 /* Line 1806 of yacc.c  */
-#line 1340 "preproc.y"
+#line 1340 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 0, ECPGst_normal); }
     break;
 
   case 69:
 
 /* Line 1806 of yacc.c  */
-#line 1342 "preproc.y"
+#line 1342 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 0, ECPGst_normal); }
     break;
 
   case 70:
 
 /* Line 1806 of yacc.c  */
-#line 1344 "preproc.y"
+#line 1344 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 0, ECPGst_normal); }
     break;
 
   case 71:
 
 /* Line 1806 of yacc.c  */
-#line 1346 "preproc.y"
+#line 1346 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 0, ECPGst_normal); }
     break;
 
   case 72:
 
 /* Line 1806 of yacc.c  */
-#line 1348 "preproc.y"
+#line 1348 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 1, ECPGst_execute); }
     break;
 
   case 73:
 
 /* Line 1806 of yacc.c  */
-#line 1350 "preproc.y"
+#line 1350 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 0, ECPGst_normal); }
     break;
 
   case 74:
 
 /* Line 1806 of yacc.c  */
-#line 1352 "preproc.y"
+#line 1352 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 1, ECPGst_normal); }
     break;
 
   case 75:
 
 /* Line 1806 of yacc.c  */
-#line 1354 "preproc.y"
+#line 1354 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 0, ECPGst_normal); }
     break;
 
   case 76:
 
 /* Line 1806 of yacc.c  */
-#line 1356 "preproc.y"
+#line 1356 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 0, ECPGst_normal); }
     break;
 
   case 77:
 
 /* Line 1806 of yacc.c  */
-#line 1358 "preproc.y"
+#line 1358 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 0, ECPGst_normal); }
     break;
 
   case 78:
 
 /* Line 1806 of yacc.c  */
-#line 1360 "preproc.y"
+#line 1360 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 1, ECPGst_normal); }
     break;
 
   case 79:
 
 /* Line 1806 of yacc.c  */
-#line 1362 "preproc.y"
+#line 1362 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 0, ECPGst_normal); }
     break;
 
   case 80:
 
 /* Line 1806 of yacc.c  */
-#line 1364 "preproc.y"
+#line 1364 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 0, ECPGst_normal); }
     break;
 
   case 81:
 
 /* Line 1806 of yacc.c  */
-#line 1366 "preproc.y"
+#line 1366 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 0, ECPGst_normal); }
     break;
 
   case 82:
 
 /* Line 1806 of yacc.c  */
-#line 1368 "preproc.y"
+#line 1368 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 0, ECPGst_normal); }
     break;
 
   case 83:
 
 /* Line 1806 of yacc.c  */
-#line 1370 "preproc.y"
+#line 1370 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 		if ((yyvsp[(1) - (1)].prep).type == NULL || strlen((yyvsp[(1) - (1)].prep).type) == 0)
 			output_prepare_statement((yyvsp[(1) - (1)].prep).name, (yyvsp[(1) - (1)].prep).stmt);
@@ -23450,77 +23450,77 @@ yyreduce:
   case 84:
 
 /* Line 1806 of yacc.c  */
-#line 1377 "preproc.y"
+#line 1377 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 0, ECPGst_normal); }
     break;
 
   case 85:
 
 /* Line 1806 of yacc.c  */
-#line 1379 "preproc.y"
+#line 1379 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 0, ECPGst_normal); }
     break;
 
   case 86:
 
 /* Line 1806 of yacc.c  */
-#line 1381 "preproc.y"
+#line 1381 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 0, ECPGst_normal); }
     break;
 
   case 87:
 
 /* Line 1806 of yacc.c  */
-#line 1383 "preproc.y"
+#line 1383 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 0, ECPGst_normal); }
     break;
 
   case 88:
 
 /* Line 1806 of yacc.c  */
-#line 1385 "preproc.y"
+#line 1385 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 0, ECPGst_normal); }
     break;
 
   case 89:
 
 /* Line 1806 of yacc.c  */
-#line 1387 "preproc.y"
+#line 1387 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 0, ECPGst_normal); }
     break;
 
   case 90:
 
 /* Line 1806 of yacc.c  */
-#line 1389 "preproc.y"
+#line 1389 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 0, ECPGst_normal); }
     break;
 
   case 91:
 
 /* Line 1806 of yacc.c  */
-#line 1391 "preproc.y"
+#line 1391 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 0, ECPGst_normal); }
     break;
 
   case 92:
 
 /* Line 1806 of yacc.c  */
-#line 1393 "preproc.y"
+#line 1393 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 0, ECPGst_normal); }
     break;
 
   case 93:
 
 /* Line 1806 of yacc.c  */
-#line 1395 "preproc.y"
+#line 1395 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 1, ECPGst_normal); }
     break;
 
   case 94:
 
 /* Line 1806 of yacc.c  */
-#line 1397 "preproc.y"
+#line 1397 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 		fprintf(yyout, "{ ECPGtrans(__LINE__, %s, \"%s\");", connection ? connection : "NULL", (yyvsp[(1) - (1)].str));
 		whenever_action(2);
@@ -23531,63 +23531,63 @@ yyreduce:
   case 95:
 
 /* Line 1806 of yacc.c  */
-#line 1403 "preproc.y"
+#line 1403 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 0, ECPGst_normal); }
     break;
 
   case 96:
 
 /* Line 1806 of yacc.c  */
-#line 1405 "preproc.y"
+#line 1405 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 0, ECPGst_normal); }
     break;
 
   case 97:
 
 /* Line 1806 of yacc.c  */
-#line 1407 "preproc.y"
+#line 1407 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 1, ECPGst_normal); }
     break;
 
   case 98:
 
 /* Line 1806 of yacc.c  */
-#line 1409 "preproc.y"
+#line 1409 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 0, ECPGst_normal); }
     break;
 
   case 99:
 
 /* Line 1806 of yacc.c  */
-#line 1411 "preproc.y"
+#line 1411 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 0, ECPGst_normal); }
     break;
 
   case 100:
 
 /* Line 1806 of yacc.c  */
-#line 1413 "preproc.y"
+#line 1413 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 0, ECPGst_normal); }
     break;
 
   case 101:
 
 /* Line 1806 of yacc.c  */
-#line 1415 "preproc.y"
+#line 1415 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 0, ECPGst_normal); }
     break;
 
   case 102:
 
 /* Line 1806 of yacc.c  */
-#line 1417 "preproc.y"
+#line 1417 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 0, ECPGst_normal); }
     break;
 
   case 103:
 
 /* Line 1806 of yacc.c  */
-#line 1419 "preproc.y"
+#line 1419 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 		fprintf(yyout,"ECPGallocate_desc(__LINE__, %s);",(yyvsp[(1) - (1)].str));
 		whenever_action(0);
@@ -23598,7 +23598,7 @@ yyreduce:
   case 104:
 
 /* Line 1806 of yacc.c  */
-#line 1425 "preproc.y"
+#line 1425 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 		if (connection)
 			mmerror(PARSE_ERROR, ET_ERROR, "AT option not allowed in CONNECT statement");
@@ -23613,7 +23613,7 @@ yyreduce:
   case 105:
 
 /* Line 1806 of yacc.c  */
-#line 1435 "preproc.y"
+#line 1435 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 		output_simple_statement((yyvsp[(1) - (1)].str));
 	}
@@ -23622,7 +23622,7 @@ yyreduce:
   case 106:
 
 /* Line 1806 of yacc.c  */
-#line 1439 "preproc.y"
+#line 1439 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 		fprintf(yyout,"ECPGdeallocate_desc(__LINE__, %s);",(yyvsp[(1) - (1)].str));
 		whenever_action(0);
@@ -23633,7 +23633,7 @@ yyreduce:
   case 107:
 
 /* Line 1806 of yacc.c  */
-#line 1445 "preproc.y"
+#line 1445 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 		output_simple_statement((yyvsp[(1) - (1)].str));
 	}
@@ -23642,7 +23642,7 @@ yyreduce:
   case 108:
 
 /* Line 1806 of yacc.c  */
-#line 1449 "preproc.y"
+#line 1449 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 		fprintf(yyout, "{ ECPGdescribe(__LINE__, %s,", (yyvsp[(1) - (1)].str));
 		dump_variables(argsresult, 1);
@@ -23657,7 +23657,7 @@ yyreduce:
   case 109:
 
 /* Line 1806 of yacc.c  */
-#line 1459 "preproc.y"
+#line 1459 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 		if (connection)
 			mmerror(PARSE_ERROR, ET_ERROR, "AT option not allowed in DISCONNECT statement");
@@ -23672,14 +23672,14 @@ yyreduce:
   case 110:
 
 /* Line 1806 of yacc.c  */
-#line 1468 "preproc.y"
+#line 1468 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { output_statement((yyvsp[(1) - (1)].str), 0, ECPGst_exec_immediate); }
     break;
 
   case 111:
 
 /* Line 1806 of yacc.c  */
-#line 1470 "preproc.y"
+#line 1470 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 		const char *con = connection ? connection : "NULL";
 		if (strcmp((yyvsp[(1) - (1)].str), "all"))
@@ -23695,7 +23695,7 @@ yyreduce:
   case 112:
 
 /* Line 1806 of yacc.c  */
-#line 1481 "preproc.y"
+#line 1481 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 		lookup_descriptor((yyvsp[(1) - (1)].descriptor).name, connection);
 		output_get_descr((yyvsp[(1) - (1)].descriptor).name, (yyvsp[(1) - (1)].descriptor).str);
@@ -23707,7 +23707,7 @@ yyreduce:
   case 113:
 
 /* Line 1806 of yacc.c  */
-#line 1488 "preproc.y"
+#line 1488 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 		lookup_descriptor((yyvsp[(1) - (1)].str), connection);
 		output_get_descr_header((yyvsp[(1) - (1)].str));
@@ -23718,7 +23718,7 @@ yyreduce:
   case 114:
 
 /* Line 1806 of yacc.c  */
-#line 1494 "preproc.y"
+#line 1494 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 		struct cursor *ptr;
 
@@ -23734,7 +23734,7 @@ yyreduce:
   case 115:
 
 /* Line 1806 of yacc.c  */
-#line 1505 "preproc.y"
+#line 1505 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 		fprintf(yyout, "{ ECPGsetcommit(__LINE__, \"%s\", %s);", (yyvsp[(1) - (1)].str), connection ? connection : "NULL");
 		whenever_action(2);
@@ -23745,7 +23745,7 @@ yyreduce:
   case 116:
 
 /* Line 1806 of yacc.c  */
-#line 1511 "preproc.y"
+#line 1511 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 		if (connection)
 			mmerror(PARSE_ERROR, ET_ERROR, "AT option not allowed in SET CONNECTION statement");
@@ -23759,7 +23759,7 @@ yyreduce:
   case 117:
 
 /* Line 1806 of yacc.c  */
-#line 1520 "preproc.y"
+#line 1520 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 		lookup_descriptor((yyvsp[(1) - (1)].descriptor).name, connection);
 		output_set_descr((yyvsp[(1) - (1)].descriptor).name, (yyvsp[(1) - (1)].descriptor).str);
@@ -23771,7 +23771,7 @@ yyreduce:
   case 118:
 
 /* Line 1806 of yacc.c  */
-#line 1527 "preproc.y"
+#line 1527 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 		lookup_descriptor((yyvsp[(1) - (1)].str), connection);
 		output_set_descr_header((yyvsp[(1) - (1)].str));
@@ -23782,7 +23782,7 @@ yyreduce:
   case 119:
 
 /* Line 1806 of yacc.c  */
-#line 1533 "preproc.y"
+#line 1533 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 		if (connection)
 			mmerror(PARSE_ERROR, ET_ERROR, "AT option not allowed in TYPE statement");
@@ -23796,7 +23796,7 @@ yyreduce:
   case 120:
 
 /* Line 1806 of yacc.c  */
-#line 1542 "preproc.y"
+#line 1542 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 		if (connection)
 			mmerror(PARSE_ERROR, ET_ERROR, "AT option not allowed in VAR statement");
@@ -23808,7 +23808,7 @@ yyreduce:
   case 121:
 
 /* Line 1806 of yacc.c  */
-#line 1549 "preproc.y"
+#line 1549 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 		if (connection)
 			mmerror(PARSE_ERROR, ET_ERROR, "AT option not allowed in WHENEVER statement");
@@ -23820,14 +23820,14 @@ yyreduce:
   case 122:
 
 /* Line 1806 of yacc.c  */
-#line 1556 "preproc.y"
+#line 1556 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = NULL; }
     break;
 
   case 123:
 
 /* Line 1806 of yacc.c  */
-#line 1562 "preproc.y"
+#line 1562 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,make_str("create role"),(yyvsp[(3) - (5)].str),(yyvsp[(4) - (5)].str),(yyvsp[(5) - (5)].str));
 }
@@ -23836,7 +23836,7 @@ yyreduce:
   case 124:
 
 /* Line 1806 of yacc.c  */
-#line 1570 "preproc.y"
+#line 1570 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("with");
 }
@@ -23845,7 +23845,7 @@ yyreduce:
   case 125:
 
 /* Line 1806 of yacc.c  */
-#line 1574 "preproc.y"
+#line 1574 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -23853,7 +23853,7 @@ yyreduce:
   case 126:
 
 /* Line 1806 of yacc.c  */
-#line 1581 "preproc.y"
+#line 1581 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,(yyvsp[(1) - (2)].str),(yyvsp[(2) - (2)].str));
 }
@@ -23862,7 +23862,7 @@ yyreduce:
   case 127:
 
 /* Line 1806 of yacc.c  */
-#line 1585 "preproc.y"
+#line 1585 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -23870,7 +23870,7 @@ yyreduce:
   case 128:
 
 /* Line 1806 of yacc.c  */
-#line 1592 "preproc.y"
+#line 1592 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("password"),(yyvsp[(2) - (2)].str));
 }
@@ -23879,7 +23879,7 @@ yyreduce:
   case 129:
 
 /* Line 1806 of yacc.c  */
-#line 1596 "preproc.y"
+#line 1596 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("password null");
 }
@@ -23888,7 +23888,7 @@ yyreduce:
   case 130:
 
 /* Line 1806 of yacc.c  */
-#line 1600 "preproc.y"
+#line 1600 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("encrypted password"),(yyvsp[(3) - (3)].str));
 }
@@ -23897,7 +23897,7 @@ yyreduce:
   case 131:
 
 /* Line 1806 of yacc.c  */
-#line 1604 "preproc.y"
+#line 1604 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("unencrypted password"),(yyvsp[(3) - (3)].str));
 }
@@ -23906,7 +23906,7 @@ yyreduce:
   case 132:
 
 /* Line 1806 of yacc.c  */
-#line 1608 "preproc.y"
+#line 1608 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("superuser");
 }
@@ -23915,7 +23915,7 @@ yyreduce:
   case 133:
 
 /* Line 1806 of yacc.c  */
-#line 1612 "preproc.y"
+#line 1612 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("nosuperuser");
 }
@@ -23924,7 +23924,7 @@ yyreduce:
   case 134:
 
 /* Line 1806 of yacc.c  */
-#line 1616 "preproc.y"
+#line 1616 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("inherit");
 }
@@ -23933,7 +23933,7 @@ yyreduce:
   case 135:
 
 /* Line 1806 of yacc.c  */
-#line 1620 "preproc.y"
+#line 1620 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("noinherit");
 }
@@ -23942,7 +23942,7 @@ yyreduce:
   case 136:
 
 /* Line 1806 of yacc.c  */
-#line 1624 "preproc.y"
+#line 1624 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("createdb");
 }
@@ -23951,7 +23951,7 @@ yyreduce:
   case 137:
 
 /* Line 1806 of yacc.c  */
-#line 1628 "preproc.y"
+#line 1628 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("nocreatedb");
 }
@@ -23960,7 +23960,7 @@ yyreduce:
   case 138:
 
 /* Line 1806 of yacc.c  */
-#line 1632 "preproc.y"
+#line 1632 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("createrole");
 }
@@ -23969,7 +23969,7 @@ yyreduce:
   case 139:
 
 /* Line 1806 of yacc.c  */
-#line 1636 "preproc.y"
+#line 1636 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("nocreaterole");
 }
@@ -23978,7 +23978,7 @@ yyreduce:
   case 140:
 
 /* Line 1806 of yacc.c  */
-#line 1640 "preproc.y"
+#line 1640 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("createuser");
 }
@@ -23987,7 +23987,7 @@ yyreduce:
   case 141:
 
 /* Line 1806 of yacc.c  */
-#line 1644 "preproc.y"
+#line 1644 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("nocreateuser");
 }
@@ -23996,7 +23996,7 @@ yyreduce:
   case 142:
 
 /* Line 1806 of yacc.c  */
-#line 1648 "preproc.y"
+#line 1648 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("login");
 }
@@ -24005,7 +24005,7 @@ yyreduce:
   case 143:
 
 /* Line 1806 of yacc.c  */
-#line 1652 "preproc.y"
+#line 1652 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("nologin");
 }
@@ -24014,7 +24014,7 @@ yyreduce:
   case 144:
 
 /* Line 1806 of yacc.c  */
-#line 1656 "preproc.y"
+#line 1656 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("connection limit"),(yyvsp[(3) - (3)].str));
 }
@@ -24023,7 +24023,7 @@ yyreduce:
   case 145:
 
 /* Line 1806 of yacc.c  */
-#line 1660 "preproc.y"
+#line 1660 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("valid until"),(yyvsp[(3) - (3)].str));
 }
@@ -24032,7 +24032,7 @@ yyreduce:
   case 146:
 
 /* Line 1806 of yacc.c  */
-#line 1664 "preproc.y"
+#line 1664 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("user"),(yyvsp[(2) - (2)].str));
 }
@@ -24041,7 +24041,7 @@ yyreduce:
   case 147:
 
 /* Line 1806 of yacc.c  */
-#line 1668 "preproc.y"
+#line 1668 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("sysid"),(yyvsp[(2) - (2)].str));
 }
@@ -24050,7 +24050,7 @@ yyreduce:
   case 148:
 
 /* Line 1806 of yacc.c  */
-#line 1672 "preproc.y"
+#line 1672 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("admin"),(yyvsp[(2) - (2)].str));
 }
@@ -24059,7 +24059,7 @@ yyreduce:
   case 149:
 
 /* Line 1806 of yacc.c  */
-#line 1676 "preproc.y"
+#line 1676 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("role"),(yyvsp[(2) - (2)].str));
 }
@@ -24068,7 +24068,7 @@ yyreduce:
   case 150:
 
 /* Line 1806 of yacc.c  */
-#line 1680 "preproc.y"
+#line 1680 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("in role"),(yyvsp[(3) - (3)].str));
 }
@@ -24077,7 +24077,7 @@ yyreduce:
   case 151:
 
 /* Line 1806 of yacc.c  */
-#line 1684 "preproc.y"
+#line 1684 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("in group"),(yyvsp[(3) - (3)].str));
 }
@@ -24086,7 +24086,7 @@ yyreduce:
   case 152:
 
 /* Line 1806 of yacc.c  */
-#line 1692 "preproc.y"
+#line 1692 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,make_str("create user"),(yyvsp[(3) - (5)].str),(yyvsp[(4) - (5)].str),(yyvsp[(5) - (5)].str));
 }
@@ -24095,7 +24095,7 @@ yyreduce:
   case 153:
 
 /* Line 1806 of yacc.c  */
-#line 1700 "preproc.y"
+#line 1700 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,make_str("alter role"),(yyvsp[(3) - (5)].str),(yyvsp[(4) - (5)].str),(yyvsp[(5) - (5)].str));
 }
@@ -24104,7 +24104,7 @@ yyreduce:
   case 154:
 
 /* Line 1806 of yacc.c  */
-#line 1708 "preproc.y"
+#line 1708 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("alter role"),(yyvsp[(3) - (4)].str),(yyvsp[(4) - (4)].str));
 }
@@ -24113,7 +24113,7 @@ yyreduce:
   case 155:
 
 /* Line 1806 of yacc.c  */
-#line 1716 "preproc.y"
+#line 1716 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,make_str("alter user"),(yyvsp[(3) - (5)].str),(yyvsp[(4) - (5)].str),(yyvsp[(5) - (5)].str));
 }
@@ -24122,7 +24122,7 @@ yyreduce:
   case 156:
 
 /* Line 1806 of yacc.c  */
-#line 1724 "preproc.y"
+#line 1724 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("alter user"),(yyvsp[(3) - (4)].str),(yyvsp[(4) - (4)].str));
 }
@@ -24131,7 +24131,7 @@ yyreduce:
   case 157:
 
 /* Line 1806 of yacc.c  */
-#line 1732 "preproc.y"
+#line 1732 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("drop role"),(yyvsp[(3) - (3)].str));
 }
@@ -24140,7 +24140,7 @@ yyreduce:
   case 158:
 
 /* Line 1806 of yacc.c  */
-#line 1736 "preproc.y"
+#line 1736 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("drop role if exists"),(yyvsp[(5) - (5)].str));
 }
@@ -24149,7 +24149,7 @@ yyreduce:
   case 159:
 
 /* Line 1806 of yacc.c  */
-#line 1744 "preproc.y"
+#line 1744 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("drop user"),(yyvsp[(3) - (3)].str));
 }
@@ -24158,7 +24158,7 @@ yyreduce:
   case 160:
 
 /* Line 1806 of yacc.c  */
-#line 1748 "preproc.y"
+#line 1748 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("drop user if exists"),(yyvsp[(5) - (5)].str));
 }
@@ -24167,7 +24167,7 @@ yyreduce:
   case 161:
 
 /* Line 1806 of yacc.c  */
-#line 1756 "preproc.y"
+#line 1756 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,make_str("create group"),(yyvsp[(3) - (5)].str),(yyvsp[(4) - (5)].str),(yyvsp[(5) - (5)].str));
 }
@@ -24176,7 +24176,7 @@ yyreduce:
   case 162:
 
 /* Line 1806 of yacc.c  */
-#line 1764 "preproc.y"
+#line 1764 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(5,make_str("alter group"),(yyvsp[(3) - (6)].str),(yyvsp[(4) - (6)].str),make_str("user"),(yyvsp[(6) - (6)].str));
 }
@@ -24185,7 +24185,7 @@ yyreduce:
   case 163:
 
 /* Line 1806 of yacc.c  */
-#line 1772 "preproc.y"
+#line 1772 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("add");
 }
@@ -24194,7 +24194,7 @@ yyreduce:
   case 164:
 
 /* Line 1806 of yacc.c  */
-#line 1776 "preproc.y"
+#line 1776 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("drop");
 }
@@ -24203,7 +24203,7 @@ yyreduce:
   case 165:
 
 /* Line 1806 of yacc.c  */
-#line 1784 "preproc.y"
+#line 1784 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("drop group"),(yyvsp[(3) - (3)].str));
 }
@@ -24212,7 +24212,7 @@ yyreduce:
   case 166:
 
 /* Line 1806 of yacc.c  */
-#line 1788 "preproc.y"
+#line 1788 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("drop group if exists"),(yyvsp[(5) - (5)].str));
 }
@@ -24221,7 +24221,7 @@ yyreduce:
   case 167:
 
 /* Line 1806 of yacc.c  */
-#line 1796 "preproc.y"
+#line 1796 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(5,make_str("create schema"),(yyvsp[(3) - (6)].str),make_str("authorization"),(yyvsp[(5) - (6)].str),(yyvsp[(6) - (6)].str));
 }
@@ -24230,7 +24230,7 @@ yyreduce:
   case 168:
 
 /* Line 1806 of yacc.c  */
-#line 1800 "preproc.y"
+#line 1800 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("create schema"),(yyvsp[(3) - (4)].str),(yyvsp[(4) - (4)].str));
 }
@@ -24239,7 +24239,7 @@ yyreduce:
   case 169:
 
 /* Line 1806 of yacc.c  */
-#line 1808 "preproc.y"
+#line 1808 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -24248,7 +24248,7 @@ yyreduce:
   case 170:
 
 /* Line 1806 of yacc.c  */
-#line 1812 "preproc.y"
+#line 1812 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -24256,7 +24256,7 @@ yyreduce:
   case 171:
 
 /* Line 1806 of yacc.c  */
-#line 1819 "preproc.y"
+#line 1819 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,(yyvsp[(1) - (2)].str),(yyvsp[(2) - (2)].str));
 }
@@ -24265,7 +24265,7 @@ yyreduce:
   case 172:
 
 /* Line 1806 of yacc.c  */
-#line 1823 "preproc.y"
+#line 1823 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -24273,7 +24273,7 @@ yyreduce:
   case 173:
 
 /* Line 1806 of yacc.c  */
-#line 1830 "preproc.y"
+#line 1830 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -24282,7 +24282,7 @@ yyreduce:
   case 174:
 
 /* Line 1806 of yacc.c  */
-#line 1834 "preproc.y"
+#line 1834 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -24291,7 +24291,7 @@ yyreduce:
   case 175:
 
 /* Line 1806 of yacc.c  */
-#line 1838 "preproc.y"
+#line 1838 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -24300,7 +24300,7 @@ yyreduce:
   case 176:
 
 /* Line 1806 of yacc.c  */
-#line 1842 "preproc.y"
+#line 1842 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -24309,7 +24309,7 @@ yyreduce:
   case 177:
 
 /* Line 1806 of yacc.c  */
-#line 1846 "preproc.y"
+#line 1846 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -24318,7 +24318,7 @@ yyreduce:
   case 178:
 
 /* Line 1806 of yacc.c  */
-#line 1850 "preproc.y"
+#line 1850 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -24327,7 +24327,7 @@ yyreduce:
   case 179:
 
 /* Line 1806 of yacc.c  */
-#line 1858 "preproc.y"
+#line 1858 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("set"),(yyvsp[(2) - (2)].str));
 }
@@ -24336,7 +24336,7 @@ yyreduce:
   case 180:
 
 /* Line 1806 of yacc.c  */
-#line 1862 "preproc.y"
+#line 1862 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("set local"),(yyvsp[(3) - (3)].str));
 }
@@ -24345,7 +24345,7 @@ yyreduce:
   case 181:
 
 /* Line 1806 of yacc.c  */
-#line 1866 "preproc.y"
+#line 1866 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("set session"),(yyvsp[(3) - (3)].str));
 }
@@ -24354,7 +24354,7 @@ yyreduce:
   case 182:
 
 /* Line 1806 of yacc.c  */
-#line 1874 "preproc.y"
+#line 1874 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),make_str("to"),(yyvsp[(3) - (3)].str));
 }
@@ -24363,7 +24363,7 @@ yyreduce:
   case 183:
 
 /* Line 1806 of yacc.c  */
-#line 1878 "preproc.y"
+#line 1878 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),make_str("="),(yyvsp[(3) - (3)].str));
 }
@@ -24372,7 +24372,7 @@ yyreduce:
   case 184:
 
 /* Line 1806 of yacc.c  */
-#line 1882 "preproc.y"
+#line 1882 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,(yyvsp[(1) - (3)].str),make_str("to default"));
 }
@@ -24381,7 +24381,7 @@ yyreduce:
   case 185:
 
 /* Line 1806 of yacc.c  */
-#line 1886 "preproc.y"
+#line 1886 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,(yyvsp[(1) - (3)].str),make_str("= default"));
 }
@@ -24390,7 +24390,7 @@ yyreduce:
   case 186:
 
 /* Line 1806 of yacc.c  */
-#line 1890 "preproc.y"
+#line 1890 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,(yyvsp[(1) - (3)].str),make_str("from current"));
 }
@@ -24399,7 +24399,7 @@ yyreduce:
   case 187:
 
 /* Line 1806 of yacc.c  */
-#line 1894 "preproc.y"
+#line 1894 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("time zone"),(yyvsp[(3) - (3)].str));
 }
@@ -24408,7 +24408,7 @@ yyreduce:
   case 188:
 
 /* Line 1806 of yacc.c  */
-#line 1898 "preproc.y"
+#line 1898 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("transaction"),(yyvsp[(2) - (2)].str));
 }
@@ -24417,7 +24417,7 @@ yyreduce:
   case 189:
 
 /* Line 1806 of yacc.c  */
-#line 1902 "preproc.y"
+#line 1902 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("session characteristics as transaction"),(yyvsp[(5) - (5)].str));
 }
@@ -24426,7 +24426,7 @@ yyreduce:
   case 190:
 
 /* Line 1806 of yacc.c  */
-#line 1906 "preproc.y"
+#line 1906 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
 mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server");
  (yyval.str) = cat_str(2,make_str("catalog"),(yyvsp[(2) - (2)].str));
@@ -24436,7 +24436,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 191:
 
 /* Line 1806 of yacc.c  */
-#line 1911 "preproc.y"
+#line 1911 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("schema"),(yyvsp[(2) - (2)].str));
 }
@@ -24445,7 +24445,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 192:
 
 /* Line 1806 of yacc.c  */
-#line 1915 "preproc.y"
+#line 1915 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("names"),(yyvsp[(2) - (2)].str));
 }
@@ -24454,7 +24454,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 193:
 
 /* Line 1806 of yacc.c  */
-#line 1919 "preproc.y"
+#line 1919 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("role"),(yyvsp[(2) - (2)].str));
 }
@@ -24463,7 +24463,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 194:
 
 /* Line 1806 of yacc.c  */
-#line 1923 "preproc.y"
+#line 1923 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("session authorization"),(yyvsp[(3) - (3)].str));
 }
@@ -24472,7 +24472,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 195:
 
 /* Line 1806 of yacc.c  */
-#line 1927 "preproc.y"
+#line 1927 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("session authorization default");
 }
@@ -24481,7 +24481,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 196:
 
 /* Line 1806 of yacc.c  */
-#line 1931 "preproc.y"
+#line 1931 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("xml option"),(yyvsp[(3) - (3)].str));
 }
@@ -24490,7 +24490,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 197:
 
 /* Line 1806 of yacc.c  */
-#line 1939 "preproc.y"
+#line 1939 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -24499,7 +24499,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 198:
 
 /* Line 1806 of yacc.c  */
-#line 1943 "preproc.y"
+#line 1943 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),make_str("."),(yyvsp[(3) - (3)].str));
 }
@@ -24508,7 +24508,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 199:
 
 /* Line 1806 of yacc.c  */
-#line 1951 "preproc.y"
+#line 1951 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -24517,7 +24517,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 200:
 
 /* Line 1806 of yacc.c  */
-#line 1955 "preproc.y"
+#line 1955 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),make_str(","),(yyvsp[(3) - (3)].str));
 }
@@ -24526,7 +24526,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 201:
 
 /* Line 1806 of yacc.c  */
-#line 1963 "preproc.y"
+#line 1963 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -24535,7 +24535,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 202:
 
 /* Line 1806 of yacc.c  */
-#line 1967 "preproc.y"
+#line 1967 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -24544,7 +24544,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 203:
 
 /* Line 1806 of yacc.c  */
-#line 1971 "preproc.y"
+#line 1971 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
 		if ((yyvsp[(1) - (1)].str)[0] == '$')
 		{
@@ -24559,7 +24559,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 204:
 
 /* Line 1806 of yacc.c  */
-#line 1985 "preproc.y"
+#line 1985 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("read uncommitted");
 }
@@ -24568,7 +24568,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 205:
 
 /* Line 1806 of yacc.c  */
-#line 1989 "preproc.y"
+#line 1989 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("read committed");
 }
@@ -24577,7 +24577,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 206:
 
 /* Line 1806 of yacc.c  */
-#line 1993 "preproc.y"
+#line 1993 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("repeatable read");
 }
@@ -24586,7 +24586,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 207:
 
 /* Line 1806 of yacc.c  */
-#line 1997 "preproc.y"
+#line 1997 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("serializable");
 }
@@ -24595,7 +24595,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 208:
 
 /* Line 1806 of yacc.c  */
-#line 2005 "preproc.y"
+#line 2005 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("true");
 }
@@ -24604,7 +24604,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 209:
 
 /* Line 1806 of yacc.c  */
-#line 2009 "preproc.y"
+#line 2009 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("false");
 }
@@ -24613,7 +24613,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 210:
 
 /* Line 1806 of yacc.c  */
-#line 2013 "preproc.y"
+#line 2013 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("on");
 }
@@ -24622,7 +24622,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 211:
 
 /* Line 1806 of yacc.c  */
-#line 2017 "preproc.y"
+#line 2017 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("off");
 }
@@ -24631,7 +24631,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 212:
 
 /* Line 1806 of yacc.c  */
-#line 2025 "preproc.y"
+#line 2025 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -24640,7 +24640,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 213:
 
 /* Line 1806 of yacc.c  */
-#line 2029 "preproc.y"
+#line 2029 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -24649,7 +24649,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 214:
 
 /* Line 1806 of yacc.c  */
-#line 2033 "preproc.y"
+#line 2033 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),(yyvsp[(2) - (3)].str),(yyvsp[(3) - (3)].str));
 }
@@ -24658,7 +24658,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 215:
 
 /* Line 1806 of yacc.c  */
-#line 2037 "preproc.y"
+#line 2037 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(6,(yyvsp[(1) - (6)].str),make_str("("),(yyvsp[(3) - (6)].str),make_str(")"),(yyvsp[(5) - (6)].str),(yyvsp[(6) - (6)].str));
 }
@@ -24667,7 +24667,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 216:
 
 /* Line 1806 of yacc.c  */
-#line 2041 "preproc.y"
+#line 2041 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -24676,7 +24676,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 217:
 
 /* Line 1806 of yacc.c  */
-#line 2045 "preproc.y"
+#line 2045 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("default");
 }
@@ -24685,7 +24685,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 218:
 
 /* Line 1806 of yacc.c  */
-#line 2049 "preproc.y"
+#line 2049 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("local");
 }
@@ -24694,7 +24694,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 219:
 
 /* Line 1806 of yacc.c  */
-#line 2057 "preproc.y"
+#line 2057 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -24703,7 +24703,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 220:
 
 /* Line 1806 of yacc.c  */
-#line 2061 "preproc.y"
+#line 2061 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("default");
 }
@@ -24712,7 +24712,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 221:
 
 /* Line 1806 of yacc.c  */
-#line 2065 "preproc.y"
+#line 2065 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -24720,7 +24720,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 222:
 
 /* Line 1806 of yacc.c  */
-#line 2072 "preproc.y"
+#line 2072 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -24729,7 +24729,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 223:
 
 /* Line 1806 of yacc.c  */
-#line 2076 "preproc.y"
+#line 2076 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -24738,7 +24738,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 224:
 
 /* Line 1806 of yacc.c  */
-#line 2084 "preproc.y"
+#line 2084 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("reset"),(yyvsp[(2) - (2)].str));
 }
@@ -24747,7 +24747,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 225:
 
 /* Line 1806 of yacc.c  */
-#line 2088 "preproc.y"
+#line 2088 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("reset time zone");
 }
@@ -24756,7 +24756,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 226:
 
 /* Line 1806 of yacc.c  */
-#line 2092 "preproc.y"
+#line 2092 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("reset transaction isolation level");
 }
@@ -24765,7 +24765,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 227:
 
 /* Line 1806 of yacc.c  */
-#line 2096 "preproc.y"
+#line 2096 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("reset session authorization");
 }
@@ -24774,7 +24774,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 228:
 
 /* Line 1806 of yacc.c  */
-#line 2100 "preproc.y"
+#line 2100 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("reset all");
 }
@@ -24783,7 +24783,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 229:
 
 /* Line 1806 of yacc.c  */
-#line 2108 "preproc.y"
+#line 2108 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("set"),(yyvsp[(2) - (2)].str));
 }
@@ -24792,7 +24792,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 230:
 
 /* Line 1806 of yacc.c  */
-#line 2112 "preproc.y"
+#line 2112 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -24801,7 +24801,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 231:
 
 /* Line 1806 of yacc.c  */
-#line 2120 "preproc.y"
+#line 2120 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("show"),(yyvsp[(2) - (3)].str));
 }
@@ -24810,7 +24810,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 232:
 
 /* Line 1806 of yacc.c  */
-#line 2124 "preproc.y"
+#line 2124 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("show time zone");
 }
@@ -24819,7 +24819,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 233:
 
 /* Line 1806 of yacc.c  */
-#line 2128 "preproc.y"
+#line 2128 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("show transaction isolation level");
 }
@@ -24828,7 +24828,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 234:
 
 /* Line 1806 of yacc.c  */
-#line 2132 "preproc.y"
+#line 2132 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("show session authorization");
 }
@@ -24837,7 +24837,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 235:
 
 /* Line 1806 of yacc.c  */
-#line 2136 "preproc.y"
+#line 2136 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 		mmerror(PARSE_ERROR, ET_ERROR, "SHOW ALL is not implemented");
 		(yyval.str) = EMPTY;
@@ -24847,7 +24847,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 236:
 
 /* Line 1806 of yacc.c  */
-#line 2145 "preproc.y"
+#line 2145 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("set constraints"),(yyvsp[(3) - (4)].str),(yyvsp[(4) - (4)].str));
 }
@@ -24856,7 +24856,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 237:
 
 /* Line 1806 of yacc.c  */
-#line 2153 "preproc.y"
+#line 2153 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("all");
 }
@@ -24865,7 +24865,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 238:
 
 /* Line 1806 of yacc.c  */
-#line 2157 "preproc.y"
+#line 2157 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -24874,7 +24874,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 239:
 
 /* Line 1806 of yacc.c  */
-#line 2165 "preproc.y"
+#line 2165 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("deferred");
 }
@@ -24883,7 +24883,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 240:
 
 /* Line 1806 of yacc.c  */
-#line 2169 "preproc.y"
+#line 2169 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("immediate");
 }
@@ -24892,7 +24892,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 241:
 
 /* Line 1806 of yacc.c  */
-#line 2177 "preproc.y"
+#line 2177 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("checkpoint");
 }
@@ -24901,7 +24901,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 242:
 
 /* Line 1806 of yacc.c  */
-#line 2185 "preproc.y"
+#line 2185 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("discard all");
 }
@@ -24910,7 +24910,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 243:
 
 /* Line 1806 of yacc.c  */
-#line 2189 "preproc.y"
+#line 2189 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("discard temp");
 }
@@ -24919,7 +24919,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 244:
 
 /* Line 1806 of yacc.c  */
-#line 2193 "preproc.y"
+#line 2193 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("discard temporary");
 }
@@ -24928,7 +24928,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 245:
 
 /* Line 1806 of yacc.c  */
-#line 2197 "preproc.y"
+#line 2197 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("discard plans");
 }
@@ -24937,7 +24937,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 246:
 
 /* Line 1806 of yacc.c  */
-#line 2205 "preproc.y"
+#line 2205 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("alter table"),(yyvsp[(3) - (4)].str),(yyvsp[(4) - (4)].str));
 }
@@ -24946,7 +24946,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 247:
 
 /* Line 1806 of yacc.c  */
-#line 2209 "preproc.y"
+#line 2209 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("alter index"),(yyvsp[(3) - (4)].str),(yyvsp[(4) - (4)].str));
 }
@@ -24955,7 +24955,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 248:
 
 /* Line 1806 of yacc.c  */
-#line 2213 "preproc.y"
+#line 2213 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("alter sequence"),(yyvsp[(3) - (4)].str),(yyvsp[(4) - (4)].str));
 }
@@ -24964,7 +24964,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 249:
 
 /* Line 1806 of yacc.c  */
-#line 2217 "preproc.y"
+#line 2217 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("alter view"),(yyvsp[(3) - (4)].str),(yyvsp[(4) - (4)].str));
 }
@@ -24973,7 +24973,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 250:
 
 /* Line 1806 of yacc.c  */
-#line 2225 "preproc.y"
+#line 2225 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -24982,7 +24982,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 251:
 
 /* Line 1806 of yacc.c  */
-#line 2229 "preproc.y"
+#line 2229 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),make_str(","),(yyvsp[(3) - (3)].str));
 }
@@ -24991,7 +24991,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 252:
 
 /* Line 1806 of yacc.c  */
-#line 2237 "preproc.y"
+#line 2237 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("add"),(yyvsp[(2) - (3)].str),(yyvsp[(3) - (3)].str));
 }
@@ -25000,7 +25000,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 253:
 
 /* Line 1806 of yacc.c  */
-#line 2241 "preproc.y"
+#line 2241 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,make_str("alter"),(yyvsp[(2) - (4)].str),(yyvsp[(3) - (4)].str),(yyvsp[(4) - (4)].str));
 }
@@ -25009,7 +25009,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 254:
 
 /* Line 1806 of yacc.c  */
-#line 2245 "preproc.y"
+#line 2245 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,make_str("alter"),(yyvsp[(2) - (6)].str),(yyvsp[(3) - (6)].str),make_str("drop not null"));
 }
@@ -25018,7 +25018,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 255:
 
 /* Line 1806 of yacc.c  */
-#line 2249 "preproc.y"
+#line 2249 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,make_str("alter"),(yyvsp[(2) - (6)].str),(yyvsp[(3) - (6)].str),make_str("set not null"));
 }
@@ -25027,7 +25027,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 256:
 
 /* Line 1806 of yacc.c  */
-#line 2253 "preproc.y"
+#line 2253 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(5,make_str("alter"),(yyvsp[(2) - (6)].str),(yyvsp[(3) - (6)].str),make_str("set statistics"),(yyvsp[(6) - (6)].str));
 }
@@ -25036,7 +25036,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 257:
 
 /* Line 1806 of yacc.c  */
-#line 2257 "preproc.y"
+#line 2257 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(5,make_str("alter"),(yyvsp[(2) - (6)].str),(yyvsp[(3) - (6)].str),make_str("set storage"),(yyvsp[(6) - (6)].str));
 }
@@ -25045,7 +25045,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 258:
 
 /* Line 1806 of yacc.c  */
-#line 2261 "preproc.y"
+#line 2261 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,make_str("drop"),(yyvsp[(2) - (4)].str),(yyvsp[(3) - (4)].str),(yyvsp[(4) - (4)].str));
 }
@@ -25054,7 +25054,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 259:
 
 /* Line 1806 of yacc.c  */
-#line 2265 "preproc.y"
+#line 2265 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(7,make_str("alter"),(yyvsp[(2) - (7)].str),(yyvsp[(3) - (7)].str),(yyvsp[(4) - (7)].str),make_str("type"),(yyvsp[(6) - (7)].str),(yyvsp[(7) - (7)].str));
 }
@@ -25063,7 +25063,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 260:
 
 /* Line 1806 of yacc.c  */
-#line 2269 "preproc.y"
+#line 2269 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("add"),(yyvsp[(2) - (2)].str));
 }
@@ -25072,7 +25072,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 261:
 
 /* Line 1806 of yacc.c  */
-#line 2273 "preproc.y"
+#line 2273 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("drop constraint"),(yyvsp[(3) - (4)].str),(yyvsp[(4) - (4)].str));
 }
@@ -25081,7 +25081,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 262:
 
 /* Line 1806 of yacc.c  */
-#line 2277 "preproc.y"
+#line 2277 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("set with oids");
 }
@@ -25090,7 +25090,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 263:
 
 /* Line 1806 of yacc.c  */
-#line 2281 "preproc.y"
+#line 2281 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("set without oids");
 }
@@ -25099,7 +25099,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 264:
 
 /* Line 1806 of yacc.c  */
-#line 2285 "preproc.y"
+#line 2285 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("cluster on"),(yyvsp[(3) - (3)].str));
 }
@@ -25108,7 +25108,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 265:
 
 /* Line 1806 of yacc.c  */
-#line 2289 "preproc.y"
+#line 2289 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("set without cluster");
 }
@@ -25117,7 +25117,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 266:
 
 /* Line 1806 of yacc.c  */
-#line 2293 "preproc.y"
+#line 2293 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("enable trigger"),(yyvsp[(3) - (3)].str));
 }
@@ -25126,7 +25126,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 267:
 
 /* Line 1806 of yacc.c  */
-#line 2297 "preproc.y"
+#line 2297 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("enable always trigger"),(yyvsp[(4) - (4)].str));
 }
@@ -25135,7 +25135,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 268:
 
 /* Line 1806 of yacc.c  */
-#line 2301 "preproc.y"
+#line 2301 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("enable replica trigger"),(yyvsp[(4) - (4)].str));
 }
@@ -25144,7 +25144,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 269:
 
 /* Line 1806 of yacc.c  */
-#line 2305 "preproc.y"
+#line 2305 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("enable trigger all");
 }
@@ -25153,7 +25153,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 270:
 
 /* Line 1806 of yacc.c  */
-#line 2309 "preproc.y"
+#line 2309 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("enable trigger user");
 }
@@ -25162,7 +25162,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 271:
 
 /* Line 1806 of yacc.c  */
-#line 2313 "preproc.y"
+#line 2313 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("disable trigger"),(yyvsp[(3) - (3)].str));
 }
@@ -25171,7 +25171,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 272:
 
 /* Line 1806 of yacc.c  */
-#line 2317 "preproc.y"
+#line 2317 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("disable trigger all");
 }
@@ -25180,7 +25180,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 273:
 
 /* Line 1806 of yacc.c  */
-#line 2321 "preproc.y"
+#line 2321 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("disable trigger user");
 }
@@ -25189,7 +25189,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 274:
 
 /* Line 1806 of yacc.c  */
-#line 2325 "preproc.y"
+#line 2325 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("enable rule"),(yyvsp[(3) - (3)].str));
 }
@@ -25198,7 +25198,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 275:
 
 /* Line 1806 of yacc.c  */
-#line 2329 "preproc.y"
+#line 2329 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("enable always rule"),(yyvsp[(4) - (4)].str));
 }
@@ -25207,7 +25207,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 276:
 
 /* Line 1806 of yacc.c  */
-#line 2333 "preproc.y"
+#line 2333 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("enable replica rule"),(yyvsp[(4) - (4)].str));
 }
@@ -25216,7 +25216,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 277:
 
 /* Line 1806 of yacc.c  */
-#line 2337 "preproc.y"
+#line 2337 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("disable rule"),(yyvsp[(3) - (3)].str));
 }
@@ -25225,7 +25225,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 278:
 
 /* Line 1806 of yacc.c  */
-#line 2341 "preproc.y"
+#line 2341 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("inherit"),(yyvsp[(2) - (2)].str));
 }
@@ -25234,7 +25234,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 279:
 
 /* Line 1806 of yacc.c  */
-#line 2345 "preproc.y"
+#line 2345 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("no inherit"),(yyvsp[(3) - (3)].str));
 }
@@ -25243,7 +25243,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 280:
 
 /* Line 1806 of yacc.c  */
-#line 2349 "preproc.y"
+#line 2349 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("owner to"),(yyvsp[(3) - (3)].str));
 }
@@ -25252,7 +25252,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 281:
 
 /* Line 1806 of yacc.c  */
-#line 2353 "preproc.y"
+#line 2353 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("set tablespace"),(yyvsp[(3) - (3)].str));
 }
@@ -25261,7 +25261,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 282:
 
 /* Line 1806 of yacc.c  */
-#line 2357 "preproc.y"
+#line 2357 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("set"),(yyvsp[(2) - (2)].str));
 }
@@ -25270,7 +25270,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 283:
 
 /* Line 1806 of yacc.c  */
-#line 2361 "preproc.y"
+#line 2361 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("reset"),(yyvsp[(2) - (2)].str));
 }
@@ -25279,7 +25279,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 284:
 
 /* Line 1806 of yacc.c  */
-#line 2369 "preproc.y"
+#line 2369 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("set default"),(yyvsp[(3) - (3)].str));
 }
@@ -25288,7 +25288,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 285:
 
 /* Line 1806 of yacc.c  */
-#line 2373 "preproc.y"
+#line 2373 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("drop default");
 }
@@ -25297,7 +25297,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 286:
 
 /* Line 1806 of yacc.c  */
-#line 2381 "preproc.y"
+#line 2381 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("cascade");
 }
@@ -25306,7 +25306,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 287:
 
 /* Line 1806 of yacc.c  */
-#line 2385 "preproc.y"
+#line 2385 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("restrict");
 }
@@ -25315,7 +25315,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 288:
 
 /* Line 1806 of yacc.c  */
-#line 2389 "preproc.y"
+#line 2389 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -25323,7 +25323,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 289:
 
 /* Line 1806 of yacc.c  */
-#line 2396 "preproc.y"
+#line 2396 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("using"),(yyvsp[(2) - (2)].str));
 }
@@ -25332,7 +25332,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 290:
 
 /* Line 1806 of yacc.c  */
-#line 2400 "preproc.y"
+#line 2400 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -25340,7 +25340,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 291:
 
 /* Line 1806 of yacc.c  */
-#line 2407 "preproc.y"
+#line 2407 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("("),(yyvsp[(2) - (3)].str),make_str(")"));
 }
@@ -25349,7 +25349,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 292:
 
 /* Line 1806 of yacc.c  */
-#line 2415 "preproc.y"
+#line 2415 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("with"),(yyvsp[(2) - (2)].str));
 }
@@ -25358,7 +25358,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 293:
 
 /* Line 1806 of yacc.c  */
-#line 2419 "preproc.y"
+#line 2419 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -25366,7 +25366,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 294:
 
 /* Line 1806 of yacc.c  */
-#line 2426 "preproc.y"
+#line 2426 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -25375,7 +25375,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 295:
 
 /* Line 1806 of yacc.c  */
-#line 2430 "preproc.y"
+#line 2430 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),make_str(","),(yyvsp[(3) - (3)].str));
 }
@@ -25384,7 +25384,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 296:
 
 /* Line 1806 of yacc.c  */
-#line 2438 "preproc.y"
+#line 2438 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),make_str("="),(yyvsp[(3) - (3)].str));
 }
@@ -25393,7 +25393,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 297:
 
 /* Line 1806 of yacc.c  */
-#line 2442 "preproc.y"
+#line 2442 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -25402,7 +25402,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 298:
 
 /* Line 1806 of yacc.c  */
-#line 2446 "preproc.y"
+#line 2446 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(5,(yyvsp[(1) - (5)].str),make_str("."),(yyvsp[(3) - (5)].str),make_str("="),(yyvsp[(5) - (5)].str));
 }
@@ -25411,7 +25411,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 299:
 
 /* Line 1806 of yacc.c  */
-#line 2450 "preproc.y"
+#line 2450 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),make_str("."),(yyvsp[(3) - (3)].str));
 }
@@ -25420,7 +25420,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 300:
 
 /* Line 1806 of yacc.c  */
-#line 2458 "preproc.y"
+#line 2458 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("close"),(yyvsp[(2) - (2)].str));
 }
@@ -25429,7 +25429,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 301:
 
 /* Line 1806 of yacc.c  */
-#line 2462 "preproc.y"
+#line 2462 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("close all");
 }
@@ -25438,7 +25438,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 302:
 
 /* Line 1806 of yacc.c  */
-#line 2470 "preproc.y"
+#line 2470 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
 			if (strcmp((yyvsp[(6) - (10)].str), "to") == 0 && strcmp((yyvsp[(7) - (10)].str), "stdin") == 0)
 				mmerror(PARSE_ERROR, ET_ERROR, "COPY TO STDIN is not possible");
@@ -25454,7 +25454,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 303:
 
 /* Line 1806 of yacc.c  */
-#line 2481 "preproc.y"
+#line 2481 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
 			if (strcmp((yyvsp[(4) - (6)].str), "stdin") == 0)
 				mmerror(PARSE_ERROR, ET_ERROR, "COPY TO STDIN is not possible");
@@ -25466,7 +25466,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 304:
 
 /* Line 1806 of yacc.c  */
-#line 2492 "preproc.y"
+#line 2492 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("from");
 }
@@ -25475,7 +25475,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 305:
 
 /* Line 1806 of yacc.c  */
-#line 2496 "preproc.y"
+#line 2496 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("to");
 }
@@ -25484,7 +25484,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 306:
 
 /* Line 1806 of yacc.c  */
-#line 2504 "preproc.y"
+#line 2504 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -25493,7 +25493,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 307:
 
 /* Line 1806 of yacc.c  */
-#line 2508 "preproc.y"
+#line 2508 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("stdin");
 }
@@ -25502,7 +25502,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 308:
 
 /* Line 1806 of yacc.c  */
-#line 2512 "preproc.y"
+#line 2512 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("stdout");
 }
@@ -25511,7 +25511,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 309:
 
 /* Line 1806 of yacc.c  */
-#line 2520 "preproc.y"
+#line 2520 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,(yyvsp[(1) - (2)].str),(yyvsp[(2) - (2)].str));
 }
@@ -25520,7 +25520,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 310:
 
 /* Line 1806 of yacc.c  */
-#line 2524 "preproc.y"
+#line 2524 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -25528,7 +25528,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 311:
 
 /* Line 1806 of yacc.c  */
-#line 2531 "preproc.y"
+#line 2531 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("binary");
 }
@@ -25537,7 +25537,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 312:
 
 /* Line 1806 of yacc.c  */
-#line 2535 "preproc.y"
+#line 2535 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("oids");
 }
@@ -25546,7 +25546,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 313:
 
 /* Line 1806 of yacc.c  */
-#line 2539 "preproc.y"
+#line 2539 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("delimiter"),(yyvsp[(2) - (3)].str),(yyvsp[(3) - (3)].str));
 }
@@ -25555,7 +25555,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 314:
 
 /* Line 1806 of yacc.c  */
-#line 2543 "preproc.y"
+#line 2543 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("null"),(yyvsp[(2) - (3)].str),(yyvsp[(3) - (3)].str));
 }
@@ -25564,7 +25564,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 315:
 
 /* Line 1806 of yacc.c  */
-#line 2547 "preproc.y"
+#line 2547 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("csv");
 }
@@ -25573,7 +25573,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 316:
 
 /* Line 1806 of yacc.c  */
-#line 2551 "preproc.y"
+#line 2551 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("header");
 }
@@ -25582,7 +25582,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 317:
 
 /* Line 1806 of yacc.c  */
-#line 2555 "preproc.y"
+#line 2555 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("quote"),(yyvsp[(2) - (3)].str),(yyvsp[(3) - (3)].str));
 }
@@ -25591,7 +25591,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 318:
 
 /* Line 1806 of yacc.c  */
-#line 2559 "preproc.y"
+#line 2559 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("escape"),(yyvsp[(2) - (3)].str),(yyvsp[(3) - (3)].str));
 }
@@ -25600,7 +25600,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 319:
 
 /* Line 1806 of yacc.c  */
-#line 2563 "preproc.y"
+#line 2563 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("force quote"),(yyvsp[(3) - (3)].str));
 }
@@ -25609,7 +25609,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 320:
 
 /* Line 1806 of yacc.c  */
-#line 2567 "preproc.y"
+#line 2567 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("force not null"),(yyvsp[(4) - (4)].str));
 }
@@ -25618,7 +25618,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 321:
 
 /* Line 1806 of yacc.c  */
-#line 2575 "preproc.y"
+#line 2575 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("binary");
 }
@@ -25627,7 +25627,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 322:
 
 /* Line 1806 of yacc.c  */
-#line 2579 "preproc.y"
+#line 2579 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -25635,7 +25635,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 323:
 
 /* Line 1806 of yacc.c  */
-#line 2586 "preproc.y"
+#line 2586 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("with oids");
 }
@@ -25644,7 +25644,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 324:
 
 /* Line 1806 of yacc.c  */
-#line 2590 "preproc.y"
+#line 2590 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -25652,7 +25652,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 325:
 
 /* Line 1806 of yacc.c  */
-#line 2597 "preproc.y"
+#line 2597 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),make_str("delimiters"),(yyvsp[(3) - (3)].str));
 }
@@ -25661,7 +25661,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 326:
 
 /* Line 1806 of yacc.c  */
-#line 2601 "preproc.y"
+#line 2601 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -25669,7 +25669,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 327:
 
 /* Line 1806 of yacc.c  */
-#line 2608 "preproc.y"
+#line 2608 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("using");
 }
@@ -25678,7 +25678,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 328:
 
 /* Line 1806 of yacc.c  */
-#line 2612 "preproc.y"
+#line 2612 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -25686,7 +25686,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 329:
 
 /* Line 1806 of yacc.c  */
-#line 2619 "preproc.y"
+#line 2619 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(11,make_str("create"),(yyvsp[(2) - (11)].str),make_str("table"),(yyvsp[(4) - (11)].str),make_str("("),(yyvsp[(6) - (11)].str),make_str(")"),(yyvsp[(8) - (11)].str),(yyvsp[(9) - (11)].str),(yyvsp[(10) - (11)].str),(yyvsp[(11) - (11)].str));
 }
@@ -25695,7 +25695,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 330:
 
 /* Line 1806 of yacc.c  */
-#line 2623 "preproc.y"
+#line 2623 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(12,make_str("create"),(yyvsp[(2) - (12)].str),make_str("table"),(yyvsp[(4) - (12)].str),make_str("of"),(yyvsp[(6) - (12)].str),make_str("("),(yyvsp[(8) - (12)].str),make_str(")"),(yyvsp[(10) - (12)].str),(yyvsp[(11) - (12)].str),(yyvsp[(12) - (12)].str));
 }
@@ -25704,7 +25704,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 331:
 
 /* Line 1806 of yacc.c  */
-#line 2631 "preproc.y"
+#line 2631 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("temporary");
 }
@@ -25713,7 +25713,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 332:
 
 /* Line 1806 of yacc.c  */
-#line 2635 "preproc.y"
+#line 2635 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("temp");
 }
@@ -25722,7 +25722,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 333:
 
 /* Line 1806 of yacc.c  */
-#line 2639 "preproc.y"
+#line 2639 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("local temporary");
 }
@@ -25731,7 +25731,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 334:
 
 /* Line 1806 of yacc.c  */
-#line 2643 "preproc.y"
+#line 2643 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("local temp");
 }
@@ -25740,7 +25740,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 335:
 
 /* Line 1806 of yacc.c  */
-#line 2647 "preproc.y"
+#line 2647 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("global temporary");
 }
@@ -25749,7 +25749,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 336:
 
 /* Line 1806 of yacc.c  */
-#line 2651 "preproc.y"
+#line 2651 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("global temp");
 }
@@ -25758,7 +25758,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 337:
 
 /* Line 1806 of yacc.c  */
-#line 2655 "preproc.y"
+#line 2655 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -25766,7 +25766,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 338:
 
 /* Line 1806 of yacc.c  */
-#line 2662 "preproc.y"
+#line 2662 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -25775,7 +25775,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 339:
 
 /* Line 1806 of yacc.c  */
-#line 2666 "preproc.y"
+#line 2666 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -25783,7 +25783,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 340:
 
 /* Line 1806 of yacc.c  */
-#line 2673 "preproc.y"
+#line 2673 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -25792,7 +25792,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 341:
 
 /* Line 1806 of yacc.c  */
-#line 2677 "preproc.y"
+#line 2677 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),make_str(","),(yyvsp[(3) - (3)].str));
 }
@@ -25801,7 +25801,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 342:
 
 /* Line 1806 of yacc.c  */
-#line 2685 "preproc.y"
+#line 2685 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -25810,7 +25810,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 343:
 
 /* Line 1806 of yacc.c  */
-#line 2689 "preproc.y"
+#line 2689 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -25819,7 +25819,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 344:
 
 /* Line 1806 of yacc.c  */
-#line 2693 "preproc.y"
+#line 2693 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -25828,7 +25828,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 345:
 
 /* Line 1806 of yacc.c  */
-#line 2701 "preproc.y"
+#line 2701 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),(yyvsp[(2) - (3)].str),(yyvsp[(3) - (3)].str));
 }
@@ -25837,7 +25837,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 346:
 
 /* Line 1806 of yacc.c  */
-#line 2709 "preproc.y"
+#line 2709 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,(yyvsp[(1) - (2)].str),(yyvsp[(2) - (2)].str));
 }
@@ -25846,7 +25846,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 347:
 
 /* Line 1806 of yacc.c  */
-#line 2713 "preproc.y"
+#line 2713 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -25854,7 +25854,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 348:
 
 /* Line 1806 of yacc.c  */
-#line 2720 "preproc.y"
+#line 2720 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("constraint"),(yyvsp[(2) - (3)].str),(yyvsp[(3) - (3)].str));
 }
@@ -25863,7 +25863,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 349:
 
 /* Line 1806 of yacc.c  */
-#line 2724 "preproc.y"
+#line 2724 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -25872,7 +25872,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 350:
 
 /* Line 1806 of yacc.c  */
-#line 2728 "preproc.y"
+#line 2728 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -25881,7 +25881,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 351:
 
 /* Line 1806 of yacc.c  */
-#line 2736 "preproc.y"
+#line 2736 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("not null");
 }
@@ -25890,7 +25890,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 352:
 
 /* Line 1806 of yacc.c  */
-#line 2740 "preproc.y"
+#line 2740 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("null");
 }
@@ -25899,7 +25899,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 353:
 
 /* Line 1806 of yacc.c  */
-#line 2744 "preproc.y"
+#line 2744 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("unique"),(yyvsp[(2) - (3)].str),(yyvsp[(3) - (3)].str));
 }
@@ -25908,7 +25908,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 354:
 
 /* Line 1806 of yacc.c  */
-#line 2748 "preproc.y"
+#line 2748 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("primary key"),(yyvsp[(3) - (4)].str),(yyvsp[(4) - (4)].str));
 }
@@ -25917,7 +25917,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 355:
 
 /* Line 1806 of yacc.c  */
-#line 2752 "preproc.y"
+#line 2752 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("check ("),(yyvsp[(3) - (4)].str),make_str(")"));
 }
@@ -25926,7 +25926,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 356:
 
 /* Line 1806 of yacc.c  */
-#line 2756 "preproc.y"
+#line 2756 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("default"),(yyvsp[(2) - (2)].str));
 }
@@ -25935,7 +25935,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 357:
 
 /* Line 1806 of yacc.c  */
-#line 2760 "preproc.y"
+#line 2760 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(5,make_str("references"),(yyvsp[(2) - (5)].str),(yyvsp[(3) - (5)].str),(yyvsp[(4) - (5)].str),(yyvsp[(5) - (5)].str));
 }
@@ -25944,7 +25944,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 358:
 
 /* Line 1806 of yacc.c  */
-#line 2768 "preproc.y"
+#line 2768 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("deferrable");
 }
@@ -25953,7 +25953,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 359:
 
 /* Line 1806 of yacc.c  */
-#line 2772 "preproc.y"
+#line 2772 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("not deferrable");
 }
@@ -25962,7 +25962,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 360:
 
 /* Line 1806 of yacc.c  */
-#line 2776 "preproc.y"
+#line 2776 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("initially deferred");
 }
@@ -25971,7 +25971,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 361:
 
 /* Line 1806 of yacc.c  */
-#line 2780 "preproc.y"
+#line 2780 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("initially immediate");
 }
@@ -25980,7 +25980,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 362:
 
 /* Line 1806 of yacc.c  */
-#line 2788 "preproc.y"
+#line 2788 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("like"),(yyvsp[(2) - (3)].str),(yyvsp[(3) - (3)].str));
 }
@@ -25989,7 +25989,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 363:
 
 /* Line 1806 of yacc.c  */
-#line 2796 "preproc.y"
+#line 2796 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,(yyvsp[(1) - (2)].str),(yyvsp[(2) - (2)].str));
 }
@@ -25998,7 +25998,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 364:
 
 /* Line 1806 of yacc.c  */
-#line 2800 "preproc.y"
+#line 2800 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -26006,7 +26006,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 365:
 
 /* Line 1806 of yacc.c  */
-#line 2807 "preproc.y"
+#line 2807 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("including defaults");
 }
@@ -26015,7 +26015,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 366:
 
 /* Line 1806 of yacc.c  */
-#line 2811 "preproc.y"
+#line 2811 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("excluding defaults");
 }
@@ -26024,7 +26024,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 367:
 
 /* Line 1806 of yacc.c  */
-#line 2815 "preproc.y"
+#line 2815 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("including constraints");
 }
@@ -26033,7 +26033,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 368:
 
 /* Line 1806 of yacc.c  */
-#line 2819 "preproc.y"
+#line 2819 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("excluding constraints");
 }
@@ -26042,7 +26042,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 369:
 
 /* Line 1806 of yacc.c  */
-#line 2823 "preproc.y"
+#line 2823 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("including indexes");
 }
@@ -26051,7 +26051,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 370:
 
 /* Line 1806 of yacc.c  */
-#line 2827 "preproc.y"
+#line 2827 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("excluding indexes");
 }
@@ -26060,7 +26060,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 371:
 
 /* Line 1806 of yacc.c  */
-#line 2835 "preproc.y"
+#line 2835 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("constraint"),(yyvsp[(2) - (3)].str),(yyvsp[(3) - (3)].str));
 }
@@ -26069,7 +26069,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 372:
 
 /* Line 1806 of yacc.c  */
-#line 2839 "preproc.y"
+#line 2839 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -26078,7 +26078,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 373:
 
 /* Line 1806 of yacc.c  */
-#line 2847 "preproc.y"
+#line 2847 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("check ("),(yyvsp[(3) - (4)].str),make_str(")"));
 }
@@ -26087,7 +26087,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 374:
 
 /* Line 1806 of yacc.c  */
-#line 2851 "preproc.y"
+#line 2851 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(5,make_str("unique ("),(yyvsp[(3) - (6)].str),make_str(")"),(yyvsp[(5) - (6)].str),(yyvsp[(6) - (6)].str));
 }
@@ -26096,7 +26096,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 375:
 
 /* Line 1806 of yacc.c  */
-#line 2855 "preproc.y"
+#line 2855 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(5,make_str("primary key ("),(yyvsp[(4) - (7)].str),make_str(")"),(yyvsp[(6) - (7)].str),(yyvsp[(7) - (7)].str));
 }
@@ -26105,7 +26105,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 376:
 
 /* Line 1806 of yacc.c  */
-#line 2859 "preproc.y"
+#line 2859 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(8,make_str("foreign key ("),(yyvsp[(4) - (11)].str),make_str(") references"),(yyvsp[(7) - (11)].str),(yyvsp[(8) - (11)].str),(yyvsp[(9) - (11)].str),(yyvsp[(10) - (11)].str),(yyvsp[(11) - (11)].str));
 }
@@ -26114,7 +26114,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 377:
 
 /* Line 1806 of yacc.c  */
-#line 2867 "preproc.y"
+#line 2867 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("("),(yyvsp[(2) - (3)].str),make_str(")"));
 }
@@ -26123,7 +26123,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 378:
 
 /* Line 1806 of yacc.c  */
-#line 2871 "preproc.y"
+#line 2871 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -26131,7 +26131,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 379:
 
 /* Line 1806 of yacc.c  */
-#line 2878 "preproc.y"
+#line 2878 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -26140,7 +26140,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 380:
 
 /* Line 1806 of yacc.c  */
-#line 2882 "preproc.y"
+#line 2882 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),make_str(","),(yyvsp[(3) - (3)].str));
 }
@@ -26149,7 +26149,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 381:
 
 /* Line 1806 of yacc.c  */
-#line 2890 "preproc.y"
+#line 2890 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -26158,7 +26158,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 382:
 
 /* Line 1806 of yacc.c  */
-#line 2898 "preproc.y"
+#line 2898 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("match full");
 }
@@ -26167,7 +26167,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 383:
 
 /* Line 1806 of yacc.c  */
-#line 2902 "preproc.y"
+#line 2902 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
 mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server");
  (yyval.str) = make_str("match partial");
@@ -26177,7 +26177,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 384:
 
 /* Line 1806 of yacc.c  */
-#line 2907 "preproc.y"
+#line 2907 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("match simple");
 }
@@ -26186,7 +26186,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 385:
 
 /* Line 1806 of yacc.c  */
-#line 2911 "preproc.y"
+#line 2911 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -26194,7 +26194,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 386:
 
 /* Line 1806 of yacc.c  */
-#line 2918 "preproc.y"
+#line 2918 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -26203,7 +26203,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 387:
 
 /* Line 1806 of yacc.c  */
-#line 2922 "preproc.y"
+#line 2922 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -26212,7 +26212,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 388:
 
 /* Line 1806 of yacc.c  */
-#line 2926 "preproc.y"
+#line 2926 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,(yyvsp[(1) - (2)].str),(yyvsp[(2) - (2)].str));
 }
@@ -26221,7 +26221,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 389:
 
 /* Line 1806 of yacc.c  */
-#line 2930 "preproc.y"
+#line 2930 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,(yyvsp[(1) - (2)].str),(yyvsp[(2) - (2)].str));
 }
@@ -26230,7 +26230,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 390:
 
 /* Line 1806 of yacc.c  */
-#line 2934 "preproc.y"
+#line 2934 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -26238,7 +26238,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 391:
 
 /* Line 1806 of yacc.c  */
-#line 2941 "preproc.y"
+#line 2941 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("on update"),(yyvsp[(3) - (3)].str));
 }
@@ -26247,7 +26247,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 392:
 
 /* Line 1806 of yacc.c  */
-#line 2949 "preproc.y"
+#line 2949 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("on delete"),(yyvsp[(3) - (3)].str));
 }
@@ -26256,7 +26256,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 393:
 
 /* Line 1806 of yacc.c  */
-#line 2957 "preproc.y"
+#line 2957 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("no action");
 }
@@ -26265,7 +26265,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 394:
 
 /* Line 1806 of yacc.c  */
-#line 2961 "preproc.y"
+#line 2961 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("restrict");
 }
@@ -26274,7 +26274,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 395:
 
 /* Line 1806 of yacc.c  */
-#line 2965 "preproc.y"
+#line 2965 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("cascade");
 }
@@ -26283,7 +26283,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 396:
 
 /* Line 1806 of yacc.c  */
-#line 2969 "preproc.y"
+#line 2969 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("set null");
 }
@@ -26292,7 +26292,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 397:
 
 /* Line 1806 of yacc.c  */
-#line 2973 "preproc.y"
+#line 2973 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("set default");
 }
@@ -26301,7 +26301,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 398:
 
 /* Line 1806 of yacc.c  */
-#line 2981 "preproc.y"
+#line 2981 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("inherits ("),(yyvsp[(3) - (4)].str),make_str(")"));
 }
@@ -26310,7 +26310,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 399:
 
 /* Line 1806 of yacc.c  */
-#line 2985 "preproc.y"
+#line 2985 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -26318,7 +26318,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 400:
 
 /* Line 1806 of yacc.c  */
-#line 2992 "preproc.y"
+#line 2992 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("with"),(yyvsp[(2) - (2)].str));
 }
@@ -26327,7 +26327,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 401:
 
 /* Line 1806 of yacc.c  */
-#line 2996 "preproc.y"
+#line 2996 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("with oids");
 }
@@ -26336,7 +26336,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 402:
 
 /* Line 1806 of yacc.c  */
-#line 3000 "preproc.y"
+#line 3000 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("without oids");
 }
@@ -26345,7 +26345,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 403:
 
 /* Line 1806 of yacc.c  */
-#line 3004 "preproc.y"
+#line 3004 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -26353,7 +26353,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 404:
 
 /* Line 1806 of yacc.c  */
-#line 3011 "preproc.y"
+#line 3011 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("on commit drop");
 }
@@ -26362,7 +26362,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 405:
 
 /* Line 1806 of yacc.c  */
-#line 3015 "preproc.y"
+#line 3015 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("on commit delete rows");
 }
@@ -26371,7 +26371,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 406:
 
 /* Line 1806 of yacc.c  */
-#line 3019 "preproc.y"
+#line 3019 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("on commit preserve rows");
 }
@@ -26380,7 +26380,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 407:
 
 /* Line 1806 of yacc.c  */
-#line 3023 "preproc.y"
+#line 3023 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -26388,7 +26388,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 408:
 
 /* Line 1806 of yacc.c  */
-#line 3030 "preproc.y"
+#line 3030 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("tablespace"),(yyvsp[(2) - (2)].str));
 }
@@ -26397,7 +26397,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 409:
 
 /* Line 1806 of yacc.c  */
-#line 3034 "preproc.y"
+#line 3034 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -26405,7 +26405,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 410:
 
 /* Line 1806 of yacc.c  */
-#line 3041 "preproc.y"
+#line 3041 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("using index tablespace"),(yyvsp[(4) - (4)].str));
 }
@@ -26414,7 +26414,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 411:
 
 /* Line 1806 of yacc.c  */
-#line 3045 "preproc.y"
+#line 3045 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -26422,7 +26422,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 412:
 
 /* Line 1806 of yacc.c  */
-#line 3052 "preproc.y"
+#line 3052 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(5,(yyvsp[(1) - (5)].str),(yyvsp[(2) - (5)].str),(yyvsp[(3) - (5)].str),(yyvsp[(4) - (5)].str),(yyvsp[(5) - (5)].str));
 }
@@ -26431,7 +26431,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 413:
 
 /* Line 1806 of yacc.c  */
-#line 3060 "preproc.y"
+#line 3060 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("("),(yyvsp[(2) - (3)].str),make_str(")"));
 }
@@ -26440,7 +26440,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 414:
 
 /* Line 1806 of yacc.c  */
-#line 3064 "preproc.y"
+#line 3064 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -26448,7 +26448,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 415:
 
 /* Line 1806 of yacc.c  */
-#line 3071 "preproc.y"
+#line 3071 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -26457,7 +26457,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 416:
 
 /* Line 1806 of yacc.c  */
-#line 3075 "preproc.y"
+#line 3075 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),make_str(","),(yyvsp[(3) - (3)].str));
 }
@@ -26466,7 +26466,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 417:
 
 /* Line 1806 of yacc.c  */
-#line 3083 "preproc.y"
+#line 3083 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -26475,7 +26475,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 418:
 
 /* Line 1806 of yacc.c  */
-#line 3091 "preproc.y"
+#line 3091 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("with data");
 }
@@ -26484,7 +26484,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 419:
 
 /* Line 1806 of yacc.c  */
-#line 3095 "preproc.y"
+#line 3095 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("with no data");
 }
@@ -26493,7 +26493,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 420:
 
 /* Line 1806 of yacc.c  */
-#line 3099 "preproc.y"
+#line 3099 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -26501,7 +26501,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 421:
 
 /* Line 1806 of yacc.c  */
-#line 3106 "preproc.y"
+#line 3106 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(5,make_str("create"),(yyvsp[(2) - (5)].str),make_str("sequence"),(yyvsp[(4) - (5)].str),(yyvsp[(5) - (5)].str));
 }
@@ -26510,7 +26510,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 422:
 
 /* Line 1806 of yacc.c  */
-#line 3114 "preproc.y"
+#line 3114 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("alter sequence"),(yyvsp[(3) - (4)].str),(yyvsp[(4) - (4)].str));
 }
@@ -26519,7 +26519,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 423:
 
 /* Line 1806 of yacc.c  */
-#line 3122 "preproc.y"
+#line 3122 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -26528,7 +26528,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 424:
 
 /* Line 1806 of yacc.c  */
-#line 3126 "preproc.y"
+#line 3126 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -26536,7 +26536,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 425:
 
 /* Line 1806 of yacc.c  */
-#line 3133 "preproc.y"
+#line 3133 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -26545,7 +26545,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 426:
 
 /* Line 1806 of yacc.c  */
-#line 3137 "preproc.y"
+#line 3137 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,(yyvsp[(1) - (2)].str),(yyvsp[(2) - (2)].str));
 }
@@ -26554,7 +26554,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 427:
 
 /* Line 1806 of yacc.c  */
-#line 3145 "preproc.y"
+#line 3145 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("cache"),(yyvsp[(2) - (2)].str));
 }
@@ -26563,7 +26563,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 428:
 
 /* Line 1806 of yacc.c  */
-#line 3149 "preproc.y"
+#line 3149 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("cycle");
 }
@@ -26572,7 +26572,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 429:
 
 /* Line 1806 of yacc.c  */
-#line 3153 "preproc.y"
+#line 3153 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("no cycle");
 }
@@ -26581,7 +26581,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 430:
 
 /* Line 1806 of yacc.c  */
-#line 3157 "preproc.y"
+#line 3157 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("increment"),(yyvsp[(2) - (3)].str),(yyvsp[(3) - (3)].str));
 }
@@ -26590,7 +26590,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 431:
 
 /* Line 1806 of yacc.c  */
-#line 3161 "preproc.y"
+#line 3161 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("maxvalue"),(yyvsp[(2) - (2)].str));
 }
@@ -26599,7 +26599,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 432:
 
 /* Line 1806 of yacc.c  */
-#line 3165 "preproc.y"
+#line 3165 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("minvalue"),(yyvsp[(2) - (2)].str));
 }
@@ -26608,7 +26608,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 433:
 
 /* Line 1806 of yacc.c  */
-#line 3169 "preproc.y"
+#line 3169 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("no maxvalue");
 }
@@ -26617,7 +26617,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 434:
 
 /* Line 1806 of yacc.c  */
-#line 3173 "preproc.y"
+#line 3173 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("no minvalue");
 }
@@ -26626,7 +26626,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 435:
 
 /* Line 1806 of yacc.c  */
-#line 3177 "preproc.y"
+#line 3177 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("owned by"),(yyvsp[(3) - (3)].str));
 }
@@ -26635,7 +26635,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 436:
 
 /* Line 1806 of yacc.c  */
-#line 3181 "preproc.y"
+#line 3181 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("start"),(yyvsp[(2) - (3)].str),(yyvsp[(3) - (3)].str));
 }
@@ -26644,7 +26644,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 437:
 
 /* Line 1806 of yacc.c  */
-#line 3185 "preproc.y"
+#line 3185 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("restart");
 }
@@ -26653,7 +26653,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 438:
 
 /* Line 1806 of yacc.c  */
-#line 3189 "preproc.y"
+#line 3189 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("restart"),(yyvsp[(2) - (3)].str),(yyvsp[(3) - (3)].str));
 }
@@ -26662,7 +26662,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 439:
 
 /* Line 1806 of yacc.c  */
-#line 3197 "preproc.y"
+#line 3197 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("by");
 }
@@ -26671,7 +26671,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 440:
 
 /* Line 1806 of yacc.c  */
-#line 3201 "preproc.y"
+#line 3201 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -26679,7 +26679,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 441:
 
 /* Line 1806 of yacc.c  */
-#line 3208 "preproc.y"
+#line 3208 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -26688,7 +26688,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 442:
 
 /* Line 1806 of yacc.c  */
-#line 3212 "preproc.y"
+#line 3212 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("-"),(yyvsp[(2) - (2)].str));
 }
@@ -26697,7 +26697,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 443:
 
 /* Line 1806 of yacc.c  */
-#line 3216 "preproc.y"
+#line 3216 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -26706,7 +26706,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 444:
 
 /* Line 1806 of yacc.c  */
-#line 3227 "preproc.y"
+#line 3227 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(5,make_str("create"),(yyvsp[(2) - (5)].str),(yyvsp[(3) - (5)].str),make_str("language"),(yyvsp[(5) - (5)].str));
 }
@@ -26715,7 +26715,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 445:
 
 /* Line 1806 of yacc.c  */
-#line 3231 "preproc.y"
+#line 3231 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(9,make_str("create"),(yyvsp[(2) - (9)].str),(yyvsp[(3) - (9)].str),make_str("language"),(yyvsp[(5) - (9)].str),make_str("handler"),(yyvsp[(7) - (9)].str),(yyvsp[(8) - (9)].str),(yyvsp[(9) - (9)].str));
 }
@@ -26724,7 +26724,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 446:
 
 /* Line 1806 of yacc.c  */
-#line 3239 "preproc.y"
+#line 3239 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("trusted");
 }
@@ -26733,7 +26733,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 447:
 
 /* Line 1806 of yacc.c  */
-#line 3243 "preproc.y"
+#line 3243 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -26741,7 +26741,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 448:
 
 /* Line 1806 of yacc.c  */
-#line 3250 "preproc.y"
+#line 3250 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -26750,7 +26750,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 449:
 
 /* Line 1806 of yacc.c  */
-#line 3254 "preproc.y"
+#line 3254 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,(yyvsp[(1) - (2)].str),(yyvsp[(2) - (2)].str));
 }
@@ -26759,7 +26759,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 450:
 
 /* Line 1806 of yacc.c  */
-#line 3262 "preproc.y"
+#line 3262 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("validator"),(yyvsp[(2) - (2)].str));
 }
@@ -26768,7 +26768,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 451:
 
 /* Line 1806 of yacc.c  */
-#line 3266 "preproc.y"
+#line 3266 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("no validator");
 }
@@ -26777,7 +26777,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 452:
 
 /* Line 1806 of yacc.c  */
-#line 3274 "preproc.y"
+#line 3274 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -26786,7 +26786,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 453:
 
 /* Line 1806 of yacc.c  */
-#line 3278 "preproc.y"
+#line 3278 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -26794,7 +26794,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 454:
 
 /* Line 1806 of yacc.c  */
-#line 3285 "preproc.y"
+#line 3285 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("lancompiler"),(yyvsp[(2) - (2)].str));
 }
@@ -26803,7 +26803,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 455:
 
 /* Line 1806 of yacc.c  */
-#line 3289 "preproc.y"
+#line 3289 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -26811,7 +26811,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 456:
 
 /* Line 1806 of yacc.c  */
-#line 3296 "preproc.y"
+#line 3296 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(5,make_str("drop"),(yyvsp[(2) - (5)].str),make_str("language"),(yyvsp[(4) - (5)].str),(yyvsp[(5) - (5)].str));
 }
@@ -26820,7 +26820,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 457:
 
 /* Line 1806 of yacc.c  */
-#line 3300 "preproc.y"
+#line 3300 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(5,make_str("drop"),(yyvsp[(2) - (7)].str),make_str("language if exists"),(yyvsp[(6) - (7)].str),(yyvsp[(7) - (7)].str));
 }
@@ -26829,7 +26829,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 458:
 
 /* Line 1806 of yacc.c  */
-#line 3308 "preproc.y"
+#line 3308 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("procedural");
 }
@@ -26838,7 +26838,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 459:
 
 /* Line 1806 of yacc.c  */
-#line 3312 "preproc.y"
+#line 3312 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -26846,7 +26846,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 460:
 
 /* Line 1806 of yacc.c  */
-#line 3319 "preproc.y"
+#line 3319 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(5,make_str("create tablespace"),(yyvsp[(3) - (6)].str),(yyvsp[(4) - (6)].str),make_str("location"),(yyvsp[(6) - (6)].str));
 }
@@ -26855,7 +26855,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 461:
 
 /* Line 1806 of yacc.c  */
-#line 3327 "preproc.y"
+#line 3327 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("owner"),(yyvsp[(2) - (2)].str));
 }
@@ -26864,7 +26864,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 462:
 
 /* Line 1806 of yacc.c  */
-#line 3331 "preproc.y"
+#line 3331 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -26872,7 +26872,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 463:
 
 /* Line 1806 of yacc.c  */
-#line 3338 "preproc.y"
+#line 3338 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("drop tablespace"),(yyvsp[(3) - (3)].str));
 }
@@ -26881,7 +26881,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 464:
 
 /* Line 1806 of yacc.c  */
-#line 3342 "preproc.y"
+#line 3342 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("drop tablespace if exists"),(yyvsp[(5) - (5)].str));
 }
@@ -26890,7 +26890,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 465:
 
 /* Line 1806 of yacc.c  */
-#line 3350 "preproc.y"
+#line 3350 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,make_str("create foreign data wrapper"),(yyvsp[(5) - (7)].str),(yyvsp[(6) - (7)].str),(yyvsp[(7) - (7)].str));
 }
@@ -26899,7 +26899,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 466:
 
 /* Line 1806 of yacc.c  */
-#line 3358 "preproc.y"
+#line 3358 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("drop foreign data wrapper"),(yyvsp[(5) - (6)].str),(yyvsp[(6) - (6)].str));
 }
@@ -26908,7 +26908,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 467:
 
 /* Line 1806 of yacc.c  */
-#line 3362 "preproc.y"
+#line 3362 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("drop foreign data wrapper if exists"),(yyvsp[(7) - (8)].str),(yyvsp[(8) - (8)].str));
 }
@@ -26917,7 +26917,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 468:
 
 /* Line 1806 of yacc.c  */
-#line 3370 "preproc.y"
+#line 3370 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,make_str("alter foreign data wrapper"),(yyvsp[(5) - (7)].str),(yyvsp[(6) - (7)].str),(yyvsp[(7) - (7)].str));
 }
@@ -26926,7 +26926,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 469:
 
 /* Line 1806 of yacc.c  */
-#line 3374 "preproc.y"
+#line 3374 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("alter foreign data wrapper"),(yyvsp[(5) - (6)].str),(yyvsp[(6) - (6)].str));
 }
@@ -26935,7 +26935,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 470:
 
 /* Line 1806 of yacc.c  */
-#line 3378 "preproc.y"
+#line 3378 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("alter foreign data wrapper"),(yyvsp[(5) - (6)].str),(yyvsp[(6) - (6)].str));
 }
@@ -26944,7 +26944,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 471:
 
 /* Line 1806 of yacc.c  */
-#line 3386 "preproc.y"
+#line 3386 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("options ("),(yyvsp[(3) - (4)].str),make_str(")"));
 }
@@ -26953,7 +26953,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 472:
 
 /* Line 1806 of yacc.c  */
-#line 3390 "preproc.y"
+#line 3390 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -26961,7 +26961,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 473:
 
 /* Line 1806 of yacc.c  */
-#line 3397 "preproc.y"
+#line 3397 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -26970,7 +26970,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 474:
 
 /* Line 1806 of yacc.c  */
-#line 3401 "preproc.y"
+#line 3401 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),make_str(","),(yyvsp[(3) - (3)].str));
 }
@@ -26979,7 +26979,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 475:
 
 /* Line 1806 of yacc.c  */
-#line 3409 "preproc.y"
+#line 3409 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("options ("),(yyvsp[(3) - (4)].str),make_str(")"));
 }
@@ -26988,7 +26988,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 476:
 
 /* Line 1806 of yacc.c  */
-#line 3417 "preproc.y"
+#line 3417 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -26997,7 +26997,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 477:
 
 /* Line 1806 of yacc.c  */
-#line 3421 "preproc.y"
+#line 3421 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),make_str(","),(yyvsp[(3) - (3)].str));
 }
@@ -27006,7 +27006,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 478:
 
 /* Line 1806 of yacc.c  */
-#line 3429 "preproc.y"
+#line 3429 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -27015,7 +27015,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 479:
 
 /* Line 1806 of yacc.c  */
-#line 3433 "preproc.y"
+#line 3433 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("set"),(yyvsp[(2) - (2)].str));
 }
@@ -27024,7 +27024,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 480:
 
 /* Line 1806 of yacc.c  */
-#line 3437 "preproc.y"
+#line 3437 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("add"),(yyvsp[(2) - (2)].str));
 }
@@ -27033,7 +27033,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 481:
 
 /* Line 1806 of yacc.c  */
-#line 3441 "preproc.y"
+#line 3441 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("drop"),(yyvsp[(2) - (2)].str));
 }
@@ -27042,7 +27042,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 482:
 
 /* Line 1806 of yacc.c  */
-#line 3449 "preproc.y"
+#line 3449 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,(yyvsp[(1) - (2)].str),(yyvsp[(2) - (2)].str));
 }
@@ -27051,7 +27051,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 483:
 
 /* Line 1806 of yacc.c  */
-#line 3457 "preproc.y"
+#line 3457 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -27060,7 +27060,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 484:
 
 /* Line 1806 of yacc.c  */
-#line 3465 "preproc.y"
+#line 3465 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -27069,7 +27069,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 485:
 
 /* Line 1806 of yacc.c  */
-#line 3473 "preproc.y"
+#line 3473 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(7,make_str("create server"),(yyvsp[(3) - (10)].str),(yyvsp[(4) - (10)].str),(yyvsp[(5) - (10)].str),make_str("foreign data wrapper"),(yyvsp[(9) - (10)].str),(yyvsp[(10) - (10)].str));
 }
@@ -27078,7 +27078,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 486:
 
 /* Line 1806 of yacc.c  */
-#line 3481 "preproc.y"
+#line 3481 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("type"),(yyvsp[(2) - (2)].str));
 }
@@ -27087,7 +27087,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 487:
 
 /* Line 1806 of yacc.c  */
-#line 3485 "preproc.y"
+#line 3485 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -27095,7 +27095,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 488:
 
 /* Line 1806 of yacc.c  */
-#line 3492 "preproc.y"
+#line 3492 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("version"),(yyvsp[(2) - (2)].str));
 }
@@ -27104,7 +27104,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 489:
 
 /* Line 1806 of yacc.c  */
-#line 3496 "preproc.y"
+#line 3496 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("version null");
 }
@@ -27113,7 +27113,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 490:
 
 /* Line 1806 of yacc.c  */
-#line 3504 "preproc.y"
+#line 3504 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -27122,7 +27122,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 491:
 
 /* Line 1806 of yacc.c  */
-#line 3508 "preproc.y"
+#line 3508 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -27130,7 +27130,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 492:
 
 /* Line 1806 of yacc.c  */
-#line 3515 "preproc.y"
+#line 3515 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("drop server"),(yyvsp[(3) - (4)].str),(yyvsp[(4) - (4)].str));
 }
@@ -27139,7 +27139,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 493:
 
 /* Line 1806 of yacc.c  */
-#line 3519 "preproc.y"
+#line 3519 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("drop server if exists"),(yyvsp[(5) - (6)].str),(yyvsp[(6) - (6)].str));
 }
@@ -27148,7 +27148,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 494:
 
 /* Line 1806 of yacc.c  */
-#line 3527 "preproc.y"
+#line 3527 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,make_str("alter server"),(yyvsp[(3) - (5)].str),(yyvsp[(4) - (5)].str),(yyvsp[(5) - (5)].str));
 }
@@ -27157,7 +27157,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 495:
 
 /* Line 1806 of yacc.c  */
-#line 3531 "preproc.y"
+#line 3531 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("alter server"),(yyvsp[(3) - (4)].str),(yyvsp[(4) - (4)].str));
 }
@@ -27166,7 +27166,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 496:
 
 /* Line 1806 of yacc.c  */
-#line 3535 "preproc.y"
+#line 3535 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("alter server"),(yyvsp[(3) - (4)].str),(yyvsp[(4) - (4)].str));
 }
@@ -27175,7 +27175,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 497:
 
 /* Line 1806 of yacc.c  */
-#line 3543 "preproc.y"
+#line 3543 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(5,make_str("create user mapping for"),(yyvsp[(5) - (8)].str),make_str("server"),(yyvsp[(7) - (8)].str),(yyvsp[(8) - (8)].str));
 }
@@ -27184,7 +27184,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 498:
 
 /* Line 1806 of yacc.c  */
-#line 3551 "preproc.y"
+#line 3551 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("current_user");
 }
@@ -27193,7 +27193,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 499:
 
 /* Line 1806 of yacc.c  */
-#line 3555 "preproc.y"
+#line 3555 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("user");
 }
@@ -27202,7 +27202,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 500:
 
 /* Line 1806 of yacc.c  */
-#line 3559 "preproc.y"
+#line 3559 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -27211,7 +27211,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 501:
 
 /* Line 1806 of yacc.c  */
-#line 3567 "preproc.y"
+#line 3567 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,make_str("drop user mapping for"),(yyvsp[(5) - (7)].str),make_str("server"),(yyvsp[(7) - (7)].str));
 }
@@ -27220,7 +27220,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 502:
 
 /* Line 1806 of yacc.c  */
-#line 3571 "preproc.y"
+#line 3571 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,make_str("drop user mapping if exists for"),(yyvsp[(7) - (9)].str),make_str("server"),(yyvsp[(9) - (9)].str));
 }
@@ -27229,7 +27229,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 503:
 
 /* Line 1806 of yacc.c  */
-#line 3579 "preproc.y"
+#line 3579 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(5,make_str("alter user mapping for"),(yyvsp[(5) - (8)].str),make_str("server"),(yyvsp[(7) - (8)].str),(yyvsp[(8) - (8)].str));
 }
@@ -27238,7 +27238,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 504:
 
 /* Line 1806 of yacc.c  */
-#line 3587 "preproc.y"
+#line 3587 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(12,make_str("create trigger"),(yyvsp[(3) - (14)].str),(yyvsp[(4) - (14)].str),(yyvsp[(5) - (14)].str),make_str("on"),(yyvsp[(7) - (14)].str),(yyvsp[(8) - (14)].str),make_str("execute procedure"),(yyvsp[(11) - (14)].str),make_str("("),(yyvsp[(13) - (14)].str),make_str(")"));
 }
@@ -27247,7 +27247,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 505:
 
 /* Line 1806 of yacc.c  */
-#line 3591 "preproc.y"
+#line 3591 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(13,make_str("create constraint trigger"),(yyvsp[(4) - (19)].str),make_str("after"),(yyvsp[(6) - (19)].str),make_str("on"),(yyvsp[(8) - (19)].str),(yyvsp[(9) - (19)].str),(yyvsp[(10) - (19)].str),make_str("for each row execute procedure"),(yyvsp[(16) - (19)].str),make_str("("),(yyvsp[(18) - (19)].str),make_str(")"));
 }
@@ -27256,7 +27256,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 506:
 
 /* Line 1806 of yacc.c  */
-#line 3599 "preproc.y"
+#line 3599 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("before");
 }
@@ -27265,7 +27265,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 507:
 
 /* Line 1806 of yacc.c  */
-#line 3603 "preproc.y"
+#line 3603 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("after");
 }
@@ -27274,7 +27274,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 508:
 
 /* Line 1806 of yacc.c  */
-#line 3611 "preproc.y"
+#line 3611 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -27283,7 +27283,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 509:
 
 /* Line 1806 of yacc.c  */
-#line 3615 "preproc.y"
+#line 3615 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),make_str("or"),(yyvsp[(3) - (3)].str));
 }
@@ -27292,7 +27292,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 510:
 
 /* Line 1806 of yacc.c  */
-#line 3623 "preproc.y"
+#line 3623 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("insert");
 }
@@ -27301,7 +27301,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 511:
 
 /* Line 1806 of yacc.c  */
-#line 3627 "preproc.y"
+#line 3627 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("delete");
 }
@@ -27310,7 +27310,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 512:
 
 /* Line 1806 of yacc.c  */
-#line 3631 "preproc.y"
+#line 3631 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("update");
 }
@@ -27319,7 +27319,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 513:
 
 /* Line 1806 of yacc.c  */
-#line 3635 "preproc.y"
+#line 3635 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("truncate");
 }
@@ -27328,7 +27328,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 514:
 
 /* Line 1806 of yacc.c  */
-#line 3643 "preproc.y"
+#line 3643 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("for"),(yyvsp[(2) - (3)].str),(yyvsp[(3) - (3)].str));
 }
@@ -27337,7 +27337,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 515:
 
 /* Line 1806 of yacc.c  */
-#line 3647 "preproc.y"
+#line 3647 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -27345,7 +27345,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 516:
 
 /* Line 1806 of yacc.c  */
-#line 3654 "preproc.y"
+#line 3654 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("each");
 }
@@ -27354,7 +27354,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 517:
 
 /* Line 1806 of yacc.c  */
-#line 3658 "preproc.y"
+#line 3658 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -27362,7 +27362,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 518:
 
 /* Line 1806 of yacc.c  */
-#line 3665 "preproc.y"
+#line 3665 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("row");
 }
@@ -27371,7 +27371,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 519:
 
 /* Line 1806 of yacc.c  */
-#line 3669 "preproc.y"
+#line 3669 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("statement");
 }
@@ -27380,7 +27380,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 520:
 
 /* Line 1806 of yacc.c  */
-#line 3677 "preproc.y"
+#line 3677 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -27389,7 +27389,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 521:
 
 /* Line 1806 of yacc.c  */
-#line 3681 "preproc.y"
+#line 3681 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),make_str(","),(yyvsp[(3) - (3)].str));
 }
@@ -27398,7 +27398,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 522:
 
 /* Line 1806 of yacc.c  */
-#line 3685 "preproc.y"
+#line 3685 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -27406,7 +27406,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 523:
 
 /* Line 1806 of yacc.c  */
-#line 3692 "preproc.y"
+#line 3692 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -27415,7 +27415,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 524:
 
 /* Line 1806 of yacc.c  */
-#line 3696 "preproc.y"
+#line 3696 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -27424,7 +27424,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 525:
 
 /* Line 1806 of yacc.c  */
-#line 3700 "preproc.y"
+#line 3700 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -27433,7 +27433,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 526:
 
 /* Line 1806 of yacc.c  */
-#line 3704 "preproc.y"
+#line 3704 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -27442,7 +27442,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 527:
 
 /* Line 1806 of yacc.c  */
-#line 3708 "preproc.y"
+#line 3708 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("xconst");
 }
@@ -27451,7 +27451,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 528:
 
 /* Line 1806 of yacc.c  */
-#line 3712 "preproc.y"
+#line 3712 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -27460,7 +27460,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 529:
 
 /* Line 1806 of yacc.c  */
-#line 3720 "preproc.y"
+#line 3720 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("from"),(yyvsp[(2) - (2)].str));
 }
@@ -27469,7 +27469,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 530:
 
 /* Line 1806 of yacc.c  */
-#line 3724 "preproc.y"
+#line 3724 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -27477,7 +27477,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 531:
 
 /* Line 1806 of yacc.c  */
-#line 3731 "preproc.y"
+#line 3731 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -27486,7 +27486,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 532:
 
 /* Line 1806 of yacc.c  */
-#line 3735 "preproc.y"
+#line 3735 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
 			if (strcmp((yyvsp[(1) - (2)].str), "deferrable") != 0 && strcmp((yyvsp[(2) - (2)].str), "initially deferrable") == 0 )
 				mmerror(PARSE_ERROR, ET_ERROR, "constraint declared INITIALLY DEFERRED must be DEFERRABLE");
@@ -27498,7 +27498,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 533:
 
 /* Line 1806 of yacc.c  */
-#line 3742 "preproc.y"
+#line 3742 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -27507,7 +27507,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 534:
 
 /* Line 1806 of yacc.c  */
-#line 3746 "preproc.y"
+#line 3746 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
 			if (strcmp((yyvsp[(2) - (2)].str), "deferrable") != 0 && strcmp((yyvsp[(1) - (2)].str), "initially deferrable") == 0 )
 				mmerror(PARSE_ERROR, ET_ERROR, "constraint declared INITIALLY DEFERRED must be DEFERRABLE");
@@ -27519,7 +27519,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 535:
 
 /* Line 1806 of yacc.c  */
-#line 3753 "preproc.y"
+#line 3753 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -27527,7 +27527,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 536:
 
 /* Line 1806 of yacc.c  */
-#line 3760 "preproc.y"
+#line 3760 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("not deferrable");
 }
@@ -27536,7 +27536,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 537:
 
 /* Line 1806 of yacc.c  */
-#line 3764 "preproc.y"
+#line 3764 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("deferrable");
 }
@@ -27545,7 +27545,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 538:
 
 /* Line 1806 of yacc.c  */
-#line 3772 "preproc.y"
+#line 3772 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("initially immediate");
 }
@@ -27554,7 +27554,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 539:
 
 /* Line 1806 of yacc.c  */
-#line 3776 "preproc.y"
+#line 3776 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("initially deferred");
 }
@@ -27563,7 +27563,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 540:
 
 /* Line 1806 of yacc.c  */
-#line 3784 "preproc.y"
+#line 3784 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(5,make_str("drop trigger"),(yyvsp[(3) - (6)].str),make_str("on"),(yyvsp[(5) - (6)].str),(yyvsp[(6) - (6)].str));
 }
@@ -27572,7 +27572,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 541:
 
 /* Line 1806 of yacc.c  */
-#line 3788 "preproc.y"
+#line 3788 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(5,make_str("drop trigger if exists"),(yyvsp[(5) - (8)].str),make_str("on"),(yyvsp[(7) - (8)].str),(yyvsp[(8) - (8)].str));
 }
@@ -27581,7 +27581,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 542:
 
 /* Line 1806 of yacc.c  */
-#line 3796 "preproc.y"
+#line 3796 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
 mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server");
  (yyval.str) = cat_str(6,make_str("create assertion"),(yyvsp[(3) - (8)].str),make_str("check ("),(yyvsp[(6) - (8)].str),make_str(")"),(yyvsp[(8) - (8)].str));
@@ -27591,7 +27591,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 543:
 
 /* Line 1806 of yacc.c  */
-#line 3805 "preproc.y"
+#line 3805 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
 mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server");
  (yyval.str) = cat_str(3,make_str("drop assertion"),(yyvsp[(3) - (4)].str),(yyvsp[(4) - (4)].str));
@@ -27601,7 +27601,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 544:
 
 /* Line 1806 of yacc.c  */
-#line 3814 "preproc.y"
+#line 3814 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,make_str("create aggregate"),(yyvsp[(3) - (5)].str),(yyvsp[(4) - (5)].str),(yyvsp[(5) - (5)].str));
 }
@@ -27610,7 +27610,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 545:
 
 /* Line 1806 of yacc.c  */
-#line 3818 "preproc.y"
+#line 3818 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("create aggregate"),(yyvsp[(3) - (4)].str),(yyvsp[(4) - (4)].str));
 }
@@ -27619,7 +27619,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 546:
 
 /* Line 1806 of yacc.c  */
-#line 3822 "preproc.y"
+#line 3822 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("create operator"),(yyvsp[(3) - (4)].str),(yyvsp[(4) - (4)].str));
 }
@@ -27628,7 +27628,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 547:
 
 /* Line 1806 of yacc.c  */
-#line 3826 "preproc.y"
+#line 3826 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("create type"),(yyvsp[(3) - (4)].str),(yyvsp[(4) - (4)].str));
 }
@@ -27637,7 +27637,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 548:
 
 /* Line 1806 of yacc.c  */
-#line 3830 "preproc.y"
+#line 3830 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("create type"),(yyvsp[(3) - (3)].str));
 }
@@ -27646,7 +27646,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 549:
 
 /* Line 1806 of yacc.c  */
-#line 3834 "preproc.y"
+#line 3834 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(5,make_str("create type"),(yyvsp[(3) - (7)].str),make_str("as ("),(yyvsp[(6) - (7)].str),make_str(")"));
 }
@@ -27655,7 +27655,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 550:
 
 /* Line 1806 of yacc.c  */
-#line 3838 "preproc.y"
+#line 3838 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(5,make_str("create type"),(yyvsp[(3) - (8)].str),make_str("as enum ("),(yyvsp[(7) - (8)].str),make_str(")"));
 }
@@ -27664,7 +27664,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 551:
 
 /* Line 1806 of yacc.c  */
-#line 3842 "preproc.y"
+#line 3842 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("create text search parser"),(yyvsp[(5) - (6)].str),(yyvsp[(6) - (6)].str));
 }
@@ -27673,7 +27673,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 552:
 
 /* Line 1806 of yacc.c  */
-#line 3846 "preproc.y"
+#line 3846 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("create text search dictionary"),(yyvsp[(5) - (6)].str),(yyvsp[(6) - (6)].str));
 }
@@ -27682,7 +27682,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 553:
 
 /* Line 1806 of yacc.c  */
-#line 3850 "preproc.y"
+#line 3850 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("create text search template"),(yyvsp[(5) - (6)].str),(yyvsp[(6) - (6)].str));
 }
@@ -27691,7 +27691,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 554:
 
 /* Line 1806 of yacc.c  */
-#line 3854 "preproc.y"
+#line 3854 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("create text search configuration"),(yyvsp[(5) - (6)].str),(yyvsp[(6) - (6)].str));
 }
@@ -27700,7 +27700,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 555:
 
 /* Line 1806 of yacc.c  */
-#line 3862 "preproc.y"
+#line 3862 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("("),(yyvsp[(2) - (3)].str),make_str(")"));
 }
@@ -27709,7 +27709,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 556:
 
 /* Line 1806 of yacc.c  */
-#line 3870 "preproc.y"
+#line 3870 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -27718,7 +27718,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 557:
 
 /* Line 1806 of yacc.c  */
-#line 3874 "preproc.y"
+#line 3874 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),make_str(","),(yyvsp[(3) - (3)].str));
 }
@@ -27727,7 +27727,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 558:
 
 /* Line 1806 of yacc.c  */
-#line 3882 "preproc.y"
+#line 3882 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),make_str("="),(yyvsp[(3) - (3)].str));
 }
@@ -27736,7 +27736,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 559:
 
 /* Line 1806 of yacc.c  */
-#line 3886 "preproc.y"
+#line 3886 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -27745,7 +27745,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 560:
 
 /* Line 1806 of yacc.c  */
-#line 3894 "preproc.y"
+#line 3894 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -27754,7 +27754,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 561:
 
 /* Line 1806 of yacc.c  */
-#line 3898 "preproc.y"
+#line 3898 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -27763,7 +27763,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 562:
 
 /* Line 1806 of yacc.c  */
-#line 3902 "preproc.y"
+#line 3902 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -27772,7 +27772,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 563:
 
 /* Line 1806 of yacc.c  */
-#line 3906 "preproc.y"
+#line 3906 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -27781,7 +27781,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 564:
 
 /* Line 1806 of yacc.c  */
-#line 3910 "preproc.y"
+#line 3910 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -27790,7 +27790,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 565:
 
 /* Line 1806 of yacc.c  */
-#line 3918 "preproc.y"
+#line 3918 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("("),(yyvsp[(2) - (3)].str),make_str(")"));
 }
@@ -27799,7 +27799,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 566:
 
 /* Line 1806 of yacc.c  */
-#line 3922 "preproc.y"
+#line 3922 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("( * )");
 }
@@ -27808,7 +27808,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 567:
 
 /* Line 1806 of yacc.c  */
-#line 3930 "preproc.y"
+#line 3930 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("("),(yyvsp[(2) - (3)].str),make_str(")"));
 }
@@ -27817,7 +27817,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 568:
 
 /* Line 1806 of yacc.c  */
-#line 3938 "preproc.y"
+#line 3938 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -27826,7 +27826,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 569:
 
 /* Line 1806 of yacc.c  */
-#line 3942 "preproc.y"
+#line 3942 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),make_str(","),(yyvsp[(3) - (3)].str));
 }
@@ -27835,7 +27835,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 570:
 
 /* Line 1806 of yacc.c  */
-#line 3950 "preproc.y"
+#line 3950 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),make_str("="),(yyvsp[(3) - (3)].str));
 }
@@ -27844,7 +27844,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 571:
 
 /* Line 1806 of yacc.c  */
-#line 3958 "preproc.y"
+#line 3958 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -27853,7 +27853,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 572:
 
 /* Line 1806 of yacc.c  */
-#line 3962 "preproc.y"
+#line 3962 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),make_str(","),(yyvsp[(3) - (3)].str));
 }
@@ -27862,7 +27862,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 573:
 
 /* Line 1806 of yacc.c  */
-#line 3970 "preproc.y"
+#line 3970 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(10,make_str("create operator class"),(yyvsp[(4) - (13)].str),(yyvsp[(5) - (13)].str),make_str("for type"),(yyvsp[(8) - (13)].str),make_str("using"),(yyvsp[(10) - (13)].str),(yyvsp[(11) - (13)].str),make_str("as"),(yyvsp[(13) - (13)].str));
 }
@@ -27871,7 +27871,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 574:
 
 /* Line 1806 of yacc.c  */
-#line 3978 "preproc.y"
+#line 3978 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -27880,7 +27880,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 575:
 
 /* Line 1806 of yacc.c  */
-#line 3982 "preproc.y"
+#line 3982 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),make_str(","),(yyvsp[(3) - (3)].str));
 }
@@ -27889,7 +27889,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 576:
 
 /* Line 1806 of yacc.c  */
-#line 3990 "preproc.y"
+#line 3990 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,make_str("operator"),(yyvsp[(2) - (4)].str),(yyvsp[(3) - (4)].str),(yyvsp[(4) - (4)].str));
 }
@@ -27898,7 +27898,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 577:
 
 /* Line 1806 of yacc.c  */
-#line 3994 "preproc.y"
+#line 3994 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(5,make_str("operator"),(yyvsp[(2) - (5)].str),(yyvsp[(3) - (5)].str),(yyvsp[(4) - (5)].str),(yyvsp[(5) - (5)].str));
 }
@@ -27907,7 +27907,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 578:
 
 /* Line 1806 of yacc.c  */
-#line 3998 "preproc.y"
+#line 3998 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,make_str("function"),(yyvsp[(2) - (4)].str),(yyvsp[(3) - (4)].str),(yyvsp[(4) - (4)].str));
 }
@@ -27916,7 +27916,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 579:
 
 /* Line 1806 of yacc.c  */
-#line 4002 "preproc.y"
+#line 4002 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(7,make_str("function"),(yyvsp[(2) - (7)].str),make_str("("),(yyvsp[(4) - (7)].str),make_str(")"),(yyvsp[(6) - (7)].str),(yyvsp[(7) - (7)].str));
 }
@@ -27925,7 +27925,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 580:
 
 /* Line 1806 of yacc.c  */
-#line 4006 "preproc.y"
+#line 4006 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("storage"),(yyvsp[(2) - (2)].str));
 }
@@ -27934,7 +27934,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 581:
 
 /* Line 1806 of yacc.c  */
-#line 4014 "preproc.y"
+#line 4014 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("default");
 }
@@ -27943,7 +27943,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 582:
 
 /* Line 1806 of yacc.c  */
-#line 4018 "preproc.y"
+#line 4018 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -27951,7 +27951,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 583:
 
 /* Line 1806 of yacc.c  */
-#line 4025 "preproc.y"
+#line 4025 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("family"),(yyvsp[(2) - (2)].str));
 }
@@ -27960,7 +27960,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 584:
 
 /* Line 1806 of yacc.c  */
-#line 4029 "preproc.y"
+#line 4029 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -27968,7 +27968,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 585:
 
 /* Line 1806 of yacc.c  */
-#line 4036 "preproc.y"
+#line 4036 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
 mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server");
  (yyval.str) = make_str("recheck");
@@ -27978,7 +27978,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 586:
 
 /* Line 1806 of yacc.c  */
-#line 4041 "preproc.y"
+#line 4041 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -27986,7 +27986,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 587:
 
 /* Line 1806 of yacc.c  */
-#line 4048 "preproc.y"
+#line 4048 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,make_str("create operator family"),(yyvsp[(4) - (6)].str),make_str("using"),(yyvsp[(6) - (6)].str));
 }
@@ -27995,7 +27995,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 588:
 
 /* Line 1806 of yacc.c  */
-#line 4056 "preproc.y"
+#line 4056 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(6,make_str("alter operator family"),(yyvsp[(4) - (8)].str),make_str("using"),(yyvsp[(6) - (8)].str),make_str("add"),(yyvsp[(8) - (8)].str));
 }
@@ -28004,7 +28004,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 589:
 
 /* Line 1806 of yacc.c  */
-#line 4060 "preproc.y"
+#line 4060 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(6,make_str("alter operator family"),(yyvsp[(4) - (8)].str),make_str("using"),(yyvsp[(6) - (8)].str),make_str("drop"),(yyvsp[(8) - (8)].str));
 }
@@ -28013,7 +28013,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 590:
 
 /* Line 1806 of yacc.c  */
-#line 4068 "preproc.y"
+#line 4068 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -28022,7 +28022,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 591:
 
 /* Line 1806 of yacc.c  */
-#line 4072 "preproc.y"
+#line 4072 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),make_str(","),(yyvsp[(3) - (3)].str));
 }
@@ -28031,7 +28031,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 592:
 
 /* Line 1806 of yacc.c  */
-#line 4080 "preproc.y"
+#line 4080 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(5,make_str("operator"),(yyvsp[(2) - (5)].str),make_str("("),(yyvsp[(4) - (5)].str),make_str(")"));
 }
@@ -28040,7 +28040,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 593:
 
 /* Line 1806 of yacc.c  */
-#line 4084 "preproc.y"
+#line 4084 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(5,make_str("function"),(yyvsp[(2) - (5)].str),make_str("("),(yyvsp[(4) - (5)].str),make_str(")"));
 }
@@ -28049,7 +28049,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 594:
 
 /* Line 1806 of yacc.c  */
-#line 4092 "preproc.y"
+#line 4092 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(5,make_str("drop operator class"),(yyvsp[(4) - (7)].str),make_str("using"),(yyvsp[(6) - (7)].str),(yyvsp[(7) - (7)].str));
 }
@@ -28058,7 +28058,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 595:
 
 /* Line 1806 of yacc.c  */
-#line 4096 "preproc.y"
+#line 4096 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(5,make_str("drop operator class if exists"),(yyvsp[(6) - (9)].str),make_str("using"),(yyvsp[(8) - (9)].str),(yyvsp[(9) - (9)].str));
 }
@@ -28067,7 +28067,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 596:
 
 /* Line 1806 of yacc.c  */
-#line 4104 "preproc.y"
+#line 4104 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(5,make_str("drop operator family"),(yyvsp[(4) - (7)].str),make_str("using"),(yyvsp[(6) - (7)].str),(yyvsp[(7) - (7)].str));
 }
@@ -28076,7 +28076,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 597:
 
 /* Line 1806 of yacc.c  */
-#line 4108 "preproc.y"
+#line 4108 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(5,make_str("drop operator family if exists"),(yyvsp[(6) - (9)].str),make_str("using"),(yyvsp[(8) - (9)].str),(yyvsp[(9) - (9)].str));
 }
@@ -28085,7 +28085,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 598:
 
 /* Line 1806 of yacc.c  */
-#line 4116 "preproc.y"
+#line 4116 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("drop owned by"),(yyvsp[(4) - (5)].str),(yyvsp[(5) - (5)].str));
 }
@@ -28094,7 +28094,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 599:
 
 /* Line 1806 of yacc.c  */
-#line 4124 "preproc.y"
+#line 4124 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,make_str("reassign owned by"),(yyvsp[(4) - (6)].str),make_str("to"),(yyvsp[(6) - (6)].str));
 }
@@ -28103,7 +28103,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 600:
 
 /* Line 1806 of yacc.c  */
-#line 4132 "preproc.y"
+#line 4132 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(5,make_str("drop"),(yyvsp[(2) - (6)].str),make_str("if exists"),(yyvsp[(5) - (6)].str),(yyvsp[(6) - (6)].str));
 }
@@ -28112,7 +28112,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 601:
 
 /* Line 1806 of yacc.c  */
-#line 4136 "preproc.y"
+#line 4136 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,make_str("drop"),(yyvsp[(2) - (4)].str),(yyvsp[(3) - (4)].str),(yyvsp[(4) - (4)].str));
 }
@@ -28121,7 +28121,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 602:
 
 /* Line 1806 of yacc.c  */
-#line 4144 "preproc.y"
+#line 4144 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("table");
 }
@@ -28130,7 +28130,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 603:
 
 /* Line 1806 of yacc.c  */
-#line 4148 "preproc.y"
+#line 4148 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("sequence");
 }
@@ -28139,7 +28139,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 604:
 
 /* Line 1806 of yacc.c  */
-#line 4152 "preproc.y"
+#line 4152 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("view");
 }
@@ -28148,7 +28148,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 605:
 
 /* Line 1806 of yacc.c  */
-#line 4156 "preproc.y"
+#line 4156 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("index");
 }
@@ -28157,7 +28157,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 606:
 
 /* Line 1806 of yacc.c  */
-#line 4160 "preproc.y"
+#line 4160 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("type");
 }
@@ -28166,7 +28166,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 607:
 
 /* Line 1806 of yacc.c  */
-#line 4164 "preproc.y"
+#line 4164 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("domain");
 }
@@ -28175,7 +28175,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 608:
 
 /* Line 1806 of yacc.c  */
-#line 4168 "preproc.y"
+#line 4168 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("conversion");
 }
@@ -28184,7 +28184,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 609:
 
 /* Line 1806 of yacc.c  */
-#line 4172 "preproc.y"
+#line 4172 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("schema");
 }
@@ -28193,7 +28193,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 610:
 
 /* Line 1806 of yacc.c  */
-#line 4176 "preproc.y"
+#line 4176 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("text search parser");
 }
@@ -28202,7 +28202,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 611:
 
 /* Line 1806 of yacc.c  */
-#line 4180 "preproc.y"
+#line 4180 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("text search dictionary");
 }
@@ -28211,7 +28211,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 612:
 
 /* Line 1806 of yacc.c  */
-#line 4184 "preproc.y"
+#line 4184 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("text search template");
 }
@@ -28220,7 +28220,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 613:
 
 /* Line 1806 of yacc.c  */
-#line 4188 "preproc.y"
+#line 4188 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("text search configuration");
 }
@@ -28229,7 +28229,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 614:
 
 /* Line 1806 of yacc.c  */
-#line 4196 "preproc.y"
+#line 4196 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -28238,7 +28238,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 615:
 
 /* Line 1806 of yacc.c  */
-#line 4200 "preproc.y"
+#line 4200 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),make_str(","),(yyvsp[(3) - (3)].str));
 }
@@ -28247,7 +28247,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 616:
 
 /* Line 1806 of yacc.c  */
-#line 4208 "preproc.y"
+#line 4208 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -28256,7 +28256,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 617:
 
 /* Line 1806 of yacc.c  */
-#line 4212 "preproc.y"
+#line 4212 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,(yyvsp[(1) - (2)].str),(yyvsp[(2) - (2)].str));
 }
@@ -28265,7 +28265,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 618:
 
 /* Line 1806 of yacc.c  */
-#line 4220 "preproc.y"
+#line 4220 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("."),(yyvsp[(2) - (2)].str));
 }
@@ -28274,7 +28274,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 619:
 
 /* Line 1806 of yacc.c  */
-#line 4224 "preproc.y"
+#line 4224 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),make_str("."),(yyvsp[(3) - (3)].str));
 }
@@ -28283,7 +28283,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 620:
 
 /* Line 1806 of yacc.c  */
-#line 4232 "preproc.y"
+#line 4232 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(5,make_str("truncate"),(yyvsp[(2) - (5)].str),(yyvsp[(3) - (5)].str),(yyvsp[(4) - (5)].str),(yyvsp[(5) - (5)].str));
 }
@@ -28292,7 +28292,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 621:
 
 /* Line 1806 of yacc.c  */
-#line 4240 "preproc.y"
+#line 4240 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("continue identity");
 }
@@ -28301,7 +28301,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 622:
 
 /* Line 1806 of yacc.c  */
-#line 4244 "preproc.y"
+#line 4244 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("restart identity");
 }
@@ -28310,7 +28310,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 623:
 
 /* Line 1806 of yacc.c  */
-#line 4248 "preproc.y"
+#line 4248 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -28318,7 +28318,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 624:
 
 /* Line 1806 of yacc.c  */
-#line 4255 "preproc.y"
+#line 4255 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(5,make_str("comment on"),(yyvsp[(3) - (6)].str),(yyvsp[(4) - (6)].str),make_str("is"),(yyvsp[(6) - (6)].str));
 }
@@ -28327,7 +28327,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 625:
 
 /* Line 1806 of yacc.c  */
-#line 4259 "preproc.y"
+#line 4259 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(5,make_str("comment on aggregate"),(yyvsp[(4) - (7)].str),(yyvsp[(5) - (7)].str),make_str("is"),(yyvsp[(7) - (7)].str));
 }
@@ -28336,7 +28336,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 626:
 
 /* Line 1806 of yacc.c  */
-#line 4263 "preproc.y"
+#line 4263 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(5,make_str("comment on function"),(yyvsp[(4) - (7)].str),(yyvsp[(5) - (7)].str),make_str("is"),(yyvsp[(7) - (7)].str));
 }
@@ -28345,7 +28345,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 627:
 
 /* Line 1806 of yacc.c  */
-#line 4267 "preproc.y"
+#line 4267 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(5,make_str("comment on operator"),(yyvsp[(4) - (7)].str),(yyvsp[(5) - (7)].str),make_str("is"),(yyvsp[(7) - (7)].str));
 }
@@ -28354,7 +28354,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 628:
 
 /* Line 1806 of yacc.c  */
-#line 4271 "preproc.y"
+#line 4271 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(6,make_str("comment on constraint"),(yyvsp[(4) - (8)].str),make_str("on"),(yyvsp[(6) - (8)].str),make_str("is"),(yyvsp[(8) - (8)].str));
 }
@@ -28363,7 +28363,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 629:
 
 /* Line 1806 of yacc.c  */
-#line 4275 "preproc.y"
+#line 4275 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(6,make_str("comment on rule"),(yyvsp[(4) - (8)].str),make_str("on"),(yyvsp[(6) - (8)].str),make_str("is"),(yyvsp[(8) - (8)].str));
 }
@@ -28372,7 +28372,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 630:
 
 /* Line 1806 of yacc.c  */
-#line 4279 "preproc.y"
+#line 4279 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,make_str("comment on rule"),(yyvsp[(4) - (6)].str),make_str("is"),(yyvsp[(6) - (6)].str));
 }
@@ -28381,7 +28381,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 631:
 
 /* Line 1806 of yacc.c  */
-#line 4283 "preproc.y"
+#line 4283 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(6,make_str("comment on trigger"),(yyvsp[(4) - (8)].str),make_str("on"),(yyvsp[(6) - (8)].str),make_str("is"),(yyvsp[(8) - (8)].str));
 }
@@ -28390,7 +28390,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 632:
 
 /* Line 1806 of yacc.c  */
-#line 4287 "preproc.y"
+#line 4287 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(6,make_str("comment on operator class"),(yyvsp[(5) - (9)].str),make_str("using"),(yyvsp[(7) - (9)].str),make_str("is"),(yyvsp[(9) - (9)].str));
 }
@@ -28399,7 +28399,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 633:
 
 /* Line 1806 of yacc.c  */
-#line 4291 "preproc.y"
+#line 4291 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(6,make_str("comment on operator family"),(yyvsp[(5) - (9)].str),make_str("using"),(yyvsp[(7) - (9)].str),make_str("is"),(yyvsp[(9) - (9)].str));
 }
@@ -28408,7 +28408,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 634:
 
 /* Line 1806 of yacc.c  */
-#line 4295 "preproc.y"
+#line 4295 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,make_str("comment on large object"),(yyvsp[(5) - (7)].str),make_str("is"),(yyvsp[(7) - (7)].str));
 }
@@ -28417,7 +28417,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 635:
 
 /* Line 1806 of yacc.c  */
-#line 4299 "preproc.y"
+#line 4299 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(6,make_str("comment on cast ("),(yyvsp[(5) - (10)].str),make_str("as"),(yyvsp[(7) - (10)].str),make_str(") is"),(yyvsp[(10) - (10)].str));
 }
@@ -28426,7 +28426,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 636:
 
 /* Line 1806 of yacc.c  */
-#line 4303 "preproc.y"
+#line 4303 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(6,make_str("comment on"),(yyvsp[(3) - (7)].str),make_str("language"),(yyvsp[(5) - (7)].str),make_str("is"),(yyvsp[(7) - (7)].str));
 }
@@ -28435,7 +28435,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 637:
 
 /* Line 1806 of yacc.c  */
-#line 4307 "preproc.y"
+#line 4307 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,make_str("comment on text search parser"),(yyvsp[(6) - (8)].str),make_str("is"),(yyvsp[(8) - (8)].str));
 }
@@ -28444,7 +28444,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 638:
 
 /* Line 1806 of yacc.c  */
-#line 4311 "preproc.y"
+#line 4311 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,make_str("comment on text search dictionary"),(yyvsp[(6) - (8)].str),make_str("is"),(yyvsp[(8) - (8)].str));
 }
@@ -28453,7 +28453,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 639:
 
 /* Line 1806 of yacc.c  */
-#line 4315 "preproc.y"
+#line 4315 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,make_str("comment on text search template"),(yyvsp[(6) - (8)].str),make_str("is"),(yyvsp[(8) - (8)].str));
 }
@@ -28462,7 +28462,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 640:
 
 /* Line 1806 of yacc.c  */
-#line 4319 "preproc.y"
+#line 4319 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,make_str("comment on text search configuration"),(yyvsp[(6) - (8)].str),make_str("is"),(yyvsp[(8) - (8)].str));
 }
@@ -28471,7 +28471,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 641:
 
 /* Line 1806 of yacc.c  */
-#line 4327 "preproc.y"
+#line 4327 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("column");
 }
@@ -28480,7 +28480,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 642:
 
 /* Line 1806 of yacc.c  */
-#line 4331 "preproc.y"
+#line 4331 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("database");
 }
@@ -28489,7 +28489,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 643:
 
 /* Line 1806 of yacc.c  */
-#line 4335 "preproc.y"
+#line 4335 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("schema");
 }
@@ -28498,7 +28498,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 644:
 
 /* Line 1806 of yacc.c  */
-#line 4339 "preproc.y"
+#line 4339 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("index");
 }
@@ -28507,7 +28507,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 645:
 
 /* Line 1806 of yacc.c  */
-#line 4343 "preproc.y"
+#line 4343 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("sequence");
 }
@@ -28516,7 +28516,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 646:
 
 /* Line 1806 of yacc.c  */
-#line 4347 "preproc.y"
+#line 4347 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("table");
 }
@@ -28525,7 +28525,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 647:
 
 /* Line 1806 of yacc.c  */
-#line 4351 "preproc.y"
+#line 4351 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("domain");
 }
@@ -28534,7 +28534,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 648:
 
 /* Line 1806 of yacc.c  */
-#line 4355 "preproc.y"
+#line 4355 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("type");
 }
@@ -28543,7 +28543,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 649:
 
 /* Line 1806 of yacc.c  */
-#line 4359 "preproc.y"
+#line 4359 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("view");
 }
@@ -28552,7 +28552,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 650:
 
 /* Line 1806 of yacc.c  */
-#line 4363 "preproc.y"
+#line 4363 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("conversion");
 }
@@ -28561,7 +28561,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 651:
 
 /* Line 1806 of yacc.c  */
-#line 4367 "preproc.y"
+#line 4367 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("tablespace");
 }
@@ -28570,7 +28570,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 652:
 
 /* Line 1806 of yacc.c  */
-#line 4371 "preproc.y"
+#line 4371 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("role");
 }
@@ -28579,7 +28579,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 653:
 
 /* Line 1806 of yacc.c  */
-#line 4379 "preproc.y"
+#line 4379 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -28588,7 +28588,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 654:
 
 /* Line 1806 of yacc.c  */
-#line 4383 "preproc.y"
+#line 4383 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("null");
 }
@@ -28597,7 +28597,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 655:
 
 /* Line 1806 of yacc.c  */
-#line 4391 "preproc.y"
+#line 4391 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 		add_additional_variables((yyvsp[(4) - (4)].str), false);
 		(yyval.str) = cat_str(4, make_str("fetch"), (yyvsp[(2) - (4)].str), (yyvsp[(3) - (4)].str), (yyvsp[(4) - (4)].str));
@@ -28607,7 +28607,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 656:
 
 /* Line 1806 of yacc.c  */
-#line 4396 "preproc.y"
+#line 4396 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 		add_additional_variables((yyvsp[(2) - (2)].str), false);
 		(yyval.str) = cat_str(2, make_str("fetch"), (yyvsp[(2) - (2)].str));
@@ -28617,7 +28617,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 657:
 
 /* Line 1806 of yacc.c  */
-#line 4401 "preproc.y"
+#line 4401 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,make_str("move"),(yyvsp[(2) - (4)].str),(yyvsp[(3) - (4)].str),(yyvsp[(4) - (4)].str));
 }
@@ -28626,7 +28626,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 658:
 
 /* Line 1806 of yacc.c  */
-#line 4405 "preproc.y"
+#line 4405 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("move"),(yyvsp[(2) - (2)].str));
 }
@@ -28635,7 +28635,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 659:
 
 /* Line 1806 of yacc.c  */
-#line 4409 "preproc.y"
+#line 4409 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 			add_additional_variables((yyvsp[(4) - (5)].str), false);
 			(yyval.str) = cat_str(4, make_str("fetch"), (yyvsp[(2) - (5)].str), (yyvsp[(3) - (5)].str), (yyvsp[(4) - (5)].str));
@@ -28645,7 +28645,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 660:
 
 /* Line 1806 of yacc.c  */
-#line 4414 "preproc.y"
+#line 4414 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 			add_additional_variables((yyvsp[(3) - (4)].str), false);
 			(yyval.str) = cat_str(4, make_str("fetch"), (yyvsp[(2) - (4)].str), make_str("from"), (yyvsp[(3) - (4)].str));
@@ -28655,7 +28655,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 661:
 
 /* Line 1806 of yacc.c  */
-#line 4419 "preproc.y"
+#line 4419 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 			add_additional_variables((yyvsp[(3) - (4)].str), false);
 			(yyval.str) = cat_str(3, make_str("fetch"), (yyvsp[(2) - (4)].str), (yyvsp[(3) - (4)].str));
@@ -28665,7 +28665,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 662:
 
 /* Line 1806 of yacc.c  */
-#line 4424 "preproc.y"
+#line 4424 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 			add_additional_variables((yyvsp[(2) - (3)].str), false);
 			(yyval.str) = cat2_str(make_str("fetch"), (yyvsp[(2) - (3)].str));
@@ -28675,7 +28675,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 663:
 
 /* Line 1806 of yacc.c  */
-#line 4429 "preproc.y"
+#line 4429 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 			add_additional_variables((yyvsp[(3) - (3)].str), false);
 			(yyval.str) = cat_str(4, make_str("fetch"), (yyvsp[(2) - (3)].str), make_str("from"), (yyvsp[(3) - (3)].str));
@@ -28685,7 +28685,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 664:
 
 /* Line 1806 of yacc.c  */
-#line 4434 "preproc.y"
+#line 4434 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 			add_additional_variables((yyvsp[(3) - (3)].str), false);
 			(yyval.str) = cat_str(3, make_str("fetch"), (yyvsp[(2) - (3)].str), (yyvsp[(3) - (3)].str));
@@ -28695,7 +28695,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 665:
 
 /* Line 1806 of yacc.c  */
-#line 4443 "preproc.y"
+#line 4443 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("next");
 }
@@ -28704,7 +28704,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 666:
 
 /* Line 1806 of yacc.c  */
-#line 4447 "preproc.y"
+#line 4447 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("prior");
 }
@@ -28713,7 +28713,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 667:
 
 /* Line 1806 of yacc.c  */
-#line 4451 "preproc.y"
+#line 4451 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("first");
 }
@@ -28722,7 +28722,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 668:
 
 /* Line 1806 of yacc.c  */
-#line 4455 "preproc.y"
+#line 4455 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("last");
 }
@@ -28731,7 +28731,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 669:
 
 /* Line 1806 of yacc.c  */
-#line 4459 "preproc.y"
+#line 4459 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
 		if ((yyvsp[(2) - (2)].str)[0] == '$')
 		{
@@ -28746,7 +28746,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 670:
 
 /* Line 1806 of yacc.c  */
-#line 4469 "preproc.y"
+#line 4469 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
 		if ((yyvsp[(2) - (2)].str)[0] == '$')
 		{
@@ -28761,7 +28761,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 671:
 
 /* Line 1806 of yacc.c  */
-#line 4479 "preproc.y"
+#line 4479 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
 		if ((yyvsp[(1) - (1)].str)[0] == '$')
 		{
@@ -28776,7 +28776,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 672:
 
 /* Line 1806 of yacc.c  */
-#line 4489 "preproc.y"
+#line 4489 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("all");
 }
@@ -28785,7 +28785,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 673:
 
 /* Line 1806 of yacc.c  */
-#line 4493 "preproc.y"
+#line 4493 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("forward");
 }
@@ -28794,7 +28794,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 674:
 
 /* Line 1806 of yacc.c  */
-#line 4497 "preproc.y"
+#line 4497 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
 		if ((yyvsp[(2) - (2)].str)[0] == '$')
 		{
@@ -28809,7 +28809,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 675:
 
 /* Line 1806 of yacc.c  */
-#line 4507 "preproc.y"
+#line 4507 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("forward all");
 }
@@ -28818,7 +28818,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 676:
 
 /* Line 1806 of yacc.c  */
-#line 4511 "preproc.y"
+#line 4511 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("backward");
 }
@@ -28827,7 +28827,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 677:
 
 /* Line 1806 of yacc.c  */
-#line 4515 "preproc.y"
+#line 4515 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
 		if ((yyvsp[(2) - (2)].str)[0] == '$')
 		{
@@ -28842,7 +28842,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 678:
 
 /* Line 1806 of yacc.c  */
-#line 4525 "preproc.y"
+#line 4525 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("backward all");
 }
@@ -28851,7 +28851,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 679:
 
 /* Line 1806 of yacc.c  */
-#line 4533 "preproc.y"
+#line 4533 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("from");
 }
@@ -28860,7 +28860,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 680:
 
 /* Line 1806 of yacc.c  */
-#line 4537 "preproc.y"
+#line 4537 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("in");
 }
@@ -28869,7 +28869,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 681:
 
 /* Line 1806 of yacc.c  */
-#line 4545 "preproc.y"
+#line 4545 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(7,make_str("grant"),(yyvsp[(2) - (7)].str),make_str("on"),(yyvsp[(4) - (7)].str),make_str("to"),(yyvsp[(6) - (7)].str),(yyvsp[(7) - (7)].str));
 }
@@ -28878,7 +28878,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 682:
 
 /* Line 1806 of yacc.c  */
-#line 4553 "preproc.y"
+#line 4553 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(7,make_str("revoke"),(yyvsp[(2) - (7)].str),make_str("on"),(yyvsp[(4) - (7)].str),make_str("from"),(yyvsp[(6) - (7)].str),(yyvsp[(7) - (7)].str));
 }
@@ -28887,7 +28887,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 683:
 
 /* Line 1806 of yacc.c  */
-#line 4557 "preproc.y"
+#line 4557 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(7,make_str("revoke grant option for"),(yyvsp[(5) - (10)].str),make_str("on"),(yyvsp[(7) - (10)].str),make_str("from"),(yyvsp[(9) - (10)].str),(yyvsp[(10) - (10)].str));
 }
@@ -28896,7 +28896,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 684:
 
 /* Line 1806 of yacc.c  */
-#line 4565 "preproc.y"
+#line 4565 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -28905,7 +28905,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 685:
 
 /* Line 1806 of yacc.c  */
-#line 4569 "preproc.y"
+#line 4569 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("all");
 }
@@ -28914,7 +28914,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 686:
 
 /* Line 1806 of yacc.c  */
-#line 4573 "preproc.y"
+#line 4573 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("all privileges");
 }
@@ -28923,7 +28923,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 687:
 
 /* Line 1806 of yacc.c  */
-#line 4577 "preproc.y"
+#line 4577 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("all ("),(yyvsp[(3) - (4)].str),make_str(")"));
 }
@@ -28932,7 +28932,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 688:
 
 /* Line 1806 of yacc.c  */
-#line 4581 "preproc.y"
+#line 4581 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("all privileges ("),(yyvsp[(4) - (5)].str),make_str(")"));
 }
@@ -28941,7 +28941,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 689:
 
 /* Line 1806 of yacc.c  */
-#line 4589 "preproc.y"
+#line 4589 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -28950,7 +28950,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 690:
 
 /* Line 1806 of yacc.c  */
-#line 4593 "preproc.y"
+#line 4593 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),make_str(","),(yyvsp[(3) - (3)].str));
 }
@@ -28959,7 +28959,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 691:
 
 /* Line 1806 of yacc.c  */
-#line 4601 "preproc.y"
+#line 4601 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("select"),(yyvsp[(2) - (2)].str));
 }
@@ -28968,7 +28968,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 692:
 
 /* Line 1806 of yacc.c  */
-#line 4605 "preproc.y"
+#line 4605 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("references"),(yyvsp[(2) - (2)].str));
 }
@@ -28977,7 +28977,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 693:
 
 /* Line 1806 of yacc.c  */
-#line 4609 "preproc.y"
+#line 4609 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("create"),(yyvsp[(2) - (2)].str));
 }
@@ -28986,7 +28986,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 694:
 
 /* Line 1806 of yacc.c  */
-#line 4613 "preproc.y"
+#line 4613 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,(yyvsp[(1) - (2)].str),(yyvsp[(2) - (2)].str));
 }
@@ -28995,7 +28995,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 695:
 
 /* Line 1806 of yacc.c  */
-#line 4621 "preproc.y"
+#line 4621 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -29004,7 +29004,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 696:
 
 /* Line 1806 of yacc.c  */
-#line 4625 "preproc.y"
+#line 4625 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("table"),(yyvsp[(2) - (2)].str));
 }
@@ -29013,7 +29013,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 697:
 
 /* Line 1806 of yacc.c  */
-#line 4629 "preproc.y"
+#line 4629 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("sequence"),(yyvsp[(2) - (2)].str));
 }
@@ -29022,7 +29022,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 698:
 
 /* Line 1806 of yacc.c  */
-#line 4633 "preproc.y"
+#line 4633 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("foreign data wrapper"),(yyvsp[(4) - (4)].str));
 }
@@ -29031,7 +29031,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 699:
 
 /* Line 1806 of yacc.c  */
-#line 4637 "preproc.y"
+#line 4637 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("foreign server"),(yyvsp[(3) - (3)].str));
 }
@@ -29040,7 +29040,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 700:
 
 /* Line 1806 of yacc.c  */
-#line 4641 "preproc.y"
+#line 4641 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("function"),(yyvsp[(2) - (2)].str));
 }
@@ -29049,7 +29049,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 701:
 
 /* Line 1806 of yacc.c  */
-#line 4645 "preproc.y"
+#line 4645 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("database"),(yyvsp[(2) - (2)].str));
 }
@@ -29058,7 +29058,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 702:
 
 /* Line 1806 of yacc.c  */
-#line 4649 "preproc.y"
+#line 4649 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("language"),(yyvsp[(2) - (2)].str));
 }
@@ -29067,7 +29067,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 703:
 
 /* Line 1806 of yacc.c  */
-#line 4653 "preproc.y"
+#line 4653 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("schema"),(yyvsp[(2) - (2)].str));
 }
@@ -29076,7 +29076,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 704:
 
 /* Line 1806 of yacc.c  */
-#line 4657 "preproc.y"
+#line 4657 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("tablespace"),(yyvsp[(2) - (2)].str));
 }
@@ -29085,7 +29085,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 705:
 
 /* Line 1806 of yacc.c  */
-#line 4665 "preproc.y"
+#line 4665 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -29094,7 +29094,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 706:
 
 /* Line 1806 of yacc.c  */
-#line 4669 "preproc.y"
+#line 4669 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),make_str(","),(yyvsp[(3) - (3)].str));
 }
@@ -29103,7 +29103,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 707:
 
 /* Line 1806 of yacc.c  */
-#line 4677 "preproc.y"
+#line 4677 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -29112,7 +29112,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 708:
 
 /* Line 1806 of yacc.c  */
-#line 4681 "preproc.y"
+#line 4681 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("group"),(yyvsp[(2) - (2)].str));
 }
@@ -29121,7 +29121,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 709:
 
 /* Line 1806 of yacc.c  */
-#line 4689 "preproc.y"
+#line 4689 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("with grant option");
 }
@@ -29130,7 +29130,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 710:
 
 /* Line 1806 of yacc.c  */
-#line 4693 "preproc.y"
+#line 4693 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -29138,7 +29138,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 711:
 
 /* Line 1806 of yacc.c  */
-#line 4700 "preproc.y"
+#line 4700 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -29147,7 +29147,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 712:
 
 /* Line 1806 of yacc.c  */
-#line 4704 "preproc.y"
+#line 4704 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),make_str(","),(yyvsp[(3) - (3)].str));
 }
@@ -29156,7 +29156,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 713:
 
 /* Line 1806 of yacc.c  */
-#line 4712 "preproc.y"
+#line 4712 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,(yyvsp[(1) - (2)].str),(yyvsp[(2) - (2)].str));
 }
@@ -29165,7 +29165,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 714:
 
 /* Line 1806 of yacc.c  */
-#line 4720 "preproc.y"
+#line 4720 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(6,make_str("grant"),(yyvsp[(2) - (6)].str),make_str("to"),(yyvsp[(4) - (6)].str),(yyvsp[(5) - (6)].str),(yyvsp[(6) - (6)].str));
 }
@@ -29174,7 +29174,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 715:
 
 /* Line 1806 of yacc.c  */
-#line 4728 "preproc.y"
+#line 4728 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(6,make_str("revoke"),(yyvsp[(2) - (6)].str),make_str("from"),(yyvsp[(4) - (6)].str),(yyvsp[(5) - (6)].str),(yyvsp[(6) - (6)].str));
 }
@@ -29183,7 +29183,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 716:
 
 /* Line 1806 of yacc.c  */
-#line 4732 "preproc.y"
+#line 4732 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(6,make_str("revoke admin option for"),(yyvsp[(5) - (9)].str),make_str("from"),(yyvsp[(7) - (9)].str),(yyvsp[(8) - (9)].str),(yyvsp[(9) - (9)].str));
 }
@@ -29192,7 +29192,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 717:
 
 /* Line 1806 of yacc.c  */
-#line 4740 "preproc.y"
+#line 4740 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("with admin option");
 }
@@ -29201,7 +29201,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 718:
 
 /* Line 1806 of yacc.c  */
-#line 4744 "preproc.y"
+#line 4744 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -29209,7 +29209,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 719:
 
 /* Line 1806 of yacc.c  */
-#line 4751 "preproc.y"
+#line 4751 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("granted by"),(yyvsp[(3) - (3)].str));
 }
@@ -29218,7 +29218,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 720:
 
 /* Line 1806 of yacc.c  */
-#line 4755 "preproc.y"
+#line 4755 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -29226,7 +29226,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 721:
 
 /* Line 1806 of yacc.c  */
-#line 4762 "preproc.y"
+#line 4762 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(13,make_str("create"),(yyvsp[(2) - (13)].str),make_str("index"),(yyvsp[(4) - (13)].str),make_str("on"),(yyvsp[(6) - (13)].str),(yyvsp[(7) - (13)].str),make_str("("),(yyvsp[(9) - (13)].str),make_str(")"),(yyvsp[(11) - (13)].str),(yyvsp[(12) - (13)].str),(yyvsp[(13) - (13)].str));
 }
@@ -29235,7 +29235,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 722:
 
 /* Line 1806 of yacc.c  */
-#line 4766 "preproc.y"
+#line 4766 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(13,make_str("create"),(yyvsp[(2) - (14)].str),make_str("index concurrently"),(yyvsp[(5) - (14)].str),make_str("on"),(yyvsp[(7) - (14)].str),(yyvsp[(8) - (14)].str),make_str("("),(yyvsp[(10) - (14)].str),make_str(")"),(yyvsp[(12) - (14)].str),(yyvsp[(13) - (14)].str),(yyvsp[(14) - (14)].str));
 }
@@ -29244,7 +29244,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 723:
 
 /* Line 1806 of yacc.c  */
-#line 4774 "preproc.y"
+#line 4774 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("unique");
 }
@@ -29253,7 +29253,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 724:
 
 /* Line 1806 of yacc.c  */
-#line 4778 "preproc.y"
+#line 4778 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -29261,7 +29261,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 725:
 
 /* Line 1806 of yacc.c  */
-#line 4785 "preproc.y"
+#line 4785 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("using"),(yyvsp[(2) - (2)].str));
 }
@@ -29270,7 +29270,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 726:
 
 /* Line 1806 of yacc.c  */
-#line 4789 "preproc.y"
+#line 4789 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -29278,7 +29278,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 727:
 
 /* Line 1806 of yacc.c  */
-#line 4796 "preproc.y"
+#line 4796 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -29287,7 +29287,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 728:
 
 /* Line 1806 of yacc.c  */
-#line 4800 "preproc.y"
+#line 4800 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),make_str(","),(yyvsp[(3) - (3)].str));
 }
@@ -29296,7 +29296,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 729:
 
 /* Line 1806 of yacc.c  */
-#line 4808 "preproc.y"
+#line 4808 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,(yyvsp[(1) - (4)].str),(yyvsp[(2) - (4)].str),(yyvsp[(3) - (4)].str),(yyvsp[(4) - (4)].str));
 }
@@ -29305,7 +29305,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 730:
 
 /* Line 1806 of yacc.c  */
-#line 4812 "preproc.y"
+#line 4812 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,(yyvsp[(1) - (4)].str),(yyvsp[(2) - (4)].str),(yyvsp[(3) - (4)].str),(yyvsp[(4) - (4)].str));
 }
@@ -29314,7 +29314,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 731:
 
 /* Line 1806 of yacc.c  */
-#line 4816 "preproc.y"
+#line 4816 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(6,make_str("("),(yyvsp[(2) - (6)].str),make_str(")"),(yyvsp[(4) - (6)].str),(yyvsp[(5) - (6)].str),(yyvsp[(6) - (6)].str));
 }
@@ -29323,7 +29323,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 732:
 
 /* Line 1806 of yacc.c  */
-#line 4824 "preproc.y"
+#line 4824 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -29332,7 +29332,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 733:
 
 /* Line 1806 of yacc.c  */
-#line 4828 "preproc.y"
+#line 4828 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("using"),(yyvsp[(2) - (2)].str));
 }
@@ -29341,7 +29341,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 734:
 
 /* Line 1806 of yacc.c  */
-#line 4832 "preproc.y"
+#line 4832 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -29349,7 +29349,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 735:
 
 /* Line 1806 of yacc.c  */
-#line 4839 "preproc.y"
+#line 4839 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("asc");
 }
@@ -29358,7 +29358,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 736:
 
 /* Line 1806 of yacc.c  */
-#line 4843 "preproc.y"
+#line 4843 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("desc");
 }
@@ -29367,7 +29367,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 737:
 
 /* Line 1806 of yacc.c  */
-#line 4847 "preproc.y"
+#line 4847 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -29375,7 +29375,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 738:
 
 /* Line 1806 of yacc.c  */
-#line 4854 "preproc.y"
+#line 4854 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("nulls first");
 }
@@ -29384,7 +29384,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 739:
 
 /* Line 1806 of yacc.c  */
-#line 4858 "preproc.y"
+#line 4858 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("nulls last");
 }
@@ -29393,7 +29393,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 740:
 
 /* Line 1806 of yacc.c  */
-#line 4862 "preproc.y"
+#line 4862 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -29401,7 +29401,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 741:
 
 /* Line 1806 of yacc.c  */
-#line 4869 "preproc.y"
+#line 4869 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(9,make_str("create"),(yyvsp[(2) - (9)].str),make_str("function"),(yyvsp[(4) - (9)].str),(yyvsp[(5) - (9)].str),make_str("returns"),(yyvsp[(7) - (9)].str),(yyvsp[(8) - (9)].str),(yyvsp[(9) - (9)].str));
 }
@@ -29410,7 +29410,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 742:
 
 /* Line 1806 of yacc.c  */
-#line 4873 "preproc.y"
+#line 4873 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(10,make_str("create"),(yyvsp[(2) - (12)].str),make_str("function"),(yyvsp[(4) - (12)].str),(yyvsp[(5) - (12)].str),make_str("returns table ("),(yyvsp[(9) - (12)].str),make_str(")"),(yyvsp[(11) - (12)].str),(yyvsp[(12) - (12)].str));
 }
@@ -29419,7 +29419,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 743:
 
 /* Line 1806 of yacc.c  */
-#line 4877 "preproc.y"
+#line 4877 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(7,make_str("create"),(yyvsp[(2) - (7)].str),make_str("function"),(yyvsp[(4) - (7)].str),(yyvsp[(5) - (7)].str),(yyvsp[(6) - (7)].str),(yyvsp[(7) - (7)].str));
 }
@@ -29428,7 +29428,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 744:
 
 /* Line 1806 of yacc.c  */
-#line 4885 "preproc.y"
+#line 4885 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("or replace");
 }
@@ -29437,7 +29437,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 745:
 
 /* Line 1806 of yacc.c  */
-#line 4889 "preproc.y"
+#line 4889 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -29445,7 +29445,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 746:
 
 /* Line 1806 of yacc.c  */
-#line 4896 "preproc.y"
+#line 4896 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("("),(yyvsp[(2) - (3)].str),make_str(")"));
 }
@@ -29454,7 +29454,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 747:
 
 /* Line 1806 of yacc.c  */
-#line 4900 "preproc.y"
+#line 4900 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("( )");
 }
@@ -29463,7 +29463,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 748:
 
 /* Line 1806 of yacc.c  */
-#line 4908 "preproc.y"
+#line 4908 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -29472,7 +29472,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 749:
 
 /* Line 1806 of yacc.c  */
-#line 4912 "preproc.y"
+#line 4912 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),make_str(","),(yyvsp[(3) - (3)].str));
 }
@@ -29481,7 +29481,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 750:
 
 /* Line 1806 of yacc.c  */
-#line 4920 "preproc.y"
+#line 4920 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("("),(yyvsp[(2) - (3)].str),make_str(")"));
 }
@@ -29490,7 +29490,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 751:
 
 /* Line 1806 of yacc.c  */
-#line 4924 "preproc.y"
+#line 4924 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("( )");
 }
@@ -29499,7 +29499,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 752:
 
 /* Line 1806 of yacc.c  */
-#line 4932 "preproc.y"
+#line 4932 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -29508,7 +29508,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 753:
 
 /* Line 1806 of yacc.c  */
-#line 4936 "preproc.y"
+#line 4936 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),make_str(","),(yyvsp[(3) - (3)].str));
 }
@@ -29517,7 +29517,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 754:
 
 /* Line 1806 of yacc.c  */
-#line 4944 "preproc.y"
+#line 4944 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),(yyvsp[(2) - (3)].str),(yyvsp[(3) - (3)].str));
 }
@@ -29526,7 +29526,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 755:
 
 /* Line 1806 of yacc.c  */
-#line 4948 "preproc.y"
+#line 4948 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),(yyvsp[(2) - (3)].str),(yyvsp[(3) - (3)].str));
 }
@@ -29535,7 +29535,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 756:
 
 /* Line 1806 of yacc.c  */
-#line 4952 "preproc.y"
+#line 4952 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,(yyvsp[(1) - (2)].str),(yyvsp[(2) - (2)].str));
 }
@@ -29544,7 +29544,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 757:
 
 /* Line 1806 of yacc.c  */
-#line 4956 "preproc.y"
+#line 4956 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,(yyvsp[(1) - (2)].str),(yyvsp[(2) - (2)].str));
 }
@@ -29553,7 +29553,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 758:
 
 /* Line 1806 of yacc.c  */
-#line 4960 "preproc.y"
+#line 4960 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -29562,7 +29562,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 759:
 
 /* Line 1806 of yacc.c  */
-#line 4968 "preproc.y"
+#line 4968 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("in");
 }
@@ -29571,7 +29571,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 760:
 
 /* Line 1806 of yacc.c  */
-#line 4972 "preproc.y"
+#line 4972 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("out");
 }
@@ -29580,7 +29580,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 761:
 
 /* Line 1806 of yacc.c  */
-#line 4976 "preproc.y"
+#line 4976 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("inout");
 }
@@ -29589,7 +29589,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 762:
 
 /* Line 1806 of yacc.c  */
-#line 4980 "preproc.y"
+#line 4980 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("in out");
 }
@@ -29598,7 +29598,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 763:
 
 /* Line 1806 of yacc.c  */
-#line 4984 "preproc.y"
+#line 4984 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("variadic");
 }
@@ -29607,7 +29607,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 764:
 
 /* Line 1806 of yacc.c  */
-#line 4992 "preproc.y"
+#line 4992 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -29616,7 +29616,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 765:
 
 /* Line 1806 of yacc.c  */
-#line 5000 "preproc.y"
+#line 5000 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -29625,7 +29625,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 766:
 
 /* Line 1806 of yacc.c  */
-#line 5008 "preproc.y"
+#line 5008 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -29634,7 +29634,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 767:
 
 /* Line 1806 of yacc.c  */
-#line 5012 "preproc.y"
+#line 5012 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (4)].str),(yyvsp[(2) - (4)].str),make_str("% type"));
 }
@@ -29643,7 +29643,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 768:
 
 /* Line 1806 of yacc.c  */
-#line 5016 "preproc.y"
+#line 5016 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,make_str("setof"),(yyvsp[(2) - (5)].str),(yyvsp[(3) - (5)].str),make_str("% type"));
 }
@@ -29652,7 +29652,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 769:
 
 /* Line 1806 of yacc.c  */
-#line 5024 "preproc.y"
+#line 5024 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -29661,7 +29661,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 770:
 
 /* Line 1806 of yacc.c  */
-#line 5028 "preproc.y"
+#line 5028 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),make_str("default"),(yyvsp[(3) - (3)].str));
 }
@@ -29670,7 +29670,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 771:
 
 /* Line 1806 of yacc.c  */
-#line 5032 "preproc.y"
+#line 5032 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),make_str("="),(yyvsp[(3) - (3)].str));
 }
@@ -29679,7 +29679,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 772:
 
 /* Line 1806 of yacc.c  */
-#line 5040 "preproc.y"
+#line 5040 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -29688,7 +29688,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 773:
 
 /* Line 1806 of yacc.c  */
-#line 5044 "preproc.y"
+#line 5044 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,(yyvsp[(1) - (2)].str),(yyvsp[(2) - (2)].str));
 }
@@ -29697,7 +29697,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 774:
 
 /* Line 1806 of yacc.c  */
-#line 5052 "preproc.y"
+#line 5052 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("called on null input");
 }
@@ -29706,7 +29706,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 775:
 
 /* Line 1806 of yacc.c  */
-#line 5056 "preproc.y"
+#line 5056 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("returns null on null input");
 }
@@ -29715,7 +29715,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 776:
 
 /* Line 1806 of yacc.c  */
-#line 5060 "preproc.y"
+#line 5060 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("strict");
 }
@@ -29724,7 +29724,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 777:
 
 /* Line 1806 of yacc.c  */
-#line 5064 "preproc.y"
+#line 5064 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("immutable");
 }
@@ -29733,7 +29733,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 778:
 
 /* Line 1806 of yacc.c  */
-#line 5068 "preproc.y"
+#line 5068 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("stable");
 }
@@ -29742,7 +29742,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 779:
 
 /* Line 1806 of yacc.c  */
-#line 5072 "preproc.y"
+#line 5072 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("volatile");
 }
@@ -29751,7 +29751,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 780:
 
 /* Line 1806 of yacc.c  */
-#line 5076 "preproc.y"
+#line 5076 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("external security definer");
 }
@@ -29760,7 +29760,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 781:
 
 /* Line 1806 of yacc.c  */
-#line 5080 "preproc.y"
+#line 5080 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("external security invoker");
 }
@@ -29769,7 +29769,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 782:
 
 /* Line 1806 of yacc.c  */
-#line 5084 "preproc.y"
+#line 5084 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("security definer");
 }
@@ -29778,7 +29778,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 783:
 
 /* Line 1806 of yacc.c  */
-#line 5088 "preproc.y"
+#line 5088 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("security invoker");
 }
@@ -29787,7 +29787,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 784:
 
 /* Line 1806 of yacc.c  */
-#line 5092 "preproc.y"
+#line 5092 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("cost"),(yyvsp[(2) - (2)].str));
 }
@@ -29796,7 +29796,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 785:
 
 /* Line 1806 of yacc.c  */
-#line 5096 "preproc.y"
+#line 5096 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("rows"),(yyvsp[(2) - (2)].str));
 }
@@ -29805,7 +29805,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 786:
 
 /* Line 1806 of yacc.c  */
-#line 5100 "preproc.y"
+#line 5100 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -29814,7 +29814,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 787:
 
 /* Line 1806 of yacc.c  */
-#line 5108 "preproc.y"
+#line 5108 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("as"),(yyvsp[(2) - (2)].str));
 }
@@ -29823,7 +29823,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 788:
 
 /* Line 1806 of yacc.c  */
-#line 5112 "preproc.y"
+#line 5112 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("language"),(yyvsp[(2) - (2)].str));
 }
@@ -29832,7 +29832,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 789:
 
 /* Line 1806 of yacc.c  */
-#line 5116 "preproc.y"
+#line 5116 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("window");
 }
@@ -29841,7 +29841,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 790:
 
 /* Line 1806 of yacc.c  */
-#line 5120 "preproc.y"
+#line 5120 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -29850,7 +29850,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 791:
 
 /* Line 1806 of yacc.c  */
-#line 5128 "preproc.y"
+#line 5128 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -29859,7 +29859,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 792:
 
 /* Line 1806 of yacc.c  */
-#line 5132 "preproc.y"
+#line 5132 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),make_str(","),(yyvsp[(3) - (3)].str));
 }
@@ -29868,7 +29868,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 793:
 
 /* Line 1806 of yacc.c  */
-#line 5140 "preproc.y"
+#line 5140 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("with"),(yyvsp[(2) - (2)].str));
 }
@@ -29877,7 +29877,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 794:
 
 /* Line 1806 of yacc.c  */
-#line 5144 "preproc.y"
+#line 5144 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -29885,7 +29885,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 795:
 
 /* Line 1806 of yacc.c  */
-#line 5151 "preproc.y"
+#line 5151 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,(yyvsp[(1) - (2)].str),(yyvsp[(2) - (2)].str));
 }
@@ -29894,7 +29894,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 796:
 
 /* Line 1806 of yacc.c  */
-#line 5159 "preproc.y"
+#line 5159 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -29903,7 +29903,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 797:
 
 /* Line 1806 of yacc.c  */
-#line 5163 "preproc.y"
+#line 5163 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),make_str(","),(yyvsp[(3) - (3)].str));
 }
@@ -29912,7 +29912,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 798:
 
 /* Line 1806 of yacc.c  */
-#line 5171 "preproc.y"
+#line 5171 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,make_str("alter function"),(yyvsp[(3) - (5)].str),(yyvsp[(4) - (5)].str),(yyvsp[(5) - (5)].str));
 }
@@ -29921,7 +29921,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 799:
 
 /* Line 1806 of yacc.c  */
-#line 5179 "preproc.y"
+#line 5179 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -29930,7 +29930,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 800:
 
 /* Line 1806 of yacc.c  */
-#line 5183 "preproc.y"
+#line 5183 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,(yyvsp[(1) - (2)].str),(yyvsp[(2) - (2)].str));
 }
@@ -29939,7 +29939,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 801:
 
 /* Line 1806 of yacc.c  */
-#line 5191 "preproc.y"
+#line 5191 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("restrict");
 }
@@ -29948,7 +29948,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 802:
 
 /* Line 1806 of yacc.c  */
-#line 5195 "preproc.y"
+#line 5195 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -29956,7 +29956,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 803:
 
 /* Line 1806 of yacc.c  */
-#line 5202 "preproc.y"
+#line 5202 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,make_str("drop function"),(yyvsp[(3) - (5)].str),(yyvsp[(4) - (5)].str),(yyvsp[(5) - (5)].str));
 }
@@ -29965,7 +29965,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 804:
 
 /* Line 1806 of yacc.c  */
-#line 5206 "preproc.y"
+#line 5206 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,make_str("drop function if exists"),(yyvsp[(5) - (7)].str),(yyvsp[(6) - (7)].str),(yyvsp[(7) - (7)].str));
 }
@@ -29974,7 +29974,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 805:
 
 /* Line 1806 of yacc.c  */
-#line 5214 "preproc.y"
+#line 5214 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,make_str("drop aggregate"),(yyvsp[(3) - (5)].str),(yyvsp[(4) - (5)].str),(yyvsp[(5) - (5)].str));
 }
@@ -29983,7 +29983,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 806:
 
 /* Line 1806 of yacc.c  */
-#line 5218 "preproc.y"
+#line 5218 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,make_str("drop aggregate if exists"),(yyvsp[(5) - (7)].str),(yyvsp[(6) - (7)].str),(yyvsp[(7) - (7)].str));
 }
@@ -29992,7 +29992,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 807:
 
 /* Line 1806 of yacc.c  */
-#line 5226 "preproc.y"
+#line 5226 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,make_str("drop operator"),(yyvsp[(3) - (5)].str),(yyvsp[(4) - (5)].str),(yyvsp[(5) - (5)].str));
 }
@@ -30001,7 +30001,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 808:
 
 /* Line 1806 of yacc.c  */
-#line 5230 "preproc.y"
+#line 5230 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,make_str("drop operator if exists"),(yyvsp[(5) - (7)].str),(yyvsp[(6) - (7)].str),(yyvsp[(7) - (7)].str));
 }
@@ -30010,7 +30010,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 809:
 
 /* Line 1806 of yacc.c  */
-#line 5238 "preproc.y"
+#line 5238 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("("),(yyvsp[(2) - (3)].str),make_str(")"));
 }
@@ -30019,7 +30019,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 810:
 
 /* Line 1806 of yacc.c  */
-#line 5242 "preproc.y"
+#line 5242 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(5,make_str("("),(yyvsp[(2) - (5)].str),make_str(","),(yyvsp[(4) - (5)].str),make_str(")"));
 }
@@ -30028,7 +30028,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 811:
 
 /* Line 1806 of yacc.c  */
-#line 5246 "preproc.y"
+#line 5246 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("( none ,"),(yyvsp[(4) - (5)].str),make_str(")"));
 }
@@ -30037,7 +30037,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 812:
 
 /* Line 1806 of yacc.c  */
-#line 5250 "preproc.y"
+#line 5250 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("("),(yyvsp[(2) - (5)].str),make_str(", none )"));
 }
@@ -30046,7 +30046,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 813:
 
 /* Line 1806 of yacc.c  */
-#line 5258 "preproc.y"
+#line 5258 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -30055,7 +30055,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 814:
 
 /* Line 1806 of yacc.c  */
-#line 5262 "preproc.y"
+#line 5262 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),make_str("."),(yyvsp[(3) - (3)].str));
 }
@@ -30064,7 +30064,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 815:
 
 /* Line 1806 of yacc.c  */
-#line 5270 "preproc.y"
+#line 5270 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(7,make_str("create cast ("),(yyvsp[(4) - (11)].str),make_str("as"),(yyvsp[(6) - (11)].str),make_str(") with function"),(yyvsp[(10) - (11)].str),(yyvsp[(11) - (11)].str));
 }
@@ -30073,7 +30073,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 816:
 
 /* Line 1806 of yacc.c  */
-#line 5274 "preproc.y"
+#line 5274 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(6,make_str("create cast ("),(yyvsp[(4) - (10)].str),make_str("as"),(yyvsp[(6) - (10)].str),make_str(") without function"),(yyvsp[(10) - (10)].str));
 }
@@ -30082,7 +30082,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 817:
 
 /* Line 1806 of yacc.c  */
-#line 5278 "preproc.y"
+#line 5278 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(6,make_str("create cast ("),(yyvsp[(4) - (10)].str),make_str("as"),(yyvsp[(6) - (10)].str),make_str(") with inout"),(yyvsp[(10) - (10)].str));
 }
@@ -30091,7 +30091,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 818:
 
 /* Line 1806 of yacc.c  */
-#line 5286 "preproc.y"
+#line 5286 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("as implicit");
 }
@@ -30100,7 +30100,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 819:
 
 /* Line 1806 of yacc.c  */
-#line 5290 "preproc.y"
+#line 5290 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("as assignment");
 }
@@ -30109,7 +30109,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 820:
 
 /* Line 1806 of yacc.c  */
-#line 5294 "preproc.y"
+#line 5294 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -30117,7 +30117,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 821:
 
 /* Line 1806 of yacc.c  */
-#line 5301 "preproc.y"
+#line 5301 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(8,make_str("drop cast"),(yyvsp[(3) - (9)].str),make_str("("),(yyvsp[(5) - (9)].str),make_str("as"),(yyvsp[(7) - (9)].str),make_str(")"),(yyvsp[(9) - (9)].str));
 }
@@ -30126,7 +30126,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 822:
 
 /* Line 1806 of yacc.c  */
-#line 5309 "preproc.y"
+#line 5309 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("if exists");
 }
@@ -30135,7 +30135,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 823:
 
 /* Line 1806 of yacc.c  */
-#line 5313 "preproc.y"
+#line 5313 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -30143,7 +30143,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 824:
 
 /* Line 1806 of yacc.c  */
-#line 5320 "preproc.y"
+#line 5320 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,make_str("reindex"),(yyvsp[(2) - (4)].str),(yyvsp[(3) - (4)].str),(yyvsp[(4) - (4)].str));
 }
@@ -30152,7 +30152,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 825:
 
 /* Line 1806 of yacc.c  */
-#line 5324 "preproc.y"
+#line 5324 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("reindex system"),(yyvsp[(3) - (4)].str),(yyvsp[(4) - (4)].str));
 }
@@ -30161,7 +30161,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 826:
 
 /* Line 1806 of yacc.c  */
-#line 5328 "preproc.y"
+#line 5328 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("reindex database"),(yyvsp[(3) - (4)].str),(yyvsp[(4) - (4)].str));
 }
@@ -30170,7 +30170,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 827:
 
 /* Line 1806 of yacc.c  */
-#line 5336 "preproc.y"
+#line 5336 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("index");
 }
@@ -30179,7 +30179,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 828:
 
 /* Line 1806 of yacc.c  */
-#line 5340 "preproc.y"
+#line 5340 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("table");
 }
@@ -30188,7 +30188,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 829:
 
 /* Line 1806 of yacc.c  */
-#line 5348 "preproc.y"
+#line 5348 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("force");
 }
@@ -30197,7 +30197,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 830:
 
 /* Line 1806 of yacc.c  */
-#line 5352 "preproc.y"
+#line 5352 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -30205,7 +30205,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 831:
 
 /* Line 1806 of yacc.c  */
-#line 5359 "preproc.y"
+#line 5359 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(5,make_str("alter aggregate"),(yyvsp[(3) - (7)].str),(yyvsp[(4) - (7)].str),make_str("rename to"),(yyvsp[(7) - (7)].str));
 }
@@ -30214,7 +30214,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 832:
 
 /* Line 1806 of yacc.c  */
-#line 5363 "preproc.y"
+#line 5363 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,make_str("alter conversion"),(yyvsp[(3) - (6)].str),make_str("rename to"),(yyvsp[(6) - (6)].str));
 }
@@ -30223,7 +30223,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 833:
 
 /* Line 1806 of yacc.c  */
-#line 5367 "preproc.y"
+#line 5367 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,make_str("alter database"),(yyvsp[(3) - (6)].str),make_str("rename to"),(yyvsp[(6) - (6)].str));
 }
@@ -30232,7 +30232,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 834:
 
 /* Line 1806 of yacc.c  */
-#line 5371 "preproc.y"
+#line 5371 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,make_str("alter function"),(yyvsp[(3) - (6)].str),make_str("rename to"),(yyvsp[(6) - (6)].str));
 }
@@ -30241,7 +30241,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 835:
 
 /* Line 1806 of yacc.c  */
-#line 5375 "preproc.y"
+#line 5375 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,make_str("alter group"),(yyvsp[(3) - (6)].str),make_str("rename to"),(yyvsp[(6) - (6)].str));
 }
@@ -30250,7 +30250,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 836:
 
 /* Line 1806 of yacc.c  */
-#line 5379 "preproc.y"
+#line 5379 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(6,make_str("alter"),(yyvsp[(2) - (7)].str),make_str("language"),(yyvsp[(4) - (7)].str),make_str("rename to"),(yyvsp[(7) - (7)].str));
 }
@@ -30259,7 +30259,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 837:
 
 /* Line 1806 of yacc.c  */
-#line 5383 "preproc.y"
+#line 5383 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(6,make_str("alter operator class"),(yyvsp[(4) - (9)].str),make_str("using"),(yyvsp[(6) - (9)].str),make_str("rename to"),(yyvsp[(9) - (9)].str));
 }
@@ -30268,7 +30268,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 838:
 
 /* Line 1806 of yacc.c  */
-#line 5387 "preproc.y"
+#line 5387 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(6,make_str("alter operator family"),(yyvsp[(4) - (9)].str),make_str("using"),(yyvsp[(6) - (9)].str),make_str("rename to"),(yyvsp[(9) - (9)].str));
 }
@@ -30277,7 +30277,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 839:
 
 /* Line 1806 of yacc.c  */
-#line 5391 "preproc.y"
+#line 5391 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,make_str("alter schema"),(yyvsp[(3) - (6)].str),make_str("rename to"),(yyvsp[(6) - (6)].str));
 }
@@ -30286,7 +30286,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 840:
 
 /* Line 1806 of yacc.c  */
-#line 5395 "preproc.y"
+#line 5395 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,make_str("alter table"),(yyvsp[(3) - (6)].str),make_str("rename to"),(yyvsp[(6) - (6)].str));
 }
@@ -30295,7 +30295,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 841:
 
 /* Line 1806 of yacc.c  */
-#line 5399 "preproc.y"
+#line 5399 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,make_str("alter sequence"),(yyvsp[(3) - (6)].str),make_str("rename to"),(yyvsp[(6) - (6)].str));
 }
@@ -30304,7 +30304,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 842:
 
 /* Line 1806 of yacc.c  */
-#line 5403 "preproc.y"
+#line 5403 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,make_str("alter view"),(yyvsp[(3) - (6)].str),make_str("rename to"),(yyvsp[(6) - (6)].str));
 }
@@ -30313,7 +30313,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 843:
 
 /* Line 1806 of yacc.c  */
-#line 5407 "preproc.y"
+#line 5407 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,make_str("alter index"),(yyvsp[(3) - (6)].str),make_str("rename to"),(yyvsp[(6) - (6)].str));
 }
@@ -30322,7 +30322,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 844:
 
 /* Line 1806 of yacc.c  */
-#line 5411 "preproc.y"
+#line 5411 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(7,make_str("alter table"),(yyvsp[(3) - (8)].str),make_str("rename"),(yyvsp[(5) - (8)].str),(yyvsp[(6) - (8)].str),make_str("to"),(yyvsp[(8) - (8)].str));
 }
@@ -30331,7 +30331,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 845:
 
 /* Line 1806 of yacc.c  */
-#line 5415 "preproc.y"
+#line 5415 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(6,make_str("alter trigger"),(yyvsp[(3) - (8)].str),make_str("on"),(yyvsp[(5) - (8)].str),make_str("rename to"),(yyvsp[(8) - (8)].str));
 }
@@ -30340,7 +30340,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 846:
 
 /* Line 1806 of yacc.c  */
-#line 5419 "preproc.y"
+#line 5419 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,make_str("alter role"),(yyvsp[(3) - (6)].str),make_str("rename to"),(yyvsp[(6) - (6)].str));
 }
@@ -30349,7 +30349,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 847:
 
 /* Line 1806 of yacc.c  */
-#line 5423 "preproc.y"
+#line 5423 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,make_str("alter user"),(yyvsp[(3) - (6)].str),make_str("rename to"),(yyvsp[(6) - (6)].str));
 }
@@ -30358,7 +30358,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 848:
 
 /* Line 1806 of yacc.c  */
-#line 5427 "preproc.y"
+#line 5427 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,make_str("alter tablespace"),(yyvsp[(3) - (6)].str),make_str("rename to"),(yyvsp[(6) - (6)].str));
 }
@@ -30367,7 +30367,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 849:
 
 /* Line 1806 of yacc.c  */
-#line 5431 "preproc.y"
+#line 5431 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,make_str("alter text search parser"),(yyvsp[(5) - (8)].str),make_str("rename to"),(yyvsp[(8) - (8)].str));
 }
@@ -30376,7 +30376,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 850:
 
 /* Line 1806 of yacc.c  */
-#line 5435 "preproc.y"
+#line 5435 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,make_str("alter text search dictionary"),(yyvsp[(5) - (8)].str),make_str("rename to"),(yyvsp[(8) - (8)].str));
 }
@@ -30385,7 +30385,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 851:
 
 /* Line 1806 of yacc.c  */
-#line 5439 "preproc.y"
+#line 5439 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,make_str("alter text search template"),(yyvsp[(5) - (8)].str),make_str("rename to"),(yyvsp[(8) - (8)].str));
 }
@@ -30394,7 +30394,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 852:
 
 /* Line 1806 of yacc.c  */
-#line 5443 "preproc.y"
+#line 5443 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,make_str("alter text search configuration"),(yyvsp[(5) - (8)].str),make_str("rename to"),(yyvsp[(8) - (8)].str));
 }
@@ -30403,7 +30403,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 853:
 
 /* Line 1806 of yacc.c  */
-#line 5447 "preproc.y"
+#line 5447 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,make_str("alter type"),(yyvsp[(3) - (6)].str),make_str("rename to"),(yyvsp[(6) - (6)].str));
 }
@@ -30412,7 +30412,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 854:
 
 /* Line 1806 of yacc.c  */
-#line 5455 "preproc.y"
+#line 5455 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("column");
 }
@@ -30421,7 +30421,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 855:
 
 /* Line 1806 of yacc.c  */
-#line 5459 "preproc.y"
+#line 5459 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -30429,7 +30429,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 856:
 
 /* Line 1806 of yacc.c  */
-#line 5466 "preproc.y"
+#line 5466 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("set data");
 }
@@ -30438,7 +30438,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 857:
 
 /* Line 1806 of yacc.c  */
-#line 5470 "preproc.y"
+#line 5470 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -30446,7 +30446,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 858:
 
 /* Line 1806 of yacc.c  */
-#line 5477 "preproc.y"
+#line 5477 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(5,make_str("alter aggregate"),(yyvsp[(3) - (7)].str),(yyvsp[(4) - (7)].str),make_str("set schema"),(yyvsp[(7) - (7)].str));
 }
@@ -30455,7 +30455,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 859:
 
 /* Line 1806 of yacc.c  */
-#line 5481 "preproc.y"
+#line 5481 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,make_str("alter domain"),(yyvsp[(3) - (6)].str),make_str("set schema"),(yyvsp[(6) - (6)].str));
 }
@@ -30464,7 +30464,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 860:
 
 /* Line 1806 of yacc.c  */
-#line 5485 "preproc.y"
+#line 5485 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,make_str("alter function"),(yyvsp[(3) - (6)].str),make_str("set schema"),(yyvsp[(6) - (6)].str));
 }
@@ -30473,7 +30473,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 861:
 
 /* Line 1806 of yacc.c  */
-#line 5489 "preproc.y"
+#line 5489 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,make_str("alter table"),(yyvsp[(3) - (6)].str),make_str("set schema"),(yyvsp[(6) - (6)].str));
 }
@@ -30482,7 +30482,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 862:
 
 /* Line 1806 of yacc.c  */
-#line 5493 "preproc.y"
+#line 5493 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,make_str("alter sequence"),(yyvsp[(3) - (6)].str),make_str("set schema"),(yyvsp[(6) - (6)].str));
 }
@@ -30491,7 +30491,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 863:
 
 /* Line 1806 of yacc.c  */
-#line 5497 "preproc.y"
+#line 5497 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,make_str("alter view"),(yyvsp[(3) - (6)].str),make_str("set schema"),(yyvsp[(6) - (6)].str));
 }
@@ -30500,7 +30500,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 864:
 
 /* Line 1806 of yacc.c  */
-#line 5501 "preproc.y"
+#line 5501 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,make_str("alter type"),(yyvsp[(3) - (6)].str),make_str("set schema"),(yyvsp[(6) - (6)].str));
 }
@@ -30509,7 +30509,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 865:
 
 /* Line 1806 of yacc.c  */
-#line 5509 "preproc.y"
+#line 5509 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(5,make_str("alter aggregate"),(yyvsp[(3) - (7)].str),(yyvsp[(4) - (7)].str),make_str("owner to"),(yyvsp[(7) - (7)].str));
 }
@@ -30518,7 +30518,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 866:
 
 /* Line 1806 of yacc.c  */
-#line 5513 "preproc.y"
+#line 5513 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,make_str("alter conversion"),(yyvsp[(3) - (6)].str),make_str("owner to"),(yyvsp[(6) - (6)].str));
 }
@@ -30527,7 +30527,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 867:
 
 /* Line 1806 of yacc.c  */
-#line 5517 "preproc.y"
+#line 5517 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,make_str("alter database"),(yyvsp[(3) - (6)].str),make_str("owner to"),(yyvsp[(6) - (6)].str));
 }
@@ -30536,7 +30536,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 868:
 
 /* Line 1806 of yacc.c  */
-#line 5521 "preproc.y"
+#line 5521 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,make_str("alter domain"),(yyvsp[(3) - (6)].str),make_str("owner to"),(yyvsp[(6) - (6)].str));
 }
@@ -30545,7 +30545,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 869:
 
 /* Line 1806 of yacc.c  */
-#line 5525 "preproc.y"
+#line 5525 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,make_str("alter function"),(yyvsp[(3) - (6)].str),make_str("owner to"),(yyvsp[(6) - (6)].str));
 }
@@ -30554,7 +30554,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 870:
 
 /* Line 1806 of yacc.c  */
-#line 5529 "preproc.y"
+#line 5529 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(6,make_str("alter"),(yyvsp[(2) - (7)].str),make_str("language"),(yyvsp[(4) - (7)].str),make_str("owner to"),(yyvsp[(7) - (7)].str));
 }
@@ -30563,7 +30563,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 871:
 
 /* Line 1806 of yacc.c  */
-#line 5533 "preproc.y"
+#line 5533 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(5,make_str("alter operator"),(yyvsp[(3) - (7)].str),(yyvsp[(4) - (7)].str),make_str("owner to"),(yyvsp[(7) - (7)].str));
 }
@@ -30572,7 +30572,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 872:
 
 /* Line 1806 of yacc.c  */
-#line 5537 "preproc.y"
+#line 5537 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(6,make_str("alter operator class"),(yyvsp[(4) - (9)].str),make_str("using"),(yyvsp[(6) - (9)].str),make_str("owner to"),(yyvsp[(9) - (9)].str));
 }
@@ -30581,7 +30581,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 873:
 
 /* Line 1806 of yacc.c  */
-#line 5541 "preproc.y"
+#line 5541 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(6,make_str("alter operator family"),(yyvsp[(4) - (9)].str),make_str("using"),(yyvsp[(6) - (9)].str),make_str("owner to"),(yyvsp[(9) - (9)].str));
 }
@@ -30590,7 +30590,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 874:
 
 /* Line 1806 of yacc.c  */
-#line 5545 "preproc.y"
+#line 5545 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,make_str("alter schema"),(yyvsp[(3) - (6)].str),make_str("owner to"),(yyvsp[(6) - (6)].str));
 }
@@ -30599,7 +30599,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 875:
 
 /* Line 1806 of yacc.c  */
-#line 5549 "preproc.y"
+#line 5549 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,make_str("alter type"),(yyvsp[(3) - (6)].str),make_str("owner to"),(yyvsp[(6) - (6)].str));
 }
@@ -30608,7 +30608,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 876:
 
 /* Line 1806 of yacc.c  */
-#line 5553 "preproc.y"
+#line 5553 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,make_str("alter tablespace"),(yyvsp[(3) - (6)].str),make_str("owner to"),(yyvsp[(6) - (6)].str));
 }
@@ -30617,7 +30617,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 877:
 
 /* Line 1806 of yacc.c  */
-#line 5557 "preproc.y"
+#line 5557 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,make_str("alter text search dictionary"),(yyvsp[(5) - (8)].str),make_str("owner to"),(yyvsp[(8) - (8)].str));
 }
@@ -30626,7 +30626,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 878:
 
 /* Line 1806 of yacc.c  */
-#line 5561 "preproc.y"
+#line 5561 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,make_str("alter text search configuration"),(yyvsp[(5) - (8)].str),make_str("owner to"),(yyvsp[(8) - (8)].str));
 }
@@ -30635,7 +30635,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 879:
 
 /* Line 1806 of yacc.c  */
-#line 5565 "preproc.y"
+#line 5565 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,make_str("alter foreign data wrapper"),(yyvsp[(5) - (8)].str),make_str("owner to"),(yyvsp[(8) - (8)].str));
 }
@@ -30644,7 +30644,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 880:
 
 /* Line 1806 of yacc.c  */
-#line 5569 "preproc.y"
+#line 5569 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,make_str("alter server"),(yyvsp[(3) - (6)].str),make_str("owner to"),(yyvsp[(6) - (6)].str));
 }
@@ -30653,7 +30653,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 881:
 
 /* Line 1806 of yacc.c  */
-#line 5577 "preproc.y"
+#line 5577 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("nothing");
 }
@@ -30662,7 +30662,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 882:
 
 /* Line 1806 of yacc.c  */
-#line 5581 "preproc.y"
+#line 5581 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -30671,7 +30671,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 883:
 
 /* Line 1806 of yacc.c  */
-#line 5585 "preproc.y"
+#line 5585 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("("),(yyvsp[(2) - (3)].str),make_str(")"));
 }
@@ -30680,7 +30680,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 884:
 
 /* Line 1806 of yacc.c  */
-#line 5593 "preproc.y"
+#line 5593 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),make_str(";"),(yyvsp[(3) - (3)].str));
 }
@@ -30689,7 +30689,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 885:
 
 /* Line 1806 of yacc.c  */
-#line 5597 "preproc.y"
+#line 5597 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -30698,7 +30698,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 886:
 
 /* Line 1806 of yacc.c  */
-#line 5605 "preproc.y"
+#line 5605 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -30707,7 +30707,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 887:
 
 /* Line 1806 of yacc.c  */
-#line 5609 "preproc.y"
+#line 5609 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -30716,7 +30716,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 888:
 
 /* Line 1806 of yacc.c  */
-#line 5613 "preproc.y"
+#line 5613 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -30725,7 +30725,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 889:
 
 /* Line 1806 of yacc.c  */
-#line 5617 "preproc.y"
+#line 5617 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -30734,7 +30734,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 890:
 
 /* Line 1806 of yacc.c  */
-#line 5621 "preproc.y"
+#line 5621 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -30743,7 +30743,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 891:
 
 /* Line 1806 of yacc.c  */
-#line 5629 "preproc.y"
+#line 5629 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -30752,7 +30752,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 892:
 
 /* Line 1806 of yacc.c  */
-#line 5633 "preproc.y"
+#line 5633 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -30760,7 +30760,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 893:
 
 /* Line 1806 of yacc.c  */
-#line 5640 "preproc.y"
+#line 5640 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("select");
 }
@@ -30769,7 +30769,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 894:
 
 /* Line 1806 of yacc.c  */
-#line 5644 "preproc.y"
+#line 5644 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("update");
 }
@@ -30778,7 +30778,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 895:
 
 /* Line 1806 of yacc.c  */
-#line 5648 "preproc.y"
+#line 5648 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("delete");
 }
@@ -30787,7 +30787,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 896:
 
 /* Line 1806 of yacc.c  */
-#line 5652 "preproc.y"
+#line 5652 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("insert");
 }
@@ -30796,7 +30796,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 897:
 
 /* Line 1806 of yacc.c  */
-#line 5660 "preproc.y"
+#line 5660 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("instead");
 }
@@ -30805,7 +30805,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 898:
 
 /* Line 1806 of yacc.c  */
-#line 5664 "preproc.y"
+#line 5664 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("also");
 }
@@ -30814,7 +30814,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 899:
 
 /* Line 1806 of yacc.c  */
-#line 5668 "preproc.y"
+#line 5668 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -30822,7 +30822,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 900:
 
 /* Line 1806 of yacc.c  */
-#line 5675 "preproc.y"
+#line 5675 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(5,make_str("drop rule"),(yyvsp[(3) - (6)].str),make_str("on"),(yyvsp[(5) - (6)].str),(yyvsp[(6) - (6)].str));
 }
@@ -30831,7 +30831,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 901:
 
 /* Line 1806 of yacc.c  */
-#line 5679 "preproc.y"
+#line 5679 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(5,make_str("drop rule if exists"),(yyvsp[(5) - (8)].str),make_str("on"),(yyvsp[(7) - (8)].str),(yyvsp[(8) - (8)].str));
 }
@@ -30840,7 +30840,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 902:
 
 /* Line 1806 of yacc.c  */
-#line 5687 "preproc.y"
+#line 5687 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("notify"),(yyvsp[(2) - (2)].str));
 }
@@ -30849,7 +30849,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 903:
 
 /* Line 1806 of yacc.c  */
-#line 5695 "preproc.y"
+#line 5695 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("listen"),(yyvsp[(2) - (2)].str));
 }
@@ -30858,7 +30858,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 904:
 
 /* Line 1806 of yacc.c  */
-#line 5703 "preproc.y"
+#line 5703 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("unlisten"),(yyvsp[(2) - (2)].str));
 }
@@ -30867,7 +30867,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 905:
 
 /* Line 1806 of yacc.c  */
-#line 5707 "preproc.y"
+#line 5707 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("unlisten *");
 }
@@ -30876,7 +30876,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 906:
 
 /* Line 1806 of yacc.c  */
-#line 5715 "preproc.y"
+#line 5715 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("abort"),(yyvsp[(2) - (2)].str));
 }
@@ -30885,7 +30885,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 907:
 
 /* Line 1806 of yacc.c  */
-#line 5719 "preproc.y"
+#line 5719 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("begin"),(yyvsp[(2) - (3)].str),(yyvsp[(3) - (3)].str));
 }
@@ -30894,7 +30894,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 908:
 
 /* Line 1806 of yacc.c  */
-#line 5723 "preproc.y"
+#line 5723 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("start transaction"),(yyvsp[(3) - (3)].str));
 }
@@ -30903,7 +30903,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 909:
 
 /* Line 1806 of yacc.c  */
-#line 5727 "preproc.y"
+#line 5727 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("commit"),(yyvsp[(2) - (2)].str));
 }
@@ -30912,7 +30912,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 910:
 
 /* Line 1806 of yacc.c  */
-#line 5731 "preproc.y"
+#line 5731 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("end"),(yyvsp[(2) - (2)].str));
 }
@@ -30921,7 +30921,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 911:
 
 /* Line 1806 of yacc.c  */
-#line 5735 "preproc.y"
+#line 5735 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("rollback"),(yyvsp[(2) - (2)].str));
 }
@@ -30930,7 +30930,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 912:
 
 /* Line 1806 of yacc.c  */
-#line 5739 "preproc.y"
+#line 5739 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("savepoint"),(yyvsp[(2) - (2)].str));
 }
@@ -30939,7 +30939,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 913:
 
 /* Line 1806 of yacc.c  */
-#line 5743 "preproc.y"
+#line 5743 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("release savepoint"),(yyvsp[(3) - (3)].str));
 }
@@ -30948,7 +30948,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 914:
 
 /* Line 1806 of yacc.c  */
-#line 5747 "preproc.y"
+#line 5747 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("release"),(yyvsp[(2) - (2)].str));
 }
@@ -30957,7 +30957,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 915:
 
 /* Line 1806 of yacc.c  */
-#line 5751 "preproc.y"
+#line 5751 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,make_str("rollback"),(yyvsp[(2) - (5)].str),make_str("to savepoint"),(yyvsp[(5) - (5)].str));
 }
@@ -30966,7 +30966,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 916:
 
 /* Line 1806 of yacc.c  */
-#line 5755 "preproc.y"
+#line 5755 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,make_str("rollback"),(yyvsp[(2) - (4)].str),make_str("to"),(yyvsp[(4) - (4)].str));
 }
@@ -30975,7 +30975,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 917:
 
 /* Line 1806 of yacc.c  */
-#line 5759 "preproc.y"
+#line 5759 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("prepare transaction"),(yyvsp[(3) - (3)].str));
 }
@@ -30984,7 +30984,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 918:
 
 /* Line 1806 of yacc.c  */
-#line 5763 "preproc.y"
+#line 5763 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("commit prepared"),(yyvsp[(3) - (3)].str));
 }
@@ -30993,7 +30993,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 919:
 
 /* Line 1806 of yacc.c  */
-#line 5767 "preproc.y"
+#line 5767 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("rollback prepared"),(yyvsp[(3) - (3)].str));
 }
@@ -31002,7 +31002,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 920:
 
 /* Line 1806 of yacc.c  */
-#line 5775 "preproc.y"
+#line 5775 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("work");
 }
@@ -31011,7 +31011,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 921:
 
 /* Line 1806 of yacc.c  */
-#line 5779 "preproc.y"
+#line 5779 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("transaction");
 }
@@ -31020,7 +31020,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 922:
 
 /* Line 1806 of yacc.c  */
-#line 5783 "preproc.y"
+#line 5783 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -31028,7 +31028,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 923:
 
 /* Line 1806 of yacc.c  */
-#line 5790 "preproc.y"
+#line 5790 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("isolation level"),(yyvsp[(3) - (3)].str));
 }
@@ -31037,7 +31037,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 924:
 
 /* Line 1806 of yacc.c  */
-#line 5794 "preproc.y"
+#line 5794 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("read only");
 }
@@ -31046,7 +31046,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 925:
 
 /* Line 1806 of yacc.c  */
-#line 5798 "preproc.y"
+#line 5798 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("read write");
 }
@@ -31055,7 +31055,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 926:
 
 /* Line 1806 of yacc.c  */
-#line 5806 "preproc.y"
+#line 5806 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -31064,7 +31064,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 927:
 
 /* Line 1806 of yacc.c  */
-#line 5810 "preproc.y"
+#line 5810 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),make_str(","),(yyvsp[(3) - (3)].str));
 }
@@ -31073,7 +31073,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 928:
 
 /* Line 1806 of yacc.c  */
-#line 5814 "preproc.y"
+#line 5814 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,(yyvsp[(1) - (2)].str),(yyvsp[(2) - (2)].str));
 }
@@ -31082,7 +31082,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 929:
 
 /* Line 1806 of yacc.c  */
-#line 5822 "preproc.y"
+#line 5822 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -31091,7 +31091,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 930:
 
 /* Line 1806 of yacc.c  */
-#line 5826 "preproc.y"
+#line 5826 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -31099,7 +31099,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 931:
 
 /* Line 1806 of yacc.c  */
-#line 5833 "preproc.y"
+#line 5833 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(8,make_str("create"),(yyvsp[(2) - (8)].str),make_str("view"),(yyvsp[(4) - (8)].str),(yyvsp[(5) - (8)].str),make_str("as"),(yyvsp[(7) - (8)].str),(yyvsp[(8) - (8)].str));
 }
@@ -31108,7 +31108,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 932:
 
 /* Line 1806 of yacc.c  */
-#line 5837 "preproc.y"
+#line 5837 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(8,make_str("create or replace"),(yyvsp[(4) - (10)].str),make_str("view"),(yyvsp[(6) - (10)].str),(yyvsp[(7) - (10)].str),make_str("as"),(yyvsp[(9) - (10)].str),(yyvsp[(10) - (10)].str));
 }
@@ -31117,7 +31117,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 933:
 
 /* Line 1806 of yacc.c  */
-#line 5845 "preproc.y"
+#line 5845 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
 mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server");
  (yyval.str) = make_str("with check option");
@@ -31127,7 +31127,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 934:
 
 /* Line 1806 of yacc.c  */
-#line 5850 "preproc.y"
+#line 5850 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
 mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server");
  (yyval.str) = make_str("with cascaded check option");
@@ -31137,7 +31137,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 935:
 
 /* Line 1806 of yacc.c  */
-#line 5855 "preproc.y"
+#line 5855 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
 mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server");
  (yyval.str) = make_str("with local check option");
@@ -31147,7 +31147,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 936:
 
 /* Line 1806 of yacc.c  */
-#line 5860 "preproc.y"
+#line 5860 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -31155,7 +31155,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 937:
 
 /* Line 1806 of yacc.c  */
-#line 5867 "preproc.y"
+#line 5867 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("load"),(yyvsp[(2) - (2)].str));
 }
@@ -31164,7 +31164,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 938:
 
 /* Line 1806 of yacc.c  */
-#line 5875 "preproc.y"
+#line 5875 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,make_str("create database"),(yyvsp[(3) - (5)].str),(yyvsp[(4) - (5)].str),(yyvsp[(5) - (5)].str));
 }
@@ -31173,7 +31173,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 939:
 
 /* Line 1806 of yacc.c  */
-#line 5883 "preproc.y"
+#line 5883 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,(yyvsp[(1) - (2)].str),(yyvsp[(2) - (2)].str));
 }
@@ -31182,7 +31182,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 940:
 
 /* Line 1806 of yacc.c  */
-#line 5887 "preproc.y"
+#line 5887 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -31190,7 +31190,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 941:
 
 /* Line 1806 of yacc.c  */
-#line 5894 "preproc.y"
+#line 5894 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("tablespace"),(yyvsp[(2) - (3)].str),(yyvsp[(3) - (3)].str));
 }
@@ -31199,7 +31199,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 942:
 
 /* Line 1806 of yacc.c  */
-#line 5898 "preproc.y"
+#line 5898 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("tablespace"),(yyvsp[(2) - (3)].str),make_str("default"));
 }
@@ -31208,7 +31208,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 943:
 
 /* Line 1806 of yacc.c  */
-#line 5902 "preproc.y"
+#line 5902 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("location"),(yyvsp[(2) - (3)].str),(yyvsp[(3) - (3)].str));
 }
@@ -31217,7 +31217,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 944:
 
 /* Line 1806 of yacc.c  */
-#line 5906 "preproc.y"
+#line 5906 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("location"),(yyvsp[(2) - (3)].str),make_str("default"));
 }
@@ -31226,7 +31226,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 945:
 
 /* Line 1806 of yacc.c  */
-#line 5910 "preproc.y"
+#line 5910 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("template"),(yyvsp[(2) - (3)].str),(yyvsp[(3) - (3)].str));
 }
@@ -31235,7 +31235,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 946:
 
 /* Line 1806 of yacc.c  */
-#line 5914 "preproc.y"
+#line 5914 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("template"),(yyvsp[(2) - (3)].str),make_str("default"));
 }
@@ -31244,7 +31244,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 947:
 
 /* Line 1806 of yacc.c  */
-#line 5918 "preproc.y"
+#line 5918 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("encoding"),(yyvsp[(2) - (3)].str),(yyvsp[(3) - (3)].str));
 }
@@ -31253,7 +31253,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 948:
 
 /* Line 1806 of yacc.c  */
-#line 5922 "preproc.y"
+#line 5922 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("encoding"),(yyvsp[(2) - (3)].str),(yyvsp[(3) - (3)].str));
 }
@@ -31262,7 +31262,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 949:
 
 /* Line 1806 of yacc.c  */
-#line 5926 "preproc.y"
+#line 5926 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("encoding"),(yyvsp[(2) - (3)].str),make_str("default"));
 }
@@ -31271,7 +31271,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 950:
 
 /* Line 1806 of yacc.c  */
-#line 5930 "preproc.y"
+#line 5930 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("lc_collate"),(yyvsp[(2) - (3)].str),(yyvsp[(3) - (3)].str));
 }
@@ -31280,7 +31280,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 951:
 
 /* Line 1806 of yacc.c  */
-#line 5934 "preproc.y"
+#line 5934 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("lc_collate"),(yyvsp[(2) - (3)].str),make_str("default"));
 }
@@ -31289,7 +31289,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 952:
 
 /* Line 1806 of yacc.c  */
-#line 5938 "preproc.y"
+#line 5938 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("lc_ctype"),(yyvsp[(2) - (3)].str),(yyvsp[(3) - (3)].str));
 }
@@ -31298,7 +31298,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 953:
 
 /* Line 1806 of yacc.c  */
-#line 5942 "preproc.y"
+#line 5942 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("lc_ctype"),(yyvsp[(2) - (3)].str),make_str("default"));
 }
@@ -31307,7 +31307,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 954:
 
 /* Line 1806 of yacc.c  */
-#line 5946 "preproc.y"
+#line 5946 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("connection limit"),(yyvsp[(3) - (4)].str),(yyvsp[(4) - (4)].str));
 }
@@ -31316,7 +31316,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 955:
 
 /* Line 1806 of yacc.c  */
-#line 5950 "preproc.y"
+#line 5950 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("owner"),(yyvsp[(2) - (3)].str),(yyvsp[(3) - (3)].str));
 }
@@ -31325,7 +31325,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 956:
 
 /* Line 1806 of yacc.c  */
-#line 5954 "preproc.y"
+#line 5954 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("owner"),(yyvsp[(2) - (3)].str),make_str("default"));
 }
@@ -31334,7 +31334,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 957:
 
 /* Line 1806 of yacc.c  */
-#line 5962 "preproc.y"
+#line 5962 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("=");
 }
@@ -31343,7 +31343,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 958:
 
 /* Line 1806 of yacc.c  */
-#line 5966 "preproc.y"
+#line 5966 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -31351,7 +31351,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 959:
 
 /* Line 1806 of yacc.c  */
-#line 5973 "preproc.y"
+#line 5973 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,make_str("alter database"),(yyvsp[(3) - (5)].str),(yyvsp[(4) - (5)].str),(yyvsp[(5) - (5)].str));
 }
@@ -31360,7 +31360,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 960:
 
 /* Line 1806 of yacc.c  */
-#line 5977 "preproc.y"
+#line 5977 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,make_str("alter database"),(yyvsp[(3) - (6)].str),make_str("set tablespace"),(yyvsp[(6) - (6)].str));
 }
@@ -31369,7 +31369,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 961:
 
 /* Line 1806 of yacc.c  */
-#line 5985 "preproc.y"
+#line 5985 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("alter database"),(yyvsp[(3) - (4)].str),(yyvsp[(4) - (4)].str));
 }
@@ -31378,7 +31378,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 962:
 
 /* Line 1806 of yacc.c  */
-#line 5993 "preproc.y"
+#line 5993 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,(yyvsp[(1) - (2)].str),(yyvsp[(2) - (2)].str));
 }
@@ -31387,7 +31387,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 963:
 
 /* Line 1806 of yacc.c  */
-#line 5997 "preproc.y"
+#line 5997 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -31395,7 +31395,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 964:
 
 /* Line 1806 of yacc.c  */
-#line 6004 "preproc.y"
+#line 6004 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("connection limit"),(yyvsp[(3) - (4)].str),(yyvsp[(4) - (4)].str));
 }
@@ -31404,7 +31404,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 965:
 
 /* Line 1806 of yacc.c  */
-#line 6012 "preproc.y"
+#line 6012 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("drop database"),(yyvsp[(3) - (3)].str));
 }
@@ -31413,7 +31413,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 966:
 
 /* Line 1806 of yacc.c  */
-#line 6016 "preproc.y"
+#line 6016 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("drop database if exists"),(yyvsp[(5) - (5)].str));
 }
@@ -31422,7 +31422,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 967:
 
 /* Line 1806 of yacc.c  */
-#line 6024 "preproc.y"
+#line 6024 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(5,make_str("create domain"),(yyvsp[(3) - (6)].str),(yyvsp[(4) - (6)].str),(yyvsp[(5) - (6)].str),(yyvsp[(6) - (6)].str));
 }
@@ -31431,7 +31431,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 968:
 
 /* Line 1806 of yacc.c  */
-#line 6032 "preproc.y"
+#line 6032 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("alter domain"),(yyvsp[(3) - (4)].str),(yyvsp[(4) - (4)].str));
 }
@@ -31440,7 +31440,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 969:
 
 /* Line 1806 of yacc.c  */
-#line 6036 "preproc.y"
+#line 6036 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("alter domain"),(yyvsp[(3) - (6)].str),make_str("drop not null"));
 }
@@ -31449,7 +31449,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 970:
 
 /* Line 1806 of yacc.c  */
-#line 6040 "preproc.y"
+#line 6040 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("alter domain"),(yyvsp[(3) - (6)].str),make_str("set not null"));
 }
@@ -31458,7 +31458,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 971:
 
 /* Line 1806 of yacc.c  */
-#line 6044 "preproc.y"
+#line 6044 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,make_str("alter domain"),(yyvsp[(3) - (5)].str),make_str("add"),(yyvsp[(5) - (5)].str));
 }
@@ -31467,7 +31467,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 972:
 
 /* Line 1806 of yacc.c  */
-#line 6048 "preproc.y"
+#line 6048 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(5,make_str("alter domain"),(yyvsp[(3) - (7)].str),make_str("drop constraint"),(yyvsp[(6) - (7)].str),(yyvsp[(7) - (7)].str));
 }
@@ -31476,7 +31476,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 973:
 
 /* Line 1806 of yacc.c  */
-#line 6056 "preproc.y"
+#line 6056 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("as");
 }
@@ -31485,7 +31485,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 974:
 
 /* Line 1806 of yacc.c  */
-#line 6060 "preproc.y"
+#line 6060 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -31493,7 +31493,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 975:
 
 /* Line 1806 of yacc.c  */
-#line 6067 "preproc.y"
+#line 6067 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("alter text search dictionary"),(yyvsp[(5) - (6)].str),(yyvsp[(6) - (6)].str));
 }
@@ -31502,7 +31502,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 976:
 
 /* Line 1806 of yacc.c  */
-#line 6075 "preproc.y"
+#line 6075 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(6,make_str("alter text search configuration"),(yyvsp[(5) - (11)].str),make_str("add mapping for"),(yyvsp[(9) - (11)].str),make_str("with"),(yyvsp[(11) - (11)].str));
 }
@@ -31511,7 +31511,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 977:
 
 /* Line 1806 of yacc.c  */
-#line 6079 "preproc.y"
+#line 6079 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(6,make_str("alter text search configuration"),(yyvsp[(5) - (11)].str),make_str("alter mapping for"),(yyvsp[(9) - (11)].str),make_str("with"),(yyvsp[(11) - (11)].str));
 }
@@ -31520,7 +31520,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 978:
 
 /* Line 1806 of yacc.c  */
-#line 6083 "preproc.y"
+#line 6083 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(6,make_str("alter text search configuration"),(yyvsp[(5) - (11)].str),make_str("alter mapping replace"),(yyvsp[(9) - (11)].str),make_str("with"),(yyvsp[(11) - (11)].str));
 }
@@ -31529,7 +31529,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 979:
 
 /* Line 1806 of yacc.c  */
-#line 6087 "preproc.y"
+#line 6087 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(8,make_str("alter text search configuration"),(yyvsp[(5) - (13)].str),make_str("alter mapping for"),(yyvsp[(9) - (13)].str),make_str("replace"),(yyvsp[(11) - (13)].str),make_str("with"),(yyvsp[(13) - (13)].str));
 }
@@ -31538,7 +31538,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 980:
 
 /* Line 1806 of yacc.c  */
-#line 6091 "preproc.y"
+#line 6091 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,make_str("alter text search configuration"),(yyvsp[(5) - (9)].str),make_str("drop mapping for"),(yyvsp[(9) - (9)].str));
 }
@@ -31547,7 +31547,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 981:
 
 /* Line 1806 of yacc.c  */
-#line 6095 "preproc.y"
+#line 6095 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,make_str("alter text search configuration"),(yyvsp[(5) - (11)].str),make_str("drop mapping if exists for"),(yyvsp[(11) - (11)].str));
 }
@@ -31556,7 +31556,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 982:
 
 /* Line 1806 of yacc.c  */
-#line 6103 "preproc.y"
+#line 6103 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(10,make_str("create"),(yyvsp[(2) - (10)].str),make_str("conversion"),(yyvsp[(4) - (10)].str),make_str("for"),(yyvsp[(6) - (10)].str),make_str("to"),(yyvsp[(8) - (10)].str),make_str("from"),(yyvsp[(10) - (10)].str));
 }
@@ -31565,7 +31565,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 983:
 
 /* Line 1806 of yacc.c  */
-#line 6111 "preproc.y"
+#line 6111 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,make_str("cluster"),(yyvsp[(2) - (4)].str),(yyvsp[(3) - (4)].str),(yyvsp[(4) - (4)].str));
 }
@@ -31574,7 +31574,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 984:
 
 /* Line 1806 of yacc.c  */
-#line 6115 "preproc.y"
+#line 6115 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("cluster"),(yyvsp[(2) - (2)].str));
 }
@@ -31583,7 +31583,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 985:
 
 /* Line 1806 of yacc.c  */
-#line 6119 "preproc.y"
+#line 6119 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(5,make_str("cluster"),(yyvsp[(2) - (5)].str),(yyvsp[(3) - (5)].str),make_str("on"),(yyvsp[(5) - (5)].str));
 }
@@ -31592,7 +31592,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 986:
 
 /* Line 1806 of yacc.c  */
-#line 6127 "preproc.y"
+#line 6127 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("using"),(yyvsp[(2) - (2)].str));
 }
@@ -31601,7 +31601,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 987:
 
 /* Line 1806 of yacc.c  */
-#line 6131 "preproc.y"
+#line 6131 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -31609,7 +31609,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 988:
 
 /* Line 1806 of yacc.c  */
-#line 6138 "preproc.y"
+#line 6138 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,make_str("vacuum"),(yyvsp[(2) - (4)].str),(yyvsp[(3) - (4)].str),(yyvsp[(4) - (4)].str));
 }
@@ -31618,7 +31618,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 989:
 
 /* Line 1806 of yacc.c  */
-#line 6142 "preproc.y"
+#line 6142 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(5,make_str("vacuum"),(yyvsp[(2) - (5)].str),(yyvsp[(3) - (5)].str),(yyvsp[(4) - (5)].str),(yyvsp[(5) - (5)].str));
 }
@@ -31627,7 +31627,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 990:
 
 /* Line 1806 of yacc.c  */
-#line 6146 "preproc.y"
+#line 6146 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(5,make_str("vacuum"),(yyvsp[(2) - (5)].str),(yyvsp[(3) - (5)].str),(yyvsp[(4) - (5)].str),(yyvsp[(5) - (5)].str));
 }
@@ -31636,7 +31636,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 991:
 
 /* Line 1806 of yacc.c  */
-#line 6154 "preproc.y"
+#line 6154 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,(yyvsp[(1) - (2)].str),(yyvsp[(2) - (2)].str));
 }
@@ -31645,7 +31645,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 992:
 
 /* Line 1806 of yacc.c  */
-#line 6158 "preproc.y"
+#line 6158 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,(yyvsp[(1) - (4)].str),(yyvsp[(2) - (4)].str),(yyvsp[(3) - (4)].str),(yyvsp[(4) - (4)].str));
 }
@@ -31654,7 +31654,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 993:
 
 /* Line 1806 of yacc.c  */
-#line 6166 "preproc.y"
+#line 6166 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("analyze");
 }
@@ -31663,7 +31663,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 994:
 
 /* Line 1806 of yacc.c  */
-#line 6170 "preproc.y"
+#line 6170 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("analyse");
 }
@@ -31672,7 +31672,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 995:
 
 /* Line 1806 of yacc.c  */
-#line 6178 "preproc.y"
+#line 6178 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("verbose");
 }
@@ -31681,7 +31681,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 996:
 
 /* Line 1806 of yacc.c  */
-#line 6182 "preproc.y"
+#line 6182 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -31689,7 +31689,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 997:
 
 /* Line 1806 of yacc.c  */
-#line 6189 "preproc.y"
+#line 6189 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("full");
 }
@@ -31698,7 +31698,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 998:
 
 /* Line 1806 of yacc.c  */
-#line 6193 "preproc.y"
+#line 6193 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -31706,7 +31706,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 999:
 
 /* Line 1806 of yacc.c  */
-#line 6200 "preproc.y"
+#line 6200 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("freeze");
 }
@@ -31715,7 +31715,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1000:
 
 /* Line 1806 of yacc.c  */
-#line 6204 "preproc.y"
+#line 6204 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -31723,7 +31723,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1001:
 
 /* Line 1806 of yacc.c  */
-#line 6211 "preproc.y"
+#line 6211 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("("),(yyvsp[(2) - (3)].str),make_str(")"));
 }
@@ -31732,7 +31732,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1002:
 
 /* Line 1806 of yacc.c  */
-#line 6215 "preproc.y"
+#line 6215 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -31740,7 +31740,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1003:
 
 /* Line 1806 of yacc.c  */
-#line 6222 "preproc.y"
+#line 6222 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,make_str("explain"),(yyvsp[(2) - (4)].str),(yyvsp[(3) - (4)].str),(yyvsp[(4) - (4)].str));
 }
@@ -31749,7 +31749,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1004:
 
 /* Line 1806 of yacc.c  */
-#line 6230 "preproc.y"
+#line 6230 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -31758,7 +31758,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1005:
 
 /* Line 1806 of yacc.c  */
-#line 6234 "preproc.y"
+#line 6234 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -31767,7 +31767,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1006:
 
 /* Line 1806 of yacc.c  */
-#line 6238 "preproc.y"
+#line 6238 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -31776,7 +31776,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1007:
 
 /* Line 1806 of yacc.c  */
-#line 6242 "preproc.y"
+#line 6242 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -31785,7 +31785,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1008:
 
 /* Line 1806 of yacc.c  */
-#line 6246 "preproc.y"
+#line 6246 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -31794,7 +31794,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1009:
 
 /* Line 1806 of yacc.c  */
-#line 6250 "preproc.y"
+#line 6250 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -31803,7 +31803,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1010:
 
 /* Line 1806 of yacc.c  */
-#line 6254 "preproc.y"
+#line 6254 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -31812,7 +31812,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1011:
 
 /* Line 1806 of yacc.c  */
-#line 6262 "preproc.y"
+#line 6262 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -31821,7 +31821,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1012:
 
 /* Line 1806 of yacc.c  */
-#line 6266 "preproc.y"
+#line 6266 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -31829,7 +31829,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1013:
 
 /* Line 1806 of yacc.c  */
-#line 6273 "preproc.y"
+#line 6273 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 		(yyval.prep).name = (yyvsp[(2) - (5)].str);
 		(yyval.prep).type = (yyvsp[(3) - (5)].str);
@@ -31840,7 +31840,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1014:
 
 /* Line 1806 of yacc.c  */
-#line 6279 "preproc.y"
+#line 6279 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 		(yyval.prep).name = (yyvsp[(2) - (4)].str);
 		(yyval.prep).type = NULL;
@@ -31851,7 +31851,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1015:
 
 /* Line 1806 of yacc.c  */
-#line 6289 "preproc.y"
+#line 6289 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("("),(yyvsp[(2) - (3)].str),make_str(")"));
 }
@@ -31860,7 +31860,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1016:
 
 /* Line 1806 of yacc.c  */
-#line 6293 "preproc.y"
+#line 6293 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -31868,7 +31868,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1017:
 
 /* Line 1806 of yacc.c  */
-#line 6300 "preproc.y"
+#line 6300 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -31877,7 +31877,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1018:
 
 /* Line 1806 of yacc.c  */
-#line 6304 "preproc.y"
+#line 6304 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -31886,7 +31886,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1019:
 
 /* Line 1806 of yacc.c  */
-#line 6308 "preproc.y"
+#line 6308 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -31895,7 +31895,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1020:
 
 /* Line 1806 of yacc.c  */
-#line 6312 "preproc.y"
+#line 6312 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -31904,14 +31904,14 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1021:
 
 /* Line 1806 of yacc.c  */
-#line 6320 "preproc.y"
+#line 6320 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(2) - (4)].str); }
     break;
 
   case 1022:
 
 /* Line 1806 of yacc.c  */
-#line 6322 "preproc.y"
+#line 6322 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(7,make_str("create"),(yyvsp[(2) - (8)].str),make_str("table"),(yyvsp[(4) - (8)].str),make_str("as execute"),(yyvsp[(7) - (8)].str),(yyvsp[(8) - (8)].str));
 }
@@ -31920,7 +31920,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1023:
 
 /* Line 1806 of yacc.c  */
-#line 6330 "preproc.y"
+#line 6330 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("("),(yyvsp[(2) - (3)].str),make_str(")"));
 }
@@ -31929,7 +31929,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1024:
 
 /* Line 1806 of yacc.c  */
-#line 6334 "preproc.y"
+#line 6334 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -31937,7 +31937,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1025:
 
 /* Line 1806 of yacc.c  */
-#line 6341 "preproc.y"
+#line 6341 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,make_str("insert into"),(yyvsp[(3) - (5)].str),(yyvsp[(4) - (5)].str),(yyvsp[(5) - (5)].str));
 }
@@ -31946,7 +31946,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1026:
 
 /* Line 1806 of yacc.c  */
-#line 6349 "preproc.y"
+#line 6349 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -31955,7 +31955,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1027:
 
 /* Line 1806 of yacc.c  */
-#line 6353 "preproc.y"
+#line 6353 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,make_str("("),(yyvsp[(2) - (4)].str),make_str(")"),(yyvsp[(4) - (4)].str));
 }
@@ -31964,7 +31964,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1028:
 
 /* Line 1806 of yacc.c  */
-#line 6357 "preproc.y"
+#line 6357 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("default values");
 }
@@ -31973,7 +31973,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1029:
 
 /* Line 1806 of yacc.c  */
-#line 6365 "preproc.y"
+#line 6365 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -31982,7 +31982,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1030:
 
 /* Line 1806 of yacc.c  */
-#line 6369 "preproc.y"
+#line 6369 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),make_str(","),(yyvsp[(3) - (3)].str));
 }
@@ -31991,7 +31991,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1031:
 
 /* Line 1806 of yacc.c  */
-#line 6377 "preproc.y"
+#line 6377 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,(yyvsp[(1) - (2)].str),(yyvsp[(2) - (2)].str));
 }
@@ -32000,7 +32000,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1032:
 
 /* Line 1806 of yacc.c  */
-#line 6385 "preproc.y"
+#line 6385 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("returning"),(yyvsp[(2) - (3)].str));
 }
@@ -32009,7 +32009,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1033:
 
 /* Line 1806 of yacc.c  */
-#line 6389 "preproc.y"
+#line 6389 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -32017,7 +32017,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1034:
 
 /* Line 1806 of yacc.c  */
-#line 6396 "preproc.y"
+#line 6396 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(5,make_str("delete from"),(yyvsp[(3) - (6)].str),(yyvsp[(4) - (6)].str),(yyvsp[(5) - (6)].str),(yyvsp[(6) - (6)].str));
 }
@@ -32026,7 +32026,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1035:
 
 /* Line 1806 of yacc.c  */
-#line 6404 "preproc.y"
+#line 6404 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("using"),(yyvsp[(2) - (2)].str));
 }
@@ -32035,7 +32035,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1036:
 
 /* Line 1806 of yacc.c  */
-#line 6408 "preproc.y"
+#line 6408 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -32043,7 +32043,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1037:
 
 /* Line 1806 of yacc.c  */
-#line 6415 "preproc.y"
+#line 6415 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(5,make_str("lock"),(yyvsp[(2) - (5)].str),(yyvsp[(3) - (5)].str),(yyvsp[(4) - (5)].str),(yyvsp[(5) - (5)].str));
 }
@@ -32052,7 +32052,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1038:
 
 /* Line 1806 of yacc.c  */
-#line 6423 "preproc.y"
+#line 6423 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("in"),(yyvsp[(2) - (3)].str),make_str("mode"));
 }
@@ -32061,7 +32061,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1039:
 
 /* Line 1806 of yacc.c  */
-#line 6427 "preproc.y"
+#line 6427 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -32069,7 +32069,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1040:
 
 /* Line 1806 of yacc.c  */
-#line 6434 "preproc.y"
+#line 6434 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("access share");
 }
@@ -32078,7 +32078,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1041:
 
 /* Line 1806 of yacc.c  */
-#line 6438 "preproc.y"
+#line 6438 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("row share");
 }
@@ -32087,7 +32087,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1042:
 
 /* Line 1806 of yacc.c  */
-#line 6442 "preproc.y"
+#line 6442 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("row exclusive");
 }
@@ -32096,7 +32096,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1043:
 
 /* Line 1806 of yacc.c  */
-#line 6446 "preproc.y"
+#line 6446 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("share update exclusive");
 }
@@ -32105,7 +32105,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1044:
 
 /* Line 1806 of yacc.c  */
-#line 6450 "preproc.y"
+#line 6450 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("share");
 }
@@ -32114,7 +32114,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1045:
 
 /* Line 1806 of yacc.c  */
-#line 6454 "preproc.y"
+#line 6454 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("share row exclusive");
 }
@@ -32123,7 +32123,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1046:
 
 /* Line 1806 of yacc.c  */
-#line 6458 "preproc.y"
+#line 6458 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("exclusive");
 }
@@ -32132,7 +32132,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1047:
 
 /* Line 1806 of yacc.c  */
-#line 6462 "preproc.y"
+#line 6462 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("access exclusive");
 }
@@ -32141,7 +32141,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1048:
 
 /* Line 1806 of yacc.c  */
-#line 6470 "preproc.y"
+#line 6470 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("nowait");
 }
@@ -32150,7 +32150,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1049:
 
 /* Line 1806 of yacc.c  */
-#line 6474 "preproc.y"
+#line 6474 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -32158,7 +32158,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1050:
 
 /* Line 1806 of yacc.c  */
-#line 6481 "preproc.y"
+#line 6481 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(7,make_str("update"),(yyvsp[(2) - (7)].str),make_str("set"),(yyvsp[(4) - (7)].str),(yyvsp[(5) - (7)].str),(yyvsp[(6) - (7)].str),(yyvsp[(7) - (7)].str));
 }
@@ -32167,7 +32167,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1051:
 
 /* Line 1806 of yacc.c  */
-#line 6489 "preproc.y"
+#line 6489 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -32176,7 +32176,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1052:
 
 /* Line 1806 of yacc.c  */
-#line 6493 "preproc.y"
+#line 6493 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),make_str(","),(yyvsp[(3) - (3)].str));
 }
@@ -32185,7 +32185,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1053:
 
 /* Line 1806 of yacc.c  */
-#line 6501 "preproc.y"
+#line 6501 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -32194,7 +32194,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1054:
 
 /* Line 1806 of yacc.c  */
-#line 6505 "preproc.y"
+#line 6505 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -32203,7 +32203,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1055:
 
 /* Line 1806 of yacc.c  */
-#line 6513 "preproc.y"
+#line 6513 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),make_str("="),(yyvsp[(3) - (3)].str));
 }
@@ -32212,7 +32212,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1056:
 
 /* Line 1806 of yacc.c  */
-#line 6521 "preproc.y"
+#line 6521 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,make_str("("),(yyvsp[(2) - (5)].str),make_str(") ="),(yyvsp[(5) - (5)].str));
 }
@@ -32221,7 +32221,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1057:
 
 /* Line 1806 of yacc.c  */
-#line 6529 "preproc.y"
+#line 6529 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,(yyvsp[(1) - (2)].str),(yyvsp[(2) - (2)].str));
 }
@@ -32230,7 +32230,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1058:
 
 /* Line 1806 of yacc.c  */
-#line 6537 "preproc.y"
+#line 6537 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -32239,7 +32239,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1059:
 
 /* Line 1806 of yacc.c  */
-#line 6541 "preproc.y"
+#line 6541 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),make_str(","),(yyvsp[(3) - (3)].str));
 }
@@ -32248,7 +32248,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1060:
 
 /* Line 1806 of yacc.c  */
-#line 6549 "preproc.y"
+#line 6549 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 		struct cursor *ptr, *this;
 		char *c1, *c2;
@@ -32289,7 +32289,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1061:
 
 /* Line 1806 of yacc.c  */
-#line 6589 "preproc.y"
+#line 6589 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -32297,7 +32297,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1062:
 
 /* Line 1806 of yacc.c  */
-#line 6592 "preproc.y"
+#line 6592 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,(yyvsp[(1) - (3)].str),make_str("no scroll"));
 }
@@ -32306,7 +32306,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1063:
 
 /* Line 1806 of yacc.c  */
-#line 6596 "preproc.y"
+#line 6596 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,(yyvsp[(1) - (2)].str),make_str("scroll"));
 }
@@ -32315,7 +32315,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1064:
 
 /* Line 1806 of yacc.c  */
-#line 6600 "preproc.y"
+#line 6600 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,(yyvsp[(1) - (2)].str),make_str("binary"));
 }
@@ -32324,7 +32324,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1065:
 
 /* Line 1806 of yacc.c  */
-#line 6604 "preproc.y"
+#line 6604 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,(yyvsp[(1) - (2)].str),make_str("insensitive"));
 }
@@ -32333,7 +32333,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1066:
 
 /* Line 1806 of yacc.c  */
-#line 6612 "preproc.y"
+#line 6612 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 		if (compat == ECPG_COMPAT_INFORMIX_SE && autocommit == true)
 			(yyval.str) = make_str("with hold");
@@ -32345,7 +32345,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1067:
 
 /* Line 1806 of yacc.c  */
-#line 6619 "preproc.y"
+#line 6619 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("with hold");
 }
@@ -32354,7 +32354,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1068:
 
 /* Line 1806 of yacc.c  */
-#line 6623 "preproc.y"
+#line 6623 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("without hold");
 }
@@ -32363,7 +32363,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1069:
 
 /* Line 1806 of yacc.c  */
-#line 6631 "preproc.y"
+#line 6631 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -32372,7 +32372,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1070:
 
 /* Line 1806 of yacc.c  */
-#line 6635 "preproc.y"
+#line 6635 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -32381,7 +32381,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1071:
 
 /* Line 1806 of yacc.c  */
-#line 6643 "preproc.y"
+#line 6643 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("("),(yyvsp[(2) - (3)].str),make_str(")"));
 }
@@ -32390,7 +32390,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1072:
 
 /* Line 1806 of yacc.c  */
-#line 6647 "preproc.y"
+#line 6647 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("("),(yyvsp[(2) - (3)].str),make_str(")"));
 }
@@ -32399,7 +32399,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1073:
 
 /* Line 1806 of yacc.c  */
-#line 6655 "preproc.y"
+#line 6655 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -32408,7 +32408,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1074:
 
 /* Line 1806 of yacc.c  */
-#line 6659 "preproc.y"
+#line 6659 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,(yyvsp[(1) - (2)].str),(yyvsp[(2) - (2)].str));
 }
@@ -32417,7 +32417,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1075:
 
 /* Line 1806 of yacc.c  */
-#line 6663 "preproc.y"
+#line 6663 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,(yyvsp[(1) - (4)].str),(yyvsp[(2) - (4)].str),(yyvsp[(3) - (4)].str),(yyvsp[(4) - (4)].str));
 }
@@ -32426,7 +32426,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1076:
 
 /* Line 1806 of yacc.c  */
-#line 6667 "preproc.y"
+#line 6667 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,(yyvsp[(1) - (4)].str),(yyvsp[(2) - (4)].str),(yyvsp[(3) - (4)].str),(yyvsp[(4) - (4)].str));
 }
@@ -32435,7 +32435,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1077:
 
 /* Line 1806 of yacc.c  */
-#line 6671 "preproc.y"
+#line 6671 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,(yyvsp[(1) - (2)].str),(yyvsp[(2) - (2)].str));
 }
@@ -32444,7 +32444,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1078:
 
 /* Line 1806 of yacc.c  */
-#line 6675 "preproc.y"
+#line 6675 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),(yyvsp[(2) - (3)].str),(yyvsp[(3) - (3)].str));
 }
@@ -32453,7 +32453,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1079:
 
 /* Line 1806 of yacc.c  */
-#line 6679 "preproc.y"
+#line 6679 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(5,(yyvsp[(1) - (5)].str),(yyvsp[(2) - (5)].str),(yyvsp[(3) - (5)].str),(yyvsp[(4) - (5)].str),(yyvsp[(5) - (5)].str));
 }
@@ -32462,7 +32462,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1080:
 
 /* Line 1806 of yacc.c  */
-#line 6683 "preproc.y"
+#line 6683 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(5,(yyvsp[(1) - (5)].str),(yyvsp[(2) - (5)].str),(yyvsp[(3) - (5)].str),(yyvsp[(4) - (5)].str),(yyvsp[(5) - (5)].str));
 }
@@ -32471,7 +32471,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1081:
 
 /* Line 1806 of yacc.c  */
-#line 6691 "preproc.y"
+#line 6691 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -32480,7 +32480,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1082:
 
 /* Line 1806 of yacc.c  */
-#line 6695 "preproc.y"
+#line 6695 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -32489,7 +32489,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1083:
 
 /* Line 1806 of yacc.c  */
-#line 6703 "preproc.y"
+#line 6703 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(9,make_str("select"),(yyvsp[(2) - (9)].str),(yyvsp[(3) - (9)].str),(yyvsp[(4) - (9)].str),(yyvsp[(5) - (9)].str),(yyvsp[(6) - (9)].str),(yyvsp[(7) - (9)].str),(yyvsp[(8) - (9)].str),(yyvsp[(9) - (9)].str));
 }
@@ -32498,7 +32498,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1084:
 
 /* Line 1806 of yacc.c  */
-#line 6707 "preproc.y"
+#line 6707 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -32507,7 +32507,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1085:
 
 /* Line 1806 of yacc.c  */
-#line 6711 "preproc.y"
+#line 6711 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("table"),(yyvsp[(2) - (2)].str));
 }
@@ -32516,7 +32516,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1086:
 
 /* Line 1806 of yacc.c  */
-#line 6715 "preproc.y"
+#line 6715 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,(yyvsp[(1) - (4)].str),make_str("union"),(yyvsp[(3) - (4)].str),(yyvsp[(4) - (4)].str));
 }
@@ -32525,7 +32525,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1087:
 
 /* Line 1806 of yacc.c  */
-#line 6719 "preproc.y"
+#line 6719 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,(yyvsp[(1) - (4)].str),make_str("intersect"),(yyvsp[(3) - (4)].str),(yyvsp[(4) - (4)].str));
 }
@@ -32534,7 +32534,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1088:
 
 /* Line 1806 of yacc.c  */
-#line 6723 "preproc.y"
+#line 6723 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,(yyvsp[(1) - (4)].str),make_str("except"),(yyvsp[(3) - (4)].str),(yyvsp[(4) - (4)].str));
 }
@@ -32543,7 +32543,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1089:
 
 /* Line 1806 of yacc.c  */
-#line 6731 "preproc.y"
+#line 6731 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("with"),(yyvsp[(2) - (2)].str));
 }
@@ -32552,7 +32552,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1090:
 
 /* Line 1806 of yacc.c  */
-#line 6735 "preproc.y"
+#line 6735 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("with recursive"),(yyvsp[(3) - (3)].str));
 }
@@ -32561,7 +32561,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1091:
 
 /* Line 1806 of yacc.c  */
-#line 6743 "preproc.y"
+#line 6743 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -32570,7 +32570,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1092:
 
 /* Line 1806 of yacc.c  */
-#line 6747 "preproc.y"
+#line 6747 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),make_str(","),(yyvsp[(3) - (3)].str));
 }
@@ -32579,7 +32579,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1093:
 
 /* Line 1806 of yacc.c  */
-#line 6755 "preproc.y"
+#line 6755 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,(yyvsp[(1) - (4)].str),(yyvsp[(2) - (4)].str),make_str("as"),(yyvsp[(4) - (4)].str));
 }
@@ -32588,7 +32588,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1094:
 
 /* Line 1806 of yacc.c  */
-#line 6763 "preproc.y"
+#line 6763 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 						FoundInto = 1;
 						(yyval.str)= cat2_str(make_str("into"), (yyvsp[(2) - (2)].str));
@@ -32598,14 +32598,14 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1095:
 
 /* Line 1806 of yacc.c  */
-#line 6767 "preproc.y"
+#line 6767 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = EMPTY; }
     break;
 
   case 1096:
 
 /* Line 1806 of yacc.c  */
-#line 6769 "preproc.y"
+#line 6769 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -32613,7 +32613,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1097:
 
 /* Line 1806 of yacc.c  */
-#line 6776 "preproc.y"
+#line 6776 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("temporary"),(yyvsp[(2) - (3)].str),(yyvsp[(3) - (3)].str));
 }
@@ -32622,7 +32622,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1098:
 
 /* Line 1806 of yacc.c  */
-#line 6780 "preproc.y"
+#line 6780 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("temp"),(yyvsp[(2) - (3)].str),(yyvsp[(3) - (3)].str));
 }
@@ -32631,7 +32631,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1099:
 
 /* Line 1806 of yacc.c  */
-#line 6784 "preproc.y"
+#line 6784 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("local temporary"),(yyvsp[(3) - (4)].str),(yyvsp[(4) - (4)].str));
 }
@@ -32640,7 +32640,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1100:
 
 /* Line 1806 of yacc.c  */
-#line 6788 "preproc.y"
+#line 6788 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("local temp"),(yyvsp[(3) - (4)].str),(yyvsp[(4) - (4)].str));
 }
@@ -32649,7 +32649,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1101:
 
 /* Line 1806 of yacc.c  */
-#line 6792 "preproc.y"
+#line 6792 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("global temporary"),(yyvsp[(3) - (4)].str),(yyvsp[(4) - (4)].str));
 }
@@ -32658,7 +32658,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1102:
 
 /* Line 1806 of yacc.c  */
-#line 6796 "preproc.y"
+#line 6796 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("global temp"),(yyvsp[(3) - (4)].str),(yyvsp[(4) - (4)].str));
 }
@@ -32667,7 +32667,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1103:
 
 /* Line 1806 of yacc.c  */
-#line 6800 "preproc.y"
+#line 6800 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("table"),(yyvsp[(2) - (2)].str));
 }
@@ -32676,7 +32676,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1104:
 
 /* Line 1806 of yacc.c  */
-#line 6804 "preproc.y"
+#line 6804 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -32685,7 +32685,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1105:
 
 /* Line 1806 of yacc.c  */
-#line 6812 "preproc.y"
+#line 6812 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("table");
 }
@@ -32694,7 +32694,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1106:
 
 /* Line 1806 of yacc.c  */
-#line 6816 "preproc.y"
+#line 6816 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -32702,7 +32702,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1107:
 
 /* Line 1806 of yacc.c  */
-#line 6823 "preproc.y"
+#line 6823 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("all");
 }
@@ -32711,7 +32711,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1108:
 
 /* Line 1806 of yacc.c  */
-#line 6827 "preproc.y"
+#line 6827 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("distinct");
 }
@@ -32720,7 +32720,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1109:
 
 /* Line 1806 of yacc.c  */
-#line 6831 "preproc.y"
+#line 6831 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -32728,7 +32728,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1110:
 
 /* Line 1806 of yacc.c  */
-#line 6838 "preproc.y"
+#line 6838 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("distinct");
 }
@@ -32737,7 +32737,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1111:
 
 /* Line 1806 of yacc.c  */
-#line 6842 "preproc.y"
+#line 6842 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("distinct on ("),(yyvsp[(4) - (5)].str),make_str(")"));
 }
@@ -32746,7 +32746,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1112:
 
 /* Line 1806 of yacc.c  */
-#line 6846 "preproc.y"
+#line 6846 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("all");
 }
@@ -32755,7 +32755,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1113:
 
 /* Line 1806 of yacc.c  */
-#line 6850 "preproc.y"
+#line 6850 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -32763,7 +32763,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1114:
 
 /* Line 1806 of yacc.c  */
-#line 6857 "preproc.y"
+#line 6857 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -32772,7 +32772,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1115:
 
 /* Line 1806 of yacc.c  */
-#line 6861 "preproc.y"
+#line 6861 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -32780,7 +32780,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1116:
 
 /* Line 1806 of yacc.c  */
-#line 6868 "preproc.y"
+#line 6868 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("order by"),(yyvsp[(3) - (3)].str));
 }
@@ -32789,7 +32789,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1117:
 
 /* Line 1806 of yacc.c  */
-#line 6876 "preproc.y"
+#line 6876 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -32798,7 +32798,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1118:
 
 /* Line 1806 of yacc.c  */
-#line 6880 "preproc.y"
+#line 6880 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),make_str(","),(yyvsp[(3) - (3)].str));
 }
@@ -32807,7 +32807,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1119:
 
 /* Line 1806 of yacc.c  */
-#line 6888 "preproc.y"
+#line 6888 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,(yyvsp[(1) - (4)].str),make_str("using"),(yyvsp[(3) - (4)].str),(yyvsp[(4) - (4)].str));
 }
@@ -32816,7 +32816,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1120:
 
 /* Line 1806 of yacc.c  */
-#line 6892 "preproc.y"
+#line 6892 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),(yyvsp[(2) - (3)].str),(yyvsp[(3) - (3)].str));
 }
@@ -32825,7 +32825,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1121:
 
 /* Line 1806 of yacc.c  */
-#line 6900 "preproc.y"
+#line 6900 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,make_str("limit"),(yyvsp[(2) - (4)].str),make_str("offset"),(yyvsp[(4) - (4)].str));
 }
@@ -32834,7 +32834,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1122:
 
 /* Line 1806 of yacc.c  */
-#line 6904 "preproc.y"
+#line 6904 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,make_str("offset"),(yyvsp[(2) - (4)].str),make_str("limit"),(yyvsp[(4) - (4)].str));
 }
@@ -32843,7 +32843,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1123:
 
 /* Line 1806 of yacc.c  */
-#line 6908 "preproc.y"
+#line 6908 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("limit"),(yyvsp[(2) - (2)].str));
 }
@@ -32852,7 +32852,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1124:
 
 /* Line 1806 of yacc.c  */
-#line 6912 "preproc.y"
+#line 6912 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("offset"),(yyvsp[(2) - (2)].str));
 }
@@ -32861,7 +32861,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1125:
 
 /* Line 1806 of yacc.c  */
-#line 6916 "preproc.y"
+#line 6916 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
                 mmerror(PARSE_ERROR, ET_WARNING, "no longer supported LIMIT #,# syntax passed to server");
                 (yyval.str) = cat_str(4, make_str("limit"), (yyvsp[(2) - (4)].str), make_str(","), (yyvsp[(4) - (4)].str));
@@ -32871,7 +32871,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1126:
 
 /* Line 1806 of yacc.c  */
-#line 6921 "preproc.y"
+#line 6921 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("offset"),(yyvsp[(2) - (3)].str),(yyvsp[(3) - (3)].str));
 }
@@ -32880,7 +32880,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1127:
 
 /* Line 1806 of yacc.c  */
-#line 6925 "preproc.y"
+#line 6925 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(5,make_str("fetch"),(yyvsp[(2) - (5)].str),(yyvsp[(3) - (5)].str),(yyvsp[(4) - (5)].str),make_str("only"));
 }
@@ -32889,7 +32889,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1128:
 
 /* Line 1806 of yacc.c  */
-#line 6929 "preproc.y"
+#line 6929 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(8,make_str("offset"),(yyvsp[(2) - (8)].str),(yyvsp[(3) - (8)].str),make_str("fetch"),(yyvsp[(5) - (8)].str),(yyvsp[(6) - (8)].str),(yyvsp[(7) - (8)].str),make_str("only"));
 }
@@ -32898,7 +32898,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1129:
 
 /* Line 1806 of yacc.c  */
-#line 6937 "preproc.y"
+#line 6937 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -32907,7 +32907,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1130:
 
 /* Line 1806 of yacc.c  */
-#line 6941 "preproc.y"
+#line 6941 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -32915,7 +32915,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1131:
 
 /* Line 1806 of yacc.c  */
-#line 6948 "preproc.y"
+#line 6948 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -32924,7 +32924,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1132:
 
 /* Line 1806 of yacc.c  */
-#line 6952 "preproc.y"
+#line 6952 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("all");
 }
@@ -32933,7 +32933,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1133:
 
 /* Line 1806 of yacc.c  */
-#line 6960 "preproc.y"
+#line 6960 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -32942,7 +32942,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1134:
 
 /* Line 1806 of yacc.c  */
-#line 6964 "preproc.y"
+#line 6964 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("("),(yyvsp[(2) - (3)].str),make_str(")"));
 }
@@ -32951,7 +32951,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1135:
 
 /* Line 1806 of yacc.c  */
-#line 6968 "preproc.y"
+#line 6968 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -32959,7 +32959,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1136:
 
 /* Line 1806 of yacc.c  */
-#line 6975 "preproc.y"
+#line 6975 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -32968,7 +32968,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1137:
 
 /* Line 1806 of yacc.c  */
-#line 6983 "preproc.y"
+#line 6983 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -32977,7 +32977,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1138:
 
 /* Line 1806 of yacc.c  */
-#line 6991 "preproc.y"
+#line 6991 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("row");
 }
@@ -32986,7 +32986,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1139:
 
 /* Line 1806 of yacc.c  */
-#line 6995 "preproc.y"
+#line 6995 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("rows");
 }
@@ -32995,7 +32995,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1140:
 
 /* Line 1806 of yacc.c  */
-#line 7003 "preproc.y"
+#line 7003 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("first");
 }
@@ -33004,7 +33004,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1141:
 
 /* Line 1806 of yacc.c  */
-#line 7007 "preproc.y"
+#line 7007 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("next");
 }
@@ -33013,7 +33013,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1142:
 
 /* Line 1806 of yacc.c  */
-#line 7015 "preproc.y"
+#line 7015 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("group by"),(yyvsp[(3) - (3)].str));
 }
@@ -33022,7 +33022,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1143:
 
 /* Line 1806 of yacc.c  */
-#line 7019 "preproc.y"
+#line 7019 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -33030,7 +33030,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1144:
 
 /* Line 1806 of yacc.c  */
-#line 7026 "preproc.y"
+#line 7026 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("having"),(yyvsp[(2) - (2)].str));
 }
@@ -33039,7 +33039,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1145:
 
 /* Line 1806 of yacc.c  */
-#line 7030 "preproc.y"
+#line 7030 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -33047,7 +33047,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1146:
 
 /* Line 1806 of yacc.c  */
-#line 7037 "preproc.y"
+#line 7037 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -33056,7 +33056,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1147:
 
 /* Line 1806 of yacc.c  */
-#line 7041 "preproc.y"
+#line 7041 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("for read only");
 }
@@ -33065,7 +33065,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1148:
 
 /* Line 1806 of yacc.c  */
-#line 7049 "preproc.y"
+#line 7049 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -33074,7 +33074,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1149:
 
 /* Line 1806 of yacc.c  */
-#line 7053 "preproc.y"
+#line 7053 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -33082,7 +33082,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1150:
 
 /* Line 1806 of yacc.c  */
-#line 7060 "preproc.y"
+#line 7060 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -33091,7 +33091,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1151:
 
 /* Line 1806 of yacc.c  */
-#line 7064 "preproc.y"
+#line 7064 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,(yyvsp[(1) - (2)].str),(yyvsp[(2) - (2)].str));
 }
@@ -33100,7 +33100,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1152:
 
 /* Line 1806 of yacc.c  */
-#line 7072 "preproc.y"
+#line 7072 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("for update"),(yyvsp[(3) - (4)].str),(yyvsp[(4) - (4)].str));
 }
@@ -33109,7 +33109,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1153:
 
 /* Line 1806 of yacc.c  */
-#line 7076 "preproc.y"
+#line 7076 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("for share"),(yyvsp[(3) - (4)].str),(yyvsp[(4) - (4)].str));
 }
@@ -33118,7 +33118,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1154:
 
 /* Line 1806 of yacc.c  */
-#line 7084 "preproc.y"
+#line 7084 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("of"),(yyvsp[(2) - (2)].str));
 }
@@ -33127,7 +33127,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1155:
 
 /* Line 1806 of yacc.c  */
-#line 7088 "preproc.y"
+#line 7088 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -33135,7 +33135,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1156:
 
 /* Line 1806 of yacc.c  */
-#line 7095 "preproc.y"
+#line 7095 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("values"),(yyvsp[(2) - (2)].str));
 }
@@ -33144,7 +33144,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1157:
 
 /* Line 1806 of yacc.c  */
-#line 7099 "preproc.y"
+#line 7099 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),make_str(","),(yyvsp[(3) - (3)].str));
 }
@@ -33153,7 +33153,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1158:
 
 /* Line 1806 of yacc.c  */
-#line 7107 "preproc.y"
+#line 7107 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("from"),(yyvsp[(2) - (2)].str));
 }
@@ -33162,7 +33162,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1159:
 
 /* Line 1806 of yacc.c  */
-#line 7111 "preproc.y"
+#line 7111 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -33170,7 +33170,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1160:
 
 /* Line 1806 of yacc.c  */
-#line 7118 "preproc.y"
+#line 7118 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -33179,7 +33179,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1161:
 
 /* Line 1806 of yacc.c  */
-#line 7122 "preproc.y"
+#line 7122 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),make_str(","),(yyvsp[(3) - (3)].str));
 }
@@ -33188,7 +33188,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1162:
 
 /* Line 1806 of yacc.c  */
-#line 7130 "preproc.y"
+#line 7130 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -33197,7 +33197,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1163:
 
 /* Line 1806 of yacc.c  */
-#line 7134 "preproc.y"
+#line 7134 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,(yyvsp[(1) - (2)].str),(yyvsp[(2) - (2)].str));
 }
@@ -33206,7 +33206,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1164:
 
 /* Line 1806 of yacc.c  */
-#line 7138 "preproc.y"
+#line 7138 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -33215,7 +33215,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1165:
 
 /* Line 1806 of yacc.c  */
-#line 7142 "preproc.y"
+#line 7142 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,(yyvsp[(1) - (2)].str),(yyvsp[(2) - (2)].str));
 }
@@ -33224,7 +33224,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1166:
 
 /* Line 1806 of yacc.c  */
-#line 7146 "preproc.y"
+#line 7146 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,(yyvsp[(1) - (5)].str),make_str("as ("),(yyvsp[(4) - (5)].str),make_str(")"));
 }
@@ -33233,7 +33233,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1167:
 
 /* Line 1806 of yacc.c  */
-#line 7150 "preproc.y"
+#line 7150 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(6,(yyvsp[(1) - (6)].str),make_str("as"),(yyvsp[(3) - (6)].str),make_str("("),(yyvsp[(5) - (6)].str),make_str(")"));
 }
@@ -33242,7 +33242,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1168:
 
 /* Line 1806 of yacc.c  */
-#line 7154 "preproc.y"
+#line 7154 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(5,(yyvsp[(1) - (5)].str),(yyvsp[(2) - (5)].str),make_str("("),(yyvsp[(4) - (5)].str),make_str(")"));
 }
@@ -33251,7 +33251,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1169:
 
 /* Line 1806 of yacc.c  */
-#line 7158 "preproc.y"
+#line 7158 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
 		mmerror(PARSE_ERROR, ET_ERROR, "subquery in FROM must have an alias");
 
@@ -33262,7 +33262,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1170:
 
 /* Line 1806 of yacc.c  */
-#line 7164 "preproc.y"
+#line 7164 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,(yyvsp[(1) - (2)].str),(yyvsp[(2) - (2)].str));
 }
@@ -33271,7 +33271,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1171:
 
 /* Line 1806 of yacc.c  */
-#line 7168 "preproc.y"
+#line 7168 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -33280,7 +33280,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1172:
 
 /* Line 1806 of yacc.c  */
-#line 7172 "preproc.y"
+#line 7172 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,make_str("("),(yyvsp[(2) - (4)].str),make_str(")"),(yyvsp[(4) - (4)].str));
 }
@@ -33289,7 +33289,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1173:
 
 /* Line 1806 of yacc.c  */
-#line 7180 "preproc.y"
+#line 7180 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("("),(yyvsp[(2) - (3)].str),make_str(")"));
 }
@@ -33298,7 +33298,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1174:
 
 /* Line 1806 of yacc.c  */
-#line 7184 "preproc.y"
+#line 7184 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (4)].str),make_str("cross join"),(yyvsp[(4) - (4)].str));
 }
@@ -33307,7 +33307,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1175:
 
 /* Line 1806 of yacc.c  */
-#line 7188 "preproc.y"
+#line 7188 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(5,(yyvsp[(1) - (5)].str),(yyvsp[(2) - (5)].str),make_str("join"),(yyvsp[(4) - (5)].str),(yyvsp[(5) - (5)].str));
 }
@@ -33316,7 +33316,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1176:
 
 /* Line 1806 of yacc.c  */
-#line 7192 "preproc.y"
+#line 7192 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,(yyvsp[(1) - (4)].str),make_str("join"),(yyvsp[(3) - (4)].str),(yyvsp[(4) - (4)].str));
 }
@@ -33325,7 +33325,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1177:
 
 /* Line 1806 of yacc.c  */
-#line 7196 "preproc.y"
+#line 7196 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(5,(yyvsp[(1) - (5)].str),make_str("natural"),(yyvsp[(3) - (5)].str),make_str("join"),(yyvsp[(5) - (5)].str));
 }
@@ -33334,7 +33334,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1178:
 
 /* Line 1806 of yacc.c  */
-#line 7200 "preproc.y"
+#line 7200 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (4)].str),make_str("natural join"),(yyvsp[(4) - (4)].str));
 }
@@ -33343,7 +33343,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1179:
 
 /* Line 1806 of yacc.c  */
-#line 7208 "preproc.y"
+#line 7208 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(5,make_str("as"),(yyvsp[(2) - (5)].str),make_str("("),(yyvsp[(4) - (5)].str),make_str(")"));
 }
@@ -33352,7 +33352,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1180:
 
 /* Line 1806 of yacc.c  */
-#line 7212 "preproc.y"
+#line 7212 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("as"),(yyvsp[(2) - (2)].str));
 }
@@ -33361,7 +33361,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1181:
 
 /* Line 1806 of yacc.c  */
-#line 7216 "preproc.y"
+#line 7216 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,(yyvsp[(1) - (4)].str),make_str("("),(yyvsp[(3) - (4)].str),make_str(")"));
 }
@@ -33370,7 +33370,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1182:
 
 /* Line 1806 of yacc.c  */
-#line 7220 "preproc.y"
+#line 7220 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -33379,7 +33379,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1183:
 
 /* Line 1806 of yacc.c  */
-#line 7228 "preproc.y"
+#line 7228 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("full"),(yyvsp[(2) - (2)].str));
 }
@@ -33388,7 +33388,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1184:
 
 /* Line 1806 of yacc.c  */
-#line 7232 "preproc.y"
+#line 7232 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("left"),(yyvsp[(2) - (2)].str));
 }
@@ -33397,7 +33397,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1185:
 
 /* Line 1806 of yacc.c  */
-#line 7236 "preproc.y"
+#line 7236 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("right"),(yyvsp[(2) - (2)].str));
 }
@@ -33406,7 +33406,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1186:
 
 /* Line 1806 of yacc.c  */
-#line 7240 "preproc.y"
+#line 7240 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("inner");
 }
@@ -33415,7 +33415,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1187:
 
 /* Line 1806 of yacc.c  */
-#line 7248 "preproc.y"
+#line 7248 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("outer");
 }
@@ -33424,7 +33424,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1188:
 
 /* Line 1806 of yacc.c  */
-#line 7252 "preproc.y"
+#line 7252 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -33432,7 +33432,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1189:
 
 /* Line 1806 of yacc.c  */
-#line 7259 "preproc.y"
+#line 7259 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("using ("),(yyvsp[(3) - (4)].str),make_str(")"));
 }
@@ -33441,7 +33441,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1190:
 
 /* Line 1806 of yacc.c  */
-#line 7263 "preproc.y"
+#line 7263 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("on"),(yyvsp[(2) - (2)].str));
 }
@@ -33450,7 +33450,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1191:
 
 /* Line 1806 of yacc.c  */
-#line 7271 "preproc.y"
+#line 7271 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -33459,7 +33459,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1192:
 
 /* Line 1806 of yacc.c  */
-#line 7275 "preproc.y"
+#line 7275 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,(yyvsp[(1) - (2)].str),make_str("*"));
 }
@@ -33468,7 +33468,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1193:
 
 /* Line 1806 of yacc.c  */
-#line 7279 "preproc.y"
+#line 7279 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("only"),(yyvsp[(2) - (2)].str));
 }
@@ -33477,7 +33477,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1194:
 
 /* Line 1806 of yacc.c  */
-#line 7283 "preproc.y"
+#line 7283 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("only ("),(yyvsp[(3) - (4)].str),make_str(")"));
 }
@@ -33486,7 +33486,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1195:
 
 /* Line 1806 of yacc.c  */
-#line 7291 "preproc.y"
+#line 7291 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -33495,7 +33495,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1196:
 
 /* Line 1806 of yacc.c  */
-#line 7295 "preproc.y"
+#line 7295 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),make_str(","),(yyvsp[(3) - (3)].str));
 }
@@ -33504,7 +33504,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1197:
 
 /* Line 1806 of yacc.c  */
-#line 7303 "preproc.y"
+#line 7303 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -33513,7 +33513,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1198:
 
 /* Line 1806 of yacc.c  */
-#line 7307 "preproc.y"
+#line 7307 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,(yyvsp[(1) - (2)].str),(yyvsp[(2) - (2)].str));
 }
@@ -33522,7 +33522,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1199:
 
 /* Line 1806 of yacc.c  */
-#line 7311 "preproc.y"
+#line 7311 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),make_str("as"),(yyvsp[(3) - (3)].str));
 }
@@ -33531,7 +33531,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1200:
 
 /* Line 1806 of yacc.c  */
-#line 7319 "preproc.y"
+#line 7319 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -33540,7 +33540,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1201:
 
 /* Line 1806 of yacc.c  */
-#line 7327 "preproc.y"
+#line 7327 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("where"),(yyvsp[(2) - (2)].str));
 }
@@ -33549,7 +33549,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1202:
 
 /* Line 1806 of yacc.c  */
-#line 7331 "preproc.y"
+#line 7331 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -33557,7 +33557,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1203:
 
 /* Line 1806 of yacc.c  */
-#line 7338 "preproc.y"
+#line 7338 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("where"),(yyvsp[(2) - (2)].str));
 }
@@ -33566,7 +33566,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1204:
 
 /* Line 1806 of yacc.c  */
-#line 7342 "preproc.y"
+#line 7342 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("where current of"),(yyvsp[(4) - (4)].str));
 }
@@ -33575,7 +33575,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1205:
 
 /* Line 1806 of yacc.c  */
-#line 7346 "preproc.y"
+#line 7346 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("where current of"),(yyvsp[(4) - (4)].str));
 }
@@ -33584,7 +33584,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1206:
 
 /* Line 1806 of yacc.c  */
-#line 7350 "preproc.y"
+#line 7350 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -33592,7 +33592,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1207:
 
 /* Line 1806 of yacc.c  */
-#line 7357 "preproc.y"
+#line 7357 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -33601,7 +33601,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1208:
 
 /* Line 1806 of yacc.c  */
-#line 7361 "preproc.y"
+#line 7361 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),make_str(","),(yyvsp[(3) - (3)].str));
 }
@@ -33610,7 +33610,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1209:
 
 /* Line 1806 of yacc.c  */
-#line 7369 "preproc.y"
+#line 7369 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,(yyvsp[(1) - (2)].str),(yyvsp[(2) - (2)].str));
 }
@@ -33619,21 +33619,21 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1210:
 
 /* Line 1806 of yacc.c  */
-#line 7377 "preproc.y"
+#line 7377 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {	(yyval.str) = cat2_str((yyvsp[(1) - (2)].str), (yyvsp[(2) - (2)].index).str); }
     break;
 
   case 1211:
 
 /* Line 1806 of yacc.c  */
-#line 7379 "preproc.y"
+#line 7379 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {	(yyval.str) = (yyval.str) = cat_str(3, make_str("setof"), (yyvsp[(2) - (3)].str), (yyvsp[(3) - (3)].index).str); }
     break;
 
   case 1212:
 
 /* Line 1806 of yacc.c  */
-#line 7381 "preproc.y"
+#line 7381 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,(yyvsp[(1) - (5)].str),make_str("array ["),(yyvsp[(4) - (5)].str),make_str("]"));
 }
@@ -33642,7 +33642,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1213:
 
 /* Line 1806 of yacc.c  */
-#line 7385 "preproc.y"
+#line 7385 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(5,make_str("setof"),(yyvsp[(2) - (6)].str),make_str("array ["),(yyvsp[(5) - (6)].str),make_str("]"));
 }
@@ -33651,7 +33651,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1214:
 
 /* Line 1806 of yacc.c  */
-#line 7389 "preproc.y"
+#line 7389 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,(yyvsp[(1) - (2)].str),make_str("array"));
 }
@@ -33660,7 +33660,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1215:
 
 /* Line 1806 of yacc.c  */
-#line 7393 "preproc.y"
+#line 7393 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("setof"),(yyvsp[(2) - (3)].str),make_str("array"));
 }
@@ -33669,7 +33669,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1216:
 
 /* Line 1806 of yacc.c  */
-#line 7401 "preproc.y"
+#line 7401 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 		(yyval.index).index1 = (yyvsp[(1) - (3)].index).index1;
 		(yyval.index).index2 = (yyvsp[(1) - (3)].index).index2;
@@ -33684,7 +33684,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1217:
 
 /* Line 1806 of yacc.c  */
-#line 7411 "preproc.y"
+#line 7411 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 		(yyval.index).index1 = (yyvsp[(1) - (4)].index).index1;
 		(yyval.index).index2 = (yyvsp[(1) - (4)].index).index2;
@@ -33699,7 +33699,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1218:
 
 /* Line 1806 of yacc.c  */
-#line 7421 "preproc.y"
+#line 7421 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 		(yyval.index).index1 = make_str("-1");
 		(yyval.index).index2 = make_str("-1");
@@ -33710,7 +33710,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1219:
 
 /* Line 1806 of yacc.c  */
-#line 7431 "preproc.y"
+#line 7431 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -33719,7 +33719,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1220:
 
 /* Line 1806 of yacc.c  */
-#line 7435 "preproc.y"
+#line 7435 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -33728,7 +33728,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1221:
 
 /* Line 1806 of yacc.c  */
-#line 7439 "preproc.y"
+#line 7439 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -33737,7 +33737,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1222:
 
 /* Line 1806 of yacc.c  */
-#line 7443 "preproc.y"
+#line 7443 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -33746,7 +33746,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1223:
 
 /* Line 1806 of yacc.c  */
-#line 7447 "preproc.y"
+#line 7447 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -33755,7 +33755,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1224:
 
 /* Line 1806 of yacc.c  */
-#line 7451 "preproc.y"
+#line 7451 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,(yyvsp[(1) - (2)].str),(yyvsp[(2) - (2)].str));
 }
@@ -33764,7 +33764,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1225:
 
 /* Line 1806 of yacc.c  */
-#line 7455 "preproc.y"
+#line 7455 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(5,(yyvsp[(1) - (5)].str),make_str("("),(yyvsp[(3) - (5)].str),make_str(")"),(yyvsp[(5) - (5)].str));
 }
@@ -33773,7 +33773,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1226:
 
 /* Line 1806 of yacc.c  */
-#line 7463 "preproc.y"
+#line 7463 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -33782,7 +33782,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1227:
 
 /* Line 1806 of yacc.c  */
-#line 7467 "preproc.y"
+#line 7467 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -33791,7 +33791,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1228:
 
 /* Line 1806 of yacc.c  */
-#line 7471 "preproc.y"
+#line 7471 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -33800,7 +33800,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1229:
 
 /* Line 1806 of yacc.c  */
-#line 7475 "preproc.y"
+#line 7475 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -33809,7 +33809,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1230:
 
 /* Line 1806 of yacc.c  */
-#line 7483 "preproc.y"
+#line 7483 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,(yyvsp[(1) - (2)].str),(yyvsp[(2) - (2)].str));
 }
@@ -33818,7 +33818,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1231:
 
 /* Line 1806 of yacc.c  */
-#line 7487 "preproc.y"
+#line 7487 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),(yyvsp[(2) - (3)].str),(yyvsp[(3) - (3)].str));
 }
@@ -33827,7 +33827,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1232:
 
 /* Line 1806 of yacc.c  */
-#line 7495 "preproc.y"
+#line 7495 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("("),(yyvsp[(2) - (3)].str),make_str(")"));
 }
@@ -33836,7 +33836,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1233:
 
 /* Line 1806 of yacc.c  */
-#line 7499 "preproc.y"
+#line 7499 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -33844,7 +33844,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1234:
 
 /* Line 1806 of yacc.c  */
-#line 7506 "preproc.y"
+#line 7506 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("int");
 }
@@ -33853,7 +33853,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1235:
 
 /* Line 1806 of yacc.c  */
-#line 7510 "preproc.y"
+#line 7510 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("integer");
 }
@@ -33862,7 +33862,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1236:
 
 /* Line 1806 of yacc.c  */
-#line 7514 "preproc.y"
+#line 7514 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("smallint");
 }
@@ -33871,7 +33871,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1237:
 
 /* Line 1806 of yacc.c  */
-#line 7518 "preproc.y"
+#line 7518 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("bigint");
 }
@@ -33880,7 +33880,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1238:
 
 /* Line 1806 of yacc.c  */
-#line 7522 "preproc.y"
+#line 7522 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("real");
 }
@@ -33889,7 +33889,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1239:
 
 /* Line 1806 of yacc.c  */
-#line 7526 "preproc.y"
+#line 7526 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("float"),(yyvsp[(2) - (2)].str));
 }
@@ -33898,7 +33898,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1240:
 
 /* Line 1806 of yacc.c  */
-#line 7530 "preproc.y"
+#line 7530 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("double precision");
 }
@@ -33907,7 +33907,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1241:
 
 /* Line 1806 of yacc.c  */
-#line 7534 "preproc.y"
+#line 7534 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("decimal"),(yyvsp[(2) - (2)].str));
 }
@@ -33916,7 +33916,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1242:
 
 /* Line 1806 of yacc.c  */
-#line 7538 "preproc.y"
+#line 7538 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("dec"),(yyvsp[(2) - (2)].str));
 }
@@ -33925,7 +33925,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1243:
 
 /* Line 1806 of yacc.c  */
-#line 7542 "preproc.y"
+#line 7542 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("numeric"),(yyvsp[(2) - (2)].str));
 }
@@ -33934,7 +33934,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1244:
 
 /* Line 1806 of yacc.c  */
-#line 7546 "preproc.y"
+#line 7546 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("boolean");
 }
@@ -33943,7 +33943,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1245:
 
 /* Line 1806 of yacc.c  */
-#line 7554 "preproc.y"
+#line 7554 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("("),(yyvsp[(2) - (3)].str),make_str(")"));
 }
@@ -33952,7 +33952,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1246:
 
 /* Line 1806 of yacc.c  */
-#line 7558 "preproc.y"
+#line 7558 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -33960,7 +33960,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1247:
 
 /* Line 1806 of yacc.c  */
-#line 7565 "preproc.y"
+#line 7565 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -33969,7 +33969,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1248:
 
 /* Line 1806 of yacc.c  */
-#line 7569 "preproc.y"
+#line 7569 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -33978,7 +33978,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1249:
 
 /* Line 1806 of yacc.c  */
-#line 7577 "preproc.y"
+#line 7577 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -33987,7 +33987,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1250:
 
 /* Line 1806 of yacc.c  */
-#line 7581 "preproc.y"
+#line 7581 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -33996,7 +33996,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1251:
 
 /* Line 1806 of yacc.c  */
-#line 7589 "preproc.y"
+#line 7589 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(5,make_str("bit"),(yyvsp[(2) - (5)].str),make_str("("),(yyvsp[(4) - (5)].str),make_str(")"));
 }
@@ -34005,7 +34005,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1252:
 
 /* Line 1806 of yacc.c  */
-#line 7597 "preproc.y"
+#line 7597 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("bit"),(yyvsp[(2) - (2)].str));
 }
@@ -34014,7 +34014,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1253:
 
 /* Line 1806 of yacc.c  */
-#line 7605 "preproc.y"
+#line 7605 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -34023,7 +34023,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1254:
 
 /* Line 1806 of yacc.c  */
-#line 7609 "preproc.y"
+#line 7609 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -34032,7 +34032,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1255:
 
 /* Line 1806 of yacc.c  */
-#line 7617 "preproc.y"
+#line 7617 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -34041,7 +34041,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1256:
 
 /* Line 1806 of yacc.c  */
-#line 7621 "preproc.y"
+#line 7621 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -34050,7 +34050,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1257:
 
 /* Line 1806 of yacc.c  */
-#line 7629 "preproc.y"
+#line 7629 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(5,(yyvsp[(1) - (5)].str),make_str("("),(yyvsp[(3) - (5)].str),make_str(")"),(yyvsp[(5) - (5)].str));
 }
@@ -34059,7 +34059,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1258:
 
 /* Line 1806 of yacc.c  */
-#line 7637 "preproc.y"
+#line 7637 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,(yyvsp[(1) - (2)].str),(yyvsp[(2) - (2)].str));
 }
@@ -34068,7 +34068,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1259:
 
 /* Line 1806 of yacc.c  */
-#line 7645 "preproc.y"
+#line 7645 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("character"),(yyvsp[(2) - (2)].str));
 }
@@ -34077,7 +34077,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1260:
 
 /* Line 1806 of yacc.c  */
-#line 7649 "preproc.y"
+#line 7649 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("char"),(yyvsp[(2) - (2)].str));
 }
@@ -34086,7 +34086,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1261:
 
 /* Line 1806 of yacc.c  */
-#line 7653 "preproc.y"
+#line 7653 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("varchar");
 }
@@ -34095,7 +34095,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1262:
 
 /* Line 1806 of yacc.c  */
-#line 7657 "preproc.y"
+#line 7657 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("national character"),(yyvsp[(3) - (3)].str));
 }
@@ -34104,7 +34104,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1263:
 
 /* Line 1806 of yacc.c  */
-#line 7661 "preproc.y"
+#line 7661 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("national char"),(yyvsp[(3) - (3)].str));
 }
@@ -34113,7 +34113,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1264:
 
 /* Line 1806 of yacc.c  */
-#line 7665 "preproc.y"
+#line 7665 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("nchar"),(yyvsp[(2) - (2)].str));
 }
@@ -34122,7 +34122,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1265:
 
 /* Line 1806 of yacc.c  */
-#line 7673 "preproc.y"
+#line 7673 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("varying");
 }
@@ -34131,7 +34131,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1266:
 
 /* Line 1806 of yacc.c  */
-#line 7677 "preproc.y"
+#line 7677 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -34139,7 +34139,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1267:
 
 /* Line 1806 of yacc.c  */
-#line 7684 "preproc.y"
+#line 7684 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("character set"),(yyvsp[(3) - (3)].str));
 }
@@ -34148,7 +34148,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1268:
 
 /* Line 1806 of yacc.c  */
-#line 7688 "preproc.y"
+#line 7688 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -34156,7 +34156,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1269:
 
 /* Line 1806 of yacc.c  */
-#line 7695 "preproc.y"
+#line 7695 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,make_str("timestamp ("),(yyvsp[(3) - (5)].str),make_str(")"),(yyvsp[(5) - (5)].str));
 }
@@ -34165,7 +34165,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1270:
 
 /* Line 1806 of yacc.c  */
-#line 7699 "preproc.y"
+#line 7699 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("timestamp"),(yyvsp[(2) - (2)].str));
 }
@@ -34174,7 +34174,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1271:
 
 /* Line 1806 of yacc.c  */
-#line 7703 "preproc.y"
+#line 7703 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,make_str("time ("),(yyvsp[(3) - (5)].str),make_str(")"),(yyvsp[(5) - (5)].str));
 }
@@ -34183,7 +34183,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1272:
 
 /* Line 1806 of yacc.c  */
-#line 7707 "preproc.y"
+#line 7707 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("time"),(yyvsp[(2) - (2)].str));
 }
@@ -34192,7 +34192,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1273:
 
 /* Line 1806 of yacc.c  */
-#line 7715 "preproc.y"
+#line 7715 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("interval");
 }
@@ -34201,7 +34201,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1274:
 
 /* Line 1806 of yacc.c  */
-#line 7723 "preproc.y"
+#line 7723 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("with time zone");
 }
@@ -34210,7 +34210,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1275:
 
 /* Line 1806 of yacc.c  */
-#line 7727 "preproc.y"
+#line 7727 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("without time zone");
 }
@@ -34219,7 +34219,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1276:
 
 /* Line 1806 of yacc.c  */
-#line 7731 "preproc.y"
+#line 7731 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -34227,7 +34227,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1277:
 
 /* Line 1806 of yacc.c  */
-#line 7738 "preproc.y"
+#line 7738 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("year");
 }
@@ -34236,7 +34236,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1278:
 
 /* Line 1806 of yacc.c  */
-#line 7742 "preproc.y"
+#line 7742 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("month");
 }
@@ -34245,7 +34245,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1279:
 
 /* Line 1806 of yacc.c  */
-#line 7746 "preproc.y"
+#line 7746 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("day");
 }
@@ -34254,7 +34254,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1280:
 
 /* Line 1806 of yacc.c  */
-#line 7750 "preproc.y"
+#line 7750 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("hour");
 }
@@ -34263,7 +34263,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1281:
 
 /* Line 1806 of yacc.c  */
-#line 7754 "preproc.y"
+#line 7754 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("minute");
 }
@@ -34272,7 +34272,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1282:
 
 /* Line 1806 of yacc.c  */
-#line 7758 "preproc.y"
+#line 7758 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -34281,7 +34281,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1283:
 
 /* Line 1806 of yacc.c  */
-#line 7762 "preproc.y"
+#line 7762 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("year to month");
 }
@@ -34290,7 +34290,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1284:
 
 /* Line 1806 of yacc.c  */
-#line 7766 "preproc.y"
+#line 7766 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("day to hour");
 }
@@ -34299,7 +34299,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1285:
 
 /* Line 1806 of yacc.c  */
-#line 7770 "preproc.y"
+#line 7770 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("day to minute");
 }
@@ -34308,7 +34308,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1286:
 
 /* Line 1806 of yacc.c  */
-#line 7774 "preproc.y"
+#line 7774 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("day to"),(yyvsp[(3) - (3)].str));
 }
@@ -34317,7 +34317,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1287:
 
 /* Line 1806 of yacc.c  */
-#line 7778 "preproc.y"
+#line 7778 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("hour to minute");
 }
@@ -34326,7 +34326,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1288:
 
 /* Line 1806 of yacc.c  */
-#line 7782 "preproc.y"
+#line 7782 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("hour to"),(yyvsp[(3) - (3)].str));
 }
@@ -34335,7 +34335,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1289:
 
 /* Line 1806 of yacc.c  */
-#line 7786 "preproc.y"
+#line 7786 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("minute to"),(yyvsp[(3) - (3)].str));
 }
@@ -34344,7 +34344,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1290:
 
 /* Line 1806 of yacc.c  */
-#line 7790 "preproc.y"
+#line 7790 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -34352,7 +34352,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1291:
 
 /* Line 1806 of yacc.c  */
-#line 7797 "preproc.y"
+#line 7797 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("second");
 }
@@ -34361,7 +34361,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1292:
 
 /* Line 1806 of yacc.c  */
-#line 7801 "preproc.y"
+#line 7801 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("second ("),(yyvsp[(3) - (4)].str),make_str(")"));
 }
@@ -34370,7 +34370,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1293:
 
 /* Line 1806 of yacc.c  */
-#line 7809 "preproc.y"
+#line 7809 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -34379,7 +34379,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1294:
 
 /* Line 1806 of yacc.c  */
-#line 7813 "preproc.y"
+#line 7813 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),make_str("::"),(yyvsp[(3) - (3)].str));
 }
@@ -34388,7 +34388,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1295:
 
 /* Line 1806 of yacc.c  */
-#line 7817 "preproc.y"
+#line 7817 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (5)].str),make_str("at time zone"),(yyvsp[(5) - (5)].str));
 }
@@ -34397,7 +34397,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1296:
 
 /* Line 1806 of yacc.c  */
-#line 7821 "preproc.y"
+#line 7821 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("+"),(yyvsp[(2) - (2)].str));
 }
@@ -34406,7 +34406,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1297:
 
 /* Line 1806 of yacc.c  */
-#line 7825 "preproc.y"
+#line 7825 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("-"),(yyvsp[(2) - (2)].str));
 }
@@ -34415,7 +34415,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1298:
 
 /* Line 1806 of yacc.c  */
-#line 7829 "preproc.y"
+#line 7829 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),make_str("+"),(yyvsp[(3) - (3)].str));
 }
@@ -34424,7 +34424,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1299:
 
 /* Line 1806 of yacc.c  */
-#line 7833 "preproc.y"
+#line 7833 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),make_str("-"),(yyvsp[(3) - (3)].str));
 }
@@ -34433,7 +34433,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1300:
 
 /* Line 1806 of yacc.c  */
-#line 7837 "preproc.y"
+#line 7837 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),make_str("*"),(yyvsp[(3) - (3)].str));
 }
@@ -34442,7 +34442,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1301:
 
 /* Line 1806 of yacc.c  */
-#line 7841 "preproc.y"
+#line 7841 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),make_str("/"),(yyvsp[(3) - (3)].str));
 }
@@ -34451,7 +34451,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1302:
 
 /* Line 1806 of yacc.c  */
-#line 7845 "preproc.y"
+#line 7845 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),make_str("%"),(yyvsp[(3) - (3)].str));
 }
@@ -34460,7 +34460,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1303:
 
 /* Line 1806 of yacc.c  */
-#line 7849 "preproc.y"
+#line 7849 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),make_str("^"),(yyvsp[(3) - (3)].str));
 }
@@ -34469,7 +34469,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1304:
 
 /* Line 1806 of yacc.c  */
-#line 7853 "preproc.y"
+#line 7853 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),make_str("<"),(yyvsp[(3) - (3)].str));
 }
@@ -34478,7 +34478,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1305:
 
 /* Line 1806 of yacc.c  */
-#line 7857 "preproc.y"
+#line 7857 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),make_str(">"),(yyvsp[(3) - (3)].str));
 }
@@ -34487,7 +34487,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1306:
 
 /* Line 1806 of yacc.c  */
-#line 7861 "preproc.y"
+#line 7861 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),make_str("="),(yyvsp[(3) - (3)].str));
 }
@@ -34496,7 +34496,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1307:
 
 /* Line 1806 of yacc.c  */
-#line 7865 "preproc.y"
+#line 7865 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),(yyvsp[(2) - (3)].str),(yyvsp[(3) - (3)].str));
 }
@@ -34505,7 +34505,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1308:
 
 /* Line 1806 of yacc.c  */
-#line 7869 "preproc.y"
+#line 7869 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,(yyvsp[(1) - (2)].str),(yyvsp[(2) - (2)].str));
 }
@@ -34514,7 +34514,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1309:
 
 /* Line 1806 of yacc.c  */
-#line 7873 "preproc.y"
+#line 7873 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,(yyvsp[(1) - (2)].str),(yyvsp[(2) - (2)].str));
 }
@@ -34523,7 +34523,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1310:
 
 /* Line 1806 of yacc.c  */
-#line 7877 "preproc.y"
+#line 7877 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),make_str("and"),(yyvsp[(3) - (3)].str));
 }
@@ -34532,7 +34532,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1311:
 
 /* Line 1806 of yacc.c  */
-#line 7881 "preproc.y"
+#line 7881 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),make_str("or"),(yyvsp[(3) - (3)].str));
 }
@@ -34541,7 +34541,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1312:
 
 /* Line 1806 of yacc.c  */
-#line 7885 "preproc.y"
+#line 7885 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("not"),(yyvsp[(2) - (2)].str));
 }
@@ -34550,7 +34550,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1313:
 
 /* Line 1806 of yacc.c  */
-#line 7889 "preproc.y"
+#line 7889 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),make_str("like"),(yyvsp[(3) - (3)].str));
 }
@@ -34559,7 +34559,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1314:
 
 /* Line 1806 of yacc.c  */
-#line 7893 "preproc.y"
+#line 7893 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(5,(yyvsp[(1) - (5)].str),make_str("like"),(yyvsp[(3) - (5)].str),make_str("escape"),(yyvsp[(5) - (5)].str));
 }
@@ -34568,7 +34568,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1315:
 
 /* Line 1806 of yacc.c  */
-#line 7897 "preproc.y"
+#line 7897 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (4)].str),make_str("not like"),(yyvsp[(4) - (4)].str));
 }
@@ -34577,7 +34577,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1316:
 
 /* Line 1806 of yacc.c  */
-#line 7901 "preproc.y"
+#line 7901 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(5,(yyvsp[(1) - (6)].str),make_str("not like"),(yyvsp[(4) - (6)].str),make_str("escape"),(yyvsp[(6) - (6)].str));
 }
@@ -34586,7 +34586,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1317:
 
 /* Line 1806 of yacc.c  */
-#line 7905 "preproc.y"
+#line 7905 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),make_str("ilike"),(yyvsp[(3) - (3)].str));
 }
@@ -34595,7 +34595,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1318:
 
 /* Line 1806 of yacc.c  */
-#line 7909 "preproc.y"
+#line 7909 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(5,(yyvsp[(1) - (5)].str),make_str("ilike"),(yyvsp[(3) - (5)].str),make_str("escape"),(yyvsp[(5) - (5)].str));
 }
@@ -34604,7 +34604,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1319:
 
 /* Line 1806 of yacc.c  */
-#line 7913 "preproc.y"
+#line 7913 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (4)].str),make_str("not ilike"),(yyvsp[(4) - (4)].str));
 }
@@ -34613,7 +34613,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1320:
 
 /* Line 1806 of yacc.c  */
-#line 7917 "preproc.y"
+#line 7917 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(5,(yyvsp[(1) - (6)].str),make_str("not ilike"),(yyvsp[(4) - (6)].str),make_str("escape"),(yyvsp[(6) - (6)].str));
 }
@@ -34622,7 +34622,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1321:
 
 /* Line 1806 of yacc.c  */
-#line 7921 "preproc.y"
+#line 7921 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (4)].str),make_str("similar to"),(yyvsp[(4) - (4)].str));
 }
@@ -34631,7 +34631,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1322:
 
 /* Line 1806 of yacc.c  */
-#line 7925 "preproc.y"
+#line 7925 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(5,(yyvsp[(1) - (6)].str),make_str("similar to"),(yyvsp[(4) - (6)].str),make_str("escape"),(yyvsp[(6) - (6)].str));
 }
@@ -34640,7 +34640,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1323:
 
 /* Line 1806 of yacc.c  */
-#line 7929 "preproc.y"
+#line 7929 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (5)].str),make_str("not similar to"),(yyvsp[(5) - (5)].str));
 }
@@ -34649,7 +34649,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1324:
 
 /* Line 1806 of yacc.c  */
-#line 7933 "preproc.y"
+#line 7933 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(5,(yyvsp[(1) - (7)].str),make_str("not similar to"),(yyvsp[(5) - (7)].str),make_str("escape"),(yyvsp[(7) - (7)].str));
 }
@@ -34658,7 +34658,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1325:
 
 /* Line 1806 of yacc.c  */
-#line 7937 "preproc.y"
+#line 7937 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,(yyvsp[(1) - (3)].str),make_str("is null"));
 }
@@ -34667,7 +34667,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1326:
 
 /* Line 1806 of yacc.c  */
-#line 7941 "preproc.y"
+#line 7941 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,(yyvsp[(1) - (2)].str),make_str("isnull"));
 }
@@ -34676,7 +34676,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1327:
 
 /* Line 1806 of yacc.c  */
-#line 7945 "preproc.y"
+#line 7945 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,(yyvsp[(1) - (4)].str),make_str("is not null"));
 }
@@ -34685,7 +34685,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1328:
 
 /* Line 1806 of yacc.c  */
-#line 7949 "preproc.y"
+#line 7949 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,(yyvsp[(1) - (2)].str),make_str("notnull"));
 }
@@ -34694,7 +34694,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1329:
 
 /* Line 1806 of yacc.c  */
-#line 7953 "preproc.y"
+#line 7953 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),make_str("overlaps"),(yyvsp[(3) - (3)].str));
 }
@@ -34703,7 +34703,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1330:
 
 /* Line 1806 of yacc.c  */
-#line 7957 "preproc.y"
+#line 7957 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,(yyvsp[(1) - (3)].str),make_str("is true"));
 }
@@ -34712,7 +34712,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1331:
 
 /* Line 1806 of yacc.c  */
-#line 7961 "preproc.y"
+#line 7961 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,(yyvsp[(1) - (4)].str),make_str("is not true"));
 }
@@ -34721,7 +34721,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1332:
 
 /* Line 1806 of yacc.c  */
-#line 7965 "preproc.y"
+#line 7965 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,(yyvsp[(1) - (3)].str),make_str("is false"));
 }
@@ -34730,7 +34730,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1333:
 
 /* Line 1806 of yacc.c  */
-#line 7969 "preproc.y"
+#line 7969 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,(yyvsp[(1) - (4)].str),make_str("is not false"));
 }
@@ -34739,7 +34739,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1334:
 
 /* Line 1806 of yacc.c  */
-#line 7973 "preproc.y"
+#line 7973 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,(yyvsp[(1) - (3)].str),make_str("is unknown"));
 }
@@ -34748,7 +34748,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1335:
 
 /* Line 1806 of yacc.c  */
-#line 7977 "preproc.y"
+#line 7977 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,(yyvsp[(1) - (4)].str),make_str("is not unknown"));
 }
@@ -34757,7 +34757,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1336:
 
 /* Line 1806 of yacc.c  */
-#line 7981 "preproc.y"
+#line 7981 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (5)].str),make_str("is distinct from"),(yyvsp[(5) - (5)].str));
 }
@@ -34766,7 +34766,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1337:
 
 /* Line 1806 of yacc.c  */
-#line 7985 "preproc.y"
+#line 7985 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (6)].str),make_str("is not distinct from"),(yyvsp[(6) - (6)].str));
 }
@@ -34775,7 +34775,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1338:
 
 /* Line 1806 of yacc.c  */
-#line 7989 "preproc.y"
+#line 7989 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,(yyvsp[(1) - (6)].str),make_str("is of ("),(yyvsp[(5) - (6)].str),make_str(")"));
 }
@@ -34784,7 +34784,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1339:
 
 /* Line 1806 of yacc.c  */
-#line 7993 "preproc.y"
+#line 7993 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,(yyvsp[(1) - (7)].str),make_str("is not of ("),(yyvsp[(6) - (7)].str),make_str(")"));
 }
@@ -34793,7 +34793,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1340:
 
 /* Line 1806 of yacc.c  */
-#line 7997 "preproc.y"
+#line 7997 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(6,(yyvsp[(1) - (6)].str),make_str("between"),(yyvsp[(3) - (6)].str),(yyvsp[(4) - (6)].str),make_str("and"),(yyvsp[(6) - (6)].str));
 }
@@ -34802,7 +34802,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1341:
 
 /* Line 1806 of yacc.c  */
-#line 8001 "preproc.y"
+#line 8001 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(6,(yyvsp[(1) - (7)].str),make_str("not between"),(yyvsp[(4) - (7)].str),(yyvsp[(5) - (7)].str),make_str("and"),(yyvsp[(7) - (7)].str));
 }
@@ -34811,7 +34811,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1342:
 
 /* Line 1806 of yacc.c  */
-#line 8005 "preproc.y"
+#line 8005 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(5,(yyvsp[(1) - (6)].str),make_str("between symmetric"),(yyvsp[(4) - (6)].str),make_str("and"),(yyvsp[(6) - (6)].str));
 }
@@ -34820,7 +34820,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1343:
 
 /* Line 1806 of yacc.c  */
-#line 8009 "preproc.y"
+#line 8009 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(5,(yyvsp[(1) - (7)].str),make_str("not between symmetric"),(yyvsp[(5) - (7)].str),make_str("and"),(yyvsp[(7) - (7)].str));
 }
@@ -34829,7 +34829,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1344:
 
 /* Line 1806 of yacc.c  */
-#line 8013 "preproc.y"
+#line 8013 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),make_str("in"),(yyvsp[(3) - (3)].str));
 }
@@ -34838,7 +34838,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1345:
 
 /* Line 1806 of yacc.c  */
-#line 8017 "preproc.y"
+#line 8017 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (4)].str),make_str("not in"),(yyvsp[(4) - (4)].str));
 }
@@ -34847,7 +34847,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1346:
 
 /* Line 1806 of yacc.c  */
-#line 8021 "preproc.y"
+#line 8021 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,(yyvsp[(1) - (4)].str),(yyvsp[(2) - (4)].str),(yyvsp[(3) - (4)].str),(yyvsp[(4) - (4)].str));
 }
@@ -34856,7 +34856,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1347:
 
 /* Line 1806 of yacc.c  */
-#line 8025 "preproc.y"
+#line 8025 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(6,(yyvsp[(1) - (6)].str),(yyvsp[(2) - (6)].str),(yyvsp[(3) - (6)].str),make_str("("),(yyvsp[(5) - (6)].str),make_str(")"));
 }
@@ -34865,7 +34865,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1348:
 
 /* Line 1806 of yacc.c  */
-#line 8029 "preproc.y"
+#line 8029 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
 mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server");
  (yyval.str) = cat_str(2,make_str("unique"),(yyvsp[(2) - (2)].str));
@@ -34875,7 +34875,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1349:
 
 /* Line 1806 of yacc.c  */
-#line 8034 "preproc.y"
+#line 8034 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,(yyvsp[(1) - (3)].str),make_str("is document"));
 }
@@ -34884,7 +34884,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1350:
 
 /* Line 1806 of yacc.c  */
-#line 8038 "preproc.y"
+#line 8038 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,(yyvsp[(1) - (4)].str),make_str("is not document"));
 }
@@ -34893,7 +34893,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1351:
 
 /* Line 1806 of yacc.c  */
-#line 8046 "preproc.y"
+#line 8046 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -34902,7 +34902,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1352:
 
 /* Line 1806 of yacc.c  */
-#line 8050 "preproc.y"
+#line 8050 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),make_str("::"),(yyvsp[(3) - (3)].str));
 }
@@ -34911,7 +34911,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1353:
 
 /* Line 1806 of yacc.c  */
-#line 8054 "preproc.y"
+#line 8054 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("+"),(yyvsp[(2) - (2)].str));
 }
@@ -34920,7 +34920,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1354:
 
 /* Line 1806 of yacc.c  */
-#line 8058 "preproc.y"
+#line 8058 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("-"),(yyvsp[(2) - (2)].str));
 }
@@ -34929,7 +34929,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1355:
 
 /* Line 1806 of yacc.c  */
-#line 8062 "preproc.y"
+#line 8062 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),make_str("+"),(yyvsp[(3) - (3)].str));
 }
@@ -34938,7 +34938,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1356:
 
 /* Line 1806 of yacc.c  */
-#line 8066 "preproc.y"
+#line 8066 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),make_str("-"),(yyvsp[(3) - (3)].str));
 }
@@ -34947,7 +34947,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1357:
 
 /* Line 1806 of yacc.c  */
-#line 8070 "preproc.y"
+#line 8070 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),make_str("*"),(yyvsp[(3) - (3)].str));
 }
@@ -34956,7 +34956,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1358:
 
 /* Line 1806 of yacc.c  */
-#line 8074 "preproc.y"
+#line 8074 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),make_str("/"),(yyvsp[(3) - (3)].str));
 }
@@ -34965,7 +34965,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1359:
 
 /* Line 1806 of yacc.c  */
-#line 8078 "preproc.y"
+#line 8078 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),make_str("%"),(yyvsp[(3) - (3)].str));
 }
@@ -34974,7 +34974,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1360:
 
 /* Line 1806 of yacc.c  */
-#line 8082 "preproc.y"
+#line 8082 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),make_str("^"),(yyvsp[(3) - (3)].str));
 }
@@ -34983,7 +34983,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1361:
 
 /* Line 1806 of yacc.c  */
-#line 8086 "preproc.y"
+#line 8086 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),make_str("<"),(yyvsp[(3) - (3)].str));
 }
@@ -34992,7 +34992,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1362:
 
 /* Line 1806 of yacc.c  */
-#line 8090 "preproc.y"
+#line 8090 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),make_str(">"),(yyvsp[(3) - (3)].str));
 }
@@ -35001,7 +35001,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1363:
 
 /* Line 1806 of yacc.c  */
-#line 8094 "preproc.y"
+#line 8094 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),make_str("="),(yyvsp[(3) - (3)].str));
 }
@@ -35010,7 +35010,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1364:
 
 /* Line 1806 of yacc.c  */
-#line 8098 "preproc.y"
+#line 8098 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),(yyvsp[(2) - (3)].str),(yyvsp[(3) - (3)].str));
 }
@@ -35019,7 +35019,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1365:
 
 /* Line 1806 of yacc.c  */
-#line 8102 "preproc.y"
+#line 8102 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,(yyvsp[(1) - (2)].str),(yyvsp[(2) - (2)].str));
 }
@@ -35028,7 +35028,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1366:
 
 /* Line 1806 of yacc.c  */
-#line 8106 "preproc.y"
+#line 8106 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,(yyvsp[(1) - (2)].str),(yyvsp[(2) - (2)].str));
 }
@@ -35037,7 +35037,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1367:
 
 /* Line 1806 of yacc.c  */
-#line 8110 "preproc.y"
+#line 8110 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (5)].str),make_str("is distinct from"),(yyvsp[(5) - (5)].str));
 }
@@ -35046,7 +35046,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1368:
 
 /* Line 1806 of yacc.c  */
-#line 8114 "preproc.y"
+#line 8114 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (6)].str),make_str("is not distinct from"),(yyvsp[(6) - (6)].str));
 }
@@ -35055,7 +35055,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1369:
 
 /* Line 1806 of yacc.c  */
-#line 8118 "preproc.y"
+#line 8118 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,(yyvsp[(1) - (6)].str),make_str("is of ("),(yyvsp[(5) - (6)].str),make_str(")"));
 }
@@ -35064,7 +35064,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1370:
 
 /* Line 1806 of yacc.c  */
-#line 8122 "preproc.y"
+#line 8122 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,(yyvsp[(1) - (7)].str),make_str("is not of ("),(yyvsp[(6) - (7)].str),make_str(")"));
 }
@@ -35073,7 +35073,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1371:
 
 /* Line 1806 of yacc.c  */
-#line 8126 "preproc.y"
+#line 8126 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,(yyvsp[(1) - (3)].str),make_str("is document"));
 }
@@ -35082,7 +35082,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1372:
 
 /* Line 1806 of yacc.c  */
-#line 8130 "preproc.y"
+#line 8130 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,(yyvsp[(1) - (4)].str),make_str("is not document"));
 }
@@ -35091,7 +35091,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1373:
 
 /* Line 1806 of yacc.c  */
-#line 8138 "preproc.y"
+#line 8138 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -35100,7 +35100,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1374:
 
 /* Line 1806 of yacc.c  */
-#line 8142 "preproc.y"
+#line 8142 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -35109,7 +35109,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1375:
 
 /* Line 1806 of yacc.c  */
-#line 8146 "preproc.y"
+#line 8146 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,(yyvsp[(1) - (2)].str),(yyvsp[(2) - (2)].str));
 }
@@ -35118,7 +35118,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1376:
 
 /* Line 1806 of yacc.c  */
-#line 8150 "preproc.y"
+#line 8150 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,make_str("("),(yyvsp[(2) - (4)].str),make_str(")"),(yyvsp[(4) - (4)].str));
 }
@@ -35127,7 +35127,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1377:
 
 /* Line 1806 of yacc.c  */
-#line 8154 "preproc.y"
+#line 8154 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -35136,7 +35136,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1378:
 
 /* Line 1806 of yacc.c  */
-#line 8158 "preproc.y"
+#line 8158 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -35145,7 +35145,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1379:
 
 /* Line 1806 of yacc.c  */
-#line 8162 "preproc.y"
+#line 8162 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -35154,7 +35154,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1380:
 
 /* Line 1806 of yacc.c  */
-#line 8166 "preproc.y"
+#line 8166 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,(yyvsp[(1) - (2)].str),(yyvsp[(2) - (2)].str));
 }
@@ -35163,7 +35163,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1381:
 
 /* Line 1806 of yacc.c  */
-#line 8170 "preproc.y"
+#line 8170 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("exists"),(yyvsp[(2) - (2)].str));
 }
@@ -35172,7 +35172,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1382:
 
 /* Line 1806 of yacc.c  */
-#line 8174 "preproc.y"
+#line 8174 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("array"),(yyvsp[(2) - (2)].str));
 }
@@ -35181,7 +35181,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1383:
 
 /* Line 1806 of yacc.c  */
-#line 8178 "preproc.y"
+#line 8178 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("array"),(yyvsp[(2) - (2)].str));
 }
@@ -35190,7 +35190,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1384:
 
 /* Line 1806 of yacc.c  */
-#line 8182 "preproc.y"
+#line 8182 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -35199,7 +35199,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1385:
 
 /* Line 1806 of yacc.c  */
-#line 8190 "preproc.y"
+#line 8190 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (4)].str),make_str("( )"),(yyvsp[(4) - (4)].str));
 }
@@ -35208,7 +35208,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1386:
 
 /* Line 1806 of yacc.c  */
-#line 8194 "preproc.y"
+#line 8194 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(5,(yyvsp[(1) - (5)].str),make_str("("),(yyvsp[(3) - (5)].str),make_str(")"),(yyvsp[(5) - (5)].str));
 }
@@ -35217,7 +35217,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1387:
 
 /* Line 1806 of yacc.c  */
-#line 8198 "preproc.y"
+#line 8198 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(5,(yyvsp[(1) - (6)].str),make_str("( variadic"),(yyvsp[(4) - (6)].str),make_str(")"),(yyvsp[(6) - (6)].str));
 }
@@ -35226,7 +35226,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1388:
 
 /* Line 1806 of yacc.c  */
-#line 8202 "preproc.y"
+#line 8202 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(7,(yyvsp[(1) - (8)].str),make_str("("),(yyvsp[(3) - (8)].str),make_str(", variadic"),(yyvsp[(6) - (8)].str),make_str(")"),(yyvsp[(8) - (8)].str));
 }
@@ -35235,7 +35235,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1389:
 
 /* Line 1806 of yacc.c  */
-#line 8206 "preproc.y"
+#line 8206 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(5,(yyvsp[(1) - (6)].str),make_str("( all"),(yyvsp[(4) - (6)].str),make_str(")"),(yyvsp[(6) - (6)].str));
 }
@@ -35244,7 +35244,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1390:
 
 /* Line 1806 of yacc.c  */
-#line 8210 "preproc.y"
+#line 8210 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(5,(yyvsp[(1) - (6)].str),make_str("( distinct"),(yyvsp[(4) - (6)].str),make_str(")"),(yyvsp[(6) - (6)].str));
 }
@@ -35253,7 +35253,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1391:
 
 /* Line 1806 of yacc.c  */
-#line 8214 "preproc.y"
+#line 8214 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (5)].str),make_str("( * )"),(yyvsp[(5) - (5)].str));
 }
@@ -35262,7 +35262,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1392:
 
 /* Line 1806 of yacc.c  */
-#line 8218 "preproc.y"
+#line 8218 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("current_date");
 }
@@ -35271,7 +35271,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1393:
 
 /* Line 1806 of yacc.c  */
-#line 8222 "preproc.y"
+#line 8222 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("current_time");
 }
@@ -35280,7 +35280,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1394:
 
 /* Line 1806 of yacc.c  */
-#line 8226 "preproc.y"
+#line 8226 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("current_time ("),(yyvsp[(3) - (4)].str),make_str(")"));
 }
@@ -35289,7 +35289,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1395:
 
 /* Line 1806 of yacc.c  */
-#line 8230 "preproc.y"
+#line 8230 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("current_timestamp");
 }
@@ -35298,7 +35298,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1396:
 
 /* Line 1806 of yacc.c  */
-#line 8234 "preproc.y"
+#line 8234 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("current_timestamp ("),(yyvsp[(3) - (4)].str),make_str(")"));
 }
@@ -35307,7 +35307,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1397:
 
 /* Line 1806 of yacc.c  */
-#line 8238 "preproc.y"
+#line 8238 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("localtime");
 }
@@ -35316,7 +35316,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1398:
 
 /* Line 1806 of yacc.c  */
-#line 8242 "preproc.y"
+#line 8242 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("localtime ("),(yyvsp[(3) - (4)].str),make_str(")"));
 }
@@ -35325,7 +35325,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1399:
 
 /* Line 1806 of yacc.c  */
-#line 8246 "preproc.y"
+#line 8246 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("localtimestamp");
 }
@@ -35334,7 +35334,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1400:
 
 /* Line 1806 of yacc.c  */
-#line 8250 "preproc.y"
+#line 8250 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("localtimestamp ("),(yyvsp[(3) - (4)].str),make_str(")"));
 }
@@ -35343,7 +35343,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1401:
 
 /* Line 1806 of yacc.c  */
-#line 8254 "preproc.y"
+#line 8254 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("current_role");
 }
@@ -35352,7 +35352,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1402:
 
 /* Line 1806 of yacc.c  */
-#line 8258 "preproc.y"
+#line 8258 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("current_user");
 }
@@ -35361,7 +35361,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1403:
 
 /* Line 1806 of yacc.c  */
-#line 8262 "preproc.y"
+#line 8262 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("session_user");
 }
@@ -35370,7 +35370,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1404:
 
 /* Line 1806 of yacc.c  */
-#line 8266 "preproc.y"
+#line 8266 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("user");
 }
@@ -35379,7 +35379,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1405:
 
 /* Line 1806 of yacc.c  */
-#line 8270 "preproc.y"
+#line 8270 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("current_catalog");
 }
@@ -35388,7 +35388,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1406:
 
 /* Line 1806 of yacc.c  */
-#line 8274 "preproc.y"
+#line 8274 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("current_schema");
 }
@@ -35397,7 +35397,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1407:
 
 /* Line 1806 of yacc.c  */
-#line 8278 "preproc.y"
+#line 8278 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(5,make_str("cast ("),(yyvsp[(3) - (6)].str),make_str("as"),(yyvsp[(5) - (6)].str),make_str(")"));
 }
@@ -35406,7 +35406,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1408:
 
 /* Line 1806 of yacc.c  */
-#line 8282 "preproc.y"
+#line 8282 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("extract ("),(yyvsp[(3) - (4)].str),make_str(")"));
 }
@@ -35415,7 +35415,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1409:
 
 /* Line 1806 of yacc.c  */
-#line 8286 "preproc.y"
+#line 8286 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("overlay ("),(yyvsp[(3) - (4)].str),make_str(")"));
 }
@@ -35424,7 +35424,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1410:
 
 /* Line 1806 of yacc.c  */
-#line 8290 "preproc.y"
+#line 8290 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("position ("),(yyvsp[(3) - (4)].str),make_str(")"));
 }
@@ -35433,7 +35433,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1411:
 
 /* Line 1806 of yacc.c  */
-#line 8294 "preproc.y"
+#line 8294 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("substring ("),(yyvsp[(3) - (4)].str),make_str(")"));
 }
@@ -35442,7 +35442,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1412:
 
 /* Line 1806 of yacc.c  */
-#line 8298 "preproc.y"
+#line 8298 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(5,make_str("treat ("),(yyvsp[(3) - (6)].str),make_str("as"),(yyvsp[(5) - (6)].str),make_str(")"));
 }
@@ -35451,7 +35451,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1413:
 
 /* Line 1806 of yacc.c  */
-#line 8302 "preproc.y"
+#line 8302 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("trim ( both"),(yyvsp[(4) - (5)].str),make_str(")"));
 }
@@ -35460,7 +35460,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1414:
 
 /* Line 1806 of yacc.c  */
-#line 8306 "preproc.y"
+#line 8306 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("trim ( leading"),(yyvsp[(4) - (5)].str),make_str(")"));
 }
@@ -35469,7 +35469,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1415:
 
 /* Line 1806 of yacc.c  */
-#line 8310 "preproc.y"
+#line 8310 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("trim ( trailing"),(yyvsp[(4) - (5)].str),make_str(")"));
 }
@@ -35478,7 +35478,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1416:
 
 /* Line 1806 of yacc.c  */
-#line 8314 "preproc.y"
+#line 8314 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("trim ("),(yyvsp[(3) - (4)].str),make_str(")"));
 }
@@ -35487,7 +35487,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1417:
 
 /* Line 1806 of yacc.c  */
-#line 8318 "preproc.y"
+#line 8318 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(5,make_str("nullif ("),(yyvsp[(3) - (6)].str),make_str(","),(yyvsp[(5) - (6)].str),make_str(")"));
 }
@@ -35496,7 +35496,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1418:
 
 /* Line 1806 of yacc.c  */
-#line 8322 "preproc.y"
+#line 8322 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("coalesce ("),(yyvsp[(3) - (4)].str),make_str(")"));
 }
@@ -35505,7 +35505,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1419:
 
 /* Line 1806 of yacc.c  */
-#line 8326 "preproc.y"
+#line 8326 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("greatest ("),(yyvsp[(3) - (4)].str),make_str(")"));
 }
@@ -35514,7 +35514,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1420:
 
 /* Line 1806 of yacc.c  */
-#line 8330 "preproc.y"
+#line 8330 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("least ("),(yyvsp[(3) - (4)].str),make_str(")"));
 }
@@ -35523,7 +35523,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1421:
 
 /* Line 1806 of yacc.c  */
-#line 8334 "preproc.y"
+#line 8334 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("xmlconcat ("),(yyvsp[(3) - (4)].str),make_str(")"));
 }
@@ -35532,7 +35532,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1422:
 
 /* Line 1806 of yacc.c  */
-#line 8338 "preproc.y"
+#line 8338 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("xmlelement ( name"),(yyvsp[(4) - (5)].str),make_str(")"));
 }
@@ -35541,7 +35541,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1423:
 
 /* Line 1806 of yacc.c  */
-#line 8342 "preproc.y"
+#line 8342 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(5,make_str("xmlelement ( name"),(yyvsp[(4) - (7)].str),make_str(","),(yyvsp[(6) - (7)].str),make_str(")"));
 }
@@ -35550,7 +35550,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1424:
 
 /* Line 1806 of yacc.c  */
-#line 8346 "preproc.y"
+#line 8346 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(5,make_str("xmlelement ( name"),(yyvsp[(4) - (7)].str),make_str(","),(yyvsp[(6) - (7)].str),make_str(")"));
 }
@@ -35559,7 +35559,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1425:
 
 /* Line 1806 of yacc.c  */
-#line 8350 "preproc.y"
+#line 8350 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(7,make_str("xmlelement ( name"),(yyvsp[(4) - (9)].str),make_str(","),(yyvsp[(6) - (9)].str),make_str(","),(yyvsp[(8) - (9)].str),make_str(")"));
 }
@@ -35568,7 +35568,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1426:
 
 /* Line 1806 of yacc.c  */
-#line 8354 "preproc.y"
+#line 8354 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("xmlforest ("),(yyvsp[(3) - (4)].str),make_str(")"));
 }
@@ -35577,7 +35577,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1427:
 
 /* Line 1806 of yacc.c  */
-#line 8358 "preproc.y"
+#line 8358 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(5,make_str("xmlparse ("),(yyvsp[(3) - (6)].str),(yyvsp[(4) - (6)].str),(yyvsp[(5) - (6)].str),make_str(")"));
 }
@@ -35586,7 +35586,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1428:
 
 /* Line 1806 of yacc.c  */
-#line 8362 "preproc.y"
+#line 8362 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("xmlpi ( name"),(yyvsp[(4) - (5)].str),make_str(")"));
 }
@@ -35595,7 +35595,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1429:
 
 /* Line 1806 of yacc.c  */
-#line 8366 "preproc.y"
+#line 8366 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(5,make_str("xmlpi ( name"),(yyvsp[(4) - (7)].str),make_str(","),(yyvsp[(6) - (7)].str),make_str(")"));
 }
@@ -35604,7 +35604,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1430:
 
 /* Line 1806 of yacc.c  */
-#line 8370 "preproc.y"
+#line 8370 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(6,make_str("xmlroot ("),(yyvsp[(3) - (7)].str),make_str(","),(yyvsp[(5) - (7)].str),(yyvsp[(6) - (7)].str),make_str(")"));
 }
@@ -35613,7 +35613,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1431:
 
 /* Line 1806 of yacc.c  */
-#line 8374 "preproc.y"
+#line 8374 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(6,make_str("xmlserialize ("),(yyvsp[(3) - (7)].str),(yyvsp[(4) - (7)].str),make_str("as"),(yyvsp[(6) - (7)].str),make_str(")"));
 }
@@ -35622,7 +35622,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1432:
 
 /* Line 1806 of yacc.c  */
-#line 8382 "preproc.y"
+#line 8382 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("version"),(yyvsp[(2) - (2)].str));
 }
@@ -35631,7 +35631,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1433:
 
 /* Line 1806 of yacc.c  */
-#line 8386 "preproc.y"
+#line 8386 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("version no value");
 }
@@ -35640,7 +35640,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1434:
 
 /* Line 1806 of yacc.c  */
-#line 8394 "preproc.y"
+#line 8394 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str(", standalone yes");
 }
@@ -35649,7 +35649,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1435:
 
 /* Line 1806 of yacc.c  */
-#line 8398 "preproc.y"
+#line 8398 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str(", standalone no");
 }
@@ -35658,7 +35658,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1436:
 
 /* Line 1806 of yacc.c  */
-#line 8402 "preproc.y"
+#line 8402 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str(", standalone no value");
 }
@@ -35667,7 +35667,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1437:
 
 /* Line 1806 of yacc.c  */
-#line 8406 "preproc.y"
+#line 8406 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -35675,7 +35675,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1438:
 
 /* Line 1806 of yacc.c  */
-#line 8413 "preproc.y"
+#line 8413 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("xmlattributes ("),(yyvsp[(3) - (4)].str),make_str(")"));
 }
@@ -35684,7 +35684,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1439:
 
 /* Line 1806 of yacc.c  */
-#line 8421 "preproc.y"
+#line 8421 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -35693,7 +35693,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1440:
 
 /* Line 1806 of yacc.c  */
-#line 8425 "preproc.y"
+#line 8425 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),make_str(","),(yyvsp[(3) - (3)].str));
 }
@@ -35702,7 +35702,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1441:
 
 /* Line 1806 of yacc.c  */
-#line 8433 "preproc.y"
+#line 8433 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),make_str("as"),(yyvsp[(3) - (3)].str));
 }
@@ -35711,7 +35711,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1442:
 
 /* Line 1806 of yacc.c  */
-#line 8437 "preproc.y"
+#line 8437 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -35720,7 +35720,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1443:
 
 /* Line 1806 of yacc.c  */
-#line 8445 "preproc.y"
+#line 8445 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("document");
 }
@@ -35729,7 +35729,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1444:
 
 /* Line 1806 of yacc.c  */
-#line 8449 "preproc.y"
+#line 8449 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("content");
 }
@@ -35738,7 +35738,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1445:
 
 /* Line 1806 of yacc.c  */
-#line 8457 "preproc.y"
+#line 8457 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("preserve whitespace");
 }
@@ -35747,7 +35747,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1446:
 
 /* Line 1806 of yacc.c  */
-#line 8461 "preproc.y"
+#line 8461 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("strip whitespace");
 }
@@ -35756,7 +35756,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1447:
 
 /* Line 1806 of yacc.c  */
-#line 8465 "preproc.y"
+#line 8465 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -35764,7 +35764,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1448:
 
 /* Line 1806 of yacc.c  */
-#line 8472 "preproc.y"
+#line 8472 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("window"),(yyvsp[(2) - (2)].str));
 }
@@ -35773,7 +35773,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1449:
 
 /* Line 1806 of yacc.c  */
-#line 8476 "preproc.y"
+#line 8476 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -35781,7 +35781,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1450:
 
 /* Line 1806 of yacc.c  */
-#line 8483 "preproc.y"
+#line 8483 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -35790,7 +35790,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1451:
 
 /* Line 1806 of yacc.c  */
-#line 8487 "preproc.y"
+#line 8487 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),make_str(","),(yyvsp[(3) - (3)].str));
 }
@@ -35799,7 +35799,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1452:
 
 /* Line 1806 of yacc.c  */
-#line 8495 "preproc.y"
+#line 8495 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),make_str("as"),(yyvsp[(3) - (3)].str));
 }
@@ -35808,7 +35808,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1453:
 
 /* Line 1806 of yacc.c  */
-#line 8503 "preproc.y"
+#line 8503 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("over"),(yyvsp[(2) - (2)].str));
 }
@@ -35817,7 +35817,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1454:
 
 /* Line 1806 of yacc.c  */
-#line 8507 "preproc.y"
+#line 8507 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("over"),(yyvsp[(2) - (2)].str));
 }
@@ -35826,7 +35826,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1455:
 
 /* Line 1806 of yacc.c  */
-#line 8511 "preproc.y"
+#line 8511 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -35834,7 +35834,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1456:
 
 /* Line 1806 of yacc.c  */
-#line 8518 "preproc.y"
+#line 8518 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(6,make_str("("),(yyvsp[(2) - (6)].str),(yyvsp[(3) - (6)].str),(yyvsp[(4) - (6)].str),(yyvsp[(5) - (6)].str),make_str(")"));
 }
@@ -35843,7 +35843,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1457:
 
 /* Line 1806 of yacc.c  */
-#line 8526 "preproc.y"
+#line 8526 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -35852,7 +35852,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1458:
 
 /* Line 1806 of yacc.c  */
-#line 8530 "preproc.y"
+#line 8530 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -35860,7 +35860,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1459:
 
 /* Line 1806 of yacc.c  */
-#line 8537 "preproc.y"
+#line 8537 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("partition by"),(yyvsp[(3) - (3)].str));
 }
@@ -35869,7 +35869,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1460:
 
 /* Line 1806 of yacc.c  */
-#line 8541 "preproc.y"
+#line 8541 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -35877,7 +35877,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1461:
 
 /* Line 1806 of yacc.c  */
-#line 8548 "preproc.y"
+#line 8548 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("range"),(yyvsp[(2) - (2)].str));
 }
@@ -35886,7 +35886,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1462:
 
 /* Line 1806 of yacc.c  */
-#line 8552 "preproc.y"
+#line 8552 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("rows"),(yyvsp[(2) - (2)].str));
 }
@@ -35895,7 +35895,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1463:
 
 /* Line 1806 of yacc.c  */
-#line 8556 "preproc.y"
+#line 8556 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -35903,7 +35903,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1464:
 
 /* Line 1806 of yacc.c  */
-#line 8563 "preproc.y"
+#line 8563 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
 mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server");
  (yyval.str) = (yyvsp[(1) - (1)].str);
@@ -35913,7 +35913,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1465:
 
 /* Line 1806 of yacc.c  */
-#line 8568 "preproc.y"
+#line 8568 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
 mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server");
  (yyval.str) = cat_str(4,make_str("between"),(yyvsp[(2) - (4)].str),make_str("and"),(yyvsp[(4) - (4)].str));
@@ -35923,7 +35923,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1466:
 
 /* Line 1806 of yacc.c  */
-#line 8577 "preproc.y"
+#line 8577 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("unbounded preceding");
 }
@@ -35932,7 +35932,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1467:
 
 /* Line 1806 of yacc.c  */
-#line 8581 "preproc.y"
+#line 8581 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("unbounded following");
 }
@@ -35941,7 +35941,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1468:
 
 /* Line 1806 of yacc.c  */
-#line 8585 "preproc.y"
+#line 8585 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("current row");
 }
@@ -35950,7 +35950,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1469:
 
 /* Line 1806 of yacc.c  */
-#line 8593 "preproc.y"
+#line 8593 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("row ("),(yyvsp[(3) - (4)].str),make_str(")"));
 }
@@ -35959,7 +35959,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1470:
 
 /* Line 1806 of yacc.c  */
-#line 8597 "preproc.y"
+#line 8597 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("row ( )");
 }
@@ -35968,7 +35968,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1471:
 
 /* Line 1806 of yacc.c  */
-#line 8601 "preproc.y"
+#line 8601 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(5,make_str("("),(yyvsp[(2) - (5)].str),make_str(","),(yyvsp[(4) - (5)].str),make_str(")"));
 }
@@ -35977,7 +35977,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1472:
 
 /* Line 1806 of yacc.c  */
-#line 8609 "preproc.y"
+#line 8609 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("any");
 }
@@ -35986,7 +35986,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1473:
 
 /* Line 1806 of yacc.c  */
-#line 8613 "preproc.y"
+#line 8613 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("some");
 }
@@ -35995,7 +35995,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1474:
 
 /* Line 1806 of yacc.c  */
-#line 8617 "preproc.y"
+#line 8617 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("all");
 }
@@ -36004,7 +36004,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1475:
 
 /* Line 1806 of yacc.c  */
-#line 8625 "preproc.y"
+#line 8625 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -36013,7 +36013,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1476:
 
 /* Line 1806 of yacc.c  */
-#line 8629 "preproc.y"
+#line 8629 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -36022,7 +36022,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1477:
 
 /* Line 1806 of yacc.c  */
-#line 8637 "preproc.y"
+#line 8637 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("+");
 }
@@ -36031,7 +36031,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1478:
 
 /* Line 1806 of yacc.c  */
-#line 8641 "preproc.y"
+#line 8641 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("-");
 }
@@ -36040,7 +36040,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1479:
 
 /* Line 1806 of yacc.c  */
-#line 8645 "preproc.y"
+#line 8645 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("*");
 }
@@ -36049,7 +36049,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1480:
 
 /* Line 1806 of yacc.c  */
-#line 8649 "preproc.y"
+#line 8649 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("/");
 }
@@ -36058,7 +36058,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1481:
 
 /* Line 1806 of yacc.c  */
-#line 8653 "preproc.y"
+#line 8653 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("%");
 }
@@ -36067,7 +36067,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1482:
 
 /* Line 1806 of yacc.c  */
-#line 8657 "preproc.y"
+#line 8657 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("^");
 }
@@ -36076,7 +36076,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1483:
 
 /* Line 1806 of yacc.c  */
-#line 8661 "preproc.y"
+#line 8661 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("<");
 }
@@ -36085,7 +36085,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1484:
 
 /* Line 1806 of yacc.c  */
-#line 8665 "preproc.y"
+#line 8665 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str(">");
 }
@@ -36094,7 +36094,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1485:
 
 /* Line 1806 of yacc.c  */
-#line 8669 "preproc.y"
+#line 8669 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("=");
 }
@@ -36103,7 +36103,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1486:
 
 /* Line 1806 of yacc.c  */
-#line 8677 "preproc.y"
+#line 8677 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -36112,7 +36112,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1487:
 
 /* Line 1806 of yacc.c  */
-#line 8681 "preproc.y"
+#line 8681 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("operator ("),(yyvsp[(3) - (4)].str),make_str(")"));
 }
@@ -36121,7 +36121,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1488:
 
 /* Line 1806 of yacc.c  */
-#line 8689 "preproc.y"
+#line 8689 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -36130,7 +36130,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1489:
 
 /* Line 1806 of yacc.c  */
-#line 8693 "preproc.y"
+#line 8693 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("operator ("),(yyvsp[(3) - (4)].str),make_str(")"));
 }
@@ -36139,7 +36139,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1490:
 
 /* Line 1806 of yacc.c  */
-#line 8701 "preproc.y"
+#line 8701 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -36148,7 +36148,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1491:
 
 /* Line 1806 of yacc.c  */
-#line 8705 "preproc.y"
+#line 8705 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("operator ("),(yyvsp[(3) - (4)].str),make_str(")"));
 }
@@ -36157,7 +36157,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1492:
 
 /* Line 1806 of yacc.c  */
-#line 8709 "preproc.y"
+#line 8709 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("like");
 }
@@ -36166,7 +36166,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1493:
 
 /* Line 1806 of yacc.c  */
-#line 8713 "preproc.y"
+#line 8713 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("not like");
 }
@@ -36175,7 +36175,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1494:
 
 /* Line 1806 of yacc.c  */
-#line 8717 "preproc.y"
+#line 8717 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("ilike");
 }
@@ -36184,7 +36184,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1495:
 
 /* Line 1806 of yacc.c  */
-#line 8721 "preproc.y"
+#line 8721 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("not ilike");
 }
@@ -36193,7 +36193,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1496:
 
 /* Line 1806 of yacc.c  */
-#line 8729 "preproc.y"
+#line 8729 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -36202,7 +36202,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1497:
 
 /* Line 1806 of yacc.c  */
-#line 8733 "preproc.y"
+#line 8733 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),make_str(","),(yyvsp[(3) - (3)].str));
 }
@@ -36211,7 +36211,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1498:
 
 /* Line 1806 of yacc.c  */
-#line 8741 "preproc.y"
+#line 8741 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -36220,7 +36220,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1499:
 
 /* Line 1806 of yacc.c  */
-#line 8745 "preproc.y"
+#line 8745 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),make_str(","),(yyvsp[(3) - (3)].str));
 }
@@ -36229,7 +36229,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1500:
 
 /* Line 1806 of yacc.c  */
-#line 8753 "preproc.y"
+#line 8753 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("["),(yyvsp[(2) - (3)].str),make_str("]"));
 }
@@ -36238,7 +36238,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1501:
 
 /* Line 1806 of yacc.c  */
-#line 8757 "preproc.y"
+#line 8757 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("["),(yyvsp[(2) - (3)].str),make_str("]"));
 }
@@ -36247,7 +36247,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1502:
 
 /* Line 1806 of yacc.c  */
-#line 8761 "preproc.y"
+#line 8761 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("[ ]");
 }
@@ -36256,7 +36256,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1503:
 
 /* Line 1806 of yacc.c  */
-#line 8769 "preproc.y"
+#line 8769 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -36265,7 +36265,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1504:
 
 /* Line 1806 of yacc.c  */
-#line 8773 "preproc.y"
+#line 8773 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),make_str(","),(yyvsp[(3) - (3)].str));
 }
@@ -36274,7 +36274,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1505:
 
 /* Line 1806 of yacc.c  */
-#line 8781 "preproc.y"
+#line 8781 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),make_str("from"),(yyvsp[(3) - (3)].str));
 }
@@ -36283,7 +36283,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1506:
 
 /* Line 1806 of yacc.c  */
-#line 8785 "preproc.y"
+#line 8785 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -36291,7 +36291,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1507:
 
 /* Line 1806 of yacc.c  */
-#line 8792 "preproc.y"
+#line 8792 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -36300,7 +36300,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1508:
 
 /* Line 1806 of yacc.c  */
-#line 8796 "preproc.y"
+#line 8796 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("year");
 }
@@ -36309,7 +36309,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1509:
 
 /* Line 1806 of yacc.c  */
-#line 8800 "preproc.y"
+#line 8800 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("month");
 }
@@ -36318,7 +36318,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1510:
 
 /* Line 1806 of yacc.c  */
-#line 8804 "preproc.y"
+#line 8804 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("day");
 }
@@ -36327,7 +36327,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1511:
 
 /* Line 1806 of yacc.c  */
-#line 8808 "preproc.y"
+#line 8808 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("hour");
 }
@@ -36336,7 +36336,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1512:
 
 /* Line 1806 of yacc.c  */
-#line 8812 "preproc.y"
+#line 8812 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("minute");
 }
@@ -36345,7 +36345,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1513:
 
 /* Line 1806 of yacc.c  */
-#line 8816 "preproc.y"
+#line 8816 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("second");
 }
@@ -36354,7 +36354,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1514:
 
 /* Line 1806 of yacc.c  */
-#line 8820 "preproc.y"
+#line 8820 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -36363,7 +36363,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1515:
 
 /* Line 1806 of yacc.c  */
-#line 8828 "preproc.y"
+#line 8828 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,(yyvsp[(1) - (4)].str),(yyvsp[(2) - (4)].str),(yyvsp[(3) - (4)].str),(yyvsp[(4) - (4)].str));
 }
@@ -36372,7 +36372,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1516:
 
 /* Line 1806 of yacc.c  */
-#line 8832 "preproc.y"
+#line 8832 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),(yyvsp[(2) - (3)].str),(yyvsp[(3) - (3)].str));
 }
@@ -36381,7 +36381,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1517:
 
 /* Line 1806 of yacc.c  */
-#line 8840 "preproc.y"
+#line 8840 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("placing"),(yyvsp[(2) - (2)].str));
 }
@@ -36390,7 +36390,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1518:
 
 /* Line 1806 of yacc.c  */
-#line 8848 "preproc.y"
+#line 8848 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),make_str("in"),(yyvsp[(3) - (3)].str));
 }
@@ -36399,7 +36399,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1519:
 
 /* Line 1806 of yacc.c  */
-#line 8852 "preproc.y"
+#line 8852 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -36407,7 +36407,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1520:
 
 /* Line 1806 of yacc.c  */
-#line 8859 "preproc.y"
+#line 8859 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),(yyvsp[(2) - (3)].str),(yyvsp[(3) - (3)].str));
 }
@@ -36416,7 +36416,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1521:
 
 /* Line 1806 of yacc.c  */
-#line 8863 "preproc.y"
+#line 8863 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),(yyvsp[(2) - (3)].str),(yyvsp[(3) - (3)].str));
 }
@@ -36425,7 +36425,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1522:
 
 /* Line 1806 of yacc.c  */
-#line 8867 "preproc.y"
+#line 8867 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,(yyvsp[(1) - (2)].str),(yyvsp[(2) - (2)].str));
 }
@@ -36434,7 +36434,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1523:
 
 /* Line 1806 of yacc.c  */
-#line 8871 "preproc.y"
+#line 8871 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,(yyvsp[(1) - (2)].str),(yyvsp[(2) - (2)].str));
 }
@@ -36443,7 +36443,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1524:
 
 /* Line 1806 of yacc.c  */
-#line 8875 "preproc.y"
+#line 8875 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -36452,7 +36452,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1525:
 
 /* Line 1806 of yacc.c  */
-#line 8879 "preproc.y"
+#line 8879 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -36460,7 +36460,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1526:
 
 /* Line 1806 of yacc.c  */
-#line 8886 "preproc.y"
+#line 8886 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("from"),(yyvsp[(2) - (2)].str));
 }
@@ -36469,7 +36469,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1527:
 
 /* Line 1806 of yacc.c  */
-#line 8894 "preproc.y"
+#line 8894 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("for"),(yyvsp[(2) - (2)].str));
 }
@@ -36478,7 +36478,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1528:
 
 /* Line 1806 of yacc.c  */
-#line 8902 "preproc.y"
+#line 8902 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),make_str("from"),(yyvsp[(3) - (3)].str));
 }
@@ -36487,7 +36487,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1529:
 
 /* Line 1806 of yacc.c  */
-#line 8906 "preproc.y"
+#line 8906 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("from"),(yyvsp[(2) - (2)].str));
 }
@@ -36496,7 +36496,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1530:
 
 /* Line 1806 of yacc.c  */
-#line 8910 "preproc.y"
+#line 8910 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -36505,7 +36505,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1531:
 
 /* Line 1806 of yacc.c  */
-#line 8918 "preproc.y"
+#line 8918 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -36514,7 +36514,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1532:
 
 /* Line 1806 of yacc.c  */
-#line 8922 "preproc.y"
+#line 8922 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("("),(yyvsp[(2) - (3)].str),make_str(")"));
 }
@@ -36523,7 +36523,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1533:
 
 /* Line 1806 of yacc.c  */
-#line 8930 "preproc.y"
+#line 8930 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(5,make_str("case"),(yyvsp[(2) - (5)].str),(yyvsp[(3) - (5)].str),(yyvsp[(4) - (5)].str),make_str("end"));
 }
@@ -36532,7 +36532,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1534:
 
 /* Line 1806 of yacc.c  */
-#line 8938 "preproc.y"
+#line 8938 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -36541,7 +36541,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1535:
 
 /* Line 1806 of yacc.c  */
-#line 8942 "preproc.y"
+#line 8942 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,(yyvsp[(1) - (2)].str),(yyvsp[(2) - (2)].str));
 }
@@ -36550,7 +36550,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1536:
 
 /* Line 1806 of yacc.c  */
-#line 8950 "preproc.y"
+#line 8950 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(4,make_str("when"),(yyvsp[(2) - (4)].str),make_str("then"),(yyvsp[(4) - (4)].str));
 }
@@ -36559,7 +36559,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1537:
 
 /* Line 1806 of yacc.c  */
-#line 8958 "preproc.y"
+#line 8958 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("else"),(yyvsp[(2) - (2)].str));
 }
@@ -36568,7 +36568,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1538:
 
 /* Line 1806 of yacc.c  */
-#line 8962 "preproc.y"
+#line 8962 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -36576,7 +36576,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1539:
 
 /* Line 1806 of yacc.c  */
-#line 8969 "preproc.y"
+#line 8969 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -36585,7 +36585,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1540:
 
 /* Line 1806 of yacc.c  */
-#line 8973 "preproc.y"
+#line 8973 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -36593,7 +36593,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1541:
 
 /* Line 1806 of yacc.c  */
-#line 8980 "preproc.y"
+#line 8980 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -36602,7 +36602,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1542:
 
 /* Line 1806 of yacc.c  */
-#line 8984 "preproc.y"
+#line 8984 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,(yyvsp[(1) - (2)].str),(yyvsp[(2) - (2)].str));
 }
@@ -36611,7 +36611,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1543:
 
 /* Line 1806 of yacc.c  */
-#line 8992 "preproc.y"
+#line 8992 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("."),(yyvsp[(2) - (2)].str));
 }
@@ -36620,7 +36620,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1544:
 
 /* Line 1806 of yacc.c  */
-#line 8996 "preproc.y"
+#line 8996 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str(". *");
 }
@@ -36629,7 +36629,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1545:
 
 /* Line 1806 of yacc.c  */
-#line 9000 "preproc.y"
+#line 9000 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("["),(yyvsp[(2) - (3)].str),make_str("]"));
 }
@@ -36638,7 +36638,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1546:
 
 /* Line 1806 of yacc.c  */
-#line 9004 "preproc.y"
+#line 9004 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(5,make_str("["),(yyvsp[(2) - (5)].str),make_str(":"),(yyvsp[(4) - (5)].str),make_str("]"));
 }
@@ -36647,7 +36647,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1547:
 
 /* Line 1806 of yacc.c  */
-#line 9012 "preproc.y"
+#line 9012 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -36656,7 +36656,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1548:
 
 /* Line 1806 of yacc.c  */
-#line 9016 "preproc.y"
+#line 9016 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,(yyvsp[(1) - (2)].str),(yyvsp[(2) - (2)].str));
 }
@@ -36665,7 +36665,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1549:
 
 /* Line 1806 of yacc.c  */
-#line 9024 "preproc.y"
+#line 9024 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -36673,7 +36673,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1550:
 
 /* Line 1806 of yacc.c  */
-#line 9027 "preproc.y"
+#line 9027 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,(yyvsp[(1) - (2)].str),(yyvsp[(2) - (2)].str));
 }
@@ -36682,7 +36682,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1551:
 
 /* Line 1806 of yacc.c  */
-#line 9035 "preproc.y"
+#line 9035 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("asymmetric");
 }
@@ -36691,7 +36691,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1552:
 
 /* Line 1806 of yacc.c  */
-#line 9039 "preproc.y"
+#line 9039 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str)=EMPTY; }
     break;
@@ -36699,7 +36699,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1553:
 
 /* Line 1806 of yacc.c  */
-#line 9046 "preproc.y"
+#line 9046 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -36708,7 +36708,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1554:
 
 /* Line 1806 of yacc.c  */
-#line 9050 "preproc.y"
+#line 9050 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("default");
 }
@@ -36717,7 +36717,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1555:
 
 /* Line 1806 of yacc.c  */
-#line 9058 "preproc.y"
+#line 9058 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -36726,7 +36726,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1556:
 
 /* Line 1806 of yacc.c  */
-#line 9062 "preproc.y"
+#line 9062 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),make_str(","),(yyvsp[(3) - (3)].str));
 }
@@ -36735,7 +36735,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1557:
 
 /* Line 1806 of yacc.c  */
-#line 9070 "preproc.y"
+#line 9070 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,make_str("("),(yyvsp[(2) - (3)].str),make_str(")"));
 }
@@ -36744,7 +36744,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1558:
 
 /* Line 1806 of yacc.c  */
-#line 9078 "preproc.y"
+#line 9078 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -36753,7 +36753,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1559:
 
 /* Line 1806 of yacc.c  */
-#line 9082 "preproc.y"
+#line 9082 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),make_str(","),(yyvsp[(3) - (3)].str));
 }
@@ -36762,7 +36762,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1560:
 
 /* Line 1806 of yacc.c  */
-#line 9090 "preproc.y"
+#line 9090 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),make_str("as"),(yyvsp[(3) - (3)].str));
 }
@@ -36771,7 +36771,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1561:
 
 /* Line 1806 of yacc.c  */
-#line 9094 "preproc.y"
+#line 9094 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,(yyvsp[(1) - (2)].str),(yyvsp[(2) - (2)].str));
 }
@@ -36780,7 +36780,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1562:
 
 /* Line 1806 of yacc.c  */
-#line 9098 "preproc.y"
+#line 9098 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -36789,7 +36789,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1563:
 
 /* Line 1806 of yacc.c  */
-#line 9102 "preproc.y"
+#line 9102 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("*");
 }
@@ -36798,7 +36798,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1564:
 
 /* Line 1806 of yacc.c  */
-#line 9110 "preproc.y"
+#line 9110 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -36807,7 +36807,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1565:
 
 /* Line 1806 of yacc.c  */
-#line 9114 "preproc.y"
+#line 9114 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -36816,7 +36816,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1566:
 
 /* Line 1806 of yacc.c  */
-#line 9122 "preproc.y"
+#line 9122 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -36825,7 +36825,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1567:
 
 /* Line 1806 of yacc.c  */
-#line 9126 "preproc.y"
+#line 9126 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),make_str(","),(yyvsp[(3) - (3)].str));
 }
@@ -36834,7 +36834,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1568:
 
 /* Line 1806 of yacc.c  */
-#line 9134 "preproc.y"
+#line 9134 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -36843,7 +36843,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1569:
 
 /* Line 1806 of yacc.c  */
-#line 9138 "preproc.y"
+#line 9138 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,(yyvsp[(1) - (2)].str),(yyvsp[(2) - (2)].str));
 }
@@ -36852,7 +36852,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1570:
 
 /* Line 1806 of yacc.c  */
-#line 9146 "preproc.y"
+#line 9146 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -36861,7 +36861,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1571:
 
 /* Line 1806 of yacc.c  */
-#line 9150 "preproc.y"
+#line 9150 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),make_str(","),(yyvsp[(3) - (3)].str));
 }
@@ -36870,7 +36870,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1572:
 
 /* Line 1806 of yacc.c  */
-#line 9158 "preproc.y"
+#line 9158 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -36879,7 +36879,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1573:
 
 /* Line 1806 of yacc.c  */
-#line 9166 "preproc.y"
+#line 9166 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -36888,7 +36888,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1574:
 
 /* Line 1806 of yacc.c  */
-#line 9174 "preproc.y"
+#line 9174 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -36897,7 +36897,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1575:
 
 /* Line 1806 of yacc.c  */
-#line 9182 "preproc.y"
+#line 9182 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -36906,7 +36906,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1576:
 
 /* Line 1806 of yacc.c  */
-#line 9190 "preproc.y"
+#line 9190 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -36915,7 +36915,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1577:
 
 /* Line 1806 of yacc.c  */
-#line 9198 "preproc.y"
+#line 9198 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -36924,7 +36924,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1578:
 
 /* Line 1806 of yacc.c  */
-#line 9206 "preproc.y"
+#line 9206 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -36933,7 +36933,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1579:
 
 /* Line 1806 of yacc.c  */
-#line 9210 "preproc.y"
+#line 9210 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,(yyvsp[(1) - (2)].str),(yyvsp[(2) - (2)].str));
 }
@@ -36942,7 +36942,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1580:
 
 /* Line 1806 of yacc.c  */
-#line 9218 "preproc.y"
+#line 9218 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -36951,7 +36951,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1581:
 
 /* Line 1806 of yacc.c  */
-#line 9222 "preproc.y"
+#line 9222 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -36960,7 +36960,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1582:
 
 /* Line 1806 of yacc.c  */
-#line 9226 "preproc.y"
+#line 9226 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -36969,7 +36969,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1583:
 
 /* Line 1806 of yacc.c  */
-#line 9230 "preproc.y"
+#line 9230 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -36978,7 +36978,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1584:
 
 /* Line 1806 of yacc.c  */
-#line 9234 "preproc.y"
+#line 9234 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("xconst");
 }
@@ -36987,7 +36987,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1585:
 
 /* Line 1806 of yacc.c  */
-#line 9238 "preproc.y"
+#line 9238 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,(yyvsp[(1) - (2)].str),(yyvsp[(2) - (2)].str));
 }
@@ -36996,7 +36996,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1586:
 
 /* Line 1806 of yacc.c  */
-#line 9242 "preproc.y"
+#line 9242 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(5,(yyvsp[(1) - (5)].str),make_str("("),(yyvsp[(3) - (5)].str),make_str(")"),(yyvsp[(5) - (5)].str));
 }
@@ -37005,7 +37005,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1587:
 
 /* Line 1806 of yacc.c  */
-#line 9246 "preproc.y"
+#line 9246 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,(yyvsp[(1) - (2)].str),(yyvsp[(2) - (2)].str));
 }
@@ -37014,7 +37014,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1588:
 
 /* Line 1806 of yacc.c  */
-#line 9250 "preproc.y"
+#line 9250 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(3,(yyvsp[(1) - (3)].str),(yyvsp[(2) - (3)].str),(yyvsp[(3) - (3)].str));
 }
@@ -37023,7 +37023,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1589:
 
 /* Line 1806 of yacc.c  */
-#line 9254 "preproc.y"
+#line 9254 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(6,(yyvsp[(1) - (6)].str),make_str("("),(yyvsp[(3) - (6)].str),make_str(")"),(yyvsp[(5) - (6)].str),(yyvsp[(6) - (6)].str));
 }
@@ -37032,7 +37032,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1590:
 
 /* Line 1806 of yacc.c  */
-#line 9258 "preproc.y"
+#line 9258 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("true");
 }
@@ -37041,7 +37041,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1591:
 
 /* Line 1806 of yacc.c  */
-#line 9262 "preproc.y"
+#line 9262 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("false");
 }
@@ -37050,7 +37050,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1592:
 
 /* Line 1806 of yacc.c  */
-#line 9266 "preproc.y"
+#line 9266 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("null");
 }
@@ -37059,28 +37059,28 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1593:
 
 /* Line 1806 of yacc.c  */
-#line 9269 "preproc.y"
+#line 9269 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(1) - (1)].str); }
     break;
 
   case 1594:
 
 /* Line 1806 of yacc.c  */
-#line 9270 "preproc.y"
+#line 9270 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(1) - (1)].str); }
     break;
 
   case 1595:
 
 /* Line 1806 of yacc.c  */
-#line 9276 "preproc.y"
+#line 9276 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_name(); }
     break;
 
   case 1596:
 
 /* Line 1806 of yacc.c  */
-#line 9282 "preproc.y"
+#line 9282 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -37089,7 +37089,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1597:
 
 /* Line 1806 of yacc.c  */
-#line 9290 "preproc.y"
+#line 9290 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = (yyvsp[(1) - (1)].str);
 }
@@ -37098,14 +37098,14 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1598:
 
 /* Line 1806 of yacc.c  */
-#line 9293 "preproc.y"
+#line 9293 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(1) - (1)].str); }
     break;
 
   case 1599:
 
 /* Line 1806 of yacc.c  */
-#line 9295 "preproc.y"
+#line 9295 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("+"),(yyvsp[(2) - (2)].str));
 }
@@ -37114,7 +37114,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1600:
 
 /* Line 1806 of yacc.c  */
-#line 9299 "preproc.y"
+#line 9299 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = cat_str(2,make_str("-"),(yyvsp[(2) - (2)].str));
 }
@@ -37123,7 +37123,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1601:
 
 /* Line 1806 of yacc.c  */
-#line 9307 "preproc.y"
+#line 9307 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("abort");
 }
@@ -37132,7 +37132,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1602:
 
 /* Line 1806 of yacc.c  */
-#line 9311 "preproc.y"
+#line 9311 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("absolute");
 }
@@ -37141,7 +37141,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1603:
 
 /* Line 1806 of yacc.c  */
-#line 9315 "preproc.y"
+#line 9315 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("access");
 }
@@ -37150,7 +37150,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1604:
 
 /* Line 1806 of yacc.c  */
-#line 9319 "preproc.y"
+#line 9319 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("action");
 }
@@ -37159,7 +37159,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1605:
 
 /* Line 1806 of yacc.c  */
-#line 9323 "preproc.y"
+#line 9323 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("add");
 }
@@ -37168,7 +37168,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1606:
 
 /* Line 1806 of yacc.c  */
-#line 9327 "preproc.y"
+#line 9327 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("admin");
 }
@@ -37177,7 +37177,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1607:
 
 /* Line 1806 of yacc.c  */
-#line 9331 "preproc.y"
+#line 9331 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("after");
 }
@@ -37186,7 +37186,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1608:
 
 /* Line 1806 of yacc.c  */
-#line 9335 "preproc.y"
+#line 9335 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("aggregate");
 }
@@ -37195,7 +37195,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1609:
 
 /* Line 1806 of yacc.c  */
-#line 9339 "preproc.y"
+#line 9339 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("also");
 }
@@ -37204,7 +37204,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1610:
 
 /* Line 1806 of yacc.c  */
-#line 9343 "preproc.y"
+#line 9343 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("alter");
 }
@@ -37213,7 +37213,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1611:
 
 /* Line 1806 of yacc.c  */
-#line 9347 "preproc.y"
+#line 9347 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("always");
 }
@@ -37222,7 +37222,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1612:
 
 /* Line 1806 of yacc.c  */
-#line 9351 "preproc.y"
+#line 9351 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("assertion");
 }
@@ -37231,7 +37231,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1613:
 
 /* Line 1806 of yacc.c  */
-#line 9355 "preproc.y"
+#line 9355 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("assignment");
 }
@@ -37240,7 +37240,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1614:
 
 /* Line 1806 of yacc.c  */
-#line 9359 "preproc.y"
+#line 9359 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("at");
 }
@@ -37249,7 +37249,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1615:
 
 /* Line 1806 of yacc.c  */
-#line 9363 "preproc.y"
+#line 9363 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("backward");
 }
@@ -37258,7 +37258,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1616:
 
 /* Line 1806 of yacc.c  */
-#line 9367 "preproc.y"
+#line 9367 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("before");
 }
@@ -37267,7 +37267,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1617:
 
 /* Line 1806 of yacc.c  */
-#line 9371 "preproc.y"
+#line 9371 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("begin");
 }
@@ -37276,7 +37276,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1618:
 
 /* Line 1806 of yacc.c  */
-#line 9375 "preproc.y"
+#line 9375 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("by");
 }
@@ -37285,7 +37285,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1619:
 
 /* Line 1806 of yacc.c  */
-#line 9379 "preproc.y"
+#line 9379 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("cache");
 }
@@ -37294,7 +37294,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1620:
 
 /* Line 1806 of yacc.c  */
-#line 9383 "preproc.y"
+#line 9383 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("called");
 }
@@ -37303,7 +37303,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1621:
 
 /* Line 1806 of yacc.c  */
-#line 9387 "preproc.y"
+#line 9387 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("cascade");
 }
@@ -37312,7 +37312,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1622:
 
 /* Line 1806 of yacc.c  */
-#line 9391 "preproc.y"
+#line 9391 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("cascaded");
 }
@@ -37321,7 +37321,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1623:
 
 /* Line 1806 of yacc.c  */
-#line 9395 "preproc.y"
+#line 9395 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("catalog");
 }
@@ -37330,7 +37330,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1624:
 
 /* Line 1806 of yacc.c  */
-#line 9399 "preproc.y"
+#line 9399 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("chain");
 }
@@ -37339,7 +37339,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1625:
 
 /* Line 1806 of yacc.c  */
-#line 9403 "preproc.y"
+#line 9403 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("characteristics");
 }
@@ -37348,7 +37348,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1626:
 
 /* Line 1806 of yacc.c  */
-#line 9407 "preproc.y"
+#line 9407 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("checkpoint");
 }
@@ -37357,7 +37357,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1627:
 
 /* Line 1806 of yacc.c  */
-#line 9411 "preproc.y"
+#line 9411 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("class");
 }
@@ -37366,7 +37366,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1628:
 
 /* Line 1806 of yacc.c  */
-#line 9415 "preproc.y"
+#line 9415 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("close");
 }
@@ -37375,7 +37375,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1629:
 
 /* Line 1806 of yacc.c  */
-#line 9419 "preproc.y"
+#line 9419 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("cluster");
 }
@@ -37384,7 +37384,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1630:
 
 /* Line 1806 of yacc.c  */
-#line 9423 "preproc.y"
+#line 9423 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("comment");
 }
@@ -37393,7 +37393,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1631:
 
 /* Line 1806 of yacc.c  */
-#line 9427 "preproc.y"
+#line 9427 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("commit");
 }
@@ -37402,7 +37402,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1632:
 
 /* Line 1806 of yacc.c  */
-#line 9431 "preproc.y"
+#line 9431 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("committed");
 }
@@ -37411,7 +37411,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1633:
 
 /* Line 1806 of yacc.c  */
-#line 9435 "preproc.y"
+#line 9435 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("concurrently");
 }
@@ -37420,7 +37420,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1634:
 
 /* Line 1806 of yacc.c  */
-#line 9439 "preproc.y"
+#line 9439 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("configuration");
 }
@@ -37429,7 +37429,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1635:
 
 /* Line 1806 of yacc.c  */
-#line 9443 "preproc.y"
+#line 9443 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("constraints");
 }
@@ -37438,7 +37438,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1636:
 
 /* Line 1806 of yacc.c  */
-#line 9447 "preproc.y"
+#line 9447 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("content");
 }
@@ -37447,7 +37447,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1637:
 
 /* Line 1806 of yacc.c  */
-#line 9451 "preproc.y"
+#line 9451 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("continue");
 }
@@ -37456,7 +37456,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1638:
 
 /* Line 1806 of yacc.c  */
-#line 9455 "preproc.y"
+#line 9455 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("conversion");
 }
@@ -37465,7 +37465,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1639:
 
 /* Line 1806 of yacc.c  */
-#line 9459 "preproc.y"
+#line 9459 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("copy");
 }
@@ -37474,7 +37474,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1640:
 
 /* Line 1806 of yacc.c  */
-#line 9463 "preproc.y"
+#line 9463 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("cost");
 }
@@ -37483,7 +37483,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1641:
 
 /* Line 1806 of yacc.c  */
-#line 9467 "preproc.y"
+#line 9467 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("createdb");
 }
@@ -37492,7 +37492,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1642:
 
 /* Line 1806 of yacc.c  */
-#line 9471 "preproc.y"
+#line 9471 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("createrole");
 }
@@ -37501,7 +37501,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1643:
 
 /* Line 1806 of yacc.c  */
-#line 9475 "preproc.y"
+#line 9475 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("createuser");
 }
@@ -37510,7 +37510,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1644:
 
 /* Line 1806 of yacc.c  */
-#line 9479 "preproc.y"
+#line 9479 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("csv");
 }
@@ -37519,7 +37519,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1645:
 
 /* Line 1806 of yacc.c  */
-#line 9483 "preproc.y"
+#line 9483 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("cursor");
 }
@@ -37528,7 +37528,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1646:
 
 /* Line 1806 of yacc.c  */
-#line 9487 "preproc.y"
+#line 9487 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("cycle");
 }
@@ -37537,7 +37537,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1647:
 
 /* Line 1806 of yacc.c  */
-#line 9491 "preproc.y"
+#line 9491 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("data");
 }
@@ -37546,7 +37546,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1648:
 
 /* Line 1806 of yacc.c  */
-#line 9495 "preproc.y"
+#line 9495 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("database");
 }
@@ -37555,7 +37555,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1649:
 
 /* Line 1806 of yacc.c  */
-#line 9499 "preproc.y"
+#line 9499 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("deallocate");
 }
@@ -37564,7 +37564,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1650:
 
 /* Line 1806 of yacc.c  */
-#line 9503 "preproc.y"
+#line 9503 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("declare");
 }
@@ -37573,7 +37573,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1651:
 
 /* Line 1806 of yacc.c  */
-#line 9507 "preproc.y"
+#line 9507 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("defaults");
 }
@@ -37582,7 +37582,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1652:
 
 /* Line 1806 of yacc.c  */
-#line 9511 "preproc.y"
+#line 9511 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("deferred");
 }
@@ -37591,7 +37591,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1653:
 
 /* Line 1806 of yacc.c  */
-#line 9515 "preproc.y"
+#line 9515 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("definer");
 }
@@ -37600,7 +37600,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1654:
 
 /* Line 1806 of yacc.c  */
-#line 9519 "preproc.y"
+#line 9519 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("delete");
 }
@@ -37609,7 +37609,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1655:
 
 /* Line 1806 of yacc.c  */
-#line 9523 "preproc.y"
+#line 9523 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("delimiter");
 }
@@ -37618,7 +37618,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1656:
 
 /* Line 1806 of yacc.c  */
-#line 9527 "preproc.y"
+#line 9527 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("delimiters");
 }
@@ -37627,7 +37627,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1657:
 
 /* Line 1806 of yacc.c  */
-#line 9531 "preproc.y"
+#line 9531 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("dictionary");
 }
@@ -37636,7 +37636,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1658:
 
 /* Line 1806 of yacc.c  */
-#line 9535 "preproc.y"
+#line 9535 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("disable");
 }
@@ -37645,7 +37645,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1659:
 
 /* Line 1806 of yacc.c  */
-#line 9539 "preproc.y"
+#line 9539 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("discard");
 }
@@ -37654,7 +37654,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1660:
 
 /* Line 1806 of yacc.c  */
-#line 9543 "preproc.y"
+#line 9543 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("document");
 }
@@ -37663,7 +37663,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1661:
 
 /* Line 1806 of yacc.c  */
-#line 9547 "preproc.y"
+#line 9547 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("domain");
 }
@@ -37672,7 +37672,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1662:
 
 /* Line 1806 of yacc.c  */
-#line 9551 "preproc.y"
+#line 9551 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("double");
 }
@@ -37681,7 +37681,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1663:
 
 /* Line 1806 of yacc.c  */
-#line 9555 "preproc.y"
+#line 9555 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("drop");
 }
@@ -37690,7 +37690,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1664:
 
 /* Line 1806 of yacc.c  */
-#line 9559 "preproc.y"
+#line 9559 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("each");
 }
@@ -37699,7 +37699,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1665:
 
 /* Line 1806 of yacc.c  */
-#line 9563 "preproc.y"
+#line 9563 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("enable");
 }
@@ -37708,7 +37708,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1666:
 
 /* Line 1806 of yacc.c  */
-#line 9567 "preproc.y"
+#line 9567 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("encoding");
 }
@@ -37717,7 +37717,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1667:
 
 /* Line 1806 of yacc.c  */
-#line 9571 "preproc.y"
+#line 9571 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("encrypted");
 }
@@ -37726,7 +37726,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1668:
 
 /* Line 1806 of yacc.c  */
-#line 9575 "preproc.y"
+#line 9575 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("enum");
 }
@@ -37735,7 +37735,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1669:
 
 /* Line 1806 of yacc.c  */
-#line 9579 "preproc.y"
+#line 9579 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("escape");
 }
@@ -37744,7 +37744,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1670:
 
 /* Line 1806 of yacc.c  */
-#line 9583 "preproc.y"
+#line 9583 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("excluding");
 }
@@ -37753,7 +37753,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1671:
 
 /* Line 1806 of yacc.c  */
-#line 9587 "preproc.y"
+#line 9587 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("exclusive");
 }
@@ -37762,7 +37762,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1672:
 
 /* Line 1806 of yacc.c  */
-#line 9591 "preproc.y"
+#line 9591 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("execute");
 }
@@ -37771,7 +37771,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1673:
 
 /* Line 1806 of yacc.c  */
-#line 9595 "preproc.y"
+#line 9595 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("explain");
 }
@@ -37780,7 +37780,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1674:
 
 /* Line 1806 of yacc.c  */
-#line 9599 "preproc.y"
+#line 9599 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("external");
 }
@@ -37789,7 +37789,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1675:
 
 /* Line 1806 of yacc.c  */
-#line 9603 "preproc.y"
+#line 9603 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("family");
 }
@@ -37798,7 +37798,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1676:
 
 /* Line 1806 of yacc.c  */
-#line 9607 "preproc.y"
+#line 9607 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("first");
 }
@@ -37807,7 +37807,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1677:
 
 /* Line 1806 of yacc.c  */
-#line 9611 "preproc.y"
+#line 9611 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("following");
 }
@@ -37816,7 +37816,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1678:
 
 /* Line 1806 of yacc.c  */
-#line 9615 "preproc.y"
+#line 9615 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("force");
 }
@@ -37825,7 +37825,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1679:
 
 /* Line 1806 of yacc.c  */
-#line 9619 "preproc.y"
+#line 9619 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("forward");
 }
@@ -37834,7 +37834,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1680:
 
 /* Line 1806 of yacc.c  */
-#line 9623 "preproc.y"
+#line 9623 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("function");
 }
@@ -37843,7 +37843,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1681:
 
 /* Line 1806 of yacc.c  */
-#line 9627 "preproc.y"
+#line 9627 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("global");
 }
@@ -37852,7 +37852,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1682:
 
 /* Line 1806 of yacc.c  */
-#line 9631 "preproc.y"
+#line 9631 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("granted");
 }
@@ -37861,7 +37861,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1683:
 
 /* Line 1806 of yacc.c  */
-#line 9635 "preproc.y"
+#line 9635 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("handler");
 }
@@ -37870,7 +37870,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1684:
 
 /* Line 1806 of yacc.c  */
-#line 9639 "preproc.y"
+#line 9639 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("header");
 }
@@ -37879,7 +37879,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1685:
 
 /* Line 1806 of yacc.c  */
-#line 9643 "preproc.y"
+#line 9643 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("hold");
 }
@@ -37888,7 +37888,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1686:
 
 /* Line 1806 of yacc.c  */
-#line 9647 "preproc.y"
+#line 9647 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("identity");
 }
@@ -37897,7 +37897,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1687:
 
 /* Line 1806 of yacc.c  */
-#line 9651 "preproc.y"
+#line 9651 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("if");
 }
@@ -37906,7 +37906,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1688:
 
 /* Line 1806 of yacc.c  */
-#line 9655 "preproc.y"
+#line 9655 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("immediate");
 }
@@ -37915,7 +37915,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1689:
 
 /* Line 1806 of yacc.c  */
-#line 9659 "preproc.y"
+#line 9659 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("immutable");
 }
@@ -37924,7 +37924,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1690:
 
 /* Line 1806 of yacc.c  */
-#line 9663 "preproc.y"
+#line 9663 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("implicit");
 }
@@ -37933,7 +37933,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1691:
 
 /* Line 1806 of yacc.c  */
-#line 9667 "preproc.y"
+#line 9667 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("including");
 }
@@ -37942,7 +37942,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1692:
 
 /* Line 1806 of yacc.c  */
-#line 9671 "preproc.y"
+#line 9671 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("increment");
 }
@@ -37951,7 +37951,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1693:
 
 /* Line 1806 of yacc.c  */
-#line 9675 "preproc.y"
+#line 9675 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("index");
 }
@@ -37960,7 +37960,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1694:
 
 /* Line 1806 of yacc.c  */
-#line 9679 "preproc.y"
+#line 9679 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("indexes");
 }
@@ -37969,7 +37969,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1695:
 
 /* Line 1806 of yacc.c  */
-#line 9683 "preproc.y"
+#line 9683 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("inherit");
 }
@@ -37978,7 +37978,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1696:
 
 /* Line 1806 of yacc.c  */
-#line 9687 "preproc.y"
+#line 9687 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("inherits");
 }
@@ -37987,7 +37987,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1697:
 
 /* Line 1806 of yacc.c  */
-#line 9691 "preproc.y"
+#line 9691 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("insensitive");
 }
@@ -37996,7 +37996,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1698:
 
 /* Line 1806 of yacc.c  */
-#line 9695 "preproc.y"
+#line 9695 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("insert");
 }
@@ -38005,7 +38005,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1699:
 
 /* Line 1806 of yacc.c  */
-#line 9699 "preproc.y"
+#line 9699 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("instead");
 }
@@ -38014,7 +38014,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1700:
 
 /* Line 1806 of yacc.c  */
-#line 9703 "preproc.y"
+#line 9703 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("invoker");
 }
@@ -38023,7 +38023,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1701:
 
 /* Line 1806 of yacc.c  */
-#line 9707 "preproc.y"
+#line 9707 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("isolation");
 }
@@ -38032,7 +38032,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1702:
 
 /* Line 1806 of yacc.c  */
-#line 9711 "preproc.y"
+#line 9711 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("key");
 }
@@ -38041,7 +38041,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1703:
 
 /* Line 1806 of yacc.c  */
-#line 9715 "preproc.y"
+#line 9715 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("lancompiler");
 }
@@ -38050,7 +38050,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1704:
 
 /* Line 1806 of yacc.c  */
-#line 9719 "preproc.y"
+#line 9719 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("language");
 }
@@ -38059,7 +38059,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1705:
 
 /* Line 1806 of yacc.c  */
-#line 9723 "preproc.y"
+#line 9723 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("large");
 }
@@ -38068,7 +38068,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1706:
 
 /* Line 1806 of yacc.c  */
-#line 9727 "preproc.y"
+#line 9727 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("last");
 }
@@ -38077,7 +38077,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1707:
 
 /* Line 1806 of yacc.c  */
-#line 9731 "preproc.y"
+#line 9731 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("lc_collate");
 }
@@ -38086,7 +38086,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1708:
 
 /* Line 1806 of yacc.c  */
-#line 9735 "preproc.y"
+#line 9735 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("lc_ctype");
 }
@@ -38095,7 +38095,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1709:
 
 /* Line 1806 of yacc.c  */
-#line 9739 "preproc.y"
+#line 9739 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("level");
 }
@@ -38104,7 +38104,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1710:
 
 /* Line 1806 of yacc.c  */
-#line 9743 "preproc.y"
+#line 9743 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("listen");
 }
@@ -38113,7 +38113,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1711:
 
 /* Line 1806 of yacc.c  */
-#line 9747 "preproc.y"
+#line 9747 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("load");
 }
@@ -38122,7 +38122,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1712:
 
 /* Line 1806 of yacc.c  */
-#line 9751 "preproc.y"
+#line 9751 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("local");
 }
@@ -38131,7 +38131,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1713:
 
 /* Line 1806 of yacc.c  */
-#line 9755 "preproc.y"
+#line 9755 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("location");
 }
@@ -38140,7 +38140,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1714:
 
 /* Line 1806 of yacc.c  */
-#line 9759 "preproc.y"
+#line 9759 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("lock");
 }
@@ -38149,7 +38149,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1715:
 
 /* Line 1806 of yacc.c  */
-#line 9763 "preproc.y"
+#line 9763 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("login");
 }
@@ -38158,7 +38158,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1716:
 
 /* Line 1806 of yacc.c  */
-#line 9767 "preproc.y"
+#line 9767 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("mapping");
 }
@@ -38167,7 +38167,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1717:
 
 /* Line 1806 of yacc.c  */
-#line 9771 "preproc.y"
+#line 9771 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("match");
 }
@@ -38176,7 +38176,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1718:
 
 /* Line 1806 of yacc.c  */
-#line 9775 "preproc.y"
+#line 9775 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("maxvalue");
 }
@@ -38185,7 +38185,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1719:
 
 /* Line 1806 of yacc.c  */
-#line 9779 "preproc.y"
+#line 9779 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("minvalue");
 }
@@ -38194,7 +38194,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1720:
 
 /* Line 1806 of yacc.c  */
-#line 9783 "preproc.y"
+#line 9783 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("mode");
 }
@@ -38203,7 +38203,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1721:
 
 /* Line 1806 of yacc.c  */
-#line 9787 "preproc.y"
+#line 9787 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("move");
 }
@@ -38212,7 +38212,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1722:
 
 /* Line 1806 of yacc.c  */
-#line 9791 "preproc.y"
+#line 9791 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("name");
 }
@@ -38221,7 +38221,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1723:
 
 /* Line 1806 of yacc.c  */
-#line 9795 "preproc.y"
+#line 9795 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("names");
 }
@@ -38230,7 +38230,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1724:
 
 /* Line 1806 of yacc.c  */
-#line 9799 "preproc.y"
+#line 9799 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("next");
 }
@@ -38239,7 +38239,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1725:
 
 /* Line 1806 of yacc.c  */
-#line 9803 "preproc.y"
+#line 9803 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("no");
 }
@@ -38248,7 +38248,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1726:
 
 /* Line 1806 of yacc.c  */
-#line 9807 "preproc.y"
+#line 9807 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("nocreatedb");
 }
@@ -38257,7 +38257,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1727:
 
 /* Line 1806 of yacc.c  */
-#line 9811 "preproc.y"
+#line 9811 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("nocreaterole");
 }
@@ -38266,7 +38266,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1728:
 
 /* Line 1806 of yacc.c  */
-#line 9815 "preproc.y"
+#line 9815 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("nocreateuser");
 }
@@ -38275,7 +38275,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1729:
 
 /* Line 1806 of yacc.c  */
-#line 9819 "preproc.y"
+#line 9819 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("noinherit");
 }
@@ -38284,7 +38284,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1730:
 
 /* Line 1806 of yacc.c  */
-#line 9823 "preproc.y"
+#line 9823 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("nologin");
 }
@@ -38293,7 +38293,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1731:
 
 /* Line 1806 of yacc.c  */
-#line 9827 "preproc.y"
+#line 9827 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("nosuperuser");
 }
@@ -38302,7 +38302,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1732:
 
 /* Line 1806 of yacc.c  */
-#line 9831 "preproc.y"
+#line 9831 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("nothing");
 }
@@ -38311,7 +38311,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1733:
 
 /* Line 1806 of yacc.c  */
-#line 9835 "preproc.y"
+#line 9835 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("notify");
 }
@@ -38320,7 +38320,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1734:
 
 /* Line 1806 of yacc.c  */
-#line 9839 "preproc.y"
+#line 9839 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("nowait");
 }
@@ -38329,7 +38329,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1735:
 
 /* Line 1806 of yacc.c  */
-#line 9843 "preproc.y"
+#line 9843 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("nulls");
 }
@@ -38338,7 +38338,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1736:
 
 /* Line 1806 of yacc.c  */
-#line 9847 "preproc.y"
+#line 9847 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("object");
 }
@@ -38347,7 +38347,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1737:
 
 /* Line 1806 of yacc.c  */
-#line 9851 "preproc.y"
+#line 9851 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("of");
 }
@@ -38356,7 +38356,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1738:
 
 /* Line 1806 of yacc.c  */
-#line 9855 "preproc.y"
+#line 9855 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("oids");
 }
@@ -38365,7 +38365,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1739:
 
 /* Line 1806 of yacc.c  */
-#line 9859 "preproc.y"
+#line 9859 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("operator");
 }
@@ -38374,7 +38374,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1740:
 
 /* Line 1806 of yacc.c  */
-#line 9863 "preproc.y"
+#line 9863 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("option");
 }
@@ -38383,7 +38383,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1741:
 
 /* Line 1806 of yacc.c  */
-#line 9867 "preproc.y"
+#line 9867 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("options");
 }
@@ -38392,7 +38392,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1742:
 
 /* Line 1806 of yacc.c  */
-#line 9871 "preproc.y"
+#line 9871 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("owned");
 }
@@ -38401,7 +38401,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1743:
 
 /* Line 1806 of yacc.c  */
-#line 9875 "preproc.y"
+#line 9875 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("owner");
 }
@@ -38410,7 +38410,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1744:
 
 /* Line 1806 of yacc.c  */
-#line 9879 "preproc.y"
+#line 9879 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("parser");
 }
@@ -38419,7 +38419,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1745:
 
 /* Line 1806 of yacc.c  */
-#line 9883 "preproc.y"
+#line 9883 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("partial");
 }
@@ -38428,7 +38428,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1746:
 
 /* Line 1806 of yacc.c  */
-#line 9887 "preproc.y"
+#line 9887 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("partition");
 }
@@ -38437,7 +38437,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1747:
 
 /* Line 1806 of yacc.c  */
-#line 9891 "preproc.y"
+#line 9891 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("password");
 }
@@ -38446,7 +38446,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1748:
 
 /* Line 1806 of yacc.c  */
-#line 9895 "preproc.y"
+#line 9895 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("plans");
 }
@@ -38455,7 +38455,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1749:
 
 /* Line 1806 of yacc.c  */
-#line 9899 "preproc.y"
+#line 9899 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("preceding");
 }
@@ -38464,7 +38464,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1750:
 
 /* Line 1806 of yacc.c  */
-#line 9903 "preproc.y"
+#line 9903 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("prepare");
 }
@@ -38473,7 +38473,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1751:
 
 /* Line 1806 of yacc.c  */
-#line 9907 "preproc.y"
+#line 9907 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("prepared");
 }
@@ -38482,7 +38482,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1752:
 
 /* Line 1806 of yacc.c  */
-#line 9911 "preproc.y"
+#line 9911 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("preserve");
 }
@@ -38491,7 +38491,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1753:
 
 /* Line 1806 of yacc.c  */
-#line 9915 "preproc.y"
+#line 9915 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("prior");
 }
@@ -38500,7 +38500,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1754:
 
 /* Line 1806 of yacc.c  */
-#line 9919 "preproc.y"
+#line 9919 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("privileges");
 }
@@ -38509,7 +38509,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1755:
 
 /* Line 1806 of yacc.c  */
-#line 9923 "preproc.y"
+#line 9923 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("procedural");
 }
@@ -38518,7 +38518,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1756:
 
 /* Line 1806 of yacc.c  */
-#line 9927 "preproc.y"
+#line 9927 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("procedure");
 }
@@ -38527,7 +38527,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1757:
 
 /* Line 1806 of yacc.c  */
-#line 9931 "preproc.y"
+#line 9931 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("quote");
 }
@@ -38536,7 +38536,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1758:
 
 /* Line 1806 of yacc.c  */
-#line 9935 "preproc.y"
+#line 9935 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("range");
 }
@@ -38545,7 +38545,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1759:
 
 /* Line 1806 of yacc.c  */
-#line 9939 "preproc.y"
+#line 9939 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("read");
 }
@@ -38554,7 +38554,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1760:
 
 /* Line 1806 of yacc.c  */
-#line 9943 "preproc.y"
+#line 9943 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("reassign");
 }
@@ -38563,7 +38563,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1761:
 
 /* Line 1806 of yacc.c  */
-#line 9947 "preproc.y"
+#line 9947 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("recheck");
 }
@@ -38572,7 +38572,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1762:
 
 /* Line 1806 of yacc.c  */
-#line 9951 "preproc.y"
+#line 9951 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("recursive");
 }
@@ -38581,7 +38581,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1763:
 
 /* Line 1806 of yacc.c  */
-#line 9955 "preproc.y"
+#line 9955 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("reindex");
 }
@@ -38590,7 +38590,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1764:
 
 /* Line 1806 of yacc.c  */
-#line 9959 "preproc.y"
+#line 9959 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("relative");
 }
@@ -38599,7 +38599,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1765:
 
 /* Line 1806 of yacc.c  */
-#line 9963 "preproc.y"
+#line 9963 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("release");
 }
@@ -38608,7 +38608,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1766:
 
 /* Line 1806 of yacc.c  */
-#line 9967 "preproc.y"
+#line 9967 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("rename");
 }
@@ -38617,7 +38617,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1767:
 
 /* Line 1806 of yacc.c  */
-#line 9971 "preproc.y"
+#line 9971 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("repeatable");
 }
@@ -38626,7 +38626,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1768:
 
 /* Line 1806 of yacc.c  */
-#line 9975 "preproc.y"
+#line 9975 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("replace");
 }
@@ -38635,7 +38635,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1769:
 
 /* Line 1806 of yacc.c  */
-#line 9979 "preproc.y"
+#line 9979 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("replica");
 }
@@ -38644,7 +38644,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1770:
 
 /* Line 1806 of yacc.c  */
-#line 9983 "preproc.y"
+#line 9983 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("reset");
 }
@@ -38653,7 +38653,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1771:
 
 /* Line 1806 of yacc.c  */
-#line 9987 "preproc.y"
+#line 9987 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("restart");
 }
@@ -38662,7 +38662,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1772:
 
 /* Line 1806 of yacc.c  */
-#line 9991 "preproc.y"
+#line 9991 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("restrict");
 }
@@ -38671,7 +38671,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1773:
 
 /* Line 1806 of yacc.c  */
-#line 9995 "preproc.y"
+#line 9995 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("returns");
 }
@@ -38680,7 +38680,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1774:
 
 /* Line 1806 of yacc.c  */
-#line 9999 "preproc.y"
+#line 9999 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("revoke");
 }
@@ -38689,7 +38689,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1775:
 
 /* Line 1806 of yacc.c  */
-#line 10003 "preproc.y"
+#line 10003 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("role");
 }
@@ -38698,7 +38698,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1776:
 
 /* Line 1806 of yacc.c  */
-#line 10007 "preproc.y"
+#line 10007 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("rollback");
 }
@@ -38707,7 +38707,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1777:
 
 /* Line 1806 of yacc.c  */
-#line 10011 "preproc.y"
+#line 10011 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("rows");
 }
@@ -38716,7 +38716,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1778:
 
 /* Line 1806 of yacc.c  */
-#line 10015 "preproc.y"
+#line 10015 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("rule");
 }
@@ -38725,7 +38725,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1779:
 
 /* Line 1806 of yacc.c  */
-#line 10019 "preproc.y"
+#line 10019 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("savepoint");
 }
@@ -38734,7 +38734,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1780:
 
 /* Line 1806 of yacc.c  */
-#line 10023 "preproc.y"
+#line 10023 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("schema");
 }
@@ -38743,7 +38743,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1781:
 
 /* Line 1806 of yacc.c  */
-#line 10027 "preproc.y"
+#line 10027 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("scroll");
 }
@@ -38752,7 +38752,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1782:
 
 /* Line 1806 of yacc.c  */
-#line 10031 "preproc.y"
+#line 10031 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("search");
 }
@@ -38761,7 +38761,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1783:
 
 /* Line 1806 of yacc.c  */
-#line 10035 "preproc.y"
+#line 10035 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("security");
 }
@@ -38770,7 +38770,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1784:
 
 /* Line 1806 of yacc.c  */
-#line 10039 "preproc.y"
+#line 10039 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("sequence");
 }
@@ -38779,7 +38779,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1785:
 
 /* Line 1806 of yacc.c  */
-#line 10043 "preproc.y"
+#line 10043 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("serializable");
 }
@@ -38788,7 +38788,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1786:
 
 /* Line 1806 of yacc.c  */
-#line 10047 "preproc.y"
+#line 10047 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("server");
 }
@@ -38797,7 +38797,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1787:
 
 /* Line 1806 of yacc.c  */
-#line 10051 "preproc.y"
+#line 10051 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("session");
 }
@@ -38806,7 +38806,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1788:
 
 /* Line 1806 of yacc.c  */
-#line 10055 "preproc.y"
+#line 10055 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("set");
 }
@@ -38815,7 +38815,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1789:
 
 /* Line 1806 of yacc.c  */
-#line 10059 "preproc.y"
+#line 10059 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("share");
 }
@@ -38824,7 +38824,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1790:
 
 /* Line 1806 of yacc.c  */
-#line 10063 "preproc.y"
+#line 10063 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("show");
 }
@@ -38833,7 +38833,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1791:
 
 /* Line 1806 of yacc.c  */
-#line 10067 "preproc.y"
+#line 10067 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("simple");
 }
@@ -38842,7 +38842,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1792:
 
 /* Line 1806 of yacc.c  */
-#line 10071 "preproc.y"
+#line 10071 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("stable");
 }
@@ -38851,7 +38851,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1793:
 
 /* Line 1806 of yacc.c  */
-#line 10075 "preproc.y"
+#line 10075 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("standalone");
 }
@@ -38860,7 +38860,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1794:
 
 /* Line 1806 of yacc.c  */
-#line 10079 "preproc.y"
+#line 10079 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("start");
 }
@@ -38869,7 +38869,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1795:
 
 /* Line 1806 of yacc.c  */
-#line 10083 "preproc.y"
+#line 10083 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("statement");
 }
@@ -38878,7 +38878,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1796:
 
 /* Line 1806 of yacc.c  */
-#line 10087 "preproc.y"
+#line 10087 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("statistics");
 }
@@ -38887,7 +38887,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1797:
 
 /* Line 1806 of yacc.c  */
-#line 10091 "preproc.y"
+#line 10091 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("stdin");
 }
@@ -38896,7 +38896,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1798:
 
 /* Line 1806 of yacc.c  */
-#line 10095 "preproc.y"
+#line 10095 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("stdout");
 }
@@ -38905,7 +38905,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1799:
 
 /* Line 1806 of yacc.c  */
-#line 10099 "preproc.y"
+#line 10099 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("storage");
 }
@@ -38914,7 +38914,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1800:
 
 /* Line 1806 of yacc.c  */
-#line 10103 "preproc.y"
+#line 10103 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("strict");
 }
@@ -38923,7 +38923,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1801:
 
 /* Line 1806 of yacc.c  */
-#line 10107 "preproc.y"
+#line 10107 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("strip");
 }
@@ -38932,7 +38932,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1802:
 
 /* Line 1806 of yacc.c  */
-#line 10111 "preproc.y"
+#line 10111 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("superuser");
 }
@@ -38941,7 +38941,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1803:
 
 /* Line 1806 of yacc.c  */
-#line 10115 "preproc.y"
+#line 10115 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("sysid");
 }
@@ -38950,7 +38950,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1804:
 
 /* Line 1806 of yacc.c  */
-#line 10119 "preproc.y"
+#line 10119 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("system");
 }
@@ -38959,7 +38959,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1805:
 
 /* Line 1806 of yacc.c  */
-#line 10123 "preproc.y"
+#line 10123 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("tablespace");
 }
@@ -38968,7 +38968,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1806:
 
 /* Line 1806 of yacc.c  */
-#line 10127 "preproc.y"
+#line 10127 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("temp");
 }
@@ -38977,7 +38977,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1807:
 
 /* Line 1806 of yacc.c  */
-#line 10131 "preproc.y"
+#line 10131 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("template");
 }
@@ -38986,7 +38986,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1808:
 
 /* Line 1806 of yacc.c  */
-#line 10135 "preproc.y"
+#line 10135 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("temporary");
 }
@@ -38995,7 +38995,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1809:
 
 /* Line 1806 of yacc.c  */
-#line 10139 "preproc.y"
+#line 10139 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("text");
 }
@@ -39004,7 +39004,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1810:
 
 /* Line 1806 of yacc.c  */
-#line 10143 "preproc.y"
+#line 10143 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("transaction");
 }
@@ -39013,7 +39013,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1811:
 
 /* Line 1806 of yacc.c  */
-#line 10147 "preproc.y"
+#line 10147 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("trigger");
 }
@@ -39022,7 +39022,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1812:
 
 /* Line 1806 of yacc.c  */
-#line 10151 "preproc.y"
+#line 10151 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("truncate");
 }
@@ -39031,7 +39031,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1813:
 
 /* Line 1806 of yacc.c  */
-#line 10155 "preproc.y"
+#line 10155 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("trusted");
 }
@@ -39040,7 +39040,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1814:
 
 /* Line 1806 of yacc.c  */
-#line 10159 "preproc.y"
+#line 10159 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("type");
 }
@@ -39049,7 +39049,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1815:
 
 /* Line 1806 of yacc.c  */
-#line 10163 "preproc.y"
+#line 10163 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("unbounded");
 }
@@ -39058,7 +39058,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1816:
 
 /* Line 1806 of yacc.c  */
-#line 10167 "preproc.y"
+#line 10167 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("uncommitted");
 }
@@ -39067,7 +39067,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1817:
 
 /* Line 1806 of yacc.c  */
-#line 10171 "preproc.y"
+#line 10171 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("unencrypted");
 }
@@ -39076,7 +39076,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1818:
 
 /* Line 1806 of yacc.c  */
-#line 10175 "preproc.y"
+#line 10175 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("unknown");
 }
@@ -39085,7 +39085,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1819:
 
 /* Line 1806 of yacc.c  */
-#line 10179 "preproc.y"
+#line 10179 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("unlisten");
 }
@@ -39094,7 +39094,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1820:
 
 /* Line 1806 of yacc.c  */
-#line 10183 "preproc.y"
+#line 10183 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("until");
 }
@@ -39103,7 +39103,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1821:
 
 /* Line 1806 of yacc.c  */
-#line 10187 "preproc.y"
+#line 10187 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("update");
 }
@@ -39112,7 +39112,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1822:
 
 /* Line 1806 of yacc.c  */
-#line 10191 "preproc.y"
+#line 10191 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("vacuum");
 }
@@ -39121,7 +39121,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1823:
 
 /* Line 1806 of yacc.c  */
-#line 10195 "preproc.y"
+#line 10195 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("valid");
 }
@@ -39130,7 +39130,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1824:
 
 /* Line 1806 of yacc.c  */
-#line 10199 "preproc.y"
+#line 10199 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("validator");
 }
@@ -39139,7 +39139,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1825:
 
 /* Line 1806 of yacc.c  */
-#line 10203 "preproc.y"
+#line 10203 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("value");
 }
@@ -39148,7 +39148,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1826:
 
 /* Line 1806 of yacc.c  */
-#line 10207 "preproc.y"
+#line 10207 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("varying");
 }
@@ -39157,7 +39157,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1827:
 
 /* Line 1806 of yacc.c  */
-#line 10211 "preproc.y"
+#line 10211 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("version");
 }
@@ -39166,7 +39166,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1828:
 
 /* Line 1806 of yacc.c  */
-#line 10215 "preproc.y"
+#line 10215 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("view");
 }
@@ -39175,7 +39175,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1829:
 
 /* Line 1806 of yacc.c  */
-#line 10219 "preproc.y"
+#line 10219 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("volatile");
 }
@@ -39184,7 +39184,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1830:
 
 /* Line 1806 of yacc.c  */
-#line 10223 "preproc.y"
+#line 10223 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("whitespace");
 }
@@ -39193,7 +39193,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1831:
 
 /* Line 1806 of yacc.c  */
-#line 10227 "preproc.y"
+#line 10227 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("without");
 }
@@ -39202,7 +39202,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1832:
 
 /* Line 1806 of yacc.c  */
-#line 10231 "preproc.y"
+#line 10231 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("work");
 }
@@ -39211,7 +39211,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1833:
 
 /* Line 1806 of yacc.c  */
-#line 10235 "preproc.y"
+#line 10235 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("wrapper");
 }
@@ -39220,7 +39220,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1834:
 
 /* Line 1806 of yacc.c  */
-#line 10239 "preproc.y"
+#line 10239 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("write");
 }
@@ -39229,7 +39229,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1835:
 
 /* Line 1806 of yacc.c  */
-#line 10243 "preproc.y"
+#line 10243 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("xml");
 }
@@ -39238,7 +39238,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1836:
 
 /* Line 1806 of yacc.c  */
-#line 10247 "preproc.y"
+#line 10247 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("yes");
 }
@@ -39247,7 +39247,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1837:
 
 /* Line 1806 of yacc.c  */
-#line 10251 "preproc.y"
+#line 10251 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("zone");
 }
@@ -39256,7 +39256,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1838:
 
 /* Line 1806 of yacc.c  */
-#line 10259 "preproc.y"
+#line 10259 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("bigint");
 }
@@ -39265,7 +39265,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1839:
 
 /* Line 1806 of yacc.c  */
-#line 10263 "preproc.y"
+#line 10263 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("bit");
 }
@@ -39274,7 +39274,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1840:
 
 /* Line 1806 of yacc.c  */
-#line 10267 "preproc.y"
+#line 10267 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("boolean");
 }
@@ -39283,7 +39283,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1841:
 
 /* Line 1806 of yacc.c  */
-#line 10271 "preproc.y"
+#line 10271 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("character");
 }
@@ -39292,7 +39292,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1842:
 
 /* Line 1806 of yacc.c  */
-#line 10275 "preproc.y"
+#line 10275 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("coalesce");
 }
@@ -39301,7 +39301,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1843:
 
 /* Line 1806 of yacc.c  */
-#line 10279 "preproc.y"
+#line 10279 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("dec");
 }
@@ -39310,7 +39310,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1844:
 
 /* Line 1806 of yacc.c  */
-#line 10283 "preproc.y"
+#line 10283 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("decimal");
 }
@@ -39319,7 +39319,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1845:
 
 /* Line 1806 of yacc.c  */
-#line 10287 "preproc.y"
+#line 10287 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("exists");
 }
@@ -39328,7 +39328,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1846:
 
 /* Line 1806 of yacc.c  */
-#line 10291 "preproc.y"
+#line 10291 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("extract");
 }
@@ -39337,7 +39337,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1847:
 
 /* Line 1806 of yacc.c  */
-#line 10295 "preproc.y"
+#line 10295 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("float");
 }
@@ -39346,7 +39346,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1848:
 
 /* Line 1806 of yacc.c  */
-#line 10299 "preproc.y"
+#line 10299 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("greatest");
 }
@@ -39355,7 +39355,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1849:
 
 /* Line 1806 of yacc.c  */
-#line 10303 "preproc.y"
+#line 10303 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("inout");
 }
@@ -39364,7 +39364,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1850:
 
 /* Line 1806 of yacc.c  */
-#line 10307 "preproc.y"
+#line 10307 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("integer");
 }
@@ -39373,7 +39373,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1851:
 
 /* Line 1806 of yacc.c  */
-#line 10311 "preproc.y"
+#line 10311 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("interval");
 }
@@ -39382,7 +39382,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1852:
 
 /* Line 1806 of yacc.c  */
-#line 10315 "preproc.y"
+#line 10315 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("least");
 }
@@ -39391,7 +39391,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1853:
 
 /* Line 1806 of yacc.c  */
-#line 10319 "preproc.y"
+#line 10319 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("national");
 }
@@ -39400,7 +39400,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1854:
 
 /* Line 1806 of yacc.c  */
-#line 10323 "preproc.y"
+#line 10323 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("nchar");
 }
@@ -39409,7 +39409,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1855:
 
 /* Line 1806 of yacc.c  */
-#line 10327 "preproc.y"
+#line 10327 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("none");
 }
@@ -39418,7 +39418,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1856:
 
 /* Line 1806 of yacc.c  */
-#line 10331 "preproc.y"
+#line 10331 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("nullif");
 }
@@ -39427,7 +39427,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1857:
 
 /* Line 1806 of yacc.c  */
-#line 10335 "preproc.y"
+#line 10335 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("numeric");
 }
@@ -39436,7 +39436,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1858:
 
 /* Line 1806 of yacc.c  */
-#line 10339 "preproc.y"
+#line 10339 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("out");
 }
@@ -39445,7 +39445,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1859:
 
 /* Line 1806 of yacc.c  */
-#line 10343 "preproc.y"
+#line 10343 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("overlay");
 }
@@ -39454,7 +39454,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1860:
 
 /* Line 1806 of yacc.c  */
-#line 10347 "preproc.y"
+#line 10347 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("position");
 }
@@ -39463,7 +39463,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1861:
 
 /* Line 1806 of yacc.c  */
-#line 10351 "preproc.y"
+#line 10351 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("precision");
 }
@@ -39472,7 +39472,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1862:
 
 /* Line 1806 of yacc.c  */
-#line 10355 "preproc.y"
+#line 10355 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("real");
 }
@@ -39481,7 +39481,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1863:
 
 /* Line 1806 of yacc.c  */
-#line 10359 "preproc.y"
+#line 10359 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("row");
 }
@@ -39490,7 +39490,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1864:
 
 /* Line 1806 of yacc.c  */
-#line 10363 "preproc.y"
+#line 10363 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("setof");
 }
@@ -39499,7 +39499,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1865:
 
 /* Line 1806 of yacc.c  */
-#line 10367 "preproc.y"
+#line 10367 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("smallint");
 }
@@ -39508,7 +39508,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1866:
 
 /* Line 1806 of yacc.c  */
-#line 10371 "preproc.y"
+#line 10371 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("substring");
 }
@@ -39517,7 +39517,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1867:
 
 /* Line 1806 of yacc.c  */
-#line 10375 "preproc.y"
+#line 10375 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("time");
 }
@@ -39526,7 +39526,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1868:
 
 /* Line 1806 of yacc.c  */
-#line 10379 "preproc.y"
+#line 10379 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("timestamp");
 }
@@ -39535,7 +39535,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1869:
 
 /* Line 1806 of yacc.c  */
-#line 10383 "preproc.y"
+#line 10383 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("treat");
 }
@@ -39544,7 +39544,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1870:
 
 /* Line 1806 of yacc.c  */
-#line 10387 "preproc.y"
+#line 10387 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("trim");
 }
@@ -39553,7 +39553,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1871:
 
 /* Line 1806 of yacc.c  */
-#line 10391 "preproc.y"
+#line 10391 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("varchar");
 }
@@ -39562,7 +39562,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1872:
 
 /* Line 1806 of yacc.c  */
-#line 10395 "preproc.y"
+#line 10395 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("xmlattributes");
 }
@@ -39571,7 +39571,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1873:
 
 /* Line 1806 of yacc.c  */
-#line 10399 "preproc.y"
+#line 10399 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("xmlconcat");
 }
@@ -39580,7 +39580,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1874:
 
 /* Line 1806 of yacc.c  */
-#line 10403 "preproc.y"
+#line 10403 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("xmlelement");
 }
@@ -39589,7 +39589,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1875:
 
 /* Line 1806 of yacc.c  */
-#line 10407 "preproc.y"
+#line 10407 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("xmlforest");
 }
@@ -39598,7 +39598,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1876:
 
 /* Line 1806 of yacc.c  */
-#line 10411 "preproc.y"
+#line 10411 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("xmlparse");
 }
@@ -39607,7 +39607,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1877:
 
 /* Line 1806 of yacc.c  */
-#line 10415 "preproc.y"
+#line 10415 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("xmlpi");
 }
@@ -39616,7 +39616,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1878:
 
 /* Line 1806 of yacc.c  */
-#line 10419 "preproc.y"
+#line 10419 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("xmlroot");
 }
@@ -39625,7 +39625,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1879:
 
 /* Line 1806 of yacc.c  */
-#line 10423 "preproc.y"
+#line 10423 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("xmlserialize");
 }
@@ -39634,7 +39634,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1880:
 
 /* Line 1806 of yacc.c  */
-#line 10431 "preproc.y"
+#line 10431 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("authorization");
 }
@@ -39643,7 +39643,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1881:
 
 /* Line 1806 of yacc.c  */
-#line 10435 "preproc.y"
+#line 10435 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("between");
 }
@@ -39652,7 +39652,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1882:
 
 /* Line 1806 of yacc.c  */
-#line 10439 "preproc.y"
+#line 10439 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("binary");
 }
@@ -39661,7 +39661,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1883:
 
 /* Line 1806 of yacc.c  */
-#line 10443 "preproc.y"
+#line 10443 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("cross");
 }
@@ -39670,7 +39670,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1884:
 
 /* Line 1806 of yacc.c  */
-#line 10447 "preproc.y"
+#line 10447 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("current_schema");
 }
@@ -39679,7 +39679,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1885:
 
 /* Line 1806 of yacc.c  */
-#line 10451 "preproc.y"
+#line 10451 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("freeze");
 }
@@ -39688,7 +39688,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1886:
 
 /* Line 1806 of yacc.c  */
-#line 10455 "preproc.y"
+#line 10455 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("full");
 }
@@ -39697,7 +39697,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1887:
 
 /* Line 1806 of yacc.c  */
-#line 10459 "preproc.y"
+#line 10459 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("ilike");
 }
@@ -39706,7 +39706,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1888:
 
 /* Line 1806 of yacc.c  */
-#line 10463 "preproc.y"
+#line 10463 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("inner");
 }
@@ -39715,7 +39715,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1889:
 
 /* Line 1806 of yacc.c  */
-#line 10467 "preproc.y"
+#line 10467 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("is");
 }
@@ -39724,7 +39724,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1890:
 
 /* Line 1806 of yacc.c  */
-#line 10471 "preproc.y"
+#line 10471 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("isnull");
 }
@@ -39733,7 +39733,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1891:
 
 /* Line 1806 of yacc.c  */
-#line 10475 "preproc.y"
+#line 10475 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("join");
 }
@@ -39742,7 +39742,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1892:
 
 /* Line 1806 of yacc.c  */
-#line 10479 "preproc.y"
+#line 10479 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("left");
 }
@@ -39751,7 +39751,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1893:
 
 /* Line 1806 of yacc.c  */
-#line 10483 "preproc.y"
+#line 10483 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("like");
 }
@@ -39760,7 +39760,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1894:
 
 /* Line 1806 of yacc.c  */
-#line 10487 "preproc.y"
+#line 10487 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("natural");
 }
@@ -39769,7 +39769,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1895:
 
 /* Line 1806 of yacc.c  */
-#line 10491 "preproc.y"
+#line 10491 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("notnull");
 }
@@ -39778,7 +39778,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1896:
 
 /* Line 1806 of yacc.c  */
-#line 10495 "preproc.y"
+#line 10495 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("outer");
 }
@@ -39787,7 +39787,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1897:
 
 /* Line 1806 of yacc.c  */
-#line 10499 "preproc.y"
+#line 10499 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("over");
 }
@@ -39796,7 +39796,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1898:
 
 /* Line 1806 of yacc.c  */
-#line 10503 "preproc.y"
+#line 10503 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("overlaps");
 }
@@ -39805,7 +39805,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1899:
 
 /* Line 1806 of yacc.c  */
-#line 10507 "preproc.y"
+#line 10507 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("right");
 }
@@ -39814,7 +39814,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1900:
 
 /* Line 1806 of yacc.c  */
-#line 10511 "preproc.y"
+#line 10511 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("similar");
 }
@@ -39823,7 +39823,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1901:
 
 /* Line 1806 of yacc.c  */
-#line 10515 "preproc.y"
+#line 10515 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("verbose");
 }
@@ -39832,7 +39832,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1902:
 
 /* Line 1806 of yacc.c  */
-#line 10523 "preproc.y"
+#line 10523 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("all");
 }
@@ -39841,7 +39841,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1903:
 
 /* Line 1806 of yacc.c  */
-#line 10527 "preproc.y"
+#line 10527 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("analyse");
 }
@@ -39850,7 +39850,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1904:
 
 /* Line 1806 of yacc.c  */
-#line 10531 "preproc.y"
+#line 10531 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("analyze");
 }
@@ -39859,7 +39859,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1905:
 
 /* Line 1806 of yacc.c  */
-#line 10535 "preproc.y"
+#line 10535 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("and");
 }
@@ -39868,7 +39868,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1906:
 
 /* Line 1806 of yacc.c  */
-#line 10539 "preproc.y"
+#line 10539 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("any");
 }
@@ -39877,7 +39877,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1907:
 
 /* Line 1806 of yacc.c  */
-#line 10543 "preproc.y"
+#line 10543 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("array");
 }
@@ -39886,7 +39886,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1908:
 
 /* Line 1806 of yacc.c  */
-#line 10547 "preproc.y"
+#line 10547 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("as");
 }
@@ -39895,7 +39895,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1909:
 
 /* Line 1806 of yacc.c  */
-#line 10551 "preproc.y"
+#line 10551 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("asc");
 }
@@ -39904,7 +39904,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1910:
 
 /* Line 1806 of yacc.c  */
-#line 10555 "preproc.y"
+#line 10555 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("asymmetric");
 }
@@ -39913,7 +39913,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1911:
 
 /* Line 1806 of yacc.c  */
-#line 10559 "preproc.y"
+#line 10559 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("both");
 }
@@ -39922,7 +39922,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1912:
 
 /* Line 1806 of yacc.c  */
-#line 10563 "preproc.y"
+#line 10563 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("case");
 }
@@ -39931,7 +39931,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1913:
 
 /* Line 1806 of yacc.c  */
-#line 10567 "preproc.y"
+#line 10567 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("cast");
 }
@@ -39940,7 +39940,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1914:
 
 /* Line 1806 of yacc.c  */
-#line 10571 "preproc.y"
+#line 10571 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("check");
 }
@@ -39949,7 +39949,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1915:
 
 /* Line 1806 of yacc.c  */
-#line 10575 "preproc.y"
+#line 10575 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("collate");
 }
@@ -39958,7 +39958,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1916:
 
 /* Line 1806 of yacc.c  */
-#line 10579 "preproc.y"
+#line 10579 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("column");
 }
@@ -39967,7 +39967,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1917:
 
 /* Line 1806 of yacc.c  */
-#line 10583 "preproc.y"
+#line 10583 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("constraint");
 }
@@ -39976,7 +39976,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1918:
 
 /* Line 1806 of yacc.c  */
-#line 10587 "preproc.y"
+#line 10587 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("create");
 }
@@ -39985,7 +39985,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1919:
 
 /* Line 1806 of yacc.c  */
-#line 10591 "preproc.y"
+#line 10591 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("current_catalog");
 }
@@ -39994,7 +39994,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1920:
 
 /* Line 1806 of yacc.c  */
-#line 10595 "preproc.y"
+#line 10595 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("current_date");
 }
@@ -40003,7 +40003,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1921:
 
 /* Line 1806 of yacc.c  */
-#line 10599 "preproc.y"
+#line 10599 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("current_role");
 }
@@ -40012,7 +40012,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1922:
 
 /* Line 1806 of yacc.c  */
-#line 10603 "preproc.y"
+#line 10603 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("current_time");
 }
@@ -40021,7 +40021,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1923:
 
 /* Line 1806 of yacc.c  */
-#line 10607 "preproc.y"
+#line 10607 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("current_timestamp");
 }
@@ -40030,7 +40030,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1924:
 
 /* Line 1806 of yacc.c  */
-#line 10611 "preproc.y"
+#line 10611 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("current_user");
 }
@@ -40039,7 +40039,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1925:
 
 /* Line 1806 of yacc.c  */
-#line 10615 "preproc.y"
+#line 10615 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("default");
 }
@@ -40048,7 +40048,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1926:
 
 /* Line 1806 of yacc.c  */
-#line 10619 "preproc.y"
+#line 10619 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("deferrable");
 }
@@ -40057,7 +40057,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1927:
 
 /* Line 1806 of yacc.c  */
-#line 10623 "preproc.y"
+#line 10623 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("desc");
 }
@@ -40066,7 +40066,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1928:
 
 /* Line 1806 of yacc.c  */
-#line 10627 "preproc.y"
+#line 10627 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("distinct");
 }
@@ -40075,7 +40075,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1929:
 
 /* Line 1806 of yacc.c  */
-#line 10631 "preproc.y"
+#line 10631 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("do");
 }
@@ -40084,7 +40084,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1930:
 
 /* Line 1806 of yacc.c  */
-#line 10635 "preproc.y"
+#line 10635 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("else");
 }
@@ -40093,7 +40093,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1931:
 
 /* Line 1806 of yacc.c  */
-#line 10639 "preproc.y"
+#line 10639 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("end");
 }
@@ -40102,7 +40102,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1932:
 
 /* Line 1806 of yacc.c  */
-#line 10643 "preproc.y"
+#line 10643 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("except");
 }
@@ -40111,7 +40111,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1933:
 
 /* Line 1806 of yacc.c  */
-#line 10647 "preproc.y"
+#line 10647 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("false");
 }
@@ -40120,7 +40120,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1934:
 
 /* Line 1806 of yacc.c  */
-#line 10651 "preproc.y"
+#line 10651 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("fetch");
 }
@@ -40129,7 +40129,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1935:
 
 /* Line 1806 of yacc.c  */
-#line 10655 "preproc.y"
+#line 10655 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("for");
 }
@@ -40138,7 +40138,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1936:
 
 /* Line 1806 of yacc.c  */
-#line 10659 "preproc.y"
+#line 10659 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("foreign");
 }
@@ -40147,7 +40147,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1937:
 
 /* Line 1806 of yacc.c  */
-#line 10663 "preproc.y"
+#line 10663 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("from");
 }
@@ -40156,7 +40156,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1938:
 
 /* Line 1806 of yacc.c  */
-#line 10667 "preproc.y"
+#line 10667 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("grant");
 }
@@ -40165,7 +40165,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1939:
 
 /* Line 1806 of yacc.c  */
-#line 10671 "preproc.y"
+#line 10671 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("group");
 }
@@ -40174,7 +40174,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1940:
 
 /* Line 1806 of yacc.c  */
-#line 10675 "preproc.y"
+#line 10675 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("having");
 }
@@ -40183,7 +40183,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1941:
 
 /* Line 1806 of yacc.c  */
-#line 10679 "preproc.y"
+#line 10679 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("in");
 }
@@ -40192,7 +40192,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1942:
 
 /* Line 1806 of yacc.c  */
-#line 10683 "preproc.y"
+#line 10683 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("initially");
 }
@@ -40201,7 +40201,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1943:
 
 /* Line 1806 of yacc.c  */
-#line 10687 "preproc.y"
+#line 10687 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("intersect");
 }
@@ -40210,7 +40210,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1944:
 
 /* Line 1806 of yacc.c  */
-#line 10691 "preproc.y"
+#line 10691 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("into");
 }
@@ -40219,7 +40219,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1945:
 
 /* Line 1806 of yacc.c  */
-#line 10695 "preproc.y"
+#line 10695 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("leading");
 }
@@ -40228,7 +40228,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1946:
 
 /* Line 1806 of yacc.c  */
-#line 10699 "preproc.y"
+#line 10699 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("limit");
 }
@@ -40237,7 +40237,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1947:
 
 /* Line 1806 of yacc.c  */
-#line 10703 "preproc.y"
+#line 10703 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("localtime");
 }
@@ -40246,7 +40246,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1948:
 
 /* Line 1806 of yacc.c  */
-#line 10707 "preproc.y"
+#line 10707 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("localtimestamp");
 }
@@ -40255,7 +40255,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1949:
 
 /* Line 1806 of yacc.c  */
-#line 10711 "preproc.y"
+#line 10711 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("new");
 }
@@ -40264,7 +40264,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1950:
 
 /* Line 1806 of yacc.c  */
-#line 10715 "preproc.y"
+#line 10715 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("not");
 }
@@ -40273,7 +40273,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1951:
 
 /* Line 1806 of yacc.c  */
-#line 10719 "preproc.y"
+#line 10719 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("null");
 }
@@ -40282,7 +40282,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1952:
 
 /* Line 1806 of yacc.c  */
-#line 10723 "preproc.y"
+#line 10723 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("off");
 }
@@ -40291,7 +40291,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1953:
 
 /* Line 1806 of yacc.c  */
-#line 10727 "preproc.y"
+#line 10727 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("offset");
 }
@@ -40300,7 +40300,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1954:
 
 /* Line 1806 of yacc.c  */
-#line 10731 "preproc.y"
+#line 10731 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("old");
 }
@@ -40309,7 +40309,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1955:
 
 /* Line 1806 of yacc.c  */
-#line 10735 "preproc.y"
+#line 10735 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("on");
 }
@@ -40318,7 +40318,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1956:
 
 /* Line 1806 of yacc.c  */
-#line 10739 "preproc.y"
+#line 10739 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("only");
 }
@@ -40327,7 +40327,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1957:
 
 /* Line 1806 of yacc.c  */
-#line 10743 "preproc.y"
+#line 10743 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("or");
 }
@@ -40336,7 +40336,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1958:
 
 /* Line 1806 of yacc.c  */
-#line 10747 "preproc.y"
+#line 10747 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("order");
 }
@@ -40345,7 +40345,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1959:
 
 /* Line 1806 of yacc.c  */
-#line 10751 "preproc.y"
+#line 10751 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("placing");
 }
@@ -40354,7 +40354,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1960:
 
 /* Line 1806 of yacc.c  */
-#line 10755 "preproc.y"
+#line 10755 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("primary");
 }
@@ -40363,7 +40363,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1961:
 
 /* Line 1806 of yacc.c  */
-#line 10759 "preproc.y"
+#line 10759 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("references");
 }
@@ -40372,7 +40372,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1962:
 
 /* Line 1806 of yacc.c  */
-#line 10763 "preproc.y"
+#line 10763 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("returning");
 }
@@ -40381,7 +40381,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1963:
 
 /* Line 1806 of yacc.c  */
-#line 10767 "preproc.y"
+#line 10767 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("select");
 }
@@ -40390,7 +40390,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1964:
 
 /* Line 1806 of yacc.c  */
-#line 10771 "preproc.y"
+#line 10771 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("session_user");
 }
@@ -40399,7 +40399,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1965:
 
 /* Line 1806 of yacc.c  */
-#line 10775 "preproc.y"
+#line 10775 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("some");
 }
@@ -40408,7 +40408,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1966:
 
 /* Line 1806 of yacc.c  */
-#line 10779 "preproc.y"
+#line 10779 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("symmetric");
 }
@@ -40417,7 +40417,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1967:
 
 /* Line 1806 of yacc.c  */
-#line 10783 "preproc.y"
+#line 10783 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("table");
 }
@@ -40426,7 +40426,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1968:
 
 /* Line 1806 of yacc.c  */
-#line 10787 "preproc.y"
+#line 10787 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("then");
 }
@@ -40435,7 +40435,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1969:
 
 /* Line 1806 of yacc.c  */
-#line 10791 "preproc.y"
+#line 10791 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("trailing");
 }
@@ -40444,7 +40444,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1970:
 
 /* Line 1806 of yacc.c  */
-#line 10795 "preproc.y"
+#line 10795 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("true");
 }
@@ -40453,7 +40453,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1971:
 
 /* Line 1806 of yacc.c  */
-#line 10799 "preproc.y"
+#line 10799 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("unique");
 }
@@ -40462,7 +40462,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1972:
 
 /* Line 1806 of yacc.c  */
-#line 10803 "preproc.y"
+#line 10803 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("user");
 }
@@ -40471,7 +40471,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1973:
 
 /* Line 1806 of yacc.c  */
-#line 10807 "preproc.y"
+#line 10807 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("using");
 }
@@ -40480,7 +40480,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1974:
 
 /* Line 1806 of yacc.c  */
-#line 10811 "preproc.y"
+#line 10811 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("variadic");
 }
@@ -40489,7 +40489,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1975:
 
 /* Line 1806 of yacc.c  */
-#line 10815 "preproc.y"
+#line 10815 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("when");
 }
@@ -40498,7 +40498,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1976:
 
 /* Line 1806 of yacc.c  */
-#line 10819 "preproc.y"
+#line 10819 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("where");
 }
@@ -40507,7 +40507,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1977:
 
 /* Line 1806 of yacc.c  */
-#line 10823 "preproc.y"
+#line 10823 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("window");
 }
@@ -40516,7 +40516,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1978:
 
 /* Line 1806 of yacc.c  */
-#line 10827 "preproc.y"
+#line 10827 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
  (yyval.str) = make_str("with");
 }
@@ -40525,7 +40525,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1979:
 
 /* Line 1806 of yacc.c  */
-#line 10835 "preproc.y"
+#line 10835 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
 		if (!QueryIsRule)
 			mmerror(PARSE_ERROR, ET_ERROR, "OLD used in query that is not in a rule");
@@ -40537,7 +40537,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1980:
 
 /* Line 1806 of yacc.c  */
-#line 10842 "preproc.y"
+#line 10842 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
 		if (!QueryIsRule)
 			mmerror(PARSE_ERROR, ET_ERROR, "NEW used in query that is not in a rule");
@@ -40549,14 +40549,14 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1983:
 
 /* Line 1806 of yacc.c  */
-#line 10858 "preproc.y"
+#line 10858 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { connection = NULL; }
     break;
 
   case 1985:
 
 /* Line 1806 of yacc.c  */
-#line 10861 "preproc.y"
+#line 10861 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
                         fprintf(yyout, "%s", (yyvsp[(2) - (2)].str));
                         free((yyvsp[(2) - (2)].str));
@@ -40567,42 +40567,42 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1987:
 
 /* Line 1806 of yacc.c  */
-#line 10867 "preproc.y"
+#line 10867 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { fprintf(yyout, "%s", (yyvsp[(1) - (1)].str)); free((yyvsp[(1) - (1)].str)); }
     break;
 
   case 1988:
 
 /* Line 1806 of yacc.c  */
-#line 10868 "preproc.y"
+#line 10868 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { fprintf(yyout, "%s", (yyvsp[(1) - (1)].str)); free((yyvsp[(1) - (1)].str)); }
     break;
 
   case 1989:
 
 /* Line 1806 of yacc.c  */
-#line 10869 "preproc.y"
+#line 10869 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { braces_open++; fputs("{", yyout); }
     break;
 
   case 1990:
 
 /* Line 1806 of yacc.c  */
-#line 10870 "preproc.y"
+#line 10870 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { remove_typedefs(braces_open); remove_variables(braces_open--); fputs("}", yyout); }
     break;
 
   case 1991:
 
 /* Line 1806 of yacc.c  */
-#line 10873 "preproc.y"
+#line 10873 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {FoundInto = 0;}
     break;
 
   case 1992:
 
 /* Line 1806 of yacc.c  */
-#line 10874 "preproc.y"
+#line 10874 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 			if (FoundInto == 1)
 				mmerror(PARSE_ERROR, ET_ERROR, "CREATE TABLE AS cannot specify INTO");
@@ -40614,14 +40614,14 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1993:
 
 /* Line 1806 of yacc.c  */
-#line 10883 "preproc.y"
+#line 10883 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {QueryIsRule = 1;}
     break;
 
   case 1994:
 
 /* Line 1806 of yacc.c  */
-#line 10886 "preproc.y"
+#line 10886 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 			QueryIsRule=0;
 			(yyval.str) = cat_str(12, make_str("create"), (yyvsp[(2) - (14)].str), make_str("rule"), (yyvsp[(4) - (14)].str), make_str("as on"), (yyvsp[(8) - (14)].str), make_str("to"), (yyvsp[(10) - (14)].str), (yyvsp[(11) - (14)].str), make_str("do"), (yyvsp[(13) - (14)].str), (yyvsp[(14) - (14)].str));
@@ -40631,7 +40631,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1995:
 
 /* Line 1806 of yacc.c  */
-#line 10893 "preproc.y"
+#line 10893 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
                         connection = (yyvsp[(2) - (2)].str);
                         /*
@@ -40647,35 +40647,35 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 1996:
 
 /* Line 1806 of yacc.c  */
-#line 10909 "preproc.y"
+#line 10909 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = cat_str(5, (yyvsp[(3) - (5)].str), make_str(","), (yyvsp[(5) - (5)].str), make_str(","), (yyvsp[(4) - (5)].str)); }
     break;
 
   case 1997:
 
 /* Line 1806 of yacc.c  */
-#line 10911 "preproc.y"
+#line 10911 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("NULL, NULL, NULL, \"DEFAULT\""); }
     break;
 
   case 1998:
 
 /* Line 1806 of yacc.c  */
-#line 10914 "preproc.y"
+#line 10914 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = cat_str(3, make_str("NULL,"), (yyvsp[(2) - (2)].str), make_str(", NULL")); }
     break;
 
   case 1999:
 
 /* Line 1806 of yacc.c  */
-#line 10916 "preproc.y"
+#line 10916 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = cat2_str((yyvsp[(2) - (2)].str), make_str(", NULL, NULL, NULL")); }
     break;
 
   case 2000:
 
 /* Line 1806 of yacc.c  */
-#line 10920 "preproc.y"
+#line 10920 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 			/* old style: dbname[@server][:port] */
 			if (strlen((yyvsp[(2) - (3)].str)) > 0 && *((yyvsp[(2) - (3)].str)) != '@')
@@ -40692,7 +40692,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 2001:
 
 /* Line 1806 of yacc.c  */
-#line 10932 "preproc.y"
+#line 10932 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 			/* new style: <tcp|unix>:postgresql://server[:port][/dbname] */
 			if (strncmp((yyvsp[(1) - (7)].str), "unix:postgresql", strlen("unix:postgresql")) != 0 && strncmp((yyvsp[(1) - (7)].str), "tcp:postgresql", strlen("tcp:postgresql")) != 0)
@@ -40713,7 +40713,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 2002:
 
 /* Line 1806 of yacc.c  */
-#line 10948 "preproc.y"
+#line 10948 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 			(yyval.str) = (yyvsp[(1) - (1)].str);
 		}
@@ -40722,7 +40722,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 2003:
 
 /* Line 1806 of yacc.c  */
-#line 10952 "preproc.y"
+#line 10952 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 			/* We can only process double quoted strings not single quotes ones,
 			 * so we change the quotes.
@@ -40736,21 +40736,21 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 2004:
 
 /* Line 1806 of yacc.c  */
-#line 10962 "preproc.y"
+#line 10962 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(1) - (1)].str); }
     break;
 
   case 2005:
 
 /* Line 1806 of yacc.c  */
-#line 10963 "preproc.y"
+#line 10963 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = EMPTY; }
     break;
 
   case 2006:
 
 /* Line 1806 of yacc.c  */
-#line 10967 "preproc.y"
+#line 10967 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 			if (strcmp((yyvsp[(2) - (2)].str), "postgresql") != 0 && strcmp((yyvsp[(2) - (2)].str), "postgres") != 0)
 				mmerror(PARSE_ERROR, ET_ERROR, "expected \"postgresql\", found \"%s\"", (yyvsp[(2) - (2)].str));
@@ -40765,7 +40765,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 2007:
 
 /* Line 1806 of yacc.c  */
-#line 10979 "preproc.y"
+#line 10979 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 			if (strcmp((yyvsp[(1) - (2)].str), "@") != 0 && strcmp((yyvsp[(1) - (2)].str), "//") != 0)
 				mmerror(PARSE_ERROR, ET_ERROR, "expected \"@\" or \"://\", found \"%s\"", (yyvsp[(1) - (2)].str));
@@ -40777,112 +40777,112 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 2008:
 
 /* Line 1806 of yacc.c  */
-#line 10987 "preproc.y"
+#line 10987 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(1) - (1)].str); }
     break;
 
   case 2009:
 
 /* Line 1806 of yacc.c  */
-#line 10988 "preproc.y"
+#line 10988 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = EMPTY; }
     break;
 
   case 2010:
 
 /* Line 1806 of yacc.c  */
-#line 10991 "preproc.y"
+#line 10991 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(1) - (1)].str); }
     break;
 
   case 2011:
 
 /* Line 1806 of yacc.c  */
-#line 10992 "preproc.y"
+#line 10992 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make3_str((yyvsp[(1) - (3)].str), make_str("."), (yyvsp[(3) - (3)].str)); }
     break;
 
   case 2012:
 
 /* Line 1806 of yacc.c  */
-#line 10993 "preproc.y"
+#line 10993 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_name(); }
     break;
 
   case 2013:
 
 /* Line 1806 of yacc.c  */
-#line 10996 "preproc.y"
+#line 10996 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make2_str(make_str(":"), (yyvsp[(2) - (2)].str)); }
     break;
 
   case 2014:
 
 /* Line 1806 of yacc.c  */
-#line 10997 "preproc.y"
+#line 10997 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = EMPTY; }
     break;
 
   case 2015:
 
 /* Line 1806 of yacc.c  */
-#line 11000 "preproc.y"
+#line 11000 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(2) - (2)].str); }
     break;
 
   case 2016:
 
 /* Line 1806 of yacc.c  */
-#line 11001 "preproc.y"
+#line 11001 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("NULL"); }
     break;
 
   case 2017:
 
 /* Line 1806 of yacc.c  */
-#line 11004 "preproc.y"
+#line 11004 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(2) - (2)].str); }
     break;
 
   case 2018:
 
 /* Line 1806 of yacc.c  */
-#line 11005 "preproc.y"
+#line 11005 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("NULL, NULL"); }
     break;
 
   case 2019:
 
 /* Line 1806 of yacc.c  */
-#line 11009 "preproc.y"
+#line 11009 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = cat2_str((yyvsp[(1) - (1)].str), make_str(", NULL")); }
     break;
 
   case 2020:
 
 /* Line 1806 of yacc.c  */
-#line 11011 "preproc.y"
+#line 11011 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = cat_str(3, (yyvsp[(1) - (3)].str), make_str(","), (yyvsp[(3) - (3)].str)); }
     break;
 
   case 2021:
 
 /* Line 1806 of yacc.c  */
-#line 11013 "preproc.y"
+#line 11013 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = cat_str(3, (yyvsp[(1) - (4)].str), make_str(","), (yyvsp[(4) - (4)].str)); }
     break;
 
   case 2022:
 
 /* Line 1806 of yacc.c  */
-#line 11015 "preproc.y"
+#line 11015 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = cat_str(3, (yyvsp[(1) - (3)].str), make_str(","), (yyvsp[(3) - (3)].str)); }
     break;
 
   case 2023:
 
 /* Line 1806 of yacc.c  */
-#line 11019 "preproc.y"
+#line 11019 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 			if ((yyvsp[(1) - (1)].str)[0] == '\"')
 				(yyval.str) = (yyvsp[(1) - (1)].str);
@@ -40894,7 +40894,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 2024:
 
 /* Line 1806 of yacc.c  */
-#line 11026 "preproc.y"
+#line 11026 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 			if ((yyvsp[(1) - (1)].str)[0] == '\"')
 				(yyval.str) = (yyvsp[(1) - (1)].str);
@@ -40906,7 +40906,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 2025:
 
 /* Line 1806 of yacc.c  */
-#line 11033 "preproc.y"
+#line 11033 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 			enum ECPGttype type = argsinsert->variable->type->type;
 
@@ -40925,7 +40925,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 2026:
 
 /* Line 1806 of yacc.c  */
-#line 11049 "preproc.y"
+#line 11049 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 			/* check if we have a string variable */
 			struct variable *p = find_variable((yyvsp[(1) - (1)].str));
@@ -40961,7 +40961,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 2027:
 
 /* Line 1806 of yacc.c  */
-#line 11082 "preproc.y"
+#line 11082 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 			if (strlen((yyvsp[(1) - (2)].str)) == 0)
 				mmerror(PARSE_ERROR, ET_ERROR, "incomplete statement");
@@ -40976,21 +40976,21 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 2028:
 
 /* Line 1806 of yacc.c  */
-#line 11091 "preproc.y"
+#line 11091 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = EMPTY; }
     break;
 
   case 2029:
 
 /* Line 1806 of yacc.c  */
-#line 11095 "preproc.y"
+#line 11095 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make2_str((yyvsp[(1) - (2)].str), (yyvsp[(2) - (2)].str)); }
     break;
 
   case 2030:
 
 /* Line 1806 of yacc.c  */
-#line 11097 "preproc.y"
+#line 11097 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 				if (strlen((yyvsp[(3) - (4)].str)) == 0)
 					mmerror(PARSE_ERROR, ET_ERROR, "incomplete statement");
@@ -41005,35 +41005,35 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 2031:
 
 /* Line 1806 of yacc.c  */
-#line 11109 "preproc.y"
+#line 11109 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = EMPTY; }
     break;
 
   case 2032:
 
 /* Line 1806 of yacc.c  */
-#line 11111 "preproc.y"
+#line 11111 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make2_str(make_str("="), (yyvsp[(2) - (2)].str)); }
     break;
 
   case 2033:
 
 /* Line 1806 of yacc.c  */
-#line 11113 "preproc.y"
+#line 11113 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make2_str(make_str("="), (yyvsp[(2) - (2)].str)); }
     break;
 
   case 2034:
 
 /* Line 1806 of yacc.c  */
-#line 11115 "preproc.y"
+#line 11115 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make2_str(make_str("="), (yyvsp[(2) - (2)].str)); }
     break;
 
   case 2035:
 
 /* Line 1806 of yacc.c  */
-#line 11118 "preproc.y"
+#line 11118 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
                                         if ((yyvsp[(1) - (1)].str)[0] == '\"' && (yyvsp[(1) - (1)].str)[strlen((yyvsp[(1) - (1)].str))-1] == '\"') /* already quoted? */
                                                 (yyval.str) = (yyvsp[(1) - (1)].str);
@@ -41052,14 +41052,14 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 2036:
 
 /* Line 1806 of yacc.c  */
-#line 11131 "preproc.y"
+#line 11131 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(1) - (1)].str); }
     break;
 
   case 2037:
 
 /* Line 1806 of yacc.c  */
-#line 11139 "preproc.y"
+#line 11139 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 			struct cursor *ptr, *this;
 			struct variable *thisquery = (struct variable *)mm_alloc(sizeof(struct variable));
@@ -41099,7 +41099,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 2038:
 
 /* Line 1806 of yacc.c  */
-#line 11176 "preproc.y"
+#line 11176 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { 
 			  /* execute immediate means prepare the statement and
 			   * immediately execute it */
@@ -41110,84 +41110,84 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 2040:
 
 /* Line 1806 of yacc.c  */
-#line 11186 "preproc.y"
+#line 11186 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(1) - (1)].str); }
     break;
 
   case 2041:
 
 /* Line 1806 of yacc.c  */
-#line 11187 "preproc.y"
+#line 11187 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(1) - (1)].str); }
     break;
 
   case 2042:
 
 /* Line 1806 of yacc.c  */
-#line 11190 "preproc.y"
+#line 11190 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(1) - (1)].str); }
     break;
 
   case 2043:
 
 /* Line 1806 of yacc.c  */
-#line 11192 "preproc.y"
+#line 11192 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(2) - (2)].str); }
     break;
 
   case 2044:
 
 /* Line 1806 of yacc.c  */
-#line 11193 "preproc.y"
+#line 11193 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = EMPTY; }
     break;
 
   case 2045:
 
 /* Line 1806 of yacc.c  */
-#line 11196 "preproc.y"
+#line 11196 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(1) - (1)].str); }
     break;
 
   case 2046:
 
 /* Line 1806 of yacc.c  */
-#line 11197 "preproc.y"
+#line 11197 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("year to minute"); }
     break;
 
   case 2047:
 
 /* Line 1806 of yacc.c  */
-#line 11198 "preproc.y"
+#line 11198 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("year to second"); }
     break;
 
   case 2048:
 
 /* Line 1806 of yacc.c  */
-#line 11199 "preproc.y"
+#line 11199 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("day to day"); }
     break;
 
   case 2049:
 
 /* Line 1806 of yacc.c  */
-#line 11200 "preproc.y"
+#line 11200 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("month to month"); }
     break;
 
   case 2050:
 
 /* Line 1806 of yacc.c  */
-#line 11207 "preproc.y"
+#line 11207 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { fputs("/* exec sql begin declare section */", yyout); }
     break;
 
   case 2051:
 
 /* Line 1806 of yacc.c  */
-#line 11209 "preproc.y"
+#line 11209 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 			fprintf(yyout, "%s/* exec sql end declare section */", (yyvsp[(3) - (4)].str));
 			free((yyvsp[(3) - (4)].str));
@@ -41198,91 +41198,91 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 2052:
 
 /* Line 1806 of yacc.c  */
-#line 11216 "preproc.y"
+#line 11216 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {}
     break;
 
   case 2053:
 
 /* Line 1806 of yacc.c  */
-#line 11218 "preproc.y"
+#line 11218 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {}
     break;
 
   case 2054:
 
 /* Line 1806 of yacc.c  */
-#line 11220 "preproc.y"
+#line 11220 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = EMPTY; }
     break;
 
   case 2055:
 
 /* Line 1806 of yacc.c  */
-#line 11221 "preproc.y"
+#line 11221 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(1) - (1)].str); }
     break;
 
   case 2056:
 
 /* Line 1806 of yacc.c  */
-#line 11222 "preproc.y"
+#line 11222 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(1) - (1)].str); }
     break;
 
   case 2057:
 
 /* Line 1806 of yacc.c  */
-#line 11225 "preproc.y"
+#line 11225 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(1) - (1)].str); }
     break;
 
   case 2058:
 
 /* Line 1806 of yacc.c  */
-#line 11226 "preproc.y"
+#line 11226 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(1) - (1)].str); }
     break;
 
   case 2059:
 
 /* Line 1806 of yacc.c  */
-#line 11227 "preproc.y"
+#line 11227 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = cat2_str((yyvsp[(1) - (2)].str), (yyvsp[(2) - (2)].str)); }
     break;
 
   case 2060:
 
 /* Line 1806 of yacc.c  */
-#line 11228 "preproc.y"
+#line 11228 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = cat2_str((yyvsp[(1) - (2)].str), (yyvsp[(2) - (2)].str)); }
     break;
 
   case 2061:
 
 /* Line 1806 of yacc.c  */
-#line 11229 "preproc.y"
+#line 11229 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = cat2_str((yyvsp[(1) - (2)].str), (yyvsp[(2) - (2)].str)); }
     break;
 
   case 2062:
 
 /* Line 1806 of yacc.c  */
-#line 11232 "preproc.y"
+#line 11232 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(1) - (1)].str); }
     break;
 
   case 2063:
 
 /* Line 1806 of yacc.c  */
-#line 11233 "preproc.y"
+#line 11233 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = cat2_str((yyvsp[(1) - (2)].str), (yyvsp[(2) - (2)].str)); }
     break;
 
   case 2064:
 
 /* Line 1806 of yacc.c  */
-#line 11237 "preproc.y"
+#line 11237 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 		/* reset this variable so we see if there was */
 		/* an initializer specified */
@@ -41293,7 +41293,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 2065:
 
 /* Line 1806 of yacc.c  */
-#line 11243 "preproc.y"
+#line 11243 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 		add_typedef((yyvsp[(5) - (7)].str), (yyvsp[(6) - (7)].index).index1, (yyvsp[(6) - (7)].index).index2, (yyvsp[(3) - (7)].type).type_enum, (yyvsp[(3) - (7)].type).type_dimension, (yyvsp[(3) - (7)].type).type_index, initializer, *(yyvsp[(4) - (7)].str) ? 1 : 0);
 
@@ -41306,7 +41306,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 2066:
 
 /* Line 1806 of yacc.c  */
-#line 11253 "preproc.y"
+#line 11253 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 			actual_type[struct_level].type_enum = (yyvsp[(2) - (2)].type).type_enum;
 			actual_type[struct_level].type_dimension = (yyvsp[(2) - (2)].type).type_dimension;
@@ -41320,7 +41320,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 2067:
 
 /* Line 1806 of yacc.c  */
-#line 11262 "preproc.y"
+#line 11262 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 			(yyval.str) = cat_str(5, actual_startline[struct_level], (yyvsp[(1) - (5)].str), (yyvsp[(2) - (5)].type).type_str, (yyvsp[(4) - (5)].str), make_str(";\n"));
 		}
@@ -41329,7 +41329,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 2068:
 
 /* Line 1806 of yacc.c  */
-#line 11266 "preproc.y"
+#line 11266 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 			actual_type[struct_level].type_enum = (yyvsp[(1) - (1)].type).type_enum;
 			actual_type[struct_level].type_dimension = (yyvsp[(1) - (1)].type).type_dimension;
@@ -41343,7 +41343,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 2069:
 
 /* Line 1806 of yacc.c  */
-#line 11275 "preproc.y"
+#line 11275 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 			(yyval.str) = cat_str(4, actual_startline[struct_level], (yyvsp[(1) - (4)].type).type_str, (yyvsp[(3) - (4)].str), make_str(";\n"));
 		}
@@ -41352,7 +41352,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 2070:
 
 /* Line 1806 of yacc.c  */
-#line 11279 "preproc.y"
+#line 11279 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 			(yyval.str) = cat2_str((yyvsp[(1) - (2)].str), make_str(";"));
 		}
@@ -41361,84 +41361,84 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 2071:
 
 /* Line 1806 of yacc.c  */
-#line 11284 "preproc.y"
+#line 11284 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) =cat2_str(make_str(":"), (yyvsp[(2) - (2)].str)); }
     break;
 
   case 2072:
 
 /* Line 1806 of yacc.c  */
-#line 11285 "preproc.y"
+#line 11285 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = EMPTY; }
     break;
 
   case 2073:
 
 /* Line 1806 of yacc.c  */
-#line 11289 "preproc.y"
+#line 11289 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {(yyval.str) = cat2_str ((yyvsp[(1) - (2)].str), (yyvsp[(2) - (2)].str)); }
     break;
 
   case 2074:
 
 /* Line 1806 of yacc.c  */
-#line 11290 "preproc.y"
+#line 11290 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {(yyval.str) = (yyvsp[(1) - (1)].str); }
     break;
 
   case 2075:
 
 /* Line 1806 of yacc.c  */
-#line 11291 "preproc.y"
+#line 11291 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {(yyval.str) = (yyvsp[(1) - (1)].str); }
     break;
 
   case 2076:
 
 /* Line 1806 of yacc.c  */
-#line 11294 "preproc.y"
+#line 11294 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("extern"); }
     break;
 
   case 2077:
 
 /* Line 1806 of yacc.c  */
-#line 11295 "preproc.y"
+#line 11295 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("static"); }
     break;
 
   case 2078:
 
 /* Line 1806 of yacc.c  */
-#line 11296 "preproc.y"
+#line 11296 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("register"); }
     break;
 
   case 2079:
 
 /* Line 1806 of yacc.c  */
-#line 11297 "preproc.y"
+#line 11297 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("auto"); }
     break;
 
   case 2080:
 
 /* Line 1806 of yacc.c  */
-#line 11300 "preproc.y"
+#line 11300 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("const"); }
     break;
 
   case 2081:
 
 /* Line 1806 of yacc.c  */
-#line 11301 "preproc.y"
+#line 11301 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("volatile"); }
     break;
 
   case 2082:
 
 /* Line 1806 of yacc.c  */
-#line 11305 "preproc.y"
+#line 11305 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 			(yyval.type).type_enum = (yyvsp[(1) - (1)].type_enum);
 			(yyval.type).type_str = mm_strdup(ecpg_type_name((yyvsp[(1) - (1)].type_enum)));
@@ -41451,7 +41451,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 2083:
 
 /* Line 1806 of yacc.c  */
-#line 11313 "preproc.y"
+#line 11313 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 			(yyval.type).type_str = (yyvsp[(1) - (1)].str);
 			(yyval.type).type_dimension = make_str("-1");
@@ -41473,7 +41473,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 2084:
 
 /* Line 1806 of yacc.c  */
-#line 11330 "preproc.y"
+#line 11330 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 			(yyval.type).type_str = (yyvsp[(1) - (1)].str);
 			(yyval.type).type_enum = ECPGt_int;
@@ -41486,7 +41486,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 2085:
 
 /* Line 1806 of yacc.c  */
-#line 11338 "preproc.y"
+#line 11338 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 			if (strcmp((yyvsp[(1) - (5)].str), "numeric") == 0)
 			{
@@ -41514,7 +41514,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 2086:
 
 /* Line 1806 of yacc.c  */
-#line 11361 "preproc.y"
+#line 11361 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 			if (strlen((yyvsp[(2) - (2)].str)) != 0 && strcmp ((yyvsp[(1) - (2)].str), "datetime") != 0 && strcmp ((yyvsp[(1) - (2)].str), "interval") != 0)
 				mmerror (PARSE_ERROR, ET_ERROR, "interval specification not allowed here");
@@ -41617,7 +41617,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 2087:
 
 /* Line 1806 of yacc.c  */
-#line 11459 "preproc.y"
+#line 11459 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 			/* this is for named structs/unions */
 			char *name;
@@ -41654,35 +41654,35 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 2088:
 
 /* Line 1806 of yacc.c  */
-#line 11493 "preproc.y"
+#line 11493 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = cat_str(3, make_str("enum"), (yyvsp[(2) - (3)].str), (yyvsp[(3) - (3)].str)); }
     break;
 
   case 2089:
 
 /* Line 1806 of yacc.c  */
-#line 11495 "preproc.y"
+#line 11495 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = cat2_str(make_str("enum"), (yyvsp[(2) - (2)].str)); }
     break;
 
   case 2090:
 
 /* Line 1806 of yacc.c  */
-#line 11497 "preproc.y"
+#line 11497 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = cat2_str(make_str("enum"), (yyvsp[(2) - (2)].str)); }
     break;
 
   case 2091:
 
 /* Line 1806 of yacc.c  */
-#line 11501 "preproc.y"
+#line 11501 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = cat_str(3, make_str("{"), (yyvsp[(2) - (3)].str), make_str("}")); }
     break;
 
   case 2092:
 
 /* Line 1806 of yacc.c  */
-#line 11504 "preproc.y"
+#line 11504 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 			struct_member_list[struct_level++] = NULL;
 			if (struct_level >= STRUCT_DEPTH)
@@ -41694,7 +41694,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 2093:
 
 /* Line 1806 of yacc.c  */
-#line 11511 "preproc.y"
+#line 11511 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 			struct typedefs *ptr, *this;
 			struct this_type su_type;
@@ -41741,14 +41741,14 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 2094:
 
 /* Line 1806 of yacc.c  */
-#line 11554 "preproc.y"
+#line 11554 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(1) - (1)].str); }
     break;
 
   case 2095:
 
 /* Line 1806 of yacc.c  */
-#line 11556 "preproc.y"
+#line 11556 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 			struct_member_list[struct_level++] = NULL;
 			if (struct_level >= STRUCT_DEPTH)
@@ -41759,7 +41759,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 2096:
 
 /* Line 1806 of yacc.c  */
-#line 11562 "preproc.y"
+#line 11562 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 			ECPGfree_struct_member(struct_member_list[struct_level]);
 			struct_member_list[struct_level] = NULL;
@@ -41771,7 +41771,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 2097:
 
 /* Line 1806 of yacc.c  */
-#line 11571 "preproc.y"
+#line 11571 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 			(yyval.struct_union).su = make_str("struct");
 			(yyval.struct_union).symbol = (yyvsp[(2) - (2)].str);
@@ -41782,7 +41782,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 2098:
 
 /* Line 1806 of yacc.c  */
-#line 11577 "preproc.y"
+#line 11577 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 			(yyval.struct_union).su = make_str("union");
 			(yyval.struct_union).symbol = (yyvsp[(2) - (2)].str);
@@ -41792,7 +41792,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 2099:
 
 /* Line 1806 of yacc.c  */
-#line 11584 "preproc.y"
+#line 11584 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 			ECPGstruct_sizeof = make_str(""); /* This must not be NULL to distinguish from simple types. */
 			(yyval.str) = make_str("struct");
@@ -41802,70 +41802,70 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 2100:
 
 /* Line 1806 of yacc.c  */
-#line 11588 "preproc.y"
+#line 11588 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("union"); }
     break;
 
   case 2101:
 
 /* Line 1806 of yacc.c  */
-#line 11591 "preproc.y"
+#line 11591 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.type_enum)=(yyvsp[(1) - (1)].type_enum); }
     break;
 
   case 2102:
 
 /* Line 1806 of yacc.c  */
-#line 11592 "preproc.y"
+#line 11592 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.type_enum)=(yyvsp[(2) - (2)].type_enum); }
     break;
 
   case 2103:
 
 /* Line 1806 of yacc.c  */
-#line 11595 "preproc.y"
+#line 11595 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.type_enum) = ECPGt_unsigned_short; }
     break;
 
   case 2104:
 
 /* Line 1806 of yacc.c  */
-#line 11596 "preproc.y"
+#line 11596 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.type_enum) = ECPGt_unsigned_short; }
     break;
 
   case 2105:
 
 /* Line 1806 of yacc.c  */
-#line 11597 "preproc.y"
+#line 11597 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.type_enum) = ECPGt_unsigned_int; }
     break;
 
   case 2106:
 
 /* Line 1806 of yacc.c  */
-#line 11598 "preproc.y"
+#line 11598 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.type_enum) = ECPGt_unsigned_int; }
     break;
 
   case 2107:
 
 /* Line 1806 of yacc.c  */
-#line 11599 "preproc.y"
+#line 11599 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.type_enum) = ECPGt_unsigned_long; }
     break;
 
   case 2108:
 
 /* Line 1806 of yacc.c  */
-#line 11600 "preproc.y"
+#line 11600 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.type_enum) = ECPGt_unsigned_long; }
     break;
 
   case 2109:
 
 /* Line 1806 of yacc.c  */
-#line 11602 "preproc.y"
+#line 11602 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 #ifdef HAVE_LONG_LONG_INT_64
 			(yyval.type_enum) = ECPGt_unsigned_long_long;
@@ -41878,7 +41878,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 2110:
 
 /* Line 1806 of yacc.c  */
-#line 11610 "preproc.y"
+#line 11610 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 #ifdef HAVE_LONG_LONG_INT_64
 			(yyval.type_enum) = ECPGt_unsigned_long_long;
@@ -41891,49 +41891,49 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 2111:
 
 /* Line 1806 of yacc.c  */
-#line 11617 "preproc.y"
+#line 11617 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.type_enum) = ECPGt_unsigned_char; }
     break;
 
   case 2112:
 
 /* Line 1806 of yacc.c  */
-#line 11620 "preproc.y"
+#line 11620 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.type_enum) = ECPGt_short; }
     break;
 
   case 2113:
 
 /* Line 1806 of yacc.c  */
-#line 11621 "preproc.y"
+#line 11621 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.type_enum) = ECPGt_short; }
     break;
 
   case 2114:
 
 /* Line 1806 of yacc.c  */
-#line 11622 "preproc.y"
+#line 11622 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.type_enum) = ECPGt_int; }
     break;
 
   case 2115:
 
 /* Line 1806 of yacc.c  */
-#line 11623 "preproc.y"
+#line 11623 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.type_enum) = ECPGt_long; }
     break;
 
   case 2116:
 
 /* Line 1806 of yacc.c  */
-#line 11624 "preproc.y"
+#line 11624 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.type_enum) = ECPGt_long; }
     break;
 
   case 2117:
 
 /* Line 1806 of yacc.c  */
-#line 11626 "preproc.y"
+#line 11626 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 #ifdef HAVE_LONG_LONG_INT_64
 			(yyval.type_enum) = ECPGt_long_long;
@@ -41946,7 +41946,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 2118:
 
 /* Line 1806 of yacc.c  */
-#line 11634 "preproc.y"
+#line 11634 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 #ifdef HAVE_LONG_LONG_INT_64
 			(yyval.type_enum) = ECPGt_long_long;
@@ -41959,35 +41959,35 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 2119:
 
 /* Line 1806 of yacc.c  */
-#line 11641 "preproc.y"
+#line 11641 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.type_enum) = ECPGt_bool; }
     break;
 
   case 2120:
 
 /* Line 1806 of yacc.c  */
-#line 11642 "preproc.y"
+#line 11642 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.type_enum) = ECPGt_char; }
     break;
 
   case 2121:
 
 /* Line 1806 of yacc.c  */
-#line 11643 "preproc.y"
+#line 11643 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.type_enum) = ECPGt_double; }
     break;
 
   case 2124:
 
 /* Line 1806 of yacc.c  */
-#line 11651 "preproc.y"
+#line 11651 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(1) - (1)].str); }
     break;
 
   case 2125:
 
 /* Line 1806 of yacc.c  */
-#line 11653 "preproc.y"
+#line 11653 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 			if (actual_type[struct_level].type_enum == ECPGt_varchar)
 				(yyval.str) = cat_str(3, (yyvsp[(1) - (3)].str), make_str(";"), (yyvsp[(3) - (3)].str));
@@ -41999,7 +41999,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 2126:
 
 /* Line 1806 of yacc.c  */
-#line 11662 "preproc.y"
+#line 11662 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 			struct ECPGtype * type;
 			char *dimension = (yyvsp[(3) - (5)].index).index1; /* dimension of array */
@@ -42087,14 +42087,14 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 2127:
 
 /* Line 1806 of yacc.c  */
-#line 11747 "preproc.y"
+#line 11747 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = EMPTY; }
     break;
 
   case 2128:
 
 /* Line 1806 of yacc.c  */
-#line 11749 "preproc.y"
+#line 11749 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 			initializer = 1;
 			(yyval.str) = cat2_str(make_str("="), (yyvsp[(2) - (2)].str));
@@ -42104,28 +42104,28 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 2129:
 
 /* Line 1806 of yacc.c  */
-#line 11755 "preproc.y"
+#line 11755 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = EMPTY; }
     break;
 
   case 2130:
 
 /* Line 1806 of yacc.c  */
-#line 11756 "preproc.y"
+#line 11756 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("*"); }
     break;
 
   case 2131:
 
 /* Line 1806 of yacc.c  */
-#line 11757 "preproc.y"
+#line 11757 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("**"); }
     break;
 
   case 2132:
 
 /* Line 1806 of yacc.c  */
-#line 11764 "preproc.y"
+#line 11764 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 			/* this is only supported for compatibility */
 			(yyval.str) = cat_str(3, make_str("/* declare statement"), (yyvsp[(3) - (3)].str), make_str("*/"));
@@ -42135,126 +42135,126 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 2133:
 
 /* Line 1806 of yacc.c  */
-#line 11772 "preproc.y"
+#line 11772 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(2) - (2)].str); }
     break;
 
   case 2134:
 
 /* Line 1806 of yacc.c  */
-#line 11775 "preproc.y"
+#line 11775 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(1) - (1)].str); }
     break;
 
   case 2135:
 
 /* Line 1806 of yacc.c  */
-#line 11776 "preproc.y"
+#line 11776 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("\"CURRENT\""); }
     break;
 
   case 2136:
 
 /* Line 1806 of yacc.c  */
-#line 11777 "preproc.y"
+#line 11777 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("\"ALL\""); }
     break;
 
   case 2137:
 
 /* Line 1806 of yacc.c  */
-#line 11778 "preproc.y"
+#line 11778 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("\"CURRENT\""); }
     break;
 
   case 2138:
 
 /* Line 1806 of yacc.c  */
-#line 11781 "preproc.y"
+#line 11781 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make3_str(make_str("\""), (yyvsp[(1) - (1)].str), make_str("\"")); }
     break;
 
   case 2139:
 
 /* Line 1806 of yacc.c  */
-#line 11782 "preproc.y"
+#line 11782 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("\"DEFAULT\""); }
     break;
 
   case 2140:
 
 /* Line 1806 of yacc.c  */
-#line 11783 "preproc.y"
+#line 11783 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(1) - (1)].str); }
     break;
 
   case 2141:
 
 /* Line 1806 of yacc.c  */
-#line 11787 "preproc.y"
+#line 11787 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(1) - (1)].str); }
     break;
 
   case 2142:
 
 /* Line 1806 of yacc.c  */
-#line 11789 "preproc.y"
+#line 11789 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make3_str(make_str("\""), (yyvsp[(1) - (1)].str), make_str("\"")); }
     break;
 
   case 2143:
 
 /* Line 1806 of yacc.c  */
-#line 11796 "preproc.y"
+#line 11796 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(2) - (2)].str); }
     break;
 
   case 2144:
 
 /* Line 1806 of yacc.c  */
-#line 11797 "preproc.y"
+#line 11797 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("all"); }
     break;
 
   case 2145:
 
 /* Line 1806 of yacc.c  */
-#line 11803 "preproc.y"
+#line 11803 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(2) - (3)].str); }
     break;
 
   case 2146:
 
 /* Line 1806 of yacc.c  */
-#line 11805 "preproc.y"
+#line 11805 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = EMPTY; }
     break;
 
   case 2147:
 
 /* Line 1806 of yacc.c  */
-#line 11806 "preproc.y"
+#line 11806 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(1) - (1)].str); }
     break;
 
   case 2148:
 
 /* Line 1806 of yacc.c  */
-#line 11809 "preproc.y"
+#line 11809 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = EMPTY; }
     break;
 
   case 2149:
 
 /* Line 1806 of yacc.c  */
-#line 11810 "preproc.y"
+#line 11810 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(1) - (1)].str); }
     break;
 
   case 2150:
 
 /* Line 1806 of yacc.c  */
-#line 11814 "preproc.y"
+#line 11814 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 			add_variable_to_head(&argsinsert, descriptor_variable((yyvsp[(4) - (4)].str),0), &no_indicator);
 			(yyval.str) = EMPTY;
@@ -42264,7 +42264,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 2151:
 
 /* Line 1806 of yacc.c  */
-#line 11821 "preproc.y"
+#line 11821 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 			add_variable_to_head(&argsresult, descriptor_variable((yyvsp[(4) - (4)].str),1), &no_indicator);
 			(yyval.str) = EMPTY;
@@ -42274,7 +42274,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 2156:
 
 /* Line 1806 of yacc.c  */
-#line 11832 "preproc.y"
+#line 11832 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 			char *length = mm_alloc(32);
 
@@ -42286,84 +42286,84 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 2157:
 
 /* Line 1806 of yacc.c  */
-#line 11838 "preproc.y"
+#line 11838 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = EMPTY; }
     break;
 
   case 2158:
 
 /* Line 1806 of yacc.c  */
-#line 11839 "preproc.y"
+#line 11839 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = EMPTY; }
     break;
 
   case 2159:
 
 /* Line 1806 of yacc.c  */
-#line 11842 "preproc.y"
+#line 11842 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(1) - (1)].str); }
     break;
 
   case 2160:
 
 /* Line 1806 of yacc.c  */
-#line 11843 "preproc.y"
+#line 11843 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = cat_str(2, make_str("+"), (yyvsp[(2) - (2)].str)); }
     break;
 
   case 2161:
 
 /* Line 1806 of yacc.c  */
-#line 11844 "preproc.y"
+#line 11844 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = cat_str(2, make_str("-"), (yyvsp[(2) - (2)].str)); }
     break;
 
   case 2162:
 
 /* Line 1806 of yacc.c  */
-#line 11845 "preproc.y"
+#line 11845 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(1) - (1)].str); }
     break;
 
   case 2163:
 
 /* Line 1806 of yacc.c  */
-#line 11846 "preproc.y"
+#line 11846 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = cat_str(2, make_str("+"), (yyvsp[(2) - (2)].str)); }
     break;
 
   case 2164:
 
 /* Line 1806 of yacc.c  */
-#line 11847 "preproc.y"
+#line 11847 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = cat_str(2, make_str("-"), (yyvsp[(2) - (2)].str)); }
     break;
 
   case 2165:
 
 /* Line 1806 of yacc.c  */
-#line 11848 "preproc.y"
+#line 11848 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(1) - (1)].str); }
     break;
 
   case 2166:
 
 /* Line 1806 of yacc.c  */
-#line 11849 "preproc.y"
+#line 11849 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(1) - (1)].str); }
     break;
 
   case 2167:
 
 /* Line 1806 of yacc.c  */
-#line 11850 "preproc.y"
+#line 11850 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(1) - (1)].str); }
     break;
 
   case 2168:
 
 /* Line 1806 of yacc.c  */
-#line 11857 "preproc.y"
+#line 11857 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 		const char *con = connection ? connection : "NULL";
 		mmerror(PARSE_ERROR, ET_WARNING, "using unsupported DESCRIBE statement");
@@ -42375,7 +42375,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 2169:
 
 /* Line 1806 of yacc.c  */
-#line 11864 "preproc.y"
+#line 11864 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 		const char *con = connection ? connection : "NULL";
 		mmerror(PARSE_ERROR, ET_WARNING, "using unsupported DESCRIBE statement");
@@ -42387,7 +42387,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 2170:
 
 /* Line 1806 of yacc.c  */
-#line 11871 "preproc.y"
+#line 11871 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 		const char *con = connection ? connection : "NULL";
 		mmerror(PARSE_ERROR, ET_WARNING, "using unsupported DESCRIBE statement");
@@ -42399,21 +42399,21 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 2171:
 
 /* Line 1806 of yacc.c  */
-#line 11879 "preproc.y"
+#line 11879 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("output"); }
     break;
 
   case 2172:
 
 /* Line 1806 of yacc.c  */
-#line 11880 "preproc.y"
+#line 11880 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = EMPTY; }
     break;
 
   case 2173:
 
 /* Line 1806 of yacc.c  */
-#line 11893 "preproc.y"
+#line 11893 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 			add_descriptor((yyvsp[(3) - (3)].str),connection);
 			(yyval.str) = (yyvsp[(3) - (3)].str);
@@ -42423,7 +42423,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 2174:
 
 /* Line 1806 of yacc.c  */
-#line 11904 "preproc.y"
+#line 11904 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 			drop_descriptor((yyvsp[(3) - (3)].str),connection);
 			(yyval.str) = (yyvsp[(3) - (3)].str);
@@ -42433,28 +42433,28 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 2175:
 
 /* Line 1806 of yacc.c  */
-#line 11915 "preproc.y"
+#line 11915 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {  (yyval.str) = (yyvsp[(3) - (4)].str); }
     break;
 
   case 2178:
 
 /* Line 1806 of yacc.c  */
-#line 11923 "preproc.y"
+#line 11923 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { push_assignment((yyvsp[(1) - (3)].str), (yyvsp[(3) - (3)].dtype_enum)); }
     break;
 
   case 2179:
 
 /* Line 1806 of yacc.c  */
-#line 11928 "preproc.y"
+#line 11928 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(3) - (4)].str); }
     break;
 
   case 2182:
 
 /* Line 1806 of yacc.c  */
-#line 11936 "preproc.y"
+#line 11936 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 			push_assignment((yyvsp[(3) - (3)].str), (yyvsp[(1) - (3)].dtype_enum));
 		}
@@ -42463,7 +42463,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 2183:
 
 /* Line 1806 of yacc.c  */
-#line 11942 "preproc.y"
+#line 11942 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
                         char *length = mm_alloc(sizeof(int) * CHAR_BIT * 10 / 3);
 
@@ -42476,42 +42476,42 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 2184:
 
 /* Line 1806 of yacc.c  */
-#line 11949 "preproc.y"
+#line 11949 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(1) - (1)].str); }
     break;
 
   case 2185:
 
 /* Line 1806 of yacc.c  */
-#line 11952 "preproc.y"
+#line 11952 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.dtype_enum) = ECPGd_count; }
     break;
 
   case 2186:
 
 /* Line 1806 of yacc.c  */
-#line 11960 "preproc.y"
+#line 11960 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {  (yyval.descriptor).str = (yyvsp[(5) - (6)].str); (yyval.descriptor).name = (yyvsp[(3) - (6)].str); }
     break;
 
   case 2189:
 
 /* Line 1806 of yacc.c  */
-#line 11967 "preproc.y"
+#line 11967 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { push_assignment((yyvsp[(1) - (3)].str), (yyvsp[(3) - (3)].dtype_enum)); }
     break;
 
   case 2190:
 
 /* Line 1806 of yacc.c  */
-#line 11971 "preproc.y"
+#line 11971 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {  (yyval.descriptor).str = (yyvsp[(5) - (6)].str); (yyval.descriptor).name = (yyvsp[(3) - (6)].str); }
     break;
 
   case 2193:
 
 /* Line 1806 of yacc.c  */
-#line 11979 "preproc.y"
+#line 11979 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 			push_assignment((yyvsp[(3) - (3)].str), (yyvsp[(1) - (3)].dtype_enum));
 		}
@@ -42520,7 +42520,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 2194:
 
 /* Line 1806 of yacc.c  */
-#line 11985 "preproc.y"
+#line 11985 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
                         char *length = mm_alloc(sizeof(int) * CHAR_BIT * 10 / 3);
 
@@ -42533,14 +42533,14 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 2195:
 
 /* Line 1806 of yacc.c  */
-#line 11992 "preproc.y"
+#line 11992 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(1) - (1)].str); }
     break;
 
   case 2196:
 
 /* Line 1806 of yacc.c  */
-#line 11994 "preproc.y"
+#line 11994 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
                         char *length = mm_alloc(sizeof(int) * CHAR_BIT * 10 / 3);
                         char *var = cat2_str(make_str("-"), (yyvsp[(2) - (2)].str));
@@ -42554,7 +42554,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 2197:
 
 /* Line 1806 of yacc.c  */
-#line 12003 "preproc.y"
+#line 12003 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
                         char *length = mm_alloc(sizeof(int) * CHAR_BIT * 10 / 3);
                         char *var = cat2_str(make_str("-"), (yyvsp[(2) - (2)].str));
@@ -42568,7 +42568,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 2198:
 
 /* Line 1806 of yacc.c  */
-#line 12012 "preproc.y"
+#line 12012 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
                         char *length = mm_alloc(sizeof(int) * CHAR_BIT * 10 / 3);
                         char *var = (yyvsp[(1) - (1)].str) + 1;
@@ -42583,161 +42583,161 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 2199:
 
 /* Line 1806 of yacc.c  */
-#line 12023 "preproc.y"
+#line 12023 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.dtype_enum) = ECPGd_cardinality; }
     break;
 
   case 2200:
 
 /* Line 1806 of yacc.c  */
-#line 12024 "preproc.y"
+#line 12024 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.dtype_enum) = ECPGd_data; }
     break;
 
   case 2201:
 
 /* Line 1806 of yacc.c  */
-#line 12025 "preproc.y"
+#line 12025 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.dtype_enum) = ECPGd_di_code; }
     break;
 
   case 2202:
 
 /* Line 1806 of yacc.c  */
-#line 12026 "preproc.y"
+#line 12026 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.dtype_enum) = ECPGd_di_precision; }
     break;
 
   case 2203:
 
 /* Line 1806 of yacc.c  */
-#line 12027 "preproc.y"
+#line 12027 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.dtype_enum) = ECPGd_indicator; }
     break;
 
   case 2204:
 
 /* Line 1806 of yacc.c  */
-#line 12028 "preproc.y"
+#line 12028 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.dtype_enum) = ECPGd_key_member; }
     break;
 
   case 2205:
 
 /* Line 1806 of yacc.c  */
-#line 12029 "preproc.y"
+#line 12029 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.dtype_enum) = ECPGd_length; }
     break;
 
   case 2206:
 
 /* Line 1806 of yacc.c  */
-#line 12030 "preproc.y"
+#line 12030 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.dtype_enum) = ECPGd_name; }
     break;
 
   case 2207:
 
 /* Line 1806 of yacc.c  */
-#line 12031 "preproc.y"
+#line 12031 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.dtype_enum) = ECPGd_nullable; }
     break;
 
   case 2208:
 
 /* Line 1806 of yacc.c  */
-#line 12032 "preproc.y"
+#line 12032 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.dtype_enum) = ECPGd_octet; }
     break;
 
   case 2209:
 
 /* Line 1806 of yacc.c  */
-#line 12033 "preproc.y"
+#line 12033 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.dtype_enum) = ECPGd_precision; }
     break;
 
   case 2210:
 
 /* Line 1806 of yacc.c  */
-#line 12034 "preproc.y"
+#line 12034 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.dtype_enum) = ECPGd_length; }
     break;
 
   case 2211:
 
 /* Line 1806 of yacc.c  */
-#line 12035 "preproc.y"
+#line 12035 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.dtype_enum) = ECPGd_ret_octet; }
     break;
 
   case 2212:
 
 /* Line 1806 of yacc.c  */
-#line 12036 "preproc.y"
+#line 12036 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.dtype_enum) = ECPGd_scale; }
     break;
 
   case 2213:
 
 /* Line 1806 of yacc.c  */
-#line 12037 "preproc.y"
+#line 12037 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.dtype_enum) = ECPGd_type; }
     break;
 
   case 2214:
 
 /* Line 1806 of yacc.c  */
-#line 12044 "preproc.y"
+#line 12044 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(4) - (4)].str); }
     break;
 
   case 2215:
 
 /* Line 1806 of yacc.c  */
-#line 12045 "preproc.y"
+#line 12045 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(4) - (4)].str); }
     break;
 
   case 2216:
 
 /* Line 1806 of yacc.c  */
-#line 12048 "preproc.y"
+#line 12048 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("on"); }
     break;
 
   case 2217:
 
 /* Line 1806 of yacc.c  */
-#line 12049 "preproc.y"
+#line 12049 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("off"); }
     break;
 
   case 2218:
 
 /* Line 1806 of yacc.c  */
-#line 12056 "preproc.y"
+#line 12056 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(4) - (4)].str); }
     break;
 
   case 2219:
 
 /* Line 1806 of yacc.c  */
-#line 12057 "preproc.y"
+#line 12057 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(4) - (4)].str); }
     break;
 
   case 2220:
 
 /* Line 1806 of yacc.c  */
-#line 12058 "preproc.y"
+#line 12058 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(3) - (3)].str); }
     break;
 
   case 2221:
 
 /* Line 1806 of yacc.c  */
-#line 12065 "preproc.y"
+#line 12065 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 			/* reset this variable so we see if there was */
 			/* an initializer specified */
@@ -42748,7 +42748,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 2222:
 
 /* Line 1806 of yacc.c  */
-#line 12071 "preproc.y"
+#line 12071 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 			add_typedef((yyvsp[(3) - (7)].str), (yyvsp[(6) - (7)].index).index1, (yyvsp[(6) - (7)].index).index2, (yyvsp[(5) - (7)].type).type_enum, (yyvsp[(5) - (7)].type).type_dimension, (yyvsp[(5) - (7)].type).type_index, initializer, *(yyvsp[(7) - (7)].str) ? 1 : 0);
 
@@ -42762,21 +42762,21 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 2223:
 
 /* Line 1806 of yacc.c  */
-#line 12081 "preproc.y"
+#line 12081 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("reference"); }
     break;
 
   case 2224:
 
 /* Line 1806 of yacc.c  */
-#line 12082 "preproc.y"
+#line 12082 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = EMPTY; }
     break;
 
   case 2225:
 
 /* Line 1806 of yacc.c  */
-#line 12089 "preproc.y"
+#line 12089 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 			/* reset this variable so we see if there was */
 			/* an initializer specified */
@@ -42787,7 +42787,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 2226:
 
 /* Line 1806 of yacc.c  */
-#line 12095 "preproc.y"
+#line 12095 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 			struct variable *p = find_variable((yyvsp[(3) - (7)].str));
 			char *dimension = (yyvsp[(6) - (7)].index).index1;
@@ -42849,7 +42849,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 2227:
 
 /* Line 1806 of yacc.c  */
-#line 12158 "preproc.y"
+#line 12158 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 			when_error.code = (yyvsp[(3) - (3)].action).code;
 			when_error.command = (yyvsp[(3) - (3)].action).command;
@@ -42860,7 +42860,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 2228:
 
 /* Line 1806 of yacc.c  */
-#line 12164 "preproc.y"
+#line 12164 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 			when_nf.code = (yyvsp[(4) - (4)].action).code;
 			when_nf.command = (yyvsp[(4) - (4)].action).command;
@@ -42871,7 +42871,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 2229:
 
 /* Line 1806 of yacc.c  */
-#line 12170 "preproc.y"
+#line 12170 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 			when_warn.code = (yyvsp[(3) - (3)].action).code;
 			when_warn.command = (yyvsp[(3) - (3)].action).command;
@@ -42882,7 +42882,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 2230:
 
 /* Line 1806 of yacc.c  */
-#line 12178 "preproc.y"
+#line 12178 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 			(yyval.action).code = W_NOTHING;
 			(yyval.action).command = NULL;
@@ -42893,7 +42893,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 2231:
 
 /* Line 1806 of yacc.c  */
-#line 12184 "preproc.y"
+#line 12184 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 			(yyval.action).code = W_SQLPRINT;
 			(yyval.action).command = NULL;
@@ -42904,7 +42904,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 2232:
 
 /* Line 1806 of yacc.c  */
-#line 12190 "preproc.y"
+#line 12190 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 			(yyval.action).code = W_STOP;
 			(yyval.action).command = NULL;
@@ -42915,7 +42915,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 2233:
 
 /* Line 1806 of yacc.c  */
-#line 12196 "preproc.y"
+#line 12196 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 			(yyval.action).code = W_GOTO;
 			(yyval.action).command = strdup((yyvsp[(2) - (2)].str));
@@ -42926,7 +42926,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 2234:
 
 /* Line 1806 of yacc.c  */
-#line 12202 "preproc.y"
+#line 12202 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 			(yyval.action).code = W_GOTO;
 			(yyval.action).command = strdup((yyvsp[(3) - (3)].str));
@@ -42937,7 +42937,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 2235:
 
 /* Line 1806 of yacc.c  */
-#line 12208 "preproc.y"
+#line 12208 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 			(yyval.action).code = W_DO;
 			(yyval.action).command = cat_str(4, (yyvsp[(2) - (5)].str), make_str("("), (yyvsp[(4) - (5)].str), make_str(")"));
@@ -42948,7 +42948,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 2236:
 
 /* Line 1806 of yacc.c  */
-#line 12214 "preproc.y"
+#line 12214 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 			(yyval.action).code = W_BREAK;
 			(yyval.action).command = NULL;
@@ -42959,7 +42959,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 2237:
 
 /* Line 1806 of yacc.c  */
-#line 12220 "preproc.y"
+#line 12220 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 			(yyval.action).code = W_DO;
 			(yyval.action).command = cat_str(4, (yyvsp[(2) - (5)].str), make_str("("), (yyvsp[(4) - (5)].str), make_str(")"));
@@ -42970,7 +42970,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 2238:
 
 /* Line 1806 of yacc.c  */
-#line 12226 "preproc.y"
+#line 12226 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 			(yyval.action).code = W_DO;
 			(yyval.action).command = cat2_str((yyvsp[(2) - (2)].str), make_str("()"));
@@ -42981,686 +42981,686 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 2239:
 
 /* Line 1806 of yacc.c  */
-#line 12236 "preproc.y"
+#line 12236 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(1) - (1)].str); }
     break;
 
   case 2240:
 
 /* Line 1806 of yacc.c  */
-#line 12237 "preproc.y"
+#line 12237 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(1) - (1)].str); }
     break;
 
   case 2241:
 
 /* Line 1806 of yacc.c  */
-#line 12240 "preproc.y"
+#line 12240 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("break"); }
     break;
 
   case 2242:
 
 /* Line 1806 of yacc.c  */
-#line 12241 "preproc.y"
+#line 12241 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("call"); }
     break;
 
   case 2243:
 
 /* Line 1806 of yacc.c  */
-#line 12242 "preproc.y"
+#line 12242 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("cardinality"); }
     break;
 
   case 2244:
 
 /* Line 1806 of yacc.c  */
-#line 12243 "preproc.y"
+#line 12243 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("count"); }
     break;
 
   case 2245:
 
 /* Line 1806 of yacc.c  */
-#line 12244 "preproc.y"
+#line 12244 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("datetime_interval_code"); }
     break;
 
   case 2246:
 
 /* Line 1806 of yacc.c  */
-#line 12245 "preproc.y"
+#line 12245 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("datetime_interval_precision"); }
     break;
 
   case 2247:
 
 /* Line 1806 of yacc.c  */
-#line 12246 "preproc.y"
+#line 12246 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("found"); }
     break;
 
   case 2248:
 
 /* Line 1806 of yacc.c  */
-#line 12247 "preproc.y"
+#line 12247 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("go"); }
     break;
 
   case 2249:
 
 /* Line 1806 of yacc.c  */
-#line 12248 "preproc.y"
+#line 12248 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("goto"); }
     break;
 
   case 2250:
 
 /* Line 1806 of yacc.c  */
-#line 12249 "preproc.y"
+#line 12249 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("identified"); }
     break;
 
   case 2251:
 
 /* Line 1806 of yacc.c  */
-#line 12250 "preproc.y"
+#line 12250 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("indicator"); }
     break;
 
   case 2252:
 
 /* Line 1806 of yacc.c  */
-#line 12251 "preproc.y"
+#line 12251 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("key_member"); }
     break;
 
   case 2253:
 
 /* Line 1806 of yacc.c  */
-#line 12252 "preproc.y"
+#line 12252 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("length"); }
     break;
 
   case 2254:
 
 /* Line 1806 of yacc.c  */
-#line 12253 "preproc.y"
+#line 12253 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("nullable"); }
     break;
 
   case 2255:
 
 /* Line 1806 of yacc.c  */
-#line 12254 "preproc.y"
+#line 12254 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("octet_length"); }
     break;
 
   case 2256:
 
 /* Line 1806 of yacc.c  */
-#line 12255 "preproc.y"
+#line 12255 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("returned_length"); }
     break;
 
   case 2257:
 
 /* Line 1806 of yacc.c  */
-#line 12256 "preproc.y"
+#line 12256 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("returned_octet_length"); }
     break;
 
   case 2258:
 
 /* Line 1806 of yacc.c  */
-#line 12257 "preproc.y"
+#line 12257 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("scale"); }
     break;
 
   case 2259:
 
 /* Line 1806 of yacc.c  */
-#line 12258 "preproc.y"
+#line 12258 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("section"); }
     break;
 
   case 2260:
 
 /* Line 1806 of yacc.c  */
-#line 12259 "preproc.y"
+#line 12259 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("sql"); }
     break;
 
   case 2261:
 
 /* Line 1806 of yacc.c  */
-#line 12260 "preproc.y"
+#line 12260 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("sqlerror"); }
     break;
 
   case 2262:
 
 /* Line 1806 of yacc.c  */
-#line 12261 "preproc.y"
+#line 12261 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("sqlprint"); }
     break;
 
   case 2263:
 
 /* Line 1806 of yacc.c  */
-#line 12262 "preproc.y"
+#line 12262 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("sqlwarning"); }
     break;
 
   case 2264:
 
 /* Line 1806 of yacc.c  */
-#line 12263 "preproc.y"
+#line 12263 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("stop"); }
     break;
 
   case 2265:
 
 /* Line 1806 of yacc.c  */
-#line 12266 "preproc.y"
+#line 12266 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("connect"); }
     break;
 
   case 2266:
 
 /* Line 1806 of yacc.c  */
-#line 12267 "preproc.y"
+#line 12267 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("describe"); }
     break;
 
   case 2267:
 
 /* Line 1806 of yacc.c  */
-#line 12268 "preproc.y"
+#line 12268 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("disconnect"); }
     break;
 
   case 2268:
 
 /* Line 1806 of yacc.c  */
-#line 12269 "preproc.y"
+#line 12269 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("open"); }
     break;
 
   case 2269:
 
 /* Line 1806 of yacc.c  */
-#line 12270 "preproc.y"
+#line 12270 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("var"); }
     break;
 
   case 2270:
 
 /* Line 1806 of yacc.c  */
-#line 12271 "preproc.y"
+#line 12271 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("whenever"); }
     break;
 
   case 2271:
 
 /* Line 1806 of yacc.c  */
-#line 12275 "preproc.y"
+#line 12275 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("bool"); }
     break;
 
   case 2272:
 
 /* Line 1806 of yacc.c  */
-#line 12276 "preproc.y"
+#line 12276 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("long"); }
     break;
 
   case 2273:
 
 /* Line 1806 of yacc.c  */
-#line 12277 "preproc.y"
+#line 12277 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("output"); }
     break;
 
   case 2274:
 
 /* Line 1806 of yacc.c  */
-#line 12278 "preproc.y"
+#line 12278 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("short"); }
     break;
 
   case 2275:
 
 /* Line 1806 of yacc.c  */
-#line 12279 "preproc.y"
+#line 12279 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("struct"); }
     break;
 
   case 2276:
 
 /* Line 1806 of yacc.c  */
-#line 12280 "preproc.y"
+#line 12280 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("signed"); }
     break;
 
   case 2277:
 
 /* Line 1806 of yacc.c  */
-#line 12281 "preproc.y"
+#line 12281 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("unsigned"); }
     break;
 
   case 2278:
 
 /* Line 1806 of yacc.c  */
-#line 12284 "preproc.y"
+#line 12284 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(1) - (1)].str); }
     break;
 
   case 2279:
 
 /* Line 1806 of yacc.c  */
-#line 12287 "preproc.y"
+#line 12287 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(1) - (1)].str); }
     break;
 
   case 2280:
 
 /* Line 1806 of yacc.c  */
-#line 12288 "preproc.y"
+#line 12288 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(1) - (1)].str); }
     break;
 
   case 2281:
 
 /* Line 1806 of yacc.c  */
-#line 12289 "preproc.y"
+#line 12289 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(1) - (1)].str); }
     break;
 
   case 2282:
 
 /* Line 1806 of yacc.c  */
-#line 12290 "preproc.y"
+#line 12290 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(1) - (1)].str); }
     break;
 
   case 2283:
 
 /* Line 1806 of yacc.c  */
-#line 12291 "preproc.y"
+#line 12291 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(1) - (1)].str); }
     break;
 
   case 2284:
 
 /* Line 1806 of yacc.c  */
-#line 12292 "preproc.y"
+#line 12292 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(1) - (1)].str); }
     break;
 
   case 2285:
 
 /* Line 1806 of yacc.c  */
-#line 12293 "preproc.y"
+#line 12293 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("char"); }
     break;
 
   case 2286:
 
 /* Line 1806 of yacc.c  */
-#line 12294 "preproc.y"
+#line 12294 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("values"); }
     break;
 
   case 2287:
 
 /* Line 1806 of yacc.c  */
-#line 12307 "preproc.y"
+#line 12307 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(1) - (1)].str); }
     break;
 
   case 2288:
 
 /* Line 1806 of yacc.c  */
-#line 12308 "preproc.y"
+#line 12308 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(1) - (1)].str); }
     break;
 
   case 2289:
 
 /* Line 1806 of yacc.c  */
-#line 12309 "preproc.y"
+#line 12309 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(1) - (1)].str); }
     break;
 
   case 2290:
 
 /* Line 1806 of yacc.c  */
-#line 12310 "preproc.y"
+#line 12310 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(1) - (1)].str); }
     break;
 
   case 2291:
 
 /* Line 1806 of yacc.c  */
-#line 12311 "preproc.y"
+#line 12311 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(1) - (1)].str); }
     break;
 
   case 2292:
 
 /* Line 1806 of yacc.c  */
-#line 12312 "preproc.y"
+#line 12312 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("char"); }
     break;
 
   case 2293:
 
 /* Line 1806 of yacc.c  */
-#line 12313 "preproc.y"
+#line 12313 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("values"); }
     break;
 
   case 2294:
 
 /* Line 1806 of yacc.c  */
-#line 12318 "preproc.y"
+#line 12318 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(1) - (1)].str); }
     break;
 
   case 2295:
 
 /* Line 1806 of yacc.c  */
-#line 12319 "preproc.y"
+#line 12319 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(1) - (1)].str); }
     break;
 
   case 2296:
 
 /* Line 1806 of yacc.c  */
-#line 12320 "preproc.y"
+#line 12320 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(1) - (1)].str); }
     break;
 
   case 2297:
 
 /* Line 1806 of yacc.c  */
-#line 12321 "preproc.y"
+#line 12321 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(1) - (1)].str); }
     break;
 
   case 2298:
 
 /* Line 1806 of yacc.c  */
-#line 12322 "preproc.y"
+#line 12322 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(1) - (1)].str); }
     break;
 
   case 2299:
 
 /* Line 1806 of yacc.c  */
-#line 12323 "preproc.y"
+#line 12323 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(1) - (1)].str); }
     break;
 
   case 2300:
 
 /* Line 1806 of yacc.c  */
-#line 12329 "preproc.y"
+#line 12329 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(1) - (1)].str); }
     break;
 
   case 2301:
 
 /* Line 1806 of yacc.c  */
-#line 12330 "preproc.y"
+#line 12330 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(1) - (1)].str); }
     break;
 
   case 2302:
 
 /* Line 1806 of yacc.c  */
-#line 12331 "preproc.y"
+#line 12331 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("char"); }
     break;
 
   case 2303:
 
 /* Line 1806 of yacc.c  */
-#line 12332 "preproc.y"
+#line 12332 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("current"); }
     break;
 
   case 2304:
 
 /* Line 1806 of yacc.c  */
-#line 12333 "preproc.y"
+#line 12333 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("input"); }
     break;
 
   case 2305:
 
 /* Line 1806 of yacc.c  */
-#line 12334 "preproc.y"
+#line 12334 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("int"); }
     break;
 
   case 2306:
 
 /* Line 1806 of yacc.c  */
-#line 12335 "preproc.y"
+#line 12335 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("to"); }
     break;
 
   case 2307:
 
 /* Line 1806 of yacc.c  */
-#line 12336 "preproc.y"
+#line 12336 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("union"); }
     break;
 
   case 2308:
 
 /* Line 1806 of yacc.c  */
-#line 12337 "preproc.y"
+#line 12337 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("values"); }
     break;
 
   case 2309:
 
 /* Line 1806 of yacc.c  */
-#line 12338 "preproc.y"
+#line 12338 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(1) - (1)].str); }
     break;
 
   case 2310:
 
 /* Line 1806 of yacc.c  */
-#line 12339 "preproc.y"
+#line 12339 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(1) - (1)].str); }
     break;
 
   case 2311:
 
 /* Line 1806 of yacc.c  */
-#line 12342 "preproc.y"
+#line 12342 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(1) - (1)].str); }
     break;
 
   case 2312:
 
 /* Line 1806 of yacc.c  */
-#line 12343 "preproc.y"
+#line 12343 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(1) - (1)].str); }
     break;
 
   case 2313:
 
 /* Line 1806 of yacc.c  */
-#line 12344 "preproc.y"
+#line 12344 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(1) - (1)].str); }
     break;
 
   case 2314:
 
 /* Line 1806 of yacc.c  */
-#line 12345 "preproc.y"
+#line 12345 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(1) - (1)].str); }
     break;
 
   case 2315:
 
 /* Line 1806 of yacc.c  */
-#line 12346 "preproc.y"
+#line 12346 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("connection"); }
     break;
 
   case 2316:
 
 /* Line 1806 of yacc.c  */
-#line 12349 "preproc.y"
+#line 12349 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(1) - (1)].str); }
     break;
 
   case 2317:
 
 /* Line 1806 of yacc.c  */
-#line 12350 "preproc.y"
+#line 12350 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(1) - (1)].str); }
     break;
 
   case 2318:
 
 /* Line 1806 of yacc.c  */
-#line 12351 "preproc.y"
+#line 12351 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(1) - (1)].str); }
     break;
 
   case 2319:
 
 /* Line 1806 of yacc.c  */
-#line 12352 "preproc.y"
+#line 12352 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(1) - (1)].str); }
     break;
 
   case 2320:
 
 /* Line 1806 of yacc.c  */
-#line 12355 "preproc.y"
+#line 12355 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("auto"); }
     break;
 
   case 2321:
 
 /* Line 1806 of yacc.c  */
-#line 12356 "preproc.y"
+#line 12356 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("const"); }
     break;
 
   case 2322:
 
 /* Line 1806 of yacc.c  */
-#line 12357 "preproc.y"
+#line 12357 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("extern"); }
     break;
 
   case 2323:
 
 /* Line 1806 of yacc.c  */
-#line 12358 "preproc.y"
+#line 12358 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("register"); }
     break;
 
   case 2324:
 
 /* Line 1806 of yacc.c  */
-#line 12359 "preproc.y"
+#line 12359 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("static"); }
     break;
 
   case 2325:
 
 /* Line 1806 of yacc.c  */
-#line 12360 "preproc.y"
+#line 12360 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("typedef"); }
     break;
 
   case 2326:
 
 /* Line 1806 of yacc.c  */
-#line 12361 "preproc.y"
+#line 12361 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("volatile"); }
     break;
 
   case 2327:
 
 /* Line 1806 of yacc.c  */
-#line 12378 "preproc.y"
+#line 12378 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(1) - (1)].str); }
     break;
 
   case 2328:
 
 /* Line 1806 of yacc.c  */
-#line 12379 "preproc.y"
+#line 12379 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(1) - (1)].str); }
     break;
 
   case 2329:
 
 /* Line 1806 of yacc.c  */
-#line 12380 "preproc.y"
+#line 12380 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("connection"); }
     break;
 
   case 2330:
 
 /* Line 1806 of yacc.c  */
-#line 12383 "preproc.y"
+#line 12383 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("day"); }
     break;
 
   case 2331:
 
 /* Line 1806 of yacc.c  */
-#line 12384 "preproc.y"
+#line 12384 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("hour"); }
     break;
 
   case 2332:
 
 /* Line 1806 of yacc.c  */
-#line 12385 "preproc.y"
+#line 12385 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("minute"); }
     break;
 
   case 2333:
 
 /* Line 1806 of yacc.c  */
-#line 12386 "preproc.y"
+#line 12386 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("month"); }
     break;
 
   case 2334:
 
 /* Line 1806 of yacc.c  */
-#line 12387 "preproc.y"
+#line 12387 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("second"); }
     break;
 
   case 2335:
 
 /* Line 1806 of yacc.c  */
-#line 12388 "preproc.y"
+#line 12388 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("year"); }
     break;
 
   case 2338:
 
 /* Line 1806 of yacc.c  */
-#line 12395 "preproc.y"
+#line 12395 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 				reset_variables();
 				pacounter = 1;
@@ -43670,35 +43670,35 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 2339:
 
 /* Line 1806 of yacc.c  */
-#line 12401 "preproc.y"
+#line 12401 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = EMPTY; }
     break;
 
   case 2340:
 
 /* Line 1806 of yacc.c  */
-#line 12402 "preproc.y"
+#line 12402 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(1) - (1)].str); }
     break;
 
   case 2341:
 
 /* Line 1806 of yacc.c  */
-#line 12406 "preproc.y"
+#line 12406 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { add_variable_to_head(&argsresult, find_variable((yyvsp[(1) - (2)].str)), find_variable((yyvsp[(2) - (2)].str))); }
     break;
 
   case 2342:
 
 /* Line 1806 of yacc.c  */
-#line 12408 "preproc.y"
+#line 12408 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { add_variable_to_head(&argsresult, find_variable((yyvsp[(1) - (1)].str)), &no_indicator); }
     break;
 
   case 2343:
 
 /* Line 1806 of yacc.c  */
-#line 12413 "preproc.y"
+#line 12413 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 			if (find_variable((yyvsp[(2) - (2)].str))->type->type == ECPGt_array)
 				mmerror(PARSE_ERROR, ET_ERROR, "arrays of indicators are not allowed on input");
@@ -43711,7 +43711,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 2344:
 
 /* Line 1806 of yacc.c  */
-#line 12423 "preproc.y"
+#line 12423 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 			add_variable_to_head(&argsinsert, find_variable((yyvsp[(1) - (1)].str)), &no_indicator);
 			(yyval.str) = create_questionmarks((yyvsp[(1) - (1)].str), false);
@@ -43721,28 +43721,28 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 2345:
 
 /* Line 1806 of yacc.c  */
-#line 12429 "preproc.y"
+#line 12429 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { check_indicator((find_variable((yyvsp[(1) - (1)].str)))->type); (yyval.str) = (yyvsp[(1) - (1)].str); }
     break;
 
   case 2346:
 
 /* Line 1806 of yacc.c  */
-#line 12430 "preproc.y"
+#line 12430 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { check_indicator((find_variable((yyvsp[(2) - (2)].str)))->type); (yyval.str) = (yyvsp[(2) - (2)].str); }
     break;
 
   case 2347:
 
 /* Line 1806 of yacc.c  */
-#line 12431 "preproc.y"
+#line 12431 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { check_indicator((find_variable((yyvsp[(2) - (2)].str)))->type); (yyval.str) = (yyvsp[(2) - (2)].str); }
     break;
 
   case 2348:
 
 /* Line 1806 of yacc.c  */
-#line 12435 "preproc.y"
+#line 12435 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 			/* As long as multidimensional arrays are not implemented we have to check for those here */
 			char *ptr = (yyvsp[(1) - (1)].str);
@@ -43778,28 +43778,28 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 2349:
 
 /* Line 1806 of yacc.c  */
-#line 12467 "preproc.y"
+#line 12467 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_name(); }
     break;
 
   case 2350:
 
 /* Line 1806 of yacc.c  */
-#line 12469 "preproc.y"
+#line 12469 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_name(); }
     break;
 
   case 2351:
 
 /* Line 1806 of yacc.c  */
-#line 12471 "preproc.y"
+#line 12471 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_name(); }
     break;
 
   case 2352:
 
 /* Line 1806 of yacc.c  */
-#line 12475 "preproc.y"
+#line 12475 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 			/* could have been input as '' or $$ */
 			(yyval.str) = (char *)mm_alloc(strlen((yyvsp[(1) - (1)].str)) + 3);
@@ -43814,7 +43814,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 2353:
 
 /* Line 1806 of yacc.c  */
-#line 12485 "preproc.y"
+#line 12485 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 			(yyval.str) = (char *)mm_alloc(strlen((yyvsp[(1) - (1)].str)) + 4);
 			(yyval.str)[0]='E';
@@ -43829,7 +43829,7 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 2354:
 
 /* Line 1806 of yacc.c  */
-#line 12495 "preproc.y"
+#line 12495 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     {
 			(yyval.str) = (char *)mm_alloc(strlen((yyvsp[(1) - (1)].str)) + 4);
 			(yyval.str)[0]='N';
@@ -43844,693 +43844,693 @@ mmerror(PARSE_ERROR, ET_WARNING, "unsupported feature will be passed to server")
   case 2355:
 
 /* Line 1806 of yacc.c  */
-#line 12504 "preproc.y"
+#line 12504 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(1) - (1)].str); }
     break;
 
   case 2356:
 
 /* Line 1806 of yacc.c  */
-#line 12505 "preproc.y"
+#line 12505 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(1) - (1)].str); }
     break;
 
   case 2357:
 
 /* Line 1806 of yacc.c  */
-#line 12508 "preproc.y"
+#line 12508 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_name(); }
     break;
 
   case 2358:
 
 /* Line 1806 of yacc.c  */
-#line 12510 "preproc.y"
+#line 12510 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_name(); }
     break;
 
   case 2359:
 
 /* Line 1806 of yacc.c  */
-#line 12511 "preproc.y"
+#line 12511 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make3_str(make_str("\""), (yyvsp[(1) - (1)].str), make_str("\"")); }
     break;
 
   case 2360:
 
 /* Line 1806 of yacc.c  */
-#line 12512 "preproc.y"
+#line 12512 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(1) - (1)].str); }
     break;
 
   case 2361:
 
 /* Line 1806 of yacc.c  */
-#line 12516 "preproc.y"
+#line 12516 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make3_str(make_str("\""), (yyvsp[(1) - (1)].str), make_str("\"")); }
     break;
 
   case 2362:
 
 /* Line 1806 of yacc.c  */
-#line 12518 "preproc.y"
+#line 12518 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make3_str(make_str("("), (yyvsp[(1) - (1)].str), make_str(")")); }
     break;
 
   case 2363:
 
 /* Line 1806 of yacc.c  */
-#line 12525 "preproc.y"
+#line 12525 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(1) - (1)].str); }
     break;
 
   case 2364:
 
 /* Line 1806 of yacc.c  */
-#line 12526 "preproc.y"
+#line 12526 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("()"); }
     break;
 
   case 2365:
 
 /* Line 1806 of yacc.c  */
-#line 12528 "preproc.y"
+#line 12528 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = cat_str(3, make_str("("), (yyvsp[(2) - (3)].str), make_str(")")); }
     break;
 
   case 2366:
 
 /* Line 1806 of yacc.c  */
-#line 12531 "preproc.y"
+#line 12531 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(1) - (1)].str); }
     break;
 
   case 2367:
 
 /* Line 1806 of yacc.c  */
-#line 12533 "preproc.y"
+#line 12533 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = cat2_str((yyvsp[(1) - (2)].str), (yyvsp[(2) - (2)].str)); }
     break;
 
   case 2368:
 
 /* Line 1806 of yacc.c  */
-#line 12536 "preproc.y"
+#line 12536 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(1) - (1)].str); }
     break;
 
   case 2369:
 
 /* Line 1806 of yacc.c  */
-#line 12537 "preproc.y"
+#line 12537 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = cat_str(3, (yyvsp[(1) - (3)].str), make_str(","), (yyvsp[(3) - (3)].str)); }
     break;
 
   case 2370:
 
 /* Line 1806 of yacc.c  */
-#line 12540 "preproc.y"
+#line 12540 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(1) - (1)].str); }
     break;
 
   case 2371:
 
 /* Line 1806 of yacc.c  */
-#line 12541 "preproc.y"
+#line 12541 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = cat_str(3, make_str("{"), (yyvsp[(2) - (3)].str), make_str("}")); }
     break;
 
   case 2372:
 
 /* Line 1806 of yacc.c  */
-#line 12544 "preproc.y"
+#line 12544 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(1) - (1)].str); }
     break;
 
   case 2373:
 
 /* Line 1806 of yacc.c  */
-#line 12545 "preproc.y"
+#line 12545 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("("); }
     break;
 
   case 2374:
 
 /* Line 1806 of yacc.c  */
-#line 12546 "preproc.y"
+#line 12546 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str(")"); }
     break;
 
   case 2375:
 
 /* Line 1806 of yacc.c  */
-#line 12547 "preproc.y"
+#line 12547 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str(","); }
     break;
 
   case 2376:
 
 /* Line 1806 of yacc.c  */
-#line 12548 "preproc.y"
+#line 12548 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str(";"); }
     break;
 
   case 2377:
 
 /* Line 1806 of yacc.c  */
-#line 12551 "preproc.y"
+#line 12551 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(1) - (1)].str); }
     break;
 
   case 2378:
 
 /* Line 1806 of yacc.c  */
-#line 12552 "preproc.y"
+#line 12552 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(1) - (1)].str); }
     break;
 
   case 2379:
 
 /* Line 1806 of yacc.c  */
-#line 12553 "preproc.y"
+#line 12553 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(1) - (1)].str); }
     break;
 
   case 2380:
 
 /* Line 1806 of yacc.c  */
-#line 12554 "preproc.y"
+#line 12554 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(1) - (1)].str); }
     break;
 
   case 2381:
 
 /* Line 1806 of yacc.c  */
-#line 12555 "preproc.y"
+#line 12555 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("*"); }
     break;
 
   case 2382:
 
 /* Line 1806 of yacc.c  */
-#line 12556 "preproc.y"
+#line 12556 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("+"); }
     break;
 
   case 2383:
 
 /* Line 1806 of yacc.c  */
-#line 12557 "preproc.y"
+#line 12557 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("-"); }
     break;
 
   case 2384:
 
 /* Line 1806 of yacc.c  */
-#line 12558 "preproc.y"
+#line 12558 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("/"); }
     break;
 
   case 2385:
 
 /* Line 1806 of yacc.c  */
-#line 12559 "preproc.y"
+#line 12559 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("%"); }
     break;
 
   case 2386:
 
 /* Line 1806 of yacc.c  */
-#line 12560 "preproc.y"
+#line 12560 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("NULL"); }
     break;
 
   case 2387:
 
 /* Line 1806 of yacc.c  */
-#line 12561 "preproc.y"
+#line 12561 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("+="); }
     break;
 
   case 2388:
 
 /* Line 1806 of yacc.c  */
-#line 12562 "preproc.y"
+#line 12562 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("&&"); }
     break;
 
   case 2389:
 
 /* Line 1806 of yacc.c  */
-#line 12563 "preproc.y"
+#line 12563 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_name(); }
     break;
 
   case 2390:
 
 /* Line 1806 of yacc.c  */
-#line 12564 "preproc.y"
+#line 12564 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("auto"); }
     break;
 
   case 2391:
 
 /* Line 1806 of yacc.c  */
-#line 12565 "preproc.y"
+#line 12565 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("const"); }
     break;
 
   case 2392:
 
 /* Line 1806 of yacc.c  */
-#line 12566 "preproc.y"
+#line 12566 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("--"); }
     break;
 
   case 2393:
 
 /* Line 1806 of yacc.c  */
-#line 12567 "preproc.y"
+#line 12567 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("/="); }
     break;
 
   case 2394:
 
 /* Line 1806 of yacc.c  */
-#line 12568 "preproc.y"
+#line 12568 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str(".*"); }
     break;
 
   case 2395:
 
 /* Line 1806 of yacc.c  */
-#line 12569 "preproc.y"
+#line 12569 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("=="); }
     break;
 
   case 2396:
 
 /* Line 1806 of yacc.c  */
-#line 12570 "preproc.y"
+#line 12570 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("extern"); }
     break;
 
   case 2397:
 
 /* Line 1806 of yacc.c  */
-#line 12571 "preproc.y"
+#line 12571 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("++"); }
     break;
 
   case 2398:
 
 /* Line 1806 of yacc.c  */
-#line 12572 "preproc.y"
+#line 12572 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("<<"); }
     break;
 
   case 2399:
 
 /* Line 1806 of yacc.c  */
-#line 12573 "preproc.y"
+#line 12573 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("->"); }
     break;
 
   case 2400:
 
 /* Line 1806 of yacc.c  */
-#line 12574 "preproc.y"
+#line 12574 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("->*"); }
     break;
 
   case 2401:
 
 /* Line 1806 of yacc.c  */
-#line 12575 "preproc.y"
+#line 12575 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("%="); }
     break;
 
   case 2402:
 
 /* Line 1806 of yacc.c  */
-#line 12576 "preproc.y"
+#line 12576 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("*="); }
     break;
 
   case 2403:
 
 /* Line 1806 of yacc.c  */
-#line 12577 "preproc.y"
+#line 12577 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("!="); }
     break;
 
   case 2404:
 
 /* Line 1806 of yacc.c  */
-#line 12578 "preproc.y"
+#line 12578 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("||"); }
     break;
 
   case 2405:
 
 /* Line 1806 of yacc.c  */
-#line 12579 "preproc.y"
+#line 12579 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("register"); }
     break;
 
   case 2406:
 
 /* Line 1806 of yacc.c  */
-#line 12580 "preproc.y"
+#line 12580 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str(">>"); }
     break;
 
   case 2407:
 
 /* Line 1806 of yacc.c  */
-#line 12581 "preproc.y"
+#line 12581 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("static"); }
     break;
 
   case 2408:
 
 /* Line 1806 of yacc.c  */
-#line 12582 "preproc.y"
+#line 12582 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("-="); }
     break;
 
   case 2409:
 
 /* Line 1806 of yacc.c  */
-#line 12583 "preproc.y"
+#line 12583 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("typedef"); }
     break;
 
   case 2410:
 
 /* Line 1806 of yacc.c  */
-#line 12584 "preproc.y"
+#line 12584 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("volatile"); }
     break;
 
   case 2411:
 
 /* Line 1806 of yacc.c  */
-#line 12585 "preproc.y"
+#line 12585 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("bool"); }
     break;
 
   case 2412:
 
 /* Line 1806 of yacc.c  */
-#line 12586 "preproc.y"
+#line 12586 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("enum"); }
     break;
 
   case 2413:
 
 /* Line 1806 of yacc.c  */
-#line 12587 "preproc.y"
+#line 12587 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("hour"); }
     break;
 
   case 2414:
 
 /* Line 1806 of yacc.c  */
-#line 12588 "preproc.y"
+#line 12588 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("int"); }
     break;
 
   case 2415:
 
 /* Line 1806 of yacc.c  */
-#line 12589 "preproc.y"
+#line 12589 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("long"); }
     break;
 
   case 2416:
 
 /* Line 1806 of yacc.c  */
-#line 12590 "preproc.y"
+#line 12590 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("minute"); }
     break;
 
   case 2417:
 
 /* Line 1806 of yacc.c  */
-#line 12591 "preproc.y"
+#line 12591 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("month"); }
     break;
 
   case 2418:
 
 /* Line 1806 of yacc.c  */
-#line 12592 "preproc.y"
+#line 12592 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("second"); }
     break;
 
   case 2419:
 
 /* Line 1806 of yacc.c  */
-#line 12593 "preproc.y"
+#line 12593 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("short"); }
     break;
 
   case 2420:
 
 /* Line 1806 of yacc.c  */
-#line 12594 "preproc.y"
+#line 12594 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("signed"); }
     break;
 
   case 2421:
 
 /* Line 1806 of yacc.c  */
-#line 12595 "preproc.y"
+#line 12595 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("struct"); }
     break;
 
   case 2422:
 
 /* Line 1806 of yacc.c  */
-#line 12596 "preproc.y"
+#line 12596 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("unsigned"); }
     break;
 
   case 2423:
 
 /* Line 1806 of yacc.c  */
-#line 12597 "preproc.y"
+#line 12597 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("year"); }
     break;
 
   case 2424:
 
 /* Line 1806 of yacc.c  */
-#line 12598 "preproc.y"
+#line 12598 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("char"); }
     break;
 
   case 2425:
 
 /* Line 1806 of yacc.c  */
-#line 12599 "preproc.y"
+#line 12599 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("float"); }
     break;
 
   case 2426:
 
 /* Line 1806 of yacc.c  */
-#line 12600 "preproc.y"
+#line 12600 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("to"); }
     break;
 
   case 2427:
 
 /* Line 1806 of yacc.c  */
-#line 12601 "preproc.y"
+#line 12601 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("union"); }
     break;
 
   case 2428:
 
 /* Line 1806 of yacc.c  */
-#line 12602 "preproc.y"
+#line 12602 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("varchar"); }
     break;
 
   case 2429:
 
 /* Line 1806 of yacc.c  */
-#line 12603 "preproc.y"
+#line 12603 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("["); }
     break;
 
   case 2430:
 
 /* Line 1806 of yacc.c  */
-#line 12604 "preproc.y"
+#line 12604 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("]"); }
     break;
 
   case 2431:
 
 /* Line 1806 of yacc.c  */
-#line 12605 "preproc.y"
+#line 12605 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("="); }
     break;
 
   case 2432:
 
 /* Line 1806 of yacc.c  */
-#line 12606 "preproc.y"
+#line 12606 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str(":"); }
     break;
 
   case 2433:
 
 /* Line 1806 of yacc.c  */
-#line 12609 "preproc.y"
+#line 12609 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(2) - (2)].str); }
     break;
 
   case 2434:
 
 /* Line 1806 of yacc.c  */
-#line 12610 "preproc.y"
+#line 12610 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(3) - (3)].str); }
     break;
 
   case 2435:
 
 /* Line 1806 of yacc.c  */
-#line 12611 "preproc.y"
+#line 12611 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("all"); }
     break;
 
   case 2436:
 
 /* Line 1806 of yacc.c  */
-#line 12612 "preproc.y"
+#line 12612 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = make_str("all"); }
     break;
 
   case 2437:
 
 /* Line 1806 of yacc.c  */
-#line 12615 "preproc.y"
+#line 12615 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(1) - (1)].str); }
     break;
 
   case 2438:
 
 /* Line 1806 of yacc.c  */
-#line 12616 "preproc.y"
+#line 12616 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = cat_str(3, make_str("("), (yyvsp[(2) - (3)].str), make_str(")")); }
     break;
 
   case 2439:
 
 /* Line 1806 of yacc.c  */
-#line 12617 "preproc.y"
+#line 12617 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = cat_str(3, (yyvsp[(1) - (3)].str), make_str("+"), (yyvsp[(3) - (3)].str)); }
     break;
 
   case 2440:
 
 /* Line 1806 of yacc.c  */
-#line 12618 "preproc.y"
+#line 12618 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = cat_str(3, (yyvsp[(1) - (3)].str), make_str("-"), (yyvsp[(3) - (3)].str)); }
     break;
 
   case 2441:
 
 /* Line 1806 of yacc.c  */
-#line 12619 "preproc.y"
+#line 12619 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = cat_str(3, (yyvsp[(1) - (3)].str), make_str("*"), (yyvsp[(3) - (3)].str)); }
     break;
 
   case 2442:
 
 /* Line 1806 of yacc.c  */
-#line 12620 "preproc.y"
+#line 12620 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = cat_str(3, (yyvsp[(1) - (3)].str), make_str("/"), (yyvsp[(3) - (3)].str)); }
     break;
 
   case 2443:
 
 /* Line 1806 of yacc.c  */
-#line 12621 "preproc.y"
+#line 12621 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = cat_str(3, (yyvsp[(1) - (3)].str), make_str("%"), (yyvsp[(3) - (3)].str)); }
     break;
 
   case 2444:
 
 /* Line 1806 of yacc.c  */
-#line 12622 "preproc.y"
+#line 12622 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(1) - (1)].str); }
     break;
 
   case 2445:
 
 /* Line 1806 of yacc.c  */
-#line 12623 "preproc.y"
+#line 12623 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(1) - (1)].str); }
     break;
 
   case 2446:
 
 /* Line 1806 of yacc.c  */
-#line 12626 "preproc.y"
+#line 12626 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = EMPTY; }
     break;
 
   case 2447:
 
 /* Line 1806 of yacc.c  */
-#line 12627 "preproc.y"
+#line 12627 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = EMPTY; }
     break;
 
   case 2448:
 
 /* Line 1806 of yacc.c  */
-#line 12628 "preproc.y"
+#line 12628 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = EMPTY; }
     break;
 
   case 2449:
 
 /* Line 1806 of yacc.c  */
-#line 12629 "preproc.y"
+#line 12629 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = EMPTY; }
     break;
 
   case 2450:
 
 /* Line 1806 of yacc.c  */
-#line 12630 "preproc.y"
+#line 12630 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = EMPTY; }
     break;
 
   case 2451:
 
 /* Line 1806 of yacc.c  */
-#line 12633 "preproc.y"
+#line 12633 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = EMPTY; }
     break;
 
   case 2452:
 
 /* Line 1806 of yacc.c  */
-#line 12634 "preproc.y"
+#line 12634 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
     { (yyval.str) = (yyvsp[(1) - (1)].str); }
     break;
 
 
 
 /* Line 1806 of yacc.c  */
-#line 44534 "preproc.c"
+#line 44534 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.c"
       default: break;
     }
   /* User semantic actions sometimes alter yychar, and that requires
@@ -44768,7 +44768,7 @@ yyreturn:
 
 
 /* Line 2067 of yacc.c  */
-#line 12637 "preproc.y"
+#line 12637 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
 
 
 void base_yyerror(const char *error)

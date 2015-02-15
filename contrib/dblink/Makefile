@@ -7,7 +7,10 @@ SHLIB_LINK = $(libpq)
 
 DATA_built = dblink.sql 
 DATA = uninstall_dblink.sql 
-REGRESS = dblink
+REGRESS = paths dblink
+REGRESS_OPTS = --dbname=$(CONTRIB_TESTDB) --dlpath=$(top_builddir)/src/test/regress \
+	--create-role=dblink_regression_test
+EXTRA_CLEAN = sql/paths.sql expected/paths.out
 
 
 ifdef USE_PGXS

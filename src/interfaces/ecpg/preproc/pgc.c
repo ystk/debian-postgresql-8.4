@@ -1,6 +1,6 @@
-#line 2 "pgc.c"
+#line 2 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.c"
 
-#line 4 "pgc.c"
+#line 4 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.c"
 
 #define  YY_INT_ALIGNED short int
 
@@ -1687,8 +1687,8 @@ int yy_flex_debug = 0;
 #define YY_MORE_ADJ 0
 #define YY_RESTORE_YY_MORE_OFFSET
 char *yytext;
-#line 1 "pgc.l"
-#line 2 "pgc.l"
+#line 1 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
+#line 2 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 /*-------------------------------------------------------------------------
  *
  * pgc.l
@@ -1901,7 +1901,7 @@ static struct _if_value
  * Note that xcstart must appear before operator, as explained above!
  *	Also whitespace (comment) must appear before operator.
  */
-#line 1905 "pgc.c"
+#line 1905 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.c"
 
 #define INITIAL 0
 #define C 1
@@ -2108,7 +2108,7 @@ YY_DECL
 	register char *yy_cp, *yy_bp;
 	register int yy_act;
     
-#line 346 "pgc.l"
+#line 346 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 
 
 
@@ -2116,7 +2116,7 @@ YY_DECL
 		token_start = NULL;
 
 
-#line 2120 "pgc.c"
+#line 2120 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.c"
 
 	if ( !(yy_init) )
 		{
@@ -2208,12 +2208,12 @@ do_action:	/* This label is used only to access EOF actions. */
 case 1:
 /* rule 1 can match eol */
 YY_RULE_SETUP
-#line 353 "pgc.l"
+#line 353 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 { /* ignore */ }
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 355 "pgc.l"
+#line 355 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 {
 					token_start = yytext;
 					state_before = YYSTATE;
@@ -2226,7 +2226,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 364 "pgc.l"
+#line 364 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 {
 					xcdepth++;
 			 		/* Put back any characters past slash-star; see above */
@@ -2236,7 +2236,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 371 "pgc.l"
+#line 371 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 {
 					ECHO;
 					if (xcdepth <= 0)
@@ -2251,26 +2251,26 @@ YY_RULE_SETUP
 case 5:
 /* rule 5 can match eol */
 YY_RULE_SETUP
-#line 382 "pgc.l"
+#line 382 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 { ECHO; }
 	YY_BREAK
 case 6:
 YY_RULE_SETUP
-#line 383 "pgc.l"
+#line 383 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 { ECHO; }
 	YY_BREAK
 case 7:
 YY_RULE_SETUP
-#line 384 "pgc.l"
+#line 384 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 { ECHO; }
 	YY_BREAK
 case YY_STATE_EOF(xc):
-#line 386 "pgc.l"
+#line 386 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 { mmerror(PARSE_ERROR, ET_FATAL, "unterminated /* comment"); }
 	YY_BREAK
 case 8:
 YY_RULE_SETUP
-#line 388 "pgc.l"
+#line 388 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 {
 					token_start = yytext;
 					BEGIN(xb);
@@ -2280,11 +2280,11 @@ YY_RULE_SETUP
 	YY_BREAK
 case 9:
 /* rule 9 can match eol */
-#line 395 "pgc.l"
+#line 395 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 case 10:
 /* rule 10 can match eol */
 YY_RULE_SETUP
-#line 395 "pgc.l"
+#line 395 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 {
 					yyless(1);
 					BEGIN(SQL);
@@ -2296,29 +2296,29 @@ YY_RULE_SETUP
 	YY_BREAK
 case 11:
 /* rule 11 can match eol */
-#line 405 "pgc.l"
+#line 405 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 case 12:
 /* rule 12 can match eol */
 YY_RULE_SETUP
-#line 405 "pgc.l"
+#line 405 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 { addlit(yytext, yyleng); }
 	YY_BREAK
 case 13:
 /* rule 13 can match eol */
-#line 407 "pgc.l"
+#line 407 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 case 14:
 /* rule 14 can match eol */
 YY_RULE_SETUP
-#line 407 "pgc.l"
+#line 407 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 { /* ignore */ }
 	YY_BREAK
 case YY_STATE_EOF(xb):
-#line 408 "pgc.l"
+#line 408 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 { mmerror(PARSE_ERROR, ET_FATAL, "unterminated bit string literal"); }
 	YY_BREAK
 case 15:
 YY_RULE_SETUP
-#line 410 "pgc.l"
+#line 410 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 {
 					token_start = yytext;
 					BEGIN(xh);
@@ -2328,11 +2328,11 @@ YY_RULE_SETUP
 	YY_BREAK
 case 16:
 /* rule 16 can match eol */
-#line 417 "pgc.l"
+#line 417 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 case 17:
 /* rule 17 can match eol */
 YY_RULE_SETUP
-#line 417 "pgc.l"
+#line 417 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 {
 				yyless(1);
 				BEGIN(SQL);
@@ -2341,12 +2341,12 @@ YY_RULE_SETUP
 			}
 	YY_BREAK
 case YY_STATE_EOF(xh):
-#line 424 "pgc.l"
+#line 424 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 { mmerror(PARSE_ERROR, ET_FATAL, "unterminated hexadecimal string literal"); }
 	YY_BREAK
 case 18:
 YY_RULE_SETUP
-#line 425 "pgc.l"
+#line 425 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 {
 				/* National character.
 				 * Transfer it as-is to the backend.
@@ -2359,7 +2359,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 19:
 YY_RULE_SETUP
-#line 434 "pgc.l"
+#line 434 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 {
 				token_start = yytext;
 				state_before = YYSTATE;
@@ -2369,7 +2369,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 20:
 YY_RULE_SETUP
-#line 440 "pgc.l"
+#line 440 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 {
 				token_start = yytext;
 				state_before = YYSTATE;
@@ -2379,7 +2379,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 21:
 YY_RULE_SETUP
-#line 446 "pgc.l"
+#line 446 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 {
 				token_start = yytext;
 				state_before = YYSTATE;
@@ -2389,7 +2389,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 22:
 YY_RULE_SETUP
-#line 452 "pgc.l"
+#line 452 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 {
 				token_start = yytext;
 				state_before = YYSTATE;
@@ -2400,11 +2400,11 @@ YY_RULE_SETUP
 	YY_BREAK
 case 23:
 /* rule 23 can match eol */
-#line 460 "pgc.l"
+#line 460 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 case 24:
 /* rule 24 can match eol */
 YY_RULE_SETUP
-#line 460 "pgc.l"
+#line 460 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 {
 				yyless(1);
 				BEGIN(state_before);
@@ -2414,11 +2414,11 @@ YY_RULE_SETUP
 	YY_BREAK
 case 25:
 /* rule 25 can match eol */
-#line 467 "pgc.l"
+#line 467 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 case 26:
 /* rule 26 can match eol */
 YY_RULE_SETUP
-#line 467 "pgc.l"
+#line 467 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 {
 				yyless(1);
 				BEGIN(state_before);
@@ -2428,11 +2428,11 @@ YY_RULE_SETUP
 	YY_BREAK
 case 27:
 /* rule 27 can match eol */
-#line 474 "pgc.l"
+#line 474 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 case 28:
 /* rule 28 can match eol */
 YY_RULE_SETUP
-#line 474 "pgc.l"
+#line 474 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 {
 				yyless(1);
 				BEGIN(state_before);
@@ -2443,7 +2443,7 @@ YY_RULE_SETUP
 case 29:
 /* rule 29 can match eol */
 YY_RULE_SETUP
-#line 480 "pgc.l"
+#line 480 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 {
 				addlit(yytext, yyleng);
 				BEGIN(state_before);
@@ -2453,12 +2453,12 @@ YY_RULE_SETUP
 	YY_BREAK
 case 30:
 YY_RULE_SETUP
-#line 486 "pgc.l"
+#line 486 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 { addlitchar('\''); }
 	YY_BREAK
 case 31:
 YY_RULE_SETUP
-#line 487 "pgc.l"
+#line 487 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 {
 				addlitchar('\\');
 				addlitchar('\'');
@@ -2467,40 +2467,40 @@ YY_RULE_SETUP
 case 32:
 /* rule 32 can match eol */
 YY_RULE_SETUP
-#line 491 "pgc.l"
+#line 491 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 { addlit(yytext, yyleng); }
 	YY_BREAK
 case 33:
 /* rule 33 can match eol */
 YY_RULE_SETUP
-#line 492 "pgc.l"
+#line 492 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 { addlit(yytext, yyleng); }
 	YY_BREAK
 case 34:
 /* rule 34 can match eol */
 YY_RULE_SETUP
-#line 493 "pgc.l"
+#line 493 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 { addlit(yytext, yyleng); }
 	YY_BREAK
 case 35:
 YY_RULE_SETUP
-#line 494 "pgc.l"
+#line 494 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 { addlit(yytext, yyleng); }
 	YY_BREAK
 case 36:
 YY_RULE_SETUP
-#line 495 "pgc.l"
+#line 495 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 { addlit(yytext, yyleng); }
 	YY_BREAK
 case 37:
 /* rule 37 can match eol */
 YY_RULE_SETUP
-#line 496 "pgc.l"
+#line 496 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 { /* ignore */ }
 	YY_BREAK
 case 38:
 YY_RULE_SETUP
-#line 497 "pgc.l"
+#line 497 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 {
 			   /* This is only needed for \ just before EOF */
 			   addlitchar(yytext[0]);
@@ -2511,12 +2511,12 @@ case YY_STATE_EOF(xqc):
 case YY_STATE_EOF(xe):
 case YY_STATE_EOF(xn):
 case YY_STATE_EOF(xus):
-#line 501 "pgc.l"
+#line 501 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 { mmerror(PARSE_ERROR, ET_FATAL, "unterminated quoted string"); }
 	YY_BREAK
 case 39:
 YY_RULE_SETUP
-#line 502 "pgc.l"
+#line 502 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 {
 				/* throw back all but the initial "$" */
 				yyless(1);
@@ -2526,7 +2526,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 40:
 YY_RULE_SETUP
-#line 508 "pgc.l"
+#line 508 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 {
 				token_start = yytext;
 				dolqstart = mm_strdup(yytext);
@@ -2537,7 +2537,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 41:
 YY_RULE_SETUP
-#line 515 "pgc.l"
+#line 515 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 {
 				if (strcmp(yytext, dolqstart) == 0)
 				{
@@ -2562,29 +2562,29 @@ YY_RULE_SETUP
 case 42:
 /* rule 42 can match eol */
 YY_RULE_SETUP
-#line 535 "pgc.l"
+#line 535 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 { addlit(yytext, yyleng); }
 	YY_BREAK
 case 43:
 YY_RULE_SETUP
-#line 536 "pgc.l"
+#line 536 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 { addlit(yytext, yyleng); }
 	YY_BREAK
 case 44:
 YY_RULE_SETUP
-#line 537 "pgc.l"
+#line 537 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 {
 				/* single quote or dollar sign */
 				addlitchar(yytext[0]);
 			}
 	YY_BREAK
 case YY_STATE_EOF(xdolq):
-#line 541 "pgc.l"
+#line 541 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 { base_yyerror("unterminated dollar-quoted string"); }
 	YY_BREAK
 case 45:
 YY_RULE_SETUP
-#line 542 "pgc.l"
+#line 542 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 {
 						state_before = YYSTATE;
 						BEGIN(xd);
@@ -2593,7 +2593,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 46:
 YY_RULE_SETUP
-#line 547 "pgc.l"
+#line 547 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 {
 						state_before = YYSTATE;
 						BEGIN(xui);
@@ -2603,7 +2603,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 47:
 YY_RULE_SETUP
-#line 553 "pgc.l"
+#line 553 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 {
 						BEGIN(state_before);
 						if (literallen == 0)
@@ -2615,7 +2615,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 48:
 YY_RULE_SETUP
-#line 561 "pgc.l"
+#line 561 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 {
 						BEGIN(state_before);
 						yylval.str = mm_strdup(literalbuf);
@@ -2625,7 +2625,7 @@ YY_RULE_SETUP
 case 49:
 /* rule 49 can match eol */
 YY_RULE_SETUP
-#line 566 "pgc.l"
+#line 566 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 {
 						BEGIN(state_before);
 						if (literallen == 2) /* "U&" */
@@ -2638,24 +2638,24 @@ YY_RULE_SETUP
 	YY_BREAK
 case 50:
 YY_RULE_SETUP
-#line 575 "pgc.l"
+#line 575 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 { addlitchar('"'); }
 	YY_BREAK
 case 51:
 /* rule 51 can match eol */
 YY_RULE_SETUP
-#line 576 "pgc.l"
+#line 576 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 { addlit(yytext, yyleng); }
 	YY_BREAK
 case YY_STATE_EOF(xd):
 case YY_STATE_EOF(xdc):
 case YY_STATE_EOF(xui):
-#line 577 "pgc.l"
+#line 577 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 { mmerror(PARSE_ERROR, ET_FATAL, "unterminated quoted identifier"); }
 	YY_BREAK
 case 52:
 YY_RULE_SETUP
-#line 578 "pgc.l"
+#line 578 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 {
 						state_before = YYSTATE;
 						BEGIN(xdc);
@@ -2665,17 +2665,17 @@ YY_RULE_SETUP
 case 53:
 /* rule 53 can match eol */
 YY_RULE_SETUP
-#line 583 "pgc.l"
+#line 583 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 { addlit(yytext, yyleng); }
 	YY_BREAK
 case 54:
 YY_RULE_SETUP
-#line 584 "pgc.l"
+#line 584 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 { return TYPECAST; }
 	YY_BREAK
 case 55:
 YY_RULE_SETUP
-#line 585 "pgc.l"
+#line 585 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 {
 			  /* are we simulating Informix? */
 				if (INFORMIX_MODE)
@@ -2688,7 +2688,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 56:
 YY_RULE_SETUP
-#line 594 "pgc.l"
+#line 594 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 { /*
 					   * We may find a ';' inside a structure
 					   * definition in a TYPE or VAR statement.
@@ -2701,7 +2701,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 57:
 YY_RULE_SETUP
-#line 603 "pgc.l"
+#line 603 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 {
 						/*
 						 * Check for embedded slash-star or dash-dash; those
@@ -2773,7 +2773,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 58:
 YY_RULE_SETUP
-#line 671 "pgc.l"
+#line 671 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 {
 						yylval.ival = atol(yytext+1);
 						return PARAM;
@@ -2781,7 +2781,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 59:
 YY_RULE_SETUP
-#line 675 "pgc.l"
+#line 675 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 {
 						long val;
 						char* endptr;
@@ -2805,7 +2805,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 60:
 YY_RULE_SETUP
-#line 695 "pgc.l"
+#line 695 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 {
 						yylval.str = mm_strdup(yytext);
 						return IP;
@@ -2813,7 +2813,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 61:
 YY_RULE_SETUP
-#line 699 "pgc.l"
+#line 699 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 {
 						yylval.str = mm_strdup(yytext);
 						return FCONST;
@@ -2821,7 +2821,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 62:
 YY_RULE_SETUP
-#line 703 "pgc.l"
+#line 703 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 {
 						yylval.str = mm_strdup(yytext);
 						return FCONST;
@@ -2829,7 +2829,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 63:
 YY_RULE_SETUP
-#line 707 "pgc.l"
+#line 707 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 {
 						yyless(yyleng-1);
 						yylval.str = mm_strdup(yytext);
@@ -2838,7 +2838,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 64:
 YY_RULE_SETUP
-#line 712 "pgc.l"
+#line 712 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 {
 						yyless(yyleng-2);
 						yylval.str = mm_strdup(yytext);
@@ -2848,7 +2848,7 @@ YY_RULE_SETUP
 case 65:
 /* rule 65 can match eol */
 YY_RULE_SETUP
-#line 717 "pgc.l"
+#line 717 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 {
 						yylval.str = mm_strdup(yytext+1);
 						return(CVARIABLE);
@@ -2856,7 +2856,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 66:
 YY_RULE_SETUP
-#line 721 "pgc.l"
+#line 721 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 {
 						const ScanKeyword    *keyword;
 						
@@ -2887,18 +2887,18 @@ YY_RULE_SETUP
 	YY_BREAK
 case 67:
 YY_RULE_SETUP
-#line 748 "pgc.l"
+#line 748 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 { return yytext[0]; }
 	YY_BREAK
 case 68:
 /* rule 68 can match eol */
 YY_RULE_SETUP
-#line 749 "pgc.l"
+#line 749 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 { BEGIN(SQL); return SQL_START; }
 	YY_BREAK
 case 69:
 YY_RULE_SETUP
-#line 750 "pgc.l"
+#line 750 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 { 
 						/* are we simulating Informix? */
 						if (INFORMIX_MODE)
@@ -2913,12 +2913,12 @@ YY_RULE_SETUP
 case 70:
 /* rule 70 can match eol */
 YY_RULE_SETUP
-#line 760 "pgc.l"
+#line 760 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 { ECHO; }
 	YY_BREAK
 case 71:
 YY_RULE_SETUP
-#line 761 "pgc.l"
+#line 761 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 {
 						char* endptr;
 
@@ -2936,7 +2936,7 @@ YY_RULE_SETUP
 case 72:
 /* rule 72 can match eol */
 YY_RULE_SETUP
-#line 774 "pgc.l"
+#line 774 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 {
 						if (system_includes)
 						{
@@ -2952,7 +2952,7 @@ YY_RULE_SETUP
 case 73:
 /* rule 73 can match eol */
 YY_RULE_SETUP
-#line 785 "pgc.l"
+#line 785 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 {
 						yylval.str = mm_strdup(yytext);
 						return(CPP_LINE);
@@ -2960,7 +2960,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 74:
 YY_RULE_SETUP
-#line 789 "pgc.l"
+#line 789 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 {
 						const ScanKeyword		*keyword;
 							
@@ -2981,180 +2981,180 @@ YY_RULE_SETUP
 	YY_BREAK
 case 75:
 YY_RULE_SETUP
-#line 806 "pgc.l"
+#line 806 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 { return(':'); }
 	YY_BREAK
 case 76:
 YY_RULE_SETUP
-#line 807 "pgc.l"
+#line 807 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 { return(';'); }
 	YY_BREAK
 case 77:
 YY_RULE_SETUP
-#line 808 "pgc.l"
+#line 808 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 { return(','); }
 	YY_BREAK
 case 78:
 YY_RULE_SETUP
-#line 809 "pgc.l"
+#line 809 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 { return('*'); }
 	YY_BREAK
 case 79:
 YY_RULE_SETUP
-#line 810 "pgc.l"
+#line 810 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 { return('%'); }
 	YY_BREAK
 case 80:
 YY_RULE_SETUP
-#line 811 "pgc.l"
+#line 811 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 { return('/'); }
 	YY_BREAK
 case 81:
 YY_RULE_SETUP
-#line 812 "pgc.l"
+#line 812 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 { return('+'); }
 	YY_BREAK
 case 82:
 YY_RULE_SETUP
-#line 813 "pgc.l"
+#line 813 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 { return('-'); }
 	YY_BREAK
 case 83:
 YY_RULE_SETUP
-#line 814 "pgc.l"
+#line 814 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 { return('('); }
 	YY_BREAK
 case 84:
 YY_RULE_SETUP
-#line 815 "pgc.l"
+#line 815 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 { return(')'); }
 	YY_BREAK
 case 85:
 /* rule 85 can match eol */
 YY_RULE_SETUP
-#line 816 "pgc.l"
+#line 816 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 { ECHO; }
 	YY_BREAK
 case 86:
 YY_RULE_SETUP
-#line 817 "pgc.l"
+#line 817 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 { return('{'); }
 	YY_BREAK
 case 87:
 YY_RULE_SETUP
-#line 818 "pgc.l"
+#line 818 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 { return('}'); }
 	YY_BREAK
 case 88:
 YY_RULE_SETUP
-#line 819 "pgc.l"
+#line 819 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 { return('['); }
 	YY_BREAK
 case 89:
 YY_RULE_SETUP
-#line 820 "pgc.l"
+#line 820 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 { return(']'); }
 	YY_BREAK
 case 90:
 YY_RULE_SETUP
-#line 821 "pgc.l"
+#line 821 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 { return('='); }
 	YY_BREAK
 case 91:
 YY_RULE_SETUP
-#line 822 "pgc.l"
+#line 822 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 { return(S_MEMBER); }
 	YY_BREAK
 case 92:
 YY_RULE_SETUP
-#line 823 "pgc.l"
+#line 823 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 { return(S_RSHIFT); }
 	YY_BREAK
 case 93:
 YY_RULE_SETUP
-#line 824 "pgc.l"
+#line 824 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 { return(S_LSHIFT); }
 	YY_BREAK
 case 94:
 YY_RULE_SETUP
-#line 825 "pgc.l"
+#line 825 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 { return(S_OR); }
 	YY_BREAK
 case 95:
 YY_RULE_SETUP
-#line 826 "pgc.l"
+#line 826 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 { return(S_AND); }
 	YY_BREAK
 case 96:
 YY_RULE_SETUP
-#line 827 "pgc.l"
+#line 827 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 { return(S_INC); }
 	YY_BREAK
 case 97:
 YY_RULE_SETUP
-#line 828 "pgc.l"
+#line 828 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 { return(S_DEC); }
 	YY_BREAK
 case 98:
 YY_RULE_SETUP
-#line 829 "pgc.l"
+#line 829 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 { return(S_EQUAL); }
 	YY_BREAK
 case 99:
 YY_RULE_SETUP
-#line 830 "pgc.l"
+#line 830 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 { return(S_NEQUAL); }
 	YY_BREAK
 case 100:
 YY_RULE_SETUP
-#line 831 "pgc.l"
+#line 831 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 { return(S_ADD); }
 	YY_BREAK
 case 101:
 YY_RULE_SETUP
-#line 832 "pgc.l"
+#line 832 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 { return(S_SUB); }
 	YY_BREAK
 case 102:
 YY_RULE_SETUP
-#line 833 "pgc.l"
+#line 833 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 { return(S_MUL); }
 	YY_BREAK
 case 103:
 YY_RULE_SETUP
-#line 834 "pgc.l"
+#line 834 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 { return(S_DIV); }
 	YY_BREAK
 case 104:
 YY_RULE_SETUP
-#line 835 "pgc.l"
+#line 835 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 { return(S_MOD); }
 	YY_BREAK
 case 105:
 YY_RULE_SETUP
-#line 836 "pgc.l"
+#line 836 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 { return(S_MEMPOINT); }
 	YY_BREAK
 case 106:
 YY_RULE_SETUP
-#line 837 "pgc.l"
+#line 837 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 { return(S_DOTPOINT); }
 	YY_BREAK
 case 107:
 YY_RULE_SETUP
-#line 838 "pgc.l"
+#line 838 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 { return S_ANYTHING; }
 	YY_BREAK
 case 108:
 /* rule 108 can match eol */
 YY_RULE_SETUP
-#line 839 "pgc.l"
+#line 839 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 { BEGIN(def_ident); }
 	YY_BREAK
 case 109:
 /* rule 109 can match eol */
 YY_RULE_SETUP
-#line 840 "pgc.l"
+#line 840 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 {
 						/* are we simulating Informix? */
 						if (INFORMIX_MODE)
@@ -3171,13 +3171,13 @@ YY_RULE_SETUP
 case 110:
 /* rule 110 can match eol */
 YY_RULE_SETUP
-#line 852 "pgc.l"
+#line 852 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 { BEGIN(undef); }
 	YY_BREAK
 case 111:
 /* rule 111 can match eol */
 YY_RULE_SETUP
-#line 853 "pgc.l"
+#line 853 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 {
 						/* are we simulating Informix? */
 						if (INFORMIX_MODE)
@@ -3194,7 +3194,7 @@ YY_RULE_SETUP
 case 112:
 /* rule 112 can match eol */
 YY_RULE_SETUP
-#line 865 "pgc.l"
+#line 865 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 {
 					struct _defines *ptr, *ptr2 = NULL;
 					int i;
@@ -3231,7 +3231,7 @@ YY_RULE_SETUP
 case 113:
 /* rule 113 can match eol */
 YY_RULE_SETUP
-#line 897 "pgc.l"
+#line 897 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 {
 		                	mmerror(PARSE_ERROR, ET_FATAL, "missing identifier in EXEC SQL UNDEF command");
 			                yyterminate();
@@ -3240,13 +3240,13 @@ YY_RULE_SETUP
 case 114:
 /* rule 114 can match eol */
 YY_RULE_SETUP
-#line 901 "pgc.l"
+#line 901 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 { BEGIN(incl); }
 	YY_BREAK
 case 115:
 /* rule 115 can match eol */
 YY_RULE_SETUP
-#line 902 "pgc.l"
+#line 902 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 { 
 					  /* are we simulating Informix? */
 					  if (INFORMIX_MODE)
@@ -3263,13 +3263,13 @@ YY_RULE_SETUP
 case 116:
 /* rule 116 can match eol */
 YY_RULE_SETUP
-#line 914 "pgc.l"
+#line 914 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 { ifcond = TRUE; BEGIN(xcond); }
 	YY_BREAK
 case 117:
 /* rule 117 can match eol */
 YY_RULE_SETUP
-#line 915 "pgc.l"
+#line 915 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 { 
 					  /* are we simulating Informix? */
 					  if (INFORMIX_MODE)
@@ -3287,13 +3287,13 @@ YY_RULE_SETUP
 case 118:
 /* rule 118 can match eol */
 YY_RULE_SETUP
-#line 928 "pgc.l"
+#line 928 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 { ifcond = FALSE; BEGIN(xcond); }
 	YY_BREAK
 case 119:
 /* rule 119 can match eol */
 YY_RULE_SETUP
-#line 929 "pgc.l"
+#line 929 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 { 
 					  /* are we simulating Informix? */
 					  if (INFORMIX_MODE)
@@ -3311,7 +3311,7 @@ YY_RULE_SETUP
 case 120:
 /* rule 120 can match eol */
 YY_RULE_SETUP
-#line 942 "pgc.l"
+#line 942 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 {	/* pop stack */
 						if ( preproc_tos == 0 ) {
 							mmerror(PARSE_ERROR, ET_FATAL, "missing matching \"EXEC SQL IFDEF\" / \"EXEC SQL IFNDEF\"");
@@ -3327,7 +3327,7 @@ YY_RULE_SETUP
 case 121:
 /* rule 121 can match eol */
 YY_RULE_SETUP
-#line 953 "pgc.l"
+#line 953 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 { 
 					/* are we simulating Informix? */
 					if (INFORMIX_MODE)
@@ -3352,7 +3352,7 @@ YY_RULE_SETUP
 case 122:
 /* rule 122 can match eol */
 YY_RULE_SETUP
-#line 974 "pgc.l"
+#line 974 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 {	/* only exec sql endif pops the stack, so take care of duplicated 'else' */
 					if (stacked_if_value[preproc_tos].else_branch)
 						mmerror(PARSE_ERROR, ET_FATAL, "more than one EXEC SQL ELSE");
@@ -3373,7 +3373,7 @@ YY_RULE_SETUP
 case 123:
 /* rule 123 can match eol */
 YY_RULE_SETUP
-#line 990 "pgc.l"
+#line 990 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 {
 					/* are we simulating Informix? */
 					if (INFORMIX_MODE)
@@ -3403,7 +3403,7 @@ YY_RULE_SETUP
 case 124:
 /* rule 124 can match eol */
 YY_RULE_SETUP
-#line 1015 "pgc.l"
+#line 1015 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 {
 					if (preproc_tos == 0)
 						mmerror(PARSE_ERROR, ET_FATAL, "unmatched EXEC SQL ENDIF");
@@ -3419,7 +3419,7 @@ YY_RULE_SETUP
 case 125:
 /* rule 125 can match eol */
 YY_RULE_SETUP
-#line 1026 "pgc.l"
+#line 1026 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 {
 					/* are we simulating Informix? */
 					if (INFORMIX_MODE)
@@ -3443,13 +3443,13 @@ YY_RULE_SETUP
 	YY_BREAK
 case 126:
 YY_RULE_SETUP
-#line 1047 "pgc.l"
+#line 1047 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 { /* ignore */ }
 	YY_BREAK
 case 127:
 /* rule 127 can match eol */
 YY_RULE_SETUP
-#line 1049 "pgc.l"
+#line 1049 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 {
 					if (preproc_tos >= MAX_NESTED_IF-1)
 						mmerror(PARSE_ERROR, ET_FATAL, "too many nested EXEC SQL IFDEF conditions");
@@ -3487,7 +3487,7 @@ YY_RULE_SETUP
 case 128:
 /* rule 128 can match eol */
 YY_RULE_SETUP
-#line 1083 "pgc.l"
+#line 1083 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 {
 				mmerror(PARSE_ERROR, ET_FATAL, "missing identifier in EXEC SQL IFDEF command");
 				yyterminate();
@@ -3495,7 +3495,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 129:
 YY_RULE_SETUP
-#line 1087 "pgc.l"
+#line 1087 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 {
 				old = mm_strdup(yytext);
 				BEGIN(def);
@@ -3505,7 +3505,7 @@ YY_RULE_SETUP
 case 130:
 /* rule 130 can match eol */
 YY_RULE_SETUP
-#line 1092 "pgc.l"
+#line 1092 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 {
 				mmerror(PARSE_ERROR, ET_FATAL, "missing identifier in EXEC SQL DEFINE command");
 				yyterminate();
@@ -3514,7 +3514,7 @@ YY_RULE_SETUP
 case 131:
 /* rule 131 can match eol */
 YY_RULE_SETUP
-#line 1096 "pgc.l"
+#line 1096 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 {
 						struct _defines *ptr, *this;
 
@@ -3544,31 +3544,31 @@ YY_RULE_SETUP
 case 132:
 /* rule 132 can match eol */
 YY_RULE_SETUP
-#line 1121 "pgc.l"
+#line 1121 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 { addlit(yytext, yyleng); }
 	YY_BREAK
 case 133:
 /* rule 133 can match eol */
 YY_RULE_SETUP
-#line 1122 "pgc.l"
+#line 1122 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 {	parse_include(); }
 	YY_BREAK
 case 134:
 /* rule 134 can match eol */
 YY_RULE_SETUP
-#line 1123 "pgc.l"
+#line 1123 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 {	parse_include(); }
 	YY_BREAK
 case 135:
 /* rule 135 can match eol */
 YY_RULE_SETUP
-#line 1124 "pgc.l"
+#line 1124 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 { parse_include(); }
 	YY_BREAK
 case 136:
 /* rule 136 can match eol */
 YY_RULE_SETUP
-#line 1125 "pgc.l"
+#line 1125 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 {
 					mmerror(PARSE_ERROR, ET_FATAL, "syntax error in EXEC SQL INCLUDE command");
 					yyterminate();
@@ -3583,7 +3583,7 @@ case YY_STATE_EOF(def_ident):
 case YY_STATE_EOF(undef):
 case YY_STATE_EOF(xcond):
 case YY_STATE_EOF(xskip):
-#line 1130 "pgc.l"
+#line 1130 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 {
 			  		if (yy_buffer == NULL)
 					{
@@ -3633,15 +3633,15 @@ case YY_STATE_EOF(xskip):
 case 137:
 /* rule 137 can match eol */
 YY_RULE_SETUP
-#line 1175 "pgc.l"
+#line 1175 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 { mmerror(PARSE_ERROR, ET_FATAL, "internal error: unreachable state; please report this to <pgsql-bugs@postgresql.org>"); }
 	YY_BREAK
 case 138:
 YY_RULE_SETUP
-#line 1176 "pgc.l"
+#line 1176 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 YY_FATAL_ERROR( "flex scanner jammed" );
 	YY_BREAK
-#line 3645 "pgc.c"
+#line 3645 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.c"
 
 	case YY_END_OF_BUFFER:
 		{
@@ -4646,7 +4646,7 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 1176 "pgc.l"
+#line 1176 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/pgc.l"
 
 
 void

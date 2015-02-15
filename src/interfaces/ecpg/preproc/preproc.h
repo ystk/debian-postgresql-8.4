@@ -530,7 +530,7 @@ typedef union YYSTYPE
 {
 
 /* Line 2068 of yacc.c  */
-#line 383 "preproc.y"
+#line 383 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.y"
 
 	double	dval;
 	char	*str;
@@ -548,7 +548,7 @@ typedef union YYSTYPE
 
 
 /* Line 2068 of yacc.c  */
-#line 552 "preproc.h"
+#line 552 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/interfaces/ecpg/preproc/preproc.h"
 } YYSTYPE;
 # define YYSTYPE_IS_TRIVIAL 1
 # define yystype YYSTYPE /* obsolescent; will be withdrawn */

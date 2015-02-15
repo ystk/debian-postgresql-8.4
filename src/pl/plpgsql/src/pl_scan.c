@@ -1,6 +1,6 @@
-#line 2 "pl_scan.c"
+#line 2 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/pl_scan.c"
 
-#line 4 "pl_scan.c"
+#line 4 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/pl_scan.c"
 
 #define  YY_INT_ALIGNED short int
 
@@ -1193,8 +1193,8 @@ int plpgsql_base_yy_flex_debug = 0;
 #define YY_MORE_ADJ 0
 #define YY_RESTORE_YY_MORE_OFFSET
 char *plpgsql_base_yytext;
-#line 1 "scan.l"
-#line 2 "scan.l"
+#line 1 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
+#line 2 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 /*-------------------------------------------------------------------------
  *
  * scan.l		- Scanner for the PL/pgSQL
@@ -1262,7 +1262,7 @@ bool plpgsql_SpaceScanned = false;
  * with comments go away.
  */
 /* This is a simpler treatment of quoted identifiers than the core uses */
-#line 1266 "pl_scan.c"
+#line 1266 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/pl_scan.c"
 
 #define INITIAL 0
 #define xc 1
@@ -1454,7 +1454,7 @@ YY_DECL
 	register char *yy_cp, *yy_bp;
 	register int yy_act;
     
-#line 128 "scan.l"
+#line 128 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 
     /* ----------
      * Local variables in scanner to remember where
@@ -1475,7 +1475,7 @@ YY_DECL
      * The keyword rules
      * ----------
      */
-#line 1479 "pl_scan.c"
+#line 1479 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/pl_scan.c"
 
 	if ( !(yy_init) )
 		{
@@ -1557,273 +1557,273 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 148 "scan.l"
+#line 148 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 { return K_ASSIGN;			}
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 149 "scan.l"
+#line 149 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 { return K_ASSIGN;			}
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 150 "scan.l"
+#line 150 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 { return K_DOTDOT;			}
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 151 "scan.l"
+#line 151 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 { return K_ALIAS;			}
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
-#line 152 "scan.l"
+#line 152 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 { return K_BEGIN;			}
 	YY_BREAK
 case 6:
 YY_RULE_SETUP
-#line 153 "scan.l"
+#line 153 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 { return K_BY;   			}
 	YY_BREAK
 case 7:
 YY_RULE_SETUP
-#line 154 "scan.l"
+#line 154 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 { return K_CASE;			}
 	YY_BREAK
 case 8:
 YY_RULE_SETUP
-#line 155 "scan.l"
+#line 155 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 { return K_CLOSE;			}
 	YY_BREAK
 case 9:
 YY_RULE_SETUP
-#line 156 "scan.l"
+#line 156 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 { return K_CONSTANT;		}
 	YY_BREAK
 case 10:
 YY_RULE_SETUP
-#line 157 "scan.l"
+#line 157 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 { return K_CONTINUE;		}
 	YY_BREAK
 case 11:
 YY_RULE_SETUP
-#line 158 "scan.l"
+#line 158 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 { return K_CURSOR;			}
 	YY_BREAK
 case 12:
 YY_RULE_SETUP
-#line 159 "scan.l"
+#line 159 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 { return K_DECLARE;			}
 	YY_BREAK
 case 13:
 YY_RULE_SETUP
-#line 160 "scan.l"
+#line 160 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 { return K_DEFAULT;			}
 	YY_BREAK
 case 14:
 YY_RULE_SETUP
-#line 161 "scan.l"
+#line 161 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 { return K_DIAGNOSTICS;		}
 	YY_BREAK
 case 15:
 YY_RULE_SETUP
-#line 162 "scan.l"
+#line 162 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 { return K_ELSE;			}
 	YY_BREAK
 case 16:
 YY_RULE_SETUP
-#line 163 "scan.l"
+#line 163 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 { return K_ELSIF;			}
 	YY_BREAK
 case 17:
 YY_RULE_SETUP
-#line 164 "scan.l"
+#line 164 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 { return K_ELSIF;			}
 	YY_BREAK
 case 18:
 YY_RULE_SETUP
-#line 165 "scan.l"
+#line 165 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 { return K_END;				}
 	YY_BREAK
 case 19:
 YY_RULE_SETUP
-#line 166 "scan.l"
+#line 166 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 { return K_EXCEPTION;		}
 	YY_BREAK
 case 20:
 YY_RULE_SETUP
-#line 167 "scan.l"
+#line 167 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 { return K_EXECUTE;			}
 	YY_BREAK
 case 21:
 YY_RULE_SETUP
-#line 168 "scan.l"
+#line 168 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 { return K_EXIT;			}
 	YY_BREAK
 case 22:
 YY_RULE_SETUP
-#line 169 "scan.l"
+#line 169 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 { return K_FETCH;			}
 	YY_BREAK
 case 23:
 YY_RULE_SETUP
-#line 170 "scan.l"
+#line 170 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 { return K_FOR;				}
 	YY_BREAK
 case 24:
 YY_RULE_SETUP
-#line 171 "scan.l"
+#line 171 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 { return K_FROM;			}
 	YY_BREAK
 case 25:
 YY_RULE_SETUP
-#line 172 "scan.l"
+#line 172 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 { return K_GET;				}
 	YY_BREAK
 case 26:
 YY_RULE_SETUP
-#line 173 "scan.l"
+#line 173 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 { return K_IF;				}
 	YY_BREAK
 case 27:
 YY_RULE_SETUP
-#line 174 "scan.l"
+#line 174 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 { return K_IN;				}
 	YY_BREAK
 case 28:
 YY_RULE_SETUP
-#line 175 "scan.l"
+#line 175 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 { return K_INSERT;			}
 	YY_BREAK
 case 29:
 YY_RULE_SETUP
-#line 176 "scan.l"
+#line 176 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 { return K_INTO;			}
 	YY_BREAK
 case 30:
 YY_RULE_SETUP
-#line 177 "scan.l"
+#line 177 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 { return K_IS;				}
 	YY_BREAK
 case 31:
 YY_RULE_SETUP
-#line 178 "scan.l"
+#line 178 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 { return K_LOOP;			}
 	YY_BREAK
 case 32:
 YY_RULE_SETUP
-#line 179 "scan.l"
+#line 179 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 { return K_MOVE;			}
 	YY_BREAK
 case 33:
 /* rule 33 can match eol */
 YY_RULE_SETUP
-#line 180 "scan.l"
+#line 180 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 { return K_NOSCROLL;		}
 	YY_BREAK
 case 34:
 YY_RULE_SETUP
-#line 181 "scan.l"
+#line 181 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 { return K_NOT;				}
 	YY_BREAK
 case 35:
 YY_RULE_SETUP
-#line 182 "scan.l"
+#line 182 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 { return K_NULL;			}
 	YY_BREAK
 case 36:
 YY_RULE_SETUP
-#line 183 "scan.l"
+#line 183 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 { return K_OPEN;			}
 	YY_BREAK
 case 37:
 YY_RULE_SETUP
-#line 184 "scan.l"
+#line 184 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 { return K_OR;				}
 	YY_BREAK
 case 38:
 YY_RULE_SETUP
-#line 185 "scan.l"
+#line 185 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 { return K_PERFORM;			}
 	YY_BREAK
 case 39:
 YY_RULE_SETUP
-#line 186 "scan.l"
+#line 186 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 { return K_RAISE;			}
 	YY_BREAK
 case 40:
 YY_RULE_SETUP
-#line 187 "scan.l"
+#line 187 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 { return K_RENAME;			}
 	YY_BREAK
 case 41:
 YY_RULE_SETUP
-#line 188 "scan.l"
+#line 188 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 { return K_RESULT_OID;		}
 	YY_BREAK
 case 42:
 YY_RULE_SETUP
-#line 189 "scan.l"
+#line 189 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 { return K_RETURN;			}
 	YY_BREAK
 case 43:
 YY_RULE_SETUP
-#line 190 "scan.l"
+#line 190 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 { return K_REVERSE;			}
 	YY_BREAK
 case 44:
 YY_RULE_SETUP
-#line 191 "scan.l"
+#line 191 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 { return K_ROW_COUNT;		}
 	YY_BREAK
 case 45:
 YY_RULE_SETUP
-#line 192 "scan.l"
+#line 192 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 { return K_SCROLL;			}
 	YY_BREAK
 case 46:
 YY_RULE_SETUP
-#line 193 "scan.l"
+#line 193 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 { return K_STRICT;	    	}
 	YY_BREAK
 case 47:
 YY_RULE_SETUP
-#line 194 "scan.l"
+#line 194 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 { return K_THEN;			}
 	YY_BREAK
 case 48:
 YY_RULE_SETUP
-#line 195 "scan.l"
+#line 195 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 { return K_TO;				}
 	YY_BREAK
 case 49:
 YY_RULE_SETUP
-#line 196 "scan.l"
+#line 196 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 { return K_TYPE;			}
 	YY_BREAK
 case 50:
 YY_RULE_SETUP
-#line 197 "scan.l"
+#line 197 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 { return K_USING;			}
 	YY_BREAK
 case 51:
 YY_RULE_SETUP
-#line 198 "scan.l"
+#line 198 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 { return K_WHEN;			}
 	YY_BREAK
 case 52:
 YY_RULE_SETUP
-#line 199 "scan.l"
+#line 199 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 { return K_WHILE;			}
 	YY_BREAK
 case 53:
 YY_RULE_SETUP
-#line 201 "scan.l"
+#line 201 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 { return O_OPTION;			}
 	YY_BREAK
 case 54:
 YY_RULE_SETUP
-#line 202 "scan.l"
+#line 202 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 { return O_DUMP;			}
 	YY_BREAK
 /* ----------
@@ -1836,7 +1836,7 @@ YY_RULE_SETUP
 case 55:
 /* rule 55 can match eol */
 YY_RULE_SETUP
-#line 212 "scan.l"
+#line 212 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 {
 	plpgsql_error_lineno = plpgsql_scanner_lineno();
 	return plpgsql_parse_word(plpgsql_base_yytext); }
@@ -1844,7 +1844,7 @@ YY_RULE_SETUP
 case 56:
 /* rule 56 can match eol */
 YY_RULE_SETUP
-#line 215 "scan.l"
+#line 215 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 {
 	plpgsql_error_lineno = plpgsql_scanner_lineno();
 	return plpgsql_parse_dblword(plpgsql_base_yytext); }
@@ -1852,7 +1852,7 @@ YY_RULE_SETUP
 case 57:
 /* rule 57 can match eol */
 YY_RULE_SETUP
-#line 218 "scan.l"
+#line 218 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 {
 	plpgsql_error_lineno = plpgsql_scanner_lineno();
 	return plpgsql_parse_tripword(plpgsql_base_yytext); }
@@ -1860,7 +1860,7 @@ YY_RULE_SETUP
 case 58:
 /* rule 58 can match eol */
 YY_RULE_SETUP
-#line 221 "scan.l"
+#line 221 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 {
 	plpgsql_error_lineno = plpgsql_scanner_lineno();
 	return plpgsql_parse_wordtype(plpgsql_base_yytext); }
@@ -1868,7 +1868,7 @@ YY_RULE_SETUP
 case 59:
 /* rule 59 can match eol */
 YY_RULE_SETUP
-#line 224 "scan.l"
+#line 224 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 {
 	plpgsql_error_lineno = plpgsql_scanner_lineno();
 	return plpgsql_parse_dblwordtype(plpgsql_base_yytext); }
@@ -1876,7 +1876,7 @@ YY_RULE_SETUP
 case 60:
 /* rule 60 can match eol */
 YY_RULE_SETUP
-#line 227 "scan.l"
+#line 227 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 {
 	plpgsql_error_lineno = plpgsql_scanner_lineno();
 	return plpgsql_parse_tripwordtype(plpgsql_base_yytext); }
@@ -1884,7 +1884,7 @@ YY_RULE_SETUP
 case 61:
 /* rule 61 can match eol */
 YY_RULE_SETUP
-#line 230 "scan.l"
+#line 230 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 {
 	plpgsql_error_lineno = plpgsql_scanner_lineno();
 	return plpgsql_parse_wordrowtype(plpgsql_base_yytext); }
@@ -1892,14 +1892,14 @@ YY_RULE_SETUP
 case 62:
 /* rule 62 can match eol */
 YY_RULE_SETUP
-#line 233 "scan.l"
+#line 233 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 {
 	plpgsql_error_lineno = plpgsql_scanner_lineno();
 	return plpgsql_parse_dblwordrowtype(plpgsql_base_yytext); }
 	YY_BREAK
 case 63:
 YY_RULE_SETUP
-#line 236 "scan.l"
+#line 236 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 {
 	plpgsql_error_lineno = plpgsql_scanner_lineno();
 	return plpgsql_parse_word(plpgsql_base_yytext); }
@@ -1907,7 +1907,7 @@ YY_RULE_SETUP
 case 64:
 /* rule 64 can match eol */
 YY_RULE_SETUP
-#line 239 "scan.l"
+#line 239 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 {
 	plpgsql_error_lineno = plpgsql_scanner_lineno();
 	return plpgsql_parse_dblword(plpgsql_base_yytext); }
@@ -1915,7 +1915,7 @@ YY_RULE_SETUP
 case 65:
 /* rule 65 can match eol */
 YY_RULE_SETUP
-#line 242 "scan.l"
+#line 242 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 {
 	plpgsql_error_lineno = plpgsql_scanner_lineno();
 	return plpgsql_parse_tripword(plpgsql_base_yytext); }
@@ -1923,7 +1923,7 @@ YY_RULE_SETUP
 case 66:
 /* rule 66 can match eol */
 YY_RULE_SETUP
-#line 245 "scan.l"
+#line 245 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 {
 	plpgsql_error_lineno = plpgsql_scanner_lineno();
 	return plpgsql_parse_wordtype(plpgsql_base_yytext); }
@@ -1931,7 +1931,7 @@ YY_RULE_SETUP
 case 67:
 /* rule 67 can match eol */
 YY_RULE_SETUP
-#line 248 "scan.l"
+#line 248 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 {
 	plpgsql_error_lineno = plpgsql_scanner_lineno();
 	return plpgsql_parse_dblwordtype(plpgsql_base_yytext); }
@@ -1939,7 +1939,7 @@ YY_RULE_SETUP
 case 68:
 /* rule 68 can match eol */
 YY_RULE_SETUP
-#line 251 "scan.l"
+#line 251 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 {
 	plpgsql_error_lineno = plpgsql_scanner_lineno();
 	return plpgsql_parse_tripwordtype(plpgsql_base_yytext); }
@@ -1947,7 +1947,7 @@ YY_RULE_SETUP
 case 69:
 /* rule 69 can match eol */
 YY_RULE_SETUP
-#line 254 "scan.l"
+#line 254 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 {
 	plpgsql_error_lineno = plpgsql_scanner_lineno();
 	return plpgsql_parse_wordrowtype(plpgsql_base_yytext); }
@@ -1955,19 +1955,19 @@ YY_RULE_SETUP
 case 70:
 /* rule 70 can match eol */
 YY_RULE_SETUP
-#line 257 "scan.l"
+#line 257 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 {
 	plpgsql_error_lineno = plpgsql_scanner_lineno();
 	return plpgsql_parse_dblwordrowtype(plpgsql_base_yytext); }
 	YY_BREAK
 case 71:
 YY_RULE_SETUP
-#line 261 "scan.l"
+#line 261 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 { return T_NUMBER;			}
 	YY_BREAK
 case 72:
 YY_RULE_SETUP
-#line 263 "scan.l"
+#line 263 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 { yyerror("unterminated quoted identifier"); }
 	YY_BREAK
 /* ----------
@@ -1977,7 +1977,7 @@ YY_RULE_SETUP
 case 73:
 /* rule 73 can match eol */
 YY_RULE_SETUP
-#line 269 "scan.l"
+#line 269 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 { plpgsql_SpaceScanned = true; }
 	YY_BREAK
 /* ----------
@@ -1986,7 +1986,7 @@ YY_RULE_SETUP
      */
 case 74:
 YY_RULE_SETUP
-#line 275 "scan.l"
+#line 275 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 {
 					/* Set location in case of syntax error in comment */
 					SAVE_TOKEN_START();
@@ -1997,14 +1997,14 @@ YY_RULE_SETUP
 	YY_BREAK
 case 75:
 YY_RULE_SETUP
-#line 283 "scan.l"
+#line 283 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 {
 					xcdepth++;
 				}
 	YY_BREAK
 case 76:
 YY_RULE_SETUP
-#line 287 "scan.l"
+#line 287 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 {
 					if (xcdepth <= 0)
 						BEGIN(INITIAL);
@@ -2015,32 +2015,32 @@ YY_RULE_SETUP
 case 77:
 /* rule 77 can match eol */
 YY_RULE_SETUP
-#line 294 "scan.l"
+#line 294 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 {
 					/* ignore */
 				}
 	YY_BREAK
 case 78:
 YY_RULE_SETUP
-#line 298 "scan.l"
+#line 298 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 {
 					/* ignore */
 				}
 	YY_BREAK
 case 79:
 YY_RULE_SETUP
-#line 302 "scan.l"
+#line 302 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 {
 					/* ignore */
 				}
 	YY_BREAK
 case YY_STATE_EOF(xc):
-#line 306 "scan.l"
+#line 306 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 { yyerror("unterminated /* comment"); }
 	YY_BREAK
 case 80:
 YY_RULE_SETUP
-#line 308 "scan.l"
+#line 308 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 {
 					SAVE_TOKEN_START();
 					if (standard_conforming_strings)
@@ -2051,7 +2051,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 81:
 YY_RULE_SETUP
-#line 315 "scan.l"
+#line 315 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 {
 					SAVE_TOKEN_START();
 					BEGIN(xe);
@@ -2059,11 +2059,11 @@ YY_RULE_SETUP
 	YY_BREAK
 case 82:
 /* rule 82 can match eol */
-#line 320 "scan.l"
+#line 320 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 case 83:
 /* rule 83 can match eol */
 YY_RULE_SETUP
-#line 320 "scan.l"
+#line 320 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 {
 					yyless(1);
 					BEGIN(INITIAL);
@@ -2075,53 +2075,53 @@ YY_RULE_SETUP
 	YY_BREAK
 case 84:
 YY_RULE_SETUP
-#line 328 "scan.l"
+#line 328 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 {
 				}
 	YY_BREAK
 case 85:
 /* rule 85 can match eol */
 YY_RULE_SETUP
-#line 330 "scan.l"
+#line 330 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 {
 				}
 	YY_BREAK
 case 86:
 /* rule 86 can match eol */
 YY_RULE_SETUP
-#line 332 "scan.l"
+#line 332 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 {
 				}
 	YY_BREAK
 case 87:
 YY_RULE_SETUP
-#line 334 "scan.l"
+#line 334 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 {
 				}
 	YY_BREAK
 case 88:
 /* rule 88 can match eol */
 YY_RULE_SETUP
-#line 336 "scan.l"
+#line 336 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 {
 					/* ignore */
 				}
 	YY_BREAK
 case 89:
 YY_RULE_SETUP
-#line 339 "scan.l"
+#line 339 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 {
 					/* This is only needed for \ just before EOF */
 				}
 	YY_BREAK
 case YY_STATE_EOF(xq):
 case YY_STATE_EOF(xe):
-#line 342 "scan.l"
+#line 342 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 { yyerror("unterminated quoted string"); }
 	YY_BREAK
 case 90:
 YY_RULE_SETUP
-#line 344 "scan.l"
+#line 344 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 {
 					SAVE_TOKEN_START();
 					dolqstart = pstrdup(plpgsql_base_yytext);
@@ -2130,7 +2130,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 91:
 YY_RULE_SETUP
-#line 349 "scan.l"
+#line 349 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 {
 					/* throw back all but the initial "$" */
 					yyless(1);
@@ -2140,7 +2140,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 92:
 YY_RULE_SETUP
-#line 355 "scan.l"
+#line 355 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 {
 					if (strcmp(plpgsql_base_yytext, dolqstart) == 0)
 					{
@@ -2165,25 +2165,25 @@ YY_RULE_SETUP
 case 93:
 /* rule 93 can match eol */
 YY_RULE_SETUP
-#line 375 "scan.l"
+#line 375 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 {
 				}
 	YY_BREAK
 case 94:
 YY_RULE_SETUP
-#line 377 "scan.l"
+#line 377 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 {
 				}
 	YY_BREAK
 case 95:
 YY_RULE_SETUP
-#line 379 "scan.l"
+#line 379 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 {
 					/* This is only needed for $ inside the quoted text */
 				}
 	YY_BREAK
 case YY_STATE_EOF(xdolq):
-#line 382 "scan.l"
+#line 382 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 { yyerror("unterminated dollar-quoted string"); }
 	YY_BREAK
 /* ----------
@@ -2192,17 +2192,17 @@ case YY_STATE_EOF(xdolq):
      */
 case 96:
 YY_RULE_SETUP
-#line 388 "scan.l"
+#line 388 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 {
 					return plpgsql_base_yytext[0];
 				}
 	YY_BREAK
 case 97:
 YY_RULE_SETUP
-#line 392 "scan.l"
+#line 392 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 YY_FATAL_ERROR( "flex scanner jammed" );
 	YY_BREAK
-#line 2206 "pl_scan.c"
+#line 2206 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/pl_scan.c"
 case YY_STATE_EOF(INITIAL):
 	yyterminate();
 
@@ -3163,7 +3163,7 @@ void plpgsql_base_yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 392 "scan.l"
+#line 392 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/scan.l"
 
 
 

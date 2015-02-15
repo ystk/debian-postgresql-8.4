@@ -107,7 +107,7 @@ typedef union YYSTYPE
 {
 
 /* Line 2068 of yacc.c  */
-#line 79 "gram.y"
+#line 79 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/gram.y"
 
 		int32					ival;
 		bool					boolean;
@@ -157,7 +157,7 @@ typedef union YYSTYPE
 
 
 /* Line 2068 of yacc.c  */
-#line 161 "pl_gram.h"
+#line 161 "/home/mba/Projekte/PG84LTS/git/postgresql/build/../src/pl/plpgsql/src/pl_gram.h"
 } YYSTYPE;
 # define YYSTYPE_IS_TRIVIAL 1
 # define yystype YYSTYPE /* obsolescent; will be withdrawn */
